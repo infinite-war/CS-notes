@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "60992eb85407118f",
+        "id": "5c30a1f7bf94cb14",
         "type": "tabs",
         "children": [
           {
-            "id": "7dbb742803b4f9e5",
+            "id": "1089545ff36dde48",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7dbb742803b4f9e5",
+  "active": "1089545ff36dde48",
   "lastOpenFiles": [
     "Missing-Semester/win10开发机配置指南.md",
     "Programing-Language/Python/PDF.md",
