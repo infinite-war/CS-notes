@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5c30a1f7bf94cb14",
+        "id": "997281e7e3b59c6a",
         "type": "tabs",
         "children": [
           {
-            "id": "1089545ff36dde48",
+            "id": "5e559d754d15f75e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1089545ff36dde48",
+  "active": "5e559d754d15f75e",
   "lastOpenFiles": [
     "Missing-Semester/win10开发机配置指南.md",
+    "Missing-Semester/LaTeX.md",
     "Programing-Language/Python/PDF.md",
-    "Pasted image 20230217164001.png",
-    "Pasted image 20230217163950.png",
-    "Pasted image 20230217163946.png",
-    "blog/多机协同.md",
-    "Programing-Language/Python/image.md",
-    "Programing-Language/Golang/Intro.md",
-    "Linux/shell.md",
-    "Programing-Language/Golang/lib/http.md"
+    "Programing-Language/Python/Django.md",
+    "Programing-Language/Python/Base Grammer.md",
+    "Programing-Language/Python/Image.md",
+    "Programing-Language/Python/Quant.md",
+    "Programing-Language/Python/poetry.md",
+    "Programing-Language/Python/numpy-pandas-matplotlib.md",
+    "Programing-Language/Python/Intro.md"
   ]
 }

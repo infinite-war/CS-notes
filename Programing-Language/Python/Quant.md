@@ -171,7 +171,7 @@ def handle_data(context, data): # 每天干什么
    + 日志
    + 错误
 
-## Eg
+## Case
 
 + 策略：
   + 设置股票池为沪深300的所有成分股
