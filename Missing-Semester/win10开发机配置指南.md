@@ -157,7 +157,7 @@
 
 + 关于wt的设置：网上教程颇多，这里指出修改`setting.json`文件和图形化修改等效
 
-### 美化
+### 强化
 >推荐下载方式使用winget（使用Microsoft Store同样能下载）
 
 1. 安装PowerShell7：[官方教程](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)（官方推荐winget）

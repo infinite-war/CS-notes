@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9765676f5deda135",
+        "id": "eaee1b18a238a63f",
         "type": "tabs",
         "children": [
           {
-            "id": "08227c947f180e78",
+            "id": "b85c65340032abac",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "08227c947f180e78",
+  "active": "b85c65340032abac",
   "lastOpenFiles": [
+    "Programing-Language/Golang/lib/http.md",
+    "Programing-Language/Golang/Intro.md",
     "Programing-Language/Python/Django.md",
     "Missing-Semester/Linux机器配置指南.md",
     "Missing-Semester/SSH.md",
     "Software-Engineering/Docker.md",
+    "Missing-Semester/win10开发机配置指南.md",
     "Linux/LinuxTools.md",
     "Linux/LinuxSystemAPI.md",
-    "Linux/LinuxNetAPI.md",
-    "Linux/GeneralKnowledge.md",
-    "Linux/未命名.md",
-    "Linux/GNU/Modern CMake.md"
+    "Linux/LinuxNetAPI.md"
   ]
 }
