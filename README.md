@@ -1,9 +1,6 @@
-
-
-```
-https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/
-<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/" style="zoom:59%;" div align=center />
-```
+%%template%%
+%%https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/%%
+%%img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/" style="zoom:59%;" div align=center /%%
 + 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 
@@ -24,9 +21,9 @@ https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/
 
 此时笔记更像是”当年攻城略地时的纪念品“
 
-### Plan of 2023
+### CS Base
 
->下面的讨论既是我2023年的学习计划（实际上是计划在毕业一到两年内完成），也可以作为计算机本科生的学习路线，是[CS自学指南](https://csdiy.wiki/)的一个子集，没有提及基础知识的学习（比如语言、数据结构），可以使用其他的学习路线作为补充。提到的课程是年年更新，有些东西可能只在某一年的课程中有。
+>下面的讨论既是我2023年的学习计划（实际上是计划在毕业一到两年内完成），也可以作为计算机本科生的学习路线，大概是[CS自学指南](https://csdiy.wiki/)的一个子集，没有提及基础知识的学习（比如语言、数据结构等专业基础知识和比如人工智能、图形化等高阶知识），可以使用其他的学习路线作为补充。提到的课程是年年更新，有些东西可能只在某一年的课程中有。
 
 <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/word of cs.png"/>
 
@@ -68,13 +65,15 @@ https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/
 至此，相当于我们制作了一个计算机，并编写了基本但并不简单的系统程序（OS、Complier、DB），以及完成了计算机互联的基础设施。  
 下一阶段就是如果在这些基础设施上编写更好的程序，我们进入了软件工程专业的领域
 
-#### 分布式
+### Distributed
 互联网中的数据是海量的，要处理这样的数据仅靠单机是无法在一个可以接受的时间内完成的，而且有些场景（诸如转账）天然就是分布式的。所以编写部署在集群的程序是很有必要的。但是天然具有分布式的算法（比如用于路由器表更新的距离向量算法，本质是最短路Bellman-Ford算法）是稀有的，如果统筹集群的算力和存储空间是一个复杂问题。
 
 + 入门网红课程MIT 6.824（Golang）
 	>2023年：好像改名了。
-
+	
 	以论文解读的形式带我们学习分布式的方方面面
+
++ [ ] [2023.02.20-]：
 
 ### log
 

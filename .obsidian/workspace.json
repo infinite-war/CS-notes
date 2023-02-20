@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "392bf46f16127de2",
+        "id": "08d9c4cac1d65916",
         "type": "tabs",
         "children": [
           {
-            "id": "8ebc413fd6d1c104",
+            "id": "2de70cc73e50ab34",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8ebc413fd6d1c104",
+  "active": "2de70cc73e50ab34",
   "lastOpenFiles": [
-    "Software-Engineering/Docker.md",
-    "Software-Engineering/Bazel.md",
+    "Missing-Semester/Git.md",
     "Missing-Semester/win10开发机配置指南.md",
+    "Distributed-System/RPC.md",
+    "Programing-Language/Golang/lib/ProtoBuf.md",
+    "Software-Engineering/Bazel.md",
+    "README.md",
+    "Software-Engineering/Docker.md",
     "Missing-Semester/SSH.md",
     "Missing-Semester/slide.md",
-    "Missing-Semester/Markdown.md",
-    "Missing-Semester/Linux机器配置指南.md",
-    "Missing-Semester/LaTeX.md",
-    "Missing-Semester/Git.md",
-    "Math/Cryptology/密码学3新兴密码协议.md"
+    "Missing-Semester/Markdown.md"
   ]
 }
