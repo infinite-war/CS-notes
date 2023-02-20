@@ -16,7 +16,9 @@
 git config --global user.name xxx  # 设置全局用户名
 git config --global user.email xxx@xxx  # 设置全局邮箱地址
 ```
-配置文件位置：`~/.gitconfig`
++ 配置文件位置：
+	+ win：`C:\User\$User\.gitconfig`
+	+ linux：`~/.gitconfig`
 
 ### Use
 + Init: 进入项目目录下：

@@ -21,7 +21,7 @@
 + Obsidian：即使渲染能力略逊于Typora，可以同时查看项目和小标题，维护本地项目，可通过插件上云，免费且全平台支持，具有丰富的插件！
 + Notion：不了解。
 
-最后我选择主要使用Obsidian，单文件使用VSCode
+最后我选择主要使用Obsidian，单文件（主要还是各个项目的README）使用VSCode
 
 ## Obsidian
 

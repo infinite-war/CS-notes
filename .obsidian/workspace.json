@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eaee1b18a238a63f",
+        "id": "ecdc0de56a562720",
         "type": "tabs",
         "children": [
           {
-            "id": "b85c65340032abac",
+            "id": "3c9ee46acc2b8846",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b85c65340032abac",
+  "active": "3c9ee46acc2b8846",
   "lastOpenFiles": [
-    "Programing-Language/Golang/lib/http.md",
-    "Programing-Language/Golang/Intro.md",
-    "Programing-Language/Python/Django.md",
     "Missing-Semester/Linux机器配置指南.md",
-    "Missing-Semester/SSH.md",
-    "Software-Engineering/Docker.md",
     "Missing-Semester/win10开发机配置指南.md",
-    "Linux/LinuxTools.md",
-    "Linux/LinuxSystemAPI.md",
-    "Linux/LinuxNetAPI.md"
+    "Missing-Semester/Git.md",
+    "Missing-Semester/LaTeX.md",
+    "Missing-Semester/Markdown.md",
+    "Missing-Semester/slide.md",
+    "Missing-Semester/SSH.md",
+    "Software-Engineering/Bazel.md",
+    "Software-Engineering/Docker.md",
+    "README.md"
   ]
 }

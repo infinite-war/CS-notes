@@ -1,14 +1,14 @@
 + 备份：
 	+ 桌面
 	+ 数据目录
-	+ Chrome数据目录：`C:\Users\$用户名\AppData\Local\Google\Chrome\User Data\Default\`
-	+ Clash for Windows配置文件：`C:\Users\$用户名\.config`
-	+ wt配置文件：按照实际感受配置、不备份（`C:\Users\$用户名\AppData\Local\Microsoft\Windows Terminal`  ）  
+	+ Chrome数据目录：以上云、不备份
+	+ Clash for Windows配置文件：现用现配，不备份，唯一个性化设置是开机自启动
+	+ wt配置文件：按照实际感受配置、不备份
 		posh配置：已上云
 	+ VSCode配置目录：按文档说明配置、不备份
 	+ Git配置文件：按文档说明配置、不备份
 	---
-	+ Snipaste配置文件：唯一个人位置——开机自启动，故不备份
+	+ Snipaste配置文件：唯一个人配置——开机自启动，故不备份
 
 [姊妹篇：Linux机器配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
 
@@ -134,16 +134,18 @@
 		Please commit your changes or stash them before you merge.
 		Aborting
 		```
-		可通过下面命令解决
+		可通过下面命令解决  
+		win：
 		```powershell
 		git checkout .\.obsidian\workspace.json
 		```
+		linux：
 		```bash
 		git checkout -- ./.obsidian/workspace.json
 		```
 
 ## 5.Windows Terminal
->win11自带wt
+>win11自带wt，但不确定是否自带powershell7
 
 是为诸如cmd和windows powershell这样的命令行程序套一个好看的壳
 >命令行基础，`win + R`键入`cmd`打开命令行程序cmd（Windwos Terminual的命令是`wt`）
@@ -157,7 +159,7 @@
 
 + 关于wt的设置：网上教程颇多，这里指出修改`setting.json`文件和图形化修改等效
 
-### 强化
+### <strike>美化</strike>强化
 >推荐下载方式使用winget（使用Microsoft Store同样能下载）
 
 1. 安装PowerShell7：[官方教程](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)（官方推荐winget）
@@ -175,6 +177,7 @@
 	oh-my-posh本质是一个程序，提供一些命令修改命令行形态，还记得ps7打开会运行一个脚本嘛？我们只需要将设置放入即可美化脚本
 
 + 这里提供我的[ps7配置和oh-my-posh主题](https://github.com/zweix123/posh-config)（自带配置脚本）
+	+ 我的配置中还有一个改键的脚本，将Caps键改为方向键右键，因为posh历史补全使用的是右键，这样嘎嘎快。
 + 实际上通过`$PROFILE`可以让ps7的功能更加丰富，不过需要更多的ps编程经验，我只使用最基本的美化即可。
 
 ### misc
@@ -193,20 +196,20 @@
 
 ## 6.包管理器:Scoop
 **scoop是一个比我最开始想象的要强大得多的包管理器，总之你后续遇到什么依赖库啥的都可以试试在这里有没有**  
-> 项目地址：https://github.com/ScoopInstaller/scoop
 在Windows中正常使用软件通常的流程是去官网下载对应机器和系统的安装包，运行安装包安装，安装过程中会选择诸如下载路径之类的设置。在开发过程中常用的比如Git或者Python这种，下载过程中还要设置更多的选项。同时想要通过命令行使用它们还要将其设置为“环境变量”。但是在实际使用的过程中，基本只会在命令行中或者以命令的形式使用，那么下载过程中下载的诸如添加桌面快捷键、添加右键菜单栏这样的功能是画蛇添足、没有必要的，如果你也这样想，那么Scoop很好用。
 >其实win下还有其他包管理器比如winget和chocolatey，上面终端相关就是用winget下载的，看个人习惯
 
 + Scoop的优点：
 	+ 统一且清楚的管理下载的软件
 	+ 命令行下载、自动配置环境变量
-+ Scoop的缺点：
++ Scoop的*缺点*：
 	+ 不能自动配置win注册表
 	+ 不能自动添加右键菜单栏
 
 	这里要多解释下，因为win是一个图形化操作系统，命令行很高效、图形化也有独特的魅力。上面的缺点有很多问题，比如Scoop可以下载VSCode，但是不能自动设置使用VSCode默认打开`.py`文件、`.c`文件，而且不会自动添加到右键菜单栏，想用VSCode打开一个文件夹的场景不可能用命令行去`code`；再比如`7zip`，在图形化界面下的下载流程肯定是右键压缩包解压而不是使用命令。
 
 + 资源：
+	+ [项目](https://github.com/ScoopInstaller/scoop)
 	+ [官网](https://scoop.sh/#/)
 	+ [文档](https://github.com/ScoopInstaller/Scoop/wiki)
 
@@ -259,17 +262,8 @@
 ### Git
 
 + 安装：`scoop install git`
-+ 配置：
-	+ 配置文件位置：`C:\Users\$用户名\.gitconfig`
-	```bash
-	git config --global user.email "you@example.com"
-	git config --global user.name "Your Name"
-	# 其他配置在使用时看git提示
-	```
-
-+ ssh配置文件（[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md)）
-	>网上有些例子是通过Scoop下载SSH，难道ssh命令不是win机器默认的嘛？
-
++ 配置：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Git.md#config)
++ 配置SSH：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md)
 + Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过ssh链接去push）
 
 ### Python3
@@ -285,7 +279,6 @@
 	+ `scoop install cmake`（`Modern CMake`）
 + 调试所需命令：
 	+ `scoop install gdb`（`gdb`）
-
 
 ## 7.编辑器:VSCode
 处理软件本身，更重要的是插件和配置，VSCode的配置分两个部分：`C:\User\$用户名\.vscode\`目录（插件和配置）和项目目录下的相关配置文件
@@ -325,7 +318,7 @@
 	+ 补全建议：打开设置，键入`preview`，选择下面的选项  
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/suggest perview.png" style="zoom:64%;" div align=center />
 	+ 格式化：
-		+ 自动格式化：`format` -> `Editor: Format On Save`
+		+ 自动格式化：`format` -> `Editor: Format On Save`，看个人喜好
 
 + 插件推荐：
 	+ `Remote-SSH`：远程开发必备（据说有漏洞，不过我不在乎）
@@ -362,7 +355,7 @@
 	+ 渲染：Markdown Preview Enhanced：`Ctrl + k -> v`
 	+ 编辑：Markdown All in One
 		+ 提供补全
-		+ 生成目录（后续我会开发批量生成Markdown目录的工具）
+		+ 生成目录（我已经开发批量生成Markdown目录的工具（[项目地址](https://github.com/zweix123/md-admin)））
 
 # 工具软件
 
@@ -393,12 +386,9 @@
 见我关于基于Web的幻灯片演示的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/slide.md)
 
 ## LaTeX
-这边建议使用overleaf
+我初步配过，这边建议使用overleaf
 
 ## 虚拟机VMware Workstation Pro
-
-
-
 
 ## iVam
 电脑和手机分别安装通过数据线连接可将手机作为笔记本摄像头
@@ -408,3 +398,4 @@
 + 这样的软件同样要关注下载文件或者消息记录的保存位置，在设置中修改
 	+ 注意两者的设置都是关于某个用户的，而不是整个软件，可以随时关注下
 >Tim的本质就是QQ，所谓的登录WeChat并不是和微信的消息互通，另外就是QQ和Tim的消息也不是完全互通，所以选择一个软件就要一直用。
+>>不是Tim以后会咋样，这用的我心惊胆战的

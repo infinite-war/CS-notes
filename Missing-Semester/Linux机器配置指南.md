@@ -46,19 +46,18 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 3. 更新：
 	```bash
 	sudo apt update # 让系统知道所有包的最新信息
-	sudo apt upgrade # 让新的包的信息更新所有软件
+	sudo apt upgrade # 让新的包的信息更新所有软件  # 时间较长
 	```
 
-
 ## 4.下载刚需软件
-
+>Linux下通常有包管理器
 ### vim
 
 ### tmux
 
 ### git
 
-+ 初始化：类似Windows（[我的win10开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#git)）
++ 配置：我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Git.md#config)
 
 ### zsh
 + shell通识：
@@ -76,13 +75,10 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 	>实际上这边建议不要着急修改，在clone oh-my-zsh会提示是否修改默认shell
 
 2. 下载oh-my-posh：[Manual](https://github.com/ohmyzsh/ohmyzsh/wiki)
-	>这里提供几个国内镜像源：
-	>```bash
-	>sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)"
-	>sh -c "$(wget -O- https://gitee.com/pocmon/mirrors/raw/master/tools/install.sh)"
-	>```
+
+	>这里提供国内镜像源：`https://gitee.com/mirrors/oh-my-zsh`，clone到本地修改名字为`.oh-my-zsh`即可
 	
-	我在使用VMware workstation时出现错误，通过这两个博客解决（[一个](https://blog.csdn.net/m0_56681539/article/details/127912811)、[另一个](https://blog.csdn.net/u014454538/article/details/123563034)）
+	>我在使用VMware workstation时出现错误，通过这两个博客解决（[一个](https://blog.csdn.net/m0_56681539/article/details/127912811)、[另一个](https://blog.csdn.net/u014454538/article/details/123563034)）
 
 + 命令：
 	+ 刷新配置效果：`source ~/.zshrc`
@@ -100,7 +96,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 	>插件的能否下载依照Github的可连接程度，注意本机clone下载后scp到服务器的方法中，如果本机和服务器的OS不同的情况下，可能由于编码原因报错
 
 	+ `git`：默认安装，手动配置，为git命令提供缩写，可在插件目录下的sh文件查看
-	+ `z`：默认安装，手动配置，目录快速调转
+	+ `z`：默认安装，手动配置，目录快速调转（我后来不再使用）
 		+ history：`~/.z`
 		+ 命令：`z 目录`
 	+ `zsh-syntax-highlighting`：手动安装，手动配置，语法高亮
@@ -112,7 +108,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 		```bash
 		git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 		```
-		>这里的网址就是没有`.git`，Manual就没有  
+		>这里的网址就是没有`.git`，Manual中就没有  
 
 		下面提供国内镜像
 		```bash
@@ -124,7 +120,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 
 # 物理机
 
-## 6.改建
+## 6.改键
 + `Caps`->`right`：用于zsh的历史命令补全
 ```bash
 # xmodmap -pke
@@ -183,7 +179,6 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 + 本机ssh到虚拟机[教程](https://cloud.tencent.com/developer/article/1679861#:~:text=windows%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%A6%82%E4%BD%95SSH%E8%BF%9E%E6%8E%A5VMware%E7%9A%84Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%201%201%E3%80%81%E5%AE%89%E8%A3%85%E5%A5%BDUbuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%202,2%E3%80%81%E5%BB%BA%E7%AB%8BIP%E6%98%A0%E5%B0%84%203%203%E3%80%81%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BASSH%204%204%E3%80%81%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%98%B2%E7%81%AB%E5%A2%99)
 
 # 服务器
-
 
 # misc
 

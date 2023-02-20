@@ -16,7 +16,6 @@ sudo usermod -aG docker $USER
 ---
 + `docker images`：列出本地所有的镜像
 + `docker pull ubuntu:20.04`：从docker官网上拉取一个镜像
-
 + `docker image rm ubuntu:20.04`：删除镜像
 
 + 镜像的迁移：
