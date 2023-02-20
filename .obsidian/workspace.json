@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "510ed3776bc2e76f",
+        "id": "9765676f5deda135",
         "type": "tabs",
         "children": [
           {
-            "id": "b17d93b0f2d1152b",
+            "id": "08227c947f180e78",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b17d93b0f2d1152b",
+  "active": "08227c947f180e78",
   "lastOpenFiles": [
+    "Programing-Language/Python/Django.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Missing-Semester/SSH.md",
     "Software-Engineering/Docker.md",
     "Linux/LinuxTools.md",
     "Linux/LinuxSystemAPI.md",
     "Linux/LinuxNetAPI.md",
     "Linux/GeneralKnowledge.md",
     "Linux/未命名.md",
-    "Linux/GNU/Modern CMake.md",
-    "Linux/GNU/GNU Makefile.md",
-    "Linux/GNU/gdb.md",
-    "Linux/GNU/gcc.md"
+    "Linux/GNU/Modern CMake.md"
   ]
 }
