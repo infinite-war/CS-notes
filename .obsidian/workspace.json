@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "669288a5df98b585",
+        "id": "510ed3776bc2e76f",
         "type": "tabs",
         "children": [
           {
-            "id": "94b47e40b7160c46",
+            "id": "b17d93b0f2d1152b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "94b47e40b7160c46",
+  "active": "b17d93b0f2d1152b",
   "lastOpenFiles": [
-    "README.md",
     "Software-Engineering/Docker.md",
-    "Missing-Semester/Git.md",
-    "Missing-Semester/win10开发机配置指南.md",
-    "Distributed-System/RPC.md",
-    "Programing-Language/Golang/lib/ProtoBuf.md",
-    "Software-Engineering/Bazel.md",
-    "Missing-Semester/SSH.md",
-    "Missing-Semester/slide.md",
-    "Missing-Semester/Markdown.md"
+    "Linux/LinuxTools.md",
+    "Linux/LinuxSystemAPI.md",
+    "Linux/LinuxNetAPI.md",
+    "Linux/GeneralKnowledge.md",
+    "Linux/未命名.md",
+    "Linux/GNU/Modern CMake.md",
+    "Linux/GNU/GNU Makefile.md",
+    "Linux/GNU/gdb.md",
+    "Linux/GNU/gcc.md"
   ]
 }

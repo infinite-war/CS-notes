@@ -40,9 +40,13 @@ docker [container] restart CONTAINER # 重启容器
 
 docker [container] run -itd ubuntu:20.04  # 从镜像中创建并启动一个容器
 docker [container] run -it  ubuntu:20.04  # 从镜像中创建、启动并进入一个容器
-
-docker [container] attach CONTAINER  # 进入容器
 ```
+
+```bash
+docker exec 容器ID /bin/bash  # 进入容器
+# 这个命令会卡住 docker [container] attach CONTAINER  # 进入容器
+```
+
 
 + `Ctrl+p -> Ctrl+q`：挂起容器
 + `Ctrl+d`：关掉容器

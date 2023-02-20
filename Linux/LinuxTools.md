@@ -43,6 +43,8 @@
 		+ 选中：按`shift`键同时鼠标选中
 		+ 之后复制粘贴同Shell
 
++ tmux外关闭窗口：`tmux kill-session -t 0`（`tmux ls`）查看
+
 # 文本编辑器vim
 
 + 功能：
