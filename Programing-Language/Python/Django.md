@@ -81,7 +81,7 @@
 + 同步数据：
 	```bash
 	python3 manage.py migrate
-		```
+	```
 
 ## 运行体验
 
@@ -177,7 +177,28 @@ urlpatterns = [
 ]
 ```
 
-## 文件系统
+## 系统架构
+
++ 系统架构和文件结构的关系：在不再拆分app的情况下，在每个项目文件结构的”终端“，都有一个系统架构的目录树
+	+ 图片音频类资源：如上
+	+ CSS类资源：一个大部件基本就一个，比如只有一个`menu.css`
+	+ JavaScript类资源：
+		>如果Js资源同样细分成小文件，在引用时由于并行读取太多文件会太慢
+		
+		所以src目录中仍然如上，所以将每个部件的Js文件拼接成一个文件到dist中
+		+ 脚本如下：
+
+			```bash
+			#! /bin/bash
+			
+			JS_PATH=拼接Js文件的根目录
+			JS_PATH_DIST=${JS_PATH}dist/
+			JS_PATH_SRC=${JS_PATH}src/
+			
+			find $JS_PATH_SRC -type f -name '*.js' | sort | xargs cat > ${JS_PATH_DIST}game.js
+			```
+	+ template资源：如上
+		>本项目还支持多终端，故还多一个目录`multiends`
 
 ### 项目系统设计
 
@@ -212,28 +233,7 @@ urlpatterns = [
 
 			 说明见下
 
-### Sum
 
-+ 系统架构和文件结构的关系：在不再拆分app的情况下，在每个项目文件结构的”终端“，都有一个系统架构的目录树
-	+ 图片音频类资源：如上
-	+ CSS类资源：一个大部件基本就一个，比如只有一个`menu.css`
-	+ JavaScript类资源：
-		>如果Js资源同样细分成小文件，在引用时由于并行读取太多文件会太慢
-		
-		所以src目录中仍然如上，所以将每个部件的Js文件拼接成一个文件到dist中
-		+ 脚本如下：
-
-			```bash
-			#! /bin/bash
-			
-			JS_PATH=拼接Js文件的根目录
-			JS_PATH_DIST=${JS_PATH}dist/
-			JS_PATH_SRC=${JS_PATH}src/
-			
-			find $JS_PATH_SRC -type f -name '*.js' | sort | xargs cat > ${JS_PATH_DIST}game.js
-			```
-	+ template资源：如上
-		>本项目还支持多终端，故还多一个目录`multiends`
 
 ---
 

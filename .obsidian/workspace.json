@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "510ed3776bc2e76f",
+        "id": "46369fce8ae61752",
         "type": "tabs",
         "children": [
           {
-            "id": "b17d93b0f2d1152b",
+            "id": "1c55043ad1bfd878",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b17d93b0f2d1152b",
+  "active": "1c55043ad1bfd878",
   "lastOpenFiles": [
+    "Missing-Semester/win10开发机配置指南.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Programing-Language/Python/Django.md",
+    "Distributed-System/MapReduce.md",
+    "Missing-Semester/SSH.md",
     "Software-Engineering/Docker.md",
     "Linux/LinuxTools.md",
     "Linux/LinuxSystemAPI.md",
     "Linux/LinuxNetAPI.md",
-    "Linux/GeneralKnowledge.md",
-    "Linux/未命名.md",
-    "Linux/GNU/Modern CMake.md",
-    "Linux/GNU/GNU Makefile.md",
-    "Linux/GNU/gdb.md",
-    "Linux/GNU/gcc.md"
+    "Linux/GeneralKnowledge.md"
   ]
 }
