@@ -2,11 +2,8 @@
 + 学习提示：
 	+ y总的工程课以实用为主，对原理性的解释不多，要多总结思考
 	+ y总强行用终端开发，是个很好的练习机会，不过VSCode的remoting SSH也挺香。
-
 # misc
-
 + Django提供一个ipython：`python3 manage.py shell`
-
 # INIT
 
 ## 搭建环境

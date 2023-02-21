@@ -3,7 +3,7 @@ Docker是一种类似虚拟机的软件，可以管理多个image镜像，每个
 >类比类和对象
 
 ## Install
-STFW，应该只需要一个命令
+这个[手册](https://yeasy.gitbook.io/docker_practice/install)比官网方便
 
 ## Config
 docker很多命令需要sudo，为了避免麻烦，可以将当前用户将入到安装时自动创建的docker用户组中
@@ -16,7 +16,6 @@ sudo usermod -aG docker $USER
 ---
 + `docker images`：列出本地所有的镜像
 + `docker pull ubuntu:20.04`：从docker官网上拉取一个镜像
-
 + `docker image rm ubuntu:20.04`：删除镜像
 
 + 镜像的迁移：
