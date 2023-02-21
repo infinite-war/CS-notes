@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "654e56ae81ef6323",
+        "id": "dae8be88d1fd1081",
         "type": "tabs",
         "children": [
           {
-            "id": "9b49ff1cfe7c4b14",
+            "id": "6cfe68c8f8683de4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "78f0be2b903b602d",
+  "active": "6cfe68c8f8683de4",
   "lastOpenFiles": [
     "Programing-Language/Python/Django.md",
     "README.md"

@@ -285,15 +285,14 @@ Django账号系统的扩充
 1. 在`~/app/models`目录下创建表`表名/表名.py`
 	```python
 	from django.db import models                                                         
-     from django.contrib.auth.models import User
-     
-     
-     class Player(models.Model):
-         user = models.OneToOneField(User, on_delete=models.CASCADE)
-         photo = models.URLField(max_length=256, blank=True)
-     
-         def __str__(self):
-             return str(self.user)
+	from django.contrib.auth.models import User
+	
+	class Player(models.Model):
+		user = models.OneToOneField(User, on_delete=models.CASCADE)
+		photo = models.URLField(max_length=256, blank=True)
+	
+	def __str__(self):
+		return str(self.user)
 	```
 	+ 一个表对应一个Class  
 		一条数据对应一个对象
@@ -302,7 +301,9 @@ Django账号系统的扩充
 	```python
 	from django.contrib import admin
 	from game.models.player.player import Player
+	
 	# Register your models here.
+	
 	admin.site.register(Player)
 	```
 3. 运行命令：更新数据库
