@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "65f26acb8d63b33a",
+        "id": "3d6c633d5c36d57c",
         "type": "tabs",
         "children": [
           {
-            "id": "93a1a6a0d40ccdf1",
+            "id": "54947362bfc2bb95",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -101,12 +101,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
           {
-            "id": "f24a296047342127",
+            "id": "91c1cd31b010c2e4",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -129,10 +129,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "54947362bfc2bb95",
   "lastOpenFiles": [
-    "Operating-System/操作系统1 进程.md",
     "Operating-System/操作系统0 概述.md",
+    "Operating-System/操作系统1 进程.md",
     "Operating-System/操作系统2 内存.md",
     "Operating-System/操作系统3 文件.md",
     "Operating-System/操作系统4 IO.md",
