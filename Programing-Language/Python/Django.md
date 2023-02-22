@@ -8,7 +8,7 @@
 
 ## 搭建环境
 
-1. 购买云服务器、配置服务器（[linux云服务器配置指南](https://github.com/zweix123/blog/blob/master/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)）、配置堡垒机（AC Terminal和本地）的SSH。
+1. 购买云服务器、配置服务器（[linux云服务器配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)）、配置堡垒机（AC Terminal和本地）的SSH。
 2. 在服务器上安装docker（[教程](https://yeasy.gitbook.io/docker_practice/install/ubuntu)）。
 3. 将Acwing的Django课程Docker镜像scp到云服务器上：
 	```bash
@@ -44,12 +44,13 @@
 		```
 		.
 		\`-- 项目根目录
-		    |-- 与项目同名的子目录
-		    |   |-- __init__.py
-		    |   |-- asgi.py
-		    |   |-- settings.py
-		    |   |-- urls.py
-		    |   \`-- wsgi.py
+		    | -- 与项目同名的子目录 |                |
+		    | --------------------- | -------------- |
+		    |                       | -- __init__.py |
+		    |                       | -- asgi.py     |
+		    |                       | -- settings.py |
+		    |                       | -- urls.py     |
+		    | \`-- wsgi.py          |                |
 		    \`-- manage.py
 		```
 
@@ -90,18 +91,19 @@ python3 manage.py runserver 0.0.0.0:8000
 
 + 运行后文件结构`tree`：
 	```
-	|-- 与项目同名目录
-	|   |-- __init__.py
-	|   |-- __pycache__
-	|   |   |-- __init__.cpython-38.pyc
-	|   |   |-- settings.cpython-38.pyc
-	|   |   |-- urls.cpython-38.pyc
-	|   |   \`-- wsgi.cpython-38.pyc
-	|   |-- asgi.py
-	|   |-- settings.py
-	|   |-- urls.py
-	|   \`-- wsgi.py
-	|-- db.sqlite3
+	| -- 与项目同名目录 |                          |                            |
+	| ----------------- | ------------------------ | -------------------------- |
+	|                   | -- __init__.py           |                            |
+	|                   | -- __pycache__           |                            |
+	|                   |                          | -- __init__.cpython-38.pyc |
+	|                   |                          | -- settings.cpython-38.pyc |
+	|                   |                          | -- urls.cpython-38.pyc     |
+	|                   | \`-- wsgi.cpython-38.pyc |                            |
+	|                   | -- asgi.py               |                            |
+	|                   | -- settings.py           |                            |
+	|                   | -- urls.py               |                            |
+	| \`-- wsgi.py      |                          |                            |
+	| -- db.sqlite3     |                          |                            |
 	\`-- manage.py
 	```
 
@@ -203,8 +205,9 @@ urlpatterns = [
 + 在Acwing的项目中：
 	```
 	acapp
-	  |---menu
-	  |---playground
+	  | ---menu       |
+	  | ------------- |
+	  | ---playground |
 	  \`--settings
 	```
 
@@ -340,16 +343,70 @@ Django账号系统的扩充
 	```python
 	from django.core.cache import cache
 	
-	cache.keys("*")  # 查找关键字, 支持正则表达式
-	cache.set("key名", 值, 存在时间(单位是秒)设置None就是不过期)
-	
-	cache.has_key("key")
-	
-	cache,get("key")     # 获得值
-	cache.delete("key")  # 删掉
+	cache.keys("*")  # 按关键字查找，支持正则表达式，这样为查找所有关键字
+	cache.set(key, value, time)  # time单位是秒，设为None为不过期
+	cache.has_key(key)
+	cache,get(key)
+	cache.delete(key)
 	```
 
-  # QAuth2第三方授权
+# QAuth2第三方授权
+![](https://cdn.acwing.com/media/article/image/2021/11/25/1_1ddf070e4d-weboauth2.png)
+1. Client向Web请求使用AcWing账号登录
+2. Web向AcWing请求OAuth2授权登录，上报信息（），这个过程使用AcWing的API
+	```
+	https://www.acwing.com/third_party/api/oauth2/web/authorize/?appid=APPID&redirect_uri=REDIRECT_URI&scope=SCOPE&state=STATE
+	```
+	| 参数         | 是否必须 | 说明                 |
+	| ------------ | -------- | -------------------- |
+	| appid        | 是       | acapp唯一ID          |
+	| redirect_uri | 是       | 接收授权的范围       |
+	| scope        | 是       | 申请授权的范围       |
+	| state        | 否       | 建议带上作为请求的ID |
+	|              |          |                      |
+QAuth2开始
+3. AcWing询问Client是否确认授权
+4. Client确认授权
+保证Client安全
++ Clinet确认后，AcWing对第二步的询问给出返回
+	```
+	redirect_uri?code=CODE&state=STATE  # code为授权码，state同上
+	```
+5. AcWing将授权码发送到Web
+6. Web向AcWing再次报送一些信息（之前的必要信息和独属于Web的密钥）
+	```
+	https://www.acwing.com/third_party/api/oauth2/access_token/?appid=APPID&secret=APPSECRET&code=CODE
+	```
+	appid和code即为之前的信息，secret即为acapp应用密钥
+7. AcWing向Web返回“令牌”
+保护Web安全
++ 具体的：
+	+ 申请成功示例：
+		```
+		{
+			"access_token": "ACCESS_TOKEN", 
+			 "expires_in": 7200, 
+			 "refresh_token": "REFRESH_TOKEN",
+			  "openid": "OPENID", 
+			  "scope": "SCOPE",
+		}
+		```
+	+ 申请失败示例：
+		```
+		{
+			 "errcode": 40001,
+			 "errmsg": "code expired",  # 授权码过期
+		}
+		```
+
+	| 参数          | 说明                                                                       |
+	| ------------- | -------------------------------------------------------------------------- |
+	| access_token  | 授权令牌，有效期2小时                                                      |
+	| expires_in    | 授权令牌还有多久过期，单位（秒）                                           |
+	| refresh_token | 用于刷新access_token的令牌，有效期30天                                     |
+	| openid        | 用户的id。每个AcWing用户在每个acapp中授权的openid是唯一的,可用于识别用户。 |
+	| scope         | 用户授权的范围。目前范围为userinfo，包括用户名、头像                       |
+
 
 1. 用户在网站点击第三方授权登录
 2. 网站向对应第三方上报`Appid`（由第三方规定，携带对应信息），通过OAuth2获得`code`授权码
@@ -358,13 +415,13 @@ Django账号系统的扩充
      AcWingOS.api.oauth2.authorize(appid, redirect_uri, scope, state, callback);
      ```
 
-     | 参数           | 是否必须 | 说明                                                         |
-     | ------------ | -------- | ------------------------------------------------------------ |
-     | appid          | 是       | 应用的唯一id，可以在AcWing编辑AcApp的界面里看到              |
-     | redirect_uri | 是       | 接收授权码的地址。需要用urllib.parse.quote对链接进行处理     |
-     | scope          | 是       | 申请授权的范围。目前只需填userinfo                           |
-     | state           | 是       | 用于判断请求和回调的一致性，授权成功后后原样返回。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议第三方带上该参数，可设置为简单的随机数（如果是将第三方授权登录绑定到现有账号上，那么推荐用随机数 + user_id作为state的值，可以有效防止CSRF攻击）  |
-     | callback      | 是       | redirect_uri返回后的回调函数                                 |
+     | 参数         | 是否必须 | 说明                                                                                                                                                                                                                                                |
+     | ------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+     | appid        | 是       | 应用的唯一id，可以在AcWing编辑AcApp的界面里看到                                                                                                                                                                                                     |
+     | redirect_uri | 是       | 接收授权码的地址。需要用urllib.parse.quote对链接进行处理                                                                                                                                                                                            |
+     | scope        | 是       | 申请授权的范围。目前只需填userinfo                                                                                                                                                                                                                  |
+     | state        | 是       | 用于判断请求和回调的一致性，授权成功后后原样返回。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议第三方带上该参数，可设置为简单的随机数（如果是将第三方授权登录绑定到现有账号上，那么推荐用随机数 + user_id作为state的值，可以有效防止CSRF攻击） |
+     | callback     | 是       | redirect_uri返回后的回调函数                                                                                                                                                                                                                        |
 
      + 返回：
        + 用户同意授权后，会将code和state传递给redirect_uri。
@@ -373,11 +430,6 @@ Django账号系统的扩充
              errcode: "40010"
              errmsg: "user reject"
          }
-
-3. 第三方向用户返回页面，询问是否授权：规定时间内同意
-4. 用户同意授权
-5. 第三方给网站一个`code`授权码说明同一授权
-6. 网站将`code`授权码、`Appid`、`Appsecret`（和第三方规定的密钥）发送给第三方申请授权
-7. 第三方返回`access_token`授权令牌和`openid`（第三方识别网站的ID）
-8. 网站通过授权令牌和`openid`申请一些第三方像公开的信息
-9. 第三方返回对应信息
+至此达成Client和Web都安全的局面  
+Web可以利用令牌获得在权限内的信息，同时有两个令牌，一个用来获得信息，时效短；另一个用来刷新令牌，失效长  
+这里无论是获得信息还是刷新令牌都有对应的API

@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "c0bebfa7e916690f",
+    "id": "ae587e37257465f4",
     "type": "split",
     "children": [
       {
-        "id": "dae8be88d1fd1081",
+        "id": "de1d89984536a4fa",
         "type": "tabs",
         "children": [
           {
-            "id": "6cfe68c8f8683de4",
+            "id": "2dfc322b0993390a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -21,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a18473046897c272",
+    "id": "98d037cbdfab828e",
     "type": "split",
     "children": [
       {
-        "id": "ae35fe0779df4844",
+        "id": "1a63beb78f0a591f",
         "type": "tabs",
         "children": [
           {
-            "id": "78f0be2b903b602d",
+            "id": "cc8f302ae7b358ff",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +39,7 @@
             }
           },
           {
-            "id": "e7e85e578dc959be",
+            "id": "99b0d8f72eac3469",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,15 +60,15 @@
     "width": 200
   },
   "right": {
-    "id": "5a986e5163acea7e",
+    "id": "0c1a63d41922c647",
     "type": "split",
     "children": [
       {
-        "id": "5bbfd01541cb0c85",
+        "id": "ca5d55cd8a05d2ec",
         "type": "tabs",
         "children": [
           {
-            "id": "652908ef65aa88dc",
+            "id": "2a9ffbf423c5d99b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -84,7 +84,7 @@
             }
           },
           {
-            "id": "318e4debfe5e017b",
+            "id": "7e507a4d2c334fce",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -95,7 +95,7 @@
             }
           },
           {
-            "id": "5391b77fd735a308",
+            "id": "e570664dc2658df8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -106,7 +106,7 @@
             }
           },
           {
-            "id": "4131778876c8ded1",
+            "id": "f24a296047342127",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -129,9 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6cfe68c8f8683de4",
+  "active": "2dfc322b0993390a",
   "lastOpenFiles": [
     "Programing-Language/Python/Django.md",
-    "README.md"
+    "Operating-System/操作系统1 进程.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Operating-System/操作系统0 概述.md",
+    "Missing-Semester/Git.md",
+    "Operating-System/操作系统4 IO.md",
+    "Operating-System/操作系统3 文件.md",
+    "Operating-System/操作系统2 内存.md",
+    "Missing-Semester/win10开发机配置指南.md",
+    "Missing-Semester/LaTeX.md"
   ]
 }
