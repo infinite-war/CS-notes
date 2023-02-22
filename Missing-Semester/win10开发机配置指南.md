@@ -1,14 +1,14 @@
 + 备份：
-	+ 桌面
-	+ 数据目录
-	+ Chrome数据目录：以上云、不备份
-	+ Clash for Windows配置文件：现用现配，不备份，唯一个性化设置是开机自启动
+	+ 桌面：
+	+ 数据目录：
+	+ Chrome数据目录：已上云、不备份
+	+ Clash for Windows配置文件：现用现配，不备份，唯一个性化设置是开机自启动+快捷键F2
 	+ wt配置文件：按照实际感受配置、不备份
 		posh配置：已上云
 	+ VSCode配置目录：按文档说明配置、不备份
 	+ Git配置文件：按文档说明配置、不备份
 	---
-	+ Snipaste配置文件：唯一个人配置——开机自启动，故不备份
+	+ Snipaste配置文件：唯一个人配置开机自启动，不备份
 
 [姊妹篇：Linux机器配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
 
@@ -24,8 +24,8 @@
 >4. 软件推荐
 
 + 须知：
-	+ STFW：有些名词会导致递归学习没有解释，有些问题教程颇多、这里只提供概要，请读者"Search The Friendly Web"
-	+ STFM：软件的下载通常有大量教程，但是软件更新迭代很快，不同环境、不同软件版本，流程就很可能不一样，尽量依照Manual
+	+ STFW：有些名词会导致递归学习没有解释，有些问题教程颇多，这里只提供概要，请读者"Search The Friendly Web"
+	+ STFM：软件的下载通常有大量教程，但是软件更新迭代很快，不同环境、不同软件版本，流程就很可能不一样，本人尽量依照Manual
 	+ 博客内容更多的是符合我个人的习惯，请读者见仁见智
 
 + 环境：我的Windows机器的规格是：
@@ -68,7 +68,7 @@
 	+ 中英切换：只保留`Ctrl + Space`
 
 + 文件的查看：
-	+ *<font color="red">打开文件扩展名</font>*    <---
+	+ *<font color="red">打开文件扩展名</font>*    <<<------
 	+ 打开隐藏的项目
 
 + 电源设置：
@@ -81,7 +81,7 @@
 	| 电源按钮 | 休眠   | 休眠   |
 	| 关盖     | 不使用 | 不使用 |
 
-+ 改键：改建脚本在
++ 改键（[改键脚本](https://github.com/zweix123/posh-config/blob/master/ChangeKey.reg)）：
 	+ 将`Caps`键映射到`Right`键用于posh历史补全（不然方向键右键太远了）
 ---
 
@@ -103,6 +103,8 @@
 		+ 字幕位置有点碍眼
 	+ 划词翻译
 		+ 可单开网页处理英文PDF
+	+ 油猴脚本：
+		>打个[广告](https://github.com/zweix123/BilibiliProgressBar)
 
 ## 2.解压缩:7z
 一款简单的解压缩软件
@@ -147,7 +149,7 @@
 ## 5.Windows Terminal
 >win11自带wt，但不确定是否自带powershell7
 
-是为诸如cmd和windows powershell这样的命令行程序套一个好看的壳
+是为诸如cmd和windows powershell这样的命令行程序套一个好看的壳（在oh-my-posh的帮助下可以强化）
 >命令行基础，`win + R`键入`cmd`打开命令行程序cmd（Windwos Terminual的命令是`wt`）
 
 1. 下载：使用国内网在Microsoft Store直接下载即可（Manual推荐）
@@ -223,11 +225,11 @@
 + 文件结构：
 	```
 	Scoop
-	  |---apps     # 下载的软件安装位置
-	  |---buckets  # 软件源(或者可以这样理解)
-	  |---cache    # 下载的安装包
-	  |---persist  # 用户数据
-	  `---shims    # 命令位置
+	  | ---apps      # 下载的软件安装位置
+	  | ---buckets   # 软件源(或者可以这样理解)
+	  | ---cache     # 下载的安装包
+	  | ---persist   # 用户数据
+	  `---shims      # 命令位置
 	```
 
 + 配置：
@@ -280,6 +282,9 @@
 + 调试所需命令：
 	+ `scoop install gdb`（`gdb`）
 
+### Java
+[Manual](https://scoop-docs.vercel.app/docs/guides/Java.html#choice-of-jdks)
+
 ## 7.编辑器:VSCode
 处理软件本身，更重要的是插件和配置，VSCode的配置分两个部分：`C:\User\$用户名\.vscode\`目录（插件和配置）和项目目录下的相关配置文件
 
@@ -304,7 +309,6 @@
 	+ 字体：
 		+ 编辑器字体：打开设置，键入`Editor Font Family`  
 			>需要插件`FiraCode font - Professional Font for Developers`
-
 			<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/编辑器字体.png" style="zoom:60%;" div align=center />
 		+ 终端字体：打开设置，键入`Terminal Font Family`  
 			<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/终端字体.png" style="zoom:57.5%;" div align=center />
@@ -317,18 +321,11 @@
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/cursor smooth.png" style="zoom:75%;" div align=center />  
 	+ 补全建议：打开设置，键入`preview`，选择下面的选项  
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/suggest perview.png" style="zoom:64%;" div align=center />
-	+ 格式化：
-		+ 自动格式化：`format` -> `Editor: Format On Save`，看个人喜好
-
+	+ 格式化：手动使用快捷键`Shift + Alt + F`
 + 插件推荐：
 	+ `Remote-SSH`：远程开发必备（据说有漏洞，不过我不在乎）
-	+ `Error Lens`：报错提示方式，看个人喜好
-	+ `Tabnine`：AI 自动补全插件，看个人喜好
-	+ 翻译：
-		+ Comment Translate：划词翻译（默认Target是英语）
-		+ 还有英译汉的插件（解决起名难题）
 
-+ 打开流程：右键项目文件通过Code打开，然后开始编码
+ + 工作流程：右键项目文件通过Code打开，然后开始编码
 
 ### 开发Python
 
@@ -353,6 +350,9 @@
 ---
 
 + 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
+
+### 开发Java
+[通过Scoop开发Java](#Java)
 
 ### 编辑MarkDown
 见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
@@ -392,7 +392,11 @@
 见我关于基于Web的幻灯片演示的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/slide.md)
 
 ## LaTeX
-我初步配过，这边建议使用overleaf
+我初步尝试配过，这边建议使用overleaf
+
+## 画图
+线索：PlantUML
+>它需要的所有包Scoop都可以安装呦
 
 ## 虚拟机VMware Workstation Pro
 
@@ -405,3 +409,4 @@
 	+ 注意两者的设置都是关于某个用户的，而不是整个软件，可以随时关注下
 >Tim的本质就是QQ，所谓的登录WeChat并不是和微信的消息互通，另外就是QQ和Tim的消息也不是完全互通，所以选择一个软件就要一直用。
 >>不是Tim以后会咋样，这用的我心惊胆战的
+

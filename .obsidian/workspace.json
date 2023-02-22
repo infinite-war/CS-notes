@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3d6c633d5c36d57c",
+        "id": "00e6502b34aea0bf",
         "type": "tabs",
         "children": [
           {
-            "id": "54947362bfc2bb95",
+            "id": "d76ed6a3b65b2fd0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "54947362bfc2bb95",
+  "active": "d76ed6a3b65b2fd0",
   "lastOpenFiles": [
+    "Software-Engineering/UML.md",
+    "Missing-Semester/win10开发机配置指南.md",
+    "Missing-Semester/Markdown.md",
     "Operating-System/操作系统0 概述.md",
     "Operating-System/操作系统1 进程.md",
     "Operating-System/操作系统2 内存.md",
     "Operating-System/操作系统3 文件.md",
     "Operating-System/操作系统4 IO.md",
     "Programing-Language/Python/Django.md",
-    "Missing-Semester/Linux机器配置指南.md",
-    "Missing-Semester/Git.md",
-    "Missing-Semester/win10开发机配置指南.md",
-    "Missing-Semester/LaTeX.md"
+    "Missing-Semester/Linux机器配置指南.md"
   ]
 }
