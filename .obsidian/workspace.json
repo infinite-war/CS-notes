@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "de1d89984536a4fa",
+        "id": "65f26acb8d63b33a",
         "type": "tabs",
         "children": [
           {
-            "id": "2dfc322b0993390a",
+            "id": "93a1a6a0d40ccdf1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 214.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -129,16 +129,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2dfc322b0993390a",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Programing-Language/Python/Django.md",
     "Operating-System/操作系统1 进程.md",
-    "Missing-Semester/Linux机器配置指南.md",
     "Operating-System/操作系统0 概述.md",
-    "Missing-Semester/Git.md",
-    "Operating-System/操作系统4 IO.md",
-    "Operating-System/操作系统3 文件.md",
     "Operating-System/操作系统2 内存.md",
+    "Operating-System/操作系统3 文件.md",
+    "Operating-System/操作系统4 IO.md",
+    "Programing-Language/Python/Django.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Missing-Semester/Git.md",
     "Missing-Semester/win10开发机配置指南.md",
     "Missing-Semester/LaTeX.md"
   ]
