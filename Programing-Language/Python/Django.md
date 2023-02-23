@@ -261,7 +261,6 @@ Acwing提供学习用HTTP2协议证书、域名以及配套的nginx配置
 		```
 
 Acwing的[讲义](https://www.acwing.com/file_system/file/content/whole/index/content/3257028/)  
-相关命令在[仓库](https://github.com/zweix123/acapp/blob/master/scripts/config.sh)
 
 2. 将Acwing提供的nginx配置HTTP2协议证书放到对应位置
 
@@ -433,3 +432,6 @@ QAuth2开始
 至此达成Client和Web都安全的局面  
 Web可以利用令牌获得在权限内的信息，同时有两个令牌，一个用来获得信息，时效短；另一个用来刷新令牌，失效长  
 这里无论是获得信息还是刷新令牌都有对应的API
+
+# 联机
+## 画面同步
