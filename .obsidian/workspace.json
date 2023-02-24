@@ -1,52 +1,39 @@
 {
   "main": {
-    "id": "c0bebfa7e916690f",
+    "id": "ae587e37257465f4",
     "type": "split",
     "children": [
       {
-        "id": "fd01d864155f8338",
+        "id": "8070264b038d3444",
         "type": "tabs",
         "children": [
           {
-            "id": "61a5fd7b27154253",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programing-Language/C++/4C++面向对象1封装.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "146feec35bdfd98a",
+            "id": "fa7a5ff8d66b61d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Programing-Language/C++/lib/gflags.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "a18473046897c272",
+    "id": "98d037cbdfab828e",
     "type": "split",
     "children": [
       {
-        "id": "ae35fe0779df4844",
+        "id": "1a63beb78f0a591f",
         "type": "tabs",
         "children": [
           {
-            "id": "78f0be2b903b602d",
+            "id": "cc8f302ae7b358ff",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +43,7 @@
             }
           },
           {
-            "id": "e7e85e578dc959be",
+            "id": "99b0d8f72eac3469",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -77,15 +64,15 @@
     "width": 200
   },
   "right": {
-    "id": "5a986e5163acea7e",
+    "id": "0c1a63d41922c647",
     "type": "split",
     "children": [
       {
-        "id": "5bbfd01541cb0c85",
+        "id": "ca5d55cd8a05d2ec",
         "type": "tabs",
         "children": [
           {
-            "id": "652908ef65aa88dc",
+            "id": "2a9ffbf423c5d99b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -102,7 +89,7 @@
             }
           },
           {
-            "id": "318e4debfe5e017b",
+            "id": "7e507a4d2c334fce",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -114,18 +101,18 @@
             }
           },
           {
-            "id": "5391b77fd735a308",
+            "id": "e570664dc2658df8",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
           {
-            "id": "4131778876c8ded1",
+            "id": "91c1cd31b010c2e4",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -143,31 +130,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
+      "canvas:Create new canvas": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "146feec35bdfd98a",
+  "active": "fa7a5ff8d66b61d1",
   "lastOpenFiles": [
-    "Programing-Language/C++/4C++面向对象1封装.md",
-    "Programing-Language/C++/lib/gflags.md",
-    "Programing-Language/C++/lib",
-    "未命名",
-    "Programing-Language/C++/未命名.md",
-    "Programing-Language/C++/现代C++.md",
-    "Distributed-System/RPC.md",
-    "blog/VSCode.md",
+    "Missing-Semester/Markdown.md",
+    "Missing-Semester/LaTeX.md",
+    "Missing-Semester/Git.md",
+    "Missing-Semester/slide.md",
+    "Missing-Semester/Linux机器配置指南.md",
     "Missing-Semester/win10开发机配置指南.md",
-    "Software-Engineering/Docker.md",
-    "Linux/shell.md",
-    "Software-Engineering/Bazel.md",
-    "Algorithm/Data-Structure-and-Sort/Tree.md",
-    "Programing-Language/Java/base.md",
-    "Programing-Language/Python/Django.md",
-    "Programing-Language/Python/Base.md",
-    "README.md"
+    "Missing-Semester/SSH.md",
+    "blog/多机协同.md",
+    "blog/VSCode.md",
+    "Software-Engineering/Docker.md"
   ]
 }
