@@ -356,13 +356,15 @@ Django账号系统的扩充
 	```
 	https://www.acwing.com/third_party/api/oauth2/web/authorize/?appid=APPID&redirect_uri=REDIRECT_URI&scope=SCOPE&state=STATE
 	```
-	| 参数         | 是否必须 | 说明                 |
-	| ------------ | -------- | -------------------- |
-	| appid        | 是       | acapp唯一ID          |
-	| redirect_uri | 是       | 接收授权的范围       |
-	| scope        | 是       | 申请授权的范围       |
-	| state        | 否       | 建议带上作为请求的ID |
-	|              |          |                      |
+	
+    | 参数         | 是否必须 | 说明                 |
+    | ------------ | -------- | -------------------- |
+    | appid        | 是       | acapp唯一ID          |
+    | redirect_uri | 是       | 接收授权的范围       |
+    | scope        | 是       | 申请授权的范围       |
+    | state        | 否       | 建议带上作为请求的ID |
+
+
 QAuth2开始
 3. AcWing询问Client是否确认授权
 4. Client确认授权

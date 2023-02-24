@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "53705114257c6b4c",
+        "id": "9add4f68238ee1d6",
         "type": "tabs",
         "children": [
           {
-            "id": "497273934e146f23",
+            "id": "6fa81cc2988617aa",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,8 +129,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "497273934e146f23",
+  "active": "6fa81cc2988617aa",
   "lastOpenFiles": [
+    "Programing-Language/Java/base.md",
+    "Missing-Semester/slide.md",
     "Programing-Language/Python/Django.md",
     "Missing-Semester/Linux机器配置指南.md",
     "Software-Engineering/Docker.md",
@@ -138,8 +140,6 @@
     "Missing-Semester/win10开发机配置指南.md",
     "Missing-Semester/Markdown.md",
     "Operating-System/操作系统0 概述.md",
-    "Operating-System/操作系统1 进程.md",
-    "Operating-System/操作系统2 内存.md",
-    "Operating-System/操作系统3 文件.md"
+    "Operating-System/操作系统1 进程.md"
   ]
 }
