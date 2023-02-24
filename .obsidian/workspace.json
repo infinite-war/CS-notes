@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e611d0b30de9ff0b",
+        "id": "8070264b038d3444",
         "type": "tabs",
         "children": [
           {
-            "id": "588d2ab312120e7f",
+            "id": "fa7a5ff8d66b61d1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "588d2ab312120e7f",
+  "active": "fa7a5ff8d66b61d1",
   "lastOpenFiles": [
-    "Missing-Semester/SSH.md",
-    "Missing-Semester/win10开发机配置指南.md",
     "Missing-Semester/Markdown.md",
-    "Missing-Semester/Linux机器配置指南.md",
     "Missing-Semester/LaTeX.md",
     "Missing-Semester/Git.md",
+    "Missing-Semester/slide.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Missing-Semester/win10开发机配置指南.md",
+    "Missing-Semester/SSH.md",
     "blog/多机协同.md",
     "blog/VSCode.md",
-    "Software-Engineering/Docker.md",
-    "Programing-Language/Java/base.md"
+    "Software-Engineering/Docker.md"
   ]
 }

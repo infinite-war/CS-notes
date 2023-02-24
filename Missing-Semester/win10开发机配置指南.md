@@ -255,7 +255,7 @@
 
 + 安装：`scoop install git`
 + 配置：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Git.md#config)
-+ 配置SSH：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md)
++ 配置SSH：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md#intro)
 + Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过SSH链接去`push`）
 
 ## 8.编辑器:VSCode

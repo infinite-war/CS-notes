@@ -25,7 +25,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 ```
 
 ## 2.配置SSH
-我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md)
+我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md#intro)
 
 ## 3.修改软件源
 
@@ -51,6 +51,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 
 ## 4.下载刚需软件
 >Linux下通常有包管理器
+
 ### vim
 
 ### tmux
