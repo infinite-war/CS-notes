@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "5c67ab97b17734fe",
+        "id": "e611d0b30de9ff0b",
         "type": "tabs",
         "children": [
           {
-            "id": "444e6c2048410b2a",
+            "id": "588d2ab312120e7f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Missing-Semester/win10开发机配置指南.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8949c1d0284a97b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/VSCode.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/VSCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/VSCode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "blog/VSCode.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -150,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8949c1d0284a97b7",
+  "active": "588d2ab312120e7f",
   "lastOpenFiles": [
-    "Missing-Semester/win10开发机配置指南.md",
-    "blog/VSCode.md",
-    "Missing-Semester/LaTeX.md",
-    "Missing-Semester/Markdown.md",
-    "Software-Engineering/Docker.md",
     "Missing-Semester/SSH.md",
-    "Programing-Language/Java/base.md",
-    "Missing-Semester/slide.md",
-    "Programing-Language/Python/Django.md",
-    "Missing-Semester/Linux机器配置指南.md"
+    "Missing-Semester/win10开发机配置指南.md",
+    "Missing-Semester/Markdown.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Missing-Semester/LaTeX.md",
+    "Missing-Semester/Git.md",
+    "blog/多机协同.md",
+    "blog/VSCode.md",
+    "Software-Engineering/Docker.md",
+    "Programing-Language/Java/base.md"
   ]
 }

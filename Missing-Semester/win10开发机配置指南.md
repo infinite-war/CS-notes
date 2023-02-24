@@ -104,6 +104,10 @@
 懂得都懂
 >记得软件安装包和梯子的备份
 
++ 配置：
+	+ 开机自启动
+	+ 快捷键`F2`
+
 ## 4.笔记软件:Obsidian
 >为什么选择这款软件作为我的Markdown编辑器见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
 
@@ -297,7 +301,8 @@ VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<stri
 
 + 工作流程：右键项目文件通过Code打开，然后开始编码
 
-
+### IDE
+内容多且散，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
 # 工具软件
 
@@ -320,29 +325,21 @@ VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<stri
 	+ 简约（节点大小紧贴文字）
 	+ 可设置成节点任意位置
 	+ 大小放缩区间小
+	+ 切屏不自动停止编辑
 + 缺点：
 	+ 节点限制，并不是数量限制，而是过多的节点会非常卡
 		>不过这是我早期的巨大文件才出现的情况，后来女朋友用这个记笔记我看规模也很大，但是并没有很卡
 
-## 幻灯片
+## 幻灯片jyyslide-md
 见我关于基于Web的幻灯片演示的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/slide.md)
 
-## LaTeX
-我初步尝试配过，这边建议使用overleaf
+## 论文LaTeX
+见我关于这方面的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/LaTeX.md)
 
-## 画图
-线索：PlantUML
->它需要的所有包Scoop都可以安装呦
+## UML图PlantUML
+见我的[教程](https://github.com/zweix123/CS-notes/blob/master/Software-Engineering/UML.md)
 
 ## 虚拟机VMware Workstation Pro
 
-## iVam
-电脑和手机分别安装通过数据线连接可将手机作为笔记本摄像头
-
-## Tim(QQ)和WeChat
-+ 下载过程中的自定义路径是隐藏的，仔细寻找，观察“自定义”字眼
-+ 这样的软件同样要关注下载文件或者消息记录的保存位置，在设置中修改
-	+ 注意两者的设置都是关于某个用户的，而不是整个软件，可以随时关注下
->Tim的本质就是QQ，所谓的登录WeChat并不是和微信的消息互通，另外就是QQ和Tim的消息也不是完全互通，所以选择一个软件就要一直用。
->>不是Tim以后会咋样，这用的我心惊胆战的
-
+## 硬件扩展
+见我的[讨论](https://github.com/zweix123/CS-notes/blob/master/blog/%E5%A4%9A%E6%9C%BA%E5%8D%8F%E5%90%8C.md)
