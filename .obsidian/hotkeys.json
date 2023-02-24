@@ -1,13 +1,4 @@
 {
-  "obsidian-git:commit": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "C"
-    }
-  ],
   "obsidian-git:pull": [
     {
       "modifiers": [
@@ -158,5 +149,23 @@
       "key": "Backspace"
     }
   ],
-  "table-editor-obsidian:next-cell": []
+  "table-editor-obsidian:next-cell": [],
+  "obsidian-git:commit": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ],
+  "obsidian-git:push": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ]
 }
