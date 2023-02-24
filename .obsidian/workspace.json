@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "c0bebfa7e916690f",
+    "id": "ae587e37257465f4",
     "type": "split",
     "children": [
       {
-        "id": "29351458d4aacb0e",
+        "id": "3e399bde3d1300d8",
         "type": "tabs",
         "children": [
           {
-            "id": "29e22874e8d598c5",
+            "id": "204ec459c149b0f4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -21,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a18473046897c272",
+    "id": "98d037cbdfab828e",
     "type": "split",
     "children": [
       {
-        "id": "ae35fe0779df4844",
+        "id": "1a63beb78f0a591f",
         "type": "tabs",
         "children": [
           {
-            "id": "78f0be2b903b602d",
+            "id": "cc8f302ae7b358ff",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +39,7 @@
             }
           },
           {
-            "id": "e7e85e578dc959be",
+            "id": "99b0d8f72eac3469",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,15 +60,15 @@
     "width": 200
   },
   "right": {
-    "id": "5a986e5163acea7e",
+    "id": "0c1a63d41922c647",
     "type": "split",
     "children": [
       {
-        "id": "5bbfd01541cb0c85",
+        "id": "ca5d55cd8a05d2ec",
         "type": "tabs",
         "children": [
           {
-            "id": "652908ef65aa88dc",
+            "id": "2a9ffbf423c5d99b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -84,7 +84,7 @@
             }
           },
           {
-            "id": "318e4debfe5e017b",
+            "id": "7e507a4d2c334fce",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -95,18 +95,18 @@
             }
           },
           {
-            "id": "5391b77fd735a308",
+            "id": "e570664dc2658df8",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
           {
-            "id": "4131778876c8ded1",
+            "id": "91c1cd31b010c2e4",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -129,12 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "29e22874e8d598c5",
+  "active": "204ec459c149b0f4",
   "lastOpenFiles": [
     "Programing-Language/Java/base.md",
+    "Missing-Semester/slide.md",
     "Programing-Language/Python/Django.md",
-    "Programing-Language/Python/Base.md",
-    "Linux/shell.md",
-    "README.md"
+    "Missing-Semester/Linux机器配置指南.md",
+    "Software-Engineering/Docker.md",
+    "Software-Engineering/UML.md",
+    "Missing-Semester/win10开发机配置指南.md",
+    "Missing-Semester/Markdown.md",
+    "Operating-System/操作系统0 概述.md",
+    "Operating-System/操作系统1 进程.md"
   ]
 }
