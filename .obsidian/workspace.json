@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d6574eb144a9dfe1",
+        "id": "e6ba4bafbe16574b",
         "type": "tabs",
         "children": [
           {
-            "id": "09736e1ffd61d242",
+            "id": "b474be5c111ee2ed",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "09736e1ffd61d242",
+  "active": "b474be5c111ee2ed",
   "lastOpenFiles": [
     "Programing-Language/C++/lib/gflags.md",
     "Programing-Language/C++/3C++语法.md",
