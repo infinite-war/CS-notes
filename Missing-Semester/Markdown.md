@@ -50,6 +50,8 @@ Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同
 + 使用：
 	+ [win下安装和插件推荐](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#4%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6obsidian)
 	+ [linux下安装](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#obsidian)
+	---
+	+ `Ctrl + E + space`使用`+`或者`-`控制系统字体大小
 
 + Obsidian缺点（至少对我来说）：
 	+ 既然选择以项目为中心，为什么不能提供右键打开当前目录的选项？
