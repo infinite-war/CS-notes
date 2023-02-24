@@ -43,9 +43,9 @@ docker [container] run -it  ubuntu:20.04  # 从镜像中创建、启动并进入
 
 ```bash
 docker exec 容器ID /bin/bash  # 进入容器
-# 这个命令会卡住 docker [container] attach CONTAINER  # 进入容器
 ```
-
+>`docker [container] attach CONTAINER  # 进入容器`
+>这个命令会卡住，还不清楚为什么
 
 + `Ctrl+p -> Ctrl+q`：挂起容器
 + `Ctrl+d`：关掉容器

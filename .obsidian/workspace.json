@@ -1,35 +1,52 @@
 {
   "main": {
-    "id": "ae587e37257465f4",
+    "id": "c0bebfa7e916690f",
     "type": "split",
     "children": [
       {
-        "id": "8070264b038d3444",
+        "id": "fd01d864155f8338",
         "type": "tabs",
         "children": [
           {
-            "id": "fa7a5ff8d66b61d1",
+            "id": "61a5fd7b27154253",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Programing-Language/C++/4C++面向对象1封装.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "146feec35bdfd98a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programing-Language/C++/lib/gflags.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "98d037cbdfab828e",
+    "id": "a18473046897c272",
     "type": "split",
     "children": [
       {
-        "id": "1a63beb78f0a591f",
+        "id": "ae35fe0779df4844",
         "type": "tabs",
         "children": [
           {
-            "id": "cc8f302ae7b358ff",
+            "id": "78f0be2b903b602d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +56,7 @@
             }
           },
           {
-            "id": "99b0d8f72eac3469",
+            "id": "e7e85e578dc959be",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,19 +77,20 @@
     "width": 200
   },
   "right": {
-    "id": "0c1a63d41922c647",
+    "id": "5a986e5163acea7e",
     "type": "split",
     "children": [
       {
-        "id": "ca5d55cd8a05d2ec",
+        "id": "5bbfd01541cb0c85",
         "type": "tabs",
         "children": [
           {
-            "id": "2a9ffbf423c5d99b",
+            "id": "652908ef65aa88dc",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Programing-Language/C++/lib/gflags.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,33 +102,36 @@
             }
           },
           {
-            "id": "7e507a4d2c334fce",
+            "id": "318e4debfe5e017b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Programing-Language/C++/lib/gflags.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e570664dc2658df8",
+            "id": "5391b77fd735a308",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
+                "useHierarchy": true
               }
             }
           },
           {
-            "id": "91c1cd31b010c2e4",
+            "id": "4131778876c8ded1",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Programing-Language/C++/lib/gflags.md"
+              }
             }
           }
         ],
@@ -122,24 +143,31 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "canvas:Create new canvas": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fa7a5ff8d66b61d1",
+  "active": "146feec35bdfd98a",
   "lastOpenFiles": [
-    "Missing-Semester/Markdown.md",
-    "Missing-Semester/LaTeX.md",
-    "Missing-Semester/Git.md",
-    "Missing-Semester/slide.md",
-    "Missing-Semester/Linux机器配置指南.md",
-    "Missing-Semester/win10开发机配置指南.md",
-    "Missing-Semester/SSH.md",
-    "blog/多机协同.md",
+    "Programing-Language/C++/4C++面向对象1封装.md",
+    "Programing-Language/C++/lib/gflags.md",
+    "Programing-Language/C++/lib",
+    "未命名",
+    "Programing-Language/C++/未命名.md",
+    "Programing-Language/C++/现代C++.md",
+    "Distributed-System/RPC.md",
     "blog/VSCode.md",
-    "Software-Engineering/Docker.md"
+    "Missing-Semester/win10开发机配置指南.md",
+    "Software-Engineering/Docker.md",
+    "Linux/shell.md",
+    "Software-Engineering/Bazel.md",
+    "Algorithm/Data-Structure-and-Sort/Tree.md",
+    "Programing-Language/Java/base.md",
+    "Programing-Language/Python/Django.md",
+    "Programing-Language/Python/Base.md",
+    "README.md"
   ]
 }
