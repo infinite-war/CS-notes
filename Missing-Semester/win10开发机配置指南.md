@@ -259,6 +259,9 @@
 + Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过SSH链接去`push`）
 
 ## 8.编辑器:VSCode
+>2022.02.24开始接触neovim，这部分文章不再更新:wq
+>
+
 VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<strike>极具可玩性</strike>）
 
 + 彻底删除VSCode：
