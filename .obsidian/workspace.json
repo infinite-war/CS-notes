@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2455a3e2d1aef263",
+        "id": "ac85ab17ef581750",
         "type": "tabs",
         "children": [
           {
-            "id": "b2c6e2c939f65dee",
+            "id": "3fe75f9494559aac",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,10 +129,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b2c6e2c939f65dee",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Missing-Semester/win10开发机配置指南.md",
     "Programing-Language/C++/lib/gflags.md",
+    "Programing-Language/C/C.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Distributed-System/RPC.md",
+    "Missing-Semester/win10开发机配置指南.md",
     "Programing-Language/C++/3C++语法.md",
     "Programing-Language/C++/2C++数据4RTTI.md",
     "Programing-Language/C++/2C++数据4运行时类型识别.md",
