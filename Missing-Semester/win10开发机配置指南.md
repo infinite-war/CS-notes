@@ -1,16 +1,4 @@
-+ 备份：
-	+ 桌面：
-	+ 数据目录：
-	+ Chrome数据目录：已上云、不备份
-	+ Clash for Windows配置文件：现用现配，不备份，唯一个性化设置是开机自启动+快捷键F2
-	+ wt配置文件：按照实际感受配置、不备份
-		posh配置：已上云
-	+ VSCode配置目录：按文档说明配置、不备份
-	+ Git配置文件：按文档说明配置、不备份
-	---
-	+ Snipaste配置文件：唯一个人配置开机自启动，不备份
-
-[姊妹篇：Linux机器配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
+>[姊妹篇：Linux机器配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
 
 # 前言
 
@@ -19,12 +7,11 @@
 >作此博客的发心：
 >1. 作为重置系统的记录，在下次重置或者初始化一个win机器时提供可供参考的记录。
 >2. 观察到有人对计算机的软件和文件的管理相当粗放，我想在这里提供一个我使用win机器的习惯和经验。
->3. 部分软件的配置确实值得记录，如果网上已经有足够优秀的教程，我会提供链接，否则，我会尽量在理清逻辑的情况下提供教程  
->	>尽可能依照Manual
+>3. 部分软件的配置确实值得记录，如果网上已经有足够优秀的教程，我会提供链接；否则，我会尽量Manual提供一个有全局观的教程
 >4. 软件推荐
 
 + 须知：
-	+ STFW：有些名词会导致递归学习没有解释，有些问题教程颇多，这里只提供概要，请读者"Search The Friendly Web"
+	+ STFW：有些名词会导致递归学习没有解释，有些问题教程颇多，这里只提供索引，请读者"Search The Friendly Web"
 	+ STFM：软件的下载通常有大量教程，但是软件更新迭代很快，不同环境、不同软件版本，流程就很可能不一样，本人尽量依照Manual
 	+ 博客内容更多的是符合我个人的习惯，请读者见仁见智
 
@@ -36,7 +23,7 @@
 	```
 
 + 关于数据的管理：  
-	我并没有将软件和文档分成两个盘，因为实际上我在学生时代创造的值得存储的数据不到30G，所以我直接在D盘创建一个专门的目录并在其下管理我的数据，这样的好处是在进行数据备份和转移时，只需要维护这个目录即可。
+	我并没有将软件和文档分成两个盘，实际上我在学生时代创造的值得存储的数据不到30G，所以我直接在D盘创建一个专门的目录并在其下管理我的数据，这样的好处是在进行数据备份和转移时，只需要维护这个目录即可。
 
 + 关于软件的管理：
 	>软件倾向于安装在C盘的原因：
@@ -60,7 +47,7 @@
 	+ 系统可能会默认下载一些软件，比如视频或音乐软件，这些通常下载在C盘，我通常都是卸载然后如果需要再重新安装
 	+ 简约风格，扫描一下桌面把不需要的东西去掉。
 
-+ 导入备份：
++ 导入备份：数据目录
 
 + 语言配置（个人习惯）：
 	+ 输入法：默认
@@ -83,6 +70,11 @@
 
 + 改键（[改键脚本](https://github.com/zweix123/posh-config/blob/master/ChangeKey.reg)）：
 	+ 将`Caps`键映射到`Right`键用于posh历史补全（不然方向键右键太远了）
+	+ 实际上我还想为方向键上键改掉，但是没有好的替代位置
+
++ 修改机器语言：`设置 -> 区域 -..-> 区域 -> 管理 -> 更改系统区域设置 -> Beta版本`
+	>这里的设置是为了解决Powershell对C/C++程序中的中文不能正常输出
+
 ---
 
 + 不能进入`C:\Program Files\WindowsApps`：[教程](https://jingyan.baidu.com/article/1876c852de26a0c80b1376c5.html)
@@ -103,8 +95,7 @@
 		+ 字幕位置有点碍眼
 	+ 划词翻译
 		+ 可单开网页处理英文PDF
-	+ 油猴脚本：
-		>打个[广告](https://github.com/zweix123/BilibiliProgressBar)
+	+ 油猴脚本：生态很丰富
 
 ## 2.解压缩:7z
 一款简单的解压缩软件
@@ -121,11 +112,10 @@
 
 + 插件推荐：
 	+ Obsidian Git（需要下载Git）多机同步必备
-	 >我的配置：  
-	    >`Ctrl + Alt + C` -> `commit`、`Ctrl + Alt + H` -> `push`、`Ctrl + Alt + L` -> `pull`  
-		>实际上这个插件提供定时自动commit和push，我由于个人习惯没有使用，上面的快捷键是尽量躲避win的ubuntu系统快捷键的结果
+	 >我的配置：`Ctrl + Alt + s -> backup(commit and push)、Ctrl + Alt + L -> pull`
+		>>该插件提供定时操作，个人习惯没有使用，上面的快捷键设计是统筹的结果
 
-	+ Advanced Tabled：Makedown表格的自动补全，使之相当Typora
+	+ Advanced Tabled：Makedown表格相关补全
 
 + 使用时遇到的问题：
 	+ `项目根目录/.obsidian/workspace.json`的修改相当频繁，不及时push和pull比较麻烦  
@@ -137,27 +127,24 @@
 		Aborting
 		```
 		可通过下面命令解决  
-		win：
 		```powershell
-		git checkout .\.obsidian\workspace.json
+		git checkout .\.obsidian\workspace.json  # win
 		```
-		linux：
 		```bash
-		git checkout -- ./.obsidian/workspace.json
+		git checkout ./.obsidian/workspace.json  # linux
 		```
 
 ## 5.Windows Terminal
->win11自带wt，但不确定是否自带powershell7
+>win11自带wt，但不确定是否自带ps7
 
-是为诸如cmd和windows powershell这样的命令行程序套一个好看的壳（在oh-my-posh的帮助下可以强化）
->命令行基础，`win + R`键入`cmd`打开命令行程序cmd（Windwos Terminual的命令是`wt`）
+是为诸如cmd和windows powershell这样的命令行程序套一个好看的壳（在oh-my-posh的帮助下可以强化功能）
+>命令行基础：`win + R`键入`cmd`打开命令行程序cmd（Windwos Terminual的命令是`wt`）
 
 1. 下载：使用国内网在Microsoft Store直接下载即可（Manual推荐）
 	>自然默认安装C盘：不处理
 
 2. 使用：快捷键`win + r`键入`wt`打开
-	>问题：
-	>1. 报错VCRUNTIME140_1.dll缺失：在C盘搜寻文件，将其复制到`C:\Windows\System\`即可
+	>问题：报错VCRUNTIME140_1.dll缺失：在C盘搜寻文件，将其复制到`C:\Windows\System\`即可
 
 + 关于wt的设置：网上教程颇多，这里指出修改`setting.json`文件和图形化修改等效
 
@@ -179,38 +166,37 @@
 	oh-my-posh本质是一个程序，提供一些命令修改命令行形态，还记得ps7打开会运行一个脚本嘛？我们只需要将设置放入即可美化脚本
 
 + 这里提供我的[ps7配置和oh-my-posh主题](https://github.com/zweix123/posh-config)（自带配置脚本）
-	+ 我的配置中还有一个改键的脚本，将Caps键改为方向键右键，因为posh历史补全使用的是右键，这样嘎嘎快。
-+ 实际上通过`$PROFILE`可以让ps7的功能更加丰富，不过需要更多的ps编程经验，我只使用最基本的美化即可。
+	+ 我的配置中还有一个改键的脚本，将Caps键改为方向键右键，因为posh历史补全使用的是右键，这样更快
++ 实际上通过`$PROFILE`可以让ps7的功能更加丰富，不过需要更多的ps编程经验。
 
 ### misc
 
-+ 我理解的Powershell7的使用逻辑：它除了有类似shell的命令，还有*模块Medule*的概念（不过还不理解它怎么定义这些模块的），每个模块内部有独特的命令，通过命令`Import-Medule 模块名`可以导入模块（本文并没有讨论如何完备的导入），然后就可以使用模块内的一些命令，比如网上有教程导入oh-my-posh相关模块就可以使用命令`Get-PoshThemes`查看所有主题
++ 我理解的Powershell7的使用逻辑：它除了有类似shell的命令，还有*模块Medule*的概念（不过还不理解它怎么定义这些模块的），每个模块内部有独特的命令，通过命令`Import-Medule 模块名`可以导入模块（本文并没有讨论如何完备的导入），然后就可以使用模块内的一些命令，比如网上有教程导入oh-my-posh相关模块就可以使用命令`Get-PoshThemes`查看所有主题（官网）
 
 + 如果ssh到linux机器，对vim来说`Ctrl + v`进入列模式比较常用，但会和Windows的`Ctrl + v`冲突：  
 	打开Terminal的`setting.json`，找到这样的字段
 	```json
 	{
-		"command": "paste",
-		"keys": "ctrl + v"
+	"command": "paste",
+	"keys": "ctrl + v"
 	}
 	```
 	去掉即可
 
 ## 6.包管理器:Scoop
-**scoop是一个比我最开始想象的要强大得多的包管理器，总之你后续遇到什么依赖库啥的都可以试试在这里有没有**  
-在Windows中正常使用软件通常的流程是去官网下载对应机器和系统的安装包，运行安装包安装，安装过程中会选择诸如下载路径之类的设置。在开发过程中常用的比如Git或者Python这种，下载过程中还要设置更多的选项。同时想要通过命令行使用它们还要将其设置为“环境变量”。但是在实际使用的过程中，基本只会在命令行中或者以命令的形式使用，那么下载过程中下载的诸如添加桌面快捷键、添加右键菜单栏这样的功能是画蛇添足、没有必要的，如果你也这样想，那么Scoop很好用。
+**Scoop非常强大，几乎任何你想通过Scoop下载的软件都可以去search一下，几乎都有**
+
+首先考虑第一性原理的问题，我们为什么需要这样的包管理器？  
+在Windows中正常使用软件通常的流程是去官网下载对应机器和系统的安装包，运行安装包安装，安装过程中会选择诸如下载路径之类的设置。在开发过程中常用的比如Git或者Python这种，下载过程中还要设置更多的选项。同时想要通过命令行使用它们还要将其设置为“环境变量”。但是在实际使用的过程中，基本只会在命令行中或者以命令的形式使用，那么下载过程中下载的诸如添加桌面快捷键、添加右键菜单栏这样的功能是画蛇添足、没有必要的。
 >其实win下还有其他包管理器比如winget和chocolatey，上面终端相关就是用winget下载的，看个人习惯
 
-+ Scoop的优点：
-	+ 统一且清楚的管理下载的软件
-	+ 命令行下载、自动配置环境变量
-+ Scoop的*缺点*：
++ Scoop的优点就是能统一且清楚的管理下载的软件并自动为其配置环境变量
++ Scoop的“缺点”：
 	+ 不能自动配置win注册表
 	+ 不能自动添加右键菜单栏
+	这里为什么加双引号呢？因为Windows是一个图形化的操作系统，命令行很高效、图形化也有独特的魅力。上面的缺点有很多问题，比如Scoop可以下载VSCode，但是不能自动设置使用VSCode默认打开`.py`文件、`.c`文件，而且不会自动添加到右键菜单栏，想用VSCode打开一个文件夹的场景不可能用命令行去`code`；再比如`7zip`，在图形化界面下的下载流程肯定是右键压缩包解压而不是使用命令；但是这些都是在对标之前的下载流程，但是我们选择Scoop的原因恰恰是它不会这样，所以善用Scoop这些不是缺点。
 
-	这里要多解释下，因为win是一个图形化操作系统，命令行很高效、图形化也有独特的魅力。上面的缺点有很多问题，比如Scoop可以下载VSCode，但是不能自动设置使用VSCode默认打开`.py`文件、`.c`文件，而且不会自动添加到右键菜单栏，想用VSCode打开一个文件夹的场景不可能用命令行去`code`；再比如`7zip`，在图形化界面下的下载流程肯定是右键压缩包解压而不是使用命令。
-
-+ 资源：
++ 资料：
 	+ [项目](https://github.com/ScoopInstaller/scoop)
 	+ [官网](https://scoop.sh/#/)
 	+ [文档](https://github.com/ScoopInstaller/Scoop/wiki)
@@ -218,18 +204,18 @@
 + 安装：
 	```powershell
 	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser # 设置PowerShell执行策略
-	irm get.scoop.sh -outfile 'install.ps1' # 下载安装脚本
-	.\install.ps1 -ScoopDir 'D:\Scoop' # 执行安装, --ScoopDir参数指定Scoop安装路径
+	irm get.scoop.sh -outfile 'install.ps1'                              # 下载安装脚本
+	.\install.ps1 -ScoopDir 'D:\Scoop'                                   # 执行安装, --ScoopDir参数指定Scoop安装路径
 	```
 
 + 文件结构：
 	```
 	Scoop
 	  | ---apps      # 下载的软件安装位置
-	  | ---buckets   # 软件源(或者可以这样理解)
+	  | ---buckets   # 桶(可以理解为软件源)
 	  | ---cache     # 下载的安装包
 	  | ---persist   # 用户数据
-	  `---shims      # 命令位置
+	  `----shims      # 命令位置
 	```
 
 + 配置：
@@ -261,40 +247,23 @@
 	scoop bucket add 桶名 [桶地址]  # 添加桶	
 	```
 
-### Git
+### 7.Git
 
 + 安装：`scoop install git`
 + 配置：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Git.md#config)
 + 配置SSH：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md)
-+ Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过ssh链接去push）
++ Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过SSH链接去`push`）
 
-### Python3
-
-+ 安装：`scoop install python`
-+ Python的开发：以项目为中心使用独立的Python运行环境和所依赖的第三方库，环境管理方式我选择`poetry`（个人喜好），具体见我的[笔记](https://github.com/zweix123/CS-notes/blob/master/Programing-Language/Python/poetry.md)
-
-### C/C++
-
-+ 编译所需命令：
-	+ `scoop install gcc`（`gcc`、`g++`）
-	+ `scoop install make`（`GNU Makefile`）
-	+ `scoop install cmake`（`Modern CMake`）
-+ 调试所需命令：
-	+ `scoop install gdb`（`gdb`）
-
-### Java
-[Manual](https://scoop-docs.vercel.app/docs/guides/Java.html#choice-of-jdks)
-
-## 7.编辑器:VSCode
-处理软件本身，更重要的是插件和配置，VSCode的配置分两个部分：`C:\User\$用户名\.vscode\`目录（插件和配置）和项目目录下的相关配置文件
+## 8.编辑器:VSCode
+VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<strike>极具可玩性</strike>）
 
 + 彻底删除VSCode：
 	+ 软件安装位置
-	+ `C:\Users\$用户名\.vscode\`
+	+ `C:\Users\$用户名\.vscode\`：全局配置
 	+ `C:\Users\$用户名\AppData\Roaming\Code\`
 
 + 快捷键习惯：
-	+ Ctrl + \`和Ctrl + 1用来代码区和命令行切换
+	+ Ctrl + \`和Ctrl + num用来代码区和命令行切换
 	+ `Ctrl + ,`：打开配置选项  
 		`Ctrl + p`：搜索文件  
 		`Ctrl + Shift + p`：全局配置
@@ -309,12 +278,13 @@
 	+ 字体：
 		+ 编辑器字体：打开设置，键入`Editor Font Family`  
 			>需要插件`FiraCode font - Professional Font for Developers`
+
 			<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/编辑器字体.png" style="zoom:60%;" div align=center />
 		+ 终端字体：打开设置，键入`Terminal Font Family`  
 			<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/终端字体.png" style="zoom:57.5%;" div align=center />
 	+ 括号连线：打开设置，键入`bracket`，找到对应位置选择true  
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/branket.png" style="zoom:60%;" div align=center />
-	+ 柔顺：
+	+ 柔顺：  
 		打开设置，键入`smooth`，选择下面三个选项  
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/smooth.png" style="zoom:79%;" div align=center />  
 		打开设置，键入`cursor` ，将下面设置为smooth  
@@ -325,43 +295,9 @@
 + 插件推荐：
 	+ `Remote-SSH`：远程开发必备（据说有漏洞，不过我不在乎）
 
- + 工作流程：右键项目文件通过Code打开，然后开始编码
++ 工作流程：右键项目文件通过Code打开，然后开始编码
 
-### 开发Python
 
-+ 依赖环境：通过Scoop下载Python（Python3）
-+ 插件推荐：Python和Python Extension Pack（它们有依赖的插件，所以会下载很多）
-+ 开发流程：使用poetry做环境管理，教程可[见](https://github.com/zweix123/CS-notes/blob/master/Programing-Language/Python/poetry.md)
-+ misc：
-	+ 格式化：`python format provide` -> `black`（默认autopep8，个人喜好）
-		>如何让这样的配置跟随项目？这里提供一个思路，vscode有两种settings，一种是关于软件本身的，另一个是关于工作区的，项目目录下的`.vscode/settings.json`文件
-
-### 开发C和C++
->借鉴资料：
->+ 一个在win上使用clang的[教程](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html)
->+ 一个在linux上的亲爹型[教程](https://www.bilibili.com/video/BV1YG4y1v7uB)
->	+ 补充解释：
->		+ `.clang-fromt`文件：用于代码格式化
-
-实际上上面提到的linux下的教程在win10也可以用，下面给出如何配置环境使之可以在win下使用
-1. 依赖环境：通过Scoop下载了gcc、g++、gdb、make和cmake
-2. 安装插件：C/C++和C/C++ Extension Pack（它们有依赖的插件，所以会下载很多）
-
----
-
-+ 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
-
-### 开发Java
-[通过Scoop开发Java](#Java)
-
-### 编辑MarkDown
-见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
-
-+ 插件：
-	+ 渲染：Markdown Preview Enhanced：`Ctrl + k -> v`
-	+ 编辑：Markdown All in One
-		+ 提供补全
-		+ 生成目录（我已经开发批量生成Markdown目录的工具（[项目地址](https://github.com/zweix123/md-admin)））
 
 # 工具软件
 

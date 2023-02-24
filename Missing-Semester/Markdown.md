@@ -1,7 +1,7 @@
-我个人对Markdown的理解是它是word的一种”受限“的实现，因为word具有丰富功能，那就意味着学习的成本更高，根据奥卡姆剃刀，其实我们只需要其中的很小部分功能，Markdown正是这样子的。
+我个人对Markdown的理解是把它当作Word的一种“受限”的实现，因为Word在提供丰富功能的同时以带来了极高的学习成本，依照奥卡姆剃刀原理，Markdown简单易用、功能小但足够。而Markdown到HTML的转换非常自然容易。
 
-# 语法
-个人建议Markdown语法/Markdown方言/LaTeX简单语法/Markdown内置graph的语法不需要刻意记忆，全面浏览、随用随查最好
+# 语法学习
+个人建议Markdown语法/Markdown方言/LaTeX简单语法/Markdown内置graph语法都不需要刻意记忆：全面浏览、随用随查最好。
 
 # Editor
 
@@ -9,26 +9,27 @@
 	+ 编辑模式：
 		Markdown的主要编辑模式有即时渲染，即对应的格式不显示源码，直接是渲染后的效果；  
 		或者是分屏浏览，一边的源码、一边是渲染后的结果。
-	+ Markdown方言：有些Markdown编辑器还提供“Markdown方言”。比如Typora的`[TCO]`生成目录、Obsidian的内部链接`[[]]`，这些确实扩大了Markdown的功能，但是如果这些功能并不是所有编辑器都提供的话，意味着我们的笔记在迁移时付出更大的成本，比如我的笔记有些功能如果不能在Github上渲染，那么在给其他人看的时候就影响体验。
-	+ 一款软件还要考虑其对平台的支持和收费情况。
-	+ 笔记能否源码导出。
-	+ 笔记能否多机管理。
+	+ Markdown方言：有些Markdown编辑器还提供“Markdown方言”。比如Typora的`[TCO]`生成目录、Obsidian的内部链接`[[]]`，这些确实扩大了Markdown的功能，但是如果这些功能并不是所有编辑器都提供的话，意味着我们的笔记在迁移时要付出更大的成本，我个人选择不使用。
+	+ 平台支持
+	+ 是否付费
+	+ 能否源码导出
+	+ 能否多机同步
 	+ 个人习惯
 
 每种编辑器各有优缺点，我的选择是按照自己的习惯选择的，下面描述一下心路历程，请读者结合各编辑器特点自行选择
 
 + Typora：即时渲染能力极强，在其加持下，甚至感觉不到Markdown语法；可以管理项目、可以查看小标题（两者只能同时看到一个）；维护本地文件，上云需要其他手段；收费使用。
 + 有道云笔记：免费，自动上云；编辑模式有即时渲染和双屏，体感一般。文件不能源码导出。
-+ VSCode结合插件(Markdown Preview Enhanced、Markdown All in One)：只能双屏编辑，但是VSCode编辑能力极强；似乎不能看小标题；维护本地文件，上云需要其他手段。
-+ Obsidian：即时渲染能力略逊于Typora，可以同时查看项目和小标题，维护本地项目，可通过插件上云，免费且全平台支持，具有丰富的插件！
++ VSCode结合插件(Markdown Preview Enhanced、Markdown All in One)：只能双屏编辑，但是VSCode编辑能力极强；似乎不能看大纲；维护本地文件，上云需要其他手段。
++ Obsidian：即时渲染能力略逊于Typora，可同时查看目录和大纲，维护本地项目，可通过插件上云，免费且全平台支持，插件丰富
 + Notion：不了解。
 
-最后我选择是Obsidian（项目）+VSCode（README）
+最后我选择是用Obsidian维护笔记项目，其他Markdown文件使用VSCode
 
 ## Obsidian
 Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同时也在设置限制。下面讨论我从Typora转向Obsidian的心路历程
 
-+ Typora的即时渲染做的很好，对Makedown本身的语法补全非常到位，而这方面Obsidian有差别且需要配置插件
++ Typora的即时渲染做的很好，对Makedown本身的语法补全非常到位，而这方面Obsidian略有差距
 	+ Makedown：基本语法补全基本一致
 	+ Table：Obsidian需要插件，对快捷键自定义化更高但也意味着更高的心智负担，且体验不如Typora
 	+ LaTeX：语法有区别，之前笔记失效，还在学习
@@ -41,18 +42,19 @@ Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同
 	+ 更完善的文档、更活跃的社区
 	+ 全平台且开源
 	+ LaTeX通过插件可支持LaTeX的Tikz
-	+ 使用插件可通过Github实现多机同步
-	+ 链接，想象一下，笔记可以像IDE的`Ctrl + Click`一样跳转
+	+ 使用插件可比较方便的通过Github实现多机同步
+	+ 链接，想象一下，笔记可以像IDE的`Ctrl + Click`一样跳转（我本人不用，因为使用的是Markdown方言）
 	+ 体感上感觉性能Obsidian比Typora强
-	+ Obsidian可以实现同时打开项目结构和文章大章
+	+ Obsidian可以实现同时查看目录和大纲
 
 + 使用：
 	+ [win下安装和插件推荐](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#4%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6obsidian)
 	+ [linux下安装](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#obsidian)
 
 + Obsidian缺点（至少对我来说）：
-	+ 既然选择以项目为中，为什么不能提供右键打开当前目录的选项？
+	+ 既然选择以项目为中心，为什么不能提供右键打开当前目录的选项？
 	+ 一个插件往往提供大量的功能，同时提供了对这些功能的快捷键自定义，需要打磨出自己一套操作，可选项太多了很容易冲突。
+	+ 如果用Git维护内容和格式（`.obsidian/`），这个文件`.obsidian/workspace.json`变化频繁，容易冲突
 
 # 导出
 

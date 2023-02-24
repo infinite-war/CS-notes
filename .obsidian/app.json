@@ -16,5 +16,7 @@
   "newLinkFormat": "absolute",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true,
-  "autoPairMarkdown": false
+  "autoPairMarkdown": false,
+  "autoPairBrackets": true,
+  "vimMode": false
 }
