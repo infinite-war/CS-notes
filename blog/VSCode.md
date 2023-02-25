@@ -23,7 +23,7 @@
 + 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
 
 ### 开发Java
-[通过Scoop开发Java](#Java)
+[Manual](https://scoop-docs.vercel.app/docs/guides/Java.html)
 
 ### 编辑MarkDown
 见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
