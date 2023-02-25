@@ -4,43 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "42d3d8d53a49ad1e",
+        "id": "d2dfaf982ad1c4a7",
         "type": "tabs",
         "children": [
           {
-            "id": "3667db175121571b",
+            "id": "e2b404f85a55820c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Missing-Semester/win10开发机配置指南.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2e37dcabfe384f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/VSCode.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2dc4585f1cee775b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/neovim.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -101,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Missing-Semester/win10开发机配置指南.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Missing-Semester/win10开发机配置指南.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Missing-Semester/win10开发机配置指南.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -161,10 +129,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3667db175121571b",
+  "active": "e2b404f85a55820c",
   "lastOpenFiles": [
     "blog/neovim.md",
-    "blog/VSCode.md",
-    "Missing-Semester/win10开发机配置指南.md"
+    "Missing-Semester/win10开发机配置指南.md",
+    "blog/VSCode.md"
   ]
 }
