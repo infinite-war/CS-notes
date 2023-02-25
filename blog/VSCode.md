@@ -10,7 +10,7 @@
 ### 开发C和C++
 >借鉴资料：
 >+ 一个在win上使用clang的[教程](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html)
->+ 一个在linux上的亲爹型[教程](https://www.bilibili.com/video/BV1YG4y1v7uB)
+>+ 一个在linux上的亲爹级[教程](https://www.bilibili.com/video/BV1YG4y1v7uB)
 >	+ 补充解释：
 >		+ `.clang-fromt`文件：用于代码格式化
 

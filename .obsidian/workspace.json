@@ -1,18 +1,46 @@
 {
   "main": {
-    "id": "ae587e37257465f4",
+    "id": "2f0541d46e1fdb3e",
     "type": "split",
     "children": [
       {
-        "id": "ac85ab17ef581750",
+        "id": "42d3d8d53a49ad1e",
         "type": "tabs",
         "children": [
           {
-            "id": "3fe75f9494559aac",
+            "id": "3667db175121571b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Missing-Semester/win10开发机配置指南.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2e37dcabfe384f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/VSCode.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2dc4585f1cee775b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/neovim.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -21,15 +49,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "98d037cbdfab828e",
+    "id": "c6904cc499d2035f",
     "type": "split",
     "children": [
       {
-        "id": "1a63beb78f0a591f",
+        "id": "f43e19cac69a9eff",
         "type": "tabs",
         "children": [
           {
-            "id": "cc8f302ae7b358ff",
+            "id": "8038f5d8dc7a1f09",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +67,7 @@
             }
           },
           {
-            "id": "99b0d8f72eac3469",
+            "id": "40c2f5826391fdf8",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,19 +88,20 @@
     "width": 200
   },
   "right": {
-    "id": "0c1a63d41922c647",
+    "id": "fa02f3444bc6cb4e",
     "type": "split",
     "children": [
       {
-        "id": "ca5d55cd8a05d2ec",
+        "id": "eb0b3d3fefa4b94f",
         "type": "tabs",
         "children": [
           {
-            "id": "2a9ffbf423c5d99b",
+            "id": "cb45f30208ade16c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Missing-Semester/win10开发机配置指南.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,33 +113,36 @@
             }
           },
           {
-            "id": "7e507a4d2c334fce",
+            "id": "e261b6b43b36759f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Missing-Semester/win10开发机配置指南.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e570664dc2658df8",
+            "id": "aace6f639975541b",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
+                "useHierarchy": true
               }
             }
           },
           {
-            "id": "91c1cd31b010c2e4",
+            "id": "48d257869a66efdb",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Missing-Semester/win10开发机配置指南.md"
+              }
             }
           }
         ],
@@ -122,28 +154,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
+      "canvas:Create new canvas": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "3667db175121571b",
   "lastOpenFiles": [
-    "Programing-Language/C++/lib/gflags.md",
-    "Programing-Language/C/C.md",
-    "Missing-Semester/Linux机器配置指南.md",
-    "Distributed-System/RPC.md",
-    "Missing-Semester/win10开发机配置指南.md",
-    "Programing-Language/C++/3C++语法.md",
-    "Programing-Language/C++/2C++数据4RTTI.md",
-    "Programing-Language/C++/2C++数据4运行时类型识别.md",
-    "Programing-Language/C++/2C++数据3动态内存-智能指针实现.md",
-    "Programing-Language/C++/2C++数据3动态内存.md",
-    "Programing-Language/C++/2C++数据2名称空间.md",
-    "Programing-Language/C++/2C++数据2存储类别.md",
-    "Programing-Language/C++/2C++数据1Plain Old Data.md",
-    "Programing-Language/C++/1C++概述.md"
+    "blog/neovim.md",
+    "blog/VSCode.md",
+    "Missing-Semester/win10开发机配置指南.md"
   ]
 }
