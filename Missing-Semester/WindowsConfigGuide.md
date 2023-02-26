@@ -1,8 +1,13 @@
->[姊妹篇：Linux机器配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
+# Win机器开发机配置指南
+>[姊妹篇：LinuxConfigGuide](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/LinuxConfigGuide.md)
+
++ 精华：
+	+ [命令行](#5.命令行)：为Windows配置一个相当优雅的命令行环境  
+		![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine.png)
+	+ [6.包管理器:Scoop](#6.包管理器Scoop)：十分建议您千万不要错过一个如此强大的包管理器，从此配环境再也不是问题
 
 # 前言
-
-+ 您可以去看一下这个[标题](#初始设置)下标红（或被箭头指向）的操作，如果您不会或者不能理解这样的设置，可能这个教程并不适合您。
+本教程有一定门槛，不必强求。
 
 >作此文章的发心：
 >1. 作为重置系统的记录，在下次重置或者初始化一个win机器时提供可供参考的记录。
@@ -34,7 +39,7 @@
 	+ 诸如WeChat、QQ、TIM或者是软件管家这样的软件通常涉及到文件的存储，需要在“设置”中手动修改
 	+ 有些安装包直接安装软件并在桌面创建快捷方式，可以通过查看快捷方式的指向来确定其存储位置，不建议直接横移文件夹修改
 
-## 初始设置
+## 0.初始设置
 
 + 第一次开机：win10会以对话式的方法进行初始化配置，仔细阅读其描述按照自己的理解选择即可。
 	>其中有个选项是“是否连接WiFi”，如果是新电脑，连接后通常不能进行退换（虽然本篇文章并没有检查新机的教程）
@@ -51,11 +56,11 @@
 	+ 中英切换：只保留`Ctrl + Space`
 
 + 文件的查看：
-	+ <font color="red">打开文件扩展名</font>    <<<------
+	+ 打开文件扩展名
 	+ 打开隐藏的项目
 
 + 电源设置：
-	>睡眠：风扇转                      ：此时电脑仍供电给内存，CPU以较低频率运行  
+	>睡眠：风扇转 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;：此时电脑仍供电给内存，CPU以较低频率运行  
 	>休眠：风扇不转，信息保留：计算机将内存中的内容写入进磁盘中，并断电。下次开机时可以恢复到之前的工作状态。  
 	>关机：信息不保留 
 	
@@ -64,12 +69,8 @@
 	| 电源按钮 | 休眠   | 休眠   |
 	| 关盖     | 不使用 | 不使用 |
 
-+ 改键（[改键脚本](https://github.com/zweix123/posh-config/blob/master/ChangeKey.reg)）：
-	+ 将`Caps`键映射到`Right`键用于posh历史补全（不然方向键右键太远了）
-	+ 实际上我还想为方向键上键改掉，但是没有好的替代位置
-
-+ 修改机器语言：`设置 -> 区域 -..-> 区域 -> 管理 -> 更改系统区域设置 -> Beta版本`
-	>这里的设置是为了解决Powershell对C/C++程序中的中文不能正常输出
++ 修改机器的语言：`设置 -> 区域 -..-> 区域 -> 管理 -> 更改系统区域设置 -> 打开Beta版本` -> 重启
+	>这里的设置是为了解决Powershell对C/C++程序中的中文不能正常输出问题
 
 ---
 
@@ -77,7 +78,7 @@
 
 # 必装软件
 
-## 1.浏览器:Chrome
+## 1.浏览器Chrome
 六大浏览器之一，插件丰富，登录谷歌账号同步信息和配置
 >win默认使用Microsoft Edge浏览器也改为Chromium内核，可直接同步Chrome数据，但它每个选项卡被win认为是一个窗口，我个人不使用
 
@@ -91,12 +92,12 @@
 		+ 字幕位置有点碍眼
 	+ 划词翻译
 		+ 可单开网页处理英文PDF
-	+ 油猴脚本：有丰富脚本
+	+ 油猴脚本
 
-## 2.解压缩:7z
+## 2.解压缩7z
 一款简单的解压缩软件
 
-## 3.科学上网:Clash
+## 3.科学上网Clash
 懂得都懂
 >记得软件安装包和梯子的备份
 
@@ -104,7 +105,7 @@
 	+ 开机自启动
 	+ `F2`作为开关System Proxy的快捷键
 
-## 4.笔记软件:Obsidian
+## 4.笔记软件Obsidian
 >为什么选择这款软件作为我的Markdown编辑器见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
 
 + Obsidian默认安装C盘：不处理，软件位置右键快捷方式查看
@@ -116,6 +117,8 @@
 		>>该插件提供定时操作，个人习惯没有使用，上面的快捷键设计是统筹的结果
 
 	+ Advanced Tabled：Makedown表格相关补全
+
+---
 
 + 使用时遇到的问题：
 	+ `项目根目录/.obsidian/workspace.json`的修改相当频繁，不及时push和pull比较麻烦  
@@ -134,58 +137,52 @@
 		git checkout ./.obsidian/workspace.json  # linux
 		```
 
-## 5.Windows Terminal
->win11自带wt，但不确定是否自带ps7
+## 5.命令行
 
-是为诸如cmd和windows powershell这样的命令行程序套一个好看的壳（在oh-my-posh的帮助下可以强化功能）
->命令行基础：`win + R`键入`cmd`打开命令行程序cmd（Windwos Terminual的命令是`wt`）
++ Shell基础：快捷键`win + r`键入`cmd`打开一个Shell——`cmd`
++ 概念：
+	+ PowerShell7是一个在win下比较好用的Shell来代替cmd和windows powershell
+	+ oh-my-posh是一个程序，类似PowerShell7的插件，美化PowerShell7的输出、强化Shell的功能。
+		>关于美化：比如PowerShell7作为一个Shell会维护一些量，诸如用户名、主机名、当前路径等等，使用时以设定好的格式输出和我们交互，oh-my-posh"截断"这些信息并加工处理换成特定的**主题**格式再输出，起到美化的作用。  
 
-1. 下载：使用国内网在Microsoft Store直接下载即可（Manual推荐）
-	>自然默认安装C盘：不处理
+	+ Windows Terminal是一个程序，内核使用某种Shell，但是渲染能力更强，起到进一步美化作用
+		>oh-my-posh美化的是交互的输出格式，Windows Terminal则是美化的字体、背景、配色等等
 
-2. 使用：快捷键`win + r`键入`wt`打开
-	>问题：报错VCRUNTIME140_1.dll缺失：在C盘搜寻文件，将其复制到`C:\Windows\System\`即可
+---
 
-+ 常见的使用场景分别是`win + r`键入`wt`打开和在某个文件夹下右键在当前目录打开，其中右键需要重启才能生效
-+ 关于wt的设置：网上教程颇多，这里指出修改`setting.json`文件和图形化修改等效
++ 我的[配置](https://github.com/zweix123/posh-config)，项目README中有使用方法（需要在下载完下面三个软件后再导入配置）
+	>在本文开头有配置效果，完全可以照猫画虎修改，不需要什么前置知识
 
-### <strike>美化</strike>强化
->推荐下载方式使用winget（使用Microsoft Store同样能下载）
+### 5.1.PowerShell7
 
-1. 安装PowerShell7：[官方教程](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)（官方推荐winget）
-	>PowerShell7较于Windows PowerShell已经有了更多的美化功能。
-	+ 使用：快捷键`win + r`键入`pwsh`命令
-	+ ps7会在打开后运行`$PROFILE`这个脚本
++ 安装：[Manual](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)（官方推荐winget）
++ 使用：快捷键`win + r`键入`pwsh`打开一个命令行程序
++ pwsh在打开后会运行`$PROFILE`这个脚本（直接在命令行中输入这个命令即可查看脚本位置）
 
-2. 设置字体（[下载地址](https://www.nerdfonts.com/)）：网站内的每种字体都是一个`.zip`文件，里面是一系列的字体，oh-my-posh推荐字体`MesloLGM NF`，我们下载`Meslo`字体并解压，发现里面并没有对应名称的文件夹，这里主要是一种`.ttf`文件，我们双击打开观察，主要关注安装按钮和字体名称字段  
-	<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/字体打开.png" style="zoom:50%;" div align=center />  
-	关于字体文件名中的部分含义：`Regular`常规、`Italic`斜体、`Bold`加粗  
-	我们把字体名称`MesloLGM NF`的所有形态都下载  
-	在wt中修改字体（默认和ps7）、修改字体粗细
+### 5.2.oh-my-posh
 
-3. 安装oh-my-posh：[官方教程](https://ohmyposh.dev/docs/installation/windows)（官方推荐winget）  
-	oh-my-posh本质是一个程序，提供一些命令修改命令行形态，还记得ps7打开会运行一个脚本嘛？我们只需要将设置放入即可美化脚本
++ 安装：[Manual](https://ohmyposh.dev/docs/installation/windows)（官方推荐使用winget）
++ 使用：还记得pwsh在打开后运行一个脚本嘛？我们只要把调用oh-my-posh的相关命令放在那里就可以用了，这里比较重要的是**主题**的选择
 
-+ 这里提供我的[ps7配置和oh-my-posh主题](https://github.com/zweix123/posh-config)（自带配置脚本）
-	+ 我的配置中还有一个改键的脚本，将Caps键改为方向键右键，因为posh历史补全使用的是右键，这样更快
-+ 实际上通过`$PROFILE`可以让ps7的功能更加丰富，不过需要更多的ps编程经验。
+### 5.3.Windows Terminal
+>win10需要下载，win11自带
 
-### misc
++ 安装：使用国内网在Microsoft Store直接搜索下载（这也是Manual推荐的）
++ 使用：
+	+ 快捷键`win + r`键入`pwsh`打开一个Windows Terminal
+		>报错：报错VCRUNTIME140_1.dll缺失：在C盘搜寻文件，将其复制到`C:\Windows\System\`即可
 
-+ 我理解的Powershell7的使用逻辑：它除了有类似shell的命令，还有*模块Medule*的概念（不过还不理解它怎么定义这些模块的），每个模块内部有独特的命令，通过命令`Import-Medule 模块名`可以导入模块（本文并没有讨论如何完备的导入），然后就可以使用模块内的一些命令，比如网上有教程导入oh-my-posh相关模块就可以使用命令`Get-PoshThemes`查看所有主题（官网）
+	+ 在文件资源管理器中右键在终端打开
 
-+ 如果ssh到linux机器，对vim来说`Ctrl + v`进入列模式比较常用，但会和Windows的`Ctrl + v`冲突：  
-	打开Terminal的`setting.json`，找到这样的字段
-	```json
-	{
-	"command": "paste",
-	"keys": "ctrl + v"
-	}
-	```
-	去掉即可
++ 配置（涉及字体种类、字体大小、字体粗细、窗口大小、窗口打开位置、打开后模式、快捷键、配色方案等等）
+	+ 下载字体（[下载链接](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip)）这里用的是Manual推荐的`MesloLGM NF`字体，通过链接下载并解压发现并没有对应名称的文件夹，而是一种`.ttf`文件  
+		打开观察（主要关注安装按钮和字体命令字段（关于字体文件名中的部分含义：`Regular`常规、`Italic`斜体、`Bold`加粗  ））
+		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/字体打开.png" style="zoom:50%;" div align=center />  
+		我们把字体名称`MesloLGM NF`的所有形态都下载  
 
-## 6.包管理器:Scoop
-**Scoop非常强大，几乎任何你想通过Scoop下载的软件都可以去search一下，几乎都有**，比如C/C++（`gcc`、`g++`、`gdb`、`make`、`cmake`）、Python、Java、LaTeX等等
+## 6.包管理器Scoop
+**Scoop非常强大，几乎任何你想下载的命令行程序或者依赖软件都可以去search一下，几乎都有！**  
+比如C/C++（`gcc`、`g++`、`gdb`、`make`、`cmake`）、Python（Python和某些库的依赖）、Java、LaTeX等等
 
 首先考虑第一性原理的问题，我们为什么需要这样的包管理器？  
 在Windows中正常使用软件通常的流程是去官网下载对应机器和系统的安装包，运行安装包安装，安装过程中会选择诸如下载路径之类的设置。在开发过程中常用的比如Git或者Python这种，下载过程中还要设置更多的选项。同时想要通过命令行使用它们还要将其设置为“环境变量”。但是在实际使用的过程中，基本只会在命令行中或者以命令的形式使用，那么下载过程中下载的诸如添加桌面快捷键、添加右键菜单栏这样的功能是画蛇添足、没有必要的。
@@ -202,6 +199,10 @@
 	+ [项目](https://github.com/ScoopInstaller/scoop)
 	+ [官网](https://scoop.sh/#/)
 	+ [文档](https://github.com/ScoopInstaller/Scoop/wiki)
+
++ 目前win下还有两款包管理器：
+	+ WinGet：官方的，但还在萌芽期，观望状态
+	+ Chocolatey：没有使用过
 
 + 安装：
 	```powershell
@@ -224,10 +225,13 @@
 	+ 利用`aria2`来加速下载，**极大**的提高安装成功率
 		```powershell
 		scoop install aria2  # 安装
-		# 打开线程
-		scoop config aria2-max-connection-per-server 16
+		scoop config aria2-enabled false  # 如果使用代理可能需要这样的配置
+		# 线程相关
+		
+		scoop config aria2-retry-wait 4
 		scoop config aria2-split 16
-		scoop config aria2-min-split-size 1M 
+		scoop config aria2-max-connection-per-server 16
+		scoop config aria2-min-split-size 4M
 		```
 	+ 添加仓库（软件源），默认只有`main bucket`
 		```powershell
@@ -256,8 +260,6 @@
 + Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过SSH链接去`push`）
 
 ## 8.编辑器:VSCode
->2022.02.24开始接触neovim，这部分文章不再更新:wq
->
 
 VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<strike>极具可玩性</strike>）
 
@@ -305,8 +307,14 @@ VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<stri
 内容多且散，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
 ## 9.neovim
-VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打开，但是随着我们装了大量的插件，它已经开始变得臃肿，如果有轻度的编辑，其实此时再用VSCode就不太优雅，我们需要一个更轻量级的编辑器。大名鼎鼎的Vim就是，neovim则是它的一个现代的分支（这里不想讨论两者的优劣），于是我们再安装一个neovim作为轻度编辑的工具。这也是个很好的机会学习一个“第一编辑器”vim的好机会。
->实际上，noevim是一个可玩性很高的编辑器，但是这方面并不适用于大多数开发者，所以不在这个文章讨论，如果感兴趣，请移步[这里](https://github.com/zweix123/CS-notes/blob/master/blog/neovim.md)
+VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打开，但是随着我们装了大量的插件，它开始变得臃肿，如果有轻度的编辑，此时`code filename`就不太好用了，我们需要一个更轻量级的编辑器。
+
+得益于强大的包管理器Scoop和我们配置的优雅的终端，我们可以选择Vim作为轻度编辑的编辑器，neovim是它的一个现代的分支（这里不想讨论两者的优劣），于是我们使用neovim作为轻度编辑的编辑器，同时这也是一个很好的学习”第一编辑器“Vim的好机会。
+
+>实际上，neovim是一个可玩性很高的编辑器，但是这方面并不使用于大多数开发者，VSCode足以在可接受的成本内满足要求，所以不在此文章讨论，如果感兴趣，请移步[这里](https://github.com/zweix123/CS-notes/blob/master/blog/neovim.md)
+
++ 安装：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)
++ 使用：大概像vim那样，[这](https://github.com/zweix123/CS-notes/blob/master/Linux/Tools.md#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vim)是一个我的vim笔记
 
 # 工具软件
 

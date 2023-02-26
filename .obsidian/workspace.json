@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "af2d042c9f52cf27",
+        "id": "512dcfc664d414c4",
         "type": "tabs",
         "children": [
           {
-            "id": "ced02e86211e668a",
+            "id": "d81b739198b5afe2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -137,15 +129,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ced02e86211e668a",
+  "active": "d81b739198b5afe2",
   "lastOpenFiles": [
+    "blog/VSCode.md",
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Programing-Language/Python/poetry.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/LaTeX.md",
     "Missing-Semester/Git.md",
-    "Missing-Semester/WindowsConfigGuide.md",
     "Algorithm/Data-Structure-and-Sort/LinearList.md",
     "Algorithm/Data-Structure-and-Sort/HashTable.md",
-    "blog/neovim.md",
-    "blog/VSCode.md"
+    "blog/neovim.md"
   ]
 }

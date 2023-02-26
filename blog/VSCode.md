@@ -1,3 +1,8 @@
+## 编辑器设置
+见我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md#8%E7%BC%96%E8%BE%91%E5%99%A8vscode)
+
+## 打造成IDE
+
 ### 开发Python
 
 + 依赖环境：通过Scoop下载Python（Python3）
