@@ -54,7 +54,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 >Linux下通常有包管理器
 
 ### nvim
-Linux下的文本编辑器从vi到vim再到neovim，选择看个人喜好
+Linux下的文本编辑器非常之多，比如上面使用vi就是一种，选择看个人喜好
 >neovim是一个可玩性比较高的编辑器，在[这里](https://github.com/zweix123/CS-notes/blob/master/blog/neovim.md)可以看具体的讨论
 
 ### tmux

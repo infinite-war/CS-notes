@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a9e0a04dbb53f9db",
+        "id": "b6c94bd819c9d851",
         "type": "tabs",
         "children": [
           {
-            "id": "7204203cb4ab0ac4",
+            "id": "75198606c3c76e46",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,9 +129,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7204203cb4ab0ac4",
+  "active": "75198606c3c76e46",
   "lastOpenFiles": [
+    "Distributed-System/RPC.md",
+    "blog/neovim.md",
     "Missing-Semester/LinuxConfigGuide.md",
+    "未命名",
     "Missing-Semester/WindowsConfigGuide.md",
     "未命名.md",
     "Missing-Semester/SSH.md",
@@ -153,9 +156,6 @@
     "Software-Engineering/UML.md",
     "Software-Engineering/Docker.md",
     "Software-Engineering/Bazel.md",
-    "blog/neovim.md",
-    "Distributed-System/RPC.md",
-    "Programing-Language/Golang/lib/spf13.md",
-    "Programing-Language/Golang/lib/ProtoBuf.md"
+    "Programing-Language/Golang/lib/spf13.md"
   ]
 }
