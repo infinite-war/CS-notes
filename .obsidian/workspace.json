@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "73ba014ea47f24e1",
+        "id": "865eea640cfde894",
         "type": "tabs",
         "children": [
           {
-            "id": "ab41fa7548a50a1e",
+            "id": "e711f8131788a3f1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Editor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Editor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux/Editor.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -135,6 +131,9 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Software-Engineering/Bazel.md",
+    "Programing-Language/C++/3C++语法.md",
+    "Programing-Language/C/C.md",
     "blog/VSCode.md",
     "blog/How to use Chatgpt.md",
     "blog/多机协同.md",
@@ -142,8 +141,6 @@
     "Linux/Editor.md",
     "Linux/Vim.md",
     "blog/neovim.md",
-    "Programing-Language/C/C.md",
-    "Programing-Language/C++/3C++语法.md",
     "Programing-Language/C++/2C++数据2存储类别.md",
     "Programing-Language/C++/1C++概述.md",
     "Programing-Language/C++/2C++数据.md",
@@ -160,7 +157,6 @@
     "Programing-Language/C++/lib/C++库SL.md",
     "Programing-Language/C++/lib/C++库泛型算法.md",
     "Programing-Language/C++/lib/C++库STL.md",
-    "Programing-Language/C++/C++库SL(C++11)more.md",
     "Software-Engineering/未命名",
     "未命名"
   ]
