@@ -3,7 +3,7 @@
 
 + 精华：
 	+ [命令行](#5.命令行)：为Windows配置一个相当优雅的命令行环境  
-		![](https://cdn.jsdelivr.net/gh/zweix123/posh-config@master/static/imgs/mine.png)
+		![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/mine.png)
 	+ [6.包管理器:Scoop](#6.包管理器Scoop)：十分建议您千万不要错过一个如此强大的包管理器，从此配环境再也不是问题
 
 # 前言

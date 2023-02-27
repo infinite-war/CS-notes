@@ -1,6 +1,6 @@
 <!-- template  
 https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/  
-<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/" style="zoom:59%;" div align=center />  -->
+<img src= "" style="zoom:59%;" div align=center />  -->
 + 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 + 该项目是我个人的笔记，部分文章会设计的更有利于人的阅读，但是主体仍然是我个人的记录，不建议作为学习资料。

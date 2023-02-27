@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "512dcfc664d414c4",
+        "id": "fd07b514fb84767f",
         "type": "tabs",
         "children": [
           {
-            "id": "d81b739198b5afe2",
+            "id": "9b50eecf0c11d8be",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,16 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d81b739198b5afe2",
+  "active": "9b50eecf0c11d8be",
   "lastOpenFiles": [
+    "Programing-Language/Python/协程Coroutine.md",
+    "Missing-Semester/LaTeX.md",
+    "Programing-Language/C++/协程coroutine.md",
     "blog/VSCode.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Python/poetry.md",
     "Missing-Semester/LinuxConfigGuide.md",
-    "Missing-Semester/LaTeX.md",
     "Missing-Semester/Git.md",
     "Algorithm/Data-Structure-and-Sort/LinearList.md",
-    "Algorithm/Data-Structure-and-Sort/HashTable.md",
-    "blog/neovim.md"
+    "Algorithm/Data-Structure-and-Sort/HashTable.md"
   ]
 }
