@@ -166,9 +166,11 @@
 + 使用：快捷键`win + r`键入`pwsh`打开一个命令行程序
 + pwsh在打开后会运行`$PROFILE`这个脚本（直接在命令行中输入这个命令即可查看脚本位置）
 
-+ Powershell7的ls对输出的目录的美化需要下载额外模块：
++ Powershell7的ls对输出的目录的美化需要下载额外模块：（下载比较慢）
 	```powershell
-	Install-Module PSColor  # 会比较慢
+	# Install-Module PSColor  # 我个人的配置已经将该模块换为DirColors, 其实PSColor更好看，但是输出多一个换行，我不能接受
+	Install-Module DirColors
+	Install-Module PSReadLine
 	```
 
 ### 5.2.oh-my-posh
