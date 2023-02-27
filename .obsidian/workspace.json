@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b6c94bd819c9d851",
+        "id": "f9aa359b678fd0a0",
         "type": "tabs",
         "children": [
           {
-            "id": "75198606c3c76e46",
+            "id": "890723cb8396ccc4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 239.51103591918945
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -73,6 +73,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/Editor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +90,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linux/Editor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linux/Editor.md"
+              }
             }
           }
         ],
@@ -129,33 +133,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "75198606c3c76e46",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Distributed-System/RPC.md",
-    "blog/neovim.md",
-    "Missing-Semester/LinuxConfigGuide.md",
-    "未命名",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "未命名.md",
-    "Missing-Semester/SSH.md",
-    "Missing-Semester/slide.md",
-    "Missing-Semester/Markdown.md",
-    "blog/VSCode.md",
-    "Missing-Semester/LaTeX.md",
-    "Missing-Semester/Git.md",
-    "Linux/Base.md",
-    "Linux/NetAPI.md",
-    "Linux/SystemAPI.md",
-    "Linux/Tmux.md",
     "Linux/Vim.md",
-    "Linux/shell.md",
-    "Linux/GNU/Modern CMake.md",
-    "Linux/GNU/GNU Makefile.md",
-    "Linux/GNU/gdb.md",
-    "Linux/GNU/gcc.md",
-    "Software-Engineering/UML.md",
-    "Software-Engineering/Docker.md",
-    "Software-Engineering/Bazel.md",
-    "Programing-Language/Golang/lib/spf13.md"
+    "Linux/Editor.md",
+    "blog/neovim.md",
+    "Programing-Language/C/C.md",
+    "Programing-Language/C++/3C++语法.md",
+    "Programing-Language/C++/2C++数据2存储类别.md",
+    "Programing-Language/C++/1C++概述.md",
+    "Programing-Language/C++/2C++数据.md",
+    "Programing-Language/C++/C++异常.md",
+    "Programing-Language/C++/5C++泛型.md",
+    "Programing-Language/C++/4C++面向对象1封装.md",
+    "Programing-Language/C++/4C++面向对象.md",
+    "Programing-Language/C++/2C++数据4RTTI.md",
+    "Programing-Language/C++/2C++数据3动态内存.md",
+    "Programing-Language/C++/2C++数据4运行时类型识别.md",
+    "Programing-Language/C++/2C++数据2名称空间.md",
+    "Programing-Language/C++/C++lambda.md",
+    "Programing-Language/C++/C++协程.md",
+    "Programing-Language/C++/lib/C++库SL.md",
+    "Programing-Language/C++/lib/C++库泛型算法.md",
+    "Programing-Language/C++/lib/C++库STL.md",
+    "Programing-Language/C++/C++库SL(C++11)more.md",
+    "Programing-Language/C++/现代C++.md",
+    "Programing-Language/C++/4C++面向对象2继承.md",
+    "Programing-Language/C++/4C++面向对象1封装-标准函数.md",
+    "Programing-Language/C++/4C++面向对象-友元.md",
+    "Software-Engineering/未命名",
+    "未命名"
   ]
 }

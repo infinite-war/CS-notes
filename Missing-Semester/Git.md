@@ -92,7 +92,7 @@ STFW
 	```bash
 	git checkout -b [Branch Name]
 	```
-+ 工作：add->commit
++ 工作：add->commit->push（`git push origin <branch>`）
 + 确定远程分支：
 	```bash
 	git remote

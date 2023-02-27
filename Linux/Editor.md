@@ -1,4 +1,7 @@
-# 文本编辑器vim
+>文本编辑器
+
+
+
 
 + 功能：
   1. 命令行模式下的文本编辑器
@@ -81,3 +84,9 @@
   + 如果打开某个文件时，该文件的swp文件已存在，则会报错。此时解决办法有两种
     1. 找到正在打开该文件的程序，并退出
     2. 直接删掉该swp文件即可
+
+## Install
++ windows：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)（我个人推荐的Scoop）
++ Linux（Ubuntu）：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
+
++ 彻底卸载：neovim的配置在`~/.config/nvim/`下
