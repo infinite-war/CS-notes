@@ -2,7 +2,7 @@
 
 [姊妹篇：Win机器开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
 
-+ 指南中涉及的软件配置[地址](https://github.com/zweix123/linux-config)，在README中提供详细的使用方法和说明，请在[这里](# 5.导入软件配置)再导入配置
++ 指南中涉及的软件配置[地址](https://github.com/zweix123/linux-config)，在README中提供详细的使用方法和说明，请在完成下面步骤后再下载配置。
 
 ## 0.机器检查
 
@@ -126,6 +126,9 @@ Linux下的文本编辑器从vi到vim再到neovim，选择看个人喜好
 # 物理机
 
 ## 6.改键
+
+>具体脚本也在我的配置中
+
 + `Caps`->`right`：用于zsh的历史命令补全
 ```bash
 # xmodmap -pke
@@ -147,11 +150,9 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 	+ `dpkg -r 软件名`：不清除配置卸载
 	+ `dpkg -P 软件名`：清除配置卸载
 
-+ 配置和Windows类似（[我的配置](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#7%E7%BC%96%E8%BE%91%E5%99%A8vscode)）
++ 配置和Windows类似（[我的配置](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md#8%E7%BC%96%E8%BE%91%E5%99%A8vscode)）
 
-#### 开发Golang
-微软[教程](https://learn.microsoft.com/zh-cn/azure/developer/go/configure-visual-studio-code)已经足够亲爹
-+ how to debug: [tutor](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
+
 
 ### Obsidian
 
@@ -185,6 +186,6 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 
 # 服务器
 
-# misc
+# MISC
 
 + 在登录云服务器后终端会先输出一段话，这些在`/etc/update-motd.d/10-help-text`（Ubuntu），这是一个可执行文件，具体请STFW

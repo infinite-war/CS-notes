@@ -30,6 +30,11 @@
 ### 开发Java
 [Manual](https://scoop-docs.vercel.app/docs/guides/Java.html)
 
+### 开发Golang
+
+微软[教程](https://learn.microsoft.com/zh-cn/azure/developer/go/configure-visual-studio-code)已经足够亲爹
++ how to debug: [tutor](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
+
 ### 编辑MarkDown
 见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
 
@@ -38,3 +43,5 @@
 	+ 编辑：Markdown All in One
 		+ 提供补全
 		+ 生成目录（我已经开发批量生成Markdown目录的工具（[项目地址](https://github.com/zweix123/md-admin)））
+
+## 编辑LaTeX

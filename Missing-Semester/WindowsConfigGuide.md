@@ -326,7 +326,7 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 >实际上，neovim是一个可玩性很高的编辑器，但是这方面并不使用于大多数开发者，VSCode足以在可接受的成本内满足要求，所以不在此文章讨论，如果感兴趣，请移步[这里](https://github.com/zweix123/CS-notes/blob/master/blog/neovim.md)
 
 + 安装：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)
-+ 使用：大概像vim那样，[这](https://github.com/zweix123/CS-notes/blob/master/Linux/Tools.md#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8vim)是一个我的vim笔记
++ 使用：大概像vim那样，[这](https://github.com/zweix123/CS-notes/blob/master/Linux/Vim.md)是一个我的vim笔记
 
 # 工具软件
 

@@ -1,3 +1,13 @@
+- [语法学习](#语法学习)
+- [Editor](#editor)
+	- [Obsidian](#obsidian)
+- [导出](#导出)
+	- [导出成PDF](#导出成pdf)
+	- [导出成HTML](#导出成html)
+- [奇技淫巧](#奇技淫巧)
+	- [用Markdown写论文](#用markdown写论文)
+	- [用Markdown写幻灯片](#用markdown写幻灯片)
+
 我个人对Markdown的理解是把它当作Word的一种“受限”的实现，因为Word在提供丰富功能的同时以带来了极高的学习成本，依照奥卡姆剃刀原理，Markdown简单易用、功能小但足够。而Markdown到HTML的转换非常自然容易。
 
 # 语法学习
@@ -48,8 +58,7 @@ Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同
 	+ Obsidian可以实现同时查看目录和大纲
 
 + 使用：
-	+ [win下安装和插件推荐](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#4%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6obsidian)
-	+ [linux下安装](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Linux%E6%9C%BA%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md#obsidian)
+	+ 下载：STFW
 	---
 	+ `Ctrl + E + space`使用`+`或者`-`控制系统字体大小
 
@@ -63,3 +72,10 @@ Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同
 ## 导出成PDF
 
 ## 导出成HTML
+
+
+# 奇技淫巧
+
+## 用Markdown写论文
+
+## 用Markdown写幻灯片
