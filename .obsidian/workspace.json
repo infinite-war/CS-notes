@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eb6ccf2eb7fcafbb",
+        "id": "2121974a904f7c37",
         "type": "tabs",
         "children": [
           {
-            "id": "f6433b1c8d0b5470",
+            "id": "b5cec97189077df1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,8 +129,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f6433b1c8d0b5470",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/slide.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Missing-Semester/LaTeX.md",
     "Software-Engineering/Bazel.md",
     "Programing-Language/C++/3C++语法.md",
     "Programing-Language/C/C.md",
@@ -154,9 +157,6 @@
     "Programing-Language/C++/2C++数据2名称空间.md",
     "Programing-Language/C++/C++lambda.md",
     "Programing-Language/C++/C++协程.md",
-    "Programing-Language/C++/lib/C++库SL.md",
-    "Programing-Language/C++/lib/C++库泛型算法.md",
-    "Programing-Language/C++/lib/C++库STL.md",
     "Software-Engineering/未命名",
     "未命名"
   ]

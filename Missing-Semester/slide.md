@@ -7,6 +7,8 @@
 + Obsidian自带幻灯片插件提供通过`---`划分幻灯片（仅此而已）
 + Obsidian第三方插件Advanced Slides据说对标Reveal.js，但是没有官方支持^[1 [网址](https://forum.obsidian.md/t/advanced-slides-create-markdown-based-reveal-js-presentations-in-obsidian/28243/200)]
 
++ Beamer有一个大爹[地址](https://www.overleaf.com/learn/latex/Beamer)
+
 这里所提到的Markdown方案各家类似但不同
 
 reveal相关支持垂直幻灯片和代码特定行高亮  
