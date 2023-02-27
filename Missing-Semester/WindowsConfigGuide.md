@@ -2,8 +2,7 @@
 >[姊妹篇：LinuxConfigGuide](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/LinuxConfigGuide.md)
 
 + 精华：
-	+ [命令行](#5.命令行)：为Windows配置一个相当优雅的命令行环境  
-		![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/mine.png)
+	+ [命令行](#5.命令行)：为Windows配置一个相当优雅的命令行环境，让你在win中有近似linux的命令行体验
 	+ [6.包管理器:Scoop](#6.包管理器Scoop)：十分建议您千万不要错过一个如此强大的包管理器，从此配环境再也不是问题
 
 # 前言
@@ -141,6 +140,13 @@
 ## 5.命令行
 
 + Shell基础：快捷键`win + r`键入`cmd`打开一个Shell——`cmd`
++ 对于命令行的美化，其实分下面几个方面
+	+ 信息的输出，比如用户名、主机名、当前路径、git状态，甚至时间、电量，如何对这些信息进行排布和染色是个什么问题
+	+ 命令的输出，比如`ls`这样的常用命令，如何以合适的样式输出合适的信息是个审美问题
+	+ 终端，比如字体、字体大小、字体和颜色的调教，整个终端的使用体验
+		>这里的配色是一个底层的概念，因为shell对颜色的打印是根据终端本身对颜色的定义来的
++ 这里的配置大部分仍然是美化，强化由oh-my-posh提供（核心是历史命令补全）
+
 + 概念：
 	+ PowerShell7是一个在win下比较好用的Shell来代替cmd和windows powershell
 	+ oh-my-posh是一个程序，类似PowerShell7的插件，美化PowerShell7的输出、强化Shell的功能。
@@ -159,6 +165,11 @@
 + 安装：[Manual](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)（官方推荐winget）
 + 使用：快捷键`win + r`键入`pwsh`打开一个命令行程序
 + pwsh在打开后会运行`$PROFILE`这个脚本（直接在命令行中输入这个命令即可查看脚本位置）
+
++ Powershell7的ls对输出的目录的美化需要下载额外模块：
+	```powershell
+	Install-Module PSColor  # 会比较慢
+	```
 
 ### 5.2.oh-my-posh
 
