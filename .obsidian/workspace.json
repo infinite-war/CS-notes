@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "66c5b5502136043e",
+        "id": "a9e0a04dbb53f9db",
         "type": "tabs",
         "children": [
           {
-            "id": "435acfa2c6bb6033",
+            "id": "7204203cb4ab0ac4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "435acfa2c6bb6033",
+  "active": "7204203cb4ab0ac4",
   "lastOpenFiles": [
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
