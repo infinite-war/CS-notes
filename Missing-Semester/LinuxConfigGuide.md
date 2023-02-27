@@ -1,8 +1,8 @@
 >Linux有众多发行版、机器也分云服务器、虚拟机和物理机，该指南并没有限制某种机器，对独属于某种机器的问题会单独说明，请读者选择对您有帮助的部分
 
-+ 关于备份：各软件配置已上云[地址](https://github.com/zweix123/linux-config)
+[姊妹篇：Win机器开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
 
-[姊妹篇：Win机器配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/win10%E5%BC%80%E5%8F%91%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
++ 指南中涉及的软件配置[地址](https://github.com/zweix123/linux-config)，在README中提供详细的使用方法和说明，请在[这里](# 5.导入软件配置)再导入配置
 
 ## 0.机器检查
 
@@ -25,6 +25,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 ```
 
 ## 2.配置SSH
+
 我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md#intro)
 
 ## 3.修改软件源
@@ -52,7 +53,9 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 ## 4.下载刚需软件
 >Linux下通常有包管理器
 
-### vim
+### nvim
+Linux下的文本编辑器从vi到vim再到neovim，选择看个人喜好
+>neovim是一个可玩性比较高的编辑器，在[这里](https://github.com/zweix123/CS-notes/blob/master/blog/neovim.md)可以看具体的讨论
 
 ### tmux
 
@@ -67,7 +70,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 	+ `chsh -s shell绝对路径`设置默认shell
 		>[关于chsh](https://wangchujiang.com/linux-command/c/chsh.html)
 
-+ [我的配置](https://github.com/zweix123/linux-config)（嘎嘎好用）
+---
 
 主要通过zsh和oh-my-zsh，前者是和bash一样的一个shell，但是它有更强的拓展性，但是想通过配置利用这些扩展性比较复杂，oh-my-zsh相当于一种辅助配置工具
 
@@ -117,6 +120,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 		```
 
 ## 5.导入软件配置
+
 导入[我的配置](https://github.com/zweix123/linux-config)
 
 # 物理机

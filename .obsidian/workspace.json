@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "065d3c493ebd570a",
+        "id": "286338ad152fc48c",
         "type": "tabs",
         "children": [
           {
-            "id": "5d5f7c7c1d7a65e5",
+            "id": "a4e1e1d12709e4c7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Missing-Semester/LinuxConfigGuide.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Missing-Semester/LinuxConfigGuide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Missing-Semester/LinuxConfigGuide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Missing-Semester/LinuxConfigGuide.md"
+              }
             }
           }
         ],
@@ -129,8 +137,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "a4e1e1d12709e4c7",
   "lastOpenFiles": [
+    "Missing-Semester/LaTeX.md",
+    "Missing-Semester/SSH.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Missing-Semester/Git.md",
+    "Linux/Base.md",
+    "Linux/NetAPI.md",
+    "Linux/SystemAPI.md",
+    "Linux/Tmux.md",
+    "Linux/Vim.md",
+    "Linux/shell.md",
+    "Linux/GNU/Modern CMake.md",
+    "Linux/GNU/GNU Makefile.md",
+    "Linux/GNU/gdb.md",
+    "Linux/GNU/gcc.md",
+    "Software-Engineering/UML.md",
+    "Software-Engineering/Docker.md",
+    "Software-Engineering/Bazel.md",
     "blog/neovim.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/RPC.md",
@@ -139,23 +164,6 @@
     "Programing-Language/Golang/lib/misc.md",
     "Programing-Language/Golang/lib/http.md",
     "Programing-Language/Golang/base.md",
-    "Programing-Language/Golang/Intro.md",
-    "Programing-Language/Golang/concurrency.md",
-    "Programing-Language/Python/协程Coroutine.md",
-    "Programing-Language/C++/协程coroutine.md",
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Programing-Language/C++/lib/gflags.md",
-    "Programing-Language/C/C.md",
-    "Missing-Semester/Linux机器配置指南.md",
-    "Missing-Semester/win10开发机配置指南.md",
-    "Programing-Language/C++/3C++语法.md",
-    "Programing-Language/C++/2C++数据4RTTI.md",
-    "Programing-Language/C++/2C++数据4运行时类型识别.md",
-    "Programing-Language/C++/2C++数据3动态内存-智能指针实现.md",
-    "Programing-Language/C++/2C++数据3动态内存.md",
-    "Programing-Language/C++/2C++数据2名称空间.md",
-    "Programing-Language/C++/2C++数据2存储类别.md",
-    "Programing-Language/C++/2C++数据1Plain Old Data.md",
-    "Programing-Language/C++/1C++概述.md"
+    "Programing-Language/Golang/Intro.md"
   ]
 }

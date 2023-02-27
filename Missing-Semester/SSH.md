@@ -1,8 +1,4 @@
 ## Intro
-+ 功能：
-	+ 连接云服务器
-	+ 使用Github
-
 + 配置脚本：
 	```bash
 	ssh-keygen && touch ~/.ssh/authorized_keys ~/.ssh/config  # 之后一路回车+y
@@ -10,7 +6,11 @@
 
 ---
 
-以下是概念性介绍
++ 功能：
+	+ 连接云服务器
+	+ 使用Github
+
+---
 
 + 配置目录：`C:\User\$用户名\.ssh\`（Windows）、`~/.ssh/`（Linux）
 	```
