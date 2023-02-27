@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f9aa359b678fd0a0",
+        "id": "73ba014ea47f24e1",
         "type": "tabs",
         "children": [
           {
-            "id": "890723cb8396ccc4",
+            "id": "ab41fa7548a50a1e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -135,8 +135,12 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Linux/Vim.md",
+    "blog/VSCode.md",
+    "blog/How to use Chatgpt.md",
+    "blog/多机协同.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "Linux/Editor.md",
+    "Linux/Vim.md",
     "blog/neovim.md",
     "Programing-Language/C/C.md",
     "Programing-Language/C++/3C++语法.md",
@@ -157,10 +161,6 @@
     "Programing-Language/C++/lib/C++库泛型算法.md",
     "Programing-Language/C++/lib/C++库STL.md",
     "Programing-Language/C++/C++库SL(C++11)more.md",
-    "Programing-Language/C++/现代C++.md",
-    "Programing-Language/C++/4C++面向对象2继承.md",
-    "Programing-Language/C++/4C++面向对象1封装-标准函数.md",
-    "Programing-Language/C++/4C++面向对象-友元.md",
     "Software-Engineering/未命名",
     "未命名"
   ]
