@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "865eea640cfde894",
+        "id": "eb6ccf2eb7fcafbb",
         "type": "tabs",
         "children": [
           {
-            "id": "e711f8131788a3f1",
+            "id": "f6433b1c8d0b5470",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "f6433b1c8d0b5470",
   "lastOpenFiles": [
     "Software-Engineering/Bazel.md",
     "Programing-Language/C++/3C++语法.md",
