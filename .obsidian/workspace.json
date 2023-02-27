@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "2f0541d46e1fdb3e",
+    "id": "ae587e37257465f4",
     "type": "split",
     "children": [
       {
-        "id": "fd07b514fb84767f",
+        "id": "7884a8cb1f312878",
         "type": "tabs",
         "children": [
           {
-            "id": "9b50eecf0c11d8be",
+            "id": "f3b73bca839a2482",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -21,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c6904cc499d2035f",
+    "id": "98d037cbdfab828e",
     "type": "split",
     "children": [
       {
-        "id": "f43e19cac69a9eff",
+        "id": "1a63beb78f0a591f",
         "type": "tabs",
         "children": [
           {
-            "id": "8038f5d8dc7a1f09",
+            "id": "cc8f302ae7b358ff",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +39,7 @@
             }
           },
           {
-            "id": "40c2f5826391fdf8",
+            "id": "99b0d8f72eac3469",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,15 +60,15 @@
     "width": 200
   },
   "right": {
-    "id": "fa02f3444bc6cb4e",
+    "id": "0c1a63d41922c647",
     "type": "split",
     "children": [
       {
-        "id": "eb0b3d3fefa4b94f",
+        "id": "ca5d55cd8a05d2ec",
         "type": "tabs",
         "children": [
           {
-            "id": "cb45f30208ade16c",
+            "id": "2a9ffbf423c5d99b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -84,7 +84,7 @@
             }
           },
           {
-            "id": "e261b6b43b36759f",
+            "id": "7e507a4d2c334fce",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -95,18 +95,18 @@
             }
           },
           {
-            "id": "aace6f639975541b",
+            "id": "e570664dc2658df8",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
           {
-            "id": "48d257869a66efdb",
+            "id": "91c1cd31b010c2e4",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -122,24 +122,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "canvas:Create new canvas": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9b50eecf0c11d8be",
+  "active": "f3b73bca839a2482",
   "lastOpenFiles": [
     "Programing-Language/Python/协程Coroutine.md",
-    "Missing-Semester/LaTeX.md",
-    "Programing-Language/C++/协程coroutine.md",
-    "blog/VSCode.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Programing-Language/Python/poetry.md",
+    "blog/neovim.md",
+    "Programing-Language/C++/协程coroutine.md",
     "Missing-Semester/LinuxConfigGuide.md",
-    "Missing-Semester/Git.md",
-    "Algorithm/Data-Structure-and-Sort/LinearList.md",
-    "Algorithm/Data-Structure-and-Sort/HashTable.md"
+    "Programing-Language/C++/lib/gflags.md",
+    "Programing-Language/C/C.md",
+    "Missing-Semester/Linux机器配置指南.md",
+    "Distributed-System/RPC.md",
+    "Missing-Semester/win10开发机配置指南.md",
+    "Programing-Language/C++/3C++语法.md",
+    "Programing-Language/C++/2C++数据4RTTI.md",
+    "Programing-Language/C++/2C++数据4运行时类型识别.md",
+    "Programing-Language/C++/2C++数据3动态内存-智能指针实现.md",
+    "Programing-Language/C++/2C++数据3动态内存.md",
+    "Programing-Language/C++/2C++数据2名称空间.md",
+    "Programing-Language/C++/2C++数据2存储类别.md",
+    "Programing-Language/C++/2C++数据1Plain Old Data.md",
+    "Programing-Language/C++/1C++概述.md"
   ]
 }

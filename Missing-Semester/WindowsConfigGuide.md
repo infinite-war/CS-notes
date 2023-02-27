@@ -113,7 +113,8 @@
 
 + 插件推荐：
 	+ Obsidian Git（需要下载Git）多机同步必备
-	 >我的配置：`Ctrl + Alt + s -> backup(commit and push)、Ctrl + Alt + L -> pull`
+	 >我的配置：`Ctrl + Alt + s -> backup(commit and push)、Ctrl + Alt + L -> pull`  
+		>会有冲突使用`Ctrl + Alt + C -> commit, Ctrl + Alt + H -> push`
 		>>该插件提供定时操作，个人习惯没有使用，上面的快捷键设计是统筹的结果
 
 	+ Advanced Tabled：Makedown表格相关补全
@@ -275,7 +276,7 @@ VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<stri
 	+ 格式化：手动使用快捷键`Shift + Alt + F`
 
 + 编辑器设置：参考[视频](https://www.bilibili.com/video/BV1YG4y1v7uB/)
-	+ *设置同步*
+	+ *设置同步*，本机的sync now是将本地配置上传，然后每次启动VSCode都会从云端down下来配置
 	+ 关闭受限模式：
 		打开设置，键入`trust`  
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/vscode受限模式关闭.png" style="zoom:59%;" div align=center />
