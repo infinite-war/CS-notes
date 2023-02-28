@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b7c2e321f9c75b97",
+        "id": "4fc03e0d0b7189ce",
         "type": "tabs",
         "children": [
           {
-            "id": "3443b9609396a39e",
+            "id": "734c30ca7a4f2325",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.51103591918945
+    "width": 200
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3443b9609396a39e",
+  "active": "734c30ca7a4f2325",
   "lastOpenFiles": [
     "Programing-Language/C++/lib/gflags.md",
     "README.md",
