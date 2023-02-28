@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4d08ef9eaa8a70ff",
+        "id": "5322de84407d5272",
         "type": "tabs",
         "children": [
           {
-            "id": "8e41ab16990b192a",
+            "id": "aee0a2c2738678ac",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,8 +129,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "aee0a2c2738678ac",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Software-Engineering/Docker.md",
     "Distributed-System/Storage/Curve.md",
     "Linux/shell.md",
@@ -158,7 +159,6 @@
     "blog/neovim.md",
     "Programing-Language/C++/2C++数据2存储类别.md",
     "Programing-Language/C++/1C++概述.md",
-    "Programing-Language/C++/2C++数据.md",
     "Software-Engineering/未命名",
     "未命名"
   ]
