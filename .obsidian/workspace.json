@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3bdf3fe6aefbd016",
+        "id": "4d08ef9eaa8a70ff",
         "type": "tabs",
         "children": [
           {
-            "id": "79695a07f9f98977",
+            "id": "8e41ab16990b192a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Editor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Editor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux/Editor.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -135,10 +131,10 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Missing-Semester/LinuxConfigGuide.md",
+    "Software-Engineering/Docker.md",
     "Distributed-System/Storage/Curve.md",
     "Linux/shell.md",
-    "Software-Engineering/Docker.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/Consensus/Paxos.md",
     "Distributed-System/Consensus/Raft.md",
