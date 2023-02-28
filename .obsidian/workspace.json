@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "865eea640cfde894",
+        "id": "3de393c98bbec058",
         "type": "tabs",
         "children": [
           {
-            "id": "e711f8131788a3f1",
+            "id": "df1efe68ff428bfb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -122,42 +122,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "df1efe68ff428bfb",
   "lastOpenFiles": [
-    "Software-Engineering/Bazel.md",
-    "Programing-Language/C++/3C++语法.md",
-    "Programing-Language/C/C.md",
-    "blog/VSCode.md",
-    "blog/How to use Chatgpt.md",
-    "blog/多机协同.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "Linux/Editor.md",
-    "Linux/Vim.md",
-    "blog/neovim.md",
-    "Programing-Language/C++/2C++数据2存储类别.md",
-    "Programing-Language/C++/1C++概述.md",
-    "Programing-Language/C++/2C++数据.md",
-    "Programing-Language/C++/C++异常.md",
-    "Programing-Language/C++/5C++泛型.md",
-    "Programing-Language/C++/4C++面向对象1封装.md",
-    "Programing-Language/C++/4C++面向对象.md",
-    "Programing-Language/C++/2C++数据4RTTI.md",
-    "Programing-Language/C++/2C++数据3动态内存.md",
-    "Programing-Language/C++/2C++数据4运行时类型识别.md",
-    "Programing-Language/C++/2C++数据2名称空间.md",
-    "Programing-Language/C++/C++lambda.md",
-    "Programing-Language/C++/C++协程.md",
-    "Programing-Language/C++/lib/C++库SL.md",
-    "Programing-Language/C++/lib/C++库泛型算法.md",
-    "Programing-Language/C++/lib/C++库STL.md",
-    "Software-Engineering/未命名",
-    "未命名"
+    "Distributed-System/MapReduce.md",
+    "Distributed-System/Storage/GFS.md",
+    "Distributed-System/Storage/Ceph.md",
+    "Distributed-System/未命名.md",
+    "Distributed-System/RPC.md",
+    "Distributed-System/Introduction.md",
+    "Distributed-System/Consensus/Paxos.md",
+    "Distributed-System/Consensus/Raft.md",
+    "Distributed-System/Consensus/PacificA.md",
+    "Distributed-System/Raft.md"
   ]
 }
