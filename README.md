@@ -1,3 +1,7 @@
+熵增定律
+奥卡姆剃刀
+抽象
+
 <!-- template  
 https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/  
 <img src= "" style="zoom:59%;" div align=center />  -->
