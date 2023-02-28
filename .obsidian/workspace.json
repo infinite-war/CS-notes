@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3de393c98bbec058",
+        "id": "b7c2e321f9c75b97",
         "type": "tabs",
         "children": [
           {
-            "id": "df1efe68ff428bfb",
+            "id": "3443b9609396a39e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "df1efe68ff428bfb",
+  "active": "3443b9609396a39e",
   "lastOpenFiles": [
+    "Programing-Language/C++/lib/gflags.md",
+    "README.md",
+    "Distributed-System/Storage/Curve.md",
     "Distributed-System/MapReduce.md",
     "Distributed-System/Storage/GFS.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/未命名.md",
     "Distributed-System/RPC.md",
     "Distributed-System/Introduction.md",
-    "Distributed-System/Consensus/Paxos.md",
-    "Distributed-System/Consensus/Raft.md",
-    "Distributed-System/Consensus/PacificA.md",
-    "Distributed-System/Raft.md"
+    "Distributed-System/Consensus/Paxos.md"
   ]
 }
