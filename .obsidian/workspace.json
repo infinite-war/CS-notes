@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "4fc03e0d0b7189ce",
+        "id": "742854ac1598b66a",
         "type": "tabs",
         "children": [
           {
-            "id": "e82354a70959ba21",
+            "id": "c3ea259f9797e256",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ],
@@ -129,8 +137,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "c3ea259f9797e256",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Programing-Language/C++/lib/gflags.md",
     "README.md",
     "Distributed-System/Storage/Curve.md",
@@ -139,7 +148,6 @@
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/未命名.md",
     "Distributed-System/RPC.md",
-    "Distributed-System/Introduction.md",
-    "Distributed-System/Consensus/Paxos.md"
+    "Distributed-System/Introduction.md"
   ]
 }
