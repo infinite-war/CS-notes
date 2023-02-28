@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "556dbe8530451097",
+        "id": "3bdf3fe6aefbd016",
         "type": "tabs",
         "children": [
           {
-            "id": "b89a01938ba11dc1",
+            "id": "79695a07f9f98977",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,6 +73,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/Editor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +90,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linux/Editor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linux/Editor.md"
+              }
             }
           }
         ],
@@ -129,9 +133,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b89a01938ba11dc1",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/LinuxConfigGuide.md",
     "Distributed-System/Storage/Curve.md",
+    "Linux/shell.md",
+    "Software-Engineering/Docker.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/Consensus/Paxos.md",
     "Distributed-System/Consensus/Raft.md",
@@ -142,7 +149,6 @@
     "Distributed-System/Consensus",
     "Programing-Language/C++/lib/gflags.md",
     "Missing-Semester/slide.md",
-    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/LaTeX.md",
     "Software-Engineering/Bazel.md",
     "Programing-Language/C++/3C++语法.md",
@@ -157,8 +163,6 @@
     "Programing-Language/C++/2C++数据2存储类别.md",
     "Programing-Language/C++/1C++概述.md",
     "Programing-Language/C++/2C++数据.md",
-    "Programing-Language/C++/C++异常.md",
-    "Programing-Language/C++/5C++泛型.md",
     "Software-Engineering/未命名",
     "未命名"
   ]
