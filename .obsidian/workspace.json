@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b8b024e134736d11",
+        "id": "1eb6f53ac8533aa9",
         "type": "tabs",
         "children": [
           {
-            "id": "1b3b5e21529d9bd7",
+            "id": "0eba3d397bd338c4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -131,14 +131,15 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Linux/Editor.md",
     "Distributed-System/Storage/Curve.md",
+    "Software-Engineering/Docker.md",
+    "Linux/shell.md",
+    "未命名.canvas",
     "Missing-Semester/LinuxConfigGuide.md",
+    "Linux/Editor.md",
     "Linux/Tmux.md",
     "README.md",
     "conflict-files-obsidian-git.md",
-    "Software-Engineering/Docker.md",
-    "Linux/shell.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/Consensus/Paxos.md",
     "Distributed-System/Consensus/Raft.md",
@@ -158,7 +159,6 @@
     "Missing-Semester/WindowsConfigGuide.md",
     "Linux/Vim.md",
     "blog/neovim.md",
-    "Programing-Language/C++/2C++数据2存储类别.md",
     "Software-Engineering/未命名",
     "未命名"
   ]
