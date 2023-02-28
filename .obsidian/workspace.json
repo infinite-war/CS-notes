@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5322de84407d5272",
+        "id": "bbc6ec6f4aa4da57",
         "type": "tabs",
         "children": [
           {
-            "id": "aee0a2c2738678ac",
+            "id": "7b3a7dc5b7de97c7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,8 +129,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aee0a2c2738678ac",
+  "active": "7b3a7dc5b7de97c7",
   "lastOpenFiles": [
+    "README.md",
     "conflict-files-obsidian-git.md",
     "Software-Engineering/Docker.md",
     "Distributed-System/Storage/Curve.md",
@@ -140,7 +141,6 @@
     "Distributed-System/Consensus/Paxos.md",
     "Distributed-System/Consensus/Raft.md",
     "Distributed-System/Consensus/PacificA.md",
-    "README.md",
     "Distributed-System/Storage/GFS.md",
     "Distributed-System/Storage",
     "Distributed-System/Consensus",
