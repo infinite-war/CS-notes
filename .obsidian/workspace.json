@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cd192b6c01e5c41b",
+        "id": "b8b024e134736d11",
         "type": "tabs",
         "children": [
           {
-            "id": "85595774dd31e009",
+            "id": "1b3b5e21529d9bd7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,14 +129,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "85595774dd31e009",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Linux/Editor.md",
+    "Distributed-System/Storage/Curve.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Linux/Tmux.md",
     "README.md",
     "conflict-files-obsidian-git.md",
     "Software-Engineering/Docker.md",
-    "Distributed-System/Storage/Curve.md",
     "Linux/shell.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/Consensus/Paxos.md",
@@ -155,7 +156,6 @@
     "blog/How to use Chatgpt.md",
     "blog/多机协同.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Linux/Editor.md",
     "Linux/Vim.md",
     "blog/neovim.md",
     "Programing-Language/C++/2C++数据2存储类别.md",
