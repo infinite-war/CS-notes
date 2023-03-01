@@ -28,7 +28,7 @@
 
 + 插件推荐：
 	+ `Remote-SSH`：远程开发必备（据说有漏洞，不过我不在乎）
-
+	+ `Docker`：Docker开发必备，使用体验和remote类似
 
 
 ## 打造成IDE

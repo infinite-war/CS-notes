@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2418921f20057bbc",
+        "id": "c806a5721a85d008",
         "type": "tabs",
         "children": [
           {
-            "id": "849c18c7d3c478d8",
+            "id": "b998c36e2fb7b9a5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,11 +129,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "849c18c7d3c478d8",
+  "active": "b998c36e2fb7b9a5",
   "lastOpenFiles": [
+    "blog/VSCode.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "blog/VSCode.md",
     "Distributed-System/Storage/Curve.md",
     "Software-Engineering/Docker.md",
     "Linux/Editor.md",
