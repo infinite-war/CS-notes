@@ -18,5 +18,6 @@
   "showUnsupportedFiles": true,
   "autoPairMarkdown": false,
   "autoPairBrackets": true,
-  "vimMode": false
+  "vimMode": false,
+  "autoConvertHtml": false
 }

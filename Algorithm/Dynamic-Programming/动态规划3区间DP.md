@@ -6,8 +6,10 @@
 
     状态计算：
     $$
+    \begin{aligned}
     f_{i, j} &= \mathop{min}\limits_{i \le k < j} f_{i, k} + f_{k + 1, j} + \mathop{\sum}\limits_{i \le k \le j} a[k] &i < j \hfill \\
     &= 0 \hfill  &i == j \hfill
+    \end{aligned}
     $$
 
   + 复杂度：$O(n^3)$

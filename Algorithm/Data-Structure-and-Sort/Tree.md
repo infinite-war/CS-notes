@@ -1,7 +1,6 @@
 # 树Tree
 
 + 相关术语：
-
   + root根、edge边、leaf叶子结点
 
   + child儿子、parent父亲、siblings兄弟结点
@@ -187,11 +186,8 @@ private:
 ### AVL树
 
 > AVL Adelson-Velskii and Landis
->
 > balance condition平衡条件
 
 将空子树高度定义为-1，AVL的平衡条件是要求每个结点的左子树和其右子树的高度最多差1
-
 理论上AVL的树的高度最多$1.44log(N + 2) - 1.328$，但其实际高度只比logN稍微多一点
-
 + 插入——rotation旋转
