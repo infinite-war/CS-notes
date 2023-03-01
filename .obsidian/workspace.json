@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c806a5721a85d008",
+        "id": "afb1ab95998c9d37",
         "type": "tabs",
         "children": [
           {
-            "id": "b998c36e2fb7b9a5",
+            "id": "d6146abb1715fe4d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b998c36e2fb7b9a5",
+  "active": "d6146abb1715fe4d",
   "lastOpenFiles": [
+    "Software-Engineering/Docker.md",
+    "Distributed-System/Storage/Curve.md",
+    "Programing-Language/Golang/Intro.md",
+    "Programing-Language/Golang/base.md",
+    "Distributed-System/RPC.md",
+    "Distributed-System/Consensus/Raft.md",
     "blog/VSCode.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Distributed-System/Storage/Curve.md",
-    "Software-Engineering/Docker.md",
-    "Linux/Editor.md",
-    "Linux/Tmux.md",
-    "conflict-files-obsidian-git.md",
-    "README.md",
-    "Programing-Language/C++/lib/gflags.md"
+    "Linux/Editor.md"
   ]
 }

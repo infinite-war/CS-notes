@@ -19,6 +19,7 @@ RPC, Remote procedure call远程过程调用：多机交互
 	>那它如何实现RPC的呢？
 
 ## protobuf
++ Install: [Manual](https://grpc.io/docs/protoc-installation/)
 
 + `.proto` file grammer:
 	+ data: is structured as `message`，每个name-value对叫field:
