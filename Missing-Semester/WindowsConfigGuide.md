@@ -3,10 +3,10 @@
 
 + 精华：
 	+ [命令行](#5.命令行)：为Windows配置一个相当优雅的命令行环境，让你在win中有近似linux的命令行体验
-	+ [6.包管理器:Scoop](#6.包管理器Scoop)：十分建议您千万不要错过一个如此强大的包管理器，从此配环境再也不是问题
+	+ [6.包管理器:Scoop](#6.包管理器Scoop)：十分建议您千万不要错过这样一款包管理器，它极大的改善了我的开发环境
 
 # 前言
-本教程有一定门槛，不必强求。
+本教程有一定门槛，不必强求，只给有缘人
 
 >作此文章的发心：
 >1. 作为重置系统的记录，在下次重置或者初始化一个win机器时提供可供参考的记录。
@@ -17,7 +17,7 @@
 + 须知：
 	+ STFW：有些名词会导致递归学习没有解释，有些问题教程颇多，这里只提供索引，请读者"Search The Friendly Web"。
 	+ STFM：软件的下载通常有大量教程，但是软件更新迭代很快，不同环境、不同软件版本，流程就很可能不一样，我尽量依照Manual。
-	+ 具体配置更多的是符合我个人的习惯、请读者见仁见智。
+	+ 具体配置更多的是符合我个人的习惯、读者自行“去芜存菁”。
 
 + 环境：我的Windows机器的规格是：
 	```
@@ -92,6 +92,7 @@
 	+ 划词翻译
 		+ 可单开网页处理英文PDF
 	+ 油猴脚本
+		+ 这里推荐一款我开发的关于哔哩哔哩的脚本，[地址](https://github.com/zweix123/BilibiliProgressBar)
 
 ## 2.解压缩7z
 一款简单的解压缩软件
@@ -168,9 +169,9 @@
 
 + Powershell7的ls对输出的目录的美化需要下载额外模块：（下载比较慢）
 	```powershell
-	# Install-Module PSColor  # 我个人的配置已经将该模块换为DirColors, 其实PSColor更好看，但是输出多一个换行，我不能接受
-	Install-Module DirColors
-	Install-Module PSReadLine
+	# Install-Module PSColor     # 我个人的配置已经将该模块换为DirColors, 其实PSColor更好看，但是输出多一个换行，我不能接受
+	Install-Module DirColors     #  
+	# Install-Module PSReadLine  # 画蛇添足的东西，后也不用
 	```
 
 ### 5.2.oh-my-posh
@@ -274,51 +275,23 @@
 + Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过SSH链接去`push`）
 
 ## 8.编辑器:VSCode
-
 VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<strike>极具可玩性</strike>）
 
-+ 彻底删除VSCode：
++ install：STFW Manual
++ uninstall：
 	+ 软件安装位置
 	+ `C:\Users\$用户名\.vscode\`：全局配置
 	+ `C:\Users\$用户名\AppData\Roaming\Code\`
 
-+ 快捷键：
++ 快捷键（个人习惯使用）：
 	+ `Ctrl + ,`：打开配置选项  
 		`Ctrl + p`：搜索文件  
 		`Ctrl + Shift + p`：全局配置
 	+ 格式化：手动使用快捷键`Shift + Alt + F`
 
-+ 编辑器设置：参考[视频](https://www.bilibili.com/video/BV1YG4y1v7uB/)
-	+ *设置同步*，本机的sync now是将本地配置上传，然后每次启动VSCode都会从云端down下来配置
-	+ 关闭受限模式：
-		打开设置，键入`trust`  
-		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/vscode受限模式关闭.png" style="zoom:59%;" div align=center />
-	+ 主题（背景颜色、字体颜色等等）：插件`One Dark Pro`和插件`Atom One Dark Theme`
-	+ 文件图标：插件`vscode-icons`
-	+ 字体：
-		+ 编辑器字体：打开设置，键入`Editor Font Family`  
-			>需要插件`FiraCode font - Professional Font for Developers`
-
-			<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/编辑器字体.png" style="zoom:60%;" div align=center />
-		+ 终端字体：打开设置，键入`Terminal Font Family`  
-			<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/终端字体.png" style="zoom:57.5%;" div align=center />
-	+ 括号连线：打开设置，键入`bracket`，找到对应位置选择true  
-		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/branket.png" style="zoom:60%;" div align=center />
-	+ 柔顺：  
-		打开设置，键入`smooth`，选择下面三个选项  
-		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/smooth.png" style="zoom:79%;" div align=center />  
-		打开设置，键入`cursor` ，将下面设置为smooth  
-		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/cursor smooth.png" style="zoom:75%;" div align=center />  
-	+ 补全建议：打开设置，键入`preview`，选择下面的选项  
-		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/suggest perview.png" style="zoom:64%;" div align=center />
-
-+ 插件推荐：
-	+ `Remote-SSH`：远程开发必备（据说有漏洞，不过我不在乎）
++ config：内容多且散，而且无关平台，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
 + 工作流程：右键项目文件通过Code打开，然后开始编码
-
-### 配置成IDE
-内容多且散，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
 # 工具软件
 

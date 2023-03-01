@@ -154,7 +154,7 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 	+ `dpkg -r 软件名`：不清除配置卸载
 	+ `dpkg -P 软件名`：清除配置卸载
 
-+ 配置和Windows类似（[我的配置](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md#8%E7%BC%96%E8%BE%91%E5%99%A8vscode)）
++ config：内容多且散，而且无关平台，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
 ### Obsidian
 

@@ -42,5 +42,6 @@
 	+ tmux和其他软件复制粘贴：
 		+ 选中：按`shift`键同时鼠标选中
 		+ 之后复制粘贴同Shell
+	+ `Shift` + `双击单词`：可以复制单词
 
 + tmux外关闭窗口：`tmux kill-session -t 0`（`tmux ls`）查看

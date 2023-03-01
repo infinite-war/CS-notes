@@ -2,17 +2,18 @@
 
 在1976年没有Linux操作系统时（1991），就已经有了编辑器vi，现在几乎大部分Linux操作系统都默认安装vi，而vim即为vi improvedvi的增强版，neovim则是它们的一个分支，意在重构和重写vim的核心部分来实现更好的性能、可扩展性和可定制性，随着两者的发展，已经越来越不兼容，希望下面的指令在两边都能用吧
 
-<<<<<<< HEAD
 + 资料推荐：
 	+ 陈皓COOLSHELL的[教程](https://revealjs.com/pdf-export/)
-=======
+
+
++ 本人目前的学习路线是先学习vim，实际上两者的大量操作兼容，然后后续过度到nvim。
 
 ## Install
 + windows：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)（我个人推荐的Scoop）
 + Linux（Ubuntu）：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
 
 + 彻底卸载：neovim的配置在`~/.config/nvim/`下
->>>>>>> origin/master
+
 
 ## Use
 
