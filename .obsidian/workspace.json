@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3de5ef4e451df885",
+        "id": "92382bbf7947f6c7",
         "type": "tabs",
         "children": [
           {
-            "id": "46aa7dfe82b641fa",
+            "id": "92724dd20dd73ee6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 239.51103591918945
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -122,7 +122,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -131,15 +131,35 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Linux/Editor.md",
-    "README.md",
-    "Programing-Language/C++/lib/gflags.md",
+    "Software-Engineering/Docker.md",
     "Distributed-System/Storage/Curve.md",
-    "Distributed-System/MapReduce.md",
-    "Distributed-System/Storage/GFS.md",
+    "Linux/Editor.md",
+    "Linux/shell.md",
+    "未命名.canvas",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Linux/Tmux.md",
+    "README.md",
+    "conflict-files-obsidian-git.md",
     "Distributed-System/Storage/Ceph.md",
-    "Distributed-System/未命名.md",
-    "Distributed-System/RPC.md"
+    "Distributed-System/Consensus/Paxos.md",
+    "Distributed-System/Consensus/Raft.md",
+    "Distributed-System/Consensus/PacificA.md",
+    "Distributed-System/Storage/GFS.md",
+    "Distributed-System/Storage",
+    "Distributed-System/Consensus",
+    "Programing-Language/C++/lib/gflags.md",
+    "Missing-Semester/slide.md",
+    "Missing-Semester/LaTeX.md",
+    "Software-Engineering/Bazel.md",
+    "Programing-Language/C++/3C++语法.md",
+    "Programing-Language/C/C.md",
+    "blog/VSCode.md",
+    "blog/How to use Chatgpt.md",
+    "blog/多机协同.md",
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Linux/Vim.md",
+    "blog/neovim.md",
+    "Software-Engineering/未命名",
+    "未命名"
   ]
 }
