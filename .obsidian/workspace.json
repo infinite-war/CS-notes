@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ed8aecc45916c860",
+        "id": "3de5ef4e451df885",
         "type": "tabs",
         "children": [
           {
-            "id": "c548ce63d3ee0701",
+            "id": "46aa7dfe82b641fa",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,11 +129,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c548ce63d3ee0701",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Linux/Editor.md",
     "README.md",
-    "conflict-files-obsidian-git.md",
     "Programing-Language/C++/lib/gflags.md",
     "Distributed-System/Storage/Curve.md",
     "Distributed-System/MapReduce.md",
