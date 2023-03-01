@@ -1,5 +1,8 @@
 在1976年没有Linux操作系统时（1991），就已经有了编辑器vi，现在几乎大部分Linux操作系统都默认安装vi，而vim即为vi improvedvi的增强版，neovim则是它们的一个分支，意在重构和重写vim的核心部分来实现更好的性能、可扩展性和可定制性，随着两者的发展，已经越来越不兼容，希望下面的指令在两边都能用吧
 
++ 资料推荐：
+	+ 陈皓COOLSHELL的[教程](https://revealjs.com/pdf-export/)
+
 ## Use
 
 + 功能：

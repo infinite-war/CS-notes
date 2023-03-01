@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "742854ac1598b66a",
+        "id": "ed8aecc45916c860",
         "type": "tabs",
         "children": [
           {
-            "id": "c3ea259f9797e256",
+            "id": "c548ce63d3ee0701",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -137,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c3ea259f9797e256",
+  "active": "c548ce63d3ee0701",
   "lastOpenFiles": [
+    "Linux/Editor.md",
+    "README.md",
     "conflict-files-obsidian-git.md",
     "Programing-Language/C++/lib/gflags.md",
-    "README.md",
     "Distributed-System/Storage/Curve.md",
     "Distributed-System/MapReduce.md",
     "Distributed-System/Storage/GFS.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/未命名.md",
-    "Distributed-System/RPC.md",
-    "Distributed-System/Introduction.md"
+    "Distributed-System/RPC.md"
   ]
 }
