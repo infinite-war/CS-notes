@@ -82,23 +82,20 @@ STFW
 + `git clone ...`：将某个项目down到本地
 	+ `GitHub`提供了不同的clone url，个人项目使用ssh，即通过之前绑定的公钥来修改
 
-+ 分支：
-	。。。
++ 指定分支克隆：
+	```bash
+	git clone --branch <branchname> <remote-repo-url>
+	git clone -b <branchname> <remote-repo-url>
+	```
 
-#### pull request
-1. fork项目
-2. 把fork过来的项目clone到本地
-3. 创建新分支：分支名称尽可能简单且能反应我们的工作
-	```bash
-	git checkout -b [Branch Name]
-	```
-+ 工作：add->commit->push（`git push origin <branch>`）
-+ 确定远程分支：
-	```bash
-	git remote
-	```
-4. 推送
-	```bash
-	git push 远程分支 你的分支
-	```
-5. 去Github上点击提交
++ how to pull request：
+	1. fork
+	2. clone
+	3. 创建新分支（分支名称尽可能简单且能反应我们的工作）
+		```bash
+		git checkout -b [Branch Name]
+		```
+	4. work: add -> commit 
+	5. `git push 远程分支 你的分支`
+		`git remote`查看远程分支
+	6. github上点击提交

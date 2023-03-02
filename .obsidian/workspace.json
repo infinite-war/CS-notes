@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "12333e275aa51375",
+        "id": "ff7efac9e0fb42a7",
         "type": "tabs",
         "children": [
           {
-            "id": "78d431c39fca6de6",
+            "id": "cfd394da56b4bb08",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,6 +73,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Missing-Semester/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +90,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Missing-Semester/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Missing-Semester/Git.md"
+              }
             }
           }
         ],
@@ -131,15 +135,15 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Distributed-System/Storage/Curve.md",
+    "Software-Engineering/Doxygen.md",
+    "Missing-Semester/Git.md",
+    "Software-Engineering/Docker.md",
+    "Frontend/HTML.md",
     "Algorithm/Dynamic-Programming/动态规划0背包问题.md",
     "Algorithm/Math/数学5多项式&生成函数.md",
     "Algorithm/Math/数学4计算几何_三维计算几何.md",
-    "Algorithm/Math/数学4计算几何_计算几何基础.md",
-    "Algorithm/Math/数学4计算几何_二维计算几何.md",
-    "Algorithm/Math/数学3博弈论.md",
-    "Algorithm/Math/数学2组合数学.md",
-    "Algorithm/Math/数学1数论2同余理论.md",
-    "Algorithm/Math/数学1数论1整除理论.md",
-    "Algorithm/Dynamic-Programming/动态规划.md"
+    "Algorithm/Math/数学4计算几何_计算几何基础.md"
   ]
 }
