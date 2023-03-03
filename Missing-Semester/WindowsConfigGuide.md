@@ -290,20 +290,20 @@ VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<stri
 		`Ctrl + Shift + p`：全局配置
 	+ 格式化：手动使用快捷键`Shift + Alt + F`
 
-+ config：内容多且散，而且无关平台，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
-
-+ 工作流程：右键项目文件通过Code打开，然后开始编码
++ configs：内容多且散，而且无关平台，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
 # 工具软件
 
-## neovim
+## 类vim编辑器
+>即vi、vim、neovim
+
 VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打开，但随着我们给它装了大量的插件，它开始变得臃肿，此时如果有轻度的编辑，再使用它就不再流畅了（无论是命令行打开还是图形化打开），我们需要一个更轻量型的编辑器。  
-得益于强大的包管理器Scoop和调教好的终端，我们可以有近似Linux的命令行体验，所以我选择vi系列作为这个轻度编辑器，更具体的说是neovim。
+得益于强大的包管理器Scoop和我调教好的终端，我们可以有近似Linux的命令行体验，所以我选择vi系列作为这个轻度编辑器。
 >这部分对我个人来说也是必须的，但未必适用于其他开发者，VSCode足以在可接受的成本内满足要求，所以没有将该软件放在必装软件中
 
 + 安装：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)
-+ 配置和使用：我的[笔记](https://github.com/zweix123/CS-notes/blob/master/Linux/Editor.md)
-	>实际上neovim是一个可玩性很高的编辑器，这里引用的文章不仅有vim的基本用法，可能还会有我倒腾nvim的记录。
++ 配置和使用：我的[文章](https://github.com/zweix123/CS-notes/blob/master/Linux/Editor.md)
+	>实际上vim是一个可玩性很高的编辑器，这里引用的文章不仅有vim的基本用法，可能还会有我倒腾vim的记录。
 
 ## 截图Snipaste
 优秀的截图软件，很好用，开源，解压即用。

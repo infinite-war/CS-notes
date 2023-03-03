@@ -9,11 +9,15 @@
 + 文件图标：插件`vscode-icons`
 + 字体：
 	+ 编辑器字体：打开设置，键入`Editor Font Family`  
->需要插件`FiraCode font - Professional Font for Developers`
+		>需要插件`FiraCode font - Professional Font for Developers`
 
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/blog/编辑器字体.png" style="zoom:60%;" div align=center />
+
 	+ 终端字体：打开设置，键入`Terminal Font Family`  
+		>需要你已经按照Shell的配置下载了对应字体
+
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/blog/终端字体.png" style="zoom:57.5%;" div align=center />
+		
 + 括号连线：打开设置，键入`bracket`，找到对应位置选择true  
 	<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/blog/branket.png" style="zoom:60%;" div align=center />
 + 柔顺：  
@@ -30,7 +34,6 @@
 	+ `Remote-SSH`：远程开发必备（据说有漏洞，不过我不在乎）
 	+ `Docker`：Docker开发必备，使用体验和remote类似
 
-
 ## 打造成IDE
 
 ### 开发Python
@@ -38,24 +41,25 @@
 + 依赖环境：通过Scoop下载Python（Python3）
 + 插件推荐：Python和Python Extension Pack（它们有依赖的插件，所以会下载很多）
 + 开发流程：使用poetry做环境管理，教程可[见](https://github.com/zweix123/CS-notes/blob/master/Programing-Language/Python/poetry.md)
-+ misc：
-	+ 格式化：`python format provide` -> `black`（默认autopep8，个人喜好）
-		>如何让这样的配置跟随项目？这里提供一个思路，vscode有两种settings，一种是关于软件本身的，另一个是关于工作区的，项目目录下的`.vscode/settings.json`文件
+---
++ 代码格式化：`python format provide` -> `black`（默认autopep8，个人喜好）
+	+ 格式化配置跟随项目：在项目根目录创建`.vscode/settings.json`
+		```json
+		
+		```
 
 ### 开发C和C++
->借鉴资料：
->+ 一个在win上使用clang的[教程](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html)
->+ 一个在linux上的亲爹级[教程](https://www.bilibili.com/video/BV1YG4y1v7uB)
->	+ 补充解释：
->		+ `.clang-fromt`文件：用于代码格式化
-
-实际上上面提到的linux下的教程在win10也可以用，下面给出如何配置环境使之可以在win下使用
++ win + clangd：[教程](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html)
++ linux + 官方插件：[教程](https://www.bilibili.com/video/BV1YG4y1v7uB)
+---
+上面提到的linux下的教程在win10也可以用，下面给出如何配置环境使之可以在win下使用
 1. 依赖环境：通过Scoop下载了gcc、g++、gdb、make和cmake
 2. 安装插件：C/C++和C/C++ Extension Pack（它们有依赖的插件，所以会下载很多）
-
 ---
-
 + 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
+---
+#### clangd
+>LSP, Language Server Protocol
 
 ### 开发Java
 [Manual](https://scoop-docs.vercel.app/docs/guides/Java.html)
