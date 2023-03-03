@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "785f4888e52300aa",
+        "id": "3ff83282aa6d3c8c",
         "type": "tabs",
         "children": [
           {
-            "id": "6d9fc9ce3651e0c2",
+            "id": "ef3f334a120c6966",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,8 +129,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6d9fc9ce3651e0c2",
+  "active": "ef3f334a120c6966",
   "lastOpenFiles": [
+    "Quant/Quant.md",
     "Programing-Language/C++/lib/gflags.md",
     "Programing-Language/C++/C++lambda.md",
     "Programing-Language/C++/C++异常.md",
@@ -139,7 +140,6 @@
     "Programing-Language/C++/C++库SL.md",
     "Programing-Language/C++/C++库泛型算法.md",
     "Programing-Language/C++/5C++泛型.md",
-    "Programing-Language/C++/4C++OOP2继承.md",
-    "Programing-Language/C++/4C++OOP-友元.md"
+    "Programing-Language/C++/4C++OOP2继承.md"
   ]
 }
