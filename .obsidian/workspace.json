@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "33c1fc9f882eedef",
+        "id": "879754b943e44cd8",
         "type": "tabs",
         "children": [
           {
-            "id": "45704322d7fe281f",
+            "id": "3ea92276e585df3b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "45704322d7fe281f",
+  "active": "3ea92276e585df3b",
   "lastOpenFiles": [
-    "Linux/shell.md",
+    "Missing-Semester/Markdown.md",
     "Missing-Semester/Git.md",
-    "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/Storage/Curve.md",
+    "Programing-Language/Golang/Intro.md",
+    "Programing-Language/Golang/base.md",
+    "Programing-Language/Golang/concurrency.md",
+    "Linux/shell.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "Software-Engineering/Doxygen.md",
-    "Software-Engineering/Docker.md",
-    "Frontend/HTML.md",
-    "Algorithm/Dynamic-Programming/动态规划0背包问题.md",
-    "Algorithm/Math/数学5多项式&生成函数.md",
-    "Algorithm/Math/数学4计算几何_三维计算几何.md"
+    "Software-Engineering/Docker.md"
   ]
 }
