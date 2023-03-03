@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3ff83282aa6d3c8c",
+        "id": "857f4a817f1d7250",
         "type": "tabs",
         "children": [
           {
-            "id": "ef3f334a120c6966",
+            "id": "f335deb7183e5705",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ef3f334a120c6966",
+  "active": "f335deb7183e5705",
   "lastOpenFiles": [
+    "Android/Flutter.md",
+    "blog/多机协同.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "Quant/Quant.md",
     "Programing-Language/C++/lib/gflags.md",
     "Programing-Language/C++/C++lambda.md",
     "Programing-Language/C++/C++异常.md",
     "Programing-Language/C++/C++协程.md",
     "Programing-Language/C++/C++库STL.md",
-    "Programing-Language/C++/C++库SL.md",
-    "Programing-Language/C++/C++库泛型算法.md",
-    "Programing-Language/C++/5C++泛型.md",
-    "Programing-Language/C++/4C++OOP2继承.md"
+    "Programing-Language/C++/C++库SL.md"
   ]
 }
