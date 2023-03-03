@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ff7efac9e0fb42a7",
+        "id": "33c1fc9f882eedef",
         "type": "tabs",
         "children": [
           {
-            "id": "cfd394da56b4bb08",
+            "id": "45704322d7fe281f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Missing-Semester/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Missing-Semester/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Missing-Semester/Git.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -133,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "45704322d7fe281f",
   "lastOpenFiles": [
+    "Linux/shell.md",
+    "Missing-Semester/Git.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/Storage/Curve.md",
     "Software-Engineering/Doxygen.md",
-    "Missing-Semester/Git.md",
     "Software-Engineering/Docker.md",
     "Frontend/HTML.md",
     "Algorithm/Dynamic-Programming/动态规划0背包问题.md",
     "Algorithm/Math/数学5多项式&生成函数.md",
-    "Algorithm/Math/数学4计算几何_三维计算几何.md",
-    "Algorithm/Math/数学4计算几何_计算几何基础.md"
+    "Algorithm/Math/数学4计算几何_三维计算几何.md"
   ]
 }
