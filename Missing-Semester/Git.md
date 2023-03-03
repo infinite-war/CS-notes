@@ -1,8 +1,9 @@
-https://www.runoob.com/git/git-basic-operations.html
-
 这里介绍用法，下载请自行STFW
 ## Intro
 >Git是一种版本管理工具，GitHub是一个代码托管平台。
+
++ 相关资料：
+	+ [菜鸟教程](https://www.runoob.com/git/git-basic-operations.html)
 
 ## Git
 
@@ -43,7 +44,8 @@ git config --global user.email xxx@xxx  # 设置全局邮箱地址
 	+ `git restore .`：注意暂存区中最开始的时候应该和版本库当前分支前是一样的，如果被所有文件都撤回到暂存区版本，相当于取消这次的修改
 		>但是注意到只有add的file才能管理，也就是说我这次修改不仅修改了内容还创建了文件，此时如果想取消这次修改对于创建的文件只能手动删除
 + `git diff <file>`：查看工作区的file相对于缓存区都修改了那些内容
-+ `git commit -m "remarks"`：将暂存区的内容提交到当前分支
++ `git commit -m "remarks"`：将暂存区的内容提交到当前分支  
+	`git commit`将进入文本编辑器，`Ctrl + C` -> `Y`提交
 ---
 版本库
 + 版本号：哈希值的前六位，下面支出可查看的命令
@@ -61,13 +63,6 @@ git config --global user.email xxx@xxx  # 设置全局邮箱地址
 	`git checkout -b [branch]`创建并切换分支
 	+ `git branch`：查看分支
 	+ `git merge [branch]`：将分支合并到当前分支上
-
-+ 分支：默认创建主分支`master`
-  + `git branch branch_name`：创建新分支
-  + `git checkout branch_name`：切换到`branch_name`分支
-    + `git checkout -b branch_name`：创建并切换到`branch_name`这个分支
-  + `git branch`：查看所有分支和当前所处分支
-  + `git merge branch_name`：将分支`branch_name`合并到当前分支上
 
 ## Github
 >资料：
