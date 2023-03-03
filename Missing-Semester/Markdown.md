@@ -1,3 +1,5 @@
+我个人对Markdown的理解是把它当作Word的一种“受限”的实现，因为Word在提供丰富功能的同时以带来了极高的学习成本，依照奥卡姆剃刀原理，Markdown简单易用、功能小但足够。而Markdown到HTML的转换非常自然容易。
+
 - [语法学习](#语法学习)
 - [Editor](#editor)
 	- [Obsidian](#obsidian)
@@ -7,8 +9,6 @@
 - [奇技淫巧](#奇技淫巧)
 	- [用Markdown写论文](#用markdown写论文)
 	- [用Markdown写幻灯片](#用markdown写幻灯片)
-
-我个人对Markdown的理解是把它当作Word的一种“受限”的实现，因为Word在提供丰富功能的同时以带来了极高的学习成本，依照奥卡姆剃刀原理，Markdown简单易用、功能小但足够。而Markdown到HTML的转换非常自然容易。
 
 # 语法学习
 个人建议Markdown语法/Markdown方言/LaTeX简单语法/Markdown内置graph语法都不需要刻意记忆：全面浏览、随用随查最好。
@@ -30,11 +30,12 @@
 
 + Typora：即时渲染能力极强，在其加持下，甚至感觉不到Markdown语法；可以管理项目、可以查看小标题（两者只能同时看到一个）；维护本地文件，上云需要其他手段；收费使用。
 + 有道云笔记：免费，自动上云；编辑模式有即时渲染和双屏，体感一般。文件不能源码导出。
-+ VSCode结合插件(Markdown Preview Enhanced、Markdown All in One)：只能双屏编辑，但是VSCode编辑能力极强；似乎不能看大纲；维护本地文件，上云需要其他手段。
++ VSCode结合插件(Markdown Preview Enhanced、Markdown All in One)：只能双屏编辑，但是VSCode编辑能力极强；能看大纲；维护本地文件，上云需要其他手段。
 + Obsidian：即时渲染能力略逊于Typora，可同时查看目录和大纲，维护本地项目，可通过插件上云，免费且全平台支持，插件丰富
 + Notion：不了解。
 
 最后我选择是用Obsidian维护笔记项目，其他Markdown文件使用VSCode
+>没有选择VSCode的原因是，想象一下，项目结构、源码、渲染结果、大纲同时出现屏幕上得多挤，所以还是得要即时渲染。
 
 ## Obsidian
 Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同时也在设置限制。下面讨论我从Typora转向Obsidian的心路历程
@@ -66,7 +67,7 @@ Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同
 	+ 性能很怪，当一个文章的链接（就是普通的外链），即使渲染会出现bug（方向键无效，不能渲染）
 	+ 既然选择以项目为中心，为什么不能提供右键打开当前目录的选项？
 	+ 一个插件往往提供大量的功能，同时提供了对这些功能的快捷键自定义，需要打磨出自己一套操作，可选项太多了很容易冲突。
-	+ 如果用Git维护内容和格式（`.obsidian/`），这个文件`.obsidian/workspace.json`变化频繁，容易冲突
+	+ 如果用Git维护内容和格式（`.obsidian/`），这个文件`.obsidian/workspace.json`变化频繁，很容易冲突
 
 # 导出
 
@@ -74,9 +75,9 @@ Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同
 
 ## 导出成HTML
 
-
 # 奇技淫巧
 
 ## 用Markdown写论文
 
 ## 用Markdown写幻灯片
+见我的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/slide.md)

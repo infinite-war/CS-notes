@@ -1,3 +1,9 @@
++ 快捷键（个人习惯使用）：
+	+ `Ctrl + ,`：打开配置选项  
+		`Ctrl + p`：搜索文件  
+		`Ctrl + Shift + p`：全局配置
+	+ 格式化：手动使用快捷键`Shift + Alt + F`
+
 ## 编辑器设置
 >参考[视频](https://www.bilibili.com/video/BV1YG4y1v7uB/)
 

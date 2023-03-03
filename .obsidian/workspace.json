@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2c84b949a3d6780f",
+        "id": "55bff9f015a16ed9",
         "type": "tabs",
         "children": [
           {
-            "id": "26e2f97146b13f55",
+            "id": "16d7d2f9470dfe85",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "26e2f97146b13f55",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Missing-Semester/Git.md",
-    "Android/Flutter.md",
+    "Missing-Semester/slide.md",
     "blog/多机协同.md",
+    "blog/How to use Chatgpt.md",
+    "Missing-Semester/LaTeX.md",
+    "Linux/Editor.md",
+    "Missing-Semester/SSH.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Quant/Quant.md",
-    "Programing-Language/C++/lib/gflags.md",
-    "Programing-Language/C++/C++lambda.md",
-    "Programing-Language/C++/C++异常.md",
-    "Programing-Language/C++/C++协程.md",
-    "Programing-Language/C++/C++库STL.md"
+    "Missing-Semester/Markdown.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Missing-Semester/Git.md"
   ]
 }

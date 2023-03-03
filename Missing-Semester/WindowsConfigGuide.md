@@ -140,7 +140,7 @@
 
 ## 5.命令行
 
-+ Shell基础：快捷键`win + r`键入`cmd`打开一个Shell——`cmd`
++ Shell基础：快捷键`win + r`键入`cmd`打开一个Shell `cmd`
 + 对于命令行的美化，其实分下面几个方面
 	+ 信息的输出，比如用户名、主机名、当前路径、git状态，甚至时间、电量，如何对这些信息进行排布和染色是个什么问题
 	+ 命令的输出，比如`ls`这样的常用命令，如何以合适的样式输出合适的信息是个审美问题
@@ -159,7 +159,7 @@
 ---
 
 + 我的[配置](https://github.com/zweix123/posh-config)，项目README中有使用方法（需要在下载完下面三个软件后再导入配置）
-	>在本文开头有配置效果，完全可以照猫画虎修改，不需要什么前置知识
+	>如果像定制完全可以照猫画虎修改，不需要什么前置知识
 
 ### 5.1.PowerShell7
 
@@ -198,7 +198,7 @@
 
 ## 6.包管理器Scoop
 **Scoop非常强大，几乎任何你想下载的命令行程序或者依赖软件都可以去search一下，几乎都有！**  
-比如C/C++（`gcc`、`g++`、`gdb`、`make`、`cmake`）、Python（Python和某些库的依赖）、Java、LaTeX等等
+比如C/C++（`gcc`、`g++`、`gdb`、`make`、`cmake`）、Python（Python和某些库的依赖）、Java、LaTeX还有各种软件。
 
 首先考虑第一性原理的问题，我们为什么需要这样的包管理器？  
 在Windows中正常使用软件通常的流程是去官网下载对应机器和系统的安装包，运行安装包安装，安装过程中会选择诸如下载路径之类的设置。在开发过程中常用的比如Git或者Python这种，下载过程中还要设置更多的选项。同时想要通过命令行使用它们还要将其设置为“环境变量”。但是在实际使用的过程中，基本只会在命令行中或者以命令的形式使用，那么下载过程中下载的诸如添加桌面快捷键、添加右键菜单栏这样的功能是画蛇添足、没有必要的。
@@ -284,12 +284,6 @@ VSCode本身是编辑器，在插件的支持下扩展出丰富的功能（<stri
 	+ `C:\Users\$用户名\.vscode\`：全局配置
 	+ `C:\Users\$用户名\AppData\Roaming\Code\`
 
-+ 快捷键（个人习惯使用）：
-	+ `Ctrl + ,`：打开配置选项  
-		`Ctrl + p`：搜索文件  
-		`Ctrl + Shift + p`：全局配置
-	+ 格式化：手动使用快捷键`Shift + Alt + F`
-
 + configs：内容多且散，而且无关平台，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
 # 工具软件
@@ -330,10 +324,10 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 		>不过这是我早期的巨大文件才出现的情况，后来女朋友用这个记笔记我看规模也很大，但是并没有很卡
 
 ## 幻灯片jyyslide-md
-见我关于基于Web的幻灯片演示的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/slide.md)
+见我的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/slide.md)
 
 ## 论文LaTeX
-见我关于这方面的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/LaTeX.md)
+见我的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/LaTeX.md)
 
 ## UML图PlantUML
 见我的[教程](https://github.com/zweix123/CS-notes/blob/master/Software-Engineering/UML.md)
