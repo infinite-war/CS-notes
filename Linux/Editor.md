@@ -5,15 +5,18 @@
 + 资料推荐：
 	+ 陈皓COOLSHELL的[教程](https://revealjs.com/pdf-export/)
 
-
 + 本人目前的学习路线是先学习vim，实际上两者的大量操作兼容，然后后续过度到nvim。
 
 ## Install
-+ windows：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)（我个人推荐的Scoop）
-+ Linux（Ubuntu）：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
 
-+ 彻底卸载：neovim的配置在`~/.config/nvim/`下
+|         | vim   | neovim                                                                   |
+| ------- | ----- | ------------------------------------------------------------------------ |
+| windows | scoop | [scoop](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)   |
+| linux   |       | [Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu) |
 
+## Config
+
++ vim：`:version`可查看
 
 ## Use
 
@@ -104,4 +107,3 @@
 + 打开目录：
 	+ `enter`下一级目录或者进入，`-`上一级目录
 	+ `:Ex`从文件中退出到文件的目录中
-

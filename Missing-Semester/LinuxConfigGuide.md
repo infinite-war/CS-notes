@@ -53,9 +53,9 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 ## 4.下载刚需软件
 >Linux下通常有包管理器，下面的软件没有说明下载方式的软件一般都可以通过包管理器下载
 
-### 文本编辑器nvim
-Linux下的文本编辑器非常之多，比如上面使用vi就是一种，选择看个人喜好
->neovim是一个可玩性比较高的编辑器，在[这里](https://github.com/zweix123/CS-notes/blob/master/Linux/Editor.md)可以看具体的讨论（这篇文章也有vim的基本用法）
+### 文本编辑器
+Linux下的文本编辑器非常之多，上面使用vi就是一种，选择看个人喜好  
+且也是一种可玩性很好的软件，所以[单拿出来](https://github.com/zweix123/CS-notes/blob/master/Linux/Editor.md)，记录有配置和用法
 
 ### 终端复用器tmux
 

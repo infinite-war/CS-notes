@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f4441d138e6061a7",
+        "id": "d5cb3b6ae6c53420",
         "type": "tabs",
         "children": [
           {
-            "id": "013e4516ce768578",
+            "id": "62c4369e6d810cb0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Distributed-System/Introduction.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Distributed-System/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Distributed-System/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Distributed-System/Introduction.md"
+              }
             }
           }
         ],
@@ -129,17 +137,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "013e4516ce768578",
+  "active": "62c4369e6d810cb0",
   "lastOpenFiles": [
+    "Distributed-System/Introduction.md",
+    "Linux/Editor.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
+    "README.md",
+    "Missing-Secmester/WindowsConfigGuide.md",
     "Algorithm/Math/数学1数论2同余理论.md",
     "Missing-Semester/slide.md",
     "blog/多机协同.md",
-    "blog/How to use Chatgpt.md",
-    "Missing-Semester/LaTeX.md",
-    "Linux/Editor.md",
-    "Missing-Semester/SSH.md",
-    "Missing-Semester/Markdown.md",
-    "Missing-Semester/LinuxConfigGuide.md"
+    "blog/How to use Chatgpt.md"
   ]
 }

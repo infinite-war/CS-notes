@@ -6,12 +6,12 @@ https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/
 + 该项目是我个人的笔记，部分文章会设计的更有利于人的阅读，但是主体仍然是我个人的记录，不建议作为学习资料。
 ---
 + 精华：
-	+ 开发机配置指南
+	+ [开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
 ---
 + 几个原则：
 	+ 熵增定律：  
 		不要去追求极致的秩序，因为那意味着巨大的成本和不稳定性
-	+ 奥卡姆剃刀：如无必要勿增实体
+	+ 奥卡姆剃刀：如无必要，勿增实体
 	+ 抽象与平衡：
 
 ### 笔记的意义
