@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d53811792cc498f0",
+        "id": "414eb1c9d6f052e4",
         "type": "tabs",
         "children": [
           {
-            "id": "42232a23b1f2b46b",
+            "id": "1bf39b491b0b8c9e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "42232a23b1f2b46b",
+  "active": "1bf39b491b0b8c9e",
   "lastOpenFiles": [
+    "Programing-Language/C++/2C++Data4RAII.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Programing-Language/C++/2C++Data4RTTI.md",
+    "Programing-Language/C++/2C++Data1Plain Old Data.md",
     "Missing-Semester/Git.md",
     "Distributed-System/MapReduce.md",
     "Distributed-System/Introduction.md",
     "Linux/Editor.md",
-    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "README.md",
-    "Missing-Secmester/WindowsConfigGuide.md",
-    "Algorithm/Math/数学1数论2同余理论.md",
-    "Missing-Semester/slide.md"
+    "README.md"
   ]
 }
