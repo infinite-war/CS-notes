@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d5cb3b6ae6c53420",
+        "id": "d53811792cc498f0",
         "type": "tabs",
         "children": [
           {
-            "id": "62c4369e6d810cb0",
+            "id": "42232a23b1f2b46b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Distributed-System/Introduction.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Distributed-System/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Distributed-System/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Distributed-System/Introduction.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -137,8 +129,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "62c4369e6d810cb0",
+  "active": "42232a23b1f2b46b",
   "lastOpenFiles": [
+    "Missing-Semester/Git.md",
+    "Distributed-System/MapReduce.md",
     "Distributed-System/Introduction.md",
     "Linux/Editor.md",
     "Missing-Semester/LinuxConfigGuide.md",
@@ -146,8 +140,6 @@
     "README.md",
     "Missing-Secmester/WindowsConfigGuide.md",
     "Algorithm/Math/数学1数论2同余理论.md",
-    "Missing-Semester/slide.md",
-    "blog/多机协同.md",
-    "blog/How to use Chatgpt.md"
+    "Missing-Semester/slide.md"
   ]
 }

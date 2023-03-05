@@ -4,6 +4,8 @@
 
 + 相关资料：
 	+ [菜鸟教程](https://www.runoob.com/git/git-basic-operations.html)
+	+ [Manual](https://git-scm.com/book/en/v2)
+	+ [Manual2](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html)
 
 ## Git
 
