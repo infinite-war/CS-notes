@@ -2,8 +2,8 @@
 >[姊妹篇：Linux开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/LinuxConfigGuide.md)
 
 + 精华：
-	+ [命令行](#5.命令行)：为Windows配置一个相当优雅的命令行环境，让你在win中有近似linux的命令行体验
-	+ [包管理器Scoop](#6.包管理器Scoop)：十分建议您千万不要错过这样一款包管理器，它极大的改善了我的开发环境
+	+ [命令行](#5%E5%91%BD%E4%BB%A4%E8%A1%8C)：为Windows配置一个相当优雅的命令行环境，让你在win中有近似linux的命令行体验
+	+ [包管理器Scoop](#6包管理器scoop)：十分建议您千万不要错过这样一款包管理器，它极大的改善了我的开发环境
 
 # 前言
 本教程有一定门槛，不强求，只给有缘人。

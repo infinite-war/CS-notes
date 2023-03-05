@@ -18,4 +18,8 @@
 		+ Obsidian自带幻灯片插件提供通过`---`划分幻灯片：功能仅此而已
 		+ Obsidian第三方插件Advanced Slides据说对标Reveal.js，但是没有官方支持（[这里](https://forum.obsidian.md/t/advanced-slides-create-markdown-based-reveal-js-presentations-in-obsidian/28243/200)）
 ---
-我们发现并没有一款完美的框架，于是我准备自己开发一款框架，具体看[项目](https://github.com/zweix123/jyyslide-md)。
+我们发现并没有一款完美的框架，于是我准备自己开发，具体看[项目](https://github.com/zweix123/jyyslide-md)。  
+
++ 使用**简单**Markdown方言，设计过程严格按照奥卡姆剃刀，尽可能保证功能和语法的简单。
++ 基于Web，兼容Markdwon，支持水平和垂直幻灯片，不支持代码特定行高亮，支持依次出现，支持渐变动画。
++ **蒋炎岩风格**，实际上，本框架基本可以制作和蒋老师一摸一样的。
