@@ -31,8 +31,8 @@ CurveAdm是Curve团队为提高系统易用性而设计的工具，其主要用�
 curveadm status  # 查看集群状态, 包括集群ID和所属Container ID
 curveadm enter ID
 
-curveadm stop [ID]/*
-curveadm clean [ID]/*
+curveadm stop --id ID  # 停止服务, 不提供参数id则通配所有
+curveadm clean --id ID  # 清理服务(清楚数据)，不提供参数id则通配所有
 ```
 
 ## CurveTool
@@ -44,25 +44,25 @@ curveadm clean [ID]/*
 ### v2
 [source code](https://github.com/opencurve/curve/tree/master/tools-v2) | [Intor](https://github.com/opencurve/curve/blob/master/docs/cn/curve%E5%B7%A5%E5%85%B7.md) | [develop guide](https://github.com/opencurve/curve/blob/master/tools-v2/docs/zh/develop.md)
 
-
-
-
 ### Develop
 
 #### reset-peer
 `curve_ops_tool reset-peer` -> `curve bs update peer`
 
 ```bash
-curve_ops_tool check-copyset -logicalPoolId=1 -copysetId=1 --detail  # 查看集群状态
+curve_ops_tool check-copyset -logicalPoolId=1 -copysetId=1 --detail 
+# 查看集群状态
 
 curve_ops_tool reset-peer -logicalPoolId=1 -copysetId=1 -peer=10.246.159.82:8202:0 --new_conf=10.246.159.82:8202:0 -max_retry=3 -timeout_ms=100
-
 
 ./curve bs update peer 10.246.159.82:8202:0 --logicalpoolid=1 --copysetid=1 --rpcretrytimes=1 --rpctimeout=10s
 ```
 
 + Test:
 	+ 
+#### chunkserver-status
+
+
 
 # Use
 

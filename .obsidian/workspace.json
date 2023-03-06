@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1f02d96bddc785f7",
+        "id": "7cb9a8a74a4e1dd0",
         "type": "tabs",
         "children": [
           {
-            "id": "ca6806f06d0ebadb",
+            "id": "3c5a4c43e67a1f82",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ca6806f06d0ebadb",
+  "active": "3c5a4c43e67a1f82",
   "lastOpenFiles": [
-    "blog/多机协同.md",
+    "README.md",
     "Distributed-System/Storage/Curve.md",
+    "Missing-Semester/Git.md",
+    "blog/多机协同.md",
     "blog/VSCode.md",
     "Programing-Language/C++/2C++Data4RAII.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/C++/2C++Data4RTTI.md",
     "Programing-Language/C++/2C++Data1Plain Old Data.md",
-    "Missing-Semester/Git.md",
-    "Distributed-System/MapReduce.md",
-    "Distributed-System/Introduction.md"
+    "Distributed-System/MapReduce.md"
   ]
 }

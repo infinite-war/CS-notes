@@ -1,11 +1,9 @@
-这里介绍用法，下载请自行STFW
 ## Intro
 >Git是一种版本管理工具，GitHub是一个代码托管平台。
 
 + 相关资料：
-	+ [菜鸟教程](https://www.runoob.com/git/git-basic-operations.html)
-	+ [Manual](https://git-scm.com/book/en/v2)
-	+ [Manual2](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html)
+	+ [Pro Git book](https://git-scm.com/book/en/v2)
+	+ [Git User Manual](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html)
 
 ## Git
 
@@ -71,7 +69,7 @@ git config --global user.email xxx@xxx  # 设置全局邮箱地址
 >+ 《GotGitHub》[电子书地址](http://www.worldhello.net/gotgithub/)
 
 ### Config
-STFW
+
 ### Use
 
 + Init：创建一个新项目时有足够的提示
@@ -95,6 +93,6 @@ STFW
 		git checkout -b [Branch Name]
 		```
 	4. work: add -> commit 
-	5. `git push 远程分支 你的分支`
+	5. `git push 远程分支 你的分支`  
 		`git remote`查看远程分支
 	6. github上点击提交

@@ -1,13 +1,12 @@
-<!-- template  
-https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/  
-<img src= "" style="zoom:59%;" div align=center />  -->
+%%https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/%%
+### 声明
 + 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 + 该项目是我个人的笔记，部分文章会设计的更有利于人的阅读，但是主体仍然是我个人的记录，不建议作为学习资料。
----
-+ 精华：
-	+ [开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
----
+### 精华笔记
+
+[开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
+
 + 几个原则：
 	+ 熵增定律：  
 		不要去追求极致的秩序，因为那意味着巨大的成本和不稳定性
@@ -82,11 +81,3 @@ https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/
 	>2023年：好像改名了。
 	
 	以论文解读的形式带我们学习分布式的方方面面
-
-#### 生活实验
-
-+ [ ] 我会在2023.02.24完成期末考试和其他DDL，实习内容即为国产分布式存储项目，准备在工作之余完成MIT 6.824，既然它是以读论文的方式，我将分布式存储相关的Google的GFS和Bigtable加入其中，把非中心式存储的典型Ceph加入其中，相关笔记我会更新在[这里](https://github.com/zweix123/CS-notes/tree/master/Distributed-System)
-
-### log
-
-+ [ ] 2023.01.17笔记软件从Typora转向Obsidian，LaTeX中的&对齐全部失效，暂时没有时间修改
