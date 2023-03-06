@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "414eb1c9d6f052e4",
+        "id": "fd20cf20d08f09e0",
         "type": "tabs",
         "children": [
           {
-            "id": "1bf39b491b0b8c9e",
+            "id": "dc3ee7da7ee8742f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1bf39b491b0b8c9e",
+  "active": "dc3ee7da7ee8742f",
   "lastOpenFiles": [
     "Programing-Language/C++/2C++Data4RAII.md",
     "Missing-Semester/LinuxConfigGuide.md",
