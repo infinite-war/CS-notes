@@ -45,6 +45,8 @@ curveadm clean [ID]/*
 [source code](https://github.com/opencurve/curve/tree/master/tools-v2) | [Intor](https://github.com/opencurve/curve/blob/master/docs/cn/curve%E5%B7%A5%E5%85%B7.md) | [develop guide](https://github.com/opencurve/curve/blob/master/tools-v2/docs/zh/develop.md)
 
 
+
+
 ### Develop
 
 #### reset-peer
@@ -53,7 +55,7 @@ curveadm clean [ID]/*
 ```bash
 curve_ops_tool check-copyset -logicalPoolId=1 -copysetId=1 --detail  # 查看集群状态
 
-curve_ops_tool reset-peer -logicalPoolId=1 -copysetId=1 -peer=10.246.159.82:8202:0 -new_conf=10.246.159.82:8202:0 -max_retry=3 -timeout_ms=100
+curve_ops_tool reset-peer -logicalPoolId=1 -copysetId=1 -peer=10.246.159.82:8202:0 --new_conf=10.246.159.82:8202:0 -max_retry=3 -timeout_ms=100
 
 
 ./curve bs update peer 10.246.159.82:8202:0 --logicalpoolid=1 --copysetid=1 --rpcretrytimes=1 --rpctimeout=10s
