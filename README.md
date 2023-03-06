@@ -1,17 +1,10 @@
 %%https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/%%
-### 声明
 + 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 + 该项目是我个人的笔记，部分文章会设计的更有利于人的阅读，但是主体仍然是我个人的记录，不建议作为学习资料。
 ### 精华笔记
 
-[开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
-
-+ 几个原则：
-	+ 熵增定律：  
-		不要去追求极致的秩序，因为那意味着巨大的成本和不稳定性
-	+ 奥卡姆剃刀：如无必要，勿增实体
-	+ 抽象与平衡：
+1. [开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
 
 ### 笔记的意义
 
@@ -30,12 +23,20 @@
 
 此时笔记更像是”当年攻城略地时的纪念品“
 
+### 几个原则
+
+1. 熵增定律：  
+	不必去追求极致的秩序，因为那意味着巨大的成本和不稳定性
+2. 奥卡姆剃刀：如无必要，勿增实体
+3. 抽象与平衡：
+
 ### CS Prime
 >下面的讨论是我个人认为一个计算机领域的学习者不可或缺的实践部分，脱胎于[CS自学指南](https://csdiy.wiki/)，对于相对基础（语法、数据结构、专业基础知识）没有涉及，需要其他学习路线作为补充。
->>对于更加进阶的内容（AI、System、图形学、Web3）可能会在后续更新（如果我还有学习力的话）
+>>对于更加进阶的内容（AI、System、图形学、Web3）可能会在后续更新
 
-我个人也将这里作为我的生活实验，会记录自己的进度，看我能做到那种程度。
-<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/word of cs.png"/>
+我个人也将这里作为我的生活实验，会记录自己的进度，看我能做到哪种程度。
+
+![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/word%20of%20cs.png)
 >下面的部分描述我个人也觉得可以作为CS专业和其他相近专业的核心区别
 
 1. 让我们有一个我们的机器：**[PA（C）](https://nju-projectn.github.io/ics-pa-gitbook/)**  
