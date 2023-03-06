@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fd20cf20d08f09e0",
+        "id": "87c19a36c22d7376",
         "type": "tabs",
         "children": [
           {
-            "id": "dc3ee7da7ee8742f",
+            "id": "dfa081a5f19807da",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 239.51103591918945
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -122,24 +122,58 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dc3ee7da7ee8742f",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Programing-Language/C++/2C++Data4RAII.md",
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Programing-Language/C++/2C++Data4RTTI.md",
+    "Distributed-System/Storage/Curve.md",
     "Programing-Language/C++/2C++Data1Plain Old Data.md",
-    "Missing-Semester/Git.md",
-    "Distributed-System/MapReduce.md",
-    "Distributed-System/Introduction.md",
+    "Android/Flutter.md",
+    "Android",
+    "Quant/Quant.md",
+    "Quant",
+    "Programing-Language/C++/lib/gflags.md",
+    "Programing-Language/C++/lib",
+    "Programing-Language/C++/4C++OOP2继承.md",
+    "Programing-Language/C++/4C++OOP1封装.md",
+    "Programing-Language/C++/4C++OOP1封装-标准函数.md",
+    "Programing-Language/C++/4C++OOP0Intro.md",
+    "Programing-Language/C++/4C++OOP-友元.md",
+    "Programing-Language/C++/3C++Grammer.md",
+    "Programing-Language/C++/2C++Data4RTTI.md",
+    "Programing-Language/C++/2C++Data4RAII.md",
+    "Programing-Language/C++/2C++Data2存储类别.md",
+    "Programing-Language/C++/2C++Data2名称空间.md",
+    "Programing-Language/C++/2C++Data1Plain.md",
+    "Programing-Language/C++/1C++Intro.md",
+    "Software-Engineering/Doxygen.md",
+    "source/blog/编辑器字体.png",
+    "source/blog/终端字体.png",
+    "source/blog/狼途GK85.jpg",
+    "source/blog/字体打开.png",
+    "source/blog/vscode受限模式关闭.png",
+    "source/blog/suggest perview.png",
+    "source/blog/smooth.png",
+    "source/blog/node_modules.jpeg",
+    "source/blog/git区.png",
+    "source/blog/cursor smooth.png",
+    "Programing-Language/C++/gflags.md",
+    "Programing-Language/C++/C++库泛型算法.md",
+    "Programing-Language/C++/C++库STL.md",
+    "Programing-Language/C++/C++库SL.md",
+    "Software-Engineering/Docker.md",
     "Linux/Editor.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "README.md"
+    "Linux/shell.md",
+    "未命名.canvas",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Distributed-System/Storage",
+    "Distributed-System/Consensus",
+    "Software-Engineering/未命名",
+    "未命名"
   ]
 }
