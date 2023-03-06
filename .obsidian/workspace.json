@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "39c1da788e00aab1",
+        "id": "1f02d96bddc785f7",
         "type": "tabs",
         "children": [
           {
-            "id": "80714916ba727260",
+            "id": "ca6806f06d0ebadb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "ca6806f06d0ebadb",
   "lastOpenFiles": [
     "blog/多机协同.md",
     "Distributed-System/Storage/Curve.md",
