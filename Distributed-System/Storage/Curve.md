@@ -21,7 +21,11 @@ CurveAdm是Curve团队为提高系统易用性而设计的工具，其主要用�
 
 ### Deploy
 
-#### All-in-one
++ [bs](https://github.com/opencurve/curve/blob/master/README_cn.md#curvebs-%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C)
+	+ [All-in-one](https://github.com/opencurve/curveadm/wiki/curvebs-cluster-deployment)
++ [fs](https://github.com/opencurve/curve/blob/master/README_cn.md#curvefs-%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C)
+
+
 [Tutor](https://github.com/opencurve/curve/blob/master/README_cn.md#%E9%83%A8%E7%BD%B2all-in-one%E4%BD%93%E9%AA%8C%E7%8E%AF%E5%A2%83)
 
 ### Maintain
