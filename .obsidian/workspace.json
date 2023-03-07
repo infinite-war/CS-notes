@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a773025eaf520783",
+        "id": "dedb151e62a2d21b",
         "type": "tabs",
         "children": [
           {
-            "id": "aa9e78de550e6689",
+            "id": "c8d26e8fd315d231",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -122,58 +122,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "c8d26e8fd315d231",
   "lastOpenFiles": [
-    "Programing-Language/C++/C++SL-Generic.md",
-    "Programing-Language/C++/5C++Generic.md",
-    "Programing-Language/C++/C++SL.md",
+    "Programing-Language/C++/TL/gflags.md",
+    "Programing-Language/C++/0Function.md",
+    "Programing-Language/C++/6SL.md",
+    "Programing-Language/C++/6STL-Container.md",
+    "Programing-Language/C++/6STL-Iterator.md",
+    "Programing-Language/C++/2Data1POD.md",
+    "Programing-Language/C++/4OOP4友元.md",
     "Programing-Language/C++/C++Coruntine.md",
     "Programing-Language/C++/C++Exception.md",
-    "Programing-Language/C++/C++Lambda.md",
-    "Programing-Language/C++/C++STL-Container.md",
-    "Programing-Language/C++/C++STL-Iterator.md",
-    "Programing-Language/Python/Coroutine.md",
-    "Programing-Language/C++/1C++Intro.md",
-    "Distributed-System/Storage/Curve.md",
-    "Programing-Language/C++/2C++Data1Plain Old Data.md",
-    "Android/Flutter.md",
-    "Android",
-    "Quant/Quant.md",
-    "Quant",
-    "Programing-Language/C++/lib/gflags.md",
-    "Programing-Language/C++/lib",
-    "Programing-Language/C++/4C++OOP2继承.md",
-    "Programing-Language/C++/4C++OOP1封装.md",
-    "Programing-Language/C++/4C++OOP1封装-标准函数.md",
-    "Programing-Language/C++/4C++OOP0Intro.md",
-    "Programing-Language/C++/4C++OOP-友元.md",
-    "Programing-Language/C++/3C++Grammer.md",
-    "Programing-Language/C++/2C++Data4RTTI.md",
-    "Programing-Language/C++/2C++Data4RAII.md",
-    "Programing-Language/C++/2C++Data2存储类别.md",
-    "Programing-Language/C++/2C++Data2名称空间.md",
-    "Programing-Language/C++/2C++Data1Plain.md",
-    "source/blog/编辑器字体.png",
-    "source/blog/终端字体.png",
-    "source/blog/狼途GK85.jpg",
-    "source/blog/字体打开.png",
-    "source/blog/vscode受限模式关闭.png",
-    "source/blog/suggest perview.png",
-    "source/blog/smooth.png",
-    "source/blog/node_modules.jpeg",
-    "source/blog/git区.png",
-    "source/blog/cursor smooth.png",
-    "未命名.canvas",
-    "Distributed-System/Storage",
-    "Distributed-System/Consensus",
-    "Software-Engineering/未命名",
-    "未命名"
+    "Programing-Language/C++/C++Lambda.md"
   ]
 }
