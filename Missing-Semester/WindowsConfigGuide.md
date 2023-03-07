@@ -69,7 +69,7 @@
 	| 关盖     | 不使用 | 不使用 |
 
 + 修改机器的语言：控制面板 -> 区域 -> 管理 -> 更改系统区域设置 -> 打开Beta版  
-	>这步还挺重要的，windows在解释或编译代码时经常出现乱码问题，开发这个就好了。
+	>这步还挺重要的，windows在解释或编译代码时经常出现乱码问题，打开这个就好了。
 
 ---
 
@@ -114,14 +114,18 @@
 + 插件推荐：
 	+ Obsidian Git（需要下载Git）多机同步必备
 	 >我的配置：`Ctrl + Alt + s -> backup(commit and push)、Ctrl + Alt + L -> pull`  
-		>会有冲突使用`Ctrl + Alt + C -> commit, Ctrl + Alt + H -> push`
+		>会有冲突（主要是和QQ）使用`Ctrl + Alt + C -> commit, Ctrl + Alt + H -> push`
 		>>该插件提供定时操作，个人习惯没有使用，上面的快捷键设计是统筹的结果
 
 	+ Advanced Tabled：Makedown表格相关补全
+		>在编辑上有很多快捷键配置的，但是挺难配的，索性我用的不多
 
 ---
 
-+ 使用时遇到的问题：
++ 快捷键推荐：
+	+  `Ctrl + E + space`使用`+`或者`-`控制系统字体大小
+
++ 问题处理：
 	+ `项目根目录/.obsidian/workspace.json`的修改相当频繁，不及时push和pull比较麻烦  
 		比如对于报错：
 		```
@@ -150,6 +154,7 @@
 
 + 概念：
 	+ PowerShell7是一个在win下比较好用的Shell来代替cmd和windows powershell
+		>很多linux命令cmd时没有的，ps7有
 	+ oh-my-posh是一个程序，类似PowerShell7的插件，美化PowerShell7的输出、强化Shell的功能。
 		>关于美化：比如PowerShell7作为一个Shell会维护一些量，诸如用户名、主机名、当前路径等等，使用时以设定好的格式输出和我们交互，oh-my-posh"截断"这些信息并加工处理换成特定的**主题**格式再输出，起到美化的作用。  
 
@@ -295,7 +300,7 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 得益于强大的包管理器Scoop和我调教好的终端，我们可以有近似Linux的命令行体验，所以我选择vi系列作为这个轻度编辑器。
 >这部分对我个人来说也是必须的，但未必适用于其他开发者，VSCode足以在可接受的成本内满足要求，所以没有将该软件放在必装软件中
 
-+ 安装：[Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#scoop)
++ 安装：亲爹Scoop
 + 配置和使用：我的[文章](https://github.com/zweix123/CS-notes/blob/master/Linux/Editor.md)
 	>实际上vim是一个可玩性很高的编辑器，这里引用的文章不仅有vim的基本用法，可能还会有我倒腾vim的记录。
 

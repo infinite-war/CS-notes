@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d945db9770446ef0",
+        "id": "d72b27db7c32d39e",
         "type": "tabs",
         "children": [
           {
-            "id": "0eb41d3984e93702",
+            "id": "9e510b1e2fb1b086",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "9e510b1e2fb1b086",
   "lastOpenFiles": [
+    "Programing-Language/Golang/Intro.md",
+    "Linux/shell.md",
+    "blog/VSCode.md",
     "Missing-Semester/LinuxConfigGuide.md",
+    "Missing-Semester/Markdown.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/Storage/Curve.md",
     "Programing-Language/Golang/base.md",
-    "Linux/shell.md",
     "Programing-Language/C++/2Data4RAII.md",
-    "Programing-Language/C++/6SL.md",
-    "README.md",
-    "Organization-Architecture/信息的表示和处理.md",
-    "Organization-Architecture/IO.md",
-    "Organization-Architecture/总线.md"
+    "Programing-Language/C++/6SL.md"
   ]
 }

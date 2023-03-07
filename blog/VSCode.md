@@ -3,6 +3,11 @@
 		`Ctrl + p`：搜索文件  
 		`Ctrl + Shift + p`：全局配置
 	+ 格式化：手动使用快捷键`Shift + Alt + F`
+	+ `Ctrl + '+'/'-'`：调整系统分辨率大小
+	+ `Ctrl + 名称`：调整到函数的实现或调用
+		+ 依赖具体语言的插件
+		+ 不是很智能
+		`Alt + Left`返回到跳转之前
 
 ## 编辑器设置
 >参考[视频](https://www.bilibili.com/video/BV1YG4y1v7uB/)
@@ -76,7 +81,7 @@
 微软[教程](https://learn.microsoft.com/zh-cn/azure/developer/go/configure-visual-studio-code)已经足够亲爹
 + how to debug: [tutor](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
 
-### 编辑MarkDown
+## 编辑MarkDown
 见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
 
 + 插件：
