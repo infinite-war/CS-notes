@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dedb151e62a2d21b",
+        "id": "3fd16967a6bf4b3b",
         "type": "tabs",
         "children": [
           {
-            "id": "c8d26e8fd315d231",
+            "id": "33293b5dbd6056c7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.51103591918945
+    "width": 200
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c8d26e8fd315d231",
+  "active": "33293b5dbd6056c7",
   "lastOpenFiles": [
+    "README.md",
+    "Organization-Architecture/信息的表示和处理.md",
+    "Organization-Architecture/IO.md",
+    "Organization-Architecture/总线.md",
+    "Organization-Architecture/CPU.md",
+    "Organization-Architecture/指令系统.md",
+    "Organization-Architecture/存储系统.md",
+    "Organization-Architecture/概述.md",
     "Programing-Language/C++/TL/gflags.md",
-    "Programing-Language/C++/0Function.md",
-    "Programing-Language/C++/6SL.md",
-    "Programing-Language/C++/6STL-Container.md",
-    "Programing-Language/C++/6STL-Iterator.md",
-    "Programing-Language/C++/2Data1POD.md",
-    "Programing-Language/C++/4OOP4友元.md",
-    "Programing-Language/C++/C++Coruntine.md",
-    "Programing-Language/C++/C++Exception.md",
-    "Programing-Language/C++/C++Lambda.md"
+    "Programing-Language/C++/0Function.md"
   ]
 }
