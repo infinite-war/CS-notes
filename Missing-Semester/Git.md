@@ -18,6 +18,7 @@
 ```bash
 git config --global user.name xxx  # 设置全局用户名
 git config --global user.email xxx@xxx  # 设置全局邮箱地址
+git config --global core.editor vim  # 个人习惯，你的机器上应该有vim
 ```
 + 配置文件位置：
 	+ win：`C:\User\$User\.gitconfig`
@@ -85,14 +86,31 @@ git config --global user.email xxx@xxx  # 设置全局邮箱地址
 	git clone -b <branchname> <remote-repo-url>
 	```
 
-+ how to pull request：
-	1. fork
-	2. clone
-	3. 创建新分支（分支名称尽可能简单且能反应我们的工作）
+### 工作流
+一个在Github上public的项目是开源的，每个人都可以查看所有源码、也能为项目贡献代码。
++ issue：任何人都可以向项目提出问题，当然任何人也都可以解答
++ pull request：有些issue是由于项目本身问题，可以对项目进行修改，将修改后的代码纳入GitHub的项目中
+	1. fork这个项目到你的仓库
+	2. clone：克隆到本地进行开发
+	3. 创建新的分支（分支命令应尽可能简单且能反应我们的工作）
 		```bash
-		git checkout -b [Branch Name]
+		git checkout -b [branch name]
 		```
-	4. work: add -> commit 
-	5. `git push 远程分支 你的分支`  
-		`git remote`查看远程分支
-	6. github上点击提交
+		>实际上每开始一部分都应该开一个新分支
+
+	修改代码
+
+	4. `add` -> `commit -s`：message应该逻辑清晰（还记得如果不使用`-m`参数会进入一个编辑器嘛？在里面用Markdown写）
+		>参数`-s`表示在提交信息中加入Signed-off-by签名，表明作者已经同意以某种方式授权提交代码
+	
+	5. `git push 远程分支 你的分支`
+		>`git remote`：查看远程分支
+
+	6. 在GitHub上点击Pull Request
+
+	会有人对你的pr进行review，可能需要修改 
+
+	修改后的commit需要这样`git commit -s -amend`
+	+ 参数`-amend`表示修改上一次提交，而不是创建一次新的提交
+
+	之后的push需要加上参数`-f`
