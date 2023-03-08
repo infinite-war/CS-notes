@@ -1,14 +1,9 @@
-$$\begin{aligned}
-P(X>n) &= P\biggl(\bigcup_{1\leq i\leq n} A_{n,i}\biggr)\\
-&=\sum_{1\leq i\leq n}P(A_{n,i}) - \sum_{1\leq i < j\leq n}P(A_{n,i}\cap A_{n,j}) + \sum_{1\leq i < j < k\leq n}P(A_{n,i}\cap A_{n,j}\cap A_{n,k}) + \cdots\\
-&= \sum_{J \subseteq \{1, ..., n\}}^{J \ne \phi}(-1)^{|J| + 1}\left(1 - \sum_{j \in J} p_j\right)^{n}\\
-\end{aligned}$$
+<!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/-->
 
-
-%%https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/%%
 + 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 + 该项目是我个人的笔记，部分文章会设计的更有利于人的阅读，但是主体仍然是我个人的记录，不建议作为学习资料。
+
 ### 精华笔记
 
 1. [开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
@@ -93,47 +88,3 @@ P(X>n) &= P\biggl(\bigcup_{1\leq i\leq n} A_{n,i}\biggr)\\
 #### Web3
 
 + [MIT 15.S12](https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/)
-
-
-
-
-
-
-# CJson
-想要用C/C++语言，配合STL库，运用有限状态自动机理论和LL(1)文法，来实现简单的Json格式的解析器。
-大概的流程：
-1. 解决string的解析问题 （基本解决，换行符等无法实现，unicode只能解析英文部分）
-2. 解决number的解析问题 
-3. 解决whitespace的解析问题（基本解决）
-4. 解决value的解析问题 
-5. 解决array的解析问题 
-6. 解决object的解析问题 
-7. 解决json的输出问题 
-
-例如：number的词法分析，BNF范式给出如下：
-
-$$
-\begin{split}
-& <number>::= ['-']\ int\ [ frac ]\ [ exp ]\\
-& <int>::= '0'\ |\ ([1-9][0-9]^{*}) \\
-& <exp>::= ('e'|'E')\ ['-' | '+']\ [0-9]^{+}
-\end{split} 
-$$
-
-$$
-\begin{aligned}
-P(X>n) &= P\biggl(\bigcup_{1\leq i\leq n} A_{n,i}\biggr)\\
-&=\sum_{1\leq i\leq n}P(A_{n,i}) - \sum_{1\leq i < j\leq n}P(A_{n,i}\cap A_{n,j}) + \sum_{1\leq i < j < k\leq n}P(A_{n,i}\cap A_{n,j}\cap A_{n,k}) + \cdots\\
-&= \sum_{J \subseteq \{1, ..., n\}}^{J \ne \phi}(-1)^{|J| + 1}\left(1 - \sum_{j \in J} p_j\right)^{n}\\
-\end{aligned}
-$$
-
-参考链接：http://www.json.org/json-zh.html
-
-想要完成的目标：
-* 完成Json的识别和存储
-* 实现Json格式的美化输出
-* 完成多格式的转换，如Json和XML的转换
-* 输出潜在的错误位置
-* 随机Json生成器
-* ...
