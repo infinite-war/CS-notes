@@ -71,11 +71,8 @@
   + `unsigned long long`版本：在函数名后加`ll`
 
 # 哈希表unordered_map
-
 > 使用拉链法实现，如果哈希碰撞太多，则查找会退化到线性
-
 + 自定义哈希函数：
-
   ```c++
   // 注意需要以下头文件
   #include<unordered_map>
@@ -98,6 +95,3 @@
   
   unordered_map<int, int, custom_hash> mp;
   ```
-
-  
-

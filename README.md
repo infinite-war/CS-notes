@@ -82,3 +82,7 @@
 	>2023年：好像改名了。
 	
 	以论文解读的形式带我们学习分布式的方方面面
+
+#### Web3
+
++ [MIT 15.S12](https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/)
