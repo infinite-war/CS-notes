@@ -8,6 +8,7 @@
 	```
 ### config
 ```bash
+go env -w GO111MODULE=on  # 下面有讨论，按理说应该默认开启
 go env -w GOPROXY=https://goproxy.io,direct  # 设置软件源
 ```
 
@@ -33,6 +34,10 @@ go env -w GOPROXY=https://goproxy.io,direct  # 设置软件源
 
 ## Command
 [资料](https://docs.kilvn.com/go_command_tutorial/)
+
++ 参数`-race`竟态检测，检测并发的异常
++ 
+
 
 ## project file struct
 >[资料](https://github.com/golang-standards/project-layout/blob/master/README_zh.md)

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1f08a0cdaacf8c58",
+        "id": "852f40b572c2c829",
         "type": "tabs",
         "children": [
           {
-            "id": "901adb16d4201f65",
+            "id": "f27f96388d7221b7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -73,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/Data-Structure-and-Sort/HashTable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/Data-Structure-and-Sort/HashTable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Algorithm/Data-Structure-and-Sort/HashTable.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -135,51 +131,52 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Algorithm/Data-Structure-and-Sort/LinearList.md",
-    "Algorithm/Data-Structure-and-Sort/Tree.md",
-    "Algorithm/Data-Structure-and-Sort/Sort.md",
-    "Algorithm/Data-Structure-and-Sort/MISC.md",
-    "Algorithm/Data-Structure-and-Sort/HashTable.md",
-    "Algorithm/Math/misc.md",
-    "Algorithm/Math/数学杂项BSGS.md",
-    "Algorithm/Math/数学5多项式&生成函数.md",
-    "Algorithm/Math/数学4计算几何_二维计算几何.md",
-    "Algorithm/Math/数学2组合数学.md",
-    "Algorithm/Math/数学0线代.md",
-    "Algorithm/Math/数学0概率.md",
-    "Algorithm/Search/Search.md",
-    "Algorithm/Search/Rand.md",
-    "Algorithm/Senior-Data-Structure/线段树.md",
-    "Algorithm/Senior-Data-Structure/树状数组.md",
-    "Algorithm/Senior-Data-Structure/树上结构.md",
-    "Algorithm/Senior-Data-Structure/从分块到莫队.md",
-    "Algorithm/Senior-Data-Structure/并查集.md",
-    "Algorithm/String/Trie树.md",
-    "Algorithm/String/MISC.md",
-    "Algorithm/String/最小表示法.md",
-    "Algorithm/String/模式匹配.md",
-    "Algorithm/String/回文串.md",
-    "Algorithm/String/后缀.md",
-    "Algorithm/String/字符串1哈希KMP和AC自动机 1.md",
+    "Android/Flutter.md",
+    "source/Organization-Architecture/集中仲裁.jpg",
+    "source/Organization-Architecture/间址周期.jpg",
+    "source/Organization-Architecture/通用寄存器.jpg",
+    "source/Organization-Architecture/进程状态和转换.png",
+    "source/Organization-Architecture/运算器的基本结构1.jpg",
+    "source/Organization-Architecture/运算器和控制器的功能.jpg",
+    "source/Organization-Architecture/运算器和寄存器的连接1.jpg",
+    "source/Organization-Architecture/计算机系统的层次结构.jpg",
+    "source/Organization-Architecture/补码乘法算法.jpg",
+    "source/Organization-Architecture/补码乘法示例结果.jpg",
+    "source/Organization-Architecture",
+    "source/Network",
+    "Programing-Language/C++/TL/gflags.md",
+    "Programing-Language/C++/TL",
+    "Programing-Language/C++/6STL-Iterator.md",
+    "Programing-Language/C++/6STL-Container.md",
+    "Programing-Language/C++/6SL.md",
+    "Programing-Language/C++/5Generic.md",
+    "Programing-Language/C++/5Generic-in-SL.md",
+    "Programing-Language/C++/4OOP4友元.md",
+    "Programing-Language/C++/4OOP2继承.md",
+    "Programing-Language/C++/4OOP1封装.md",
+    "Programing-Language/C++/4OOP1封装-标准函数.md",
+    "Programing-Language/C++/4OOP0Intro.md",
+    "Programing-Language/C++/2Data4RTTI.md",
+    "Programing-Language/C++/2Data4RAII.md",
+    "Programing-Language/C++/2Data2存储类别.md",
+    "Programing-Language/C++/2Data2名称空间.md",
+    "Programing-Language/C++/2Data1POD.md",
+    "Programing-Language/C++/0Intro.md",
+    "Programing-Language/C++/0Function.md",
+    "Organization-Architecture/概述.md",
+    "Organization-Architecture/指令系统.md",
+    "Organization-Architecture/总线.md",
+    "Organization-Architecture/存储系统.md",
+    "Organization-Architecture/信息的表示和处理.md",
+    "Organization-Architecture/IO.md",
+    "Organization-Architecture/CPU.md",
+    "Organization-Architecture",
+    "Network",
     "Web3/未命名",
     "Web3",
     "未命名",
     "Android",
     "Quant",
-    "Programing-Language/C++/lib",
-    "source/blog/编辑器字体.png",
-    "source/blog/终端字体.png",
-    "source/blog/狼途GK85.jpg",
-    "source/blog/字体打开.png",
-    "source/blog/vscode受限模式关闭.png",
-    "source/blog/suggest perview.png",
-    "source/blog/smooth.png",
-    "source/blog/node_modules.jpeg",
-    "source/blog/git区.png",
-    "source/blog/cursor smooth.png",
-    "未命名.canvas",
-    "Distributed-System/Storage",
-    "Distributed-System/Consensus",
-    "Software-Engineering/未命名"
+    "未命名.canvas"
   ]
 }

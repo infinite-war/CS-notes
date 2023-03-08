@@ -2,7 +2,7 @@
 
 [姊妹篇：Win机器开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
 
-+ 指南中涉及的软件配置[地址](https://github.com/zweix123/linux-config)，在README中提供详细的使用方法和说明，请在完成下面步骤后再下载配置。
++ 指南中涉及的软件配置[地址](https://github.com/zweix123/linux-config)，在README中提供详细的使用方法和说明，请在完成下面步骤后再使用这份配置。
 
 ## 0.机器检查
 
@@ -79,11 +79,16 @@ Linux下的文本编辑器非常之多，上面使用vi就是一种，选择看�
 主要通过zsh和oh-my-zsh，前者是和bash一样的一个shell，但是它有更强的拓展性，但是想通过配置利用这些扩展性比较复杂，oh-my-zsh相当于一种辅助配置工具
 
 1. 下载`zsh`：[Manual](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)，一行命令即可  
+	```bash
+	sudo apt install zsh
+	```
 	更新默认shell：`chsh -s $(which zsh)`
 	>实际上这边建议不要着急修改，在clone oh-my-zsh会提示是否修改默认shell
 
 2. 下载oh-my-posh：[Manual](https://github.com/ohmyzsh/ohmyzsh/wiki)
-
+	```bash
+	sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	```
 	>这里提供国内镜像源：`https://gitee.com/mirrors/oh-my-zsh`，clone到本地修改名字为`.oh-my-zsh`即可
 	
 	>我在使用VMware workstation时出现错误，通过这两个博客解决（[一个](https://blog.csdn.net/m0_56681539/article/details/127912811)、[另一个](https://blog.csdn.net/u014454538/article/details/123563034)）
@@ -111,7 +116,10 @@ Linux下的文本编辑器非常之多，上面使用vi就是一种，选择看�
 		```bash
 		git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 		```
-		
+		下面提供国内镜像
+		```bash
+		git clone https://gitee.com/Annihilater/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+		```		
 	+ `zsh-autosuggestions`：手动安装，手动配置，命令历史补全
 		```bash
 		git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
