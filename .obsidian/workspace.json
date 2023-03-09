@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c298028415a4ec8c",
+        "id": "aca70fc43b0bff2d",
         "type": "tabs",
         "children": [
           {
-            "id": "138ebaf5cc35a5a3",
+            "id": "dc084284e4500a14",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,10 +129,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "138ebaf5cc35a5a3",
+  "active": "dc084284e4500a14",
   "lastOpenFiles": [
-    "Programing-Language/Golang/lib/ProtoBuf.md",
     "Distributed-System/MapReduce.md",
+    "conflict-files-obsidian-git.md",
+    "Programing-Language/Golang/lib/ProtoBuf.md",
     "Programing-Language/Golang/lib/rpc.md",
     "Programing-Language/Golang/lib/http.md",
     "Programing-Language/Golang/concurrency.md",
@@ -169,7 +170,6 @@
     "Programing-Language/C++/5Generic-in-SL.md",
     "Programing-Language/C++/4OOP4友元.md",
     "Programing-Language/C++/4OOP2继承.md",
-    "Programing-Language/C++/4OOP1封装.md",
     "Organization-Architecture",
     "Network",
     "Web3/未命名",
