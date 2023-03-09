@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "758eb8404e8d82f9",
+        "id": "60c4e399e4a69999",
         "type": "tabs",
         "children": [
           {
-            "id": "912fa415cda7ca4b",
+            "id": "0ee24b6f2770ba00",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,12 +129,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "0ee24b6f2770ba00",
   "lastOpenFiles": [
+    "Quant/misc.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Golang/base.md",
-    "Quant/misc.md",
     "Distributed-System/MapReduce.md",
     "Programing-Language/Golang/lib/rpc.md",
     "README.md",
