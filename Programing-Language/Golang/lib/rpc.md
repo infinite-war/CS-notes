@@ -1,3 +1,1 @@
-```go
-import "net.rpc"
-```
+[Manual](https://pkg.go.dev/net/rpc)
