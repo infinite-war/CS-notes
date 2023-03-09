@@ -1,3 +1,25 @@
+- [LinuxConfigGuide](#linuxconfigguide)
+	- [0.机器检查](#0机器检查)
+	- [1.创建用户](#1创建用户)
+	- [2.配置SSH](#2配置ssh)
+	- [3.修改软件源](#3修改软件源)
+	- [4.下载刚需软件](#4下载刚需软件)
+		- [文本编辑器](#文本编辑器)
+		- [终端复用器tmux](#终端复用器tmux)
+		- [Git](#git)
+		- [zsh](#zsh)
+	- [5.导入软件配置](#5导入软件配置)
+- [物理机](#物理机)
+	- [改键](#改键)
+	- [软件](#软件)
+		- [VSCode](#vscode)
+		- [Obsidian](#obsidian)
+- [虚拟机](#虚拟机)
+- [服务器](#服务器)
+- [MISC](#misc)
+
+
+# LinuxConfigGuide
 >Linux有众多发行版、机器也分云服务器、虚拟机和物理机，该指南并没有限制某种机器，对独属于某种机器的问题会单独说明，请读者选择对您有帮助的部分
 
 [姊妹篇：Win机器开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)

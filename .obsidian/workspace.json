@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e77eac51d6b65a07",
+        "id": "758eb8404e8d82f9",
         "type": "tabs",
         "children": [
           {
-            "id": "6cea362801a8733b",
+            "id": "912fa415cda7ca4b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,15 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6cea362801a8733b",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Programing-Language/Golang/base.md",
     "Quant/misc.md",
     "Distributed-System/MapReduce.md",
     "Programing-Language/Golang/lib/rpc.md",
     "README.md",
     "Distributed-System/RPC.md",
     "Distributed-System/Introduction.md",
-    "Programing-Language/Golang/base.md",
     "Programing-Language/Golang/Intro.md",
     "conflict-files-obsidian-git.md",
     "Programing-Language/Golang/lib/ProtoBuf.md",
@@ -168,8 +170,6 @@
     "source/Network",
     "Programing-Language/C++/TL/gflags.md",
     "Programing-Language/C++/TL",
-    "Programing-Language/C++/6STL-Iterator.md",
-    "Programing-Language/C++/6STL-Container.md",
     "Organization-Architecture",
     "Network",
     "Web3/未命名",
