@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "415f555165c252fe",
+        "id": "e77eac51d6b65a07",
         "type": "tabs",
         "children": [
           {
-            "id": "b5dbcab2751898f2",
+            "id": "6cea362801a8733b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,16 +129,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b5dbcab2751898f2",
+  "active": "6cea362801a8733b",
   "lastOpenFiles": [
-    "Programing-Language/Golang/lib/rpc.md",
+    "Quant/misc.md",
     "Distributed-System/MapReduce.md",
+    "Programing-Language/Golang/lib/rpc.md",
     "README.md",
+    "Distributed-System/RPC.md",
+    "Distributed-System/Introduction.md",
+    "Programing-Language/Golang/base.md",
+    "Programing-Language/Golang/Intro.md",
     "conflict-files-obsidian-git.md",
     "Programing-Language/Golang/lib/ProtoBuf.md",
     "Programing-Language/Golang/lib/http.md",
     "Programing-Language/Golang/concurrency.md",
-    "Programing-Language/Golang/Intro.md",
     "Math/Cryptology/新兴密码协议.md",
     "Math/Cryptology/公钥密码学应用.md",
     "Math/Cryptology/公钥密码学.md",
@@ -166,10 +170,6 @@
     "Programing-Language/C++/TL",
     "Programing-Language/C++/6STL-Iterator.md",
     "Programing-Language/C++/6STL-Container.md",
-    "Programing-Language/C++/6SL.md",
-    "Programing-Language/C++/5Generic.md",
-    "Programing-Language/C++/5Generic-in-SL.md",
-    "Programing-Language/C++/4OOP4友元.md",
     "Organization-Architecture",
     "Network",
     "Web3/未命名",
