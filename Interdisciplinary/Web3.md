@@ -36,3 +36,17 @@ blockchain：timestamped append-only log
 + minimalist
 + maximalist
 
+
+
+[Lessig, Lawrence](http://pne.people.si.umich.edu/kellogg/045.html)
+
+Code/architecture – the physical or technical constraints on activities (e.g. locks on doors or firewalls on the Internet)
+Market – economic forces
+Law – explicit mandates that can be enforced by the government
+Norms – social conventions that one often feels compelled to follow
+
+和区块链有什么关系？
+
+
+
+What do the roles and characteristics of money mean historicallly and in today's digital economy

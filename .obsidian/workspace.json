@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "25c5b800dcc274a8",
+        "id": "9d71d473ad391c0b",
         "type": "tabs",
         "children": [
           {
-            "id": "ac99e8dee72ed7dd",
+            "id": "9bdc64b3393bac73",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,19 +129,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ac99e8dee72ed7dd",
+  "active": "9bdc64b3393bac73",
   "lastOpenFiles": [
+    "Interdisciplinary/quant-survey.md",
+    "Interdisciplinary/Web3.md",
+    "backup.md",
+    "README.md",
     "Interdisciplinary/backtester.md",
     "Interdisciplinary/Quant/backtester.md",
     "Interdisciplinary/Quant/Intro.md",
     "Interdisciplinary/Quant/survey.md",
-    "Interdisciplinary/quant-survey.md",
-    "Interdisciplinary/Web3.md",
     "Interdisciplinary/Web3/Intro.md",
     "Interdisciplinary/Web3/未命名.md",
     "未命名",
     "Interdisciplinary",
-    "README.md",
     "blog/VSCode.md",
     "blog/code-view-in-phone.md",
     "Linux/wine.md",
@@ -158,7 +159,6 @@
     "Distributed-System/MapReduce.md",
     "Programing-Language/Golang/lib/rpc.md",
     "Distributed-System/RPC.md",
-    "Distributed-System/Introduction.md",
     "source/Organization-Architecture/集中仲裁.jpg",
     "source/Organization-Architecture/间址周期.jpg",
     "source/Organization-Architecture/通用寄存器.jpg",
