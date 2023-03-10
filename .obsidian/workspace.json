@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "60c4e399e4a69999",
+        "id": "e45a1396524b3454",
         "type": "tabs",
         "children": [
           {
-            "id": "0ee24b6f2770ba00",
+            "id": "5b6c6742c9331932",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -122,61 +122,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0ee24b6f2770ba00",
+  "active": "5b6c6742c9331932",
   "lastOpenFiles": [
-    "Quant/misc.md",
+    "Quant/survey.md",
+    "Web3/Intro.md",
+    "Quant/Intro.md",
+    "README.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Golang/base.md",
     "Distributed-System/MapReduce.md",
     "Programing-Language/Golang/lib/rpc.md",
-    "README.md",
-    "Distributed-System/RPC.md",
-    "Distributed-System/Introduction.md",
-    "Programing-Language/Golang/Intro.md",
-    "conflict-files-obsidian-git.md",
-    "Programing-Language/Golang/lib/ProtoBuf.md",
-    "Programing-Language/Golang/lib/http.md",
-    "Programing-Language/Golang/concurrency.md",
-    "Math/Cryptology/新兴密码协议.md",
-    "Math/Cryptology/公钥密码学应用.md",
-    "Math/Cryptology/公钥密码学.md",
-    "Math/Cryptology/对称密码学.md",
-    "Math/Cryptology/Intro.md",
-    "Math/Cryptology/密码学3新兴密码协议 1.md",
-    "Math/Cryptology/密码学1密码学基础 1.md",
-    "Algorithm/Math/数学1数论2同余理论.md",
-    "Web3/Intro.md",
-    "Missing-Semester/Git.md",
-    "Android/Flutter.md",
-    "source/Organization-Architecture/集中仲裁.jpg",
-    "source/Organization-Architecture/间址周期.jpg",
-    "source/Organization-Architecture/通用寄存器.jpg",
-    "source/Organization-Architecture/进程状态和转换.png",
-    "source/Organization-Architecture/运算器的基本结构1.jpg",
-    "source/Organization-Architecture/运算器和控制器的功能.jpg",
-    "source/Organization-Architecture/运算器和寄存器的连接1.jpg",
-    "source/Organization-Architecture/计算机系统的层次结构.jpg",
-    "source/Organization-Architecture/补码乘法算法.jpg",
-    "source/Organization-Architecture/补码乘法示例结果.jpg",
-    "source/Organization-Architecture",
-    "source/Network",
-    "Programing-Language/C++/TL/gflags.md",
-    "Programing-Language/C++/TL",
-    "Organization-Architecture",
-    "Network",
-    "Web3/未命名",
-    "Web3",
-    "未命名",
-    "Android",
-    "Quant",
-    "未命名.canvas"
+    "Distributed-System/RPC.md"
   ]
 }
