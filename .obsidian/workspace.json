@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "fafc3ae8876b5d20",
+        "id": "d0727d3266ca4e5e",
         "type": "tabs",
         "children": [
           {
-            "id": "8b1ce2f3329bcf66",
+            "id": "4f7805620a47a431",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -137,13 +129,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8b1ce2f3329bcf66",
+  "active": "4f7805620a47a431",
   "lastOpenFiles": [
+    "README.md",
     "Interdisciplinary/quant-survey.md",
     "Interdisciplinary/Web3.md",
     "Interdisciplinary/backtester.md",
     "backup.md",
-    "README.md",
     "Interdisciplinary/Quant/backtester.md",
     "Interdisciplinary/Quant/Intro.md",
     "Interdisciplinary/Quant/survey.md",
