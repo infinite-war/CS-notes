@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "262f4ee6eb76324d",
+        "id": "25c5b800dcc274a8",
         "type": "tabs",
         "children": [
           {
-            "id": "420eb26da58aa1b1",
+            "id": "ac99e8dee72ed7dd",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,15 +129,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "ac99e8dee72ed7dd",
   "lastOpenFiles": [
-    "Web3/Intro.md",
+    "Interdisciplinary/backtester.md",
+    "Interdisciplinary/Quant/backtester.md",
+    "Interdisciplinary/Quant/Intro.md",
+    "Interdisciplinary/Quant/survey.md",
+    "Interdisciplinary/quant-survey.md",
+    "Interdisciplinary/Web3.md",
+    "Interdisciplinary/Web3/Intro.md",
+    "Interdisciplinary/Web3/未命名.md",
+    "未命名",
+    "Interdisciplinary",
     "README.md",
-    "blog/code-view-in-phone.md",
     "blog/VSCode.md",
-    "Quant/survey.md",
-    "Quant/backtester.md",
-    "Quant/Intro.md",
+    "blog/code-view-in-phone.md",
     "Linux/wine.md",
     "Frontend/CSS.md",
     "Frontend/HTML.md",
@@ -153,10 +159,6 @@
     "Programing-Language/Golang/lib/rpc.md",
     "Distributed-System/RPC.md",
     "Distributed-System/Introduction.md",
-    "Programing-Language/Golang/Intro.md",
-    "conflict-files-obsidian-git.md",
-    "Programing-Language/Golang/lib/ProtoBuf.md",
-    "Programing-Language/Golang/lib/http.md",
     "source/Organization-Architecture/集中仲裁.jpg",
     "source/Organization-Architecture/间址周期.jpg",
     "source/Organization-Architecture/通用寄存器.jpg",
@@ -173,10 +175,8 @@
     "Organization-Architecture",
     "Network",
     "Web3/未命名",
-    "Web3",
-    "未命名",
+    "Interdisciplinary/Web3",
     "Android",
-    "Quant",
     "未命名.canvas"
   ]
 }
