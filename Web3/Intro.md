@@ -7,28 +7,18 @@
 + 智能合约
 
 
-
-
-
 《Mastering Bitcoin: Programming the Open Blockchain, Second Editiion》
-
 
 
 ## Bitcoin: A Peer-to-Peer Electronic Cash System
 
 Digital、
 
-
 ## Pre
-
 
 对electronic cash的交易，如何不通过financial institution？通过Digital signatures是个方法，但是仍然需要可信任的第三方
 
-
-
 blockchain：timestamped append-only log
-
-
 
 + 密码学，什么是钱，什么是金融。现代金融的问题
 + 很多人没有银行账户，但是他们有手机。
@@ -41,3 +31,8 @@ blockchain：timestamped append-only log
 + interroperability交互性
 + Governance治理：区块链软件很难更新 
 + Public Policy and Legal Framerworks
+
+两个主义
++ minimalist
++ maximalist
+

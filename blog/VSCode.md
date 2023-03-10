@@ -1,3 +1,8 @@
++ 编辑器通识快捷键：
+	+ 按住`Shift`使用方向键选择部分文本
+	+ `Ctrl + enter`在当前行下行创建新行
+	+ `Ctrl + shift + enter`在当前行上一行创建新行
+
 + 快捷键（个人习惯使用）：
 	+ `Ctrl + ,`：打开配置选项  
 		`Ctrl + p`：搜索文件  
@@ -57,8 +62,18 @@
 + 代码格式化：`python format provide` -> `black`（默认autopep8，个人喜好）
 	+ 格式化配置跟随项目：在项目根目录创建`.vscode/settings.json`
 		```json
-		
+		{
+			"python.formatting.provider": "black",
+		}
 		```
+
+#### 块执行
+
++ 选择代码后使用快捷键`Shift + ehter`会将这部分代码发送到Python Shell中
+
++ 使用`#%%`可类似Jupyter分块
+	>Jupyter状态下有很多快捷键
+
 
 ### 开发C和C++
 + win + clangd：[教程](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html)
