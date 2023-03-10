@@ -48,6 +48,43 @@ Norms – social conventions that one often feels compelled to follow
 和区块链有什么关系？
 
 
-
+[README](README.md)
 What do the roles and characteristics of money mean historicallly and in today's digital economy
 
+
+
+## 经济学基础
+
++ 货币的特征
+
++ 货币的历史，从scarce resource稀缺到official emblem官方标志
++ 那纸币呢？
+	+ 黄金不够
+	+ 易于使用
+
+
+
+
+https://zh-google-styleguide.readthedocs.io/en/latest/
+
+
+
++ ledger
+	+ transaction ledger
+	+ balence ledgers
+
+
+
++ What is a ledger
+	+ Immuutable, Consistency
+	+ Timestamped
+	+ Ownership
+	+ Accuary
+	+ Desciption of Tran
+
+
+
+交易系统就是修改账本的东西
+
++ Fiat currency法定货币
+	+ 
