@@ -7,12 +7,14 @@
 	+ `Ctrl + ,`：打开配置选项  
 		`Ctrl + p`：搜索文件  
 		`Ctrl + Shift + p`：全局配置
+	+ `Ctrl + ~`/`Ctrl + 1`切换工作台和终端
 	+ 格式化：手动使用快捷键`Shift + Alt + F`
 	+ `Ctrl + '+'/'-'`：调整系统分辨率大小
 	+ `Ctrl + 名称`：调整到函数的实现或调用
 		+ 依赖具体语言的插件
 		+ 不是很智能
-		`Alt + Left`返回到跳转之前
+		`Alt + Right`返回到跳转之前
+		>这里使用方向键右键这个反直觉的设计是因为我将Caps键改建为方向键左键，所以这样设计更顺手
 
 ## 编辑器设置
 >参考[视频](https://www.bilibili.com/video/BV1YG4y1v7uB/)
@@ -22,6 +24,8 @@
 	打开设置，键入`trust`  
 	<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/blog/vscode受限模式关闭.png" style="zoom:59%;" div align=center />
 + 主题（背景颜色、字体颜色等等）：插件`One Dark Pro`和插件`Atom One Dark Theme`
+	>One Dark主题的优点：养眼
+	>>我真的使用过很多主题，但是用过One Dark后总感觉其他主题更刺眼，我将还要终端、vim也统一成One Dark风格
 + 文件图标：插件`vscode-icons`
 + 字体：
 	+ 编辑器字体：打开设置，键入`Editor Font Family`  
@@ -50,6 +54,11 @@
 	+ `Remote-SSH`：远程开发必备（据说有漏洞，不过我不在乎）
 		关于插件有lsp的概念，即后台是跑了一个解析代码的程序的，所以ssh到远程机器，需要在那里也下载插件和配置
 	+ `Docker`：Docker开发必备，使用体验和remote类似
+
++ [Google代码规范](https://zh-google-styleguide.readthedocs.io/en/latest/)：
+
+## 远程开发
+VSCode交与JB家的IDE值得说的优点就是远程开发功能了，我们假设你本机是win，无论是那么当你需要Linux环境（无论时WSL、服务器还是虚拟机）时，都推荐使用SSH（服务器肯定是SSH，WSL我个人没有用过，虚拟机虽然相当于完整机器但是仍然建议通过SSH过去开发），而VSCode的remote插件可以达到一个很自然的开发流程和体验。
 
 ## 打造成IDE
 
