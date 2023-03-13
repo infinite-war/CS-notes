@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "65d8f9a285bc8980",
+        "id": "ad6aef30dd4b6b8b",
         "type": "tabs",
         "children": [
           {
-            "id": "59f40588d71280ad",
+            "id": "44d0afe8f38e001a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.5
+    "width": 200
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -73,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/Cryptology/对称密码学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/Cryptology/对称密码学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Math/Cryptology/对称密码学.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -133,8 +129,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "44d0afe8f38e001a",
   "lastOpenFiles": [
+    "README.md",
+    "Complier/编译原理.md",
     "Math/Cryptology/公钥密码学.md",
     "Math/Cryptology/公钥密码学应用.md",
     "Math/Cryptology/新兴密码协议.md",
@@ -142,8 +140,6 @@
     "Operating-System/PA.md",
     "Organization-Architecture/IO.md",
     "Organization-Architecture/存储系统.md",
-    "Organization-Architecture/概述.md",
-    "Organization-Architecture/信息的表示和处理.md",
-    "Organization-Architecture/指令系统.md"
+    "Organization-Architecture/概述.md"
   ]
 }
