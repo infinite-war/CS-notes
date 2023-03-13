@@ -4,6 +4,9 @@ KR2.调研下适合数字货币期货（带杠杆）的回测系统开源框架
 KR3.查看下FMZ的产品  
 KR4.根据需求描述评估开发时间并出时间规划  
 
+
+JDquant，Joinquant, Raquant, Ricequant
+
 + vnpy：国产、全面、回测较慢
 + Backtrader：回测系统、回测最快
 + Zipline：回测系统、据说回测较慢
@@ -14,6 +17,8 @@ KR4.根据需求描述评估开发时间并出时间规划
 + 一个个人的回测系统：[地址](https://github.com/kerwinyc/kbt_)
 
 + ccxt
+Backtrader、Zipline、Quantopian等。这些平台提供了许多常用的回测和交易功能，
+PyAlgoTrade、QuantLib、TA-Lib
 
 Backtrader：回测速度较快，但相对较慢的框架之一，适用于小规模数据回测。
 
@@ -39,3 +44,8 @@ pysystemtrade：https://github.com/robcarver17/pysyst...
 Zipline：https://github.com/quantopian/zipline
 QSTrader：https://github.com/mhallsmoore/qstrader
 backtesting：https://kernc.github.io/backtesting.py/
+
+
+一个框架https://github.com/Chandlercjy/OnePy
+
+https://github.com/yutiansut/QUANTAXIS

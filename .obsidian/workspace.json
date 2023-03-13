@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ad6aef30dd4b6b8b",
+        "id": "4fc679e7b8212603",
         "type": "tabs",
         "children": [
           {
-            "id": "44d0afe8f38e001a",
+            "id": "88356489554d77a1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -51,6 +51,14 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "1507533766e1094c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ]
@@ -123,23 +131,23 @@
   "left-ribbon": {
     "hiddenItems": {
       "canvas:Create new canvas": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "44d0afe8f38e001a",
+  "active": "88356489554d77a1",
   "lastOpenFiles": [
-    "README.md",
-    "Complier/编译原理.md",
-    "Math/Cryptology/公钥密码学.md",
-    "Math/Cryptology/公钥密码学应用.md",
-    "Math/Cryptology/新兴密码协议.md",
-    "Math/Cryptology/Intro.md",
-    "Operating-System/PA.md",
-    "Organization-Architecture/IO.md",
-    "Organization-Architecture/存储系统.md",
-    "Organization-Architecture/概述.md"
+    "Programing-Language/C++/C++Thread.md",
+    "Interdisciplinary/Quant/术语和策略.md",
+    "blog/VSCode.md",
+    "Interdisciplinary/quant-survey.md",
+    "Interdisciplinary/Quant/base.md",
+    "Artificial-Intelligence/Machine-Learning/Pre.md",
+    "Interdisciplinary/Web3.md",
+    "Artificial-Intelligence/Deep-Learning/base.md",
+    "Artificial-Intelligence/D.md",
+    "Missing-Semester/Markdown.md"
   ]
 }
