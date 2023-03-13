@@ -1,3 +1,10 @@
+文件管理 - cd, pwd, mkdir, rmdir, ls, cp, rm, mv, tar
+文件检索 - cat, more, less, head, tail, file, find
+输入输出控制 - 重定向, 管道, tee, xargs
+文本处理 - vim, grep, awk, sed, sort, wc, uniq, cut, tr
+正则表达式
+系统监控 - jobs, ps, top, kill, free, dmesg, lsof
+
 + 资料：
 	+ 一个简单的入门[网站](https://linux.cn/article-6160-1.html)
 	+ 《鸟哥的Linux私房菜》

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cc48ea6e606ac29c",
+        "id": "65d8f9a285bc8980",
         "type": "tabs",
         "children": [
           {
-            "id": "453e79c52be47069",
+            "id": "59f40588d71280ad",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 250.5
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -73,6 +73,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Math/Cryptology/对称密码学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +90,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Math/Cryptology/对称密码学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +112,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Math/Cryptology/对称密码学.md"
+              }
             }
           }
         ],
@@ -131,15 +135,15 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Linux/Editor.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "blog/VSCode.md",
-    "blog/tools.md",
-    "blog/多机协同.md",
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Missing-Semester/Markdown.md",
-    "Interdisciplinary/quant-survey.md",
-    "Programing-Language/Golang/concurrency.md",
-    "Interdisciplinary/Web3.md"
+    "Math/Cryptology/公钥密码学.md",
+    "Math/Cryptology/公钥密码学应用.md",
+    "Math/Cryptology/新兴密码协议.md",
+    "Math/Cryptology/Intro.md",
+    "Operating-System/PA.md",
+    "Organization-Architecture/IO.md",
+    "Organization-Architecture/存储系统.md",
+    "Organization-Architecture/概述.md",
+    "Organization-Architecture/信息的表示和处理.md",
+    "Organization-Architecture/指令系统.md"
   ]
 }

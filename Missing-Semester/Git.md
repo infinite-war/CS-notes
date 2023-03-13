@@ -4,6 +4,7 @@
 + 相关资料：
 	+ [Pro Git book](https://git-scm.com/book/en/v2)
 	+ [Git User Manual](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html)
+	+ [可视化](http://onlywei.github.io/explain-git-with-d3/)
 
 ## Git
 
@@ -18,7 +19,8 @@
 ```bash
 git config --global user.name xxx  # 设置全局用户名
 git config --global user.email xxx@xxx  # 设置全局邮箱地址
-git config --global core.editor vim  # 个人习惯，你的机器上应该有vim
+git config --global core.editor vim                 # your favorite editor
+git config --global color.ui true
 ```
 + 配置文件位置：
 	+ win：`C:\User\$User\.gitconfig`
