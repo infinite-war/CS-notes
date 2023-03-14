@@ -40,7 +40,7 @@
 ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/word%20of%20cs.png)
 >下面的部分描述我个人也觉得可以作为CS专业和其他相近专业的核心区别
 
-暂时注释，等我学完才是真的有做个讨论
+暂时注释，等我学完才是真的有资格讨论
 
 <!--
 1. 让我们有一个我们的机器：**[PA（C）](https://nju-projectn.github.io/ics-pa-gitbook/)**  

@@ -1,24 +1,25 @@
 ## 锁
 
 ### 互斥锁
-[cplusplus](https://cplusplus.com/reference/mutex/)
+[`<mutex>`](https://zh.cppreference.com/w/cpp/thread/mutex)，请查看示例
 
-`<mutex>`
++ `std::mutex`的定义：
+	+ 在类中：
+		```c++
+		mutable std::mutex m;
+		```
+		其中`mutable`即为可变的，因为如果类对象是const的，但是锁肯定需要被修改的，这是特殊说明
 
-+ 定义：`std::mutex m;`
-	+ 定义在类中通常：`mutable std::mutex m;`其中mutable即为可变的，因为对象可以是`const`，但是锁显然是要被修改的，这样特殊声明
-
-+ 使用：
++ 如何使用：
 	```c++
 	type function_name(...) {
-		std::unique_lock<std::mutex> lck(m);  // 其中m为一个mutex类型的变量
-
+		std::unique_lock<std::mutex> lck(m);
 		...
 		lck.unlock();  // 显示解锁
 		lck.lock();    // 显示上锁
 	}
 	```
-	对象`lck`在构建时自动上锁，之后可通过方法`lock`或`unlock`显示上下锁
+	对象`lck`在构建时自动上锁，之后可通过方法`lock`或`unlock`显式上下锁。
 
 	+ 在Golang中有这样的写法：
 		```go
@@ -29,72 +30,30 @@
 		    // ...
 		}
 		```
-		因为在函数中随时可能退出或者抛出异常，正常写法需要在每个地方都进行显示的开锁。  
-		`defer`语句即在退出当前代码块（无论是退出还是抛出），都会解锁。  
+		因为在函数中随时可能退出或者抛出异常，正常写法需要在每个地方都进行显式的开锁。  
+		`defer`语句即为退出当前代码块（无论是退出还是抛出）时解锁。  
 		C++也有类似的
 		```c++
 		type function_name(...) {
-			std::lock_guard<std::mutex> lck(m);  // m同上
+			std::lock_guard<std::mutex> lck(m);
 			...
 		}
 		```
 		这样即可实现同样的功能
 
-	我们发现unique_lock有更自由的功能，但是lock_guard有更简单的写法，同时前者实际上有更高的时空消耗
+	lock_guard语法更简单，unique_lock有更自由的功能，响应的有更高的时空消耗。
 
 #### 锁的唤醒
-如果我们想因为某种条件上锁，并在某些条件下解锁怎们办呢？
-[cplusplus](https://cplusplus.com/reference/condition_variable/condition_variable/)
+如果我们想因为某种条件上锁，并在某些条件下解锁怎们办呢？  
 
-`<condition_variable>`
-
-+ 变量定义：`std::condition_variable cv;`
-+ 核心方法：
-	```c++
-	template <class Predicate>  void wait (unique_lock<mutex>& lck, Predicate pred);
-	```
-	其中Predicate是一个可调用对象，比如一个返回值是bool的函数或者Lambda表达式
-
-+ 使用：
-	```c++
-	cv.wait(lck, ...);
-	```
-	+ 唤醒：
-		1. `cv.notify_one();`
-		2. `cv.notify_all();`
+[`<condition_variable>`](https://zh.cppreference.com/w/cpp/thread/condition_variable)，请查看示例
 
 ### 读写锁
-我们想象这样的场景，就是对同一个临界资源，有多个线程要访问，实际上很多都是读，少数是写，显然这些读的线程不应该被阻塞，让它们自由的访问临界资源没有什么不妥，但是std::mutex显然会连它们都阻塞掉，有无方法避免？
-`<shared_mutex>`
+对于同一个临界资源，有多个线程要访问，对于只读访问，它似乎不需要加入阻塞，让他们自由的访问临界资源似乎没什么不妥。
 
-用法和mutex类似，但是没有自动解锁的lock_guard，而是有“两个上锁级别”：shared和exclusive，我们来看cpluscplus的例子
-```c++
-class ThreadSafeCounter {
- public:
-  ThreadSafeCounter() = default;
- 
-  // Multiple threads/readers can read the counter's value at the same time.
-  unsigned int get() const {
-    std::shared_lock lock(mutex_);
-    return value_;
-  }
- 
-  // Only one thread/writer can increment/write the counter's value.
-  void increment() {
-    std::unique_lock lock(mutex_);
-    ++value_;
-  }
- 
-  // Only one thread/writer can reset/write the counter's value.
-  void reset() {
-    std::unique_lock lock(mutex_);
-    value_ = 0;
-  }
- 
- private:
-  mutable std::shared_mutex mutex_;
-  unsigned int value_ = 0;
-};
-```
+[`<shared_mutex>`](https://zh.cppreference.com/w/cpp/thread/shared_mutex)，请查看示例
 
-使用`shared_lock`不会被相互阻塞，只有使用`unique_lock`才会被阻塞。
+### 独占性的唤醒
+shared_mutex的unique_lock和mutex的lock一样，而condition_variable的第一个参数必须是std::mutex，有无类似的？
+
+[`<condition_variable_any>`](https://zh.cppreference.com/w/cpp/thread/condition_variable_any)，请查看示例
