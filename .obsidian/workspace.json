@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "954b7f64c5ea3877",
+        "id": "d2dc093429b5af48",
         "type": "tabs",
         "children": [
           {
-            "id": "6a1c3effedb7247a",
+            "id": "f1ba71d83dd8520b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,17 +137,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6a1c3effedb7247a",
+  "active": "f1ba71d83dd8520b",
   "lastOpenFiles": [
+    "Interdisciplinary/Quant/开发调研-slide.md",
     "Interdisciplinary/Quant/开发调研.md",
-    "未命名.md",
     "README.md",
+    "未命名 1.md",
+    "未命名.md",
     "Interdisciplinary/quant-survey.md",
     "Interdisciplinary/Quant/常识.md",
     "blog/VSCode.md",
     "Programing-Language/C++/C++Thread.md",
-    "Artificial-Intelligence/Machine-Learning/Pre.md",
-    "Interdisciplinary/Web3.md",
-    "Artificial-Intelligence/Deep-Learning/base.md"
+    "Artificial-Intelligence/Machine-Learning/Pre.md"
   ]
 }
