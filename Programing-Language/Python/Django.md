@@ -350,7 +350,7 @@ Django账号系统的扩充
 	```
 
 # QAuth2第三方授权
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/Python/1_1ddf070e4d-weboauth2.png)
+
 1. Client向Web请求使用AcWing账号登录
 2. Web向AcWing请求OAuth2授权登录，上报信息（），这个过程使用AcWing的API
 	```

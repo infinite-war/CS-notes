@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a052da6188afdd8d",
+        "id": "0529c6e9184fbb8e",
         "type": "tabs",
         "children": [
           {
-            "id": "a0ec56dc1015f327",
+            "id": "345248a04c53abc2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,8 +129,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a0ec56dc1015f327",
+  "active": "345248a04c53abc2",
   "lastOpenFiles": [
+    "Programing-Language/Python/Django.md",
+    "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
+    "Algorithm/Dynamic-Programming/动态规划2树上DP.md",
+    "Programing-Language/C++/6SL.md",
     "Math/Cryptology/公钥密码学.md",
     "Math/Cryptology/对称密码学.md",
     "resource/Programing-Language/C++/顺序容器访问.jpg",
@@ -173,10 +177,6 @@
     "Programing-Language/Python/DS-Lib.md",
     "Programing-Language/C++/C++Thread.md",
     "Operating-System/PA.md",
-    "Interdisciplinary/backtester.md",
-    "Interdisciplinary/quant-survey.md",
-    "Interdisciplinary/Web3.md",
-    "Math/Cryptology/Intro.md",
     "未命名.canvas"
   ]
 }

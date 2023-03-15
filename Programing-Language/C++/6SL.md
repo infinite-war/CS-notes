@@ -545,7 +545,7 @@ int get(void);
 
 ## 函数对象
 
- ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/标准库函数对象.jpg)
+ ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/标准库函数对象.png)
 
 ## 类型转换
 
