@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d2dc093429b5af48",
+        "id": "f7f3ae45a1b2aff7",
         "type": "tabs",
         "children": [
           {
-            "id": "f1ba71d83dd8520b",
+            "id": "46652f961fde0e43",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,17 +137,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f1ba71d83dd8520b",
+  "active": "46652f961fde0e43",
   "lastOpenFiles": [
-    "Interdisciplinary/Quant/开发调研-slide.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Linux/GNU/GNU Makefile.md",
+    "Linux/shell.md",
+    "Linux/GNU/Modern CMake.md",
     "Interdisciplinary/Quant/开发调研.md",
+    "Interdisciplinary/Quant/常识.md",
+    "Interdisciplinary/Quant/开发调研-slide.md",
     "README.md",
     "未命名 1.md",
-    "未命名.md",
-    "Interdisciplinary/quant-survey.md",
-    "Interdisciplinary/Quant/常识.md",
-    "blog/VSCode.md",
-    "Programing-Language/C++/C++Thread.md",
-    "Artificial-Intelligence/Machine-Learning/Pre.md"
+    "未命名.md"
   ]
 }
