@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0529c6e9184fbb8e",
+        "id": "d73358fc007a0150",
         "type": "tabs",
         "children": [
           {
-            "id": "345248a04c53abc2",
+            "id": "629614f0d72da1ba",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,7 +129,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "345248a04c53abc2",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "Programing-Language/Python/Django.md",
     "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
