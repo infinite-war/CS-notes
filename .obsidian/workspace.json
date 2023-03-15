@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5094d48668d18753",
+        "id": "6ef9540474b1d5c5",
         "type": "tabs",
         "children": [
           {
-            "id": "8c059fb3acfe38e1",
+            "id": "dd1613a3a515bca8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ],
@@ -132,6 +140,14 @@
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "PA.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/base.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/线性神经网络.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/Neural Network/线性.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/Neural Network",
+    "Linux/GNU/gdb.md",
+    "Math/Base.md",
+    "Artificial-Intelligence/Machine-Learning/Pre.md",
+    "Artificial-Intelligence/Base.md",
     "Operating-System/操作系统2 内存.md",
     "Operating-System/操作系统1 进程.md",
     "Operating-System/操作系统0 概述.md",
@@ -163,20 +179,12 @@
     "resource/Operating-System",
     "resource/Network",
     "resource/Missing-Semester",
-    "resource/Math",
     "Linux/shell.md",
     "Linux/Editor.md",
     "Linux/GNU/GNU Makefile.md",
     "Organization-Architecture/王道计组信息的表示和处理.md",
     "Organization-Architecture/王道计组概述.md",
     "Organization-Architecture/王道计组存储系统.md",
-    "Missing-Semester/Git.md",
-    "Organization-Architecture/IO.md",
-    "Organization-Architecture/CPU.md",
-    "Organization-Architecture/总线.md",
-    "Organization-Architecture/指令系统.md",
-    "Artificial-Intelligence/Machine-Learning/Pre.md",
-    "Artificial-Intelligence/Deep-Learning/base.md",
     "未命名.canvas"
   ]
 }
