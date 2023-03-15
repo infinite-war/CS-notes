@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f7f3ae45a1b2aff7",
+        "id": "a052da6188afdd8d",
         "type": "tabs",
         "children": [
           {
-            "id": "46652f961fde0e43",
+            "id": "a0ec56dc1015f327",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -51,14 +51,6 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "1507533766e1094c",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           }
         ]
@@ -130,24 +122,61 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "46652f961fde0e43",
+  "active": "a0ec56dc1015f327",
   "lastOpenFiles": [
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Linux/GNU/GNU Makefile.md",
+    "Math/Cryptology/公钥密码学.md",
+    "Math/Cryptology/对称密码学.md",
+    "resource/Programing-Language/C++/顺序容器访问.jpg",
+    "resource/Programing-Language/C++/顺序容器类型.jpg",
+    "resource/Programing-Language/C++/顺序容器添加操作.jpg",
+    "resource/Programing-Language/C++/顺序容器大小操作.jpg",
+    "resource/Programing-Language/C++/顺序容器删除.jpg",
+    "resource/Programing-Language/C++/队列操作.jpg",
+    "resource/Programing-Language/C++/迭代器类别2.jpg",
+    "resource/Programing-Language/C++/迭代器类别.jpg",
+    "resource/Programing-Language/C++/运算符优先级表.png",
+    "resource/Programing-Language/C++/特定容器算法.jpg",
+    "resource/Programing-Language/Python",
+    "resource/Programing-Language/C++",
+    "resource/Math/Cryptology",
+    "resource/blog",
+    "resource/Programing-Language",
+    "resource/Organization-Architecture",
+    "resource/Operating-System",
+    "resource/Network",
+    "resource/Missing-Semester",
+    "resource/Math",
     "Linux/shell.md",
-    "Linux/GNU/Modern CMake.md",
+    "Linux/Editor.md",
+    "Organization-Architecture/PA.md",
+    "Linux/GNU/GNU Makefile.md",
+    "Organization-Architecture/王道计组信息的表示和处理.md",
+    "Organization-Architecture/王道计组概述.md",
+    "Organization-Architecture/王道计组存储系统.md",
+    "Missing-Semester/Git.md",
+    "Organization-Architecture/IO.md",
+    "Organization-Architecture/CPU.md",
+    "Organization-Architecture/总线.md",
+    "Organization-Architecture/指令系统.md",
+    "Artificial-Intelligence/Machine-Learning/Pre.md",
+    "Artificial-Intelligence/Deep-Learning/base.md",
     "Interdisciplinary/Quant/开发调研.md",
     "Interdisciplinary/Quant/常识.md",
-    "Interdisciplinary/Quant/开发调研-slide.md",
-    "README.md",
-    "未命名 1.md",
-    "未命名.md"
+    "blog/tools.md",
+    "Programing-Language/Python/DS-Lib.md",
+    "Programing-Language/C++/C++Thread.md",
+    "Operating-System/PA.md",
+    "Interdisciplinary/backtester.md",
+    "Interdisciplinary/quant-survey.md",
+    "Interdisciplinary/Web3.md",
+    "Math/Cryptology/Intro.md",
+    "未命名.canvas"
   ]
 }

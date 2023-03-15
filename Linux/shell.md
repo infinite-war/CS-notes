@@ -1,15 +1,9 @@
-文件管理 - cd, pwd, mkdir, rmdir, ls, cp, rm, mv, tar
-文件检索 - cat, more, less, head, tail, file, find
-输入输出控制 - 重定向, 管道, tee, xargs
-文本处理 - vim, grep, awk, sed, sort, wc, uniq, cut, tr
-正则表达式
-系统监控 - jobs, ps, top, kill, free, dmesg, lsof
 
 + 资料：
 	+ 一个简单的入门[网站](https://linux.cn/article-6160-1.html)
 	+ 《鸟哥的Linux私房菜》
 
-+ 规矩：终端即为一个shell的解释器
++ 通用：终端即为一个shell的解释器
 	+ `q`或`Esc`退出
 	+ 参数支持正则表达式
 
@@ -20,14 +14,24 @@
 	+ 方向键`up`：上一条命令
 	+ `Ctrl + l`：刷新屏幕
 	+ 如果没有zsh的话，`Ctrl + r`可以进入查看历史命令状态
-		>即使有C-r也很好用
+		>即使有zsh，C-r也很好用，因为zsh的历史命令只能从头识别
+
 # misc
 
 + `man 命令`：查看命令手册  
 + 通常命令会提供`--help`参数
 + `type 命令`：查看命令类型
 + `strace 命令`：检查命令使用的系统调用
+
 ---
+
++ 查看机器信息：
+	+ `uname -a`
+	+ `cat /etc/issue`
+	+ `lscpu`：cpu数量
+
+---
+
 + 工具：
 	+ `md5sum`：计算md5哈希值：
 		+ 可从`stdin`读入内容：执行命令 -> 输入内容 -> `Ctrl + z`
@@ -37,13 +41,12 @@
 	+ `tar`：压缩文件
 		+ `tar -zcvf xxx.tar.gz /path/to/file/*`：压缩
 		+ `tar -zxvf xxx.tar.gz`：解压缩
-	+ `diff XXX YYY`： 查找文件XXX与YYY的不同点
+		+ `tar -jxvf xxx.tar.bz2`：解压tar.bz2
+
+	+ `diff XXX YYY`： 查找文件XXX与YYY的不同点  
+		`vimdiff`
 
 ## 基操
-
-+ 查看机器信息：
-	+ `uname -a`
-	+ `cat /etc/issue`
 
 + `pwd`：显式当前绝对路径
 + `ls`：
@@ -62,6 +65,7 @@
 	+ `chmod -x XXX`：去掉XXX的可执行权限
 	+ `chmod 777 XXX`：将XXX的权限改成777
 	+ `chmod 777 XXX -R`：递归修改整个文件夹的权限
+
 
 ## 重定向和管道
 
@@ -88,7 +92,7 @@
 
 + `xargs`命令：
 
-# 运维
+# 系统监控
 + `tree`：展示当前目录的文件结构
 
 ## 文件

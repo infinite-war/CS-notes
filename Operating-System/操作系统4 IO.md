@@ -24,7 +24,7 @@ UNIX系统将外部设备抽象成一种特殊的文件，通过读写和外部�
 	+ 向CPU报告设备的状态：IO控制器重有相应的状态寄存器用于记录IO设备的当前状态
 	+ 数据交换：IO控制器中会设置相应的数据寄存器
 	+ 地址识别：上面数据交换中的地址
-+ 组成：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Operating-System/IO控制器.jpg)
++ 组成：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Operating-System/IO控制器.jpg)
 
 1. 一个IO控制器可能对应多个设备
 2. 数据、控制、状态寄存器可能有多个，它们都需要相应的地址
@@ -54,8 +54,8 @@ UNIX系统将外部设备抽象成一种特殊的文件，通过读写和外部�
 	+ 传送单位是块，不是一个字
 	+ 数据是设备和内存地直接交换
 	+ 需要CPU的干预很好，只在传送一个或多个数据块的开始和结束才有
-	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Operating-System/DMA控制器.jpg)
-4. 通道控制方式：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Operating-System/通道.jpg)
+	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Operating-System/DMA控制器.jpg)
+4. 通道控制方式：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Operating-System/通道.jpg)
 	1. CPU向通道发送指令
 	2. IO完成后PCU中断
 	+ CPU的干预频率低很多，因为可以给通道一系列的命令，只有中断需要专门停止

@@ -1,8 +1,8 @@
 + 头文件：`<容器名称>`，名称空间`std`，都是模板类
 
-+ 常规方法：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/容器操作.jpg" style="zoom:120%;">
++ 常规方法：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/容器操作.jpg" style="zoom:120%;">
 
-+ 容器赋值：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/容器赋值运算.jpg" style="zoom:80%;">
++ 容器赋值：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/容器赋值运算.jpg" style="zoom:80%;">
   + swap会改变迭代器或者索引或者指针
 
 ## Sequential顺序
@@ -11,7 +11,7 @@
 
 + 顺序容器(sequential container)：提供快速顺序访问元素
 
-  <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/顺序容器类型.jpg" style="zoom:120%;" />
+  <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/顺序容器类型.jpg" style="zoom:120%;" />
 
   + | 容器类型                 | 随机访问 | 随机添加 | 首尾读写 |
     | ------------------------ | -------- | -------- | -------- |
@@ -20,17 +20,17 @@
     | `list`<br>`froward_list` | 慢       | 快       |          |
     | `deque`                  | 快       |          | 快       |
 
-+ 添加：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/顺序容器添加操作.jpg" style="zoom:120%;" />
++ 添加：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/顺序容器添加操作.jpg" style="zoom:120%;" />
   + `insert`和`push_back`参数是元素，`emplace`使用参数构造元素
   + 内存分配策略：只在迫不得已时才重新分配新的内存空间
   
-+ 访问：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/顺序容器访问.jpg)
++ 访问：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/顺序容器访问.jpg)
 
-+ 删除元素：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/顺序容器删除.jpg)
++ 删除元素：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/顺序容器删除.jpg)
 
-  顺序容器大小操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/顺序容器大小操作.jpg)
+  顺序容器大小操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/顺序容器大小操作.jpg)
 
-  容器大小管理操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/容器大小管理操作.jpg)
+  容器大小管理操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/容器大小管理操作.jpg)
 
   + reserve不改变容器中元素的数量，只影响vector预先分配的内存空间
 
@@ -72,7 +72,7 @@
 
   > 由于单向链表的插入和删除需要修改**前驱元素**，但是单向链表没有简单方法获得前驱，所以STL里的fowward_list通过前驱增删后面的元素
 
-  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/forward_list的插入和删除.jpg)
+  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/forward_list的插入和删除.jpg)
 
   + off-the-beginning首前迭代器：返回不存在的第一个元素的前驱
 
@@ -82,7 +82,7 @@
 
 + 所有容器适配器都支持的操作和类型：
 
-  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/所有容器适配器都支持的操作和类型.jpg)
+  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/所有容器适配器都支持的操作和类型.jpg)
 
 + 构造：两个构造函数：空和拷贝
 
@@ -100,14 +100,14 @@
 
 + 头文件`<stack>`
 
-+ 操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/栈操作.jpg)
++ 操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/栈操作.jpg)
 
 
 #### queue
 
 + 头文件`<queue>`
 
-+ 操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/队列操作.jpg)
++ 操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/队列操作.jpg)
 
 
 #### priority_queue
@@ -119,8 +119,8 @@
 
 关联容器支持高效的关键字查找和访问
 
-+ 分类：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/关联容器类型.jpg)
-  +  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/关联容器的类型别名.jpg)
++ 分类：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/关联容器类型.jpg)
+  +  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/关联容器的类型别名.jpg)
   + 迭代器：双向迭代器
     + map：`pair<const type, tpye>`
     + set：`const type`
@@ -132,25 +132,25 @@
 
 + 操作：
 
-  + 添加：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/关联容器插入操作.jpg)
+  + 添加：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/关联容器插入操作.jpg)
 
     + 不可重复的insert返回pair：first是位置的迭代器，second是bool
 
       可重复的不会插入失败，只返回bool
 
-  + 删除：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/关联容器删除元素.jpg)
-  + 查找：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/关联容器查找操作.jpg)
+  + 删除：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/关联容器删除元素.jpg)
+  + 查找：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/关联容器查找操作.jpg)
     + 可重复的中相同元素相邻
 
 ### set
 
 ### map
 
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/map中的下标操作.jpg)
+![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/map中的下标操作.jpg)
 
 ### unoreder
 
 + unordered associative container无序关联容器：不使用比较运算符，使用hash function哈希函数和关键字类型的==运算符
 + 无序容器在存储上组织为一组桶，每个桶保存零个或多个元素，使用哈希函数将元素映射到桶——性能依赖于哈希函数的质量和桶的数量和大小
-+ 管理操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/无序容器管理.jpg)
++ 管理操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/无序容器管理.jpg)
 

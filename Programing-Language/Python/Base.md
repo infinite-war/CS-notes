@@ -120,7 +120,7 @@
     2. 函数：`sorted(列表名)`临时性排序
        + 逆序：同理
 
-    ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/Python/python_yyds.png)
+    ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/Python/python_yyds.png)
 
   + 反转：方法：`reverse()`
 

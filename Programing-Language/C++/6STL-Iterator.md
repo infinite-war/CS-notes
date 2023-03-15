@@ -31,7 +31,7 @@ STL(Standard Template Library)标准模板库
 
       ​			   操作数是迭代器：距离，类型`defference_type`
 
-+ Iterator Category迭代器类型：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/迭代器类别2.jpg)
++ Iterator Category迭代器类型：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/迭代器类别2.jpg)
 
   + 容器使用的迭代器类型：
 
@@ -62,7 +62,7 @@ STL(Standard Template Library)标准模板库
   for (int i = 1; i <= 9; ++ i) *it = i; //vec = {1..9}
   ```
 
-   ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/插入迭代器.jpg)
+   ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/插入迭代器.jpg)
 
 + Stream iterator流迭代器：将流当作一个**特定类型**的**元素序列**
 
@@ -80,6 +80,6 @@ STL(Standard Template Library)标准模板库
                      0) << endl;
   ```
 
-  + 操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/流迭代器.jpg)
+  + 操作：![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/流迭代器.jpg)
 
 + move iterator移动迭代器

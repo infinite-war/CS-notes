@@ -80,7 +80,7 @@
 
   + 重载为类成员：隐式静态，无需显示的声明`static`
 
-+ 可重载的接口：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/动态内存接口.jpg" style="zoom:60%;" />
++ 可重载的接口：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/动态内存接口.jpg" style="zoom:60%;" />
 
   + `nothrow_t`是定义在new头文件中的一个无成员的struct，并定义了一个名为**`nothrow`**的const对象，用户可以通过这个对象请求非抛出版本，重载这部分运算符时也**必须**使用`noexcept`异常说明符
 
@@ -110,11 +110,11 @@
 
   2. `unique_ptr`：相对`shared_ptr`、独占所指向的对象
 
-  ​                 <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/智能指针操作.jpg" style="zoom:80%;" />
+  ​                 <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/智能指针操作.jpg" style="zoom:80%;" />
 
   智能指针服务于动态内存的，不要用其管理普通变量，因为其默认delete销毁变量
 
-+ 相关规范：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/智能指针规范.jpg" style="zoom: 80%;" />
++ 相关规范：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/智能指针规范.jpg" style="zoom: 80%;" />
 
 + > `shared_ptr`默认调用`delete`释放空间，`delete`会调用对象的析构函数，但是并不是所有的类都有析构函数
 
@@ -134,7 +134,7 @@
   + 智能指针的构造函数是explicit的，不能隐式转换，必须显式初始化
 
   
-  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/shared_ptr构造.jpg)
+  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/shared_ptr构造.jpg)
 
 
 + 注意：
@@ -144,7 +144,7 @@
 
 + `weak_ptr`：不控制所指向对象生存期的智能指针，指向由`shared_ptr`管理的对象，**不改变**`shared_ptr`的引用计数
 
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/weak_ptr操作.jpg)
+![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/weak_ptr操作.jpg)
 
 ### unique_ptr
 
@@ -152,9 +152,9 @@
 
   + 转移：`p2.reset(p3.release());`（release并没有释放空间）
 
-+ 操作：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/unique_ptr构造.jpg" style="zoom:80%;" />
++ 操作：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/unique_ptr构造.jpg" style="zoom:80%;" />
 
-+ 管理数组：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/unique_ptr指向数组的.jpg" style="zoom:80%;" />
++ 管理数组：<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/unique_ptr指向数组的.jpg" style="zoom:80%;" />
 
   + 需要显式的调用函数进行销毁：`p.release()`
 
@@ -173,9 +173,9 @@
 
 + 说明：提供*类型感知*的内存分配的方法，是一种模板
 
- <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/allocator类.jpg" style="zoom:80%;" />
+ <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/allocator类.jpg" style="zoom:80%;" />
 
- <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Programing-Language/C++/allocator伴随算法.jpg" style="zoom:80%;" />
+ <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/allocator伴随算法.jpg" style="zoom:80%;" />
 
 + heap堆：内存管理中指动态分配内存的区域，由C中的malloc和free操作。
   + free store自由存储区：特指使用new和delete来分配和释放内存的区域，是heap的子集。

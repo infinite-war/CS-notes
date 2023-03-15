@@ -14,7 +14,7 @@
 + 版本库repositorty：存放所有已经提交到本地仓库的代码版本  
 	+ 版本结构：树结构，树中每个节点代表一个代码版本
 	+ HEAD：指向当前节点的最新节点
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Missing-Semester/git区.png)  
+![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Missing-Semester/git区.png)  
 ### Config
 ```bash
 git config --global user.name xxx  # 设置全局用户名

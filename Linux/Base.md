@@ -16,4 +16,4 @@
 		剩下9位3位一组  
 			三个组分别是当前用户权限、组内用户权限和其他用户权限；  
 			组内三位分别表示是否可读、是否可写、是否可执行，由数字0~7表示。  
-	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Linux/Linux文件信息.png)
+	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Linux/Linux文件信息.png)

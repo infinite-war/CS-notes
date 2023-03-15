@@ -37,7 +37,7 @@
 >下面的讨论是我个人认为一个计算机领域的学习者不可或缺的实践部分，脱胎于[CS自学指南](https://csdiy.wiki/)，对于相对基础的知识（语法（当然、完成Lab的过程自然要学习需要的语言）、数据结构、其他专业基础）没有涉及，需要其他学习路线作为补充。
 >>对于更加进阶的内容（系统、图形学、人工智能、新兴领域和交叉学科）可能会在后续更新
 
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/word%20of%20cs.png)
+![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/word%20of%20cs.png)
 >下面的部分描述我个人也觉得可以作为CS专业和其他相近专业的核心区别
 
 暂时注释，等我学完才是真的有资格讨论
