@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d73358fc007a0150",
+        "id": "5094d48668d18753",
         "type": "tabs",
         "children": [
           {
-            "id": "629614f0d72da1ba",
+            "id": "8c059fb3acfe38e1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -131,6 +131,13 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "PA.md",
+    "Operating-System/操作系统2 内存.md",
+    "Operating-System/操作系统1 进程.md",
+    "Operating-System/操作系统0 概述.md",
+    "Operating-System/PA.md",
+    "Interdisciplinary/Quant/开发调研.md",
+    "Programing-Language/C/C.md",
     "Programing-Language/Python/Django.md",
     "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
     "Algorithm/Dynamic-Programming/动态规划2树上DP.md",
@@ -159,7 +166,6 @@
     "resource/Math",
     "Linux/shell.md",
     "Linux/Editor.md",
-    "Organization-Architecture/PA.md",
     "Linux/GNU/GNU Makefile.md",
     "Organization-Architecture/王道计组信息的表示和处理.md",
     "Organization-Architecture/王道计组概述.md",
@@ -171,12 +177,6 @@
     "Organization-Architecture/指令系统.md",
     "Artificial-Intelligence/Machine-Learning/Pre.md",
     "Artificial-Intelligence/Deep-Learning/base.md",
-    "Interdisciplinary/Quant/开发调研.md",
-    "Interdisciplinary/Quant/常识.md",
-    "blog/tools.md",
-    "Programing-Language/Python/DS-Lib.md",
-    "Programing-Language/C++/C++Thread.md",
-    "Operating-System/PA.md",
     "未命名.canvas"
   ]
 }
