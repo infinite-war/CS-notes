@@ -119,3 +119,5 @@
 	+ `vim -p file1 file2`
 	+ 命令模式`gt`一次切换
 	+ `tabnew filename`新建tab
+
++ 在命令模式前缀`!`可以使用Shell命令，其中`%`表示现在vim中的内容
