@@ -378,4 +378,4 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 ## 虚拟机VMware Workstation Pro
 
 ## 硬件扩展
-见我的[讨论](https://github.com/zweix123/CS-notes/blob/master/blog/%E5%A4%9A%E6%9C%BA%E5%8D%8F%E5%90%8C.md)
+见我的[讨论](https://github.com/zweix123/CS-notes/blob/master/blog/Multi-computer%20Cooperation.md)

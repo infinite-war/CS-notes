@@ -14,6 +14,9 @@
 
 ## Config
 
++ 配色使用OneDark（我只在win中使用了，因为这样终端和vim风格同意，但是Ubuntu原生终端也行，仍然使用Acwing提供的）
++ 插件管理：
+
 ### Vim
 
 `:version`可查看
