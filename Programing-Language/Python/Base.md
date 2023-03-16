@@ -1,4 +1,4 @@
-# 数据类型
+https://github.com/pyecharts/pyecharts# 数据类型
 
 > 数据(Data)、数据元素(DateElement)、数据项(DataItem)、数据对象(DataObject)：
 >

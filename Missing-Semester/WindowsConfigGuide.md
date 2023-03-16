@@ -118,6 +118,7 @@
 	+ 划词翻译
 		+ 可单开网页处理英文PDF
 		+ `Ctrl + Shift + 2`打开悬浮翻译框
+		+ 可将整个网页转换成双语模式
 	+ 油猴脚本
 		+ 这里推荐一款我开发的关于哔哩哔哩的脚本，[地址](https://github.com/zweix123/BilibiliProgressBar)
 
