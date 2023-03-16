@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3b4825340a7a9a6e",
+        "id": "017034d607b9a01a",
         "type": "tabs",
         "children": [
           {
-            "id": "090ddcb87253e2dd",
+            "id": "4ec6174a67ab1962",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,9 +129,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "4ec6174a67ab1962",
   "lastOpenFiles": [
     "Interdisciplinary/Quant/开发调研.md",
+    "Interdisciplinary/Quant/搭建系统.md",
     "Programing-Language/Python/Base.md",
     "Programing-Language/Python/pyecharts.md",
     "Programing-Language/Python/Coroutine.md",
@@ -143,7 +144,6 @@
     "Programing-Language/Python/Spider.md",
     "Programing-Language/Python/DS-Lib.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Interdisciplinary/Quant/搭建系统.md",
     "Interdisciplinary/Quant/常识.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Linux/GNU/gdb.md",
