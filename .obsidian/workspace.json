@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1c9f2482a6834aa3",
+        "id": "0412d926e2c4d95c",
         "type": "tabs",
         "children": [
           {
-            "id": "a0706a737cb40a75",
+            "id": "faca8d9da84f4ea9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Editor.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Editor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Editor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux/Editor.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -137,8 +129,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a0706a737cb40a75",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Linux/Editor.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/C/编译.md",
     "Programing-Language/C/C.md",
@@ -146,8 +140,6 @@
     "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
     "Algorithm/Dynamic-Programming/动态规划2树上DP.md",
     "Programing-Language/C++/6SL.md",
-    "Math/Cryptology/公钥密码学.md",
-    "Math/Cryptology/对称密码学.md",
-    "resource/Programing-Language/C++/顺序容器访问.jpg"
+    "Math/Cryptology/公钥密码学.md"
   ]
 }

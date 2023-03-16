@@ -3,6 +3,7 @@
 	```bash
 	ssh-keygen && touch ~/.ssh/authorized_keys ~/.ssh/config  # 之后一路回车+y
 	```
++ 将秘钥放置到GitHub上
 
 ---
 
