@@ -48,7 +48,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 ## 2.配置SSH
 
 我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md#intro)
-
+---
 ## 3.修改软件源
 
 + 源位置：`/etc/apt/sources.list`
@@ -187,7 +187,7 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 
 ### Obsidian
 
-+ 安装包类型为`AppImage`，所有东西放在一个文件内，赋予其可执行权限即可运行软件。不过它单纯的是个文件，想要变成有图标的应用程序需要处理
++ 安装包类型为`AppImage`，所有东西放在一个文件内，赋予其可执行权限（`chmod +x xxx.AppImage`）即可运行软件。不过它单纯的是个文件，想要变成有图标的应用程序需要处理
 
 + 我的管理方式：
 	+ `~/Apps/`管理AppImage类型
@@ -195,30 +195,34 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 
 	+ `~/.icons/`管理AppImage应用程序的图标
 
-我们以Obsidian为例走一个这个过程
+我们以Obsidian为例走一下这个过程
 
-0. 下载Obsidian的AppImage类型安装包并`mv`到`~/AppImages/obsidian.AppImage`
-1. 编辑文件`obsidian.desktop`
+0. 下载Obsidian的AppImage类型安装包并`mv`到`~/Apps/Obsidian.AppImage`
+2. 编辑文件`Obsidian.desktop`
 	```
 	[Desktop Entry]
-	Name=obsidian
-	Version=1.1.9
+	Name=Obsidian
 	Type=Application
-	Exec=/home/$用户名/Apps/obsidian.AppImage
-	Icon=/home/$用户名/.icons/obsidian.png
+	Exec=/home/$用户名/Apps/Obsidian.AppImage
+	Icon=/home/$用户名/.icons/Obsidian.png
 	Terminal=false
 	StartupNotify=true
 	```
 	照猫画虎修改即可
 
-+ 让软件图标出现在应用程序栏中：将上面的desktop文件mv到`~/.local/share/application/`
++ 让软件图标出现在应用程序栏中：将上面的desktop文件`sudo mv`到`/usr/share/application/`
 
 # 虚拟机
 
-+ 本机ssh到虚拟机[教程](https://cloud.tencent.com/developer/article/1679861#:~:text=windows%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%A6%82%E4%BD%95SSH%E8%BF%9E%E6%8E%A5VMware%E7%9A%84Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%201%201%E3%80%81%E5%AE%89%E8%A3%85%E5%A5%BDUbuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%202,2%E3%80%81%E5%BB%BA%E7%AB%8BIP%E6%98%A0%E5%B0%84%203%203%E3%80%81%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BASSH%204%204%E3%80%81%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%98%B2%E7%81%AB%E5%A2%99)
++ SSH到本机的VMware虚拟机中：
+	>使用的[教程](https://cloud.tencent.com/developer/article/1679861#:~:text=windows%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%A6%82%E4%BD%95SSH%E8%BF%9E%E6%8E%A5VMware%E7%9A%84Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%201%201%E3%80%81%E5%AE%89%E8%A3%85%E5%A5%BDUbuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%202,2%E3%80%81%E5%BB%BA%E7%AB%8BIP%E6%98%A0%E5%B0%84%203%203%E3%80%81%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BASSH%204%204%E3%80%81%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%98%B2%E7%81%AB%E5%A2%99)
 
-# 服务器
-
-# MISC
-
-+ 在登录云服务器后终端会先输出一段话，这些在`/etc/update-motd.d/10-help-text`（Ubuntu），这是一个可执行文件，具体请STFW
+	1. check本机和虚拟机的IP
+	2. `编辑` -> `虚拟网络编辑器` -> `VMnet8` -> `更改设置` -> `VMnet8` -> `NAT设置` -> `添加`（端口转发） -> `按要求填写`
+	3. 
+		```bash
+		sudo apt-get install openssh-client
+		sudo apt-get install openssh-server
+		sudo /etc/init.d/ssh restart         # 启动
+		```
+	+ 即可连接
