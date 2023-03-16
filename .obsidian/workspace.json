@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9f815410e866a4a9",
+        "id": "0412d926e2c4d95c",
         "type": "tabs",
         "children": [
           {
-            "id": "62e912ff6e0a9b21",
+            "id": "faca8d9da84f4ea9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -61,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 339.5
+    "width": 200
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Missing-Semester/WindowsConfigGuide.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -130,61 +122,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "62e912ff6e0a9b21",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Missing-Semester/SSH.md",
-    "blog/Multi-computer Cooperation.md",
-    "README.md",
-    "Interdisciplinary/Quant/开发调研.md",
-    "Interdisciplinary/Quant/搭建系统.md",
-    "Programing-Language/Python/Base.md",
-    "Programing-Language/Python/pyecharts.md",
-    "Programing-Language/Python/Coroutine.md",
-    "Programing-Language/Python/Django.md",
-    "Programing-Language/Python/image.md",
-    "Programing-Language/Python/Intro.md",
-    "Programing-Language/Python/PDF.md",
-    "Programing-Language/Python/poetry.md",
-    "Programing-Language/Python/Spider.md",
-    "Programing-Language/Python/DS-Lib.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "Interdisciplinary/Quant/常识.md",
-    "Linux/GNU/gdb.md",
-    "PA.md",
-    "Linux/GNU/GNU Makefile.md",
+    "conflict-files-obsidian-git.md",
     "Linux/Editor.md",
-    "Linux/GNU/Modern CMake.md",
-    "Missing-Semester/Git.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/C/编译.md",
     "Programing-Language/C/C.md",
-    "Artificial-Intelligence/Machine-Learning/Deep-Learning/Neural Network",
-    "resource/Programing-Language/C++/顺序容器访问.jpg",
-    "resource/Programing-Language/C++/顺序容器类型.jpg",
-    "resource/Programing-Language/C++/顺序容器添加操作.jpg",
-    "resource/Programing-Language/C++/顺序容器大小操作.jpg",
-    "resource/Programing-Language/C++/顺序容器删除.jpg",
-    "resource/Programing-Language/C++/队列操作.jpg",
-    "resource/Programing-Language/C++/迭代器类别2.jpg",
-    "resource/Programing-Language/C++/迭代器类别.jpg",
-    "resource/Programing-Language/C++/运算符优先级表.png",
-    "resource/Programing-Language/C++/特定容器算法.jpg",
-    "resource/Programing-Language/Python",
-    "resource/Programing-Language/C++",
-    "resource/Math/Cryptology",
-    "resource/blog",
-    "resource/Programing-Language",
-    "resource/Organization-Architecture",
-    "resource/Operating-System",
-    "resource/Network",
-    "resource/Missing-Semester",
-    "未命名.canvas"
+    "Programing-Language/Python/Django.md",
+    "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
+    "Algorithm/Dynamic-Programming/动态规划2树上DP.md",
+    "Programing-Language/C++/6SL.md",
+    "Math/Cryptology/公钥密码学.md"
   ]
 }
