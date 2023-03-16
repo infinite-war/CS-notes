@@ -19,3 +19,9 @@ apt-get install -y flex
 ```
 
 + pa0中两次init.sh的执行会修改rc文件，默认修改~/.bashrc
+
+
+```
+bash init.sh nemu
+bash init.sh abstract-machine
+```

@@ -114,3 +114,8 @@
 + 打开目录：
 	+ `enter`下一级目录或者进入，`-`上一级目录
 	+ `:Ex`从文件中退出到文件的目录中
+
++ Tab：
+	+ `vim -p file1 file2`
+	+ 命令模式`gt`一次切换
+	+ `tabnew filename`新建tab

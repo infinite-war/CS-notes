@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "11beaba09bec9ba9",
+        "id": "1835c71ffcc2c711",
         "type": "tabs",
         "children": [
           {
-            "id": "508dbeb1367ebd44",
+            "id": "1db61523ed2a00b2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -122,24 +122,61 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "508dbeb1367ebd44",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Linux/GNU/gdb.md",
+    "Interdisciplinary/Quant/搭建系统.md",
+    "PA.md",
+    "Linux/GNU/GNU Makefile.md",
+    "Linux/Editor.md",
+    "Linux/GNU/Modern CMake.md",
+    "Missing-Semester/Git.md",
     "Programing-Language/C/编译.md",
+    "Programing-Language/C/C.md",
+    "README.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/base.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/线性神经网络.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/Neural Network/线性.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/Neural Network",
+    "Math/Base.md",
+    "Artificial-Intelligence/Machine-Learning/Pre.md",
+    "Artificial-Intelligence/Base.md",
+    "Operating-System/操作系统2 内存.md",
+    "Operating-System/操作系统1 进程.md",
+    "Operating-System/操作系统0 概述.md",
+    "Operating-System/PA.md",
+    "Interdisciplinary/Quant/开发调研.md",
     "Programing-Language/Python/Django.md",
     "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
     "Algorithm/Dynamic-Programming/动态规划2树上DP.md",
     "Programing-Language/C++/6SL.md",
-    "Math/Cryptology/公钥密码学.md",
-    "Math/Cryptology/对称密码学.md",
     "resource/Programing-Language/C++/顺序容器访问.jpg",
     "resource/Programing-Language/C++/顺序容器类型.jpg",
-    "resource/Programing-Language/C++/顺序容器添加操作.jpg"
+    "resource/Programing-Language/C++/顺序容器添加操作.jpg",
+    "resource/Programing-Language/C++/顺序容器大小操作.jpg",
+    "resource/Programing-Language/C++/顺序容器删除.jpg",
+    "resource/Programing-Language/C++/队列操作.jpg",
+    "resource/Programing-Language/C++/迭代器类别2.jpg",
+    "resource/Programing-Language/C++/迭代器类别.jpg",
+    "resource/Programing-Language/C++/运算符优先级表.png",
+    "resource/Programing-Language/C++/特定容器算法.jpg",
+    "resource/Programing-Language/Python",
+    "resource/Programing-Language/C++",
+    "resource/Math/Cryptology",
+    "resource/blog",
+    "resource/Programing-Language",
+    "resource/Organization-Architecture",
+    "resource/Operating-System",
+    "resource/Network",
+    "resource/Missing-Semester",
+    "未命名.canvas"
   ]
 }

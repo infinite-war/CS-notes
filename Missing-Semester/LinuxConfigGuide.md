@@ -178,7 +178,7 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 + 下载：官网提供`deb`类型的安装包
 
 + `deb`类型安装包的简单语法：`dpkg`命令：
-	+ `dpkg -i 安装包`：安装
+	+ `dpkg -i 安装包`：安装/升级
 	+ `dpkg -L 软件名`：查看安装位置
 	+ `dpkg -r 软件名`：不清除配置卸载
 	+ `dpkg -P 软件名`：清除配置卸载
@@ -190,7 +190,9 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 + 安装包类型为`AppImage`，所有东西放在一个文件内，赋予其可执行权限即可运行软件。不过它单纯的是个文件，想要变成有图标的应用程序需要处理
 
 + 我的管理方式：
-	+ `~/AppIamges/`管理AppImage类型
+	+ `~/Apps/`管理AppImage类型
+		>之所以不命名为`AppImages`是因为其他需要手动下载的软件我也在这个目录下管理
+
 	+ `~/.icons/`管理AppImage应用程序的图标
 
 我们以Obsidian为例走一个这个过程
@@ -202,7 +204,7 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 	Name=obsidian
 	Version=1.1.9
 	Type=Application
-	Exec=/home/$用户名/AppImages/obsidian.AppImage
+	Exec=/home/$用户名/Apps/obsidian.AppImage
 	Icon=/home/$用户名/.icons/obsidian.png
 	Terminal=false
 	StartupNotify=true
