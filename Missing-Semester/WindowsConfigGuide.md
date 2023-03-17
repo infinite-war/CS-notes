@@ -216,6 +216,7 @@
 + 更新：`winget update Microsoft.PowerShell`
 + 使用：快捷键`win + r`键入`pwsh`打开一个命令行程序
 + pwsh在打开后会运行`$PROFILE`这个脚本（直接在命令行中输入这个命令即可查看脚本位置）
+	+ 所以可以把这个文件当做Linux的.bashrc文件
 
 + Powershell7的ls对输出的目录的美化需要下载额外模块：（下载比较慢）
 	```powershell
