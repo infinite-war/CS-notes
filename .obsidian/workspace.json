@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6baaf3902c1a3877",
+        "id": "fe8c15031e125388",
         "type": "tabs",
         "children": [
           {
-            "id": "928a9c90ce13a7f1",
+            "id": "b689e456ae39b4ab",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,10 +129,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "b689e456ae39b4ab",
   "lastOpenFiles": [
-    "Missing-Semester/WindowsConfigGuide.md",
     "Missing-Semester/LinuxConfigGuide.md",
+    "Interdisciplinary/Quant/开发调研.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Python/poetry.md",
     "Linux/Base.md",
     "conflict-files-obsidian-git.md",

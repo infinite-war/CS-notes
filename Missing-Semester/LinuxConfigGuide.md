@@ -48,7 +48,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 ## 2.配置SSH
 
 我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md#intro)
----
+
 ## 3.修改软件源
 
 + 源位置：`/etc/apt/sources.list`
@@ -187,30 +187,27 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 
 ### Obsidian
 
-+ 安装包类型为`AppImage`，所有东西放在一个文件内，赋予其可执行权限（`chmod +x xxx.AppImage`）即可运行软件。不过它单纯的是个文件，想要变成有图标的应用程序需要处理
+Obsidian提供的文件类型是`AppImage`，加上可执行权限（`chmod +x xxx.AppImage`）就可以直接运行。  
+我们要想办法把它做成Desktop File桌面文件放在Application Window应用程序窗口，继而放到Application Launcher应用程序启动器中。
 
-+ 我的管理方式：
-	+ `~/Apps/`管理AppImage类型
-		>之所以不命名为`AppImages`是因为其他需要手动下载的软件我也在这个目录下管理
++ Desktop File：文件后缀名为`desktop`，通常放在目录`/usr/share/applications`或`~/.local/share/applications`中，放在这里后就会出现在Application Window中
+	+ 格式：下面以Obsidian为例（这里的值大小写我不知道是否关键，这种事情我通常避免麻烦都小写）
+		```
+		[Desktop Entry]
+		Name=obsidian
+		Type=Application
+		Exec=/opt/apps/obsidian.AppImage
+		Icon=/usr/share/icons/obsidian.png
+		Terminal=false
+		StartupNotify=true
+		Categories=Development
+		```
 
-	+ `~/.icons/`管理AppImage应用程序的图标
+	+ 这里`/usr/share/icons/`目录通放置目录
+	+ 这里`/opt/`目录通常放置第三方软件，我看有个目录叫`apps`叫放进来了。
 
-我们以Obsidian为例走一下这个过程
-
-0. 下载Obsidian的AppImage类型安装包并`mv`到`~/Apps/Obsidian.AppImage`
-2. 编辑文件`Obsidian.desktop`
-	```
-	[Desktop Entry]
-	Name=Obsidian
-	Type=Application
-	Exec=/home/$用户名/Apps/Obsidian.AppImage
-	Icon=/home/$用户名/.icons/Obsidian.png
-	Terminal=false
-	StartupNotify=true
-	```
-	照猫画虎修改即可
-
-+ 让软件图标出现在应用程序栏中：将上面的desktop文件`sudo mv`到`/usr/share/application/`
+### 图片悬停
+火焰截图
 
 # 虚拟机
 
