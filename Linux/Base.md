@@ -17,3 +17,5 @@
 			三个组分别是当前用户权限、组内用户权限和其他用户权限；  
 			组内三位分别表示是否可读、是否可写、是否可执行，由数字0~7表示。  
 	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Linux/Linux文件信息.png)
+
++ 目录`~/.local/bin/`防止这样的二进制文件，比如Python安装的poetry，所以想将这样的命令作为系统命令需要将这个目录放在系统命令中

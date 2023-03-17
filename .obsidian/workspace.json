@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f0c76bd4614c0a84",
+        "id": "88dcd248a3a099a5",
         "type": "tabs",
         "children": [
           {
-            "id": "920990db6d5b9a05",
+            "id": "5ace0c9b4301f7b3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -131,8 +131,10 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/WindowsConfigGuide.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/Python/poetry.md",
+    "Linux/Base.md",
     "conflict-files-obsidian-git.md",
     "Linux/Editor.md",
     "Programing-Language/C/编译.md",

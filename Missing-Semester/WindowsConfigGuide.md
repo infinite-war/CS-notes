@@ -121,6 +121,7 @@
 		+ 可将整个网页转换成双语模式
 	+ 油猴脚本
 		+ 这里推荐一款我开发的关于哔哩哔哩的脚本，[地址](https://github.com/zweix123/BilibiliProgressBar)
+	+ crxMouse Chrome手势：后退、顶部、底部，对文件图片链接的打开
 
 ## 2.解压缩7z
 一款简单的解压缩软件

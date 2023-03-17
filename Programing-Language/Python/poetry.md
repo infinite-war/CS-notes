@@ -1,12 +1,13 @@
-
-
 一款相当现代的Python虚拟环境管理工具
 
 ## 下载
 ```bash
 python3 -m pip install poetry  # 之后可直接在命令行使用命令poetry
 ```
->至少我在win10和Ubuntu22中都会将poetry设置成命令，但是在阿里云Ubuntu20.04中，不可以，需要通过`python3 -m poetry`使用
+
++ 使用：`python3 -m poetry`像pip一样
+	+ 实际上对应的二进制文件已经下载下来了，将对应路径设置为环境变量即可直接使用命令`poetry`
+		+ Ubuntu：`~/.local/bin/`目录下
 
 ## 更新
 ```bash
