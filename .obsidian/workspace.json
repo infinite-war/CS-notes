@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fe8c15031e125388",
+        "id": "b33629d0bddee8cb",
         "type": "tabs",
         "children": [
           {
-            "id": "b689e456ae39b4ab",
+            "id": "c79224e718212dbb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -122,28 +122,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b689e456ae39b4ab",
+  "active": "c79224e718212dbb",
   "lastOpenFiles": [
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Interdisciplinary/Quant/开发调研.md",
     "Missing-Semester/WindowsConfigGuide.md",
+    "Interdisciplinary/Quant/开发调研.md",
+    "Interdisciplinary/Quant/搭建系统.md",
     "Programing-Language/Python/poetry.md",
-    "Linux/Base.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "conflict-files-obsidian-git.md",
     "Linux/Editor.md",
     "Programing-Language/C/编译.md",
     "Programing-Language/C/C.md",
-    "Programing-Language/Python/Django.md",
-    "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
-    "Algorithm/Dynamic-Programming/动态规划2树上DP.md",
-    "Programing-Language/C++/6SL.md",
-    "Math/Cryptology/公钥密码学.md"
+    "Programing-Language/Python/Django.md"
   ]
 }
