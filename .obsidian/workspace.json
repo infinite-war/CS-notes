@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a1ca1ff40e8e7e21",
+        "id": "5a32d8fcc1ef2894",
         "type": "tabs",
         "children": [
           {
-            "id": "3018e76b2d96290e",
+            "id": "866ba247b762550a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3018e76b2d96290e",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/LinuxConfigGuide.md",
+    "trash_can",
     "README.md",
     "trash_can/请求方法.jpg",
     "trash_can/Handler验证.jpg",
@@ -150,7 +152,6 @@
     "trash_can/string搜索.jpg",
     "trash_can/构造string.jpg",
     "trash_can/stdexcept.png",
-    "trash_can",
     "blog/VSCode.md",
     "blog/tools.md",
     "Programing-Language/Golang/0Intro.md",
@@ -165,7 +166,6 @@
     "Programing-Language/Python/image.md",
     "Programing-Language/Python/1Base.md",
     "Programing-Language/Python/0Intro.md",
-    "Missing-Semester/LinuxConfigGuide.md",
     "Software-Engineering/YAML.md",
     "Interdisciplinary/Quant/开发调研.md",
     "Missing-Semester/WindowsConfigGuide.md",
