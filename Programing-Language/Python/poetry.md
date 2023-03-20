@@ -5,7 +5,7 @@
 python3 -m pip install poetry  # 之后可直接在命令行使用命令poetry
 ```
 
-+ 使用：`python3 -m poetry`像pip一样
++ 使用：`python3 -m poetry`（像pip一样）
 	+ 实际上对应的二进制文件已经下载下来了，将对应路径设置为环境变量即可直接使用命令`poetry`
 		+ Ubuntu：`~/.local/bin/`目录下
 

@@ -1,5 +1,14 @@
 # MISC
 
+## 代理
+
+[解释](https://codeantenna.com/a/pAOz55u5Px)
+
+
+```bash
+pip config set global.proxy http://127.0.0.1:7890
+```
+
 ## 软件源
 
 + 临时换源：

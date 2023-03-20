@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b33629d0bddee8cb",
+        "id": "97fcd2ec41b86ca8",
         "type": "tabs",
         "children": [
           {
-            "id": "c79224e718212dbb",
+            "id": "c8f3d94000249b0c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -129,17 +129,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c79224e718212dbb",
+  "active": "c8f3d94000249b0c",
   "lastOpenFiles": [
+    "Missing-Semester/Git.md",
+    "Programing-Language/Python/Spider.md",
+    "Programing-Language/Python/Intro.md",
+    "Programing-Language/Python/Base.md",
+    "Programing-Language/Python/poetry.md",
+    "Software-Engineering/YAML.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Interdisciplinary/Quant/开发调研.md",
     "Interdisciplinary/Quant/搭建系统.md",
-    "Programing-Language/Python/poetry.md",
-    "Missing-Semester/LinuxConfigGuide.md",
-    "conflict-files-obsidian-git.md",
-    "Linux/Editor.md",
-    "Programing-Language/C/编译.md",
-    "Programing-Language/C/C.md",
-    "Programing-Language/Python/Django.md"
+    "Missing-Semester/LinuxConfigGuide.md"
   ]
 }

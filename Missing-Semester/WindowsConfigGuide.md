@@ -97,6 +97,7 @@
 + 不能进入`C:\Program Files\WindowsApps`：[教程](https://jingyan.baidu.com/article/1876c852de26a0c80b1376c5.html)
 
 + 升级到专业版或企业版，这样的场景比如连接到win的服务器就需要使用win的remote功能，这种功能家庭版没有，如何升级请STFW
+	+ 资料：[1](https://blog.csdn.net/qq_32682301/article/details/116003700)
 
 # 必装软件
 
