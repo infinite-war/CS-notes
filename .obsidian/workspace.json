@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "31452b8fd6e4061f",
+        "id": "a1ca1ff40e8e7e21",
         "type": "tabs",
         "children": [
           {
-            "id": "abcae2a0baf62194",
+            "id": "3018e76b2d96290e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Missing-Semester/LinuxConfigGuide.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Missing-Semester/LinuxConfigGuide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Missing-Semester/LinuxConfigGuide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Missing-Semester/LinuxConfigGuide.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -145,8 +137,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "3018e76b2d96290e",
   "lastOpenFiles": [
+    "README.md",
     "trash_can/请求方法.jpg",
     "trash_can/Handler验证.jpg",
     "trash_can/代理分类1.jpg",
@@ -157,7 +150,6 @@
     "trash_can/string搜索.jpg",
     "trash_can/构造string.jpg",
     "trash_can/stdexcept.png",
-    "trash_can/string数值转换.jpg",
     "trash_can",
     "blog/VSCode.md",
     "blog/tools.md",
@@ -174,7 +166,6 @@
     "Programing-Language/Python/1Base.md",
     "Programing-Language/Python/0Intro.md",
     "Missing-Semester/LinuxConfigGuide.md",
-    "README.md",
     "Software-Engineering/YAML.md",
     "Interdisciplinary/Quant/开发调研.md",
     "Missing-Semester/WindowsConfigGuide.md",
