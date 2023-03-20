@@ -139,6 +139,8 @@
   },
   "active": "abcae2a0baf62194",
   "lastOpenFiles": [
+    "trash_can/doge.webp",
+    "trash_can",
     "blog/VSCode.md",
     "blog/tools.md",
     "Programing-Language/Golang/0Intro.md",
@@ -163,7 +165,6 @@
     "Linux/Editor.md",
     "Programing-Language/C/编译.md",
     "Programing-Language/C/C.md",
-    "Algorithm/Dynamic-Programming/动态规划3区间DP.md",
-    "Algorithm/Dynamic-Programming/动态规划2树上DP.md"
+    "Algorithm/Dynamic-Programming/动态规划3区间DP.md"
   ]
 }
