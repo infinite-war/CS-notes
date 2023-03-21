@@ -1,9 +1,11 @@
 1. 密码学基础
-2. 以太坊：《精通以太坊》、Manual
+2. 以太坊：《精通以太坊》、以太坊官方文档
 3. 智能合约
 ---
 4. NFT生态
 5. DeFi生态
+
+---
 
 + 区块链作为货币的问题：
 	+ Performance, Scalability, Efficiency
