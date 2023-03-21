@@ -1,3 +1,10 @@
+1. 密码学基础
+2. 以太坊：《精通以太坊》、Manual
+3. 智能合约
+---
+4. NFT生态
+5. DeFi生态
+
 + 区块链作为货币的问题：
 	+ Performance, Scalability, Efficiency
 	+ Privacy Security
@@ -10,5 +17,3 @@
 ## 经济学基础
 
 在人类经济的发展过程中有了ledger账本的概念，现在这个名词基础成为区块链中独有的
-
-
