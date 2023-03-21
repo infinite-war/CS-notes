@@ -1,3 +1,24 @@
+这些网站都是与C++语言相关的网站，但各自的内容和目的略有不同。具体如下：
+
+
+
+https://isocpp.org/ ：这是C++标准委员会（ISO C++ Standards Committee）的官方网站，主要提供C++标准化的最新消息、标准文档、标准库以及C++社区的活动讯息等。
+
+
+https://en.cppreference.com/w/Main_Page ：这是一个C++语言参考网站，提供了C++标准库的详细介绍、C++语言的语法、语义和特性的详细说明等。
+
+
+https://cppcon.org/ ：这是一个C++社区的年度盛会，主要包括C++领域的最新技术和实践、C++标准的最新进展以及C++社区的最新动态等。
+
+
+https://cplusplus.com/ ：这是一个面向C++初学者的网站，提供了C++语言基础知识、C++标准库的介绍、C++编程实践等内容。
+
+
+
+这些网站都是C++领域的知名网站，对于C++开发人员和爱好者来说都是非常有用的资源。
+
+
+
 # C++的历史
 
 + 前身：1979年C++之父Bjarne Stroustrup因准备博士论文而接触Simula语言，其变种Simula 67是公认的首款支持面向对象的语言，之后Stroustrup开发“C with Classes”语言并制作其编译器Cfront（将C with Classes代码转换成C代码，本身由C with Classes编写）
