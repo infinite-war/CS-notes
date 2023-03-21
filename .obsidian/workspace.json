@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e71014fa156bdc2c",
+        "id": "5ff3c5745746bcbd",
         "type": "tabs",
         "children": [
           {
-            "id": "7a2824dcb348eb4e",
+            "id": "62e16d933ad05ad0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 263.5
   },
   "right": {
     "id": "0c1a63d41922c647",
@@ -137,8 +137,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7a2824dcb348eb4e",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Programing-Language/C++/5Generic-in-SL.md",
+    "Programing-Language/C++/6SL.md",
+    "Programing-Language/C++/6STL-Container.md",
+    "Programing-Language/C++/6STL-Iterator.md",
+    "Programing-Language/Manual.md",
+    "Programing-Language/C++/C++Coruntine.md",
+    "Programing-Language/C++/C++Exception.md",
+    "Programing-Language/C++/C++Lambda.md",
+    "Programing-Language/C++/C++Thread.md",
+    "Programing-Language/C++/0Function.md",
+    "Programing-Language/C++/0Intro.md",
+    "Programing-Language/Compile.md",
+    "Programing-Language/C++/TL/gflags.md",
+    "README.md",
+    "Programing-Language/C/C.md",
+    "Software-Engineering/设计模式.md",
+    "Programing-Language/C/编译.md",
+    "Compiler/编译原理.md",
     "Operating-System/操作系统0 概述.md",
     "Operating-System/操作系统2 内存.md",
     "Operating-System/操作系统3 文件.md",
@@ -147,24 +165,6 @@
     "Frontend/JavaScript.md",
     "Frontend/HTML.md",
     "Frontend/CSS.md",
-    "Distributed-System/RPC.md",
-    "Distributed-System/MapReduce.md",
-    "Distributed-System/Introduction.md",
-    "Distributed-System/Storage/GFS.md",
-    "Distributed-System/Storage/Curve.md",
-    "Distributed-System/Storage/Ceph.md",
-    "Distributed-System/Consensus/Raft.md",
-    "Distributed-System/Consensus/Paxos.md",
-    "Distributed-System/Consensus/PacificA.md",
-    "Database-System/3数据库并发.md",
-    "Database-System/2 - 2数据库设计步骤.md",
-    "Database-System/2 - 1数据库理论.md",
-    "Database-System/1 - 3数据库程序优化.md",
-    "Database-System/1 - 1SQL语言.md",
-    "Database-System/0数据库基础.md",
-    "Complier/编译原理.md",
-    "blog/VSCode.md",
-    "blog/tools.md",
     "Organization-Architecture/tmp",
     "Organization-Architecture",
     "trash_can",

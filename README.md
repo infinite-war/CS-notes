@@ -1,4 +1,5 @@
-<!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/ -->
+<!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/-->
+
 + 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 + 对于课程笔记，我（自认为）严格遵循[Academic Integrity](http://integrity.mit.edu/)，虽然在笔记中可能记录思路，但是代码是Private的，如果有不合适的地方，请提醒我。
@@ -6,7 +7,7 @@
 
 ### 精华文章
 
-+ 四年功力于一：[win开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)
++ [win开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)：四年功力于一
 
 ### 笔记意义
 
@@ -24,6 +25,10 @@
 + 零碎的、细节性的知识现用现查
 
 此时笔记更像是”当年攻城略地时的纪念品“
+
+---
+
+请务必认识到STFM的重要性，Manual的存在让只是记录知识点的笔记失去意义，我后面会大量的删除我的笔记。
 
 ### 几个原则
 
