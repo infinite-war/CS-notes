@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "35f18f8194689577",
+        "id": "7e27bc85a4ddad7c",
         "type": "tabs",
         "children": [
           {
-            "id": "783d56b7714674e8",
+            "id": "8b661bea53b152d6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,17 +137,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "783d56b7714674e8",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Programing-Language/Golang/debug.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Coroutine.md",
     "Programing-Language/Rust/0Intro.md",
     "Programing-Language/Rust/1Grammer.md",
     "Programing-Language/Python/Coroutine.md",
-    "Programing-Language/Golang/debug.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/Golang/concurrency.md",
     "Distributed-System/Consensus/Raft.md",
-    "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Manual.md",
     "Programing-Language/Golang/0Intro.md",
     "Programing-Language/Golang/1Base.md",
