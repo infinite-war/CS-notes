@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4d3833365c9a1178",
+        "id": "2712022b65e27596",
         "type": "tabs",
         "children": [
           {
-            "id": "b8dcff1d3633a218",
+            "id": "8830b32cd89d3a46",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,9 +137,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b8dcff1d3633a218",
+  "active": "8830b32cd89d3a46",
   "lastOpenFiles": [
     "README.md",
+    "Programing-Language/C-Language.md",
+    "Programing-Language/Manual.md",
+    "Linux/Tmux.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Missing-Semester/Git.md",
     "Algorithm/Graph/图论2最小生成树.md",
     "Algorithm/Graph/图论1最短路.md",
     "Algorithm/Graph/图论0拓扑图.md",
@@ -160,11 +165,6 @@
     "Distributed-System/Storage/Curve.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/Consensus/Paxos.md",
-    "Distributed-System/Consensus/PacificA.md",
-    "Frontend/JavaScript.md",
-    "Frontend/HTML.md",
-    "Frontend/CSS.md",
-    "Interdisciplinary/Quant/搭建系统.md",
     "Organization-Architecture/tmp",
     "Organization-Architecture",
     "trash_can",
