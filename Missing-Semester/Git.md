@@ -19,9 +19,9 @@
 ```bash
 git config --global user.name xxx  # 设置全局用户名
 git config --global user.email xxx@xxx  # 设置全局邮箱地址
-git config --global core.editor vim                 # your favorite editor
+git config --global core.editor vim  # your favorite editor
 git config --global color.ui true
-git config --global http.proxy ""
+git config --global http.proxy ""  # 如果使用没遇到问题就不用
 ```
 + 配置文件位置：
 	+ win：`C:\User\$User\.gitconfig`

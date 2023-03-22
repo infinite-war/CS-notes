@@ -57,6 +57,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 
 
 ### 文本编辑器
+
 Linux下的文本编辑器非常之多，上面使用vi就是一种，选择看个人喜好  
 且也是一种可玩性很好的软件，所以[单拿出来](https://github.com/zweix123/CS-notes/blob/master/Linux/Editor.md)，记录有配置和用法
 
@@ -169,7 +170,7 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 
 + config：内容多且散，而且无关平台，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
-### Obsidian
+图形化### Obsidian
 
 Obsidian提供的文件类型是`AppImage`，加上可执行权限（`chmod +x xxx.AppImage`）就可以直接运行。  
 我们要想办法把它做成Desktop File桌面文件放在Application Window应用程序窗口，继而放到Application Launcher应用程序启动器中。
@@ -190,8 +191,7 @@ Obsidian提供的文件类型是`AppImage`，加上可执行权限（`chmod +x x
 	+ 这里`/usr/share/icons/`目录通放置图标
 	+ 这里`/opt/`目录通常放置第三方软件，我看有个目录叫`apps`叫放进来了。
 
-### 图片悬停
-火焰截图
+# 云服务器
 
 # 虚拟机
 
@@ -207,3 +207,21 @@ Obsidian提供的文件类型是`AppImage`，加上可执行权限（`chmod +x x
 		sudo /etc/init.d/ssh restart         # 启动
 		```
 	+ 即可连接
+
+# WSL
+>个人未使用过，下面讨论皆是别人总结。
+
+对我个人而言，虚拟机和服务器没有区别，都是SSH过去或者VSCode的remote插件，在PA时需要图形化，所以必须虚拟机。
+
++ WSL较于另外两个的优势：
+	+ 性能：就是本机性能，服务器学生买不起好的，虚拟机肯定比不上本来的物理机
+		+ 开启快
+		+ 编译快
+	+ 和Windows文件可互相访问
++ WSL较于另外两个的劣势：
+	+ 终究不是完整Linux机器
+	+ 图形化：我没有配置过，不知道麻不麻烦
+
+这里的开机速度对我来说确实是优势，但是文件互相访问就还好，我较少的有文件的互相访问，即使有，SCP也足够。
+
+>那这么说虚拟机较于WSL的唯一优势就是配置方便？

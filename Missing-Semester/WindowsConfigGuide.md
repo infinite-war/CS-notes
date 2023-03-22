@@ -342,7 +342,7 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 + 配置和使用：我的[文章](https://github.com/zweix123/CS-notes/blob/master/Linux/Editor.md)
 	>实际上vim是一个可玩性很高的编辑器，这里引用的文章不仅有vim的基本用法，可能还会有我倒腾vim的记录。
 
-## 截图Snipaste
+## 图片悬停Snipaste
 优秀的截图软件，很好用，开源，解压即用。
 
 + `F1`截屏
