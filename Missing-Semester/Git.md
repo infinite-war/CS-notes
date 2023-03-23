@@ -94,6 +94,8 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 + issue：任何人都可以向项目提出问题，当然任何人也都可以解答
 + pull request：有些issue是由于项目本身问题，可以对项目进行修改，将修改后的代码纳入GitHub的项目中
 	1. fork这个项目到你的仓库
+		>同步[fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
+
 	2. clone：克隆到本地进行开发
 	3. 创建新的分支（分支命令应尽可能简单且能反应我们的工作）
 		```bash

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b32c986c875c8791",
+        "id": "97878bf45459ea85",
         "type": "tabs",
         "children": [
           {
-            "id": "adc9e5b10d91f2ff",
+            "id": "1c6ac2edb604b18b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -140,6 +140,8 @@
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "Interdisciplinary/Quant/开发调研.md",
+    "blog/VSCode.md",
+    "Missing-Semester/Git.md",
     "Interdisciplinary/Quant/搭建系统.md",
     "Interdisciplinary/Quant/常识.md",
     "Distributed-System/0Intro.md",
@@ -163,8 +165,6 @@
     "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/Golang/concurrency.md",
     "Programing-Language/Golang/1Base.md",
-    "Programing-Language/Golang/lib/spf13.md",
-    "Programing-Language/Golang/lib/rpc.md",
     "Organization-Architecture/tmp",
     "Organization-Architecture",
     "trash_can",

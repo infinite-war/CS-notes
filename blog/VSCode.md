@@ -76,6 +76,8 @@ VSCode交与JB家的IDE值得说的优点就是远程开发功能了，我们假
 		}
 		```
 
++ 对第三方库的引入补全：https://blog.csdn.net/weixin_38165206/article/details/102903066
+
 #### 块执行
 
 + 选择代码后使用快捷键`Shift + ehter`会将这部分代码发送到Python Shell中
