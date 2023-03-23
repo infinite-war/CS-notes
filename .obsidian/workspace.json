@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7e27bc85a4ddad7c",
+        "id": "eb145cbb52dc69ae",
         "type": "tabs",
         "children": [
           {
-            "id": "8b661bea53b152d6",
+            "id": "0271f4148e8d46cf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -130,7 +130,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -139,6 +139,7 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Programing-Language/Golang/0Intro.md",
     "Programing-Language/Golang/debug.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Coroutine.md",
@@ -147,36 +148,6 @@
     "Programing-Language/Python/Coroutine.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/Golang/concurrency.md",
-    "Distributed-System/Consensus/Raft.md",
-    "Programing-Language/Manual.md",
-    "Programing-Language/Golang/0Intro.md",
-    "Programing-Language/Golang/1Base.md",
-    "Programing-Language/Golang/lib/spf13.md",
-    "Programing-Language/Golang/lib/rpc.md",
-    "Programing-Language/Golang/lib/ProtoBuf.md",
-    "Programing-Language/Golang/lib/misc.md",
-    "Programing-Language/Golang/lib/http.md",
-    "Network/OAuth 2.0.md",
-    "Missing-Semester/Git.md",
-    "README.md",
-    "Programing-Language/C-Language.md",
-    "Linux/Tmux.md",
-    "Algorithm/Graph/图论2最小生成树.md",
-    "Algorithm/Graph/图论1最短路.md",
-    "Algorithm/Graph/图论0拓扑图.md",
-    "Algorithm/Data-Structure-and-Sort/Tree.md",
-    "Organization-Architecture/tmp",
-    "Organization-Architecture",
-    "trash_can",
-    "trash_can/请求方法.jpg",
-    "trash_can/Handler验证.jpg",
-    "trash_can/代理分类1.jpg",
-    "trash_can/MIME.jpg",
-    "trash_can/python_yyds.png",
-    "trash_can/代理分类2.jpg",
-    "trash_can/修改string的操作.jpg",
-    "trash_can/string搜索.jpg",
-    "trash_can/构造string.jpg",
-    "trash_can/stdexcept.png"
+    "Distributed-System/Consensus/Raft.md"
   ]
 }
