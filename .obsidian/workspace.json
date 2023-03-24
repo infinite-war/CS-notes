@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "de613325b4611cc0",
+        "id": "0819c93de3ec9577",
         "type": "tabs",
         "children": [
           {
-            "id": "a56b05143905a2ed",
+            "id": "007a8c0574925e3a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Missing-Semester/Git.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Missing-Semester/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Missing-Semester/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Missing-Semester/Git.md"
+              }
             }
           }
         ],
@@ -137,18 +145,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "007a8c0574925e3a",
   "lastOpenFiles": [
+    "Missing-Semester/SSH.md",
+    "Interdisciplinary/Quant/vnpy.md",
+    "Interdisciplinary/Quant/survey.md",
+    "Interdisciplinary/Quant/Base.md",
     "Distributed-System/MapReduce.md",
     "Distributed-System/Storage/GFS.md",
     "Programing-Language/静态程序分析.md",
     "Static-Program-Analysis/Introduction.md",
     "Programing-Language/Static.md",
-    "Interdisciplinary/Quant/vnpy.md",
     "Static-Program-Analysis",
     "Distributed-System/0Intro.md",
-    "Interdisciplinary/Quant/survey.md",
-    "Interdisciplinary/Quant/Base.md",
     "blog/VSCode.md",
     "Missing-Semester/Git.md",
     "Distributed-System/RPC.md",
@@ -165,7 +174,6 @@
     "Programing-Language/Coroutine.md",
     "Programing-Language/Rust/0Intro.md",
     "Programing-Language/Rust/1Grammer.md",
-    "Programing-Language/Python/Coroutine.md",
     "Organization-Architecture/tmp",
     "Organization-Architecture",
     "trash_can",

@@ -90,11 +90,18 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	```
 
 ### 工作流
-一个在Github上public的项目是开源的，每个人都可以查看所有源码、也能为项目贡献代码。
-+ issue：任何人都可以向项目提出问题，当然任何人也都可以解答
-+ pull request：有些issue是由于项目本身问题，可以对项目进行修改，将修改后的代码纳入GitHub的项目中
+
+一个在Github上Public的项目是开源的，每个人都可以查看代码，也能为项目共享胆代码。那么怎么贡献代码呢？
+
+>+ issue：任何人都可以向项目提问题，当然任何人也都可以解答
+>	+ 项目作者可以限定提问格式
+>	+ good first issue，简单的issue，适合项目新手第一次上手项目
+
+建议在PR之前先提issue，然后对应的PR是为了解决这个issue，下面将如何PR
+
++ Pull Request：
 	1. fork这个项目到你的仓库
-		>同步[fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
+		>我们在开发的同时还有其他贡献者，项目可能同时在开发，我们应该提交到最新的版本：同步[fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
 
 	2. clone：克隆到本地进行开发
 	3. 创建新的分支（分支命令应尽可能简单且能反应我们的工作）
