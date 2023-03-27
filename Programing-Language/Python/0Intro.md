@@ -1,6 +1,29 @@
-## Config
++ 语法规范：`Pythonic`
++ 相关工具：
+	+ `ipython`
+	+ `jupyter`
++ 脚本：在Linux中
+	```python
+	#! /usr/bin/python3
+	#-*- coding: utf-8 -*-
+	```
 
-### pip 代理
+==mark==
+
+# Use
+
+
+Python2和Python3是没有向后兼容的，这里造成了一些混乱，比如某些语境下`python`指的就是最新版的Python，但是有些语境下则是默认Python2、只有`python3`才指的是Python3。  
+所以建议使用命令`python3`，如果没有则将（是Python3）的`python` copy 一个`python3`，还有诸如`pip`这样的命令，也建议加上`python3 -m pip`的前缀
+>对于诸如`poetry`或者`thefuck`这样的应用则不用这样，因为他们都是由pip下载的，如果在piip时指的python版本，那么他们的版本肯定是对的。
+
+
+# Tools
+
+## pip
+
+### 代理
+
 + 参考资料：
 	+ [一个把来龙去脉解释清楚的文章](https://codeantenna.com/a/pAOz55u5Px)
 
@@ -12,7 +35,8 @@ pip config set global.proxy http://127.0.0.1:7890
 ```
 在服务器我使用的代理工具是`Clash for Windows`，配置文件照猫画虎的。
 
-## 软件源
+### 软件源
+
 + 命令：
 	+ 临时换源：`pip install module_name -i ...`
 	+ 永久换源：
@@ -34,23 +58,47 @@ http://mirrors.cloud.tencent.com/pypi/simple  # 腾讯源
 http://pypi.douban.com/simple/  # 豆瓣源
 ```
 
-## Use
+## poetry
+一款相当现代的Python虚拟环境管理工具
 
-## std
-
-Python2和Python3是没有向后兼容的，这里造成了一些混乱，比如某些语境下`python`指的就是最新版的Python，但是有些语境下则是默认Python2、只有`python3`才指的是Python3。  
-所以建议使用命令`python3`，如果没有则将（是Python3）的`python` copy 一个`python3`，还有诸如`pip`这样的命令，也建议加上`python3 -m pip`的前缀
->对于诸如`poetry`或者`thefuck`这样的应用则不用这样，因为他们都是由pip下载的，如果在piip时指的python版本，那么他们的版本肯定是对的。
-
-+ `Pythonic`
-
-+ Ubuntu脚本：
-	```python
-	#! /usr/bin/python3
-	#-*- coding: utf-8 -*-
++ Install：
+	```bash
+	python3 -m pip install poetry  # 之后可直接在命令行使用命令poetry
 	```
 
-### Tool
++ Update：
+	```bash
+	poetry self update
+	```
 
-+ `ipython`
-+ `jupyter`
++ Config：
+	+ 配置文件位置：覆盖默认配置
+		+ win：`C:\用户\$用户名\AppDatat\Roaming\pypoetry\config.toml`
+	+ 相关命令：
+		+ `poetry config --list`：查看配置
+		+ `poetry config 配置参数 值`：更改配置
+		+ `poetry config 配置参数 --unset`：删除配置（使用默认配置）
+	+ 我的配置：
+		```bash
+		poetry config virtualenvs.in-project true  # 在项目下创建虚拟环境，这样VSCode也能找到对应库
+		```
+
++ Use：	
+	+ 初始化：
+		+ 1. 创建项目并初始化：`poetry new 项目名`
+		+ 2. 在已有项目中初始化：`poetry init`
+	
+	+ 使用不同版本的Python：`poetry env use 版本`
+		>2.7之前的应该不可以
+	
+	+ 库管理：
+		+ 添加库：`python3 -m poetry add 库名`
+		+ 删除库：`python3 -m poetry remove 库名`
+	
+	+ 程序运行：
+		+ 1. `poetry run python 程序`
+		+ 2. 激活环境`poetry shell`，进入虚拟环境命令行即可使用`python 程序`（虚拟环境中除了python外还有pip，管理的库也会被poetry管理）
+
++ MISC：
+	+ 部署：在项目目录下使用命令`poetry install`即可将项目中的虚拟环境配置到本地
+	+ 问题：如果报错`AssertionError`，可能的原因是项目和添加的包重名

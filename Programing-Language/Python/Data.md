@@ -358,3 +358,7 @@ import mplfinance as mpl
 ```
 
 + 基本用法：`mpl.plot(df, type="candle")`
+
+
+## pyecharts
+[GitHub](https://github.com/pyecharts/pyecharts)

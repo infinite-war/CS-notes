@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7671abab402a045d",
+        "id": "8d562f5b44ddd854",
         "type": "tabs",
         "children": [
           {
-            "id": "d01e21ec09658ac5",
+            "id": "77b19909f3084159",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,10 +137,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "77b19909f3084159",
   "lastOpenFiles": [
-    "blog/VSCode.md",
+    "Programing-Language/Python/0Intro.md",
+    "Programing-Language/Python/1Base.md",
     "Programing-Language/Python/poetry.md",
+    "Programing-Language/Python/Django.md",
+    "Programing-Language/Python/Data.md",
+    "Programing-Language/Python/Concurrency.md",
+    "Programing-Language/Python/pyecharts.md",
+    "blog/VSCode.md",
     "Programing-Language/C++/TL/boost.md",
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
@@ -160,12 +166,6 @@
     "Distributed-System/0Intro.md",
     "Distributed-System/RPC.md",
     "Programing-Language/Manual.md",
-    "Distributed-System/Storage/Curve.md",
-    "Distributed-System/Storage/Ceph.md",
-    "Distributed-System/Consensus/Raft.md",
-    "Distributed-System/Consensus/Paxos.md",
-    "Distributed-System/Consensus/PacificA.md",
-    "Programing-Language/Golang/debug.md",
     "Organization-Architecture/tmp",
     "Organization-Architecture",
     "trash_can",

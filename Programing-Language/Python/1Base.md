@@ -1,4 +1,4 @@
-不如[Manual](https://docs.python.org/3/)
+不如[Manual](https://docs.python.org/3/)，将大量内容删除
 
 + 思维导图
 	+ 数据
@@ -23,8 +23,6 @@
 		+ 异常
 	+ 库
 
-
-
 # 高级语法
 
 ## Decorator装饰器
@@ -34,4 +32,3 @@
 >在Python中，以两个下划线开头和结尾的名称是特殊，  
 对于特殊的属性，称为特殊属性/Magic Attributes魔术属性/Dunder Attributes双下属性  
 对于特殊的方法，称为特殊方法/Magic Methods魔术方法/Dunder Methods双下方法  
-
