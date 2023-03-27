@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "929c9ee74d66a76c",
+        "id": "7671abab402a045d",
         "type": "tabs",
         "children": [
           {
-            "id": "f8704e301ae85197",
+            "id": "d01e21ec09658ac5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -130,24 +130,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f8704e301ae85197",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Distributed-System/MapReduce.md",
-    "Interdisciplinary/Quant/survey.md",
-    "Network/0计网概论.md",
-    "Programing-Language/Golang/0Intro.md",
-    "Programing-Language/Golang/debug.md",
+    "blog/VSCode.md",
+    "Programing-Language/Python/poetry.md",
+    "Programing-Language/C++/TL/boost.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Programing-Language/Coroutine.md",
-    "Programing-Language/Rust/0Intro.md",
-    "Programing-Language/Rust/1Grammer.md",
-    "Programing-Language/Python/Coroutine.md"
+    "Missing-Semester/Markdown.md",
+    "Missing-Semester/regex.md",
+    "Missing-Semester/Git.md",
+    "Missing-Semester/SSH.md",
+    "Interdisciplinary/Quant/vnpy.md",
+    "Interdisciplinary/Quant/survey.md",
+    "Interdisciplinary/Quant/Base.md",
+    "Distributed-System/MapReduce.md",
+    "Distributed-System/Storage/GFS.md",
+    "Programing-Language/静态程序分析.md",
+    "Static-Program-Analysis/Introduction.md",
+    "Programing-Language/Static.md",
+    "Static-Program-Analysis",
+    "Distributed-System/0Intro.md",
+    "Distributed-System/RPC.md",
+    "Programing-Language/Manual.md",
+    "Distributed-System/Storage/Curve.md",
+    "Distributed-System/Storage/Ceph.md",
+    "Distributed-System/Consensus/Raft.md",
+    "Distributed-System/Consensus/Paxos.md",
+    "Distributed-System/Consensus/PacificA.md",
+    "Programing-Language/Golang/debug.md",
+    "Organization-Architecture/tmp",
+    "Organization-Architecture",
+    "trash_can",
+    "trash_can/请求方法.jpg",
+    "trash_can/Handler验证.jpg",
+    "trash_can/代理分类1.jpg",
+    "trash_can/MIME.jpg",
+    "trash_can/python_yyds.png",
+    "trash_can/代理分类2.jpg",
+    "trash_can/修改string的操作.jpg",
+    "trash_can/string搜索.jpg",
+    "trash_can/构造string.jpg",
+    "trash_can/stdexcept.png"
   ]
 }

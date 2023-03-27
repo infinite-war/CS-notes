@@ -158,7 +158,8 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 
 ## 软件
 
-### VSCode
+### deb
+这里以VSCode为例
 
 + 下载：官网提供`deb`类型的安装包
 
@@ -170,7 +171,8 @@ xmodmap -e "keycode 66 = Right NoSymbol Right"
 
 + config：内容多且散，而且无关平台，我将其放在这个[教程](https://github.com/zweix123/CS-notes/blob/master/blog/VSCode.md)
 
-图形化### Obsidian
+### AppImage
+这里以Obsidian为例
 
 Obsidian提供的文件类型是`AppImage`，加上可执行权限（`chmod +x xxx.AppImage`）就可以直接运行。  
 我们要想办法把它做成Desktop File桌面文件放在Application Window应用程序窗口，继而放到Application Launcher应用程序启动器中。

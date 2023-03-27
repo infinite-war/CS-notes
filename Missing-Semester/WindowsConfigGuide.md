@@ -312,6 +312,15 @@
 	scoop bucket add 桶名 [桶地址]  # 添加桶	
 	```
 
++ voidtools：Everything是Windows平台上一个即快即轻量的文件检索工具，相当于Linux中的`find`的替代品，我们也以此为例演示Scoop的使用
+	```bash
+	scoop search Everything
+	# 我们发现有三个，选择下载cli版本
+	scoop install everything-cli
+	# 我们看标准输入有Creating shim for 'es'.
+	# 现在试试使用命令es
+	```
+
 ### 7.Git
 
 + 安装：`scoop install git`
