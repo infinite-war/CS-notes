@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bc0617cb917521a0",
+        "id": "183ccc749fe2353d",
         "type": "tabs",
         "children": [
           {
-            "id": "cfcef3a0208585ea",
+            "id": "555358eb22e81b83",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,8 +137,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cfcef3a0208585ea",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "README.md",
+    "Programing-Language/C++/4OOP0Intro.md",
+    "Programing-Language/C++/2Data4RAII.md",
+    "Programing-Language/C++/4OOP4友元.md",
+    "Programing-Language/C++/6STL-Iterator.md",
+    "Programing-Language/C++/C++Coruntine.md",
+    "Programing-Language/C++/C++Exception.md",
+    "Programing-Language/C++/C++Lambda.md",
+    "Programing-Language/C++/C++Thread.md",
+    "Programing-Language/C++/2Data2名称空间.md",
+    "Programing-Language/C++/6STL-Container.md",
     "Programing-Language/C++/6SL.md",
     "Programing-Language/C++/5Generic-in-SL.md",
     "Interdisciplinary/Quant/survey.md",
@@ -154,18 +165,7 @@
     "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Missing-Semester/Markdown.md",
-    "Missing-Semester/regex.md",
-    "Missing-Semester/Git.md",
-    "Missing-Semester/SSH.md",
-    "Interdisciplinary/Quant/vnpy.md",
-    "Interdisciplinary/Quant/Base.md",
-    "Distributed-System/MapReduce.md",
-    "Distributed-System/Storage/GFS.md",
-    "Programing-Language/静态程序分析.md",
-    "Static-Program-Analysis/Introduction.md",
-    "Programing-Language/Static.md",
     "Static-Program-Analysis",
-    "Distributed-System/0Intro.md",
     "Organization-Architecture/tmp",
     "Organization-Architecture",
     "trash_can",
