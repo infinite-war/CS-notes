@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2cbe9e1cd7b7064d",
+        "id": "fa7d75584ccd285b",
         "type": "tabs",
         "children": [
           {
-            "id": "65d122d05237cd72",
+            "id": "8aebc02cba4a3638",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,7 +137,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "65d122d05237cd72",
+  "active": "8aebc02cba4a3638",
   "lastOpenFiles": [
     "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/MapReduce.md",
