@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8d562f5b44ddd854",
+        "id": "2cbe9e1cd7b7064d",
         "type": "tabs",
         "children": [
           {
-            "id": "77b19909f3084159",
+            "id": "65d122d05237cd72",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -130,54 +130,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "77b19909f3084159",
+  "active": "65d122d05237cd72",
   "lastOpenFiles": [
-    "Programing-Language/Python/0Intro.md",
-    "Programing-Language/Python/1Base.md",
-    "Programing-Language/Python/poetry.md",
-    "Programing-Language/Python/Django.md",
-    "Programing-Language/Python/Data.md",
-    "Programing-Language/Python/Concurrency.md",
-    "Programing-Language/Python/pyecharts.md",
-    "blog/VSCode.md",
-    "Programing-Language/C++/TL/boost.md",
-    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Missing-Semester/Markdown.md",
-    "Missing-Semester/regex.md",
-    "Missing-Semester/Git.md",
-    "Missing-Semester/SSH.md",
-    "Interdisciplinary/Quant/vnpy.md",
-    "Interdisciplinary/Quant/survey.md",
-    "Interdisciplinary/Quant/Base.md",
     "Distributed-System/MapReduce.md",
-    "Distributed-System/Storage/GFS.md",
-    "Programing-Language/静态程序分析.md",
-    "Static-Program-Analysis/Introduction.md",
-    "Programing-Language/Static.md",
-    "Static-Program-Analysis",
-    "Distributed-System/0Intro.md",
-    "Distributed-System/RPC.md",
-    "Programing-Language/Manual.md",
-    "Organization-Architecture/tmp",
-    "Organization-Architecture",
-    "trash_can",
-    "trash_can/请求方法.jpg",
-    "trash_can/Handler验证.jpg",
-    "trash_can/代理分类1.jpg",
-    "trash_can/MIME.jpg",
-    "trash_can/python_yyds.png",
-    "trash_can/代理分类2.jpg",
-    "trash_can/修改string的操作.jpg",
-    "trash_can/string搜索.jpg",
-    "trash_can/构造string.jpg",
-    "trash_can/stdexcept.png"
+    "Interdisciplinary/Quant/survey.md",
+    "Network/0计网概论.md",
+    "Programing-Language/Golang/0Intro.md",
+    "Programing-Language/Golang/debug.md",
+    "Programing-Language/Coroutine.md",
+    "Programing-Language/Rust/0Intro.md",
+    "Programing-Language/Rust/1Grammer.md",
+    "Programing-Language/Python/Coroutine.md"
   ]
 }
