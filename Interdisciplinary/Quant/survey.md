@@ -1,3 +1,12 @@
++ tushare
++ gekko
++ zenbot
++ abu
++ quantaxis
++ tribeca
++ stocksharp
++ https://github.com/pTraderTeam/paper_trading
+
 ## MISC
 
 + [BTR](https://backtest-rookies.com/)：一个面向初学者的回测和交易学习博客

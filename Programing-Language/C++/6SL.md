@@ -1,90 +1,20 @@
->SL(Standard Library)标准库
+>SL, Standard Library 标准库
 
-# string类
+## string
+[string lib ref](https://en.cppreference.com/w/cpp/string) | [basic_string](https://en.cppreference.com/w/cpp/string/basic_string)
+>string是basic_string的特化版本，所以ref中没有string而是指向basic_string
 
-> string类由头文件string支持，头文件string.h和cstring支持对C-风格字符串进行操纵的C库字符串函数，但不支持string类。
++ 类型[`size_type`](https://en.cppreference.com/w/cpp/string/basic_string)，从ref中我们可以看到在传统C++中它是从Allocator中定义出来的，而那里是由`size_t`定义的，但是在Modern C++中，呃，它套娃下去我就看不懂了。
 
-+ string类的构造函数：
+### 与C风格字符串的区别
+可以把C语言的字符串看做整数数组，但是C++上的字符串则有重重封装
 
-  `size_type`是一个依赖于实现的整型，定义于`<string>`头文件
++ string类的末尾，C风格字符串的末尾是`'\0'`（注意这不是0，而是特殊的转义字符），在string类中使用[`npos`](https://en.cppreference.com/w/cpp/string/basic_string/npos)，
++ 头文件：string类是由`<string>`支持的，其他（`string.h`和`cstring`）都是支持C风格字符串相关操作的
 
-  string类将`string::npos`定义为字符串的最大值，通常是`unsigned int`的最大值
+## IO
+[iostream ref](https://en.cppreference.com/w/cpp/io/basic_iostream) -> [fstream ref](https://en.cppreference.com/w/cpp/io/basic_fstream) | [sstream lib ref](https://en.cppreference.com/w/cpp/header/sstream)
 
-  缩写NBTS(null-terminated string)来标识以空字符结束的字符串-传统C字符串
-
-  | 构造函数                                                     | 描述                                                         |
-  | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | `string(const char *s)`                                      | 将string对象初始化为s指向的NBTS                              |
-  | `string(size_type n, char c)`                                | 创建一个包含n个元素的string类，其中每个元素都被初始化为字符c |
-  | `string(const string & str)`                                 | 将一个string对象初始化为string对象str（复制构造函数）        |
-  | `string()`                                                   | 创建一个默认的string对象，长度为0（默认构造函数）            |
-  | `string(conat char *s, size_type n)`                         | 将string类初始化为s指向的NBTS的前n个字符，即使超过了NBTS结尾 |
-  | `template<class Iter>`<br>`string(Iter begin, Iter end)`     | 将string对象初始化为区间$[begin, end]$内的前n个字符，其中begin和end的行为就像指针，用于指定位置，范围包括begin在内，但不包括end |
-  | `string(const string & str, string size_type pos = 0, size_type n = npos)` | 将一个string对象初始化为对象str从位置pos开始到结尾的字符，或从位置pos开始的n个字符 |
-  | `string(string && str) noexcept`                             | C++11新增，将一个string对象初始化为string对象str，并可能修改str（移动构造函数） |
-  | `string(initializer_list<char> il)`                          | C++11新增，将一个string对象初始化为初始化列表il中的字符      |
-
-+ 重载运算符：
-
-  + `+=`：将一个字符串、字符、数值强制转换为字符后接到另一个字符串的后面。
-  + `<<`、`>>`：重载输入输出
-  + 赋值`=`：
-  + []
-  + `+`：将操作数组合为string
-
-  + 比较运算符
-
-+ I/O：
-
-  > C-风格字符串：`cin >> str;`、`cin.getline(str, len);`、`cin.get(str, len);`
-  >
-  > string类：`cin >> str;`、`cin.getline(cin, str);`、
-
-  + cin和getline自动调整目标string目标对象的大小，使之刚好能够存储输入的自身
-  + getline有一个可选的第三个参数来指定使用哪个字符来确定输入的边界
-  + cin：与空白字符停止，并将其丢弃。
-  + getline：
-    + 到达文件尾：输入流`eofbit`被设置（即`fail()`和`eof()`返回true）;
-    + 遇到分界字符（默认为`\n`，将分界字符从输入流中删除，但不存储它）；
-    + 读取到字符数达到最大允许值(npos和可供分配的内存字节数中的较小的一个),将设置输入流`failbit`(`fail()`返回true)strin
-
-+ 与C-风格字符串的不同：
-
-  + 对象名不是数组，不是指针，要指针还要`&str[seat];`
-
-+ C++11新增：
-
-  + `string str = { 'H', 'e', 'l', 'l', 'o' };`没有空字符。
-
-+ 对象名不是数组，不是指针，要指针还要`&str[seat]`
-
-+ C++11新增2 `string str = {'H', 'e', 'l', 'l''}`
-
-+ string类的本质：基于模板类：
-
-  ```cpp
-  template<class charT, class traits = char_traits<charT>, 
-  class Allocator = allocator<charT> >
-      basic_string {};
-  typedef basic_string<char> string;
-  wchar_t wstring;
-  char16_t u16string //C++11
-  char32_t u32string //C++11
-  ```
-
-  traits类描述关于选定字符类型的特定情况，有预定义的char_traits模板具体化
-
-  Allocator是一个管理内存分类的类
-
-> 输入流对象的统计系统，用于跟踪流的错误状态：
->
-> 检测到文件尾后将设置eofbit寄存器
->
-> 检测到输入错误时将设置failbit寄存及
->
-> 出现无法识别的故障时设置badbit寄存器
->
-> 一切顺利时设置goodbit寄存器
 
 # IO库
 
