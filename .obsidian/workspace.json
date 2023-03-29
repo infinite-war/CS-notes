@@ -11,8 +11,12 @@
             "id": "c7d031a4fa2efab6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Compiler/yacc&lex.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Compiler/yacc&lex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Compiler/yacc&lex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Compiler/yacc&lex.md"
+              }
             }
           }
         ],
@@ -137,8 +145,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "c7d031a4fa2efab6",
   "lastOpenFiles": [
+    "Compiler/编译原理.md",
+    "trash_can/针对密码前缀构造的攻击.jpg",
+    "trash_can/重要的群.jpg",
+    "trash_can/群.jpg",
+    "trash_can/消息验证原理.jpg",
+    "trash_can/有限群.jpg",
+    "trash_can/数字签名2证明.jpg",
+    "trash_can/数字签名2栗子.jpg",
+    "trash_can/数字签名2.jpg",
+    "trash_can/数字签名.jpg",
+    "trash_can/基于分组的哈希函数结构模型.jpg",
+    "trash_can",
     "blog/VSCode.md",
     "Programing-Language/Python/0Intro.md",
     "未命名.canvas",
