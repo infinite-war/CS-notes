@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "09f3136e49e70569",
+        "id": "6c847af92f3b9247",
         "type": "tabs",
         "children": [
           {
-            "id": "1693181a1f4dbff2",
+            "id": "c7d031a4fa2efab6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programing-Language/Python/0Intro.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programing-Language/Python/0Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programing-Language/Python/0Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Programing-Language/Python/0Intro.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -145,11 +137,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1693181a1f4dbff2",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "未命名.canvas",
-    "Programing-Language/Python/0Intro.md",
     "blog/VSCode.md",
+    "Programing-Language/Python/0Intro.md",
+    "未命名.canvas",
     "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/MapReduce.md",
     "Interdisciplinary/Quant/survey.md",

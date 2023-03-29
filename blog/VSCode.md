@@ -9,7 +9,8 @@
 	+ `Ctrl + s`保存、`Ctrl + a`全选、`Ctrl + z`Undo、按住`Shift`使用方向键选择部分文本
 	+ `Ctrl + Enter`在当前行下行插入新行
 	---
-	 + `Ctrl + ,`打开配置页
+
+	+ `Ctrl + ,`打开配置页
 	+ `Ctrl + p`打开VSCode comman center
 		+ 直接键入文件名打开文件
 		+ 前缀`>`使用VSCode命令（或者直接快捷键`Ctrl + Shift + p`）
