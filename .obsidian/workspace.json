@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2b7bae1053a439ad",
+        "id": "eb584761faa26e9e",
         "type": "tabs",
         "children": [
           {
-            "id": "d47af45c5393768c",
+            "id": "13491299c958f7b7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Missing-Semester/WindowsConfigGuide.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Missing-Semester/WindowsConfigGuide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Missing-Semester/WindowsConfigGuide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Missing-Semester/WindowsConfigGuide.md"
+              }
             }
           }
         ],
@@ -137,8 +145,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d47af45c5393768c",
+  "active": "13491299c958f7b7",
   "lastOpenFiles": [
+    "Missing-Semester/WindowsConfigGuide.md",
+    "blog/Multi-computer Cooperation.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "README.md",
     "Programing-Language/C++/4OOP0Intro.md",
     "Programing-Language/C++/2Data4RAII.md",
@@ -162,9 +173,6 @@
     "Programing-Language/Python/pyecharts.md",
     "blog/VSCode.md",
     "Programing-Language/C++/TL/boost.md",
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "Missing-Semester/Markdown.md",
     "Static-Program-Analysis",
     "Organization-Architecture/tmp",
     "Organization-Architecture",
