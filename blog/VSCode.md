@@ -1,20 +1,24 @@
-+ 编辑器通识快捷键：
-	+ 按住`Shift`使用方向键选择部分文本
-	+ `Ctrl + enter`在当前行下行创建新行
-	+ `Ctrl + shift + enter`在当前行上一行创建新行
++ 单个文件状态：`code file`
+	+ terminal默认打开`~`
+	+ command center全局搜索
++ 项目文件状态：`code folder`
+	+ terminal默认打开项目根目录
+	+ command center项目内搜索
 
-+ 快捷键（个人习惯使用）：
-	+ `Ctrl + ,`：打开配置选项  
-		`Ctrl + p`：搜索文件  
-		`Ctrl + Shift + p`：全局配置
-	+ `Ctrl + ~`/`Ctrl + 1`切换工作台和终端
-	+ 格式化：手动使用快捷键`Shift + Alt + F`
-	+ `Ctrl + '+'/'-'`：调整系统分辨率大小
-	+ `Ctrl + 名称`：调整到函数的实现或调用
-		+ 依赖具体语言的插件
-		+ 不是很智能
-		`Alt + Right`返回到跳转之前
-		>这里使用方向键右键这个反直觉的设计是因为我将Caps键改建为方向键左键，所以这样设计更顺手
++ 快捷键：包括所有编辑器都支持的、独有VSCode支持的、我因个人习惯修改的
+	+ `Ctrl + s`保存、`Ctrl + a`全选、`Ctrl + z`Undo、按住`Shift`使用方向键选择部分文本
+	+ `Ctrl + Enter`在当前行下行插入新行
+	---
+	 + `Ctrl + ,`打开配置页
+	+ `Ctrl + p`打开VSCode comman center
+		+ 直接键入文件名打开文件
+		+ 前缀`>`使用VSCode命令（或者直接快捷键`Ctrl + Shift + p`）
+		+ 前缀`:`用于跳转至某行（或者直接快捷吗`Ctrl + g`）
+	+ `Ctrl + ~`/`Ctrl + 1`切换workspace和terminal
+	+ 格式化：手动，快捷键`Shift + Alt + f`，效果依赖于插件
+	+ 名称跳转：`Ctrl + 点击名称`，首先跳转实现，再跳转定义，再弹出使用，效果依赖于插件
+		+ 如果是跳转，`Alt + Right`返回当前跳转之前（go back）
+			>注意这里反常识的是方向键右键，这和我的改键有关
 
 ## 编辑器设置
 >参考[视频](https://www.bilibili.com/video/BV1YG4y1v7uB/)

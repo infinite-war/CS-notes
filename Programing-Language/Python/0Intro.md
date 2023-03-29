@@ -2,21 +2,18 @@
 + 相关工具：
 	+ `ipython`
 	+ `jupyter`
-+ 脚本：在Linux中
++ 脚本：在Linux中，在脚本代码开头添加
 	```python
 	#! /usr/bin/python3
 	#-*- coding: utf-8 -*-
 	```
-
-==mark==
+	并给脚本代码添加可执行权限，可以像可执行文件一样使用脚本
 
 # Use
-
 
 Python2和Python3是没有向后兼容的，这里造成了一些混乱，比如某些语境下`python`指的就是最新版的Python，但是有些语境下则是默认Python2、只有`python3`才指的是Python3。  
 所以建议使用命令`python3`，如果没有则将（是Python3）的`python` copy 一个`python3`，还有诸如`pip`这样的命令，也建议加上`python3 -m pip`的前缀
 >对于诸如`poetry`或者`thefuck`这样的应用则不用这样，因为他们都是由pip下载的，如果在piip时指的python版本，那么他们的版本肯定是对的。
-
 
 # Tools
 
@@ -87,13 +84,21 @@ http://pypi.douban.com/simple/  # 豆瓣源
 	+ 初始化：
 		+ 1. 创建项目并初始化：`poetry new 项目名`
 		+ 2. 在已有项目中初始化：`poetry init`
-	
+
+		会在项目中创建`pyproject.toml`文件和`poetry.lock`文件（在修改项目依赖后）
+		+ 两者都有项目依赖的信息，但是toml中的依赖是最低版本，但是依赖也有依赖，lock文件保存依赖的递归依赖的信息
+
 	+ 使用不同版本的Python：`poetry env use 版本`
 		>2.7之前的应该不可以
 	
 	+ 库管理：
 		+ 添加库：`python3 -m poetry add 库名`
 		+ 删除库：`python3 -m poetry remove 库名`
+
+		poetry管理虚拟环境使用其他的库，这里的操作包括两步：修改项目配置文件和pip，即如果我们直接pip也能修改虚拟环境依赖，但是这些信息不会保存在配置文件中
+		+ 这里其实引入了一个新的问题，很多项目提供`requirements.txt`文件，让我们使用`python3 -m pip install -r requirements.txt`，那这样的方法在虚拟环境中确实可以安装好依赖，但是这些依赖不会记录在配置文件中。
+			+ poetry是兼容它们的：`pip freeze > requirements.txt`即可依照我们的虚拟环境依赖生成这样的txt文件
+			+ 它们是不兼容poetry：通过这样的方法不会修改poetry的配置文件，我们需要其他方法将该文件的内容正确的放入到配置文件，使用更现代的方式管理依赖
 	
 	+ 程序运行：
 		+ 1. `poetry run python 程序`
