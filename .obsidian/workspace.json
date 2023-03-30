@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "87b928eed866a6c8",
+        "id": "a089e208165c6eda",
         "type": "tabs",
         "children": [
           {
-            "id": "67fd097f102d7085",
+            "id": "6333b87a64d11d08",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -120,6 +120,14 @@
               "type": "outline",
               "state": {}
             }
+          },
+          {
+            "id": "36967366bddf0cd3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 3
@@ -137,15 +145,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "67fd097f102d7085",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "README.md",
+    "Programing-Language/C++/内存管理.md",
+    "Programing-Language/C++/名称可见性.md",
+    "Programing-Language/C++/POD.md",
+    "Programing-Language/C++/函数.md",
+    "Programing-Language/C++/2Data4RAII.md",
+    "Programing-Language/C++/2Data4RTTI.md",
     "blog/Multi-computer Cooperation.md",
     "Programing-Language/Python/Concurrency.md",
     "Interdisciplinary/Crypto-Quant/survey.md",
     "Interdisciplinary/Crypto-Quant/vnpy.md",
     "Programing-Language/C和C++的README.md",
     "Programing-Language/C-Language.md",
-    "README.md",
     "blog/VSCode.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Python/README.md",
@@ -160,12 +174,6 @@
     "Programing-Language/C++/4OOP4友元.md",
     "Programing-Language/C++/4OOP1封装.md",
     "Programing-Language/C++/4OOP0Intro.md",
-    "Programing-Language/C++/2Data4RTTI.md",
-    "Programing-Language/C++/6SL.md",
-    "Programing-Language/C++/C++Lambda.md",
-    "Programing-Language/C++/C++Thread.md",
-    "Programing-Language/Golang/debug.md",
-    "Programing-Language/Golang/concurrency.md",
     "Quant",
     "Web3",
     "trash_can/针对密码前缀构造的攻击.jpg",
