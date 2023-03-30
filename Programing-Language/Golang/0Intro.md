@@ -38,8 +38,6 @@ go env -w GOPROXY=https://goproxy.io,direct  # 设置软件源
 [资料](https://docs.kilvn.com/go_command_tutorial/)
 
 + 参数`-race`竟态检测，检测并发的异常
-+ 
-
 
 ## project file struct
 >[资料](https://github.com/golang-standards/project-layout/blob/master/README_zh.md)
@@ -47,7 +45,3 @@ go env -w GOPROXY=https://goproxy.io,direct  # 设置软件源
 ## IDE
 VSCode [Manual](https://learn.microsoft.com/zh-cn/azure/developer/go/configure-visual-studio-code)
 + how to debug: [tutor](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
-
-
-
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/Golang/sadasda)

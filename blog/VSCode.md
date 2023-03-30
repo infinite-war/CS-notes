@@ -71,7 +71,7 @@ VSCode交与JB家的IDE值得说的优点就是远程开发功能了，我们假
 
 + 依赖环境：通过Scoop下载Python（Python3）
 + 插件推荐：Python和Python Extension Pack（它们有依赖的插件，所以会下载很多）
-+ 开发流程：使用poetry做环境管理，教程可[见](https://github.com/zweix123/CS-notes/blob/master/Programing-Language/Python/poetry.md)
++ 开发流程：使用poetry做环境管理，教程可[见](https://github.com/zweix123/CS-notes/blob/master/Programing-Language/Python/0Intro.md#poetry)
 ---
 + 代码格式化：`python format provide` -> `black`（默认autopep8，个人喜好）
 	+ 格式化配置跟随项目：在项目根目录创建`.vscode/settings.json`
@@ -119,6 +119,6 @@ VSCode交与JB家的IDE值得说的优点就是远程开发功能了，我们假
 	+ 渲染：Markdown Preview Enhanced：`Ctrl + k -> v`
 	+ 编辑：Markdown All in One
 		+ 提供补全
-		+ 生成目录（我已经开发批量生成Markdown目录的工具（[项目地址](https://github.com/zweix123/md-admin)））
+		+ 生成目录
 
 ## 编辑LaTeX

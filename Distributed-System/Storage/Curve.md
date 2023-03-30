@@ -4,7 +4,6 @@ Curve是网易主导自研的现代化存储系统，可以提供高可靠性、
 + pre：
 	+ C++
 	+ Distribute：
-		+ [Intro](https://github.com/zweix123/CS-notes/blob/master/Distributed-System/Introduction.md)
 		+ 分布式存储相关：GFS，Ceph
 		+ 一致性协议：比如Raft
 	+ RPC（curve使用的是bRPC）

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f3a19bc5579a04fd",
+        "id": "578345ad128105bf",
         "type": "tabs",
         "children": [
           {
-            "id": "6c673afb4d20f25c",
+            "id": "fb4346d6960a9fb0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -58,14 +58,6 @@
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "83f4d24b774b7f18",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
@@ -138,24 +130,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6c673afb4d20f25c",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Programing-Language/Python/Django.md",
+    "trash_can",
+    "Distributed-System/Storage/Curve.md",
+    "blog/VSCode.md",
+    "Programing-Language/Golang/0Intro.md",
     "Programing-Language/C和C++的README.md",
+    "Programing-Language/Compile.md",
     "Programing-Language/C-Language.md",
-    "Programing-Language/README.md",
-    "Programing-Language/Coroutine.md",
-    "Compiler/yacc&lex.md",
-    "Compiler/编译原理.md",
+    "Programing-Language/C++/5Generic-in-SL.md",
+    "Programing-Language/C++/4OOP4友元.md",
+    "Programing-Language/C++/4OOP1封装.md",
+    "Programing-Language/C++/4OOP0Intro.md",
+    "Programing-Language/C++/2Data4RTTI.md",
+    "Programing-Language/C++/6SL.md",
+    "Programing-Language/C++/C++Lambda.md",
+    "Programing-Language/C++/C++Thread.md",
+    "Programing-Language/Golang/debug.md",
+    "Programing-Language/Golang/concurrency.md",
+    "Programing-Language/Golang/1Base.md",
+    "Programing-Language/Golang/lib/http.md",
+    "Programing-Language/Golang/lib/spf13.md",
+    "Programing-Language/Golang/lib/rpc.md",
+    "Programing-Language/Golang/lib/ProtoBuf.md",
+    "Programing-Language/Golang/lib/misc.md",
+    "Programing-Language/Java/base.md",
+    "Programing-Language/Rust/1Grammer.md",
+    "Programing-Language/Rust/0Intro.md",
+    "Quant",
+    "Web3",
     "trash_can/针对密码前缀构造的攻击.jpg",
     "trash_can/重要的群.jpg",
     "trash_can/群.jpg",
-    "trash_can/消息验证原理.jpg"
+    "trash_can/消息验证原理.jpg",
+    "trash_can/有限群.jpg",
+    "trash_can/数字签名2证明.jpg",
+    "trash_can/数字签名2栗子.jpg",
+    "trash_can/数字签名2.jpg",
+    "trash_can/数字签名.jpg",
+    "trash_can/基于分组的哈希函数结构模型.jpg",
+    "未命名.canvas"
   ]
 }
