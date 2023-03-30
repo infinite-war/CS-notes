@@ -11,6 +11,9 @@
 
 + GNU：[The GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html) | [The C Preprocessor](https://gcc.gnu.org/onlinedocs/cpp/) | [The GNU C Library](https://www.gnu.org/software/libc/manual/html_mono/libc.html)
 
++ 学习资料：
+	+ 笨方法学C语言：以练习驱动来学习C语言
+
 ## C++
 
 

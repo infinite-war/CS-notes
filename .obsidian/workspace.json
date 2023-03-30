@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b930fa50acfa713b",
+        "id": "6d131d570393da44",
         "type": "tabs",
         "children": [
           {
-            "id": "fcd1caff0abc554e",
+            "id": "e8f98aa60e2fedc5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,12 +137,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fcd1caff0abc554e",
+  "active": "e8f98aa60e2fedc5",
   "lastOpenFiles": [
-    "Interdisciplinary/Crypto-Quant/vnpy.md",
-    "Interdisciplinary/Crypto-Quant/survey.md",
-    "Interdisciplinary/Crypto-Quant/README.md.md",
     "Quant/README.md.md",
+    "Programing-Language/静态程序分析.md",
+    "Programing-Language/Manual.md",
+    "Programing-Language/Coroutine.md",
+    "Programing-Language/Compile.md",
+    "Programing-Language/C-Language.md",
+    "Programing-Language/Python/1Base.md",
+    "Interdisciplinary/Crypto-Quant/vnpy.md",
+    "Programing-Language/Python/0Intro.md",
+    "Programing-Language/Python/Concurrency.md",
+    "Programing-Language/Rust/1Grammer.md",
+    "Programing-Language/Rust/0Intro.md",
+    "Interdisciplinary/Crypto-Quant/survey.md",
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Interdisciplinary/Crypto-Quant/README.md.md",
     "Interdisciplinary/Crypto-Quant/Base.md",
     "Quant",
     "Web3/MIT15.S12.md",
@@ -161,16 +173,11 @@
     "trash_can/基于分组的哈希函数结构模型.jpg",
     "trash_can",
     "blog/VSCode.md",
-    "Programing-Language/Python/0Intro.md",
     "未命名.canvas",
-    "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/MapReduce.md",
     "Network/0计网概论.md",
     "Programing-Language/Golang/0Intro.md",
     "Programing-Language/Golang/debug.md",
-    "Programing-Language/Coroutine.md",
-    "Programing-Language/Rust/0Intro.md",
-    "Programing-Language/Rust/1Grammer.md",
     "Programing-Language/Python/Coroutine.md"
   ]
 }
