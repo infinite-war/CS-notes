@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6752d528467ca5a8",
+        "id": "f3a19bc5579a04fd",
         "type": "tabs",
         "children": [
           {
-            "id": "4a97d9e315612e3f",
+            "id": "6c673afb4d20f25c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,7 +145,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4a97d9e315612e3f",
+  "active": "6c673afb4d20f25c",
   "lastOpenFiles": [
     "Programing-Language/C和C++的README.md",
     "Programing-Language/C-Language.md",
