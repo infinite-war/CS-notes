@@ -60,6 +60,14 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "83f4d24b774b7f18",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ]
       }
@@ -118,14 +126,6 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
-            }
-          },
-          {
-            "id": "83f4d24b774b7f18",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
