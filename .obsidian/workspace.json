@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "6c847af92f3b9247",
+        "id": "b930fa50acfa713b",
         "type": "tabs",
         "children": [
           {
-            "id": "c7d031a4fa2efab6",
+            "id": "fcd1caff0abc554e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Compiler/yacc&lex.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compiler/yacc&lex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compiler/yacc&lex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Compiler/yacc&lex.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -145,8 +137,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c7d031a4fa2efab6",
+  "active": "fcd1caff0abc554e",
   "lastOpenFiles": [
+    "Interdisciplinary/Crypto-Quant/vnpy.md",
+    "Interdisciplinary/Crypto-Quant/survey.md",
+    "Interdisciplinary/Crypto-Quant/README.md.md",
+    "Quant/README.md.md",
+    "Interdisciplinary/Crypto-Quant/Base.md",
+    "Quant",
+    "Web3/MIT15.S12.md",
+    "Web3",
+    "Compiler/yacc&lex.md",
     "Compiler/编译原理.md",
     "trash_can/针对密码前缀构造的攻击.jpg",
     "trash_can/重要的群.jpg",
@@ -164,7 +165,6 @@
     "未命名.canvas",
     "Missing-Semester/WindowsConfigGuide.md",
     "Distributed-System/MapReduce.md",
-    "Interdisciplinary/Quant/survey.md",
     "Network/0计网概论.md",
     "Programing-Language/Golang/0Intro.md",
     "Programing-Language/Golang/debug.md",
