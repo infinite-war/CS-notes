@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5935956570875703",
+        "id": "87b928eed866a6c8",
         "type": "tabs",
         "children": [
           {
-            "id": "b6d11aebb944d420",
+            "id": "67fd097f102d7085",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,22 +137,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "67fd097f102d7085",
   "lastOpenFiles": [
-    "Missing-Semester/WindowsConfigGuide.md",
+    "blog/Multi-computer Cooperation.md",
     "Programing-Language/Python/Concurrency.md",
+    "Interdisciplinary/Crypto-Quant/survey.md",
+    "Interdisciplinary/Crypto-Quant/vnpy.md",
+    "Programing-Language/C和C++的README.md",
+    "Programing-Language/C-Language.md",
+    "README.md",
     "blog/VSCode.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Python/README.md",
     "Programing-Language/Python/Django.md",
     "Programing-Language/Python/Data.md",
     "Programing-Language/Python/1Base.md",
-    "Interdisciplinary/Crypto-Quant/vnpy.md",
     "trash_can",
     "Distributed-System/Storage/Curve.md",
     "Programing-Language/Golang/0Intro.md",
-    "Programing-Language/C和C++的README.md",
     "Programing-Language/Compile.md",
-    "Programing-Language/C-Language.md",
     "Programing-Language/C++/5Generic-in-SL.md",
     "Programing-Language/C++/4OOP4友元.md",
     "Programing-Language/C++/4OOP1封装.md",
@@ -163,9 +166,6 @@
     "Programing-Language/C++/C++Thread.md",
     "Programing-Language/Golang/debug.md",
     "Programing-Language/Golang/concurrency.md",
-    "Programing-Language/Golang/1Base.md",
-    "Programing-Language/Golang/lib/http.md",
-    "Programing-Language/Golang/lib/spf13.md",
     "Quant",
     "Web3",
     "trash_can/针对密码前缀构造的攻击.jpg",

@@ -18,12 +18,14 @@
 	+ `Ctrl + p`打开VSCode comman center
 		+ 直接键入文件名打开文件
 		+ 前缀`>`使用VSCode命令（或者直接快捷键`Ctrl + Shift + p`）
+			+ 折叠fold/展开unfold代码块，英文即命令，常用fold，折叠当前代码块，fold all这些当前文件所有代码块
 		+ 前缀`:`用于跳转至某行（或者直接快捷吗`Ctrl + g`）
 	+ `Ctrl + ~`/`Ctrl + 1`切换workspace和terminal
 	+ 格式化：手动，快捷键`Shift + Alt + f`，效果依赖于插件
 	+ 名称跳转：`Ctrl + 点击名称`，首先跳转实现，再跳转定义，再弹出使用，效果依赖于插件
 		+ 如果是跳转，`Alt + Right`返回当前跳转之前（go back）
 			>注意这里反常识的是方向键右键，这和我的改键有关
+
 
 ## 编辑器设置
 >参考[视频](https://www.bilibili.com/video/BV1YG4y1v7uB/)
