@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6d131d570393da44",
+        "id": "215920ef9f0b1159",
         "type": "tabs",
         "children": [
           {
-            "id": "e8f98aa60e2fedc5",
+            "id": "bec617868ad91f14",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Programing-Language/Compile.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Programing-Language/Compile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Programing-Language/Compile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Programing-Language/Compile.md"
+              }
             }
           }
         ],
@@ -137,30 +145,36 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e8f98aa60e2fedc5",
+  "active": "bec617868ad91f14",
   "lastOpenFiles": [
-    "Quant/README.md.md",
-    "Programing-Language/静态程序分析.md",
-    "Programing-Language/Manual.md",
-    "Programing-Language/Coroutine.md",
-    "Programing-Language/Compile.md",
     "Programing-Language/C-Language.md",
-    "Programing-Language/Python/1Base.md",
-    "Interdisciplinary/Crypto-Quant/vnpy.md",
-    "Programing-Language/Python/0Intro.md",
-    "Programing-Language/Python/Concurrency.md",
+    "Programing-Language/C++/5Generic-in-SL.md",
+    "Programing-Language/C++/4OOP4友元.md",
+    "Programing-Language/C++/4OOP1封装.md",
+    "Programing-Language/C++/4OOP0Intro.md",
+    "Programing-Language/C++/2Data4RTTI.md",
+    "Programing-Language/C++/6SL.md",
+    "Programing-Language/C++/C++Lambda.md",
+    "Programing-Language/C++/C++Thread.md",
+    "Programing-Language/Golang/debug.md",
+    "Programing-Language/Golang/concurrency.md",
+    "Programing-Language/Golang/1Base.md",
+    "Programing-Language/Golang/0Intro.md",
+    "Programing-Language/Golang/lib/http.md",
+    "Programing-Language/Golang/lib/spf13.md",
+    "Programing-Language/Golang/lib/rpc.md",
+    "Programing-Language/Golang/lib/ProtoBuf.md",
+    "Programing-Language/Golang/lib/misc.md",
+    "Programing-Language/Java/base.md",
+    "Programing-Language/Compile.md",
     "Programing-Language/Rust/1Grammer.md",
     "Programing-Language/Rust/0Intro.md",
-    "Interdisciplinary/Crypto-Quant/survey.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "Missing-Semester/LinuxConfigGuide.md",
-    "Interdisciplinary/Crypto-Quant/README.md.md",
-    "Interdisciplinary/Crypto-Quant/Base.md",
+    "Programing-Language/静态程序分析.md",
+    "Programing-Language/Coroutine.md",
+    "Programing-Language/README.md",
+    "Quant/README.md.md",
     "Quant",
-    "Web3/MIT15.S12.md",
     "Web3",
-    "Compiler/yacc&lex.md",
-    "Compiler/编译原理.md",
     "trash_can/针对密码前缀构造的攻击.jpg",
     "trash_can/重要的群.jpg",
     "trash_can/群.jpg",
@@ -172,12 +186,6 @@
     "trash_can/数字签名.jpg",
     "trash_can/基于分组的哈希函数结构模型.jpg",
     "trash_can",
-    "blog/VSCode.md",
-    "未命名.canvas",
-    "Distributed-System/MapReduce.md",
-    "Network/0计网概论.md",
-    "Programing-Language/Golang/0Intro.md",
-    "Programing-Language/Golang/debug.md",
-    "Programing-Language/Python/Coroutine.md"
+    "未命名.canvas"
   ]
 }

@@ -4,9 +4,7 @@
 ---
 4. NFT生态
 5. DeFi生态
-
 ---
-
 + 区块链作为货币的问题：
 	+ Performance, Scalability, Efficiency
 	+ Privacy Security
