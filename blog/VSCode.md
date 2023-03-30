@@ -8,6 +8,10 @@
 + 快捷键：包括所有编辑器都支持的、独有VSCode支持的、我因个人习惯修改的
 	+ `Ctrl + s`保存、`Ctrl + a`全选、`Ctrl + z`Undo、按住`Shift`使用方向键选择部分文本
 	+ `Ctrl + Enter`在当前行下行插入新行
+	+ 多处编辑：
+		+ `Alt` +鼠标
+		+ 选中+`Ctrl + d`
+		+ `Shirft + Alt + 方向键`
 	---
 
 	+ `Ctrl + ,`打开配置页

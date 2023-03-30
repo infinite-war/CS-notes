@@ -25,7 +25,9 @@
 	+ C extension（复杂问题在C方面解决）
 	+ 使用没有GIL的Python解释器（Jthon、IronPython）
 
-## Pre-yield
+
+## 基于Generator的协程
+### Pre-yield
 + 迭代器Iterator：
 	+ 对于可迭代的，`iter(var)`返回迭代器，`next(iterator)`返回迭代器当前值
 	+ 自定义：
@@ -48,7 +50,7 @@
 + 每次对生成器对象的next都是从上次运行的结束运行到下一个`yield`语句，next函数的返回值是`yield value`的value  
 	”函数“运行完或者return就相当于迭代器的raise StopIteration
 
-## Coroutine
+### Coroutine
 >根本没有准备定义，感性理解下吧
 
 + 在Python的语境下，Coroutine两种语义
@@ -82,6 +84,4 @@
 `asyncio.gather(若干cotoutine或者task或者future)`返回future类似变量，可以用`await 变量`去建立当前taks对这里所有task的依赖（相当于await的2），并等待所有（相当于await的3）返回时各个task的返回作为一个list返回
 
 
-## Apply
-
-### aiohttp
+## 基于greenlet的协程

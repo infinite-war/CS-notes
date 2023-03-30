@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "578345ad128105bf",
+        "id": "5935956570875703",
         "type": "tabs",
         "children": [
           {
-            "id": "fb4346d6960a9fb0",
+            "id": "b6d11aebb944d420",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,10 +139,16 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Programing-Language/Python/Concurrency.md",
+    "blog/VSCode.md",
+    "Programing-Language/Python/README.md",
     "Programing-Language/Python/Django.md",
+    "Programing-Language/Python/Data.md",
+    "Programing-Language/Python/1Base.md",
+    "Interdisciplinary/Crypto-Quant/vnpy.md",
     "trash_can",
     "Distributed-System/Storage/Curve.md",
-    "blog/VSCode.md",
     "Programing-Language/Golang/0Intro.md",
     "Programing-Language/C和C++的README.md",
     "Programing-Language/Compile.md",
@@ -160,12 +166,6 @@
     "Programing-Language/Golang/1Base.md",
     "Programing-Language/Golang/lib/http.md",
     "Programing-Language/Golang/lib/spf13.md",
-    "Programing-Language/Golang/lib/rpc.md",
-    "Programing-Language/Golang/lib/ProtoBuf.md",
-    "Programing-Language/Golang/lib/misc.md",
-    "Programing-Language/Java/base.md",
-    "Programing-Language/Rust/1Grammer.md",
-    "Programing-Language/Rust/0Intro.md",
     "Quant",
     "Web3",
     "trash_can/针对密码前缀构造的攻击.jpg",
