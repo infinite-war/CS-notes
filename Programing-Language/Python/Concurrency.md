@@ -31,30 +31,7 @@
 
 
 ## 基于Generator的协程
-### Pre: yield
-+ 迭代器Iterator：
-	+ 对于可迭代的，`iter(var)`返回迭代器，`next(iterator)`返回迭代器当前值
-	+ 自定义：
-		```python
-		class ClassName:
-			def __init__(self):
-				pass
-			def __iter__(self):
-				return self
-			def __next__(self):
-				...
-				raise StopIteration  # 表示迭代的终止
-		```
 
-+ 生成器：返回迭代器的函数
-+ 关键字`yield`：
-	+ 只能在函数中
-	+ 改变这个函数，调用该函数不会允许，而是返回generator object（== iterator）
-
-+ 每次对生成器对象的next都是从上次运行的结束运行到下一个`yield`语句，next函数的返回值是`yield value`的value  
-	”函数“运行完或者return就相当于迭代器的raise StopIteration
-
-### Coroutine
 >根本没有准备定义，感性理解下吧
 
 + 在Python的语境下，Coroutine两种语义

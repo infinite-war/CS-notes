@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f12ce5a1a9c054e2",
+        "id": "7f3a94da653543da",
         "type": "tabs",
         "children": [
           {
-            "id": "42f1d25aafb870cd",
+            "id": "f6151547423845f0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/VSCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/VSCode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "blog/VSCode.md"
-              }
+              "state": {}
             }
           },
           {
@@ -152,14 +148,14 @@
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "Programing-Language/Python/Grammer.md",
+    "Programing-Language/Python/Concurrency.md",
+    "Programing-Language/Python/README.md",
+    "Programing-Language/Python/CPython.md",
     "blog/VSCode.md",
     "Programing-Language/README.md",
     "Missing-Semester/Markdown.md",
     "Programing-Language/Python/Django.md",
     "Programing-Language/Python/Data.md",
-    "Programing-Language/Python/CPython.md",
-    "Programing-Language/Python/Concurrency.md",
-    "Programing-Language/Python/README.md",
     "README.md",
     "Programing-Language/C++/内存管理.md",
     "Programing-Language/C++/名称可见性.md",
