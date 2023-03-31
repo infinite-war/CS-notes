@@ -16,29 +16,30 @@
 # Editor
 
 + 考虑角度：
-	+ 编辑模式：
-		Markdown的主要编辑模式有即时渲染，即对应的格式不显示源码，直接是渲染后的效果；  
-		或者是分屏浏览，一边的源码、一边是渲染后的结果。
-	+ Markdown方言：有些Markdown编辑器还提供“Markdown方言”。比如Typora的`[TCO]`生成目录、Obsidian的内部链接`[[]]`，这些确实扩大了Markdown的功能，但是如果这些功能并不是所有编辑器都提供的话，意味着我们的笔记在迁移时要付出更大的成本，我个人选择不使用。
-	+ 平台支持
-	+ 是否付费
+	+ 编辑模式：Markdown的主要编辑模式有
+		+ 即时渲染，即对应的格式不显示源码，直接是渲染后的效果  
+		+ 分屏浏览，一边的源码、一边是渲染后的结果
+	+ Markdown方言：有些Markdown编辑器还提供“Markdown方言”。比如Typora的`[TCO]`生成目录、Obsidian的内部链接`[[]]`，这些确实扩大了Markdown的功能，但是如果这些功能并不是所有编辑器都提供的话，意味着我们的笔记在迁移时要付出更大的成本，我个人选择都不使用，只使用最严格的语法。
+	+ 是否多平台支持
 	+ 能否源码导出
 	+ 能否多机同步
 	+ 个人习惯
+	+ 是否付费
 
 每种编辑器各有优缺点，我的选择是按照自己的习惯选择的，下面描述一下心路历程，请读者结合各编辑器特点自行选择
 
 + Typora：即时渲染能力极强，在其加持下，甚至感觉不到Markdown语法；可以管理项目、可以查看小标题（两者只能同时看到一个）；维护本地文件，上云需要其他手段；收费使用。
 + 有道云笔记：免费，自动上云；编辑模式有即时渲染和双屏，体感一般。文件不能源码导出。
 + VSCode结合插件(Markdown Preview Enhanced、Markdown All in One)：只能双屏编辑，但是VSCode编辑能力极强；能看大纲；维护本地文件，上云需要其他手段。
-+ Obsidian：即时渲染能力略逊于Typora，可同时查看目录和大纲，维护本地项目，可通过插件上云，免费且全平台支持，插件丰富
++ Obsidian：即时渲染能力略逊于Typora，可同时查看目录和大纲，维护本地项目，可通过插件上云，免费且全平台支持，插件丰富。
 + Notion：不了解。
 
 最后我选择是用Obsidian维护笔记项目，其他Markdown文件使用VSCode
 >没有选择VSCode的原因是，想象一下，项目结构、源码、渲染结果、大纲同时出现屏幕上得多挤，所以还是得要即时渲染。
 
 ## Obsidian
-Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同时也在设置限制。下面讨论我从Typora转向Obsidian的心路历程
+Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同时也带来了“抽象成本”。  
+下面讨论我从Typora转向Obsidian的心路历程
 
 + Typora的即时渲染做的很好，对Makedown本身的语法补全非常到位，而这方面Obsidian略有差距
 	+ Makedown：基本语法补全基本一致
@@ -54,7 +55,7 @@ Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同
 	+ 全平台且开源
 	+ LaTeX通过插件可支持LaTeX的Tikz
 	+ 使用插件可比较方便的通过Github实现多机同步
-	+ 链接，想象一下，笔记可以像IDE的`Ctrl + Click`一样跳转（我本人不用，因为使用的是Markdown方言）
+	+ 双链，想象一下，笔记可以像IDE的`Ctrl + Click`一样跳转（我本人不用，因为使用的是Markdown方言）
 	+ 体感上感觉性能Obsidian比Typora强
 	+ Obsidian可以实现同时查看目录和大纲
 

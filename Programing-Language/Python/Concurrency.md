@@ -1,7 +1,9 @@
-gevent , tornado, asyncio
++ 目前Python中有关于协程的库：
+	+ asyncio
+	+ gevent
+	+ tornado
 
-
-## Pre-GIL
+## Pre: GIL
 >Global Interpreter lock
 
 + 首先要知道什么是进程和线程
@@ -29,7 +31,7 @@ gevent , tornado, asyncio
 
 
 ## 基于Generator的协程
-### Pre-yield
+### Pre: yield
 + 迭代器Iterator：
 	+ 对于可迭代的，`iter(var)`返回迭代器，`next(iterator)`返回迭代器当前值
 	+ 自定义：

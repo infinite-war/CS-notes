@@ -1,26 +1,21 @@
-#### Python的运行流程
-大概可以理解为
-1. 解释成bytecode字节码（`.pyc`文件）
-2. 将字节码放到由C实现的虚拟机PVM上去解释运行
+[CPython](https://github.com/python/cpython)是Python的官方解释器。
++ Cython是Python的扩展语言，可将其代码直接编译成本地机器码
 
-+ Cython和CPython
-	+ Cython是Python的扩展语言，可将其代码直接编译成本地机器码
-	+ [CPython](https://github.com/python/cpython)指的是用C语言实现的Python解释器，也是官方使用的，处理CPython还有Jython等等
++ Python的运行流程
+	1. 解释成bytecode字节码（`.pyc`文件）
+		+ 查看字节码`dis`：
+			```python
+			import dis
+			dis.dis("Python代码字符串")
+			```
+	1. 将字节码放到由C实现的虚拟机PVM上去解释运行
 
-+ 对比Java
-	+ Java在解释运行前已经编译了，而Python确实也没有重复编译，但是会检测编译好的pyc是否过期
-	+ JVM会有JIT, Just-In-Time Compilation即时编译，将HotSpot热点代码编译成本地机器码
-		>lua也有这玩意，而且优化的很不错，按理说Python也应该有
-
-+ 查看字节码：
-	+ dis：
-		```python
-		import dis
-		dis.dis("Python代码")
-		```
+	>对比Java：
+	>+ Java在解释运行前已经编译了，而Python确实也没有重复编译，但是会检测编译好的pyc是否过期
+	>+ JVM会有JIT, Just-In-Time Compilation即时编译，将HotSpot热点代码编译成本地机器码
+	>	>lua也有这玩意，而且优化的很不错，按理说Python也应该有
 
 #### 不同list构造方式的大小
-
 ```python
 >>sys.getsizeof([0] * 3), sys.getsizeof([0, 0, 0]), sys.getsizeof([0 for _ in range(3)])
 (80, 88, 88)
@@ -76,7 +71,3 @@ LIST_APPEND  # list_append -> app1(): n + 1 -> list_resize() # 多次resize n + 
 	+ 这里有个锅，一旦overload eq和hash中任何一个，子类都不会继承这个基类中的hash
 	+ 这里还有一个锅，就是hashtable会先比较hash，再使用eq比较（因为可能hash碰撞）
 	+ 这里再有一个锅，如果对于同一个对象（上面都是讨论内容相同的不同对象），就没hash啊eq的说法，一看hash指针是一样，就直接认为是一样的
-
-
-
-
