@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4d3ca143c819e9b6",
+        "id": "f12ce5a1a9c054e2",
         "type": "tabs",
         "children": [
           {
-            "id": "da64568b1f1c9e7a",
+            "id": "42f1d25aafb870cd",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "blog/VSCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "blog/VSCode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "blog/VSCode.md"
+              }
             }
           },
           {
@@ -145,7 +149,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "da64568b1f1c9e7a",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "Programing-Language/Python/Grammer.md",
     "blog/VSCode.md",
