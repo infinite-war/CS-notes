@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a089e208165c6eda",
+        "id": "b433a4ca8ddf8f15",
         "type": "tabs",
         "children": [
           {
-            "id": "6333b87a64d11d08",
+            "id": "8c2bc7e583a2c7c6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,8 +145,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "8c2bc7e583a2c7c6",
   "lastOpenFiles": [
+    "Programing-Language/Python/Grammer.md",
+    "Programing-Language/Python/Django.md",
+    "Programing-Language/Python/CPython.md",
+    "blog/VSCode.md",
+    "Programing-Language/Python/Data.md",
+    "Programing-Language/Python/Concurrency.md",
+    "Programing-Language/README.md",
+    "Programing-Language/Python/README.md",
     "README.md",
     "Programing-Language/C++/内存管理.md",
     "Programing-Language/C++/名称可见性.md",
@@ -155,25 +163,17 @@
     "Programing-Language/C++/2Data4RAII.md",
     "Programing-Language/C++/2Data4RTTI.md",
     "blog/Multi-computer Cooperation.md",
-    "Programing-Language/Python/Concurrency.md",
     "Interdisciplinary/Crypto-Quant/survey.md",
     "Interdisciplinary/Crypto-Quant/vnpy.md",
     "Programing-Language/C和C++的README.md",
     "Programing-Language/C-Language.md",
-    "blog/VSCode.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Programing-Language/Python/README.md",
-    "Programing-Language/Python/Django.md",
-    "Programing-Language/Python/Data.md",
     "Programing-Language/Python/1Base.md",
     "trash_can",
     "Distributed-System/Storage/Curve.md",
     "Programing-Language/Golang/0Intro.md",
     "Programing-Language/Compile.md",
     "Programing-Language/C++/5Generic-in-SL.md",
-    "Programing-Language/C++/4OOP4友元.md",
-    "Programing-Language/C++/4OOP1封装.md",
-    "Programing-Language/C++/4OOP0Intro.md",
     "Quant",
     "Web3",
     "trash_can/针对密码前缀构造的攻击.jpg",
