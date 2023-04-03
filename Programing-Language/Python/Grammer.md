@@ -1,32 +1,63 @@
-### default arg
+### commit
 
-```python
-class Player:
-    def __init__(self, name, items=[]) -> None:
-        self.name = name
-        self.items = items
-        print(id(self.items))
++ default arg：[manual](https://docs.python.org/3/reference/compound_stmts.html#function)：对于默认参数，表达式只会求值一次，之后都是这个值
+	```python
+	class Player:
+	    def __init__(self, name, items=[]) -> None:
+	        self.name = name
+	        self.items = items
+	        print(id(self.items))
+	
+	p1 = Player("Alice")
+	p2 = Player("Bob")
+	p3 = Player("Charles", ["sword"])
+	
+	p1.items.append("armor")
+	p2.items.append("sword")
+	
+	print(p1.items)
+	
+	"""
+	>python3 main.py
+	140296173397056
+	140296173397056
+	140296174126720
+	['armor', 'sword']
+	"""
+	```
 
-p1 = Player("Alice")
-p2 = Player("Bob")
-p3 = Player("Charles", ["sword"])
+### import
 
-p1.items.append("armor")
-p2.items.append("sword")
++ module：通常是文件，是运行时概念、一个Python的Object，有独立的命名空间
++ package：通常是文件夹，特殊的module，多了一个`__path__`属性
+<hr>
 
-print(p1.items)
+absolute import
++ `import test`（test.py是在同目录下的文件）
+	+ 把`test`作为一个string
+	1. 去缓存找，找到则load给`test`这个identifier
+	2. 没有：去几个文件夹下寻找找个string
+		>文件列表：`sys.path`
 
-"""
-> python3 main.py
-140296173397056
-140296173397056
-140296174126720
-['armor', 'sword']
-"""
-```
-[manual](https://docs.python.org/3/reference/compound_stmts.html#function)：对于默认参数，表达式只会求值一次，之后都是这个值，所以每个默认list都是同一个list对象
+	+ 找到后在一个命名空间中运行这个文件，更新缓存，将这个object给identifier
+
++ `import test as ts`
+
++ `import mypackage`
+	1. 在文件夹下找到`__init__.py`，如果有，就在命名空间中运行它
+
++ `import mypackage.subpageckage.module`：则会运行对应module
+
++ `... as `
+	>如果没有as，则命令中的各个名字在当前命名空间都可见
+
+	 有as则只会有尾部的module
+
+relative import：通过module的`__package__`属性变换成绝对路径再import
+>这也解释了如果相对导入，然后通过python这个代码会报错，因为这样这个module在一个main package module，不知道其他module（只能被import中才能看到(import了package)）
 
 ### 迭代器和生成器
+
 + [iterable](https://docs.python.org/3/glossary.html#term-iterable)可迭代对象：必须实现`__iter__`
 + [iterator](https://docs.python.org/3/glossary.html#term-iterator)迭代器：必须实现`__next__`
 
