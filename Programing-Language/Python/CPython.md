@@ -11,7 +11,7 @@
 	1. 将字节码放到由C实现的虚拟机PVM上去解释运行
 
 	>对比Java：
-	>+ Java在解释运行前已经编译了，而Python确实也没有重复编译，但是会检测编译好的pyc是否过期
+	>+ Java在解释运行前已经编译了，而Python确实也是运行前编译，也没有重复编译，但是会检测编译好的pyc是否过期
 	>+ JVM会有JIT, Just-In-Time Compilation即时编译，将HotSpot热点代码编译成本地机器码
 	>	>lua也有这玩意，而且优化的很不错，按理说Python也应该有
 
@@ -54,6 +54,8 @@ LIST_APPEND  # list_append -> app1(): n + 1 -> list_resize() # 多次resize n + 
 + list_resize(不是那么大) -> 后续足够，不再更新
 
 ### 为什么None一定要用is
+>`is`对应`is not`而不是`not` 
+
 为什么判断一个名称是不是None一定要用`is`？
 
 + `if sam: ...`：None -> False, but `[]` -> False, `{}` -> False, `set()` -> False, `__bool__`可以被重载
@@ -71,3 +73,37 @@ LIST_APPEND  # list_append -> app1(): n + 1 -> list_resize() # 多次resize n + 
 	+ 这里有个锅，一旦overload eq和hash中任何一个，子类都不会继承这个基类中的hash
 	+ 这里还有一个锅，就是hashtable会先比较hash，再使用eq比较（因为可能hash碰撞）
 	+ 这里再有一个锅，如果对于同一个对象（上面都是讨论内容相同的不同对象），就没hash啊eq的说法，一看hash指针是一样，就直接认为是一样的
+
+### 判断一个key是否在dict中
+
+### 列表推导式语法
+```
+In []: dis("g = (n for n in lst if n in lst)")
+  1           0 LOAD_CONST               0 (<code object <genexpr> at 0x7f75b37a9b00, file "<dis>", line 1>)
+              2 LOAD_CONST               1 ('<genexpr>')
+              4 MAKE_FUNCTION            0
+              6 LOAD_NAME                0 (lst)
+              8 GET_ITER                                                         # 得到生成器对象并存储g
+             10 CALL_FUNCTION            1
+             12 STORE_NAME               1 (g)
+             14 LOAD_CONST               2 (None)
+             16 RETURN_VALUE
+
+Disassembly of <code object <genexpr> at 0x7f75b37a9b00, file "<dis>", line 1>:  # code object，等式右边被看做一个函数
+              0 GEN_START                0
+
+  1           2 LOAD_FAST                0 (.0)
+        >>    4 FOR_ITER                 9 (to 24)                               # 一个正儿八经的for loop，调用iter
+              6 STORE_FAST               1 (n)                                   # 得到一个iterable并保存
+              8 LOAD_FAST                1 (n)
+             10 LOAD_GLOBAL              0 (lst)                                 # 复制全局名
+             12 CONTAINS_OP              0                                       # 比较
+             14 POP_JUMP_IF_FALSE        2 (to 4)
+             16 LOAD_FAST                1 (n)
+             18 YIELD_VALUE
+             20 POP_TOP
+             22 JUMP_ABSOLUTE            2 (to 4)
+        >>   24 LOAD_CONST               0 (None)
+             26 RETURN_VALUE
+```
+所以从这里定义g到真的next g之间，如果更改了lst的内容，在next的时候n会遍历构造时的list，然后去比较修改后的lst
