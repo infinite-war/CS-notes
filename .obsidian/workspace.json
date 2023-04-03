@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7f3a94da653543da",
+        "id": "ba4a3e00f8fa319d",
         "type": "tabs",
         "children": [
           {
-            "id": "f6151547423845f0",
+            "id": "1234a93ea4c5cefa",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -58,6 +58,14 @@
             "type": "leaf",
             "state": {
               "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "83f4d24b774b7f18",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
@@ -120,14 +128,6 @@
               "type": "outline",
               "state": {}
             }
-          },
-          {
-            "id": "36967366bddf0cd3",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
         "currentTab": 3
@@ -138,54 +138,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "1234a93ea4c5cefa",
   "lastOpenFiles": [
-    "Programing-Language/Python/Grammer.md",
-    "Programing-Language/Python/Concurrency.md",
-    "Programing-Language/Python/README.md",
-    "Programing-Language/Python/CPython.md",
-    "blog/VSCode.md",
-    "Programing-Language/README.md",
-    "Missing-Semester/Markdown.md",
-    "Programing-Language/Python/Django.md",
-    "Programing-Language/Python/Data.md",
-    "README.md",
-    "Programing-Language/C++/内存管理.md",
-    "Programing-Language/C++/名称可见性.md",
-    "Programing-Language/C++/POD.md",
-    "Programing-Language/C++/函数.md",
-    "Programing-Language/C++/2Data4RAII.md",
-    "Programing-Language/C++/2Data4RTTI.md",
-    "blog/Multi-computer Cooperation.md",
-    "Interdisciplinary/Crypto-Quant/survey.md",
-    "Interdisciplinary/Crypto-Quant/vnpy.md",
+    "Linux/Editor.md",
     "Programing-Language/C和C++的README.md",
     "Programing-Language/C-Language.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "Programing-Language/Python/1Base.md",
-    "trash_can",
-    "Distributed-System/Storage/Curve.md",
-    "Programing-Language/Golang/0Intro.md",
-    "Programing-Language/Compile.md",
-    "Quant",
-    "Web3",
+    "Programing-Language/README.md",
+    "Programing-Language/Coroutine.md",
+    "Compiler/yacc&lex.md",
+    "Compiler/编译原理.md",
     "trash_can/针对密码前缀构造的攻击.jpg",
     "trash_can/重要的群.jpg",
-    "trash_can/群.jpg",
-    "trash_can/消息验证原理.jpg",
-    "trash_can/有限群.jpg",
-    "trash_can/数字签名2证明.jpg",
-    "trash_can/数字签名2栗子.jpg",
-    "trash_can/数字签名2.jpg",
-    "trash_can/数字签名.jpg",
-    "trash_can/基于分组的哈希函数结构模型.jpg",
-    "未命名.canvas"
+    "trash_can/群.jpg"
   ]
 }

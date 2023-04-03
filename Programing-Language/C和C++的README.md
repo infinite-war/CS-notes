@@ -127,14 +127,17 @@
 	>编译器将注释替换为空格。
 
 ### 2.预处理
-
 [GNU C Preprocessor](https://gcc.gnu.org/onlinedocs/cpp/) | [C++ Ref](https://en.cppreference.com/w/cpp/preprocessor)
+
+`.c` -> `.i`
 
 ```bash
 gcc -E xxx.c
 ```
 
 ### 3.编译
+
+`-i` -> `.S` -> `.o`
 
 + 词法分析
 	```bash
