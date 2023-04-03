@@ -99,7 +99,10 @@ http://pypi.douban.com/simple/  # 豆瓣源
 		+ 这里其实引入了一个新的问题，很多项目提供`requirements.txt`文件，让我们使用`python3 -m pip install -r requirements.txt`，那这样的方法在虚拟环境中确实可以安装好依赖，但是这些依赖不会记录在配置文件中。
 			+ poetry是兼容它们的：`pip freeze > requirements.txt`即可依照我们的虚拟环境依赖生成这样的txt文件
 			+ 它们是不兼容poetry：通过这样的方法不会修改poetry的配置文件，我们需要其他方法将该文件的内容正确的放入到配置文件，使用更现代的方式管理依赖
-	
+
+poetry export --output requirements.txt
+
+
 	+ 程序运行：
 		+ 1. `poetry run python 程序`
 		+ 2. 激活环境`poetry shell`，进入虚拟环境命令行即可使用`python 程序`（虚拟环境中除了python外还有pip，管理的库也会被poetry管理）
