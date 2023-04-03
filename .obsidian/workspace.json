@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2dd0d97067ac2c85",
+        "id": "604d35c247814078",
         "type": "tabs",
         "children": [
           {
-            "id": "5aa2a0a8225a8be8",
+            "id": "bab78e4608daa7d8",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,7 +145,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5aa2a0a8225a8be8",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "Programing-Language/Python/README.md",
     "Programing-Language/Python/Grammer.md",
