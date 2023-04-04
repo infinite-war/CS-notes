@@ -101,6 +101,7 @@ http://pypi.douban.com/simple/  # 豆瓣源
 			+ 它们是不兼容poetry：通过这样的方法不会修改poetry的配置文件，我们需要其他方法将该文件的内容正确的放入到配置文件，使用更现代的方式管理依赖
 				```bash
 				poetry add `cat requirements.txt`  # linux
+				poetry add $(type requirements.txt)  # win
 				```
 
 	+ 程序运行：

@@ -48,6 +48,8 @@
 	+ 输入法：默认
 	+ 拼音设置：双拼且不自动扩展到全拼
 	+ 中英切换：只保留`Ctrl + Space`
+	+ 全半角和中英标点的切换设置为无
+	+ 翻页只有+/-
 
 + 文件的查看：
 	+ 打开文件扩展名
@@ -193,9 +195,7 @@
 
 + Powershell7的ls对输出的目录的美化需要下载额外模块：（下载比较慢）
 	```powershell
-	# Install-Module PSColor     # 我个人的配置已经将该模块换为DirColors, 其实PSColor更好看，但是输出多一个换行，我不能接受
-	Install-Module DirColors     #  
-	# Install-Module PSReadLine  # 画蛇添足的东西，后不再使用
+	Install-Module PSColor
 	```
 
 ### 5.2.oh-my-posh

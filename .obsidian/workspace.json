@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "604d35c247814078",
+        "id": "2cdf668e227da6c0",
         "type": "tabs",
         "children": [
           {
-            "id": "bab78e4608daa7d8",
+            "id": "759259571e12d5df",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,13 +147,15 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/WindowsConfigGuide.md",
+    "blog/Multi-computer Cooperation.md",
+    "README.md",
     "Programing-Language/Python/README.md",
+    "blog/VSCode.md",
+    "Programing-Language/Python/Concurrency.md",
     "Programing-Language/Python/Grammer.md",
     "Programing-Language/Coroutine.md",
-    "Programing-Language/Python/Concurrency.md",
-    "README.md",
     "Programing-Language/Python/CPython.md",
-    "blog/VSCode.md",
     "Programing-Language/README.md",
     "Missing-Semester/Markdown.md",
     "Programing-Language/Python/Django.md",
@@ -164,12 +166,10 @@
     "Programing-Language/C++/函数.md",
     "Programing-Language/C++/2Data4RAII.md",
     "Programing-Language/C++/2Data4RTTI.md",
-    "blog/Multi-computer Cooperation.md",
     "Interdisciplinary/Crypto-Quant/survey.md",
     "Interdisciplinary/Crypto-Quant/vnpy.md",
     "Programing-Language/C和C++的README.md",
     "Programing-Language/C-Language.md",
-    "Missing-Semester/WindowsConfigGuide.md",
     "Programing-Language/Python/1Base.md",
     "trash_can",
     "Distributed-System/Storage/Curve.md",
