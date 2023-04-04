@@ -40,6 +40,11 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 	```
 
 2. 按照系统版本选择合适的源：
+	>查看系统版本的命令
+	>```bash
+	>lsb_release -a
+	>```
+
 	>[清华源](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)、[中科大源](https://mirrors.ustc.edu.cn/repogen/)
 
 	```bash
@@ -49,12 +54,14 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 3. 更新：
 	```bash
 	sudo apt update # 让系统知道所有包的最新信息
-	sudo apt upgrade # 让新的包的信息更新所有软件  # 时间较长
+	```
+
+	```bash
+	sudo apt upgrade # 让新的包的信息更新所有软件  # 时间较长  # 我通常不用
 	```
 
 ## 4.下载刚需软件
 >Linux下通常有包管理器，下面的软件没有说明下载方式的软件一般都可以通过包管理器下载
-
 
 ### 文本编辑器
 
@@ -84,7 +91,7 @@ Linux下的文本编辑器非常之多，上面使用vi就是一种，选择看�
 
 1. 下载`zsh`：[Manual](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)，一行命令即可  
 	```bash
-	sudo apt install zsh
+	sudo apt install -y zsh
 	```
 	更新默认shell：`chsh -s $(which zsh)`
 	>实际上这边建议不要着急修改，在clone oh-my-zsh会提示是否修改默认shell

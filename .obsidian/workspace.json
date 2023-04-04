@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2cdf668e227da6c0",
+        "id": "f5967a2b3bebed99",
         "type": "tabs",
         "children": [
           {
-            "id": "759259571e12d5df",
+            "id": "fba2dc54e4d86c5f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,9 +145,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "fba2dc54e4d86c5f",
   "lastOpenFiles": [
+    "Programing-Language/README.md",
+    "Software-Engineering/Bazel.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
+    "未命名.canvas",
+    "Missing-Semester/Git.md",
     "blog/Multi-computer Cooperation.md",
     "README.md",
     "Programing-Language/Python/README.md",
@@ -156,7 +161,6 @@
     "Programing-Language/Python/Grammer.md",
     "Programing-Language/Coroutine.md",
     "Programing-Language/Python/CPython.md",
-    "Programing-Language/README.md",
     "Missing-Semester/Markdown.md",
     "Programing-Language/Python/Django.md",
     "Programing-Language/Python/Data.md",
@@ -170,10 +174,7 @@
     "Interdisciplinary/Crypto-Quant/vnpy.md",
     "Programing-Language/C和C++的README.md",
     "Programing-Language/C-Language.md",
-    "Programing-Language/Python/1Base.md",
     "trash_can",
-    "Distributed-System/Storage/Curve.md",
-    "Programing-Language/Golang/0Intro.md",
     "Quant",
     "Web3",
     "trash_can/针对密码前缀构造的攻击.jpg",
@@ -185,7 +186,6 @@
     "trash_can/数字签名2栗子.jpg",
     "trash_can/数字签名2.jpg",
     "trash_can/数字签名.jpg",
-    "trash_can/基于分组的哈希函数结构模型.jpg",
-    "未命名.canvas"
+    "trash_can/基于分组的哈希函数结构模型.jpg"
   ]
 }
