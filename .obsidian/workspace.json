@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f5967a2b3bebed99",
+        "id": "04a47692cdda4baf",
         "type": "tabs",
         "children": [
           {
-            "id": "fba2dc54e4d86c5f",
+            "id": "e232cf1798abc458",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,11 +145,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fba2dc54e4d86c5f",
+  "active": "e232cf1798abc458",
   "lastOpenFiles": [
+    "Programing-Language/C++/2Data4RAII.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Programing-Language/C和C++的README.md",
+    "Programing-Language/C++/2Data4RTTI.md",
+    "Programing-Language/C++/lib/gflags.md",
+    "Programing-Language/C++/lib/boost.md",
     "Programing-Language/README.md",
     "Software-Engineering/Bazel.md",
-    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "未命名.canvas",
     "Missing-Semester/Git.md",
@@ -168,12 +173,7 @@
     "Programing-Language/C++/名称可见性.md",
     "Programing-Language/C++/POD.md",
     "Programing-Language/C++/函数.md",
-    "Programing-Language/C++/2Data4RAII.md",
-    "Programing-Language/C++/2Data4RTTI.md",
     "Interdisciplinary/Crypto-Quant/survey.md",
-    "Interdisciplinary/Crypto-Quant/vnpy.md",
-    "Programing-Language/C和C++的README.md",
-    "Programing-Language/C-Language.md",
     "trash_can",
     "Quant",
     "Web3",
