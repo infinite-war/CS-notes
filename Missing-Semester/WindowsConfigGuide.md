@@ -91,9 +91,8 @@
 		+ 字幕位置有点碍眼
 	+ 划词翻译
 		+ 可单开网页处理英文PDF
-		+ `Ctrl + Shift + 2`打开悬浮翻译框
 		+ 可将整个网页转换成双语模式
-		+ 设置快捷键`Alt + ,`翻译划词
+		+ 设置快捷键`Alt + a`显示翻译划词
 	+ 油猴脚本
 		+ 这里推荐一款我开发的关于哔哩哔哩的脚本，[地址](https://github.com/zweix123/BilibiliProgressBar)
 	+ crxMouse Chrome手势：后退、前进、顶部、底部，对文件图片链接的打开

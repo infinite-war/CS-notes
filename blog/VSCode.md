@@ -11,6 +11,7 @@
 	code filepath  # 打开文件
 	code folderpath  # 打开目录(推荐)
 	code .  # 打开当前目录
+	code -r xxx  # 在当前窗口打开文件或目录
 	```
 
 + 编辑器内命令：`Ctrl + p`：打开VSCode Comman Center
@@ -23,7 +24,7 @@
 		+ `Shift + Alt + 方向键`
 
 + 常用快捷键：
-	+ `Ctrl + ~`/`Ctrl + num`切换workspace和terminal 
+	+ `Ctrl + ~`/`Ctrl + num`切换terminal和workspace
 
 + 常用命令：
 	+ 格式化：手动，快捷键`Shift + Alt + f`，效果依赖于插件
