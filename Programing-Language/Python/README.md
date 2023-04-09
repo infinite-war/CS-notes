@@ -95,14 +95,16 @@ http://pypi.douban.com/simple/  # 豆瓣源
 		+ 添加库：`python3 -m poetry add 库名`
 		+ 删除库：`python3 -m poetry remove 库名`
 
-		poetry管理虚拟环境使用其他的库，这里的操作包括两步：修改项目配置文件和pip，即如果我们直接pip也能修改虚拟环境依赖，但是这些信息不会保存在配置文件中
-		+ 这里其实引入了一个新的问题，很多项目提供`requirements.txt`文件，让我们使用`python3 -m pip install -r requirements.txt`，那这样的方法在虚拟环境中确实可以安装好依赖，但是这些依赖不会记录在配置文件中。
+		Poetry管理虚拟环境的底层工具是Pyenv和Virtualenv，其中后者负责虚拟环境，有时poetry的依赖管理算法不能处理库的依赖关系，但是使用Virtualenv本身的功能可以，但是这样的修改不会被Poetry管理，具体的，直接在虚拟环境中使用`pip`进行依赖库的`install`。
+		+ 其他问题，很多项目提供`requirements.txt`文件，让我们使用`python3 -m pip install -r requirements.txt`，那这样的方法在虚拟环境中确实可以安装好依赖，但是这些依赖不会记录在配置文件中。
 			+ poetry是兼容它们的：`pip freeze > requirements.txt`即可依照我们的虚拟环境依赖生成这样的txt文件
 			+ 它们是不兼容poetry：通过这样的方法不会修改poetry的配置文件，我们需要其他方法将该文件的内容正确的放入到配置文件，使用更现代的方式管理依赖
 				```bash
 				poetry add `cat requirements.txt`  # linux
 				poetry add $(type requirements.txt)  # win
 				```
+
+				但是这样的方法经常失效，到这种情况只能使用虚拟环境中的`pip`管理了。
 
 	+ 程序运行：
 		+ 1. `poetry run python 程序`

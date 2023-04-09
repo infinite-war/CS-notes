@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c4250fe70fc3bd64",
+        "id": "611fae6cbd4a5542",
         "type": "tabs",
         "children": [
           {
-            "id": "cf49e9a0f228723a",
+            "id": "6469d90dda1bcaef",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,17 +145,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cf49e9a0f228723a",
+  "active": "6469d90dda1bcaef",
   "lastOpenFiles": [
-    "Android/Flutter.md",
-    "Artificial-Intelligence/Machine-Learning/Pre.md",
-    "Artificial-Intelligence/Machine-Learning/Deep-Learning/线性神经网络.md",
-    "blog/How to use Chatgpt.md",
-    "blog/unorganized/zweix技术日记2022.04.08-关于C++函数参数入栈顺序和内存对齐.md",
-    "Compiler/yacc&lex.md",
-    "Compiler/编译原理.md",
-    "Database-System/1 - 1SQL语言.md",
-    "Frontend/CSS.md",
-    "Interdisciplinary/Crypto-Quant/okex.md"
+    "blog/VSCode.md",
+    "Programing-Language/Python/README.md",
+    "Programing-Language/C++/动态内存和RAII.md",
+    "Programing-Language/C++/type.md",
+    "Programing-Language/C++/POD.md",
+    "Programing-Language/C++/Generic-in-SL.md",
+    "Programing-Language/C++/Generic.md",
+    "Programing-Language/C++/C++Exception.md",
+    "Programing-Language/C++/C++Coruntine.md",
+    "Programing-Language/C++/内存管理.md"
   ]
 }
