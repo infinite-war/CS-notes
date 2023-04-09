@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "611fae6cbd4a5542",
+        "id": "416609e191733daa",
         "type": "tabs",
         "children": [
           {
-            "id": "6469d90dda1bcaef",
+            "id": "9c8ab3a8dafb566b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,7 +145,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6469d90dda1bcaef",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "blog/VSCode.md",
     "Programing-Language/Python/README.md",
