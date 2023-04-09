@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4e79eca5ab869773",
+        "id": "c4250fe70fc3bd64",
         "type": "tabs",
         "children": [
           {
-            "id": "0f996cfc5de0cc62",
+            "id": "cf49e9a0f228723a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,17 +145,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "cf49e9a0f228723a",
   "lastOpenFiles": [
-    "blog/VSCode.md",
-    "Programing-Language/C++/动态内存和RAII.md",
-    "Programing-Language/C++/STL-Iterator.md",
-    "Programing-Language/C++/STL-Container.md",
-    "Programing-Language/C++/SL.md",
-    "Programing-Language/C++/Generic.md",
-    "Programing-Language/C++/Generic-in-SL.md",
-    "Programing-Language/C++/OOP0介绍.md",
-    "Programing-Language/C++/OOP4友元.md",
-    "Programing-Language/C++/OOP2继承.md"
+    "Android/Flutter.md",
+    "Artificial-Intelligence/Machine-Learning/Pre.md",
+    "Artificial-Intelligence/Machine-Learning/Deep-Learning/线性神经网络.md",
+    "blog/How to use Chatgpt.md",
+    "blog/unorganized/zweix技术日记2022.04.08-关于C++函数参数入栈顺序和内存对齐.md",
+    "Compiler/yacc&lex.md",
+    "Compiler/编译原理.md",
+    "Database-System/1 - 1SQL语言.md",
+    "Frontend/CSS.md",
+    "Interdisciplinary/Crypto-Quant/okex.md"
   ]
 }
