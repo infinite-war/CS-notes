@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6c57cc9defc1dd34",
+        "id": "cc6160403dabf8f9",
         "type": "tabs",
         "children": [
           {
-            "id": "50b4b18d96a9d99d",
+            "id": "9a385bc5c98e18f9",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,6 +147,14 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Interdisciplinary/Crypto-Quant/vnpy.md",
+    "Interdisciplinary/Crypto-Quant/survey.md",
+    "Interdisciplinary/Crypto-Quant/okex.md",
+    "Programing-Language/Golang/concurrency.md",
+    "README.md",
+    "Programing-Language/Python/README.md",
+    "Programing-Language/Python/CPython.md",
+    "Programing-Language/Python/Django.md",
     "conflict-files-obsidian-git.md",
     "Programing-Language/C++/type.md",
     "Programing-Language/C++/README.md",
@@ -154,10 +162,7 @@
     "Linux/Tmux.md",
     "Missing-Semester/Git.md",
     "Linux/shell.md",
-    "Programing-Language/Python/README.md",
     "Programing-Language/Python/Grammer.md",
-    "Interdisciplinary/Crypto-Quant/survey.md",
-    "Interdisciplinary/Crypto-Quant/okex.md",
     "Missing-Semester/WindowsConfigGuide.md",
     "blog/VSCode.md",
     "trash_can",
@@ -169,11 +174,6 @@
     "Programing-Language/C++/STL-Container.md",
     "Programing-Language/C++/SL.md",
     "Programing-Language/C++/RTTI.md",
-    "Programing-Language/C++/OOP4友元.md",
-    "Programing-Language/C++/OOP2继承.md",
-    "Programing-Language/C++/OOP1封装.md",
-    "Programing-Language/C++/OOP0介绍.md",
-    "Programing-Language/C++/Generic.md",
     "未命名.canvas",
     "Quant",
     "Web3",
