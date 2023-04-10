@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "755216a7b2a22e25",
+        "id": "6c57cc9defc1dd34",
         "type": "tabs",
         "children": [
           {
-            "id": "ca9f700f13d0173a",
+            "id": "50b4b18d96a9d99d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,8 +145,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ca9f700f13d0173a",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Programing-Language/C++/type.md",
+    "Programing-Language/C++/README.md",
     "blog/Multi-computer Cooperation.md",
     "Linux/Tmux.md",
     "Missing-Semester/Git.md",
@@ -171,9 +174,6 @@
     "Programing-Language/C++/OOP1封装.md",
     "Programing-Language/C++/OOP0介绍.md",
     "Programing-Language/C++/Generic.md",
-    "Programing-Language/C++/Generic-in-SL.md",
-    "Programing-Language/C++/2Data4RAII.md",
-    "Missing-Semester/LinuxConfigGuide.md",
     "未命名.canvas",
     "Quant",
     "Web3",
