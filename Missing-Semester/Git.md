@@ -91,7 +91,10 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	git clone -b <branchname> <remote-repo-url>
 	```
 
-### 工作流
+## example
+
+### 如何为一个开源项目做贡献
+
 
 一个在Github上Public的项目是开源的，每个人都可以查看代码，也能为项目共享胆代码。那么怎么贡献代码呢？
 
@@ -128,3 +131,36 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	+ 参数`-amend`表示修改上一次提交，而不是创建一次新的提交
 
 	之后的push需要加上参数`-f`
+
+### 修改过去版本中的记录
+>这个行为是危险的
+
+我有一个个人项目，它诞生于我对git使用很不规范的时期，有很多无用的commit，其中真的影响使用的是，我发现git clone的速度非常的慢，虽然项目中确实有挺多的静态文件，但是直觉上感觉不应该这么慢。我在之前的某个commit中把大量的测试用图片交了上去，猜测这部分在.git目录中的记录体积很大。考虑如何删除。
+
+1. 创建并进入新分支：` git checkout -b remove-images`
+	>`git branch -a `查看分支
+	
+2. 列出所有commit` git log --oneline`，有每次commit的hash code和message  
+	`git show --name-only <commit-hash>`查看某次commit的提交情况  
+
+	通过上面两个命令找到提交大量图片的commit和commit内容
+	>`git show --name-only <commit-hash> | grep ".jpg\|.png\|.gif" | vim -` -> `:w tar-images.txt`
+
+3. 使用脚本`git-delete.sh`：
+	```bash
+	#!/bin/bash
+	
+	while read filename; do
+		# Run git filter-branch command for each filename
+		git filter-branch --force --index-filter "git rm --cached --ignore-unmatch $filename" --prune-empty --tag-name-filter cat -- --all
+	done < tar-images.txt
+	```
+
+	这个脚本会运行很长时间
+
+4. 删除辅助文件，将当前分支推送到github上
+	1. `git push -u origin remove-images`将当前分支推送上去（github该项目有两个分支）
+	2. `git checkout master` -> `git merge remove-images`准备何如分支（github上显示pr通知，去通过pr）
+	3. `git reset --hard remove-images` -> ` git push --delete origin remove-images`删除本地和github上的新分支
+
+果然快很多。

@@ -1,7 +1,8 @@
-## MISC
++ [CoinMarketCop](https://coinmarketcap.com/)：
++ [BTR](https://backtest-rookies.com/)
 
-+ [BTR](https://backtest-rookies.com/)：一个面向初学者的回测和交易学习博客
-+ [quantstart](https://www.quantstart.com/)：学习论坛
+
+
 + [KBR](https://github.com/kerwinyc/kbt_)：一个简单的回测程序
 + [OnePy](https://github.com/Chandlercjy/OnePy)：一个比较优雅（README好看）的学习项目？（带教程）
 + [pyinvesting](https://github.com/crapher/pyinvesting)：Market and historical data downloader

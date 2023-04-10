@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4e79eca5ab869773",
+        "id": "de4f94b63a39c901",
         "type": "tabs",
         "children": [
           {
-            "id": "0f996cfc5de0cc62",
+            "id": "f7b92fef60495687",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -58,14 +58,6 @@
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "83f4d24b774b7f18",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
@@ -128,6 +120,14 @@
               "type": "outline",
               "state": {}
             }
+          },
+          {
+            "id": "36967366bddf0cd3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 3
@@ -138,24 +138,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "f7b92fef60495687",
   "lastOpenFiles": [
+    "blog/Multi-computer Cooperation.md",
+    "Linux/Tmux.md",
+    "Missing-Semester/Git.md",
+    "Linux/shell.md",
+    "Programing-Language/Python/README.md",
+    "Programing-Language/Python/Grammer.md",
+    "Interdisciplinary/Crypto-Quant/survey.md",
+    "Interdisciplinary/Crypto-Quant/okex.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "blog/VSCode.md",
+    "trash_can",
+    "Linux/GNU/GNU Makefile.md",
+    "Programing-Language/README.md",
+    "blog/tools.md",
     "Programing-Language/C++/动态内存和RAII.md",
     "Programing-Language/C++/STL-Iterator.md",
     "Programing-Language/C++/STL-Container.md",
     "Programing-Language/C++/SL.md",
+    "Programing-Language/C++/RTTI.md",
+    "Programing-Language/C++/OOP4友元.md",
+    "Programing-Language/C++/OOP2继承.md",
+    "Programing-Language/C++/OOP1封装.md",
+    "Programing-Language/C++/OOP0介绍.md",
     "Programing-Language/C++/Generic.md",
     "Programing-Language/C++/Generic-in-SL.md",
-    "Programing-Language/C++/OOP0介绍.md",
-    "Programing-Language/C++/OOP4友元.md",
-    "Programing-Language/C++/OOP2继承.md"
+    "Programing-Language/C++/2Data4RAII.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "未命名.canvas",
+    "Quant",
+    "Web3",
+    "trash_can/针对密码前缀构造的攻击.jpg",
+    "trash_can/重要的群.jpg",
+    "trash_can/群.jpg",
+    "trash_can/消息验证原理.jpg",
+    "trash_can/有限群.jpg",
+    "trash_can/数字签名2证明.jpg",
+    "trash_can/数字签名2栗子.jpg",
+    "trash_can/数字签名2.jpg",
+    "trash_can/数字签名.jpg",
+    "trash_can/基于分组的哈希函数结构模型.jpg"
   ]
 }

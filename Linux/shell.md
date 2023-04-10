@@ -29,6 +29,7 @@
 	+ `uname -a`
 	+ `cat /etc/issue`
 	+ `lscpu`：cpu数量
+	+ `du -sh .` ：目录大小
 
 ---
 

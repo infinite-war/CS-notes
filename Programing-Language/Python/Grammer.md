@@ -56,6 +56,28 @@ absolute import
 relative import：通过module的`__package__`属性变换成绝对路径再import
 >这也解释了如果相对导入，然后通过python这个代码会报错，因为这样这个module在一个main package module，不知道其他module（只能被import中才能看到(import了package)）
 
+在我的个人实践中
++ 相对导入只适用于一个大系统的子集，即由程序自己进入了一个package，然后这个package中module进行相互之间的相对导入，其他的基本都有锅
++ 
+
+实践上
++ 相对导入适用于一个大系统的子集，比如一个程序运行中会进入一个module，这个module的import就可以通过相对import
++ 在一般情况下都推荐绝对导入，指的注意的是，绝对导入的起点是哪里呢？可以看`__file__`这个属性，从这个列表中的路径和绝对路径尝试进行拼接得到的。
+	+ 我们会发现这里通常没有父目录，这意味最基本的跨package的import都不能满足，有两个方法  
+		在代码前使用，
+		```python
+		import sys
+		from os.path import abspath, dirname
+		sys.path.append(abspath(dirname(dirname(__file__))))
+		```
+		这样就导入了目录  
+
+		将父目录放入到环境变量中
+		```python
+		export PYTHONPATH=$PYTHONPATH:父目录绝对路径
+		```
+
+ 
 ### 迭代器和生成器
 
 + [iterable](https://docs.python.org/3/glossary.html#term-iterable)可迭代对象：必须实现`__iter__`
