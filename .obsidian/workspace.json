@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "de4f94b63a39c901",
+        "id": "755216a7b2a22e25",
         "type": "tabs",
         "children": [
           {
-            "id": "f7b92fef60495687",
+            "id": "ca9f700f13d0173a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,7 +145,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f7b92fef60495687",
+  "active": "ca9f700f13d0173a",
   "lastOpenFiles": [
     "blog/Multi-computer Cooperation.md",
     "Linux/Tmux.md",
