@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cc6160403dabf8f9",
+        "id": "a2551dd938f28bdf",
         "type": "tabs",
         "children": [
           {
-            "id": "9a385bc5c98e18f9",
+            "id": "5681d845748077ed",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -148,6 +148,7 @@
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
     "Interdisciplinary/Crypto-Quant/vnpy.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "Interdisciplinary/Crypto-Quant/survey.md",
     "Interdisciplinary/Crypto-Quant/okex.md",
     "Programing-Language/Golang/concurrency.md",
@@ -173,7 +174,6 @@
     "Programing-Language/C++/STL-Iterator.md",
     "Programing-Language/C++/STL-Container.md",
     "Programing-Language/C++/SL.md",
-    "Programing-Language/C++/RTTI.md",
     "未命名.canvas",
     "Quant",
     "Web3",
