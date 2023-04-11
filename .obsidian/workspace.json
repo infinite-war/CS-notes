@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a2551dd938f28bdf",
+        "id": "4c968e468445eb67",
         "type": "tabs",
         "children": [
           {
-            "id": "5681d845748077ed",
+            "id": "4f15d1029d30bbe0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,10 +147,14 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Interdisciplinary/Crypto-Quant/vnpy.md",
-    "Missing-Semester/LinuxConfigGuide.md",
+    "Quant/vnpy.md",
+    "Quant/README.md.md",
+    "Quant/cryto-quant-survey.md",
+    "Quant/okex.md",
     "Interdisciplinary/Crypto-Quant/survey.md",
+    "Interdisciplinary/Crypto-Quant/vnpy.md",
     "Interdisciplinary/Crypto-Quant/okex.md",
+    "Missing-Semester/LinuxConfigGuide.md",
     "Programing-Language/Golang/concurrency.md",
     "README.md",
     "Programing-Language/Python/README.md",
@@ -170,10 +174,6 @@
     "Linux/GNU/GNU Makefile.md",
     "Programing-Language/README.md",
     "blog/tools.md",
-    "Programing-Language/C++/动态内存和RAII.md",
-    "Programing-Language/C++/STL-Iterator.md",
-    "Programing-Language/C++/STL-Container.md",
-    "Programing-Language/C++/SL.md",
     "未命名.canvas",
     "Quant",
     "Web3",
