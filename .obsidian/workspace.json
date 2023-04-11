@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4c968e468445eb67",
+        "id": "d4fbbf1d930b4014",
         "type": "tabs",
         "children": [
           {
-            "id": "4f15d1029d30bbe0",
+            "id": "71508787074ff321",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,9 +145,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "71508787074ff321",
   "lastOpenFiles": [
+    "Missing-Semester/Git.md",
     "Quant/vnpy.md",
+    "Programing-Language/C++/内存管理.md",
+    "Programing-Language/C++/README.md",
+    "Programing-Language/C++/函数.md",
+    "Programing-Language/C++/动态内存和RAII.md",
+    "Programing-Language/C++/名称可见性.md",
+    "blog/Multi-computer Cooperation.md",
+    "blog/tools.md",
+    "blog/VSCode.md",
     "Quant/README.md.md",
     "Quant/cryto-quant-survey.md",
     "Quant/okex.md",
@@ -162,18 +171,9 @@
     "Programing-Language/Python/Django.md",
     "conflict-files-obsidian-git.md",
     "Programing-Language/C++/type.md",
-    "Programing-Language/C++/README.md",
-    "blog/Multi-computer Cooperation.md",
     "Linux/Tmux.md",
-    "Missing-Semester/Git.md",
     "Linux/shell.md",
-    "Programing-Language/Python/Grammer.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "blog/VSCode.md",
     "trash_can",
-    "Linux/GNU/GNU Makefile.md",
-    "Programing-Language/README.md",
-    "blog/tools.md",
     "未命名.canvas",
     "Quant",
     "Web3",
