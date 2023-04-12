@@ -102,3 +102,9 @@ t.join()  # 阻塞当前线程，等待t的
 
 
 ## 基于greenlet的协程
+
+
+# 进程
+>Python由于GIL的存在无法充分的发挥多核CPU的，想要真的并行，就要通过多进程
+
+https://docs.python.org/zh-cn/3/library/multiprocessing.html

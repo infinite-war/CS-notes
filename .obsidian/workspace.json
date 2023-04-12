@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d4fbbf1d930b4014",
+        "id": "55b3b9ecdf5858e2",
         "type": "tabs",
         "children": [
           {
-            "id": "71508787074ff321",
+            "id": "c6488d299c288a66",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,8 +145,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "71508787074ff321",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Programing-Language/Python/Concurrency.md",
+    "Software-Engineering/Docker.md",
     "Missing-Semester/Git.md",
     "Quant/vnpy.md",
     "Programing-Language/C++/内存管理.md",
@@ -171,8 +173,6 @@
     "Programing-Language/Python/Django.md",
     "conflict-files-obsidian-git.md",
     "Programing-Language/C++/type.md",
-    "Linux/Tmux.md",
-    "Linux/shell.md",
     "trash_can",
     "未命名.canvas",
     "Quant",
