@@ -139,6 +139,12 @@
 
 + how to debug: [tutor](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
 
+### Web
+
++ 插件：
+	+ `Live Server`
+	+ `Auto Rename Tag`
+
 ## MarkDown
 见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
 

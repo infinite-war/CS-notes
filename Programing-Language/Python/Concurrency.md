@@ -1,4 +1,4 @@
->concurrency并发，不是coroutine协程，因为GIL的存在，Python的多线程不能真的有多个线程在并行的跑，以至于实际上在并发模型上线程和协程有很多相像之处，所以在一起讨论。
+git@github.com:zweix123/crypto-quant.git>concurrency并发，不是coroutine协程，因为GIL的存在，Python的多线程不能真的有多个线程在并行的跑，以至于实际上在并发模型上线程和协程有很多相像之处，所以在一起讨论。
 
 # 线程
 >第一个多核CPU IBM的Power4出现在2001，而多线程的概念在上个世纪五六十年代就已经出现了，那么这半个多实际的时间多线程在干嘛呢？

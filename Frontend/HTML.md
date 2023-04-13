@@ -1,42 +1,31 @@
-# 概述
-
-> [MDN官方文档](https://developer.mozilla.org/zh-CN/)
-
-+ 一些约定尝试：
-  + 网址入口html为`index.html`
-  + 资源目录：
-    + images：图片
-    + audios：音频
-    + videos：视频
-
-# HTML5
-
 ```html
 <!DOCTYPE html><!--必须有-->
 <html>
     <head>
         <title>标签的内容/搜索引擎收录的标题</title>
         <meta charset="UTF-8"><!--字符集-->
-        <meta name="description" content=""><!--搜索引擎收录的描述-->
-        <meta name="keywords" content="key1, key2, ..."><!--搜索收录搜索的关键字-->
-        <link rel="icon" href="url"><->logo</->
+        <meta name="description" content="搜索引擎收录的描述">
+        <meta name="keywords" content="搜索, 收录, 搜索的, 关键字">
+        <link rel="icon" href="logo.url">
     </head>
-    <body>
-    </body>
     
+    <body>
+    
+    </body>
 </html>
 ```
 
-+ 关于url，从绝对路径`/`开始
+## Tag
 
-## tag
++ Base
+	+ `div`：块状元素，默认带回车
+	+ `span`：条内元素，默认不带回车
+	>其他Tag都是这两种Base Tag的扩展
 
-+ `div`：块状元素，默认带回车
-+ `span`：条内元素，默认不带回车
++ 标题：`h1`、`h2`、。。。、`h6`
++ 段落：`p`和`pre`：提供前后间距，后者等宽字体且不消除空白
 
-> 其他tag都是这两种tag的扩展
 
-+ 标题：`h数字1-6`
 
 + 段落：`p`和`pre`：提供前后间距，后者等宽字体且不消除空白
 
