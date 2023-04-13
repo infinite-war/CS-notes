@@ -1,4 +1,4 @@
-git@github.com:zweix123/crypto-quant.git>concurrency并发，不是coroutine协程，因为GIL的存在，Python的多线程不能真的有多个线程在并行的跑，以至于实际上在并发模型上线程和协程有很多相像之处，所以在一起讨论。
+>concurrency并发，不是coroutine协程，因为GIL的存在，Python的多线程不能真的有多个线程在并行的跑，以至于实际上在并发模型上线程和协程有很多相像之处，所以在一起讨论。
 
 # 线程
 >第一个多核CPU IBM的Power4出现在2001，而多线程的概念在上个世纪五六十年代就已经出现了，那么这半个多实际的时间多线程在干嘛呢？
@@ -66,8 +66,7 @@ t.join()  # 阻塞当前线程，等待t的
 	+ 使用没有GIL的Python解释器（Jthon、IronPython）
 
 
-## 基于Generator的协程
-
+## 基于Generator协程
 >根本没有准备定义，感性理解下吧
 
 + 在Python的语境下，Coroutine两种语义
@@ -100,8 +99,10 @@ t.join()  # 阻塞当前线程，等待t的
 
 `asyncio.gather(若干cotoutine或者task或者future)`返回future类似变量，可以用`await 变量`去建立当前taks对这里所有task的依赖（相当于await的2），并等待所有（相当于await的3）返回时各个task的返回作为一个list返回
 
+### asyncio
 
-## 基于greenlet的协程
+
+## 基于greenlet协程
 
 
 # 进程

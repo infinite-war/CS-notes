@@ -58,7 +58,6 @@ relative import：通过module的`__package__`属性变换成绝对路径再impo
 
 在我的个人实践中
 + 相对导入只适用于一个大系统的子集，即由程序自己进入了一个package，然后这个package中module进行相互之间的相对导入，其他的基本都有锅
-+ 
 
 实践上
 + 相对导入适用于一个大系统的子集，比如一个程序运行中会进入一个module，这个module的import就可以通过相对import

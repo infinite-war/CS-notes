@@ -1,4 +1,4 @@
-+ 语法规范：`Pythonic`
++ 代码风格：`Pythonic`
 + 相关工具：
 	+ `ipython`
 	+ `jupyter`

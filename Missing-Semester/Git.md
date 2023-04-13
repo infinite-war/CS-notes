@@ -91,6 +91,11 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	git clone -b <branchname> <remote-repo-url>
 	```
 
+### Pages
+考虑这样的场景，我的项目的有些成果可以静态网页的形式展示，能够缩短路径让客户最快的看到我们产品的效果。但是大张旗鼓的在服务器搭建一个Web服务也不合适，因为大概率服务器属于你的时间要远小于项目属于你的时间。这时GitHub Pages就派生用场了。下面给出一个方案。
+
+打开项目 -> Settings -> Pages(在右边) -> (在Branch下选择)master + docs -> Save -> 然后把一个index.html放到项目的docs目录下即可通过`https://用户名.github.io/项目名/`访问
+
 ## example
 
 ### 如何为一个开源项目做贡献

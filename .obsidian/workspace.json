@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3c0c19031d592aa8",
+        "id": "827dab9694dd837b",
         "type": "tabs",
         "children": [
           {
-            "id": "1da2adbb788fa87c",
+            "id": "381a60447e3532ff",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,11 +145,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "381a60447e3532ff",
   "lastOpenFiles": [
-    "Software-Engineering/Docker.md",
-    "Software-Engineering/Bazel.md",
-    "Web3/MIT15.S12.md",
+    "Missing-Semester/Git.md",
     "Programing-Language/Python/Concurrency.md",
     "Programing-Language/Python/CPython.md",
     "Programing-Language/Python/Data.md",
@@ -158,6 +156,12 @@
     "Programing-Language/Python/Grammer.md",
     "Programing-Language/Python/Log.md",
     "Programing-Language/Python/README.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Missing-Semester/slide.md",
+    "Missing-Semester/SSH.md",
+    "Software-Engineering/Docker.md",
+    "Software-Engineering/Bazel.md",
+    "Web3/MIT15.S12.md",
     "Frontend/HTML.md",
     "blog/VSCode.md",
     "Frontend/CSS.md",
@@ -169,10 +173,6 @@
     "Distributed-System/Storage/GFS.md",
     "Distributed-System/Storage/Curve.md",
     "Distributed-System/Storage/Ceph.md",
-    "Distributed-System/Consensus/Raft.md",
-    "Distributed-System/Consensus/Paxos.md",
-    "Distributed-System/Consensus/PacificA.md",
-    "Database-System/3数据库恢复.md",
     "trash_can",
     "未命名.canvas",
     "Quant",
