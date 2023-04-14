@@ -197,6 +197,8 @@
 	Install-Module PSColor
 	```
 
+>截止到2023.4.14，用上述方法只能安装7.3.3，但是推荐版本已经是7.3.4了，只能通过[github](https://github.com/PowerShell/PowerShell/releases/)下载msi文件，于是我直接用的preview
+
 ### 5.2.oh-my-posh
 
 + 安装：[Manual](https://ohmyposh.dev/docs/installation/windows)（官方推荐使用winget）
@@ -248,10 +250,11 @@
 + 文件结构：
 	```
 	Scoop
-	  | ---apps      # 下载的软件安装位置
-	  | ---buckets   # 桶(可以理解为软件源)
-	  | ---cache     # 下载的安装包
-	  | ---persist   # 用户数据
+	  | ---apps      # 下载的软件安装位置   |
+	  | ----------------------------------- |
+	  | ---buckets   # 桶(可以理解为软件源) |
+	  | ---cache     # 下载的安装包         |
+	  | ---persist   # 用户数据             |
 	  `----shims     # 命令位置
 	```
 
@@ -286,14 +289,13 @@
 	scoop bucket add 桶名 [桶地址]  # 添加桶	
 	```
 
-+ voidtools：Everything是Windows平台上一个即快即轻量的文件检索工具，相当于Linux中的`find`的替代品，我们也以此为例演示Scoop的使用
++ 我们来看下面这个场景，比如我想下载`Python 3.10`(最新版到了`3.11`)，我们通过`scoop install --help`查看帮助发现可以这样`scoop install python@3.10`，但是实际上这个是无效的  
+	从[这里](https://github.com/ScoopInstaller/Scoop/wiki/Switching-Ruby,-Python-and-PHP-Versions#python)试出了一个可行的方案
 	```bash
-	scoop search Everything
-	# 我们发现有三个，选择下载cli版本
-	scoop install everything-cli
-	# 我们看标准输入有Creating shim for 'es'.
-	# 现在试试使用命令es
+	scoop bucket add versions
+	scoop install python310
 	```
+	但是下载奇慢
 
 ### 7.Git
 

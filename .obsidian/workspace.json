@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "827dab9694dd837b",
+        "id": "91a4d3b1fdd09cea",
         "type": "tabs",
         "children": [
           {
-            "id": "381a60447e3532ff",
+            "id": "003817af3f7b344e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,8 +145,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "381a60447e3532ff",
+  "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Frontend/README.md",
+    "Frontend/HTML.md",
+    "Artificial-Intelligence/Knowledge-Graphs/spaCy.md",
+    "Artificial-Intelligence/Knowledge-Graphs/README.md",
+    "Data-Science",
+    "Artificial-Intelligence/Knowledge-Graphs",
     "Missing-Semester/Git.md",
     "Programing-Language/Python/Concurrency.md",
     "Programing-Language/Python/CPython.md",
@@ -156,23 +164,17 @@
     "Programing-Language/Python/Grammer.md",
     "Programing-Language/Python/Log.md",
     "Programing-Language/Python/README.md",
-    "Missing-Semester/LinuxConfigGuide.md",
     "Missing-Semester/slide.md",
     "Missing-Semester/SSH.md",
     "Software-Engineering/Docker.md",
     "Software-Engineering/Bazel.md",
     "Web3/MIT15.S12.md",
-    "Frontend/HTML.md",
     "blog/VSCode.md",
     "Frontend/CSS.md",
     "Frontend/JavaScript.md",
-    "Frontend/README.md",
     "Distributed-System/RPC.md",
     "Distributed-System/MapReduce.md",
     "Distributed-System/0Intro.md",
-    "Distributed-System/Storage/GFS.md",
-    "Distributed-System/Storage/Curve.md",
-    "Distributed-System/Storage/Ceph.md",
     "trash_can",
     "未命名.canvas",
     "Quant",
