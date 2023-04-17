@@ -1,9 +1,11 @@
 ## Intro
+
 + 配置脚本：
 	```bash
 	ssh-keygen && touch ~/.ssh/authorized_keys ~/.ssh/config  # 之后一路回车+y
 	```
-+ **将公钥放置到GitHub上**
++ **将公钥放置到GitHub上**  
+	测试：`ssh -T git@github.com`
 
 ---
 

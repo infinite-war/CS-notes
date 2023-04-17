@@ -26,9 +26,9 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 # hostname 主机名  # 可修改主机名, 需要重启终端或机器才可以查看修改
 ```
 
-## 2.配置SSH
+## 2.配置SSH将本地ssh公钥放到
 
-我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md#intro)
+我的[教程](./SSH.md#intro)
 
 ## 3.修改软件源
 
@@ -74,7 +74,7 @@ Linux下的文本编辑器非常之多，上面使用vi就是一种，选择看�
 
 ### Git
 
-+ 配置：我的[教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Git.md#config)
++ 配置：我的[教程](./Git.md#config)
 + 使用：我的[笔记](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Git.md)
 
 ### zsh
