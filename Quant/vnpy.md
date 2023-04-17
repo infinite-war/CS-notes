@@ -1,5 +1,3 @@
-okx_429
-
 ## Install
 
 + 使用安装包：推荐使用vnpy官网安装包，如果担心和自己常用的Python环境冲突就把自己的环境删掉（狗头）
@@ -31,7 +29,7 @@ okx_429
 
 + Guid：
 	+ UI的Title是在哪里确定的，它除了作为UI的Title还有其他作用嘛？
-		+ 和其相关的配置文件（`custom.conf`， `default.conf`）是在哪里被保存、读取的，又保存在哪里呢》
+		+ 和其相关的配置文件（`custom.conf`， `default.conf`）是在哪里被保存、读取的，又保存在哪里呢？
 	+ 菜单栏的各个Widget是怎么被初始化的？
 		+ 对于系统这个菜单栏，里面各个Gateway的连接信息保存在哪里？
 	+ vnpy是高度模块解耦化，有些模块也有UI，那他们是怎么和“主”UI联系起来的呢？
@@ -75,7 +73,7 @@ okx_429
 + `engine.py`：核心，事件驱动引擎作为基础设施，而这里是主引擎`mainengne`，用来管理各个模块和网关以及某些app中内部的事件驱动引擎。
 	+ 这里有个属性就是事件驱动引擎，这里受限于Python的语言特点，它不应该理解为一个包含在mainengine里的engine，而是指针，指向mainengine使用的engine
 	+ 这里有个`BaseEngine`基类，它的意思是各个模块是由该基类派生，我们看它的定义有一个engine和mainengine，这里的理解和上面一样，指向该模块“归属于”那个mainengine
-		>所以从这里看`BaseEngine`中的`Engine`这个命令是有歧义的
+		>所以从这里看`BaseEngine`中的`Engine`这个命名是有歧义的
 
 	+ 这个代码中还有派生自`BaseEngine`的三个类：`LogEngine`、`OmsEngine`、`EmailEngine`
 		+ OmsEngine是重点，我们发现有大量的事件和事件对应的事件处理在这里被注册进事件驱动引擎的。
@@ -85,10 +83,6 @@ okx_429
 ## Gateway
 
 我们先来`/vnpy/trader/gateway.py`来看一看大基类`BaseGateway`是怎么个事
-
-
-
 + 在主引擎中
-
 	+ 有属性`self.gateways: Dict[str, BaseGateway] = {}`
 	+ 有方法`def add_gateway(self, gateway_class: Type[BaseGateway], gateway_name: str = "") -> BaseGateway:`

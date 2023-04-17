@@ -1,4 +1,4 @@
->Pre: [My notes of Intro](Programing-Language/Golang/0Intro.md)
+>Pre: [My notes of Intro](Programing-Language/Golang/README.md)
 
 + 块：小括号
 	```go
