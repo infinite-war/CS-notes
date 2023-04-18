@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "079d16569bcc60c7",
+        "id": "216fb4e619b56233",
         "type": "tabs",
         "children": [
           {
-            "id": "73174858373a61c7",
+            "id": "9d80afa338b2e9cc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,24 +138,56 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Create new canvas": false,
+      "canvas:新建白板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "73174858373a61c7",
+  "active": "9d80afa338b2e9cc",
   "lastOpenFiles": [
+    "Frontend/HTML.md",
+    "Frontend/CSS.md",
+    "README.md",
+    "resource/Fronted/语义标签.gif",
+    "resource/未命名.md",
+    "resource/Fronted",
+    "Quant/vnpy.md",
+    "未命名.md",
+    "Network/0计网概论.md",
+    "Network/未命名.md",
     "Programing-Language/C++/OOP3多态.md",
-    "Programing-Language/C++/OOP2继承.md",
-    "Programing-Language/C++/OOP1封装.md",
-    "Programing-Language/C++/OOP0介绍.md",
-    "Programing-Language/C++/OOP4友元.md",
-    "Programing-Language/C++/动态内存和RAII.md",
-    "Programing-Language/C++/RTTI.md",
     "Programing-Language/C++/Dynamic.md",
+    "Missing-Semester/SSH.md",
+    "Missing-Semester/Git.md",
+    "Missing-Semester/LinuxConfigGuide.md",
+    "Network/2计网数据链路层.md",
+    "Operating-System/操作系统4 IO.md",
+    "Software-Engineering/测试.md",
+    "Programing-Language/Golang/goroutine.md",
+    "Programing-Language/Python/Grammer.md",
+    "Programing-Language/Python/README.md",
+    "Programing-Language/Coroutine.md",
+    "Programing-Language/Golang/Base-Grammer.md",
+    "Quant/cryto-quant-survey.md",
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Software-Engineering/设计模式.md",
     "Programing-Language/Golang/README.md",
-    "Missing-Semester/SSH.md"
+    "Data-Science",
+    "Artificial-Intelligence/Knowledge-Graphs",
+    "trash_can",
+    "未命名.canvas",
+    "Quant",
+    "Web3",
+    "trash_can/针对密码前缀构造的攻击.jpg",
+    "trash_can/重要的群.jpg",
+    "trash_can/群.jpg",
+    "trash_can/消息验证原理.jpg",
+    "trash_can/有限群.jpg",
+    "trash_can/数字签名2证明.jpg",
+    "trash_can/数字签名2栗子.jpg",
+    "trash_can/数字签名2.jpg",
+    "trash_can/数字签名.jpg"
   ]
 }

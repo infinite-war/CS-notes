@@ -3,12 +3,11 @@
 + 使用安装包：推荐使用vnpy官网安装包，如果担心和自己常用的Python环境冲突就把自己的环境删掉（狗头）
 	+ 缺点：
 		+ 只能用于win
-		+ 会安装一个完整的Python环境
-+ 手动构建：既然选择手动构建，说明您不能忍受使用安装包的缺点喽，这里使用Poetry做虚拟环境管理（优秀）
+		+ 要安装一个完整的Python环境
++ 手动构建：既然选择手动构建，说明您不能忍受使用安装包的缺点，所以使用Poetry做虚拟环境管理来解决第二个问题
 	+ 官方提供`requirements.txt`文件，所以直接承接过来即可，但是其中有两个问题
 		1. `ta-lib`下载是真的麻烦，这边建议手动下载`whl`文件的方式安装
 		2. `PySide6`很容易在虚拟环境中依赖冲突，我这里将Python版本改为`>=3.10,<3.11`解决
-		+ 由于vnpy是模块化的，由于Python的语法特性，将依赖模块pip下来和源码放在项目目录下（放对）效果一样
 
 # Develop
 
@@ -18,31 +17,38 @@
 
 + 关于vnpy的设计哲学——高度模块化，把每个功能拆分成一个项目，如果需要再引入
 	+ 基础设施：数据库、数据服务、RestClient，WebSocketClient
-	+ app：策略模块
+	+ app：策略模块、回测模块
 	+ gateway：可以理解为各平台接口，是对各个平台API的封装
-		>我接触vnpy是为了在binance和okx上使用，而这两个平台有很多的python api，比如python-binance，python-okx，gatewaty相当于python vnpy api
+		>我接触vnpy是为了在binance和okx上使用，而这两个平台有很多的python api，比如python-binance，python-okx，gatewaty相当于vnpy对对应平台做的Python api
 
 ## UI
 >想看UI部分倒不一定必须有Qt基础，但是最好有图形化编程的基础。
 
-代码在`vnpy/trader/ui`中，先看`qt.py`再看`mainwindow.py`，而`widget.py`中都是辅助性窗口，看到哪里再跳转过去。
+代码在`vnpy/trader/ui/`目录下，先看`qt.py`再看`mainwindow.py`，而`widget.py`中都是辅助性窗口，看到哪里再跳转过去。
 
-+ Guid：
-	+ UI的Title是在哪里确定的，它除了作为UI的Title还有其他作用嘛？
-		+ 和其相关的配置文件（`custom.conf`， `default.conf`）是在哪里被保存、读取的，又保存在哪里呢？
-	+ 菜单栏的各个Widget是怎么被初始化的？
-		+ 对于系统这个菜单栏，里面各个Gateway的连接信息保存在哪里？
-	+ vnpy是高度模块解耦化，有些模块也有UI，那他们是怎么和“主”UI联系起来的呢？
++ `qt.py`是定义并返回了一个QApplication作为窗口的后台程序，`create_app`函数参数并非软件标题，而是是用于windows进程管理的
++ `mainwindows.py`是定义并返回了一个QWidget作为主窗口，这里的`windows_title`才是软件标题，但是它的作用不仅是标题，还是软件配置的保存路径，可以去`TRADER_DIR`所在文件看一下，返回它的函数先判断项目路径下有无`.vntrader`目录，没有则用户根目录下创建。所以这个变量即为用户根目录，和其对应的`TEMP_DIR`即为软件配置文件所在目录。
+	+ 在这里`self.windows_title`这个属性还有一个作用
 		```python
-		# vnpy/trader/ui/mainwindow.py
-		all_apps: List[BaseApp] = self.main_engine.get_all_apps()  
-        for app in all_apps:
-            ui_module: ModuleType = import_module(app.app_module + ".ui")
-            widget_class: QtWidgets.QWidget = getattr(ui_module, app.widget_name)  # noqa
-            func: Callable = partial(self.open_widget, widget_class, app.app_name)  # noqa
-            self.add_action(app_menu, app.display_name, app.icon_name, func, True)  # noqa
+		settings: QtCore.QSettings = QtCore.QSettings(self.window_title, name)
 		```
+		关于`QtCore.QSettings`具体的我不清楚，但是观测结果可以知道这是在`~/.config`这个目录下创建/写入/使用/读取/一个名为`self.windows_title`的目录，`name`则指的是这个目录下的一个文件，代码中共提到两个文件`custom.conf`和`default.conf`，这也是这部分狗血的地方，window_title的组成之一是TRADER_DIR就是一个路径，所以这玩意被它划分创建了一个多层目录的配置目录
+	+ 在`init_menu`的“连接”（原代码叫“系统”）QMenu，这里有两个重要的函数
+		+ `self.connect`：这个专门用于连接某个gateway，里面的类`ConnectDialog`从`filename`中保存/读取该gateway的配置信息，那么这些信息保存在哪里呢？这个属性被`load_json`调用，这个函数调用了`get_file_path`，我们发现这个路径是从`TEMP_DIR`开始的，上面已经讨论过了，这个是软件配置目录
+		+ `add_action`：它将一个QMenu和一个函数联系起来，比如这里就是对于点击链接这个QMenu的动作是调用上面的那个函数，继而打开对应的Dialog
+	+ 还是在`init_menu`函数中，下面给出主窗口如何调用各种app的窗口
+		```python
+		app_menu: QtWidgets.QMenu = bar.addMenu("功能")
+		all_apps: List[BaseApp] = self.main_engine.get_all_apps()
+		for app in all_apps:
+			ui_module: ModuleType = import_module(app.app_module + ".ui")
+			widget_class: QtWidgets.QWidget = getattr(ui_module, app.widget_name)  # noqa
+			func: Callable = partial(self.open_widget, widget_class, app.app_name)  # noqa
+			self.add_action(app_menu, app.display_name, app.icon_name, func, True)  # noqa
+		```
+		这里遍历所有app，通过module找到对应app的ui代码目录路径，最后的ui代码是app.widget_name，所以对于app我们可以通过它的`__init__.py`中类的这个属性得到它启动时是打开哪个QWidget类。
 
+	+ 还是在这个函数中，再往下则是侧边栏的各种功能，通过上面的讲解也能知道每个按钮打开的是哪个窗口，调用的是哪个函数。这里我们向“查询合约”操作深挖，它打开的是`ContractManager`这个类，点击会触发`show_contracts`方法，这个方法中通过主引擎的`get_all_contracts`方法得到信息，到这里我们还没有分析主引擎，先留下个hook
 ## Engine
 
 ### event engine
