@@ -1,69 +1,69 @@
 # 概述
 
 + **进程**：通信的真正主体
++ 复用(multiplesing)：发送方不同应用进程都可使用同一个运输层协议传送数据  
+	分用(demultiplexing)：接收方运输层在剥去报文首部后能够把数据正确交付目的的应用进程
 
-+ 复用(multiplesing)     ：发送方不同应用进程都可使用同一个运输层协议传送数据
++ 我们看这个图片：
+	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/逻辑通信.png)
+	
+	+ 网络层为主机之间提供逻辑通信  
+		运输层为应用进程之间提供端到端的逻辑通信
 
-  分用(demultiplexing)：接收方运输层在剥去报文首部后能够把数据正确交付目的的应用进程
-  
-+  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/逻辑通信.png)
-
-  + 网络层为主机之间提供逻辑通信
-
-    运输层为应用进程之间提供端到端的逻辑通信
-
-  + 运输层向高层用户屏蔽了下面网络核心的细节（网络拓扑、路由选择协议），使应用进程“看前来像”两个运输层实体之间的一条端到端的逻辑通信信道
+	运输层向高层用户屏蔽了下面网络核心的细节（网络拓扑、路由选择协议），使应用进程“看前来像”两个运输层实体之间的一条端到端的逻辑通信信道
 
 + 两个对等传输实体在通信时传送的数据单位：
-
-  OSI：运输协议数据单元TPDU(Transport Protocol Data Unit)
-
-  TCP/IP：TCP报文段(segment)/UDP用户数据报
+	+ OSI：运输协议数据单元TPDU(Transport Protocol Data Unit)
+	+ TCP/IP：TCP报文段(segment)/UDP用户数据报
 
 ## 协议
+>运输层新增第三种协议：流控制传输协议SCTP(Stream Control Transmission Protcol)\[RFC 4960\]
 
-> 运输层新增第三种协议：流控制传输协议SCTP(Stream Control Transmission Protcol)[RFC 4960]
-
-1. 用户数据报协议UDP(User Datagram Protocol)[RFC 768]
-2. 传输控制协议TCP(Transmission Control Protoocol)[RFC 793]
+1. 用户数据报协议UDP(User Datagram Protocol)\[RFC 768\]
+2. 传输控制协议TCP(Transmission Control Protoocol)\[RFC 793\]
 
 | UDP        | TCP            |
 | ---------- | -------------- |
 | 无连接     | 面向连接       |
 | 不可靠信道 | 全双工可靠信道 |
 
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/应用及其协议.png)
++ 场景：  
+	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/应用及其协议.png)
 
 ## 端口号
 
 协议端口号(protocol prot number)，简称端口(port)：
 
-> 1. 复用和分用的过程需要标志
->
-> 2. > 计算机OS中使用进程标识符（小整数）
->
-> 3. 计算机网络中不可以
->
->    1. OS类型多，标识符种类多
->
-> 4. 另外进程的创建和撤销是动态的
->
-> 端口的作用是这条信息交付到对应端口，然后再交付到对应进程
++ 需求：
+	+ 复用和分用的过程需要标志
+	>计算机操作系统中使用进程标识符区分进程  
+	>但是这个方法在计算机网络中是不可以的，因为操作系统类型多，这种标识符就多
 
-此处是软件端口，与硬件端口不同，是应用层的各个协议进程与运输实体进行层间交互的一种地址
+	+ 进程的创建和撤销是动态的
 
-+ 格式：16位（65535个）
+	所以端口的作用就是消息交付到对应端口，然后再交付到对应进程
 
-  端口号只有本地意义，是标志本计算机应用层中的各个进程在和运输层交互时的层间接口，在互联网中的不用计算机中，相同的端口号没有关联
+>这里是软件端口，不是硬件端口，是应用层的各个协议进程与运输实体进程层间交互的地址。
+
++ 格式：16位二进制（65535个）
++ 类型：
+	1. 服务端使用的端口号：
+		1. [wellknown port number熟知端口号/系统端口号](www.iana.org)：0~1023  
+			![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/常用的熟知端口号.png)
+			可在[这里](www.iana.org)查到，是IANA指派给TCP/IP最重要的应用程序的
+
+		2. 登记端口号：1024~49151  
+			需要在IANA上登记避免重复
+
+	2. 
 
 + 类型：
 
-  > 在信息传输过程中既需要IP地址，有要知道对应端口号
 
   1. 服务端使用的端口号
-     1. 熟知端口号(wellknown port number)//系统端口号：数值为0 ~1023
+     1. 熟知端口号()//系统端口号：数值为0 ~1023
      
-        ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/常用的熟知端口号.png)
+        
      
         > 可在网址`www.iana.org`查到
      

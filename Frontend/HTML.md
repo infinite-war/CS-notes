@@ -23,6 +23,8 @@
 + 特殊字符：
 	+ 左右小括号`&lt;`和`&gt;`
 	+ 空格`&nbsp;`
+	+ 引号`"`：`&quot;`
+	+ `&`：`&amp;`
 
 + `div`：块状元素，默认带`Enter`
 	+ 标题：`h1`、`h2`、`···`、`h6`
@@ -46,7 +48,7 @@
 + 图片`img`
 	+ `src`：文件链接
 	+ `alt`：文本描述
-	+ `width`/`height`：数字，单位像素
+	+ `width`/`height`：数字，单位像素`px`
 + 音频`audio`
 	如果第一个失效则使用第二个
 	```html
@@ -97,3 +99,4 @@
 
 ### 语义标签
 <img alt="img_sem_elements.gif" src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Fronted/语义标签.gif" style="cursor: pointer;">
+

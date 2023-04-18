@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "216fb4e619b56233",
+        "id": "9a0f2f5734694630",
         "type": "tabs",
         "children": [
           {
-            "id": "9d80afa338b2e9cc",
+            "id": "fec4a883eb7f0944",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,15 +145,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9d80afa338b2e9cc",
+  "active": "fec4a883eb7f0944",
   "lastOpenFiles": [
-    "Frontend/HTML.md",
     "Frontend/CSS.md",
+    "Network/5计网应用层.md",
+    "Network/4计网TCP层or运输层.md",
+    "Quant/vnpy.md",
+    "Frontend/HTML.md",
+    "Frontend/JavaScript.md",
+    "Frontend/README.md",
     "README.md",
     "resource/Fronted/语义标签.gif",
     "resource/未命名.md",
     "resource/Fronted",
-    "Quant/vnpy.md",
     "未命名.md",
     "Network/0计网概论.md",
     "Network/未命名.md",
@@ -171,9 +175,6 @@
     "Programing-Language/Coroutine.md",
     "Programing-Language/Golang/Base-Grammer.md",
     "Quant/cryto-quant-survey.md",
-    "Missing-Semester/WindowsConfigGuide.md",
-    "Software-Engineering/设计模式.md",
-    "Programing-Language/Golang/README.md",
     "Data-Science",
     "Artificial-Intelligence/Knowledge-Graphs",
     "trash_can",

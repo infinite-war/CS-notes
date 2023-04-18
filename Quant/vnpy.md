@@ -63,32 +63,39 @@
 + 事件驱动引擎，引擎即为发布-订阅设计模式中的中介。  
 	见代码`vnpy/event/engine.py`（下面的讲解有该模式本身，也有该模式在Python中的实现，也有在vnpy中的实现）
 	+ 事件：即类`Event`，两个属性分别表示事件的类型和数据
-	+ 事件处理器：即`HandlerType: callable = Callable[[Event], None]`，就是一个函数，参数为事件
+	+ 事件处理器：即`HandlerType: callable = Callable[[Event], None]`，就是一个函数，参数为事件，在某类事件出现时用参数为对应事件的事件处理器处理来处理表示订阅
 	+ 事件驱动引擎`EventEngine`
-		+ 事件注册：代码中最后两个方法，把一个事件处理器注册进引擎中
+		+ 事件注册：代码中最后两个方法，把一个事件处理器注册进引擎中，表示注册的事件处理器的参数的事件类型被订阅
 		+ 事件队列：类的一个属性，是一个线程安全的队列，有个线程不断的从队列中出去事件，并用注册了该事件类型的事件处理器去处理该事件。
 			+ 外界可以不断的往里`put`事件
 
 ### main engine
-我们来到了vnpy的核心，在`vnpy/trader/`下
+我们来到了vnpy的核心，在`vnpy/trader/`目录下
 
 + `event.py`：很简短，各常量是事件引擎中的事件的类型
-+ `setting.py`：很简短，关于UI的初始化配置，但是我找不到它是什么时候被保存的
-+ app基类在`app.py`的`BaseApp(ABC)`，所有app都派生自该基类
++ `setting.py`：很简短，关于UI的初始化配置。
+	+ 值得一提的是，你看这里通过`load_json`函数对配置进行了更新，这个更新是更新的对应键，所以如果最开始没有这个配置文件就什么也不会更新合理，那么这些配置什么时候保存到本地的呢？我们进入这个load_json函数，我们发现如果它遇到一个不存在的函数则会创建一个空的同名json文件并返回空的dict，这时这个配置文件被创建了，那么什么时候这个配置文件真的发挥作用呢？因为我们发现按照Update的逻辑，空了配置文件也不会对内存中的配置dict有影响。是在`mainwindows.py`的这里
+		```python
+		action: QtGui.QAction = QtWidgets.QAction("配置", self)
+		action.triggered.connect(self.edit_global_setting)
+		bar.addAction(action)
+		```
+		这里的`self.edit_global_setting`方法会创建一个`GlobalDialog()`对象，在这里的`update_setting`方法有一个`save_json`函数
++ app基类在`app.py`的`BaseApp(ABC)`，所有app都派生自该基类  
 	gateway基类在`gateway.py`的`BaseGateway(ABC)`，所有gateway都派生自该基类
 + `engine.py`：核心，事件驱动引擎作为基础设施，而这里是主引擎`mainengne`，用来管理各个模块和网关以及某些app中内部的事件驱动引擎。
 	+ 这里有个属性就是事件驱动引擎，这里受限于Python的语言特点，它不应该理解为一个包含在mainengine里的engine，而是指针，指向mainengine使用的engine
-	+ 这里有个`BaseEngine`基类，它的意思是各个模块是由该基类派生，我们看它的定义有一个engine和mainengine，这里的理解和上面一样，指向该模块“归属于”那个mainengine
+	+ 这里有个`BaseEngine`基类，它的意思是各个模块是由该基类派生，我们看它的定义有一个engine和mainengine，这里的理解和上面一样，指向该模块“归属于”哪个mainengine，用的是哪个event engine
 		>所以从这里看`BaseEngine`中的`Engine`这个命名是有歧义的
 
 	+ 这个代码中还有派生自`BaseEngine`的三个类：`LogEngine`、`OmsEngine`、`EmailEngine`
-		+ OmsEngine是重点，我们发现有大量的事件和事件对应的事件处理在这里被注册进事件驱动引擎的。
+		+ OmsEngine是重点，我们发现有大量的事件和事件对应的事件处理器在这里被注册进事件驱动引擎的。
+			>这个类的意义就是专门用来添加方法的，不然这么多的内容注册放在MainEngine中会很乱。
 
-其余部分的解析结合下面的部分介绍
+		+ LogEngine是用来初始化一个`logging`模块的，它的处理仍然使用的主体的EventEngine
+		+ EmailEngine则有独立的线程，专门处理
+			>这个线程并未使用事件驱动，就是来一个任务干一个，只有一种任务
 
-## Gateway
+下面会分别结合一个gateway和app来解释vnpy整体上是怎么工作的。
 
-我们先来`/vnpy/trader/gateway.py`来看一看大基类`BaseGateway`是怎么个事
-+ 在主引擎中
-	+ 有属性`self.gateways: Dict[str, BaseGateway] = {}`
-	+ 有方法`def add_gateway(self, gateway_class: Type[BaseGateway], gateway_name: str = "") -> BaseGateway:`
+## 基础设施
