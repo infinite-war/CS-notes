@@ -1,6 +1,15 @@
 层叠样式表
 
 + 注释：`/* commit */`
++ 末尾使用`;`
+
++ 单位：
+	+ `px`：设备上的像素点
+	+ `%`：相对于父元素的百分比
+	+ `em`：相对于当前元素的字体大小
+	+ `rem`：相对于根元素的字体大小
+	+ `vw`：相对于视窗宽度的百分比
+	+ `vh`：相对于视窗高度的百分比
 
 + 定义：
 	+ 行内样式表：作为HTML中Tag的属性`style`
@@ -71,5 +80,35 @@
 	+ `::before`：可以在元素前插入内容
 
 ## 颜色
+>颜色的RGB表示法，颜色可以用红绿蓝这三原色表示，我们让每个为0~255的值表示
 
-+ 表示：RGB：三元组红绿蓝，分别取值0~255，可以用一个六位十六进制数表示
++ 表示方法：
+	+ 名字
+	+ RGB的十六进制表示（六位）
+		>0~255是2的8次幂，则一个三原色可以用两个十六进制表示
+
+	+ `rgb(x, y, z)`
+		+ 还能再添加一位表示透明度
+
+## 字体
+
++ `font-size`大小
++ `font-style`斜体
++ `font-weight`粗细
++ `font-family`字体
+
+## 文本
++ `text-align`：对齐：center left right
++ `line-height`：行高
++ `letter-spacing`：间距
++ `text-indent`：缩进
++ [`text-decoration`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration)：装饰
++ `text-shadow`：阴影
+
+## 背景
+
+`background`
+
+## 边框
+
+`border`

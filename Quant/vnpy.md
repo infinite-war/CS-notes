@@ -4,35 +4,46 @@
 	+ 缺点：
 		+ 只能用于win
 		+ 要安装一个完整的Python环境
-+ 手动构建：既然选择手动构建，说明您不能忍受使用安装包的缺点，所以使用Poetry做虚拟环境管理来解决第二个问题
-	+ 官方提供`requirements.txt`文件，所以直接承接过来即可，但是其中有两个问题
-		1. `ta-lib`下载是真的麻烦，这边建议手动下载`whl`文件的方式安装
-		2. `PySide6`很容易在虚拟环境中依赖冲突，我这里将Python版本改为`>=3.10,<3.11`解决
++ 手动构建：在Ubuntu上只能选择手动构建，但是提醒您的是vnpy的构建方式对机器原生的系统是侵入式的，无论是win还是Ubuntu都要抱着自己的环境被污染的准备
++ [我的项目](https://github.com/zweix123/znpy)：为了解决vnpy的部署对原生环境的破坏，我考虑将vnpy构建在由Poetrty维护的虚拟环境中，所以您可以在我的基础上进行构建，我已经完成了最困难的部分
+	+ 最困难的部分：
+		>官方提供了`requirements.txt`文件，那么还有什么困难呢？原因在下面两点。
+
+		1. `ta-lib`的依赖是一般机器所没有的，这里建议使用手动下载`whl`文件的方式安装
+		2. `PySide6`很容易在由Poetry维护的虚拟环境中出现依赖冲突，这里我的解决方法可以参考项目中的`pyproject.toml`文件
 
 # Develop
 
-+ Tips：
-	+ 妙用跳转和全局搜索（全局是项目级别的不是文件级别的）
-	+ 妙用ChatGPT，对于使用的标准库直接问它是怎么回事就行，不用纠结。
-
-+ 关于vnpy的设计哲学——高度模块化，把每个功能拆分成一个项目，如果需要再引入
-	+ 基础设施：数据库、数据服务、RestClient，WebSocketClient
-	+ app：策略模块、回测模块
-	+ gateway：可以理解为各平台接口，是对各个平台API的封装
-		>我接触vnpy是为了在binance和okx上使用，而这两个平台有很多的python api，比如python-binance，python-okx，gatewaty相当于vnpy对对应平台做的Python api
++ 我会讨论的部分：
+	+ 基础设施：RestClient，WebSocketClient、数据库、数据服务
+	+ App：策略模块、回测模块
+	+ Gateway：OKEX、Binance
+		>交易的最底层要落实到对应平台的API上，发送HTTPS GET请求Python确实可以，但是这样直接简单的发送请求的话代码是不易维护，于是有各种各样的封装/抽象层，vnpy gateway即为vnpy对这些平台API的封装。
 
 ## UI
->想看UI部分倒不一定必须有Qt基础，但是最好有图形化编程的基础。
 
-代码在`vnpy/trader/ui/`目录下，先看`qt.py`再看`mainwindow.py`，而`widget.py`中都是辅助性窗口，看到哪里再跳转过去。
++ 选择从UI入口是因为，没有为什么，个人觉得合适。
++ 这部分倒不需要必须有Qt基础，但是最好有图形化编程的基础，有很多写法很“图形化”，另外Qt有独特的概念：信号和槽
+	+ 信号就像这样`signal: QtCore.Signal = QtCore.Signal(参数)`，每个信号可以绑定一个槽`signal.connect(槽函数)`，如果信号调用`emit`方法即会调用对应的槽  
+		其中信号的参数即为通信的方式，在emit中放入，要求绑定的槽函数有一样的参数
 
-+ `qt.py`是定义并返回了一个QApplication作为窗口的后台程序，`create_app`函数参数并非软件标题，而是是用于windows进程管理的
-+ `mainwindows.py`是定义并返回了一个QWidget作为主窗口，这里的`windows_title`才是软件标题，但是它的作用不仅是标题，还是软件配置的保存路径，可以去`TRADER_DIR`所在文件看一下，返回它的函数先判断项目路径下有无`.vntrader`目录，没有则用户根目录下创建。所以这个变量即为用户根目录，和其对应的`TEMP_DIR`即为软件配置文件所在目录。
-	+ 在这里`self.windows_title`这个属性还有一个作用
+代码在`vnpy/trader/ui/`目录下，先看`qt.py`再看`mainwindow.py`，文件`widget.py`中的都是辅助性窗口，看到哪里再跳转过去。
+
++ `qt.py`：定义、配置并返回了一个QApplication作为后台程序，`create_app`函数参数并非窗口标题，而是用于windows进程管理的
++ `mainwindows.py`：定义、配置并返回了一个QWidget作为主窗口，这里的`windows_title`才是窗口标题
+	+ 标题`windows_title`，其作用不仅是窗口title，还是软件配置的保存路径，可以去`TRADER_DIR`所在的文件`vnpy/trader/setting.py`中，返回它的函数是先判断项目路径下有无名为`.vntrader`的目录，没有则在用户根目录`~`创建。所以这个变量即为用户根目录，和其对应的`TEMP_DIR`即为软件配置文件所在目录  
+		`windows_title`还有一个作用，看下面的代码
 		```python
 		settings: QtCore.QSettings = QtCore.QSettings(self.window_title, name)
 		```
-		关于`QtCore.QSettings`具体的我不清楚，但是观测结果可以知道这是在`~/.config`这个目录下创建/写入/使用/读取/一个名为`self.windows_title`的目录，`name`则指的是这个目录下的一个文件，代码中共提到两个文件`custom.conf`和`default.conf`，这也是这部分狗血的地方，window_title的组成之一是TRADER_DIR就是一个路径，所以这玩意被它划分创建了一个多层目录的配置目录
+		关于`QtCore.QSettings`的具体功能我不清楚，但是观测结果是这是对文件`~/.config/${windows_title}/name`进行读写，代码中作为name的有`custom.conf`和`default.conf`
+		>这也是vnpy狗血的地方，在Linux中`TRADER_DIR`是一个路径，这个路径作为一个字符串的子串，然后按这个子串去创建目录则会连续嵌套创建多个。
+
+	+ 在`init_menu`方法中有些值得讨论的地方（从`__init__`到`init_ui`到`init_menu`）
+		+ 在“连接”（原代码叫“系统”）中，如何获得`gateway_names`暂时跳过，我们看对每个gateway是怎么处理的。
+
+
+
 	+ 在`init_menu`的“连接”（原代码叫“系统”）QMenu，这里有两个重要的函数
 		+ `self.connect`：这个专门用于连接某个gateway，里面的类`ConnectDialog`从`filename`中保存/读取该gateway的配置信息，那么这些信息保存在哪里呢？这个属性被`load_json`调用，这个函数调用了`get_file_path`，我们发现这个路径是从`TEMP_DIR`开始的，上面已经讨论过了，这个是软件配置目录
 		+ `add_action`：它将一个QMenu和一个函数联系起来，比如这里就是对于点击链接这个QMenu的动作是调用上面的那个函数，继而打开对应的Dialog
@@ -98,4 +109,97 @@
 
 下面会分别结合一个gateway和app来解释vnpy整体上是怎么工作的。
 
-## 基础设施
+## Infrastructure
+
+关于协程的基本知识可以查看我的[笔记](https://github.com/zweix123/CS-notes/blob/master/Programing-Language/Python/Concurrency.md#%E5%8D%8F%E7%A8%8B)，这里讲一些vnpy对相关api的使用。
+
+启动是这样的语句
+```python
+"""启动客户端的事件循环"""
+try:
+	self.loop = get_running_loop()
+except RuntimeError:
+	self.loop = new_event_loop()
+
+start_event_loop(self.loop)
+```
+这里就是找到一个正在运行的event loop，如果找不到则创建一个，然后用这个event loop去运行`start_event_loop`这个函数，那么这个函数是什么呢？
+```python
+def start_event_loop(loop: AbstractEventLoop) -> None:
+    """启动事件循环"""
+    # 如果事件循环未运行，则创建后台线程来运行
+    if not loop.is_running():
+        thread = Thread(target=run_event_loop, args=(loop,))
+        thread.daemon = True
+        thread.start()
+```
+我们发现这个协程是丢给一个线程去运行的，具体是让一个线程去运行`run_event_loop`这个函数，那么这又是什么函数呢？
+```python
+def run_event_loop(loop: AbstractEventLoop) -> None:
+    """运行事件循环"""
+    set_event_loop(loop)
+    loop.run_forever()
+```
+这里就明朗了，vnpy将拿到/创建的event loop作为当前的event loop并让它一直运行，而这个运行也是在子线程中。
+>说道这里说明在拿到event loop的语句里，基本就是通过catch exception创建，所以这里语义上是需要这个异常的，且预测这个异常应该抛出。
+
+这里我们的当前线程就是不断的将任务给到运行在子线程的event loop了，怎么做的呢？
+```python
+fut: Future = run_coroutine_threadsafe(coro, self.loop)
+return fut.result()
+```
+这里的`coro`是一个coroutine object，通过api run_coroutine_threadsafe交给event loop去运行，然后拿到结果。
+
+### vnpy_rest
+
+有了上面的解释，这份代码就好理解了。
+
+其中`Request`和`Reponse`这两个类就是数据传输对象
+
+对于`RestClient`，其中的`request`方法即是发送一个request，得到reponse；`add_request`则是通过回调函数去处理request的reponse。
+
+### vnpy_websocket
+
+和vnpy_rest非常类似。
+
++ `send_packet(dict)`发包：包括编码和发包
++ `unpack_data(str)`解包：没有收包，只有编码
+
++ `start`会在子线程的event loop中运行这样一个函数`_run`，这里，返回的建立连接，处理收到的信息和断开连接，共有三个回调函数
+	+ `on_packet(dict)`对收到的信息的处理（dict已经被解包）
+	+ `on_connected()`连接回调
+	+ `on_disconnected()`断开回调
+
+	这三个函数由子类实现继而实现对应功能
+
+## Gateway
+
+这里的复杂性体现在子类实现大量的基类要求的那些函数，而整体逻辑上不难。
+
+值得一提的是关于websocket相关派生类的回调，它是做了一个字符串到函数的映射，在`on_packet`的回调用通过字符串找到对应的函数去处理对应的数据。
+
+### vnpy_okex
+>目前(2023.4.18)，vnpy官网的版本还有bug，可以使用我的版本。
+
+## App
+
+关于主引擎对各个app的调用在main engine中已经讨论，可以看各个app目录的`__init__.py`文件中派生自`BaseApp`的类的这两个属性`engine_class`和`widget_name`，分别指app使用的引擎类和窗口名，有意思的是引擎类执行一个具体的类，而窗口名只是对应的窗口的类的名字，这和主引擎、主窗口引入它们的方式有关。
+
+这里的引擎，使用的也是主引擎使用的事件驱动引擎（整个程序都使用的是唯一的一个事件驱动引擎（至少主要部分是这样）），所以这里的引擎的性质也和main engine类似，是event engine和外界的接口。
+
+### vnpy_ctastrategy
+
+相信您对这个模块最好奇的地方一定在于，为什么我们派生自`CtaTemplate`的类中定义的各个方法可以按照规定去执行。
+
++ 策略的载入：
+
+	窗口的构造会调用cta engine的`init_engine`，在这个方法中，会调用`load_strategy_class`方法，是在这里载入的各个模块类（这个载入过程也比较复杂）
+
++ 策略的初始化、启动和停止：
+
+	在窗口类中有三个方法：`init_strategy`、`start_strategy`、`stop_strategy`，参数即为“策略对象名”，在这里通过`call_strategy_func`调用策略的具体方法
+
++ 策略的运行：
+
+	在策略的启动方法（`start_strategy`）最后有一句`self.put_strategy_event(strategy)`这个方法的是向事件驱动引擎放一个事件类型为`EVENT_CTA_STRATEGY`的事件，联想到event egnine的性质，我们想办法找到这个事件类型是什么时候被注册进去的，是在窗口类的`register_event()`方法中，但是它是先给一个“信号”绑定了一个“槽”，然后为上面的事件类型注册的事件处理器是这个信号的`emit`。这里是关于Qt的设计，这部分就可以理解为，信号会将信号的参数作为槽函数的参数去调用槽，所以这里仅仅是相当于一个转换，本质就是调用信号绑定的`process_strategy_event`函数。在这个函数中，引入了这个类`StrategyManager`，在这个函数中的其余或者相关语法都是关于前端展示的，想要看具体的逻辑还要。。。很好，断了。
+
