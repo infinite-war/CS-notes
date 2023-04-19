@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1d1c0e019f2f89dd",
+        "id": "37beb008c0bad786",
         "type": "tabs",
         "children": [
           {
-            "id": "2bdd1747e1551bbd",
+            "id": "a41ccb159ed4a556",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,7 +145,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2bdd1747e1551bbd",
+  "active": "a41ccb159ed4a556",
   "lastOpenFiles": [
     "Quant/vnpy.md",
     "Frontend/JavaScript.md",
