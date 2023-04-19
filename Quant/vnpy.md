@@ -1,3 +1,5 @@
+我期望这篇文章能让其他vnpy二次开发者少走一个月弯路
+
 ## Install
 
 + 使用安装包：推荐使用vnpy官网安装包，如果担心和自己常用的Python环境冲突就把自己的环境删掉（狗头）
@@ -100,8 +102,11 @@
 
 + `engine.py`：核心，事件驱动引擎是基础设施，主引擎`mainengne`则是使用者，管理各个app和gateway，为它们对接event engine，还会对接不同app中的引擎
 	+ 这里有个属性就是事件驱动引擎，这里受限于Python的语义，它不应该理解为一个包含在mainengine里的engine，而是指针，指向mainengine使用的engine
-	+ 这里有个`BaseEngine`基类，各个app中的引擎由该基类派生，我们看它的定义有一个engine和mainengine，这里的理解和上面类似，表示“归属于”哪个mainengine，用的是哪个event engine
+	+ 这里有个`BaseEngine`基类，各个app中的引擎由该基类派生，我们看它的定义有一个engine和mainengine，这里的理解和上面类似，表示“归属于”哪个mainengine，用的是哪个event engine。
 		>这里可以管中窥豹一下，各大app中的引擎为什么需要知道event engine呢？因为整体上就只有一个event engine，即使是app中的engine，也是用的这个event engine
+
+		实际上，其他engine就是用的整体的event engine，但是并非没有自己独立运行“逻辑”的能力，有单开一个线程的，有用`ThreadPoolExecutor`的，所以下面如果遇到不应惊讶，我也不会专门的提。
+
 
 	+ 这个代码中还有派生自`BaseEngine`的三个类：`LogEngine`、`OmsEngine`、`EmailEngine`
 		+ OmsEngine是重点，我们发现有大量的事件和事件对应的事件处理器在这里被注册进事件驱动引擎的。
@@ -149,10 +154,11 @@ def run_event_loop(loop: AbstractEventLoop) -> None:
 
 这里我们的当前线程就是不断的将任务给到运行在子线程的event loop了，怎么做的呢？
 ```python
+coro: coroutine = 一个使用关键字async标记的函数
 fut: Future = run_coroutine_threadsafe(coro, self.loop)
 return fut.result()
 ```
-这里的`coro`是一个coroutine object，通过api run_coroutine_threadsafe交给event loop去运行，然后拿到结果。
+这里的`coro`是一个coroutine object，通过api `run_coroutine_threadsafe`交给event loop去运行，然后拿到结果。
 
 ### vnpy_rest
 
@@ -189,18 +195,4 @@ return fut.result()
 关于主窗口如何和各个app的窗口产生连接已经在ui部分讨论过，可以看到各个app目录下的`__init__.py`文件中派生自`BaseApp`的类的两个属性`engine_class`和`widget_name`，分别指app使用的引擎和窗口，引擎是一个具体的类的实现，窗口是是一个类的名字的字符串，为什么这样也在ui部分讨论过了。这里的引擎，最终使用的也是主引擎的时间驱动引擎，这部分也在主引擎部分讨论过了。所以这里的app的引擎更像是main engine而不是event engine，是event engine的使用者。
 
 ### vnpy_ctastrategy
-
-相信您对这个模块最好奇的地方一定在于，为什么我们派生自`CtaTemplate`的类中定义的各个方法可以按照规定去执行。
-
-+ 策略的载入：
-
-	窗口的构造会调用cta engine的`init_engine`，在这个方法中，会调用`load_strategy_class`方法，是在这里载入的各个模块类（这个载入过程也比较复杂）
-
-+ 策略的初始化、启动和停止：
-
-	在窗口类中有三个方法：`init_strategy`、`start_strategy`、`stop_strategy`，参数即为“策略对象名”，在这里通过`call_strategy_func`调用策略的具体方法
-
-+ 策略的运行：
-
-	在策略的启动方法（`start_strategy`）最后有一句`self.put_strategy_event(strategy)`这个方法的是向事件驱动引擎放一个事件类型为`EVENT_CTA_STRATEGY`的事件，联想到event egnine的性质，我们想办法找到这个事件类型是什么时候被注册进去的，是在窗口类的`register_event()`方法中，但是它是先给一个“信号”绑定了一个“槽”，然后为上面的事件类型注册的事件处理器是这个信号的`emit`。这里是关于Qt的设计，这部分就可以理解为，信号会将信号的参数作为槽函数的参数去调用槽，所以这里仅仅是相当于一个转换，本质就是调用信号绑定的`process_strategy_event`函数。在这个函数中，引入了这个类`StrategyManager`，在这个函数中的其余或者相关语法都是关于前端展示的，想要看具体的逻辑还要。。。很好，断了。
-
+相信您对这个app最好奇的地方一定是它是怎么将我们通过派生`CtaTemplate`的方式写的策略去执行的
