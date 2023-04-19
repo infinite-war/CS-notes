@@ -16,7 +16,7 @@ Google要处理互联网上海量的数据，对于这样数量级的数据，�
 
 启发于函数式编程中的map和reduce源语。
 
-工程师只需要考虑编写分布式程序的第一个问题，这里是将算法转换成符合“使用Map和Reduce的函数的编程范式”的算法，将两个实现交给MapReduce，系统内部来面对分布式的复杂性，继而实现我们的需求。
+工程师只需要考虑编写分布式程序的第一个问题，即将算法转换成符合“使用Map和Reduce的函数的编程范式”的算法，将两个实现交给MapReduce，系统内部来面对分布式的复杂性，继而满足需求。
 
 >这其实是一个受限制的实现，因为将原本的算法转换成符合这个程序模型的实现
 >+ 需要成本
@@ -50,7 +50,7 @@ Google要处理互联网上海量的数据，对于这样数量级的数据，�
 		+ 对于map worker，它的fail会让所有被它完成过的task的state init idle
 			>因为这些task的输出在这些worker的desk上，已经不能读取了。
 
-			如果这些task被其他map worker re-exectued，则会让所有reduce worker知道（继而不回去本来的worker上rpc-read）
+			如果这些task被其他map worker re-exectued，则会让所有reduce worker知道（继而不会去原来的worker上rpc-read）
 			+ 还记得map worker ok后会发message给master，master只接受一个，如果有一个message描述的是一个completed task，则会忽略
 
 		+ 对于正在进行的task，无论是map worker还是reduce work，都将state init为idle
@@ -60,4 +60,6 @@ Google要处理互联网上海量的数据，对于这样数量级的数据，�
 		这样简单的设计就让MapReduce有很强的弹性
 
 	+ master failed：这是一个中心式的分布式系统，如果master寄了，我们就认为它寄了
-		>其实可以通过定时快照master的状态来回复。
+		>其实可以通过定时快照master的状态来恢复。
+
+	+ 最后的stragglers，将同样的任务给多个worker

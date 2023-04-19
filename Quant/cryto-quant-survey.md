@@ -1,8 +1,6 @@
 + [CoinMarketCop](https://coinmarketcap.com/)：
 + [BTR](https://backtest-rookies.com/)
 
-
-
 + [KBR](https://github.com/kerwinyc/kbt_)：一个简单的回测程序
 + [OnePy](https://github.com/Chandlercjy/OnePy)：一个比较优雅（README好看）的学习项目？（带教程）
 + [pyinvesting](https://github.com/crapher/pyinvesting)：Market and historical data downloader
