@@ -7,7 +7,7 @@
   "foldHeading": false,
   "newFileLocation": "current",
   "attachmentFolderPath": "/",
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "strictLineBreaks": true,
   "showFrontmatter": true,
   "showIndentGuide": true,

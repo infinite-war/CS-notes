@@ -1,4 +1,5 @@
 [Manual](https://go.dev/)
+[Go by Example](https://gobyexample-cn.github.io/)
 
 ## Install
 按照[manual](https://go.dev/doc/install)下载即可
