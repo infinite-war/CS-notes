@@ -25,6 +25,7 @@
 
 + 常用快捷键：
 	+ `Ctrl + ~`/`Ctrl + num`切换terminal和workspace
+	+ `Ctrl + \`左右分屏
 
 + 常用命令：
 	+ 格式化：手动，快捷键`Shift + Alt + f`，效果依赖于插件

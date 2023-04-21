@@ -1,5 +1,6 @@
 + 参考资料
 	+ MIT的[6.824](https://pdos.csail.mit.edu/6.824/schedule.html)（2023年春改名6.5840）
+	+ 中文讲义：https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/
 
 ---
 

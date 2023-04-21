@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "458c4acbb76307eb",
+        "id": "f4ba0456745ba435",
         "type": "tabs",
         "children": [
           {
-            "id": "6f4950f87bfe1eb2",
+            "id": "4a351bfb5d68fda4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,8 +147,13 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
-    "Distributed-System/MapReduce.md",
+    "Distributed-System/Storage/GFS.md",
     "Distributed-System/README.md",
+    "Distributed-System/MapReduce.md",
+    "Distributed-System/RPC.md",
+    "Database-System/README.md",
+    "Distributed-System/Consensus/README.md",
+    "blog/VSCode.md",
     "Programing-Language/Golang/README.md",
     "Programing-Language/Golang/Base-Grammer.md",
     "Programing-Language/Golang/goroutine.md",
@@ -164,15 +169,10 @@
     "Distributed-System/Consensus/PacificA.md",
     "Distributed-System/Storage/Ceph.md",
     "Distributed-System/Storage/Curve.md",
-    "Distributed-System/Storage/GFS.md",
-    "Distributed-System/RPC.md",
     "Quant/cryto-quant-survey.md",
     "Quant/README.md.md",
     "Programing-Language/Python/Grammer.md",
     "Programing-Language/Python/Django.md",
-    "Programing-Language/Python/CPython.md",
-    "Programing-Language/Python/Concurrency.md",
-    "Quant/vnpy.md",
     "resource/Fronted/语义标签.gif",
     "resource/Fronted",
     "Data-Science",
