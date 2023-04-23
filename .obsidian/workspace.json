@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "929b11df013052e4",
+        "id": "6cec94a6be2749b6",
         "type": "tabs",
         "children": [
           {
-            "id": "ebfaad879c51c6c5",
+            "id": "331ec1131be14986",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,14 +145,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ebfaad879c51c6c5",
+  "active": "331ec1131be14986",
   "lastOpenFiles": [
+    "Linux/shell.md",
+    "Programing-Language/Golang/README.md",
     "Distributed-System/Storage/GFS.md",
     "Distributed-System/MapReduce.md",
     "blog/Multi-computer Cooperation.md",
     "blog/How to use Chatgpt.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "Programing-Language/Golang/README.md",
     "Programing-Language/Python/Grammer.md",
     "Quant/cryto-quant-survey.md",
     "Distributed-System/README.md",
@@ -172,7 +173,6 @@
     "Distributed-System/Consensus/Raft.md",
     "Distributed-System/Consensus/Paxos.md",
     "Distributed-System/Consensus/PacificA.md",
-    "Distributed-System/Storage/Ceph.md",
     "resource/Fronted/语义标签.gif",
     "resource/Fronted",
     "Data-Science",

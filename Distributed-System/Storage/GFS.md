@@ -43,8 +43,10 @@
 ### Master
 
 + data structure
-	+ file name - list\[chunk id / chunk handle \] —— nv
-	+ chunk id - chunk data
+	+ file table: file name - list\[chunk id / chunk handle\] —— nv
+		>课上chunk id和chunk handle是同义词，下面只使用handle
+	
+	+ chunk table: chunk handle - chunk data
 		+ chunk data
 			+ list\[server\] —— v, 可以通过通信恢复
 			+ chunk version —— 和实现有关
@@ -56,7 +58,26 @@
 + log：数据结构存储在内存中，如果master failed，则数据丢失，所以在写数据时master会将一部分数据写入desk，即为log，并偶尔生成一个checkpoint（快照）
 	>没有使用数据库是因为log追加多快呀
 
+## chunk server
+普通的Linux机器，有一到两块硬盘，使用linux文件系统存储chunk（比如以chunk handle来命令文件）
 
-#### read
+### read
 
-1. tuple\[\]
+1. clent: tuple\[file name, offset\] -> master: 
+	1. master从file table中得到list, 因为每个chunk大小固定，所以index可以直接求出，继而得到chunk handle
+	2. master从chunk table中得到server list, return client
+
+2. client: 从list选择一个去读
+
++ client会cache return
+
+3. client:\[chunk handle, offset\] -> chunk server: return data
+
++ 如何request超过64MB或者跨过chunk边界怎么办？
+	+ GFS有相应的库，会将这样的request分成多个request
+
+## write
+
++ append：
+	+ 有接口得到文件最后一个chunk handle
+	+ 对于多client的写，有接口得到最后一个chunk的server
