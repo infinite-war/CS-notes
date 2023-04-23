@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f4ba0456745ba435",
+        "id": "7fed10f870c56907",
         "type": "tabs",
         "children": [
           {
-            "id": "4a351bfb5d68fda4",
+            "id": "b8b5ba35a9b4fbc1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,57 +138,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
+      "canvas:Create new canvas": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "b8b5ba35a9b4fbc1",
   "lastOpenFiles": [
-    "Distributed-System/Storage/GFS.md",
-    "Distributed-System/README.md",
-    "Distributed-System/MapReduce.md",
-    "Distributed-System/RPC.md",
-    "Database-System/README.md",
-    "Distributed-System/Consensus/README.md",
-    "blog/VSCode.md",
+    "Quant/浮云策略.md",
+    "Algorithm/Math/数学1数论2同余理论.md",
+    "Algorithm/Math/数学1数论1整除理论.md",
+    "blog/How to use Chatgpt.md",
+    "Compiler/编译原理.md",
+    "Compiler/yacc&lex.md",
     "Programing-Language/Golang/README.md",
-    "Programing-Language/Golang/Base-Grammer.md",
     "Programing-Language/Golang/goroutine.md",
-    "Programing-Language/README.md",
-    "Programing-Language/Golang/debug.md",
-    "Programing-Language/Golang/lib/spf13.md",
-    "Programing-Language/Golang/lib/rpc.md",
-    "Programing-Language/Golang/lib/ProtoBuf.md",
-    "Programing-Language/Golang/lib/misc.md",
-    "Programing-Language/Golang/lib/http.md",
-    "Distributed-System/Consensus/Raft.md",
-    "Distributed-System/Consensus/Paxos.md",
-    "Distributed-System/Consensus/PacificA.md",
-    "Distributed-System/Storage/Ceph.md",
-    "Distributed-System/Storage/Curve.md",
-    "Quant/cryto-quant-survey.md",
-    "Quant/README.md.md",
-    "Programing-Language/Python/Grammer.md",
-    "Programing-Language/Python/Django.md",
-    "resource/Fronted/语义标签.gif",
-    "resource/Fronted",
-    "Data-Science",
-    "Artificial-Intelligence/Knowledge-Graphs",
-    "trash_can",
-    "未命名.canvas",
-    "Quant",
-    "Web3",
-    "trash_can/针对密码前缀构造的攻击.jpg",
-    "trash_can/重要的群.jpg",
-    "trash_can/群.jpg",
-    "trash_can/消息验证原理.jpg",
-    "trash_can/有限群.jpg",
-    "trash_can/数字签名2证明.jpg",
-    "trash_can/数字签名2栗子.jpg",
-    "trash_can/数字签名2.jpg",
-    "trash_can/数字签名.jpg"
+    "Distributed-System/Storage/GFS.md",
+    "Distributed-System/README.md"
   ]
 }
