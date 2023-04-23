@@ -99,3 +99,6 @@
 LocalSend
 
 >也没那么好用，还在摸索
+
+## Twomon SE
+据说这个能让pad做扩展屏？我还没有pad，先mark下

@@ -209,7 +209,7 @@
 
 + 安装：使用国内网在Microsoft Store直接搜索下载（这也是Manual推荐的）
 + 使用：
-	+ 快捷键`win + r`键入`pwsh`打开一个Windows Terminal
+	+ 快捷键`win + r`键入`wt`打开一个Windows Terminal
 		>报错：报错VCRUNTIME140_1.dll缺失：在C盘搜寻文件，将其复制到`C:\Windows\System\`即可
 
 	+ 在文件资源管理器中右键在终端打开

@@ -115,6 +115,19 @@ generator较于itrator的新功能`send`：yield语句可以有“左值”，�
 	```
 	具体的，`TYPE_CHECKING`在类型检查时为`False`，而在实际运行时为`True`，这样的写法要求这里的`名称`在当前的包内也是只做类型检查
 
++ 多选：`|`分割
++ 某种类型或者`None`：`Optional`
++ 函数没有返回值：`NoReturn`
++ 函数：`Callabel[[参数, ]返回值]`
++ 特定项：`Literal`
+	+ 但是变量复制就飘红-》给变量做type hint，但是太长，而且不易一起变化
+		+ 给Literal赋值给一个变量上做类型别名
+
++ 类型别名：给一个类型起个别名，
+	+ 但是名字不同，但是内部一样，同类型的互用不报错，但是语义不对，
+		+ 真的建立新类型`newname = NewType('newname', 原本的类型)`
+			+ 但是这样这样就很严格了，需要显示转换
+
 ### 魔术方法
 [Manual](https://docs.python.org/3/reference/datamodel.html#special-method-names)
 
