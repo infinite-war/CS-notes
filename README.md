@@ -34,6 +34,8 @@
 
 Quick Start -> 实践 -> Manual or Reference
 
++ 知识无尽，不要递归学习，要选择“合理的抽象”
+
 ### 几个原则
 
 1. 熵增定律：  

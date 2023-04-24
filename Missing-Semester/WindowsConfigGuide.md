@@ -109,7 +109,7 @@
 	+ `F2`作为开关System Proxy的快捷键
 
 ## 4.笔记软件Obsidian
->为什么选择这款软件作为我的Markdown编辑器见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
+>为什么选择这款软件作为我的Markdown编辑器见我的关于Markdown编辑器的[讨论](./Markdown.md#Obsidian)
 
 + Obsidian默认安装C盘：不处理，软件位置右键快捷方式查看
 	>这个软件的核心其实是配置（项目目录下`.obsidian`文件夹），而配置文件是在对应的项目下的，可以不占C盘空间
@@ -127,6 +127,7 @@
 
 + 快捷键推荐：
 	+  `Ctrl + E + space`使用`+`或者`-`控制系统字体大小
+	+ `Ctrl + \`左右分屏（和VSCode统一）
 
 + 问题处理：
 	+ `项目根目录/.obsidian/workspace.json`的修改相当频繁，不及时push和pull比较麻烦  

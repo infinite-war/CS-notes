@@ -1,33 +1,20 @@
-# 树Tree
+# Tree
 
 + 相关术语：
-  + root根、edge边、leaf叶子结点
-
-  + child儿子、parent父亲、siblings兄弟结点
-
-    grandparent祖父、grandchild孙子
-
-    ancestor祖先、descendant后裔，如果一对祖先后裔不同则是真祖先、真后裔（真proper）
-
-  + path路径：点到点、length长：路径上边的条数、depth深度：结点到根的路径的长、height高：树中深度最大的叶子的深度
+	+ root根、edge边、leaf叶子结点
+	+ child儿子、parent父亲、siblings兄弟结点  
+		grandparent祖父、grandchild孙子  
+		ancestor祖先、descendant后裔，如果一对祖先后裔不同则是真祖先、真后裔（真proper）
+	+ path路径：点到点、length长：路径上边的条数、depth深度：结点到根的路径的长、height高：树中深度最大的叶子的深度
 
 + 实现：由于每个结点的儿子数量是不确定的，通常每个结点建立一个链表，从左到右分别指向
-
-  ```c++
-  struct TreeNode {
-      Object   element;       // 结点值
-      TreeNode *firstChild;   // 结点的第一个儿子
-      TreeNode *nextSibling;  // 该节点其右边的第一个兄弟（如果有）
-  };
-  ```
-
-1. 应用1：操作系统的目录结构
-
-   > UNIX文件系统中每个目录还有一项指向该目录本身和另一项指向该目录的父目录，所以不是树是treelike类树
-
-+ preorder tarversal前序遍历  ：对结点的处理工作是在它的诸儿子结点被处理之前进行的
-
-  postorder traversal后序遍历：对结点的处理工作是在它的诸儿子结点被处理之后进行的
+	```cpp
+	struct TreeNode {
+		Object element;  // 节点
+		TreeNode *firstChild;  // 结点的第一个儿子
+		TreeNode *nextSibling;   // 该结点其右边的第一个兄弟(如果有)
+	}
+	```
 
 ## 二叉树Binary Tree
 
@@ -191,3 +178,4 @@ private:
 将空子树高度定义为-1，AVL的平衡条件是要求每个结点的左子树和其右子树的高度最多差1
 理论上AVL的树的高度最多$1.44log(N + 2) - 1.328$，但其实际高度只比logN稍微多一点
 + 插入——rotation旋转
+

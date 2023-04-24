@@ -1,5 +1,6 @@
 [
   "obsidian-git",
   "obsidian-dynamic-toc",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-tikzjax"
 ]

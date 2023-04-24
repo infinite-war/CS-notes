@@ -130,6 +130,8 @@
 
 + 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
 
++ 调试：CodeLLDB, 短时间不会写C++代码了，Mark一下吧。
+
 ### Golang
 微软[教程](https://learn.microsoft.com/zh-cn/azure/developer/go/configure-visual-studio-code)已经足够亲爹
 

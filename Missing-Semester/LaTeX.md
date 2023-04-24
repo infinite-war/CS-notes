@@ -10,3 +10,47 @@
 	scoop bucket add scoopet https://github.com/ivaquero/scoopet
 	scoop install texlive  # 下载实践略久
 	```
+
+## Tikz
+>以下记录是经验性质的，不是系统的教程
+
++ 环境：Obsidian的tikzjax插件
++ 用法：
+
+ 
+ 
+```
+
+
+
+```
+	
+
+\\`\\`\\`tikz
+
+
+
+
+
+
+
+
+	```
+
+
+obsidian-tikzjax
+
+```tikz
+\begin{document}
+
+\begin{tikzpicture}
+  \foreach \i in {1,...,4} {
+    \draw (\i,0) rectangle (\i+1,1) node[midway] {\i};
+  }
+  \draw (0.5,0.5) node {$\cdots$};
+  \draw (5.5,0.5) node {$\cdots$};
+\end{tikzpicture}
+
+
+\end{document}
+```

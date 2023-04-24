@@ -24,5 +24,7 @@
 | [pysystemtrade](https://github.com/robcarver17/pysystemtrade)           | 1.9k, 624         | Python     | 正在更新          | 个人作品，期货回测，卖书 |
 | [wondertrader](https://github.com/wondertrader)            | 1.5k, 350         | **C++**        | 频繁              | 大而全 | 
 | [OnePy](https://github.com/Chandlercjy/OnePy)                   | 300, 122          | Python     | 最后更新于5年前     | 知乎卖课 |
+| [Qtrader](https://github.com/josephchenhk/qtrader)                 | 293, 75           | Python     | 仍在更新           | 个人项目, 轻量 | 
+| [大哥trader](https://github.com/BigBrotherTrade/trader)               |176, 43            | Python     | 最后更新于上个月    |  难甭的名字 |  
 | [Cryptoquant](https://github.com/studyquant/cryptoquant)             | 100, _            | Python     | 偶尔              | 交易+回测，个人作品，卖课 |
 | [kbt_](https://github.com/kerwinyc/kbt_)                    | 13， 17           | Python     | 最后更新于3年前     | 一个很简短的回测系统 | 

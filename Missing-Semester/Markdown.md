@@ -41,7 +41,7 @@
 Obsidian之于Typora，就像VSCode之于Jetbrains：后者在提供功能的同时也带来了“抽象成本”。  
 下面讨论我从Typora转向Obsidian的心路历程
 
-+ Typora的即时渲染做的很好，对Makedown本身的语法补全非常到位，而这方面Obsidian略有差距
++ Typora的即时渲染做的很好，对Makedown本身的语法补全非常到位，而这方面Obsidian略有差距Tikz
 	+ Makedown：基本语法补全基本一致
 	+ Table：Obsidian需要插件，对快捷键自定义化更高但也意味着更高的心智负担，且体验不如Typora
 	+ LaTeX：语法有区别，之前笔记失效，还在学习
