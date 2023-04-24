@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7f1303b1d73e72e0",
+        "id": "b9c9ded060e321d2",
         "type": "tabs",
         "children": [
           {
-            "id": "e3b632bd36e34930",
+            "id": "e318e31391db8013",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,15 +147,16 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Algorithm/Data-Structure-and-Sort/Tree.md",
+    "Algorithm/Graph/README.md",
+    "Algorithm/Data-Structure-and-Sort/Sort.md",
+    "Missing-Semester/LaTeX.md",
+    "Missing-Semester/WindowsConfigGuide.md",
     "README.md",
     "Web3/MIT15.S12.md",
-    "Missing-Semester/LaTeX.md",
-    "Algorithm/Graph/README.md",
     "Algorithm/Graph/图论0拓扑图.md",
-    "Missing-Semester/WindowsConfigGuide.md",
     "Missing-Semester/Markdown.md",
     "Algorithm/Graph/图论0欧拉路.md",
-    "Algorithm/Data-Structure-and-Sort/Tree.md",
     "blog/VSCode.md",
     "Quant/crypto-quant-survey.md",
     "Operating-System/Consurrenc.md",
@@ -172,7 +173,6 @@
     "Programing-Language/Golang/README.md",
     "Distributed-System/Storage/GFS.md",
     "Distributed-System/MapReduce.md",
-    "Programing-Language/Python/Grammer.md",
     "resource/Fronted/语义标签.gif",
     "resource/Fronted",
     "Data-Science",

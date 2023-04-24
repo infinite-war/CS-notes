@@ -1,5 +1,3 @@
-# Tree
-
 + 相关术语：
 	+ root根、edge边、leaf叶子结点
 	+ child儿子、parent父亲、siblings兄弟结点  
@@ -16,33 +14,37 @@
 	}
 	```
 
-## 二叉树Binary Tree
+## Binary Tree
+>这就是二叉树
 
 + 定义：每个结点不能有多于两个儿子的树
-
-  > + 平均深度$O(\sqrt{N})$
+	+ 平均深度$O(\sqrt{N})$
 
 + 实现：
+	```c++
+	struct BinaryNode {
+		Object     element;  // The data in the node
+		BinaryNode *left;    // Left child
+		BinaryNode *right;   // Right child
+		}
+	```
 
-  ```c++
-  struct BinaryNode {
-      Object     element;  // The data in the node
-      BinaryNode *left;    // Left child
-      BinaryNode *right;   // Right child
-  }
-  ```
++ 表达式树：叶子是operand操作数、其他结点是operator操作符
+	+ 不同遍历方式对应不同表达式的形式
+	+ 将表达式转换成表达式树：维护一个维护结点的栈，一次读入
+		1. 操作数：构造成结点压入栈
+		2. 操作符：构造成结点，弹出栈顶两个元素作为其左右儿子，再将该结点压入栈
 
-+ inorder traversal中序遍历：左根右
+### 完全二叉树
 
-1. 表达式树：树叶是operand操作数、其他结点是operator操作符
-   + 不同遍历方式对应不用表达式的形式
-   + 将表达式转换成表达式树：维护一个维护结点的栈，依次读入
-     1. 操作数：构造成结点压入栈
-     2. 操作符：构造成结点，弹出栈顶两个元素作为其左右儿子，在讲该结点压入栈
+#### 堆
 
-## 二叉查找树Binary Search Tree
 
-+ 定义：结点值为相互之间有偏序关系的值，对于每个结点其左子树的所有项的值都小于该结点、右子树都大于
+
+### Binary Search Tree
+>二叉搜索树，也就是八股中的`b-tree`（这里的横杆是杠而不是减号）
+
++ 定义：结点值为相互之间有**偏序关系**的值，对于每个结点其左子树的所有项的值都小于该结点、右子树的所有项的值都大于该结点
 
 ```c++
 template<typename Object, typename Comparator=less<Object> > class BinarySearchTree {
@@ -145,37 +147,25 @@ private:
 ```
 
 + 平均深度$O(logN)$：
+	+ 证明：
+		+ internal path length内部路径长
+		+ $D(N)$具有N个结点的某棵树T的内部路径长且$D(1)=0$
 
-  + 深度的证明：
-
-    + internal path length内部路径长
-    + $D(N)$具有N个结点的某课树T的内部路径长且$D(1)=0$
-
-    一颗N结点树是由一颗$i$结点左子树和一颗$N - i - 1$结点右子树以及深度为0的根结点组成，则可以递推
-
-    $D(N) = D(i) + D(N - i - 1 + N - 1$因为所有子树的大小都是等可能的出现
-
-    这对二叉查找树是成立的，因为子树的大小只依赖于第一个插入到树中的元素的相对的rank
-
-    但是对二叉树不成立，此时D（i）和D（N - i - 1）的平均值都是$\frac{1}{N}\sum_{j = 0}^{N - 1}D(j)$，故$D(N) = \frac{2}{N}[\sum_{j = 0}^{N - 1}D(j)] + N - 1$
-
-  
+		一棵N结点树是由一颗$i$结点左子树和一颗$N - i - 1$结点右子树以及深度为0的根结点组成，则可以递推  
+		$D(N) = D(i) + D(N - i - 1 + N - 1$因为所有子树的大小都是等可能的出现  
+		这对二叉查找树是成立的，因为子树的大小只依赖于第一个插入到树中的元素的相对的rank  
+		但是对二叉树不成立，此时D（i）和D（N - i - 1）的平均值都是$\frac{1}{N}\sum_{j = 0}^{N - 1}D(j)$，故$D(N) = \frac{2}{N}[\sum_{j = 0}^{N - 1}D(j)] + N - 1$
 
 + 上面实现的问题：删除只从右子树开始，会出现，树的形态向左偏从而导致效率下降
-
-  + balance平衡：不允许结点深度过深
-    + AVL树
-  + self-adjusting自调整：在操作后进行调整
-    + splay tree伸展树
-
-
+	+ balance平衡：不允许结点深度过深
+	+ AVL树
+	+ self-adjusting自调整：在操作后进行调整
+	+ splay tree伸展树
 
 ### AVL树
-
-> AVL Adelson-Velskii and Landis
+> AVL Adelson-Velskii and Landis  
 > balance condition平衡条件
 
 将空子树高度定义为-1，AVL的平衡条件是要求每个结点的左子树和其右子树的高度最多差1
 理论上AVL的树的高度最多$1.44log(N + 2) - 1.328$，但其实际高度只比logN稍微多一点
 + 插入——rotation旋转
-
