@@ -1,3 +1,9 @@
+参考学习资料：
+| 书名                     |    说明                           |
+| ----------------------- | --------------------------------- |
+| [Crafting interpreters](http://www.craftinginterpreters.com/) |  PDF                               |
+| [手撸解释器教程](https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftinginterpreters_zh/main/book.json)          |  Web, 上面书籍的中译版, 而且中英文都提供 |
+
 ## Intro
 
 + translation program的区分：

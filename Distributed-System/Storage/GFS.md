@@ -58,8 +58,8 @@
 + log：数据结构存储在内存中，如果master failed，则数据丢失，所以在写数据时master会将一部分数据写入desk，即为log，并偶尔生成一个checkpoint（快照）
 	>没有使用数据库是因为log追加多快呀
 
-## chunk server
-普通的Linux机器，有一到两块硬盘，使用linux文件系统存储chunk（比如以chunk handle来命令文件）
+### chunk server
+普通的Linux机器，有一到两块硬盘，使用linux文件系统存储chunk（比如以chunk handle来命名文件）
 
 ### read
 
@@ -76,7 +76,7 @@
 + 如何request超过64MB或者跨过chunk边界怎么办？
 	+ GFS有相应的库，会将这样的request分成多个request
 
-## write
+### write
 
 + append：
 	+ 有接口得到文件最后一个chunk handle
