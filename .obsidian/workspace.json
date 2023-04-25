@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b9c9ded060e321d2",
+        "id": "5b89fbd389ac997e",
         "type": "tabs",
         "children": [
           {
-            "id": "e318e31391db8013",
+            "id": "f744e9e0daa11eb2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,12 +147,17 @@
   },
   "active": "cc8f302ae7b358ff",
   "lastOpenFiles": [
+    "Compiler/README.md",
+    "blog/好书推荐.md",
+    "Compiler/yacc&lex.md",
+    "README.md",
+    "resource/Compiler/mountain.png",
+    "resource/Compiler",
     "Algorithm/Data-Structure-and-Sort/Tree.md",
     "Algorithm/Graph/README.md",
     "Algorithm/Data-Structure-and-Sort/Sort.md",
     "Missing-Semester/LaTeX.md",
     "Missing-Semester/WindowsConfigGuide.md",
-    "README.md",
     "Web3/MIT15.S12.md",
     "Algorithm/Graph/图论0拓扑图.md",
     "Missing-Semester/Markdown.md",
@@ -161,7 +166,6 @@
     "Quant/crypto-quant-survey.md",
     "Operating-System/Consurrenc.md",
     "Operating-System/Virtualization.md",
-    "blog/好书推荐.md",
     "blog/How to use Chatgpt.md",
     "blog/unorganized/zweix技术日记2022.04.08-关于C++函数参数入栈顺序和内存对齐.md",
     "Quant/README.md.md",
@@ -170,9 +174,6 @@
     "blog/Multi-computer Cooperation.md",
     "blog/tools.md",
     "Linux/shell.md",
-    "Programing-Language/Golang/README.md",
-    "Distributed-System/Storage/GFS.md",
-    "Distributed-System/MapReduce.md",
     "resource/Fronted/语义标签.gif",
     "resource/Fronted",
     "Data-Science",
@@ -188,7 +189,6 @@
     "trash_can/有限群.jpg",
     "trash_can/数字签名2证明.jpg",
     "trash_can/数字签名2栗子.jpg",
-    "trash_can/数字签名2.jpg",
-    "trash_can/数字签名.jpg"
+    "trash_can/数字签名2.jpg"
   ]
 }
