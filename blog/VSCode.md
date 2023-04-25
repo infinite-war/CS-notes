@@ -143,6 +143,11 @@
 	+ `Live Server`
 	+ `Auto Rename Tag`
 
+### Java
+
++ 插件：
+	+ `Java Extension Pack`：包含大量其他必须插件
+
 ## MarkDown
 见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
 

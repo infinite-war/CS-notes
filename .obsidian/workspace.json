@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5d6f191a08a9cf79",
+        "id": "fc9d73e098a07a06",
         "type": "tabs",
         "children": [
           {
-            "id": "a9d2f2d712bb3c3c",
+            "id": "f2bdbc61471c8809",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -145,8 +145,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc8f302ae7b358ff",
+  "active": "f2bdbc61471c8809",
   "lastOpenFiles": [
+    "blog/好书推荐.md",
+    "blog/unorganized/zweix技术日记2023.01.09-关于互联网校招.md",
+    "blog/unorganized/zweix技术日记2022.04.08-关于C++函数参数入栈顺序和内存对齐.md",
+    "Compiler/Lox.md",
+    "Compiler/README.md",
+    "blog/VSCode.md",
+    "Missing-Semester/WindowsConfigGuide.md",
+    "Compiler/语言设计.md",
+    "Distributed-System/Storage/GFS.md",
+    "Programing-Language/Golang/README.md",
+    "Programing-Language/C++/C++20.md",
     "Programing-Language/C++/通用.md",
     "Programing-Language/C++/C++17.md",
     "Programing-Language/C++/SL-string.md",
@@ -162,17 +173,6 @@
     "Programing-Language/C++/C++Lambda.md",
     "Programing-Language/C++/C++Thread.md",
     "Programing-Language/C++/Generic.md",
-    "Programing-Language/C++/Generic-in-SL.md",
-    "Programing-Language/C++/OOP-Intro.md",
-    "Programing-Language/C++/OOP多态.md",
-    "Programing-Language/C++/OOP封装.md",
-    "Programing-Language/C++/OOP继承.md",
-    "Programing-Language/C++/OOP友元.md",
-    "Programing-Language/C++/STL-Container.md",
-    "Programing-Language/C++/SL-io.md",
-    "Programing-Language/C++/STL-Iterator.md",
-    "Programing-Language/C++/lib/gflags.md",
-    "Programing-Language/C++/lib/boost.md",
     "resource/Compiler/mountain.png",
     "resource/Compiler",
     "resource/Fronted/语义标签.gif",

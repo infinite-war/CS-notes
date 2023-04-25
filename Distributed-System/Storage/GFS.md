@@ -80,4 +80,7 @@
 
 + append：
 	+ 有接口得到文件最后一个chunk handle
-	+ 对于多client的写，有接口得到最后一个chunk的server
+		+ 这里有的问题是如果有多个client向同一个file中append呢？
+	+ 写文本必须通过primary chunk
+		+ 如果primary chunk不存在
+

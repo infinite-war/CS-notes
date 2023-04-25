@@ -1,6 +1,8 @@
 [Manual](https://go.dev/)
 [Go by Example](https://gobyexample-cn.github.io/)
 
++ 一个编译型的语言怎么实现GC的呢？直接把一份go的运行时副本嵌入其中
+
 ## Install
 按照[manual](https://go.dev/doc/install)下载即可
 + 这里不建议将`$PATH`的修改放在`profile`中，如果对shell比较了解，推荐放在对应的`rc`文件中（虽然这样只修改终端），我个人使用`zsh`
