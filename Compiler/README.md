@@ -1,5 +1,6 @@
 参考学习资料：《Crafting interpreters》，全开源，我愿称之为学习编译原理的最好的第一本书
-
+https://github.com/munificent/craftinginterpreters
+https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftinginterpreters_zh/main/book.json/-/5.%E8%A1%A8%E7%A4%BA%E4%BB%A3%E7%A0%81.md
 ## Intro
 
 + translation program的区分：
