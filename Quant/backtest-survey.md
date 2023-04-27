@@ -17,7 +17,10 @@
 
 所以这类平台的实盘交易模型是这样的，事件驱动引擎会不断的监控市场情况，一旦发生了某些事件，就调用对应的策略中的方法  
 这里的事件是固定的，是被系统限制的，我们的策略只能在系统提供的几个事件中行动。
-![event model](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Quant/event%20model.png)
+
+![event model](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Quant/event%20model.png)  
+
 这样系统的好处是容易写回测，用户的代码不用修改修改，回测直接变成这样
+
 ![backtest model](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Quant/backtest%20model.png)
 
