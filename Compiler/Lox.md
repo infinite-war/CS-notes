@@ -35,6 +35,8 @@ REPL
 			+ 可以用来模拟控制流
 	+ Precedence and grouping：`()`
 
+	优先级和结合性：同C
+
 + Statements: `;`
 	+ expression statement
 	+ block: `{}`
@@ -91,4 +93,18 @@ unary          → ( "-" | "!" ) expression ;
 binary         → expression operator expression ;
 operator       → "==" | "!=" | "<" | "<=" | ">" | ">="
                | "+"  | "-"  | "*" | "/" ;
+```
+
+但是这里的语法没有优先级和结合性
+
+```
+expression     → equality ;
+equality       → comparison ( ( "!=" | "==" ) comparison )* ;
+comparison     → term ( ( ">" | ">=" | "<" | "<=" ) term )* ;
+term           → factor ( ( "-" | "+" ) factor )* ;
+factor         → unary ( ( "/" | "*" ) unary )* ;
+unary          → ( "!" | "-" ) unary
+               | primary ;
+primary        → NUMBER | STRING | "true" | "false" | "nil"
+               | "(" expression ")" ;
 ```

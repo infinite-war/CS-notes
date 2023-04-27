@@ -1,3 +1,6 @@
+算了，不同学了，GFS的一致性是不那么好的，需要应用程序不那么在乎保序或者其他，而且并不能故障自我修复（认为故障来自网络，只是简单的重传）（可能是因为这个用于谷歌内部吧）
+
+
 + Pre: 怎么存储一个巨大的文件呢？一个很自然的想法，sharding，这时就要面对那个经典问题了，在大数定理下，机器数量很大的时候出现错误几乎是必然的，那么怎么fault tolerance呢？又一个自然的想法，就是replication，有了副本，就要面对consistency问题，为了解决一致性问题，机器间就要有额外的网络交互，即更强的一致性的代价是可能导致更低的性能，这里需要有工业上的平衡。  
 
 	+ 强一致性
@@ -5,7 +8,7 @@
 		2. 多机副本完全相同
 			+ 写需要同步到多个副本
 			+ 读只需要读取一个机器
-				>这显然更快且正确
+				>这显然更快且（如果强一致性可以保证的话就是）正确
 
 			这样如果读机器寄了，换到另一个副本的机器没有任何问题。
 
@@ -34,11 +37,8 @@
 	+ chunk server（大量）：存储文件数据
 
 + chunk: 一个文件的分片，大小为64MB
-	+ 多个副本，选择一个作为primary chunk，写操作都在primary chunk上
+	+ 多个副本（通常是3个），选择一个作为primary chunk，写操作都在primary chunk上
 		+ 每个primary chunk是在租约时间内担任
-
-
-这里的chunk即为一个文件的分片，大小为
 
 ### Master
 
@@ -53,13 +53,20 @@
 			+ primary chunk server —— v, 这个本来就是动态的
 				+ 租约过期时间
 
-	>这里的nv：non-volatile非容失
+	>这里的nv：non-volatile非易失
 
 + log：数据结构存储在内存中，如果master failed，则数据丢失，所以在写数据时master会将一部分数据写入desk，即为log，并偶尔生成一个checkpoint（快照）
 	>没有使用数据库是因为log追加多快呀
 
 ### chunk server
 普通的Linux机器，有一到两块硬盘，使用linux文件系统存储chunk（比如以chunk handle来命名文件）
+
++ primary chunk主要用于写文件，但是当写入时不能保证有primary chunk有，所以下面讨论一下这种情况
+	+ 怎么找到一个合格的primary chunk？
+		+ 通过master的版本找到最新的版本（版本一致）（这也是为什么版本号在机器中是nv的原因）
+		+ 找到有最新版本的chunk的server作为primary（其他作为secondary）
+		+ 然后master会追加版本，写入磁盘，并通知对应chunk的所有server
+		>这里的更新版本只会在执行primary时才更新
 
 ### read
 
@@ -82,5 +89,22 @@
 	+ 有接口得到文件最后一个chunk handle
 		+ 这里有的问题是如果有多个client向同一个file中append呢？
 	+ 写文本必须通过primary chunk
-		+ 如果primary chunk不存在
+		+ 上面已经讨论了primary chunk server不存在的情况
+	1. 客户端将追加的数据发到primary和secondary的服务器，然后服务器将它们临时存储
+	2. 所有server向client返回所有server都收到
+	3. server向primary说：所有的server都收到了，开始追加吧
+	+ 这个过程primary可能收到很多的消息，它按照某个顺序依次执行
+		+ 首先检测当前chunk有足够空间
+		+ 追加
+		+ 通知所有secondary追加
+		一旦有一个server失败了，Primary将告诉client失败了，重来
+
+	+ 我们会发现，如果失败了，就会有的chunk后面追加了，而有的没有。  
+		只有成功了时才能保证一致性
+
++ 关于数据怎么到达各个server，应该是链式的，避免client承担大量的net IO
+
++ split-brain, 脑裂：master怎么保证primary的存活？通过定期的ping，但是ping可能因为网络问题G，如果master立刻执行新的primary，那就有两个不知道彼此的primary在工作了
+	+ 而GFS解决这个问题的方式就是通过租约，即使master认为当前primary已经G了，但是它的租约还没到，就不指定新的
+	+ 那么为什么不让client每次都先问master找到最新primary呢？因为cline会cache，它不一定会记得知道哪个server的真的primary
 

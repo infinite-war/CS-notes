@@ -34,7 +34,7 @@ https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftin
 
 + source-to-source complier/transcompiler：把你的语言转换成其他的语言或者其他语言的中介码
 
-![mountain](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/source/Compiler/mountain.png)
+![mountain](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Compiler/mountain.png)
 
 前端：
 1. Scanning/lexing/lexical analysis: txt -> token
@@ -89,13 +89,15 @@ https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftin
 	+ 如果用于词法分析中，则单个字符的表就是alphabet，所有的lexeme就是string
 	+ 而在句法分析中，则每个token是的letter，然后组合成expression
 
-+ Context-Free Grammars上下文无关语法：形式化语言的一种工具
++ Context-Free Grammars上下文无关语法：形式化语言的一种
 	+ 每个生成式有一个head（名称），一个body，从形式上body是一系列符号symbol
 	+ 符号有两种：
 		+ terminal：字面量，
-		+ nonterminal：名称（一个生成式的）
+		+ nonterminal：名称（一个生成式的（即可以是自己））
 
-	这些是概念上的，具体的什么样子的？
+	我们可以将无限多的字符串打包到一个有限的语法中
+
+这些是概念上的，具体的什么样子的？
 
 + 巴科斯范式BNF：`name -> symbols;`，终止符是带引号的字符串，非终止符是小写的单词。
 
@@ -103,7 +105,28 @@ https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftin
 		+ 支持`}`和`()`的组合
 		+ 支持`*`、`+`和`?`（正则表达式概念下的）
 
+我们很快遇到问题，对于一个字符串可能有多种生成的方式（意味着多种可能的AST）
 
++ Precedence优先级
++ Associativity结合性
 
+至此我们建立的AST，怎么将其构建解析器呢？  
+有很多中工具，LL(k) LR(1) LALR
+
++ recursive descent递归下降（自顶向下解析器）：将语法规则直接翻译成命令式代码的文本翻译器，每个规则变成一个函数
+	+ Terminal：匹配并消费一个token
+	+ NonTerminal：调用规则对应的函数
+	+ `*` and `+`：loop
+	+ `?`：if
+
++ 检查语法错误：因为代码解析同样出现于静态分析，比如高亮，所以解析器会大量遇到错误的代码
+	+ Detect and report the error
+	+ Avoid crashing or hanging
+
+	+ Be fast
+	+ Report as many distinct errors as there are
+	+ Minimize cascaded errors最小化级联错误
+
+	+ error recovery
 
 
