@@ -80,6 +80,7 @@
 ## 1.浏览器Chrome
 六大浏览器之一，插件丰富，登录谷歌账号同步信息和配置
 >win默认使用Microsoft Edge浏览器也改为Chromium内核，可直接同步Chrome数据，但它每个选项卡被win认为是一个窗口，我个人不使用
+>>这点在`设置` -> `系统` -> `多任务处理` -> `Alt + Tab`，打开这里的选项卡您就知道是怎么回事了，win对它的亲儿子特殊照顾了。
 
 + Chrome默认安装C盘：不处理，软件位置右键快捷方式查看
 + 谷歌需要人工验证：使用插件Header Editor（[教程](https://blog.azurezeng.com/recaptcha-use-in-china/)）

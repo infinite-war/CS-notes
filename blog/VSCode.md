@@ -144,6 +144,7 @@
 	+ `Auto Rename Tag`
 
 ### Java
++ JDK: use scoop, [manual](https://github.com/ScoopInstaller/Java), enter wiki
 
 + 插件：
 	+ `Java Extension Pack`：包含大量其他必须插件
