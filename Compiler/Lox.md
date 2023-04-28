@@ -1,5 +1,3 @@
-REPL
-
 这是一份编译原理学习资料中使用的自制语言，我们会在Lox的功能中看到一个语言设计的方方面面
 
 + 风格：
@@ -15,6 +13,7 @@ REPL
 
 + data types
 	+ Booleans: `true` and `false`
+		+ 这里定义false和nil是假，其它是真
 	+ Numbers: double-precision floating point
 	+ Strings: enclosed in double quotes
 	+ `nil`
@@ -27,7 +26,7 @@ REPL
 	+ Comparison and equality
 		+ < <= > >=
 		+ =\=, !=
-			+ 返回隐式转换
+			+ 禁止隐式转换
 	+ Logical operators
 		+ `!`
 		+ `and` `or`
@@ -49,7 +48,7 @@ REPL
 	+ `for`: same C
 
 + Functions: 
-	+ 定义：`fun ...`，其余same C
+	+ 定义：`fun ...`，其余同C
 	+ `return` statement
 		+ 没有默认`nil`
 
@@ -74,37 +73,12 @@ REPL
 		+ instances实例和类classes
 	+ [prototypes](https://en.wikipedia.org/wiki/Prototype-based_programming)原型：比如Golang中的接口就是原型
 
-### 语法的形式化表达
++ 作用于scope：定义了名称映射到特定实体的一个区域，多个作用于允许相同名称在不同的上下文指向不同的内容。
+	+ Lexical scop/static scope，就是可以通过阅读知道作用域，比如大括号
+	+ 动态作用域，就是多态
 
-+ Literals: Numbers, strings, Booleans, nil
-+ Unary expression: !取非, -取负
-+ Binary expressions: +-\*/, =\= \!\= < <= > >=
-+ Parentheses: ()
-
-```
-expression     → literal
-               | unary
-               | binary
-               | grouping ;
-
-literal        → NUMBER | STRING | "true" | "false" | "nil" ;
-grouping       → "(" expression ")" ;
-unary          → ( "-" | "!" ) expression ;
-binary         → expression operator expression ;
-operator       → "==" | "!=" | "<" | "<=" | ">" | ">="
-               | "+"  | "-"  | "*" | "/" ;
-```
-
-但是这里的语法没有优先级和结合性
-
-```
-expression     → equality ;
-equality       → comparison ( ( "!=" | "==" ) comparison )* ;
-comparison     → term ( ( ">" | ">=" | "<" | "<=" ) term )* ;
-term           → factor ( ( "-" | "+" ) factor )* ;
-factor         → unary ( ( "/" | "*" ) unary )* ;
-unary          → ( "!" | "-" ) unary
-               | primary ;
-primary        → NUMBER | STRING | "true" | "false" | "nil"
-               | "(" expression ")" ;
-```
++ 作用域与环境，前者是理论，后者是实现机制
+	+ 块作用结束后里面的变量应该不在
+	+ 但是不同粗暴的删除，因为可能全局也有同名的，所以块作用域应该是shadow遮蔽
+	+ 而且还要考虑块作用域引用了全局的变量
+ 
