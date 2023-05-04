@@ -170,3 +170,23 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	3. `git reset --hard remove-images` -> ` git push --delete origin remove-images`删除本地和github上的新分支
 
 果然快很多。
+
+### 多分支维护
+指的是这样的情况，我当前的版本还需要小修小补，但是还有新的开发任务，且新旧任务没有任何交叉。
+
+1. 新开一个分支：`git branch 新分支名`
++ 
+	+ 查看分支：`git branch`
+	+ 切换分支：`git checkout 分支名`
+
+2. 将新分支维护在云端：
+	1. 切换分支
+	2. push看提示
+
+3. 
+	+ 旧分支通过`git commit --emand`维护
+	+ 新分支正常维护
+
+4. 合入：
+	1. 切换到master分支
+	2. `git merge 新工作分支名`

@@ -29,7 +29,6 @@
 	+  tree-walk interpreter：在AST中运行
 		+ 缺点是慢
 
-
 ### overview
 
 + 整个编译过程通常分成front end、middle end、back end
@@ -59,79 +58,43 @@
 	+ gc
 	+ Reflection
 
-## 1.lexing词法分析
+## misc
 
-+ 
-	+ lexemes词素: lexing中的每一组具有某些含义的最小序列
-	+ Tokens: 将lexemes和*其他数据*放在一起
++ 关于参数：
+	+ argument：actual parameter实参，给到函数的值
+	+ parameter：formal parameters形参，在函数中的变量
 
-+ token data struct
-	+ Token type
-	+ Literal value字面量
-	+ Location info
-
-+ regular language and expression正则语言和表达式
-	+ Python的语法不是regular的，因为它缩进敏感，所以要比较连续行的开头空格数量，regular language无法实现
-
-+ 关于分号和全大写关键字，都已经是时代的眼泪的，关于的分号的处理，可以用换行符尝试替代，但是这样的方法在不同的语言中有[不同的处理方式](https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftinginterpreters_zh/main/book.json/-/4.%E6%89%AB%E6%8F%8F.md#design-note-implicit-semicolons)。
-
-## 2.syntactic analysis句法分析
-
-### 形式化语言表达语法
-
-+ [Formal grammar形式化语言](https://en.wikipedia.org/wiki/Formal_grammar)：有一组原子片段，即alphabet，分别对应一组string（由alphabet中的letter组成的sequence）
-	+ 那如何写下一个包含无限多有效字符串的语法呢？
-		+ derivations派生
-		+ productions生成
-
-+ 其实上面我们也已经看到了，有些语法不能用正则语言处理，这个就是同样的处理的工具，当然它的功能更加强大。  
-	对照定义，这个工具
-	+ 如果用于词法分析中，则单个字符的表就是alphabet，所有的lexeme就是string
-	+ 而在句法分析中，则每个token是的letter，然后组合成expression
-
-+ Context-Free Grammars上下文无关语法：形式化语言的一种
-	+ 每个生成式有一个head（名称），一个body，从形式上body是一系列符号symbol
-	+ 符号有两种：
-		+ terminal：字面量，
-		+ nonterminal：名称（一个生成式的（即可以是自己））
-
-	我们可以将无限多的字符串打包到一个有限的语法中
-
-这些是概念上的，具体的什么样子的？
-
-+ 巴科斯范式BNF：`name -> symbols;`，终止符是带引号的字符串，非终止符是小写的单词。
-
-	+ 一种扩展语法：
-		+ 支持`}`和`()`的组合
-		+ 支持`*`、`+`和`?`（正则表达式概念下的）
-
-我们很快遇到问题，对于一个字符串可能有多种生成的方式（意味着多种可能的AST）
-
-+ Precedence优先级
-+ Associativity结合性
-
-### 递归下降建立抽象语法树
-abstract syntax tree, AST抽象语法数
-
-怎么构建建立AST的解析器呢？有很多中工具，`LL(k)`、`LR(1)`、`LALR`
-
-+ recursive descent递归下降（自顶向下解析器）：将语法规则直接翻译成命令式代码的文本翻译器，每个规则变成一个函数
-	+ Terminal：匹配并消费一个token
-	+ NonTerminal：调用规则对应的函数
-	+ `*` and `+`：loop
-	+ `?`：if
-
-+ 检查语法错误：因为代码解析同样出现于静态分析，比如高亮，所以解析器会大量遇到错误的代码
-	+ Detect and report the error
-	+ Avoid crashing or hanging
-
-	+ Be fast
-	+ Report as many distinct errors as there are
-	+ Minimize cascaded errors最小化级联错误
-
-+ error recovery：
-	+ panic mode：当遇到错误，它进入恐慌模式，要先进行synchronization同步，将当前的状态和下面的token的状态对齐，使后面是对的。
-
-## MISC
++ OOP语言：
+	+ [classes](https://en.wikipedia.org/wiki/Class-based_programming)类
+		+ instances实例和类classes
+	+ [prototypes](https://en.wikipedia.org/wiki/Prototype-based_programming)原型：比如Golang中的接口就是原型
+	+ [multimethods](https://en.wikipedia.org/wiki/Multiple_dispatch)
 
 + side effect副作用
+
++ 环境：变量与值之间的绑定关系保存的地方。
++ 作用域scope：定义了名称映射到特定实体的一个区域，多个作用域允许相同名称在不同的上下文指向不同的内容。
+	+ 静态作用域/词法作用域：局部变量和全局变量，可以通过静态分析得知
+	+ 动态作用域：多态
+
++ 控制流
+	+ Conditional条件/branching control flow分支控制流
+	+ Looping control flow循环控制流
+
++ desugaring脱糖
+	>syntactic sugar语法糖，比如for对于while
+
+	语法糖是有代价的，特别是对于复杂的语言，会让后端更复杂，脱糖就是前端将语法糖转换成更基础的形式
+
+### 图灵机
+
+什么样的函数是可计算的？
+>艾伦·图灵和阿隆佐·邱奇 分别做出了回答，他们各自设计了一个具有最小机器集的微型系统，图灵机（图灵）和lamdba演算（邱奇）
+
++ 图灵完备Turing-complete：语言可以实现一个图灵机的模拟器，因为图灵机是可以计算任何可计算函数，那么实现了图灵机的语言也可以。
+
+### 语言内存类型
++ 基于堆栈
++ 基于寄存器指令集
+
+>比如lua前期是使用堆栈的模拟器，在5.0转换基于寄存器，快了很多，也复杂了很多
