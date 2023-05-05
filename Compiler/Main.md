@@ -1,18 +1,25 @@
 ## 1.lexing词法分析
 
-+ 
++ noun：
 	+ lexemes词素: lexing中的每一组具有某些含义的最小序列
 	+ Tokens: 将lexemes和*其他数据*放在一起
 
-+ token data struct
-	+ Token type
-	+ Literal value字面量
-	+ Location info
+	比如一个数字`42`，`"42"`这个字符串为一个词素，一个结构体，其中包含数字这个Token类型，这个词素还有其他数据，则是Token
+	
+	+ token data struct
+		+ Token type
+		+ Literal value字面量
+		+ Location info
 
-+ regular language and expression正则语言和表达式
-	+ Python的语法不是regular的，因为它缩进敏感，所以要比较连续行的开头空格数量，regular language无法实现
+### regular language and expression正则语言和表达式
+一种实现词法分析的工具
 
++ 有些语法，比如Python的语法不是regular的，因为它缩进敏感，所以要比较连续行的开头空格数量，regular language无法实现
 + 关于分号和全大写关键字，都已经是时代的眼泪的，关于的分号的处理，可以用换行符尝试替代，但是这样的方法在不同的语言中有[不同的处理方式](https://readonly.link/books/https://raw.githubusercontent.com/GuoYaxiang/craftinginterpreters_zh/main/book.json/-/4.%E6%89%AB%E6%8F%8F.md#design-note-implicit-semicolons)。
+
+### 手写
+
+对于简短的符号，比如一个字符的符号和两个字符串的符号，可以通过switch和lookahead解决，对于不规则的比如数字、字符串、标识符和保留字则通过分类讨论和trie树
 
 ## 2.syntactic analysis句法分析
 
@@ -49,10 +56,12 @@
 + Precedence优先级
 + Associativity结合性
 
-### 递归下降建立抽象语法树
-abstract syntax tree, AST抽象语法数
+### 建立抽象语法树
+abstract syntax tree, AST抽象语法树
 
-怎么构建建立AST的解析器呢？有很多中工具，`LL(k)`、`LR(1)`、`LALR`
+有很多工具
+
+#### 递归下降建立
 
 + recursive descent递归下降（自顶向下解析器）：将语法规则直接翻译成命令式代码的文本翻译器，每个规则变成一个函数
 	+ Terminal：匹配并消费一个token
@@ -77,11 +86,16 @@ abstract syntax tree, AST抽象语法数
 		+ 没有副作用
 		+ 没有控制流
 
-## 3.semantic analysis语义分析
+#### 自顶向下算符优先解析建立
+这种算法（如果可以称为算法的话），有很多，这里只讨论Pratt Parsing算法
 
+##### Pratt Parsing
+
+## 3.semantic analysis语义分析
 不是必须的，概念性的
 
-## +在抽象语法树上运行
+## 运行
 
+### 在抽象语法树上运行
 
-## +字节码
+### 字节码
