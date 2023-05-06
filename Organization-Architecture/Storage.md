@@ -1,4 +1,4 @@
-+ 
++ 从上到下，越来越慢、越来越大、越来越便宜
 	+ ：Volatile
 	1. CPU Registers：寄存器
 	2. CPU Caches：缓存，多级

@@ -65,7 +65,6 @@ LIST_APPEND  # list_append -> app1(): n + 1 -> list_resize() # 多次resize n + 
 	+ `==`：`compare_op`：比较使用`PyObject_RichCompare`，复杂，慢
 	+ `is`：`is_op`：直接比较指针地址
 
-
 ### 什么可以作为dict的key
 
 + dict中对于set一个pair，会检测key是否有hash
