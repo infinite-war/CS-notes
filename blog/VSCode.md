@@ -150,7 +150,7 @@
 	+ `Java Extension Pack`：包含大量其他必须插件
 
 ## MarkDown
-见我的关于Markdown编辑器的[讨论](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/Markdown.md)
+见我的关于Markdown编辑器的[讨论](Missing-Semester/Markdown.md)
 
 + 插件：
 	+ 渲染：Markdown Preview Enhanced：`Ctrl + k -> v`

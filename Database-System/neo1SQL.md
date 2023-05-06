@@ -1,0 +1,1 @@
+**SQL** is the defacto standard（many dialects）
