@@ -225,6 +225,7 @@
 		我们把字体名称`MesloLGM NF`的所有形态都下载  
 
 ## 6.包管理器Scoop
+https://zhuanlan.zhihu.com/p/135278662  
 **Scoop非常强大，几乎任何你想下载的命令行程序或者依赖软件都可以去search一下，几乎都有！**  
 比如C/C++（`gcc`、`g++`、`gdb`、`make`、`cmake`）、Python（Python和某些库的依赖）、Java、LaTeX还有各种软件。
 

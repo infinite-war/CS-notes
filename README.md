@@ -7,9 +7,9 @@
 + 对于课程笔记，我（自认为）严格遵循[Academic Integrity](http://integrity.mit.edu/)，虽然在笔记中可能记录思路，但是代码是Private的，如果有不合适的地方，请提醒我。
 + 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的note，除非特殊声明，否则不建议作为学习资料。
 
-### 精华文章
+### 精华文章(自认为)
 
-+ [win开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)：四年功力于一
++ [win开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
 
 ### 笔记意义
 
