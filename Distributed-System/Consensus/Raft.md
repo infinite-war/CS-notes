@@ -1,4 +1,5 @@
->The Raft Consensus Algorithm Raft共识算法（一致性协议）
+Raft是一个管理replicated log的consensus algorithm
+>容错的一个方法是复制，复制就要面对一致性问题，保持一致性的方法有State Transfer和Replicated State Machine，后者的一个实现方式就是replicated log
 
 
 
