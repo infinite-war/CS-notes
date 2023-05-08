@@ -1,4 +1,7 @@
-[Manual](https://code.visualstudio.com/docs)
++ 推荐结合我的开发机配置指南使用更佳：
+	+ [Windows](Missing-Semester/WindowsConfigGuide.md)
+	+ [Linux](Missing-Semester/LinuxConfigGuide.md)
++ 巨硬的vsc [manual](https://code.visualstudio.com/docs)
 
 ## Use
 
@@ -102,6 +105,8 @@
 			+ 多行：`# fmt: off`和`# fmt: on`
 
 	+ 静态检查：需要保存文件
+		+ 忽略某行的静态检查：`# type: ignore`
+		+ 对于普通类型的静态检查：`# type: 类型`
 
 >另一种配置
 ```json

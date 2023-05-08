@@ -1,9 +1,9 @@
 {
   "accentColor": "",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSize": 15,
   "translucency": false,
   "nativeMenus": false,
   "showViewHeader": true,
-  "cssTheme": ""
+  "cssTheme": "one-dark-pro"
 }

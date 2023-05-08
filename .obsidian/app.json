@@ -19,5 +19,6 @@
   "autoPairMarkdown": false,
   "autoPairBrackets": true,
   "vimMode": false,
-  "autoConvertHtml": false
+  "autoConvertHtml": false,
+  "focusNewTab": true
 }

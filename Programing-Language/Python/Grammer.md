@@ -92,33 +92,46 @@ for loop会从可迭代对象中生成迭代器，即调用`iter(可迭代对象
 generator较于itrator的区别是它基于frame
 generator较于itrator的新功能`send`：yield语句可以有“左值”，即在yield后等待生成器对象send新值进来（实质上`next(生成器对象) <==> 生成器对象.send(None)`）
 
-### type hint
-[doc](https://docs.python.org/3/library/typing.html)
->只用于静态检查，运行时仍然万物皆对象
->>这里有个小小bug，就是coder按照hint实现，这时在测试时不会出现错误，以为hint正确，实际上可能出现错误，所以要充分的静态检查呀。
+### Type Hint
+>只是静态检查、只是静态检查、只是静态检查
 
-+ 好像：typing可能会弃用
++ [Doc](https://docs.python.org/3/library/typing.html)
 
-+ 类似虚基类指针数组：
++ 虚基类指针
 	```python
 	from typing import Type
-	sam: Type[BaseClass] = None
+	bp: Type[BaseClass] = None
 	```
 
-+ 循环依赖：对于之后在做evaluation的type lint：把名称用双引号括起来
-+ 模块循环依赖：
++ 类名循环依赖问题：把名称用双引号括起来解决
++ 模块循环依赖问题：
 	```python
 	from typing import TYPE_CHECKING
-	
 	if TYPE_CHECKING:
 		from 包 import 名称
 	```
-	具体的，`TYPE_CHECKING`在类型检查时为`False`，而在实际运行时为`True`，这样的写法要求这里的`名称`在当前的包内也是只做类型检查
 
-+ 多选：`|`分割
-+ 某种类型或者`None`：`Optional`
-+ 函数没有返回值：`NoReturn`
-+ 函数：`Callabel[[参数, ]返回值]`
+	这个名称`TYPE_CHECKING`在运行时为False，但是静态检查时是True
+
++ 多种类型：`|`分割或
++ 某种类型或`None`：`Optional[类型]`
+
++ 可调用类型（函数）：`Callabel[[逗号分割的参数列表]返回值]`
+	+ 没有返回值的函数：`NoReturn`
+
++ 特定项：`Literal[特定项列表]`
+	+ 但是不是认为是特定项类型，而是一种独特的类型
+
+	```python
+	def request(url: str, method: Literal["GET", "POST"]):
+		...
+
+	request("www.baidu.com", "GET")  # 这会报错
+
+	arg_method: Literal["GET", "POST"]
+	```
+
+
 + 特定项：`Literal`
 	+ 但是变量复制就飘红-》给变量做type hint，但是太长，而且不易一起变化
 		+ 给Literal赋值给一个变量上做类型别名

@@ -1,3 +1,10 @@
+```python
+class ClassName:
+	def __init__(self, status: int, **kwargs) -> None:
+		for key, value in kwargs.items():
+			setattr(self, key, value)
+```
+
 + 代码风格：`Pythonic`
 + 相关工具：
 	+ `ipython`
