@@ -118,7 +118,7 @@
 + 插件推荐：
 	+ Obsidian Git（需要下载Git）多机同步必备
 	 >我的配置：`Ctrl + Alt + s -> backup(commit and push)、Ctrl + Alt + L -> pull`  
-		>会有冲突（主要是和QQ）使用`Ctrl + Alt + C -> commit, Ctrl + Alt + H -> push`
+		>会有冲突（主要是和QQ）使用`Ctrl + Alt + C -> commit, Ctrl + Alt + H -> push`  
 		>>该插件提供定时操作，个人习惯没有使用，上面的快捷键设计是统筹的结果
 
 	+ Advanced Tabled：Makedown表格相关补全  
@@ -338,7 +338,6 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 优秀的截图软件，很好用，开源，解压即用。
 
 + `F1`截屏
-	>个人习惯将该快捷键改为`Prtsc`（Prtsc失效）
 + 截屏后`Ctrl + T`可将截屏悬浮在屏幕上
 + `F3`可以将剪切板的内容转化成图片悬浮在屏幕上
 

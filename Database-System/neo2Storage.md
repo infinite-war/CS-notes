@@ -29,14 +29,14 @@
 	+ Buffer replacement policy内存中的缓冲区的更换策略
 	+ Thread/process scheduling并发调度
 
-### How the DBMS represents the database in files on disk
+## How the DBMS represents the database in files on disk
 
-#### File Storage
+### File Storage
 
 + storage manager：维护DB的file，有较于OS更适合DB的文件管理
 
 
 
-#### Page Layout
+### Page Layout
 
-#### Tuple Layout
+### Tuple Layout

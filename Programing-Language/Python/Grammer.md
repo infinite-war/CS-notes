@@ -145,3 +145,9 @@ generator较于itrator的新功能`send`：yield语句可以有“左值”，�
 [Manual](https://docs.python.org/3/reference/datamodel.html#special-method-names)
 
 `__str__` 方法用于返回对象的人类可读的字符串表示形式，而 `__repr__` 方法用于返回对象的机器可读的字符串表示形式。
+
+### 重载
+
+python没有重载，但是可以有奇技淫巧去实现
+
+https://arpitbhayani.me/blogs/function-overloading， 一个比较好的翻译 https://cat.ms/posts/function-overloading-in-python/
