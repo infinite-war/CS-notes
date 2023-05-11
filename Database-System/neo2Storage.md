@@ -35,8 +35,20 @@
 
 + storage manager：维护DB的file，有较于OS更适合DB的文件管理
 
++ 数据结构
+	+ 第一个page里有两个链表的头结点
+		+ free page list
+		+ data page list
+
+	+ 每个page就有两个指针服务于链表，然后其他就是data
+
+	或者
+
++ directory目录
 
 
 ### Page Layout
+
+
 
 ### Tuple Layout
