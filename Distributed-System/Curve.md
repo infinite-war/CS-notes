@@ -60,9 +60,5 @@ curve_ops_tool reset-peer -logicalPoolId=1 -copysetId=1 -peer=10.246.159.82:8202
 ```
 
 + Test:
-	+ 
-#### chunkserver-status
-
-
 
 # Use
