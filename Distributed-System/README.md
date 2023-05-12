@@ -44,7 +44,7 @@
 
 下面我们来引入标题，分布式一个很重要的话题就是Fail-Tolerance，一个容错的方法就是Replication，一旦复制就要面对Consensus，为了保持一致性有两种方法：State Transfer状态转移和Replicated State Machine复制状态机，后者这种增量式的方式显然更具有性能诱惑力。
 
-下面是出现Raft论文的复制状态机模型：  
+下面是出现Raft论文的复制状态机（一个理想）模型：  
 ![复制状态机模型](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Distributed-System/复制式状态机架构.png)
 
 + 共识算法特征：

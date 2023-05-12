@@ -1,11 +1,11 @@
-Raft是一个管理Replicated Log复制式日志的Consensus Algorithm
+Raft是一个管理Replicated Log的Consensus Algorithm
 
 + Paxos：在Raft之前，Paxos几乎是一致性算法的代名词
 	+ 缺点：
 		+ 很难准确理解，即使是对专业研究者和领域教授
 			+ Paxos复杂难懂但是又没有其他适合教学的替代算法
 		+ 很难正确实现。复杂加上某些理论描述模糊
-			+ Paxos本身是点对点模型，最后为了性能考虑建议弱领导力的模型，但是在实际应用中通常是中心式的才够高效，所以There are significant gaps between the description of the Paxos algorithm and the needs of a real-world system. . . . the final system will be based on an **un-proven** protocol（注意Paxos的正确性是得到证明的，这里是因为实现和理论的gap太大了）
+			+ Paxos本身是点对点模型，最后为了性能考虑建议弱领导力的模型，但是在实际应用中通常是中心式的，所以There are significant gaps between the description of the Paxos algorithm and the needs of a real-world system. . . . the final system will be based on an **un-proven** protocol（注意Paxos的正确性是得到证明的，这里的un-proven是因为实现和理论的gap太大了）
 
 	因为从工业界和学术界需求出发，斯坦福大学博士生Diego Ongaro及其导师John Ousterhout提出了Raft算法（2013年），它的最大设计目标是可理解性understandability
 
@@ -16,35 +16,31 @@ Raft是一个管理Replicated Log复制式日志的Consensus Algorithm
 Raft集群是中心式的，中心即为Leader，其他节点正常情况为Follower，在选举期为Candidate  
 ![状态机](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Distributed-System/状态机.png)
 
-+ Leader
-	+ 一个任期最多有一个Leader
-	+ 职责和权利
-		+ 只有它接受来自Client的Request
-		+ 它可以自由决定Log Entry位置
-		+ 数据从Leader流向集群其他节点
++ Leader，具有完全的责任，是系统的入口
 + Follower
-	+ 不会主动发起请求
-	+ 从Client对其的Request会被重定向到Leader中
-+ Candidate
-	+ 特殊状态，当Follower在一段时间没有收到Leader的RPC时则变成Candidate，发起选举
+	+ Passive
+	+ Client对其的Request会被重定向到Leader
++ Candidate，特殊状态，当Follower在一段时间没有收到心跳检测则变成Candidate，发起选举
 
 ## Leader Election
 
-+ 任期Term：  
-	<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Distributed-System/term.png">  
+### Pre
 
-	Raft将时间划分成长度不固定的任期，每个任期从election选举开始，选举成功就normal operation；可能整个任期都没有选举成功（no emerging leader），则进入下一个任期
++ 任期Term，Raft将时间划分成长度不固定的任期，每个任期从Election开始，选举成功就normal operation，如果no emerging leader，则进入下一个term
+	+ 每个节点都会记录当前任期
+	+ 节点通信会携带任期信息
+		+ 如果一个节点发现自己的比其他人的小，则立刻更新
+		+ 如果Candidate和Leader发现自己的任期过期了，则立刻切换到Follower状态
+		+ 如果一个节点接受到携带过期任期编号的请求，则拒绝
 
-	+ 每个节点看到的任期是不一样的，甚至看不到任期
-	+ 每个节点都记录当前任期号
-	+ 节点通信会带上任期信息：
-		+ 如果一个节点发现自己的比其他的小，则立刻更新（自己知道的任期过期了）
-		+ 如果一个Candida和Leader发现自己的任期过期了，则立刻切换到Follower状态
-		+ 如果一个节点接收到携带了过期任期编号的请求，则拒绝
++ 通信，通过RPC
+	+ RequestVote：由Candidate在选举期发起
+	+ AppendEntries：由Leader发起
+		+ 用于Append Replicated Log Entry
+		+ Heartbeat
 
-+ 通信：通过RPC实现
-	+ RequestVote：由Candida在选举期间发起
-	+ AppendEntries：由Leader发起，用于Replicated Log Entries并作为heartbeat方式
++ Heartbeat机制
+
 
 + Heartbeat机制
 	+ 节点启动是Follower，只要持续从Leader和Candidate收到合法RPC请求，就一直是Follower
