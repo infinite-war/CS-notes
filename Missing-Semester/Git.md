@@ -64,6 +64,8 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	+ `git reset --hard HEAD~100`：往上回滚100个版本
 	+ `git reset --hard 版本号`：回滚到特定版本
 
+	可以同于合并最近的几个commit
+
 + 关于分支：
 	+ `git branch [branch]`创建分支
 	+ `git checkout [branch]`切换分支
