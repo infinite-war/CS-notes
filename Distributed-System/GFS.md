@@ -1,11 +1,11 @@
-+ Pre: 怎么存储一个巨大的文件呢？一个很自然的想法，sharding，这时就要面对那个经典问题了，在大数定理下，机器数量很大的时候出现错误几乎是必然的，那么怎么fault tolerance呢？又一个自然的想法，就是replication，有了副本，就要面对consistency问题，为了解决一致性问题，机器间就要有额外的网络交互，即更强的一致性的代价是可能导致更低的性能，这里需要有工业上的平衡。  
++ Pre: 怎么存储一个巨大的文件呢？一个很自然的想法，sharding分片，这时就要面对那个经典问题了，在大数定理下，机器数量很大的时候出现错误几乎是必然的，那么怎么fault tolerance呢？又一个自然的想法，就是replication复制，有了副本，就要面对consistency一致性问题，为了解决一致性问题，机器间就要有额外的网络交互，即更强的一致性的代价是可能导致更低的性能，这里需要有工业上的平衡。  
 
 	+ 强一致性
 		1. 对用户来说，多个机器就像一个机器，甚至这个机器只单线程的服务于用户
 		2. 多机副本完全相同
 			+ 写需要同步到多个副本
 			+ 读只需要读取一个机器
-				>这显然更快且（如果强一致性可以保证的话就是）正确
+				>这显然更快且（如果强一致性可以保证的话就是）正确且只有这样才能保证容错
 
 			这样如果读机器寄了，换到另一个副本的机器没有任何问题。
 
@@ -30,8 +30,8 @@
 ## Implementation
 
 + GFS是中心式的
-	+ master（Active-Standby模式）：信息与交互
-	+ chunk server（大量）：存储文件数据
+	+ master（Active-Standby模式）：可能有多个master机器，但是只有一个在工作，管理文件和chunk信息
+	+ chunk server（大量）：每个机器有一两块磁盘存储文件数据
 
 + chunk: 一个文件的分片，大小为64MB
 	+ 多个副本（通常是3个），选择一个作为primary chunk，写操作都在primary chunk上
@@ -46,7 +46,7 @@
 	+ chunk table: chunk handle - chunk data
 		+ chunk data
 			+ list\[server\] —— v, 可以通过通信恢复
-			+ chunk version —— 和实现有关
+			+ chunk version —— 持久状态和实现有关
 			+ primary chunk server —— v, 这个本来就是动态的
 				+ 租约过期时间
 
@@ -67,7 +67,7 @@
 
 ### read
 
-1. clent: tuple\[file name, offset\] -> master: 
+1. clent: tuple(file name, offset) -> master: 
 	1. master从file table中得到list, 因为每个chunk大小固定，所以index可以直接求出，继而得到chunk handle
 	2. master从chunk table中得到server list, return client
 
@@ -80,13 +80,24 @@
 + 如何request超过64MB或者跨过chunk边界怎么办？
 	+ GFS有相应的库，会将这样的request分成多个request
 
-### write
+### write(append)
 
-+ append：
-	+ 有接口得到文件最后一个chunk handle
-		+ 这里有的问题是如果有多个client向同一个file中append呢？
-	+ 写文本必须通过primary chunk
-		+ 上面已经讨论了primary chunk server不存在的情况
+写文件需要client提供offset，但是对于追加写，client并不知道文件究竟多大，而且还会有多个client进行同时写，所以GFS提供接口获得文件最后一个chunk handle  
+对于写文件可以从任何一个chunk server读即可，但是写文件必须通过primary chunk server
+
++ 如果没有primary chunk？
+	1. master找到版本最新的chunk（最新指的是其保存的和master记录的版本一致）
+		+ 为什么不取最大的呢？如果没有一个chunk响应呢？或者最大的版本没有来得及响应呢？
+			+ 如果没有就一直等待
+		+ 如果master发现比自己还大的呢？
+			+ 可能是让自己的版本号增大到chunk的版本
+	1. master增加版本号，写入磁盘
+	2. 通知chunk，包括primary/secondart关系和版本号，chunk server会将版本号写入内存
+
+好，现在有primary chunk了，其他作为Secondary Chunk，primary可以接受client的request，并且将写请求应用到多个chunk server中  
+master会通知primary和secondary server一个租约，primary超过租约后必须停止成为primary，避免同时有两个primary
+
++ 具体怎么写：
 	1. 客户端将追加的数据发到primary和secondary的服务器，然后服务器将它们临时存储
 	2. 所有server向client返回所有server都收到
 	3. server向primary说：所有的server都收到了，开始追加吧
@@ -94,10 +105,14 @@
 		+ 首先检测当前chunk有足够空间
 		+ 追加
 		+ 通知所有secondary追加
-		一旦有一个server失败了，Primary将告诉client失败了，重来
+		一旦有一个server失败了，Primary将告诉client失败了，重来（先与master交互找到文件末尾的chunk、在对于primary和secondary发起数据追加）
 
 	+ 我们会发现，如果失败了，就会有的chunk后面追加了，而有的没有。  
-		只有成功了时才能保证一致性
+		+ 只有成功了时才能保证一致性
+		+ 版本发挥了什么作用呢？版本只是指的是任期（借用Raft的概念），而和client请求无关
+		+ 因为client的请求是先到缓存，所以只要它在重发，所有的server就会将这些信息放在同一个位置（即会出现某个时间点）
+		+ 如果失败的原因是因为server G了怎么办（丢包重传即可）？Master会定期ping进行检测，对于fail server会更新server list
+			+ 还有一个问题，如果ping是因为丢包（实际上server健康）怎么办？那就脑裂了，GFS的策略是租期，如果租期没到，即使不能和primary通信了，也依然不指定新的
 
 + 关于数据怎么到达各个server，应该是链式的，避免client承担大量的net IO
 

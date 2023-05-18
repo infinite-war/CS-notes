@@ -5,7 +5,7 @@
 
 + Request：
 	+ EndPoint：URL
-		+ 可以通过
+		+ 
 	+ Method：
 		+ Post增
 		+ Delete删

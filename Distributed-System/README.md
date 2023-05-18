@@ -1,18 +1,18 @@
 + 学习资料：
 	+ MIT的[6.824](https://pdos.csail.mit.edu/6.824/schedule.html)
-		+ [野生字幕翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/)（不能确定年份）
+		+ [野生字幕翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/)（作者没有说翻译的哪一年的课程，我个人猜测是21年的）
 
 + **ELP不可能定理**：No completely asynchronous consensus protocol can tolerate even a single unannounced process death（来自Fisher、Lynch和Paterson的[论文](https://ilyasergey.net/CS6213/_static/02-consensus/flp.pdf)）
 
-	但是**科学告诉你，什么是不可能的；工程则告诉你，付出一些代码，可以把它变成可行**，这就是工程的魅力。
+	但是 **科学告诉你，什么是不可能的；但工程则告诉你，只要付出一些代价，就可以把它变成可能**，这就是工程的魅力。
 
 ## 为什么需要分布式
 
 + Drivens驱动力：
-	+ 大量的CPU、大量的内存、大量的硬盘和大量的并行计算
-	+ fault-tolerates：一个机器崩溃完全可以将其任务切换到另一台
+	+ 并发：大量的CPU、大量的内存、大量的硬盘和大量的并行计算
+	+ 容错fault-tolerates：一个机器崩溃完全可以将其任务切换到另一台
 	+ 一些问题天然在空间上是分布的，比如转账
-	+ security：比如有些代码不被信任，但仍然需要和它交互，可将其部署在单独的机器，通过网络协议使用，限制**出错域**
+	+ 安全security：比如有些代码不被信任，但仍然需要和它交互，可将其部署在单独的机器，通过网络协议使用，限制**出错域**
 
 + Challenges挑战：主要是由于并发带来的
 	+ 多机交互
@@ -37,7 +37,8 @@
 + 一致性Consistency，多副本间数据一致
 	+ 强一致性Strong Consistency：
 	+ 弱一致性：  
-		可以想象，强一致性的保证需要各个机器间大量的通信，这里的开销非常大，所以虽然弱一致性可能导致系统出错，但是工程上仍然是有必要的
+		可以想象，强一致性的保证需要各个机器间大量的通信，这里的开销非常大，所以虽然弱一致性可能导致系统出错，但是工程上仍然是有必要的  
+		或者是需要对比所有副本的数据
 
 ## Consensus And Replication
 就像DDIA（Designing Data-Intensive Applications）上说的Many application today are **data-intensive**，as opposed to compute-intensive. Raw CPU power is rarely a limiting factor for these applications—bigger problems are usually the amount of data, the complexity of data, and the speed at which it is changing.
