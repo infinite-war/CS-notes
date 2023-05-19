@@ -22,6 +22,13 @@
 
 	后者较于前者的诱惑是：事件往往比状态要小
 
+### VMware FT
++ 特征
+	+ 单核CPU
+	+ 机器级别的复制
+		+ 
+ 
+
 ## Consensus
 
 下面我们来引入标题，分布式一个很重要的话题就是Fail-Tolerance，一个容错的方法就是Replication，一旦复制就要面对Consensus，为了保持一致性有两种方法：State Transfer状态转移和Replicated State Machine复制状态机，后者这种增量式的方式显然更具有性能诱惑力。

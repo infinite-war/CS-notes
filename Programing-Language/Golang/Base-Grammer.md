@@ -305,6 +305,7 @@ for 初始化语句; 条件表达式; 后置语句 {
     }
     ```
     * 较于C而言golang的switch只会选择一个，即隐式的使用了break
+	    * 使用`fallthrough`继续执行
     * 没有条件的switch，那么case的标准可以是关于外层变量的**表达式**
     * golang的switch可没有C中对变量类型那么多的限制
     * 多分支case：
@@ -318,6 +319,9 @@ for 初始化语句; 条件表达式; 后置语句 {
 	    }
 	    ```
 
+### 跳转
+
+Go有`break`和`continue`，同时也有`goto`，不仅如此，Golang还有Label，前面的三个关键字都能使用，用在循环外，类似“装饰器”，用于跨层跳转
 
 ### defer
 
