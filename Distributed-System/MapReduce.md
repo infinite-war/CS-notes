@@ -1,6 +1,6 @@
 >大数据运算的代表
 
-+ 相关学习资料：
++ Reference：
 	+ [论文](http://nil.csail.mit.edu/6.824/2022/papers/mapreduce.pdf)本文
 
 ### Demand

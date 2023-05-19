@@ -1,10 +1,7 @@
-+ 学习资料：
++ Reference
 	+ MIT的[6.824](https://pdos.csail.mit.edu/6.824/schedule.html)
 		+ [野生字幕翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/)（作者没有说翻译的哪一年的课程，我个人猜测是21年的）
 
-+ **ELP不可能定理**：No completely asynchronous consensus protocol can tolerate even a single unannounced process death（来自Fisher、Lynch和Paterson的[论文](https://ilyasergey.net/CS6213/_static/02-consensus/flp.pdf)）
-
-	但是 **科学告诉你，什么是不可能的；但工程则告诉你，只要付出一些代价，就可以把它变成可能**，这就是工程的魅力。
 
 ## 为什么需要分布式
 
@@ -40,17 +37,36 @@
 		可以想象，强一致性的保证需要各个机器间大量的通信，这里的开销非常大，所以虽然弱一致性可能导致系统出错，但是工程上仍然是有必要的  
 		或者是需要对比所有副本的数据
 
-## Consensus And Replication
-就像DDIA（Designing Data-Intensive Applications）上说的Many application today are **data-intensive**，as opposed to compute-intensive. Raw CPU power is rarely a limiting factor for these applications—bigger problems are usually the amount of data, the complexity of data, and the speed at which it is changing.
+## Consistenct issues and Consensus Algorithms
+>一致性问题和共识算法
 
-下面我们来引入标题，分布式一个很重要的话题就是Fail-Tolerance，一个容错的方法就是Replication，一旦复制就要面对Consensus，为了保持一致性有两种方法：State Transfer状态转移和Replicated State Machine复制状态机，后者这种增量式的方式显然更具有性能诱惑力。
++ Reference
+	+ https://draveness.me/consensus/
 
-下面是出现Raft论文的复制状态机（一个理想）模型：  
-![复制状态机模型](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Distributed-System/复制式状态机架构.png)
++ 什么是一致性？一个解释是：集群中所有节点中的数据完全相同并且能够对某个Proposal提案达成一致
++ 什么是共识算法？保证分布式系统一致性的方法
 
-+ 共识算法特征：
-	+ 安全性：在任何non-Byzantine条件（非拜占庭条件）下都能保证安全（从不返回错误结果）
-	+ 高可用性：只要**大多数**节点能工作、彼此之间以及和客户端之间能通信，整体系统的功能就完全可用
-	+ 可恢复性：Fail后能从持久存储回复
-	+ 不依赖时序来保证日志的一致性：最坏情况下，时钟不准、消息验证都不能导致可用性问题
-	+ 通常情况下，一个命令收到集群大多数节点的响应时，这个命令就算完成了，少量响应慢的机器不影响整体的性能
++ CAP理论
+	>+ C：一致性Consistency
+	>+ A：可用性Availability
+	>+ P：分区容错性Partition tolerance
+
+	+ 来自加州伯克利大学的Eric Brewer的[论文](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.67.6951&rep=rep1&type=pdf)
+	+ 内容：**证明**在**异步**的网络模型中，节点由于没有时钟、仅仅能够根据接收的消息做判断，导致系统只能在一致性、可用性和分区容错性，这三种特性中保证两种
+		+ 这里的一致性是强一致性或者说绝对一致性
+		+ 现实世界不存在绝对异步的网络环境，就算时钟不能相同、但时钟的更新频率可以完全相同
+
++ 拜占庭将军问题：多个军队准备进攻城池，如果有**大多数**军队一起进攻就能攻下，而是否选择进攻也是听从**大多数**的。但是如果出现叛徒军队对不同军队传播不同消息呢？
+
++ ELP不可能定理
+	+ 来自Fisher、Lynch和Paterson的[论文](https://ilyasergey.net/CS6213/_static/02-consensus/flp.pdf)
+	+ 内容：No completely asynchronous consensus protocol can tolerate even a single unannounced process death在网络可靠并且存在节点失效的异步模型系统中，不存在一个可以解决一致性问题的确定性算法。
+	+ 但是**科学告诉你，什么是不可能的；但工程则告诉你，只要付出一些代价，就可以把它变成可能**，这就是工程的魅力。
+
++ 传统一致性算法，这是在这个主题下要讨论的，主要解决非拜占庭将军问题
+	+ Paxos，其实是**一类**协议，是被证明正确性的
+		+ Basis Paxos
+		+ Multi-Paxos
+	+ Raft：Multi-Paxos的变种
+
++ 区块链的共识算法，区块链可以说是拜占庭将军问题了，和当前主题不同，在[这里](../Web3/README.md)讨论

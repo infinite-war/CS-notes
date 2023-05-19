@@ -1,5 +1,7 @@
-[Manual](https://go.dev/)
-[Go by Example](https://gobyexample-cn.github.io/)
++ source：
+	+ [Manual](https://go.dev/)
+	+ [Go by Example](https://gobyexample-cn.github.io/)
+	+ [Go语言设计与实现](https://draveness.me/golang/)：从名字也能管中窥豹，这不是讲Golang语法和项目的书籍，而是讲它是怎么实现的
 
 + 一个编译型的语言怎么实现GC的呢？直接把一份go的运行时副本嵌入其中
 
@@ -41,6 +43,10 @@ go env -w GOPROXY=https://goproxy.io,direct  # 设置软件源
 [资料](https://docs.kilvn.com/go_command_tutorial/)
 
 + 参数`-race`竟态检测，检测并发的异常
+
++ `go build`
+	+ 得到汇编代码：`go build -gcflags -S main.go`
+	+ 获得优化汇编的过程：`GOSSAFUNC=main go build main.go`，得到一个可交互的网页`ssa.html`
 
 ## project file struct
 >[资料](https://github.com/golang-standards/project-layout/blob/master/README_zh.md)

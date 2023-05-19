@@ -1,5 +1,7 @@
 <!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/-->
 
+https://yeasy.gitbook.io/blockchain_guide/
+
 程序设计语言
 
 + 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。

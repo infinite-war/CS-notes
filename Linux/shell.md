@@ -42,6 +42,9 @@
 	+ `diff XXX YYY`： 查找文件XXX与YYY的不同点  
 		`vimdiff`
 
+	+ `cloc`行数
+	+ `wc`字数
+
 ## 基操
 
 + `pwd`：显式当前绝对路径

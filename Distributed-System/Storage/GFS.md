@@ -70,13 +70,9 @@
 1. clent: tuple(file name, offset) -> master: 
 	1. master从file table中得到list, 因为每个chunk大小固定，所以index可以直接求出，继而得到chunk handle
 	2. master从chunk table中得到server list, return client
-
 2. client: 从list选择一个去读
-
 + client会cache return
-
 3. client:\[chunk handle, offset\] -> chunk server: return data
-
 + 如何request超过64MB或者跨过chunk边界怎么办？
 	+ GFS有相应的库，会将这样的request分成多个request
 
@@ -85,38 +81,44 @@
 写文件需要client提供offset，但是对于追加写，client并不知道文件究竟多大，而且还会有多个client进行同时写，所以GFS提供接口获得文件最后一个chunk handle  
 对于写文件可以从任何一个chunk server读即可，但是写文件必须通过primary chunk server
 
-+ 如果没有primary chunk？
++ 如果没有primary chunk怎么办？
 	1. master找到版本最新的chunk（最新指的是其保存的和master记录的版本一致）
-		+ 为什么不取最大的呢？如果没有一个chunk响应呢？或者最大的版本没有来得及响应呢？
-			+ 如果没有就一直等待
-		+ 如果master发现比自己还大的呢？
-			+ 可能是让自己的版本号增大到chunk的版本
-	1. master增加版本号，写入磁盘
-	2. 通知chunk，包括primary/secondart关系和版本号，chunk server会将版本号写入内存
+		+ 为什么不取最大的呢？因为如果没有一个chunk相应，就卡死了；或者如果最大版本的server没有即时相应，就错误了。所以没有合适的就一直等待
+		+ 如果master发现比自己版本还大的呢？**可能**是让自己的版本好增大到这个chunk的版本
+	3. master增加版本号，写入磁盘
+	4. 通知chunk，包括primary/secondary关系和版本号，chunk server会将版本号写入磁盘
 
-好，现在有primary chunk了，其他作为Secondary Chunk，primary可以接受client的request，并且将写请求应用到多个chunk server中  
-master会通知primary和secondary server一个租约，primary超过租约后必须停止成为primary，避免同时有两个primary
+好，现在有了Primary Chunk了，其他的作为Secondary Chunk，Primary可以接受client的request，并且将写请求应用到多个chunk server中  
+master会通知primary和Secondary一个租约，primary在超过租约后必须停止成为primary，避免同时有多个primary（后面会提到），这个租约是所有机器都有的
 
-+ 具体怎么写：
-	1. 客户端将追加的数据发到primary和secondary的服务器，然后服务器将它们临时存储
++ 写：
+	1. client将追加的数据发到primary和secondary的服务器，然后服务器将它们临时存储
 	2. 所有server向client返回所有server都收到
 	3. server向primary说：所有的server都收到了，开始追加吧
 	+ 这个过程primary可能收到很多的消息，它按照某个顺序依次执行
 		+ 首先检测当前chunk有足够空间
 		+ 追加
 		+ 通知所有secondary追加
-		一旦有一个server失败了，Primary将告诉client失败了，重来（先与master交互找到文件末尾的chunk、在对于primary和secondary发起数据追加）
 
-	+ 我们会发现，如果失败了，就会有的chunk后面追加了，而有的没有。  
+		一旦有一个server失败了，primary就会告诉client失败了，需要重来  
+		这个失败会导致各个副本存在hole（zweix觉得简直是非常的不一致），可能需要用户应用容忍乱序（当然对于要求顺序的数据可以采用单client写入而不要并发）
+
+	+ 关于失败
 		+ 只有成功了时才能保证一致性
-		+ 版本发挥了什么作用呢？版本只是指的是任期（借用Raft的概念），而和client请求无关
-		+ 因为client的请求是先到缓存，所以只要它在重发，所有的server就会将这些信息放在同一个位置（即会出现某个时间点）
-		+ 如果失败的原因是因为server G了怎么办（丢包重传即可）？Master会定期ping进行检测，对于fail server会更新server list
-			+ 还有一个问题，如果ping是因为丢包（实际上server健康）怎么办？那就脑裂了，GFS的策略是租期，如果租期没到，即使不能和primary通信了，也依然不指定新的
+		+ 无能通过版本维护，GFS的版本指的任期，和client的request无关
+		+ 重发可能会快一些，因为server对需要append的数据缓存好了，但是这个追加流程依然是完整流程（即从找到末尾chunk handle开始）
+		+ 如果失败的原因是server寄了怎么办（如果是丢包就重传即可）Master会定期ping进行检测，对于fail server则更新server list
+			+ 如果ping失败是因为丢包而不是因为server fail怎么办？GFS的策略是租期，没到租期，即使无法和primary通信，也不指定新的，避免脑裂
 
-+ 关于数据怎么到达各个server，应该是链式的，避免client承担大量的net IO
++ 数据传输：链式传输，避免client承担大量net IO
 
-+ split-brain, 脑裂：master怎么保证primary的存活？通过定期的ping，但是ping可能因为网络问题G，如果master立刻执行新的primary，那就有两个不知道彼此的primary在工作了
++ split-brain脑裂：master怎么保证primary的存活？通过定期的ping，但是ping可能因为网络问题G，如果master立刻执行新的primary，那就有两个不知道彼此的primary在工作了
 	+ 而GFS解决这个问题的方式就是通过租约，即使master认为当前primary已经G了，但是它的租约还没到，就不指定新的
 	+ 那么为什么不让client每次都先问master找到最新primary呢？因为cline会cache，它不一定会记得知道哪个server的真的primary
 
++ GFS的问题（效益自不必多说，BigTable和MapReduce都是建立其上的）
+	+ Master承担的东西太多了
+		+ 信息
+		+ IO
+	+ 语义问题
+	+ Master的fail 切换不是自动的。
