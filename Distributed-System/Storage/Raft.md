@@ -11,6 +11,8 @@ Raft是一个管理Replicated Log的Consensus Algorithm
 
 	+ 但是由于Raft是中心式的，所有理论上其性能是比不上Paxos的
 
++ Raft会以Library的形式存在于服务中，即每个服务的副本由两部分组成：应用程序代码和Raft库
+
 # Raft
 
 Raft集群是中心式的，中心即为Leader，其他节点正常情况为Follower，在选举期为Candidate  
@@ -127,8 +129,3 @@ Raft集群是中心式的，中心即为Leader，其他节点正常情况为Foll
 安全的语义是确保状态机以相同顺序执行相同的命令流
 
 任何 term 内的 leader 都包含了前面所有 term 内提交的 entries
-
-
-# 其他问题
-
-## 脑裂

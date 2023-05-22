@@ -304,6 +304,8 @@ https://zhuanlan.zhihu.com/p/135278662
 	```
 	但是下载奇慢
 
+	+ `scoop install go@1.18`有效
+
 ### 7.Git
 
 + 安装：`scoop install git`

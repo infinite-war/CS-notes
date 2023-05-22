@@ -16,9 +16,11 @@
 <hr>
 
 + 善用日志，软件不能正常运行的ERROR都在里面
+	+ 该软件issue极多（不能说是好事还是坏事），你遇到的问题很可能别人也遇到过（至少我的两次都是）
 + 对于服务端，确保防火墙打开端口`24800`
 + 无论是服务端还是客户端，在设置中关闭SSL  
 	<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/blog/设置入口.png" width=“100px”><img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/blog/SSL选项.png" style="zoom:81%">
++ 确保你的键盘没有打开Scroll Lock
 
 ### 下载
 + Windows10：github上的release有`.exe`的安装包
