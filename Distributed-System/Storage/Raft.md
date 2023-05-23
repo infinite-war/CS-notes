@@ -1,3 +1,6 @@
++ Ref
+	+ [Raft 可视化](http://thesecretlivesofdata.com/raft/)
+
 Raft是一个管理Replicated Log的Consensus Algorithm
 
 + Paxos：在Raft之前，Paxos几乎是一致性算法的代名词
