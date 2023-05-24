@@ -8,3 +8,8 @@
 	5. HDD：机器硬盘
 	6. Network Storage
 	7. Tape Archives
+
++ 发展历史
+	+ 1
+	+ 2
+	+ Solid State Drive, SSD闪存
