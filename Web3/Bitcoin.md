@@ -5,6 +5,7 @@
 	+ 数据存储：[Manual](https://en.bitcoin.it/wiki/Bitcoin_Core_0.11_(ch_2):_Data_Storage)
 	+ http://static.kancloud.cn/daleboy/blockchain
 	+ https://www.krad.top/goblockchain03/
+	+ https://yeasy.gitbook.io/blockchain_guide/
 
 
 
