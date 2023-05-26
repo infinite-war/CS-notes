@@ -30,11 +30,15 @@
 
 请务必认识到STFW的重要性，如果你的笔记只是搬运了Manual，那么它将毫无意义，我后面会大量的删除我的笔记。
 
+---
+
 #### 学习阶段
 
 Quick Start -> 实践 -> Manual or Reference
 
 + 知识无尽，不要递归学习，要选择“合理的抽象”
+
+---
 
 ### 几个原则
 
@@ -43,5 +47,8 @@ Quick Start -> 实践 -> Manual or Reference
 2. 奥卡姆剃刀：如无必要，勿增实体
 3. 抽象与平衡：过低的抽象带来了思维负担，过高的抽象意味着性能成本。
 
+---
+
+我们羡慕更年轻的人，就像中年人羡慕我们一样。
 
 <!-- https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/word%20of%20cs.png -->

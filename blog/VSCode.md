@@ -1,7 +1,9 @@
-+ 推荐结合我的开发机配置指南使用更佳：
+调教一套快捷键收益是不错的
+
++ 推荐结合我的开发机配置指南食用更佳：
 	+ [Windows](Missing-Semester/WindowsConfigGuide.md)
 	+ [Linux](Missing-Semester/LinuxConfigGuide.md)
-+ 巨硬的vsc [manual](https://code.visualstudio.com/docs)
++ 巨硬的VS Code [Manual](https://code.visualstudio.com/docs)
 
 ## Use
 
@@ -18,7 +20,13 @@
 	```
 
 + 编辑器内命令：`Ctrl + p`：打开VSCode Comman Center
+	+ 键入文件名打开文件
+		+ 或者使用`Ctrl + Shift + E`打开资源管理器，然后使用方向键选择
 	+ 键入前缀 `>` 使用VSCode命令（或者直接快捷键 `Ctrl + Shift + p`）
+		+ 大小写转换
+		+ 函数折叠
+	+ 键入键入`@`在当前文件按名称查找（或者直接快捷键`Ctrl + Shift + O`）
+		>怎么在多个文件按名称查找呢？`Ctrl + Shift + f`
 
 + Basic Editing：略
 	+ multi-cursor：
@@ -37,6 +45,17 @@
 	+ 名称跳转：`Ctrl + 点击名称`，首先跳转实现，再跳转定义，再弹出使用，效果依赖于插件
 		+ 如果是跳转，`Alt + Right`返回当前跳转之前（go back）
 			>注意这里反常识的是方向键右键，这和我的改键有关
+
+## .vscode目录
+
++ Reference：Manual
+	+ https://code.visualstudio.com/docs/editor/debugging#_launch-configurations
+	+ https://code.visualstudio.com/docs/editor/tasks#_custom-tasks
+
++ `extensions.json`（[manual](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions)）
++ `setting.json`（[manual](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settingsjson-location)）：工作区相关配置
++ `task.json`（[manual](https://code.visualstudio.com/Docs/editor/tasks)）
++ `launch.json`（[manual](https://code.visualstudio.com/docs/editor/debugging)）
 
 ## Config
 
@@ -127,17 +146,21 @@
 
 
 ### C/C++
-[win + clangd](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html) | [linux + 官方插件](https://www.bilibili.com/video/BV1YG4y1v7uB)
 
-上面提到的linux下的教程在win10也可以用，下面给出如何配置环境使之可以在win下使用
-1. 依赖环境：通过Scoop下载了gcc、g++、gdb、make和cmake
-2. 安装插件：C/C++和C/C++ Extension Pack（它们有依赖的插件，所以会下载很多）
++ Reference
+	+ [Clang in Windows](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html)
+	+ [Gcc in Linux（视频）](https://www.bilibili.com/video/BV1YG4y1v7uB)
+
++ Windows：
+	1. 依赖环境：通过Scoop下载了gcc、g++、gdb、make和cmake
+	2. 安装插件：C/C++和C/C++ Extension Pack（它们有依赖的插件，所以会下载很多）
 
 + 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
 
 + 调试：CodeLLDB, 短时间不会写C++代码了，Mark一下吧。
 
 ### Golang
+
 微软[教程](https://learn.microsoft.com/zh-cn/azure/developer/go/configure-visual-studio-code)已经足够亲爹
 
 + how to debug: [tutor](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
@@ -145,20 +168,26 @@
 ### Web
 
 + 插件：
-	+ `Live Server`
-	+ `Auto Rename Tag`
+	+ `Auto Rename Tag`：补全
+	+ `Live Server`：启动服务渲染页面
 
 ### Java
-+ JDK: use scoop, [manual](https://github.com/ScoopInstaller/Java), enter wiki
+
++ JDK：
+	+ Windows：use scoop, refer to [the site](https://github.com/ScoopInstaller/Java/wiki)
 
 + 插件：
 	+ `Java Extension Pack`：包含大量其他必须插件
+
++ TODO：
+	+ 项目依赖管理
+		>我用编译选项`-cp`手动管理的依赖，但是在编辑器层面不能识别，会报错
 
 ## MarkDown
 见我的关于Markdown编辑器的[讨论](Missing-Semester/Markdown.md)
 
 + 插件：
-	+ 渲染：Markdown Preview Enhanced：`Ctrl + k -> v`
+	+ 渲染：Markdown Preview Enhanced：`Ctrl + k v`
 	+ 编辑：Markdown All in One
 		+ 提供补全
 		+ 生成目录

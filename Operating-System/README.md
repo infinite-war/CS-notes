@@ -5,19 +5,27 @@
 		+ 作者GitHub[链接](https://github.com/remzi-arpacidusseau)
 
 	+ MIT6.S081
-		+ 野生讲义翻译https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/
+		+ [野生讲义翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
 
++ OS Deisgn Goals:
+	+ Abstractions
+	+ Virtualize Resources
+	+ Concurrency(Multiplex)
+	+ Store Persistently
+	+ Protection
+		+ Isolation：故障不互相影响
+		+ Sharing and Security
+	+ Performance
+	+ Reliability
+	+ else：
+		+ energy-efficiency
+		+ mobility
 
-+ what is OS?virtual machine?standard library?resource manager
-+ design goals：
-	+ virtualize resources
-	+ 虚拟化关系到concurrency
-	+ store persistently
-	+ 为了方便和容易使用的abstractions
-	+ performance（minimize the overhead）
-	+ protection
-		+ isolation
-		+ security
-	+ reliability
-	+ energy-efficiency
-	+ mobility
++ 操作系统的分层设计
+	+ Userspace：
+	+ Kernel：一个特殊的程序，总在运行，首先运行
+		+ 管理用户空间进程
+		+ 管理硬件资源，以供用户空间的程序使用
+		+ 内置服务
+			+ 文件系统
+			+ 进程管理系
