@@ -7,7 +7,7 @@
 
 ### 精华文章(自认为)
 
-+ [win开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
++ [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
 
 ### 笔记意义
 
@@ -52,3 +52,5 @@ Quick Start -> 实践 -> Manual or Reference
 我们羡慕更年轻的人，就像中年人羡慕我们一样。
 
 <!-- https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/word%20of%20cs.png -->
+
+

@@ -114,6 +114,6 @@ def clean():
 
 if __name__ == "__main__":
     # change()
-    # check()
+    check()
     # clean()
     pass
