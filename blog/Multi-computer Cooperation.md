@@ -8,6 +8,9 @@
 ## 多系统桌面键鼠共享
 [barrier](https://github.com/debauchee/barrier)
 
+选择这个软件的原因是我的要求要平台，这里指出一些其他键鼠共享软件https://sspai.com/post/72143
+
+
 + 说明：
 	+ 在win进入“用户账号控制页面”或者Ubuntu进入"活动"页面时不能使用
 	+ 多系统文件拖拽不支持
@@ -101,3 +104,9 @@
 
 ## Twomon SE
 据说这个能让pad做扩展屏？我还没有pad，先mark下
+
+## 副屏扩展spacedesk
+上面是键鼠共享，系统、算力都是各自的，但是这个是指定其他设备作为副屏
+
+
+## win向ipad键鼠共享：向日葵app
