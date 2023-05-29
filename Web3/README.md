@@ -23,5 +23,4 @@
 ### UTXO
 >Unspent Transaction output
 
-
 ### 账户余额模型
