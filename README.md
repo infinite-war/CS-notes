@@ -8,6 +8,7 @@
 ### 精华文章(自认为)
 
 + [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
++ [只赠有缘人](./blog/for%20serendipitous%20encounter/CS-Primer%26%E6%AF%95%E4%B8%9A%E7%94%9F%E5%AF%B9%E6%96%B0%E7%94%9F%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AF%9D.md)：Yes，只赠有缘人。
 
 ### 笔记意义
 
@@ -26,19 +27,15 @@
 
 此时笔记更像是”当年攻城略地时的纪念品“
 
----
-
-请务必认识到STFW的重要性，如果你的笔记只是搬运了Manual，那么它将毫无意义，我后面会大量的删除我的笔记。
-
----
-
 #### 学习阶段
 
 Quick Start -> 实践 -> Manual or Reference
 
 + 知识无尽，不要递归学习，要选择“合理的抽象”
 
----
+## 笔记方法论
+请务必认识到STFW的重要性，如果你的笔记只是搬运了Manual，那么它将毫无意义，我后面会大量的删除我的笔记。
+
 
 ### 几个原则
 
@@ -46,11 +43,3 @@ Quick Start -> 实践 -> Manual or Reference
 	不要去追求极致的秩序，因为那意味着巨大的成本和极大的不稳定性
 2. 奥卡姆剃刀：如无必要，勿增实体
 3. 抽象与平衡：过低的抽象带来了思维负担，过高的抽象意味着性能成本。
-
----
-
-我们羡慕更年轻的人，就像中年人羡慕我们一样。
-
-<!-- https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/word%20of%20cs.png -->
-
-
