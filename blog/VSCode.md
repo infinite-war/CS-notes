@@ -194,4 +194,7 @@
 		+ 提供补全
 		+ 生成目录
 
+## Mind Mapping
+插件markmap
+
 ## LaTeX

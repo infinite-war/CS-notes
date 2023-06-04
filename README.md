@@ -8,7 +8,7 @@
 ### 精华文章(自认为)
 
 + [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
-+ [只赠有缘人](./blog/for%20serendipitous%20encounter/CS-Primer%26%E6%AF%95%E4%B8%9A%E7%94%9F%E5%AF%B9%E6%96%B0%E7%94%9F%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AF%9D.md)：Yes，只赠有缘人。
++ [只赠有缘人](./blog/%E5%8F%AA%E8%B5%A0%E6%9C%89%E7%BC%98%E4%BA%BA/README.md)：Yes，只赠有缘人。
 
 ### 笔记意义
 
@@ -34,8 +34,8 @@ Quick Start -> 实践 -> Manual or Reference
 + 知识无尽，不要递归学习，要选择“合理的抽象”
 
 ## 笔记方法论
-请务必认识到STFW的重要性，如果你的笔记只是搬运了Manual，那么它将毫无意义，我后面会大量的删除我的笔记。
 
++ 如果笔记只是Manual的搬运，为什么不STFM呢？
 
 ### 几个原则
 
