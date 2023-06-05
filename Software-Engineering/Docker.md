@@ -11,7 +11,7 @@ docker很多命令需要sudo，为了避免麻烦，可以将当前用户将入�
 sudo usermod -aG docker $USER
 ```
 
-## Image
+	## Image
 + 镜像的构成：`type:version`
 ---
 + `docker images`：列出本地所有的镜像
@@ -39,6 +39,7 @@ docker [container] restart CONTAINER # 重启容器
 
 docker [container] run -itd ubuntu:20.04  # 从镜像中创建并启动一个容器
 docker [container] run -it  ubuntu:20.04  # 从镜像中创建、启动并进入一个容器
+# 以上两个命令的不同就是-d参数，有则后台运行
 ```
 
 ```bash

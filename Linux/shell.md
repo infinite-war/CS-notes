@@ -171,7 +171,7 @@ xrandr --output 屏幕D --right-of 屏幕H --auto  # 双屏, 且H在D的右边
 ## 网络
 
 + `ping`
-+ SSH：[我的教程](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/SSH.md)
++ SSH：[我的教程](../Missing-Semester/SSH.md)
 
 # Shell
 + Shell中的空格有含义
