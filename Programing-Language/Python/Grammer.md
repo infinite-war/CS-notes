@@ -93,7 +93,7 @@ generator较于itrator的区别是它基于frame
 generator较于itrator的新功能`send`：yield语句可以有“左值”，即在yield后等待生成器对象send新值进来（实质上`next(生成器对象) <==> 生成器对象.send(None)`）
 
 ### Type Hint
->只是静态检查、只是静态检查、只是静态检查
+>注意这里仅仅是静态类型检查，在实际运行中仍然有可能出现意想不到的类型，这是由用户承担的
 
 + [Doc](https://docs.python.org/3/library/typing.html)
 
@@ -113,33 +113,62 @@ generator较于itrator的新功能`send`：yield语句可以有“左值”，�
 
 	这个名称`TYPE_CHECKING`在运行时为False，但是静态检查时是True
 
-+ 多种类型：`|`分割或
++ 多种类型：`|`分割或`Union`
 + 某种类型或`None`：`Optional[类型]`
 
 + 可调用类型（函数）：`Callabel[[逗号分割的参数列表]返回值]`
 	+ 没有返回值的函数：`NoReturn`
 
 + 特定项：`Literal[特定项列表]`
-	+ 但是不是认为是特定项类型，而是一种独特的类型
 
+	这样会报错
+	
 	```python
 	def request(url: str, method: Literal["GET", "POST"]):
 		...
-
-	request("www.baidu.com", "GET")  # 这会报错
-
-	arg_method: Literal["GET", "POST"]
+	request("www.baidu.com", "GET")
 	```
 
+	因为认为这是一个独特的类型
 
-+ 特定项：`Literal`
-	+ 但是变量复制就飘红-》给变量做type hint，但是太长，而且不易一起变化
-		+ 给Literal赋值给一个变量上做类型别名
+	这样才不会
+	```python
+	def request(url: str, method: Literal["GET", "POST"]):
+		...
+	
+	arg_method: Literal["GET", "POST"] = “GET”
+	request("www.baidu.com", arg_method)
+	```
 
-+ 类型别名：给一个类型起个别名，
-	+ 但是名字不同，但是内部一样，同类型的互用不报错，但是语义不对，
-		+ 真的建立新类型`newname = NewType('newname', 原本的类型)`
-			+ 但是这样这样就很严格了，需要显示转换
+	但是这样好笨
+
+	可以
+	```python
+	ARG_METHOD = Literal["GET", "POST"]
+	def request(url: str, method: ARG_METHOD):
+		...
+	
+	arg_method: method: ARG_METHOD = “GET”
+	request("www.baidu.com", arg_method)
+	```
+
+	(依然很笨)
+
+	而且会出现语义错误，因为这样组织的类型很松散，可以使用`newname = NewType('newname', 原本的类型)`，就类似于C++的从#define变成typedef
+
++ 这样的代码
+	```python
+	def find_enum(s: str, enum_class: Enum) -> Optional[Enum]:
+    for enum in enum_class:
+        if enum.name == s:
+            return enum
+    return None
+	```
+	对`enum.name`不能正常的进行提示，应该改成
+	```python
+	def find_enum(s: str, enum_class: Type[Enum]) -> Optional[Enum]:
+	```
+	因为Enum的定义是这样的`class Enum(metaclass=EnumMeta):`
 
 ### 魔术方法
 [Manual](https://docs.python.org/3/reference/datamodel.html#special-method-names)
