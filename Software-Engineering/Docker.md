@@ -11,7 +11,8 @@ docker很多命令需要sudo，为了避免麻烦，可以将当前用户将入�
 sudo usermod -aG docker $USER
 ```
 
-	## Image
+## Image
+
 + 镜像的构成：`type:version`
 ---
 + `docker images`：列出本地所有的镜像
