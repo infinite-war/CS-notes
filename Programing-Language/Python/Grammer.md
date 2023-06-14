@@ -180,3 +180,11 @@ generator较于itrator的新功能`send`：yield语句可以有“左值”，�
 python没有重载，但是可以有奇技淫巧去实现
 
 https://arpitbhayani.me/blogs/function-overloading， 一个比较好的翻译 https://cat.ms/posts/function-overloading-in-python/
+
+
+## 数据类
+
+[menual](https://docs.python.org/zh-cn/3.7/library/dataclasses.html)
+
++ \[踩坑\]：使用装饰器`@dataclass`，定义`__init__`，对类实例调用`__repr__`，显示内容为空
+	+ 因为数据类的属性必须以属性名和属性类型的键值对的形式写在类全局中才能被dataclass自带的`__data__`捕获

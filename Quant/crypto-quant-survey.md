@@ -5,6 +5,7 @@ https://github.com/UFund-Me/Qbot
 
 + 网站：
 	+ [BTR](https://backtest-rookies.com/)：专注于回测（G了？）
+	+ [HRT](https://www.hudsonrivertrading.com/hrtbeat/)：xiaoyang推荐的量化学习博客
 
 + 平台：
 	+ FMZ发明者：[web.cn](https://www.fmz.cn/) | [web.com](https://www.fmz.com/)（数字货币）

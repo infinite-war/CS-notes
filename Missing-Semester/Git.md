@@ -192,6 +192,19 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	1. 切换到master分支
 	2. `git merge 新工作分支名`
 
++ 还有一个情况是把多分支都push到云上了，然后本地的项目就删除了，怎么下载多个分支呢
+	```
+	git clone url
+	git branch -a  # 查看云端分支
+	git checkout origin/分支名
+	```
+
+	+ 删除不用的分支：
+		```
+		git branch -d branch_name
+		git push origin --delete branch_name
+		```
+
 ### 查看过去版本的效果
 
 首先，最安全的一个方案是开一个新的分支
