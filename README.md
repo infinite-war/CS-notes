@@ -8,6 +8,7 @@
 ### 精华文章(自认为)
 
 + [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
++ [Git使用实战](./Missing-Semester/Git.md#practice)：小小的Git，大大的迷惑
 + [只赠有缘人](./blog/%E5%8F%AA%E8%B5%A0%E6%9C%89%E7%BC%98%E4%BA%BA/README.md)：Yes，只赠有缘人。
 
 ### 笔记意义

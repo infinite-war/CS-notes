@@ -10,7 +10,7 @@
 
 + 工作区worksapce：仓库所在的目录，是独立于各个分支的。
 + 暂存区Stage/索引Index：数据暂时存放的区域，类似于工作区写入版本库前的缓存区，也是独立于各个分支的。
-	>个人感觉两个概念略有区别，所以是git所管理的文件，一个管理的文件可以将修改记录在暂存区、也可以选择不记录，但是它仍然被git管理，在索引中
+	>个人感觉两个概念略有区别，索引是git所管理的文件，一个管理的文件可以将修改记录在暂存区、也可以选择不记录，但是它仍然被git管理，在索引中
 + 版本库repositorty：存放所有已经提交到本地仓库的代码版本  
 	+ 版本结构：树结构，树中每个节点代表一个代码版本
 	+ HEAD：指向当前节点的最新节点
@@ -95,54 +95,114 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	```
 
 ### Pages
-考虑这样的场景，我的项目的有些成果可以静态网页的形式展示，能够缩短路径让客户最快的看到我们产品的效果。但是大张旗鼓的在服务器搭建一个Web服务也不合适，因为大概率服务器属于你的时间要远小于项目属于你的时间。这时GitHub Pages就派生用场了。下面给出一个方案。
+考虑这样的场景，我的项目的有些成果可以静态网页的形式展示，缩短路径让客户最快的看到我们产品的效果。但是大费周章的在服务器搭建一个Web服务也不合适，因为大概率服务器属于你的时间要远小于项目属于你的时间。这时GitHub Pages就派生用场了。下面给出一个方案。
 
 打开项目 -> Settings -> Pages(在右边) -> (在Branch下选择)master + docs -> Save -> 然后把一个index.html放到项目的docs目录下即可通过`https://用户名.github.io/项目名/`访问
 
-## 实战
+## Practice
 
-### 如何为一个开源项目做贡献
++ jargon解释
+	+ Github，就是Github
+	+ repo/Repository，Github上的项目
+	+ Public/Private，上传到Github可以设置可见性
+	+ Issue：项目相关问题
+		+ 项目作者可以要求提问格式
+	+ Fork：将项目拷贝一份放到你的repo中
+	+ PR/Pull Request，修改项目的请求
+	+ Review，审计pr代码
+	+ Merge，在这里指pr通过review，合并进项目中
 
-一个在Github上Public的项目是开源的，每个人都可以查看代码，也能为项目贡献代码。那么怎么贡献代码呢？
+### 为开源项目贡献代码
 
->+ issue：任何人都可以向项目提问题，当然任何人也都可以解答
->	+ 项目作者可以限定提问格式
->	+ good first issue，简单的issue，适合项目新手第一次上手项目
+一个在Github上Public的repo(Repositories)是“开源”，任何人都可以查看代码，也能为项目贡献代码
 
-建议在PR之前先提issue，然后对应的PR是为了解决这个issue，下面将如何PR
++ Good First Issue，开发者认为相对简单的issue，适合新手第一次上手项目
++ 建议在PR之间先提Issue，然后PR中即解决这个Issue
 
-+ Pull Request：
-	1. fork这个项目到你的仓库
-		>我们在开发的同时还有其他贡献者，项目可能同时在开发，我们应该提交到最新的版本：同步[fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
+流程如下
+1. Fork这个项目到你的仓库
+	+ 同步Fork：[ref](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
 
-	2. clone：克隆到本地进行开发
-	3. 创建新的分支（分支命令应尽可能简单且能反应我们的工作）
-		```bash
-		git checkout -b [branch name]
+2. Clone项目到本地，这个项目指的是Fork到你的仓库的项目
+3. 创建新的分支，分支名应该尽可能简介且能反映我们的工作
+	```bash
+	git checkout -b [branch name]
+	```
+
+	+ 每次开始一个新的任务都应该开一个新的分支
+
+修改代码
+
+4. 
+	```bash
+	git add .
+	git commit -s
+	```
+
+	+ commit的message应该短小精悍，比如
 		```
-		>实际上每开始一部分都应该开一个新分支
+		任务概括
+		# 这里要有空格
+		1. 一个小部分
+		2. 另一个小部分
+		```
 
-	修改代码
+	+ 参数`-s`表示在提交信息中加入Signed-off-by签名，即作者已经同意以某种方式授权提交代码
 
-	4. `add` -> `commit -s`：message应该逻辑清晰（还记得如果不使用`-m`参数会进入一个编辑器嘛？在里面用Markdown写）
-		>参数`-s`表示在提交信息中加入Signed-off-by签名，表明作者已经同意以某种方式授权提交代码
-	
-	5. `git push 远程分支 你的分支`
-		>`git remote`：查看远程分支
+5. `git push 远程分支名 你本地分支名`（通常这个命令自然是一样的）
 
-	6. 在GitHub上点击Pull Request
+6. 进入Github网页，进入你的项目，会出现Pull Request按钮
 
-	会有人对你的pr进行review，可能需要修改 
+之后就会有项目开发者对你的PR进行Review，这时可能需要进行修改
 
-	修改后的commit需要这样`git commit -s -amend`
-	+ 参数`-amend`表示修改上一次提交，而不是创建一次新的提交
+7. 
+	```
+	git commit -s --amend
+	git push -f
+	```
 
-	之后的push需要加上参数`-f`
+	+ commit参数`--amend`表示修改上一次commit，而不是创建一次新的commit
+	+ push参数`-f`
+
+
+### 多分支维护
+
+上面提到，每次开始一个新的任务都应该开一个新的分支进行开发，这在多人开发中是必要的，那么个人开发也有必要嘛？  
+我个人觉得有的，因为在开发新的部分时常常发现上一个部分的小bug，这个时候我可能先`git reset HEAD~1`退回到上一个版本，然后把修改的文件`add`然后重新commit，但是这样太笨对吧，如果上次修改了大量的文件，或者两次修改之间有重复的文件，是不能解决的。所有个人项目开新的分支也是有必要的。
+
++ 新开一个分支：`git branch 新分支名`
+	+ 删除分支：`git branch -d 新分支名`
+		+ 同步到云端：`git push origin --delete [branch name]`
++ 查看本地分支：`git branch`
+	+ 查看本地和云端（github）的分支：`git branch -a`
++ 切换分支：`git checkout 分支名`
++ push：`git push`后看提示
++ 把新分支合入进master：
+	1. 切换到master
+	2. `git merge [branch name]`
+
++ clone分支：
+	```bash
+	正常clone
+	git checkout origin/[branch name]
+	```
+
+	+ 查看包括云端的分支：`git branch -a`
+
+### 查看过去版本效果的正确姿势
+
+>如果在开发新功能时是开一个分支就不会有下面的问题
+
+事情是这样的，写一个项目，新版本有bug，而且de不出来，而且我还commit了，于是`git reset HEAD~1`回退到上一个版本，这时所有没有commit的文件就是出bug的版本修改的了，到这里还没啥问题，我想怎么看上一个版本的运行效果呢？于是直接`git checkout .`，把这些没有commit的文件的修改全部“取消”了，回车按下去我心里草了，那我白写了？
+
+幸好有这个命令`git reflog`，这个命令可查看HEAD指针的移动情况，我们发现我们`reset`这个动作的，同一行有对应的哈希值，只需要`git reset [前面提到的哈希值]`，就回到最开始了。
+
++ 这些信息是保存在本地的，不会随着push到云端
 
 ### 修改过去版本中的记录
->这个行为是危险的
+>这是一个危险的行为，不建议模仿
 
-我有一个个人项目，它诞生于我对git使用很不规范的时期，有很多无用的commit，其中真的影响使用的是，我发现git clone的速度非常的慢，虽然项目中确实有挺多的静态文件，但是直觉上感觉不应该这么慢。我在之前的某个commit中把大量的测试用图片交了上去，猜测这部分在.git目录中的记录体积很大。考虑如何删除。
+我的一个个人项目诞生于我对git使用很不规范的时间，有很多无用的commit，其中真的影响使用的是，我发现git clone的速度非常的慢，虽然项目中确实有挺多的静态文件，但是直觉上感觉不应该这么的慢。我在之前的某个commit中把大量的测试用图片交了上去，猜测这部分在.git目录中的记录体积很大。考虑如何删除。
 
 1. 创建并进入新分支：` git checkout -b remove-images`
 	>`git branch -a `查看分支
@@ -172,60 +232,10 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 
 果然快很多。
 
-### 多分支维护
-指的是这样的情况，我当前的版本还需要小修小补，但是还有新的开发任务，且新旧任务没有任何交叉。
+### 将别人项目的各个分支都搞到自己的仓库中
 
-1. 新开一个分支：`git branch 新分支名`
-+ 
-	+ 查看分支：`git branch`
-	+ 切换分支：`git checkout 分支名`
-
-2. 将新分支维护在云端：
-	1. 切换分支
-	2. push看提示
-
-3. 
-	+ 旧分支通过`git commit --emand`维护
-	+ 新分支正常维护
-
-4. 合入：
-	1. 切换到master分支
-	2. `git merge 新工作分支名`
-
-+ 还有一个情况是把多分支都push到云上了，然后本地的项目就删除了，怎么下载多个分支呢
-	```
-	git clone url
-	git branch -a  # 查看云端分支
-	git checkout origin/分支名
-	```
-
-	+ 删除不用的分支：
-		```
-		git branch -d branch_name
-		git push origin --delete branch_name
-		```
-
-### 查看过去版本的效果
-
-首先，最安全的一个方案是开一个新的分支
-
-1. 项目写着写个挂了，而且已经commit，当然可以通过`git reset HEAD~1`回到上一个commit，这是在出错的commit里的代码都是未commit的。  
-2. 但是想看看上一个版本的效果是啥，新的commit里修改的文件太多了，直接`git checkout .`，于是把新commit的修改“取消”掉了，此时再编译运行就是之前正确的版本。  
-3. 心里有谱了，想看看新版本的修改都发生了啥——我草，我给`chectout`都删除了，之前白写了？  
-
-4. 不会的，可以通过`git reflog`查看HEAD指针的变化情况，我们发现了我们的reset，同一行有对应的哈希值，只需要`git reset 哈希值`就可以返回到第一步之前
-
-+ 这个`git reflog`肯定是存储在`.git`目录中，那么我们这样会在开发过程中的来回移动`HEAD`会造成`.git`目录变大嘛？（比较这部分体积对项目本身是没有意义的）  
-	是不会的，这个命令是“本地HEAD指针”变化
-	+ 不会存储在`.git`目录中，不会push到github中的项目中
-	+ 如果本地的文件删除，即使git clone也不会得到这部分信息，这部分信息只能保存在本地
-
-### 将别的项目的各个分支push到自己的repo下
-
-在写xv6的实验时，他是每个实验一个分支，我们可以在MIT的项目（clone到本地）下，这样
-```bash
-git remote set-url origin git@你的
+标题有点迷惑，主要值在写xv6的实验时，它是每个实验一个分支，我们把某个分支从MIT clone到本地，然后
 ```
-这样就会把对应的分支push到对应的repo中  
-
-如果下一个实验换分支，同样，到MIT的项目（克隆到本地）下、新的分支下，然后上面的命令，就是将新的分支push到这个项目下了。
+git remote set-url origin git@你的repo.git
+```
+对每个分支都这样做就完成了。
