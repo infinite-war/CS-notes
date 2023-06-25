@@ -1,49 +1,37 @@
 + 相关术语：
-	+ root根、edge边、leaf叶子结点
-	+ child儿子、parent父亲、siblings兄弟结点  
-		grandparent祖父、grandchild孙子  
-		ancestor祖先、descendant后裔，如果一对祖先后裔不同则是真祖先、真后裔（真proper）
-	+ path路径：点到点、length长：路径上边的条数、depth深度：结点到根的路径的长、height高：树中深度最大的叶子的深度
-
-+ 实现：由于每个结点的儿子数量是不确定的，通常每个结点建立一个链表，从左到右分别指向
++ 实现：
 	```cpp
 	struct TreeNode {
-		Object element;  // 节点
-		TreeNode *firstChild;  // 结点的第一个儿子
-		TreeNode *nextSibling;   // 该结点其右边的第一个兄弟(如果有)
+		Object element;
+		TreeNode *firstChild;  // 最左边的孩子
+		TreeNode *nextSibling;  // 右边的兄弟
 	}
 	```
+	类似侵入式的前式链向星？
 
-## Binary Tree
->这就是二叉树
+```mermaid
+graph LR;
 
-+ 定义：每个结点不能有多于两个儿子的树
-	+ 平均深度$O(\sqrt{N})$
+树 --> 二叉树
+树 --> 多叉树
 
-+ 实现：
-	```c++
-	struct BinaryNode {
-		Object     element;  // The data in the node
-		BinaryNode *left;    // Left child
-		BinaryNode *right;   // Right child
-		}
-	```
+二叉树 --> 完全二叉树
+二叉树 --> 表达式树
+二叉树 --> 二叉搜索树
 
-+ 表达式树：叶子是operand操作数、其他结点是operator操作符
-	+ 不同遍历方式对应不同表达式的形式
-	+ 将表达式转换成表达式树：维护一个维护结点的栈，一次读入
-		1. 操作数：构造成结点压入栈
-		2. 操作符：构造成结点，弹出栈顶两个元素作为其左右儿子，再将该结点压入栈
+完全二叉树 --> 堆
 
-### 完全二叉树
+二叉树 --> 平衡二叉树
+平衡二叉树 --> AVL树
 
-#### 堆
+多叉树 --> btree[b-tree]
+多叉树 --> LSMtree[LSM-tree]
 
+btree[b-tree] --> bbtree[b+tree]
+```
+---
 
-
-### Binary Search Tree
->二叉搜索树，也就是八股中的`b-tree`（这里的横杆是杠而不是减号）
-
+## Binary search tree
 + 定义：结点值为相互之间有**偏序关系**的值，对于每个结点其左子树的所有项的值都小于该结点、右子树的所有项的值都大于该结点
 
 ```c++
@@ -157,15 +145,5 @@ private:
 		但是对二叉树不成立，此时D（i）和D（N - i - 1）的平均值都是$\frac{1}{N}\sum_{j = 0}^{N - 1}D(j)$，故$D(N) = \frac{2}{N}[\sum_{j = 0}^{N - 1}D(j)] + N - 1$
 
 + 上面实现的问题：删除只从右子树开始，会出现，树的形态向左偏从而导致效率下降
-	+ balance平衡：不允许结点深度过深
-	+ AVL树
-	+ self-adjusting自调整：在操作后进行调整
-	+ splay tree伸展树
 
-### AVL树
-> AVL Adelson-Velskii and Landis  
-> balance condition平衡条件
-
-将空子树高度定义为-1，AVL的平衡条件是要求每个结点的左子树和其右子树的高度最多差1
-理论上AVL的树的高度最多$1.44log(N + 2) - 1.328$，但其实际高度只比logN稍微多一点
-+ 插入——rotation旋转
+## B-tree

@@ -2,7 +2,7 @@
 >[姊妹篇：Linux开发机配置指南](https://github.com/zweix123/CS-notes/blob/master/Missing-Semester/LinuxConfigGuide.md)
 
 + 精华：
-	+ [命令行](#5%E5%91%BD%E4%BB%A4%E8%A1%8C)：为Windows配置一个相当优雅的命令行环境，让你在win中有近似linux的命令行体验
+	+ [命令行](#5命令行)：为Windows配置一个相当优雅的命令行环境，让你在win中有近似unix的命令行体验
 	+ [包管理器Scoop](#6包管理器scoop)：十分建议您千万不要错过这样一款包管理器，它极大的改善了我的开发环境
 
 # 前言
@@ -31,14 +31,15 @@
 
 	+ 通过安装包安装软件时通常会有对应的步骤提示（或者是一个拉起的选项卡）选择路径
 	+ 诸如WeChat、QQ、TIM或者是软件管家这样的软件通常涉及到文件的存储，需要在“设置”中手动修改
-	+ 有些安装包直接安装软件并在桌面创建快捷方式，可以通过查看快捷方式的指向来确定其存储位置，不建议直接横移文件夹修改
+	+ 有些安装包直接安装软件并在桌面创建快捷方式，可以通过查看快捷方式的指向来确定其存储位置，但不建议直接横移文件夹修改
 
-既然所有的盘都是固态，后来我将所有的空间都给C盘，我和空间问题说拜拜
++ postscrpt：
+	+ 既然所有的盘都是固态盘，我重新划分盘空间，只留一个盘——C盘
 
 ## 0.初始设置
 
 + 第一次开机：win10会以对话式的方法进行初始化配置，仔细阅读其描述按照自己的理解选择即可。
-	>其中有个选项是“是否连接WiFi”，如果是新电脑，连接后通常不能进行退换（虽然本篇文章并没有检查新机的教程）
+	>其中有个选项是“是否连接WiFi”，如果是新电脑，连接后通常不能进行退换（我不保证属实，我不知道原理，本文不是一个新机检查的教程）
 
 	+ 用户名尽量用英文
 	+ 系统可能会默认下载一些软件，比如视频或音乐软件，这些通常下载在C盘，我通常都是卸载然后如果需要再重新安装
@@ -68,11 +69,11 @@
 	| 关盖     | 不使用 | 不使用 |
 
 + 修改机器的语言：控制面板 -> 时钟和区域 -> 区域 -> 管理 -> 更改系统区域设置 -> 打开Beta版
-	>这步非常重要，Windows为了向后兼容性使用特殊的编码，在解释或编译代码时经常出现乱码，这个一定要打开（至少我个人都是打开的）。
+	>Windows为了向后兼容性使用特殊的编码，我个人一般是打开的。
 
 ---
 
-+ 不能进入`C:\Program Files\WindowsApps`：[解决方法](https://jingyan.baidu.com/article/1876c852de26a0c80b1376c5.html)
++ 不能进入`C:\Program Files\WindowsApps`目录：[solution](https://jingyan.baidu.com/article/1876c852de26a0c80b1376c5.html)
 
 + 升级到专业版或企业版，这样的场景比如连接到win的服务器就需要使用win的remote功能，这种功能家庭版没有，如何升级请STFW
 	+ Reference
@@ -85,9 +86,9 @@
 >win默认使用Microsoft Edge浏览器也改为Chromium内核，可直接同步Chrome数据，但它每个选项卡被win认为是一个窗口，我个人不使用
 >>这点在`设置` -> `系统` -> `多任务处理` -> `Alt + Tab`，打开这里的选项卡您就知道是怎么回事了，win对它的亲儿子特殊照顾了。
 >
->AIGC来了，Edge有New Bing，看这个领域后续怎么发展吧，个人猜测会发展成类似IM那样，几家最大由大部分人使用、部分监管少的由小部分圈子人使用、公司使用私有云或者私有云服务（但是AIGC还有一个属性就是领域定制，期待会有更多的火花）
+>2023 AIGC来了，Edge有New Bing，看这个领域后续怎么发展吧，个人猜测会发展成类似IM那样，几家最大由大部分人使用、部分监管少的由小部分圈子人使用、公司使用私有云或者私有云服务（但是AIGC还有一个属性就是领域定制，期待会有更多的火花）
 
-+ Chrome默认安装C盘：不处理，软件位置右键快捷方式查看
++ Chrome默认安装C盘：不处理，软件位置右键快捷方式查看位置
 + 谷歌需要人工验证：使用插件Header Editor（[教程](https://blog.azurezeng.com/recaptcha-use-in-china/)）
 	```
 	https://azurezeng.github.io/static/HE-GoogleRedirect.json
@@ -103,6 +104,7 @@
 		+ 这里推荐一款我开发的关于哔哩哔哩的脚本，[地址](https://github.com/zweix123/BilibiliProgressBar)
 	+ crxMouse Chrome手势：后退、前进、顶部、底部，对文件图片链接的打开
 	+ Vimium：Vim用户的福音，嘎嘎好用。
+	+ epub阅读器
 
 ## 2.解压缩7z
 一款简单的解压缩软件
@@ -135,7 +137,7 @@
 ---
 
 + 快捷键推荐：
-	+ 长按`Ctrl + space`使用`+`或者`-`控制系统字体大小
+	+ 按住`Ctrl`使用`+`或者`-`控制系统字体大小
 	+ 按住`Ctrl`使用鼠标滚轮控制编辑器字体大小
 	+ `Ctrl + \`左右分屏（和VSCode统一）
 
@@ -156,7 +158,6 @@
 		git checkout ./.obsidian/workspace.json  # linux
 		```
 		后我将该文件放在`.gitignore`中
-
 
 ## 5.命令行
 
@@ -189,7 +190,7 @@
 
 		+ 使用程序oh-my-posh提供功能上的增强，主要是历史命令补全
 		+ 使用Windows Terminual提供类似Tmux的功能
-	+ 样式上：（这方面是审美和习惯方面的，我会提供我的配置，但是不一定符合您的胃口）
+	+ 样式上：（这方面是审美和使用习惯，我会提供我的配置，您可以再做定制）
 		+ 信息的输出，比如用户名、主机名、当前路径、Git状态，甚至时间、电量，这里使用oh-my-posh对这些信息进行排布和染色，即主题
 		+ 底层的配置，比如字体、字体大小、颜色定义，这里通过Windows Terminual
 
@@ -218,7 +219,8 @@
 ### 5.3.Windows Terminal
 >win10需要下载，win11自带
 
-+ 安装：使用国内网在Microsoft Store直接搜索下载（这也是Manual推荐的）
++ 安装：使用国内网在Microsoft Store直接搜索下载（[Manual](https://github.com/microsoft/terminal#installing-and-running-windows-terminal)推荐）
+	+ 之后我迁移到Scoop上了，方法在Manual中
 + 使用：
 	+ 快捷键`win + r`键入`wt`打开一个Windows Terminal
 		>报错：报错VCRUNTIME140_1.dll缺失：在C盘搜寻文件，将其复制到`C:\Windows\System\`即可
@@ -264,11 +266,10 @@
 + 文件结构：
 	```
 	Scoop
-	  | ---apps      # 下载的软件安装位置   |
-	  | ----------------------------------- |
-	  | ---buckets   # 桶(可以理解为软件源) |
-	  | ---cache     # 下载的安装包         |
-	  | ---persist   # 用户数据             |
+	  | ---apps      # 下载的软件安装位置
+	  | ---buckets   # 桶(可以理解为软件源)
+	  | ---cache     # 下载的安装包
+	  | ---persist   # 用户数据
 	  `----shims     # 命令位置
 	```
 
@@ -373,6 +374,15 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 见我的[教程](../Software-Engineering/UML.md)
 
 ## 虚拟机VMware Workstation Pro
+
+主要是为了在我的Windows机器上提供一个Linux环境，我个人的使用场景一般都是打开后就放在后台，然后SSH或者VSCode remote过去。  
+我们发现上面的场景又几乎不再需要VMware Workstation的图形化界面了，幸好VMware提供了命令行的操作形式。
+
+```powershell
+vmrun start D:\VMware\VM\Ubuntu64\Ubuntu64.vmx nogui  # 没有图形化的运行
+vmrun list  # 查看是否运行
+# 怎么关闭呢? ssh进去然后sudo poweroff
+```
 
 ## 硬件扩展
 见我的[讨论](https://github.com/zweix123/CS-notes/blob/master/blog/Multi-computer%20Cooperation.md)

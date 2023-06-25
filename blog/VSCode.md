@@ -24,15 +24,15 @@
 		+ 或者使用`Ctrl + Shift + E`打开资源管理器，然后使用方向键选择
 	+ 键入前缀 `>` 使用VSCode命令（或者直接快捷键 `Ctrl + Shift + p`）
 		+ 大小写转换
-		+ 函数折叠
+		+ 代码块折叠
 	+ 键入键入`@`在当前文件按名称查找（或者直接快捷键`Ctrl + Shift + O`）
-		>怎么在多个文件按名称查找呢？`Ctrl + Shift + f`
+		>怎么在多个文件按名称查找呢？在资源管理器`Ctrl + Shift + f`
 
 + Basic Editing：略
 	+ multi-cursor：
 		+ `Alt + 鼠标`
 		+ （选中） -> `Ctrl + d`
-		+ `Shift + Alt + 方向键`
+		+ `Shift + Alt + 方向键`（Ubuntu没问题，但是在Windows下不行）
 
 + 常用快捷键：
 	+ `Ctrl + ~`/`Ctrl + num`切换terminal和workspace
@@ -146,7 +146,6 @@
 + 使用`#%%`可类似Jupyter分块
 	>Jupyter状态下有很多快捷键
 
-
 ### C/C++
 
 + Reference
@@ -195,6 +194,7 @@
 		+ 生成目录
 
 ## Mind Mapping
+
 插件markmap
 
 ## LaTeX

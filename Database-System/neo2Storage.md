@@ -49,6 +49,4 @@
 
 ### Page Layout
 
-
-
 ### Tuple Layout

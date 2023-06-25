@@ -1,19 +1,6 @@
-## Intro
-
-+ 配置脚本：
-	```bash
-	ssh-keygen && touch ~/.ssh/authorized_keys ~/.ssh/config  # 之后一路回车+y
-	```
-+ **将公钥放置到GitHub上**  
-	测试：`ssh -T git@github.com`
-
----
-
 + 功能：
-	+ 连接云服务器
-	+ 使用Github
-
----
+	+ 连接服务器
+	+ 使用代码托管平台
 
 + 配置目录：`C:\User\$用户名\.ssh\`（Windows）、`~/.ssh/`（Linux）
 	```
@@ -27,7 +14,6 @@
 
 	+ `id_rsa`和`id_rsa.pub`：使用RSA加密算法的公钥和秘钥。
 		+ 生成命令：`ssh-keygen`，之后一路回车
-			>这个命令的使用要求没有`./.ssh/`这个目录，否则会报错
 
 		+ 应用：
 			+ 将公钥内容放在服务器的`authorized_keys`中即可实现免密登录
