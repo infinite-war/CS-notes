@@ -11,3 +11,5 @@
 
 + string类的末尾，C风格字符串的末尾是`'\0'`（注意这不是0，而是特殊的转义字符），在string类中使用[`npos`](https://en.cppreference.com/w/cpp/string/basic_string/npos)，
 + 头文件：string类是由`<string>`支持的，其他（`string.h`和`cstring`）都是支持C风格字符串相关操作的
+
+## 

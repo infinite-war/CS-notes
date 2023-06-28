@@ -66,3 +66,9 @@ C++20：
 10. 同步队列和信号量
 11. 格式化输出
 12. 增强型类型枚举
+
+
+### 断言
+
++ [assert](https://en.cppreference.com/w/cpp/language/aggregate_initialization)：运行期断言
++ [static_assert](https://en.cppreference.com/w/cpp/language/static_assert)：编译器断言
