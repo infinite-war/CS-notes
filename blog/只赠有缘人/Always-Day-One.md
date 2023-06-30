@@ -87,7 +87,8 @@
 + 数据库
 	+ [x] 王珊、萨师煊的《数据库系统概念》（第五版）：教材
 		>萨师煊先生是我国数据库的奠基人。
-	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人将前者改写成Modern C++，项目规模在学习项目中算中等，书本身由于有《Crafting interpreters》珠玉在前我只是草草看完，重点在项目实践。
+	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人将前者改写成Modern C++，项目规模在学习项目中算中等，书本身由于有《Crafting interpreters》珠玉在前我只是草草看完，重点在项目实践。  
+		知识讲的和代码写的都有点烂，要是想看，做好按索引自学和重构的准备。
 
 ## 工程
 
