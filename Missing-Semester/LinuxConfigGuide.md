@@ -186,6 +186,17 @@ tmux
 
 导入[我的配置](https://github.com/zweix123/linux-config)
 
+## 其他开发环境
+
+### C++
+
+```bash
+sudo apt-get install build-essential  # gcc g++ make
+sudo apt-get install cmake            # cmake
+
+sudo apt-get install clang-format     # clang-format
+```
+
 # 物理机
 
 ## 改键
