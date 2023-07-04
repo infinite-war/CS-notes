@@ -191,10 +191,10 @@ tmux
 ### C++
 
 ```bash
-sudo apt-get install build-essential  # gcc g++ make
-sudo apt-get install cmake            # cmake
+sudo apt install build-essential  # gcc g++ make
+sudo apt install cmake            # cmake
 
-sudo apt-get install clang-format     # clang-format
+sudo apt install clang-format     # clang-format
 ```
 
 # 物理机
