@@ -200,7 +200,9 @@ abstract syntax tree, AST抽象语法树
 		+ 没有控制流
 
 #### 自顶向下算符优先解析建立
+
 这种算法（如果可以称为算法的话），有很多，这里只讨论Pratt Parsing算法
+https://matklad.github.io/2020/04/13/simple-but-powerful-pratt-parsing.html
 
 ## 3.semantic analysis语义分析
 不是必须的，概念性的
