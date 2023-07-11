@@ -5,3 +5,8 @@
 2. select：将调用状态关联到一个数组上，然后轮询数组check状态，数量有限
 3. poll：将调用状态关联到一个链表上，然后轮询链表check状态，性能低下
 4. epoll：自然回调，当事件完成唤醒
+
+
+### OCI
+
+https://blog.lizzie.io/linux-containers-in-500-loc.html
