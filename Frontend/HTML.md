@@ -20,6 +20,7 @@
 + DOM
 
 ## Tag
+
 + 特殊字符：
 	+ 左右小括号`&lt;`和`&gt;`
 	+ 空格`&nbsp;`
@@ -76,7 +77,7 @@
 		+ `radio`：即为选项，通过name分类，value则为其对应的值
 		+ `file`
 	+ `name`：参数名称（用于发get）
-	+ `id`
+	+ `id`：
 	+ `maxlength`/`minlength`
 	+ `required`：是否必填
 	+ `placeholder`：当表单控件为空时，控件中显示的内容

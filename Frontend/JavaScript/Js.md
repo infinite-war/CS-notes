@@ -100,9 +100,3 @@ let main = function() {
 
 + 没有下标限制，认为是map的特殊形式？
 + 成员 
-
-## API
-
-### document
-
-+ `querySelector`像CSS选择器一样选择标签

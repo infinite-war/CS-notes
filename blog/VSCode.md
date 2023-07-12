@@ -54,7 +54,7 @@
 	+ https://code.visualstudio.com/docs/editor/debugging#_launch-configurations
 	+ https://code.visualstudio.com/docs/editor/tasks#_custom-tasks
 
-+ `extensions.json`（[manual](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions)）
++ `extensions.json`（[manual](https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions)）：扩展推荐
 + `setting.json`（[manual](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settingsjson-location)）：工作区相关配置
 + `task.json`（[manual](https://code.visualstudio.com/Docs/editor/tasks)）
 + `launch.json`（[manual](https://code.visualstudio.com/docs/editor/debugging)）

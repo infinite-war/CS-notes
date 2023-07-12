@@ -48,6 +48,8 @@ go env -w GOPROXY=https://goproxy.io,direct  # 设置软件源
 	+ 得到汇编代码：`go build -gcflags -S main.go`
 	+ 获得优化汇编的过程：`GOSSAFUNC=main go build main.go`，得到一个可交互的网页`ssa.html`
 
++ `go test`：找到包内文件名为`*.test.go`的文件运行其中的`Test..`函数
+
 ## project file struct
 >[资料](https://github.com/golang-standards/project-layout/blob/master/README_zh.md)
 

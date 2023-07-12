@@ -1,6 +1,7 @@
 + Reference
 	+ MIT的[6.824](https://pdos.csail.mit.edu/6.824/schedule.html)
 		+ [野生字幕翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/)（作者没有说翻译的哪一年的课程，我个人猜测是21年的）
+		+ 日志打印技巧：https://blog.josejg.com/debugging-pretty/
 
 
 ## 为什么需要分布式
