@@ -6,3 +6,4 @@
 	+ 那什么时候小于这个数字呢？很有可能在文件中， 那么read是怎么知道是真的不足了而不是暂时不足了？是通过EOF，文件末尾有EOF，所以如果close pipe这个操作也是往管道中放入EOF
 
 + lab2的调试按照manual的步骤是运行不起的，把问题的具体描述和解决方案放在[so](https://stackoverflow.com/questions/76025743/error-shown-a-problem-internal-to-gdb-has-been-detected-when-doing-xv6)上了
++ 

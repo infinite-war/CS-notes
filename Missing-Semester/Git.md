@@ -236,6 +236,7 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 
 标题有点迷惑，主要指在写xv6的实验时，它是每个实验一个分支，我们把某个分支从MIT clone到本地，然后
 ```
-git remote set-url origin git@你的repo.git
+git remote set-url origin 你的项目的SSH链接
+git push
 ```
 对每个分支都这样做就完成了。
