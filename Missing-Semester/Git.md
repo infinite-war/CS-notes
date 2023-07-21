@@ -240,3 +240,13 @@ git remote set-url origin 你的项目的SSH链接
 git push
 ```
 对每个分支都这样做就完成了。
+
+对于CS144也是类似，但是它切换不同的实验方式是merge其他的分支，所以在每个lab的分支下
+```
+git branch -m old_branch_name new_branch_name
+git push origin HEAD
+```
+还有一点是CS144的实验是一个接一个，后一个在前一个的基础上，所以会使用merge，但是我们看上面的方法没办法merge了呀，这样解决，每次遇到新的实验，在分别push到自己的repo后
+```
+git merge origin/上次实验分支名
+```
