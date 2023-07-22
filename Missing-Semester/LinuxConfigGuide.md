@@ -181,6 +181,8 @@ tmux
 		```bash
 		git clone https://gitee.com/phpxxo/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 		```
+	+ `zsh-completions`
+
 
 ## 5.导入软件配置
 

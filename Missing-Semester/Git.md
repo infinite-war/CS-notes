@@ -232,21 +232,30 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 
 果然快很多。
 
-### 将别人项目的各个分支都搞到自己的仓库中
+### 将其他repo各分支push到自己的repo中
 
-标题有点迷惑，主要指在写xv6的实验时，它是每个实验一个分支，我们把某个分支从MIT clone到本地，然后
+下面两个情况，当项目的修改到自己的repo后，就不能再联系到学校本来的repo了，我通常是在服务器从学校clone并保留，每次拿到新的分支copy出来，把copy出来的项目去push到自己的repo，开新的实验在备份那里进行更新再copy。
+
+#### xv6
+每个实验都是一个分支，我们把某个分支从MIT clone到本地，然后
 ```
 git remote set-url origin 你的项目的SSH链接
 git push
 ```
-对每个分支都这样做就完成了。
+这个分支就push到自己的repo下
 
-对于CS144也是类似，但是它切换不同的实验方式是merge其他的分支，所以在每个lab的分支下
+#### CS144
+
+与xv6的不同的是，它的每个实验在上一次实验的基础上，所以每次开新实验都是把新的分支merge到当前的分支，然后继续开发新进来的TODO  
+更新好分支后
 ```
+git remote set-url origin 你的项目的SSH链接
+
 git branch -m old_branch_name new_branch_name
 git push origin HEAD
 ```
-还有一点是CS144的实验是一个接一个，后一个在前一个的基础上，所以会使用merge，但是我们看上面的方法没办法merge了呀，这样解决，每次遇到新的实验，在分别push到自己的repo后
+然后就可以去github设置默认分支了。
+然后我们拿到新的分支后
 ```
 git merge origin/上次实验分支名
 ```

@@ -5,6 +5,9 @@
 + 对于课程笔记，我（自认为）严格遵循[Academic Integrity](http://integrity.mit.edu/)，虽然在笔记中可能记录思路，但是代码是Private的，如果有不合适的地方，请提醒我。
 + 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的note，除非特殊声明，否则不建议作为学习资料。
 
++ Reference：
+	+ [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+
 ### Blog
 
 + [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
@@ -31,6 +34,8 @@
 + 零碎的、细节性的知识现用现查
 
 此时笔记更像是”当年攻城略地时的纪念品“
+
+好吧还是有意义的，我工作之后，少有时间系统的一边看课/书一边记笔记了，所以基本是在地铁上学，读资料的时候确实感觉学到了新东西但是很快就忘记了，如果能随手记笔记应该效果会好些，唉，花有重开日，人无再少年呀。
 
 #### 学习阶段
 
