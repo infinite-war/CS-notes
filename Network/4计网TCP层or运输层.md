@@ -1,6 +1,6 @@
 # 概述
 
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/逻辑通信.png)  
+<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/逻辑通信.png" style="zoom:79%;" />  
 从这张图我们可以看到
 + 只有主机的协议栈有运输层，而网络核心的路由器只有IP层以下
 + 网络层实现主机之间的逻辑通信，运输层为应用进程之间提供端到端的逻辑通信
@@ -17,7 +17,7 @@
 + 用户数据报协议UDP(User Datagram Protocol)\[RFC 768\]
 + 传输控制协议TCP(Transmission Control Protoocol)\[RFC 793\]，面向连接、可靠全双工
 
-![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/应用及其协议.png)
+<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/应用及其协议.png" style="zoom:79%;" />  
 
 ## 端口号
 
@@ -82,48 +82,34 @@
 
 # 传输控制协议TCP
 
-+ 特点：
-	1. TCP是**面向连接**的运输层协议：通信前建立连接，后释放连接
-	2. 每一条TCP连接只能有两个**端点**(endpoint)，每一条TCP连接只能是**点对点**的（一对一）
-	3. TCP提供**可靠交付**的服务。通过TCP连接传送的数据，无差错、不丢失、不重复，并且按序到达
-	4. TCP提供**全双工通信**。利用缓存，是进程在任何时候都发送或读取数据，TCP负责在合适的时候发送，TCP提供缓存
-	5. **面向字节流**：TCP将应用进程交下来的**数据块**看成一连串无结构的**字节流**，在传输时不关心数据块的大小，TCP不关心数据何时/多大放到缓存里，只根据网络情况发送。其内容由上层的应用程序进行解码
++ 特点：面向连接（通信前建立连接、之后释放）、点对点全双工、可靠交付（无差错、不丢失、不重复且按序）、面向字节流（有缓存）。
++ 连接：TCP把连接作为最基本的抽象
+	+ 套接字Socket：IP地址拼接端口号
+		>当然Socket在网络技术中有不同的意思
+	+ 一个TCP是两个套接字
 
-+ 连接：TCP把==连接==作为**最基本的抽象**：TCP连接两个**端点**——套接字(socket)
-	+ 套接字：端口号*拼接到*(concatenated with)IP地址$套接字socket = (IP地址:端口号)$[RFC 793]
-	+ 每一条TCP连接唯一地被通信两端地两个端点（即两个套接字）所确定$TCP连接::={socket_1, socket_2}={(IP_1:port_1), (IP_2:port_2)}$
-	>socket的其他含义：  
-	>![socket的其他含义](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/socket其他含义.png)
-
-+ 格式：  
-	![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/TCP首部.png)
-	
++ 格式：<img alt="TCP首部" src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/TCP首部.png" style="zoom:69%;" />  
 	+ 序号（32位）：是循环的，针对的是内容字节
 	+ 确认号（32位）：表示希望下一个收到的序号
 	+ 控制位：
 		+ 确认ACK(ACKnowledgement)
 		+ 终止FIN(FINis)
 	+ 窗口（16位）：这个窗口不是下面的分组（发送窗口）的个数，而且窗口内的字节个数（滑动窗口）
- 
-+ 停止等待协议：每发送一个分组就停止等待，等待接受方发送确认消息，接收方如果在一定时间内没有收到，则超时重传
-	+ 需要对分组进行编号
-	+ 发送方必须保留已发送的分组的副本，也要实现超时计数器
-	+ 对于这样的情况：发送的分组很迟才到接收方，接收方还没来得及发送确认，此时发送方已经超时重传了。所以接收方会收到重复分组，怎么处理呢？丢弃重复分组，那对重复的分组还确认么？确认，发送方也会丢弃重复确认。
 
-+ 重传：
-	+ 超时重传：要么数据包丢失、要么确认包丢失，
 
-+ RTT 指的是数据发送时刻到接收到确认的时刻的差值，也就是包的往返时间。
-	+ RTO （Retransmission Timeout 超时重传时间
-		+ 应该略大于RTT
 
-	这里RTT是一个动态的值，在Linux中这个是变化的，有专门的计算方法
+ARQ, Automatic Repeat-reQuest协议
 
-单纯的停止等待的信道利用率很低的，因为信道里是空空的，所以实际上采用流水线传输，比如下面这样  
++ 停止等待协议：
+	+ 描述：每发送一个分组就停止等待，等待接收方发送确认消息，接收方如果在一定时间内没有收到，则考虑重传
+		+ 如果发送的分组很迟才到接收方，接收方还没来得及发送确认（至少发送方还没收到确认），于是发送方认为超时于是重传了，所以接收方会收到重复分组，接收方会丢弃分组，同样的对重复的分组接收方还发送确认嘛？任然确认（实现更简单），发送方也会丢弃重复的确认。
+	+ 实现：分组编号、保留已发送的分组、超时计数器
 
-![停等和流水线](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Network/停止等待和流水线运输.png)
++ 重传（有多种重传机制，这里记录下超时重传）
+	+ RTT, Round-Trip Time往返时延
+	+ RTO, Retransmission Timeout超时重传时间
 
-而为了实现这个就需要更多的技术
+单纯的停止等待的信道利用率很低的，因为信道里空空的，一个显然的想法就是能不能相对连续的传输——流水线？为此需要更多的技术——连续ARQ协议
 
-+ 连续ARQ协议：设置发送窗口，位于发送窗口的分组不需要确认，当窗口的前缀分组被确认后即可移动窗口
-+ 滑动窗口（不是上面的发送窗口）
++ 滑动窗口：
+
