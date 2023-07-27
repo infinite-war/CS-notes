@@ -1,3 +1,4 @@
+**SQL** is the defacto standard（many dialects）
 > 语法说明：
 >
 > + `<>`：内嵌名称，表示对应名称，使用时**没有**`<>`

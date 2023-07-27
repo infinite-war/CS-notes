@@ -1,7 +1,4 @@
 
-
-
-
 ## gcc
 
 ```bash
@@ -11,19 +8,11 @@ gcc -E code.c  # 只做预处理, 结果标准输出
 gcc -E -I目录名 code.c  # include "在同目录下找", 该命令指定目录
 ```
 
-
-
-
-
-
-
 ## clang
 
 > k lang
 
 1. 词法分析，得到token
-
-
 
 ```bash
 clang -fsyntax-only -Xclang -dump-tokens code.c
@@ -36,9 +25,6 @@ clang -fsyntax-only -Xclang -dump-tokens code.c
 ```bash
 clang -fsyntax-only -Xclang -ast-dump code.c
 ```
-
-
-
 4. 中间代码生成
 
 + 中间代码（clang叫LLVM IR，gcc叫GIMPLE）生成
@@ -114,25 +100,3 @@ clang -fsyntax-only -Xclang -ast-dump code.c
 + 未定义行为Undefined Behavior：不符合标准的行为。但是没说违反了会发生什么
 
 上面的文档，就是ABI Application Binary Interface，计算机系统软硬件协同的重要体现
-
-
-
---
-
-C语言如何跨平台？
-
-```c++
-#include <stdint.h>
-int8_t;
-int16_t;
-```
-
-
-
-----
-
-
-
-## 程序的执行
-
-+ freestanding

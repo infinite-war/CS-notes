@@ -7,7 +7,7 @@
 	+ 费曼学习法：我会设想有一个人在看这篇记录，用词尽可能有易读性，比如说明资料的推荐程度~~和适合人群~~
 
 + 说明：我本科的学习方法论是理论结合实践螺旋上升
-	+ 理论结合实践：Donald Knuth曾经说过"If you find that you’re spending almost all your time on theory, start turning some attention to practical things; it will improve your theories. If you find that you’re spending almost all your time on practice, start turning some attention to theoretical things; it will improve your practice."，我这里也提供一个工程类的视角理解这句话，如果我们要写一本教材，我们要选择一个主题，我们希望可以写出这个主题的方方面面，各个层次、各个细分以及它们的发展和现状。但我们发现如果一本教材想要实现理论和实践相结合是要做取舍的，如果想概念方面面面俱到，很难辅以实践，各个概念分别给出实践很零散，而且并不是所有的概念都有适合学习的实践。目前对这个问题的一种解决方案就是开发相对独立的配套实验嘛。还有一个方案就是专门写实践的书籍，这本书就是主要讲怎么实现某个东西，然后在这个过程中讲这个领域的相关概念，那么我们发现这样组织就很难展示尽可能全面的概念。所以我在资料的选择方面就涉及上面说的几种类型的资料。
+	+ 理论结合实践：Donald Knuth曾经说过"If you find that you’re spending almost all your time on theory, start turning some attention to practical things; it will improve your theories. If you find that you’re spending almost all your time on practice, start turning some attention to theoretical things; it will improve your practice."，我这里也提供一个工程类的视角理解这句话，如果我们要写一本教材，我们要选择一个主题，我们希望可以写出这个主题的方方面面，各个层次、各个细分以及它们的发展和现状。但我们发现如果一本教材想要实现理论和实践相结合是要做取舍的。如果想概念方面面面俱到，很难辅以实践，各个概念分别给出实践很零散，而且并不是所有的概念都有适合学习的实践。目前对这个问题的一种解决方案就是开发相对独立的配套实验嘛。还有一个方案就是专门写实践的书籍，这本书就是主要讲怎么实现某个东西，然后在这个过程中讲这个领域的相关概念，那么我们发现这样组织就很难展示尽可能全面的概念。所以我在资料的选择方面就涉及上面说的几种类型的资料。
 	+ 螺旋上升：这个是理论结合实践在时序上必然体现的结果，我们可能对某个领域的某个概念以不同的视角“重新”学习。
 
 ## 数理基础
@@ -64,30 +64,30 @@
 	>+ 它为我们展示了计算机看待程序的视角
 	>+ 它为我们展示设计编程语言的方方面面
 
-	+ [x] 《Crafting interpreters》：这本书自底向上手把手的带读者实现一个有闭包、类、垃圾回收的动态类型语言，非常推荐。
+	+ [x] 《Crafting interpreters》：这本书自底向上手把手的带读者使用C语言实现一个有闭包、类、垃圾回收的动态类型语言，非常推荐。
 
 + 体系结构：
 	>个人感觉计算机组成原理、体系结构、操作系统（的一部分）并不能泾渭分明的划分，这里以体系结构统称
 
 	+ [x] 王道考研的计组课：应付期末，草草看完
-	+ [ ] CSAPP/CMU15-213：纯纯看书，没有做实验、没有看课程录像。先鸽了
+	+ [ ] CSAPP/CMU15-213：纯纯看书，没有做课后作业、没有看课程录像。先鸽了
 	+ [ ] 南大ICS PA：只看了余子豪的课，还没来得及做实验
 		+ 让我对计算机底层有了全新的理解
 		+ 学到了很多对Coder来说很珍贵的的品质：Unix哲学、如何提问、STFW/STFM/RTFSC等等
 
 + 操作系统
 	+ [x] 王道考研的操统课：应付期末，草草看完
-	+ [ ] MIT6.S081：资料方面只看了xv6 Manual和野生课程内容翻译，然后直接啃实验，以实践为主。缺乏理论由OSTEP补充
-	+ [ ] 南大蒋炎岩操作系统/OSTEP：蒋老师说他的课是OSTEP导读，但蒋老师的课很有个人风格，推荐课程；蒋老师评价OSTEP为最好的自学OS的资料，我的第一本英文书，全程在地铁上看完的，没有课后作业，没有记笔记
+	+ [ ] MIT6.S081：资料方面只看了xv6 Manual和野生课程内容翻译，然后直接啃实验，以实践为主，缺乏理论由OSTEP补充，先鸽了
+	+ [ ] 南大蒋炎岩操作系统/OSTEP：蒋老师说他的课是OSTEP导读，但蒋老师的课很有个人风格，推荐课程；蒋老师评价OSTEP为最好的自学OS的资料，我的第一本英文书，全程在地铁上看完的，没有课后作业，没有记笔记。
 
 + 计算机网络
 	+ [x] 谢希仁的《计算机网络》（第七版）：教材
-	+ [ ] Stanford CS144
+	+ [x] Stanford CS144（2023）：使用C++20实现了字节流、重组器、TCP的两端、数据链路层和网络层的接口、IP的路由选择。其中的util类（地址的封装、文件描述符的封装、Socket的封装）挺值得学习的。做完才意识到删除了往年最难的部分，难度低了很多，应该适合新手。遗憾的是这就导致后几个实验比较零碎，未能得到一个完整可用的TCP协议实现。
 
 + 数据库
 	+ [x] 王珊、萨师煊的《数据库系统概念》（第五版）：教材
 		>萨师煊先生是我国数据库的奠基人。
-	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，作者码风独特，不是很推荐
+	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人完成了第一个和第二个的B+Tree部分，第一本中我将作者的C实现改成Modern C++实现，但是对于侵入式数据结构如果用Modern C++不知如何设计比较好，第二本，写出了B+Tree不符合预期，而且作者使用的B+Tree是比较特殊的变种，作者没有好好描述、网上也没有很好的描述，于是作罢，以后有机会写15445吧。
 
 ## 工程
 

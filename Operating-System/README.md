@@ -6,3 +6,32 @@
 
 	+ MIT6.S081
 		+ [野生讲义翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
+
+
+# syscall
+
+## `read`
+
++ 在syscall `read`中，其中的第三个arg是“期待字节数”
+	+ 如果fd是动态的，比如pipe，则会阻塞当前进程，等待pipe中的字节数足够
+	+ 只有过程中出现什么问题了，才会error，返回`-1`
+	+ 那么什么时候返回小于这个数字呢？可能出现在文件中，但是我们结合动态的情况，read是怎么知道是真的不足而不是暂时不足呢？是通过`EOF`，末尾有EOF则是。反过来我们也可以往（或者自动）fd中放EOF表示输入结束。
+
+## blocking mode and nonblocking mode
+
+对于非阻塞的IO，代码并没有获得期望的数据，只有当前调用的状态，要轮询判断是否完成
+1. 重复调用：笨笨
+2. select：将调用状态关联到一个数组上，然后轮询数组check状态，数量有限
+3. poll：将调用状态关联到一个链表上，然后轮询链表check状态，性能低下
+4. epoll：自然回调，当事件完成唤醒
+
+## OCI
+
+https://blog.lizzie.io/linux-containers-in-500-loc.html
+
+
+# xv6 lab note
+
+>在写xv6 lab时的笔记，包括坑点和随手笔记，估计这样的笔记不可避免的涉及剧透，请酌情观看。
+
++ lab2的调试按照manual的步骤是运行不起来的，问题描述和解决方案在[so](https://stackoverflow.com/questions/76025743/error-shown-a-problem-internal-to-gdb-has-been-detected-when-doing-xv6)上。
