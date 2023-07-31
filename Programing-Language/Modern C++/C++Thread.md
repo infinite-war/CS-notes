@@ -1,3 +1,8 @@
+## `volatile`
+
++ Reference：
+	+ [始终的《谈谈 C/C++ 中的 volatile》](https://liam.page/2018/01/18/volatile-in-C-and-Cpp/)
+
 ## 锁
 
 ### 互斥锁
@@ -57,3 +62,4 @@
 shared_mutex的unique_lock和mutex的lock一样，而condition_variable的第一个参数必须是std::mutex，有无类似的？
 
 [`<condition_variable_any>`](https://zh.cppreference.com/w/cpp/thread/condition_variable_any)，请查看示例
+

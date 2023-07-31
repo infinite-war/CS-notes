@@ -7,5 +7,19 @@
 		+ 不言自明 - 仅看代码就能明白是做什么的(specification)
 		+ 不言自证 - 仅看代码就能验证实现是对的(verification)
 
-+ Ref:
-	+ 《程序设计语言》
+## 内存模型
+
++ Reference：
+	+ [保罗的酒吧的文章](https://paul.pub/cpp-memory-model/)
+	+ [Russ Cox的三篇博客](https://research.swtch.com/mm)：[第一篇翻译](https://colobu.com/2021/06/30/hwmm/) | [第二篇翻译](https://colobu.com/2021/07/11/Programming-Language-Memory-Models/) | 
+	+ [Jeff Preshing的《An Introduction to Lock-Free Programming》](https://preshing.com/20120612/an-introduction-to-lock-free-programming/)
+
++ 内存模型的含义：
+	+ 原子操作
+	+ 局部顺序：一系列不能乱序的操作
+	+ 可见性：对共享变量对其他线程的可见性
+
++ 为什么需要内存模型：
+	+ 编译器优化
+	+ CPU乱序执行
+	+ Cache不一致
