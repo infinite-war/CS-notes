@@ -110,15 +110,28 @@
 ### Python
 
 + 依赖环境：通过Scoop下载Python（Python3）
-+ 插件推荐：Python和Python Extension Pack（它们有依赖的插件，所以会下载很多）
++ 插件推荐：
+	+ Python和Python Extension Pack（它们有依赖的插件，所以会下载很多）
+	+ Mypy Type Checker：类型检查
+
 + 配置：对于Python的开发，我通常把配置放在工作区，settings如下：
 	```json
 	{
-		"python.formatting.provider": "black",
-		"python.linting.mypyEnabled": true,
+	    "[python]": {
+	        "editor.defaultFormatter": "ms-python.black-formatter",
+	        "editor.formatOnSave": true,
+	        "editor.codeActionsOnSave": {
+	            "source.organizeImports": true
+	        },
+	    },
+	    "isort.args": [
+	        "--profile",
+	        "black"
+	    ],
 	}
 	```
-	格式化和静态检查
+
+	功能包括Import语句的重排和去重、代码格式化，静态检查由插件管理
 
 	+ 格式化：使用`black`，手动
 		+ 跳过格式化标记：
@@ -129,22 +142,13 @@
 		+ 忽略某行的静态检查：`# type: ignore`
 		+ 对于普通类型的静态检查：`# type: 类型`
 
->另一种配置
-```json
-{
-	"python.formatting.provider": "autopep8",
-	"python.linting.flake8Enabled": true,
-	"python.linting.flake8Args": [
-		"--exclude=venv,build,__pycache__,__init__.py,ib,talib,uic",
-		"--ignore=E501,W503"
-	]
-}
-```
+	+ Import Re-Sort：[VSCode 相关 Manual](https://code.visualstudio.com/docs/python/editing#_sort-imports) | [black 相关 issue](https://github.com/psf/black/issues/333)  
+		我个人的理解是关于import语句的重排和去重和black的功能有冲突，在实现上我们发现前者操作会影响代码AST，这似乎和black的架构有关系，我的解决方案体现在配置中
 
-+ 对第三方库的引入补全：https://blog.csdn.net/weixin_38165206/article/details/102903066
++ 对第三方库的引入补全：[一个回答](https://blog.csdn.net/weixin_38165206/article/details/102903066)
+
 + 块执行：选择代码后使用快捷键`Shift + ehter`会将这部分代码发送到Python Shell中
-+ 使用`#%%`可类似Jupyter分块
-	>Jupyter状态下有很多快捷键
++ 使用`#%%`可类似Jupyter分块，而Jupyter状态下有很多快捷键
 
 ### C/C++
 
@@ -157,8 +161,8 @@
 	2. 安装插件：C/C++和C/C++ Extension Pack（它们有依赖的插件，所以会下载很多）
 
 + 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
-
 + 调试：CodeLLDB, 短时间不会写C++代码了，Mark一下吧。
++ 正在尝试向clangd迁移，目前单纯的下载`clangd`和`clangd-format`插件即可用，有更多的代码风格建议和函数参数类型提示
 
 ### Golang
 
