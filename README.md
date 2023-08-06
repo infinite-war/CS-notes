@@ -4,6 +4,7 @@
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 + 对于课程笔记，我（自认为）严格遵循[Academic Integrity](http://integrity.mit.edu/)，虽然在笔记中可能记录思路，但是代码是Private的，如果有不合适的地方，请提醒我。
 + 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的note，除非特殊声明，否则不建议作为学习资料。
++ 项目下所有文章除特别声明外，均采用 CC BY 4.0 CN协议 许可协议。转载请注明出处！
 
 + Reference：
 	+ [Teach Yourself Computer Science](https://teachyourselfcs.com/)
