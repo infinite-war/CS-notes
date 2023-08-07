@@ -13,10 +13,10 @@
 
 + [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：四年功力于一，我认为的在win上开发的最优雅的姿势。
 + [只赠有缘人](./blog/%E5%8F%AA%E8%B5%A0%E6%9C%89%E7%BC%98%E4%BA%BA/README.md)：Yes，只赠有缘人。
++ [个人校招记录](./recruit/README.md)：记录我的秋招过程，包括但不限于面经总结、投递记录、公司评价。
 
 + [Git使用实战](./Missing-Semester/Git.md#practice)：小小的Git，大大的迷惑
 + [侵入式数据结构和非侵入式数据结构的区别](./Algorithm/Data-Structure-and-Sort/%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%92%8C%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
-
 + [不同编程范式的量化交易回测系统](./Quant/Survey-BackTest.md)
 
 ### 笔记意义
