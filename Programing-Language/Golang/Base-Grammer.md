@@ -113,6 +113,7 @@ Golang有它独有的风格[go blog](https://go.dev/blog/error-handling-and-go)
 	
 	+ `int, uint, uintptr`大小跟随系统，同系统宽度
 	+ [字符/字符串](https://go.dev/blog/strings)：  
+		+ Go中的字符串常量是UTF-8编码，通过其实地址和长度表示，不可更改
 		+ `byte`的本质是`uint8`，即一个字节，为了适配ASCII  
 		+ `rune`的本质是`int32`，即四个字节，为了对应Unicode  
 		+ 字符常量`'c'`是`int32`，即可以有中文字符（这在C/C++这种以ASCII为基本编码的语言中是不可以的）  

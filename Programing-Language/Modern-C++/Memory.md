@@ -71,28 +71,24 @@
 + 语言链接性：[ref](https://en.cppreference.com/w/cpp/language/language_linkage)
 
 ## 名称空间
-
-> 1. 实体：变量、函数、结构、枚举、类以及类和结构的成员。
-> 2. 名称：实体的标识符。
+>1. 实体：变量、函数、结构、枚举、类以及类和结构的成员。
+>2. 名称：实体的标识符。
 
 + 传统的C++名称空间：
+	1. 声明区域(declaration region)：可以进行声明的区域。
+	2. 潜在作用域(potential scope)：从声明点开始，到其声明区域结尾。  
+		作用域(scope)                 ：数据对象对程序可见的区域
 
-  1. 声明区域(declaration region)：可以进行声明的区域。
+		>潜在作用域中并非全都是作用域，ege：同名变量隐藏
 
-  2. 潜在作用域(potential scope)：从声明点开始，到其声明区域结尾。
+	C++关于局部变量和全局变量的规则定义了一种名称空间层次、不同声明区域声明名称相互独立。
 
-     ​        作用域(scope)                 ：数据对象对程序可见的区域
-
-     > 潜在作用域中并非全都是作用域，ege：同名变量隐藏
-
-  C++关于局部变量和全局变量的规则定义了一种名称空间层次、不同声明区域声明名称相互独立。
-  
 + 新的C++名称空间特性：定义并命名一个声明空间——名称空间：提供声明名称的区域，不同区域的同名名称不冲突，允许其他部分使用该名称空间的对象
 
 + 名称空间分类：
-  1. 全局名称空间(global namespace)：文件级声明区域，所有名称默认的作用域
-  2. 自定义名称空间：
-     + 类作用域
+	+ 全局名称空间(global namespace)：文件级声明区域，所有名称默认的作用域
+	+ 自定义名称空间：
+		+ 类作用域
 
 ----
 
@@ -145,7 +141,157 @@
 + [shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr)
 	+ [weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr) 
 
-+ zcl：
-	+ unique_ptr相比于raw ptr不会有任何性能损失
-
 ## Allocator
+
+## 智能指针的简单实现
+
++ `auto_ptr`（已经在C++17废除）
+	```cpp
+	template <typename T> class z_auto_ptr {
+	public:
+	  explicit z_auto_ptr(T *ptr = nullptr) : ptr_(ptr) {}
+	  ~z_auto_ptr() { delete ptr_; }
+	  T *get() const { return ptr_; }
+	
+	  T &operator*() const { return *ptr_; }
+	  T *operator->() const { return ptr_; }
+	  operator bool() const { return ptr_; }
+	
+	  z_auto_ptr(z_auto_ptr &other) { ptr_ = other.release(); } // 转移所有权
+	  z_auto_ptr &operator=(z_auto_ptr &rhs) {
+	    z_auto_ptr(rhs).swap(*this);
+	    // 这里本质分成两步，首先拷贝构造，然后进行swap，如果拷贝构造失败抛出异常，则不会影响到this
+	    return *this;
+	  }
+	  T *release() {
+	    T *ptr = ptr_;
+	    ptr_ = nullptr;
+	    return ptr;
+	  }
+	  void swap(z_auto_ptr &rhs) {
+	    using std::swap;
+	    swap(ptr_, rhs.ptr_);
+	  }
+	
+	private:
+	  T *ptr_;
+	};	
+	
+	```
+
++ `unique_ptr`：
+	```cpp
+		template <typename T> class z_unique_ptr {
+	public:
+	  explicit z_unique_ptr(T *ptr = nullptr) : ptr_(ptr) {}
+	  ~z_unique_ptr() { delete ptr_; }
+	  T *get() const { return ptr_; }
+	
+	  T &operator*() const { return *ptr_; }
+	  T *operator->() const { return ptr_; }
+	  operator bool() const { return ptr_; }
+	
+	  // template <typename U> z_unique_ptr(z_unique_ptr<U> &&other)
+	  // 注意，上面并不是移动构造函数，拷贝构造不会默认删除
+	  z_unique_ptr(z_unique_ptr &&other) { ptr_ = other.release(); }
+	  // 提供移动构造函数而没有手动提供拷贝构造函数，则后者被自动禁用
+	  z_unique_ptr &operator=(z_unique_ptr rhs) {
+	    // 在传递参数时隐形调用移动构造函数
+	    rhs.swap(*this);
+	    return *this;
+	  }
+	
+	  T *release() {
+	    T *ptr = ptr_;
+	    ptr_ = nullptr;
+	    return ptr;
+	  }
+	  void swap(z_unique_ptr &rhs) {
+	    using std::swap;
+	    swap(ptr_, rhs.ptr_);
+	  }
+	
+	private:
+	  T *ptr_;
+	};
+	```
+
++ `shared_ptr`：
+	```cpp
+	class shared_counter {
+	public:
+	  shared_counter() : count_(1){};
+	  void add_count() { ++count_; }
+	  long reduce_count() { return --count_; }
+	  long get_count() const { return count_; }
+	
+	private:
+	  long count_;
+	};
+	
+	template <typename T> class z_shared_ptr {
+	  template <typename U> friend class z_shared_ptr;
+	
+	public:
+	  explicit z_shared_ptr(T *ptr = nullptr) : ptr_(ptr) {
+	    if (ptr) {
+	      shared_counter_ = new shared_counter();
+	    }
+	  }
+	  ~z_shared_ptr() {
+	    if (ptr_ && !shared_counter_->reduce_count()) {
+	      delete ptr_;
+	      delete shared_counter_;
+	    }
+	  }
+	  T *get() const { return ptr_; }
+	
+	  T &operator*() const { return *ptr_; }
+	  T *operator->() const { return ptr_; }
+	  operator bool() const { return ptr_; }
+	
+	  z_shared_ptr(const z_shared_ptr &other) {
+	    ptr_ = other.ptr_;
+	    if (ptr_) {
+	      other.shared_counter_->add_count();
+	      shared_counter_ = other.shared_counter_;
+	    }
+	  }
+	  template <typename U> z_shared_ptr(const z_shared_ptr<U> &other) {
+	    ptr_ = other.ptr_;
+	    if (ptr_) {
+	      other.shared_counter_->add_count();
+	      shared_counter_ = other.shared_counter_;
+	    }
+	  }
+	  template <typename U> z_shared_ptr(const z_shared_ptr<U> &&other) {
+	    ptr_ = other.ptr_;
+	    if (ptr_) {
+	      shared_counter_ = other.shared_counter_;
+	      other.ptr_ = nullptr;
+	    }
+	  }
+	  z_shared_ptr &operator=(z_shared_ptr rhs) {
+	    // 在传递参数时隐形调用移动构造函数
+	    rhs.swap(*this);
+	    return *this;
+	  }
+	
+	  void swap(z_shared_ptr &rhs) {
+	    using std::swap;
+	    swap(ptr_, rhs.ptr_);
+	    swap(shared_counter_, rhs.shared_counter_);
+	  }
+	
+	  long use_count() const {
+	    if (!shared_counter_)
+	      return 0;
+	
+	    return shared_counter_->get_count();
+	  }
+	
+	private:
+	  T *ptr_{nullptr};
+	  shared_counter *shared_counter_{nullptr};
+	};
+	```
