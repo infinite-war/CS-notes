@@ -11,7 +11,7 @@
   + 性能：平均复杂度$O(n \ log \ n)$，最坏复杂度$O(n^2)$
   + 优化：选择基准数的策略，小区间转换策略
 
-  ```c++
+  ```cpp
   template<typename T>
   void quick_sort(T q[], int l, int r) {
       if (l >= r) return;
@@ -32,7 +32,7 @@
     1. 将数列分成两个部分，递归到底
     2. 将两个子序列排序，合并，回溯
 
-  ```c++
+  ```cpp
   template<typename T>
   void merge_sort(T q[], int l, int r) {
   	if (l >= r) return ;
