@@ -1,12 +1,13 @@
 <!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/-->
 
-+ 该笔记部分插图来自各种书籍、课程或其他资料，如果涉及到任何版权行为，请联系我，我将删除内容。
-+ 文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
++ 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的Note，除非特殊声明，否则不建议作为学习资料。
++ 该笔记部分插图来自各种书籍、课程或其他资料，若涉及到任何版权行为，请联系我，我将删除内容。
 + 对于课程笔记，我（自认为）严格遵循[Academic Integrity](http://integrity.mit.edu/)，虽然在笔记中可能记录思路，但是代码是Private的，如果有不合适的地方，请提醒我。
-+ 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的note，除非特殊声明，否则不建议作为学习资料。
-+ 项目下所有文章除特别声明外，均采用 CC BY 4.0 CN协议 许可协议。转载请注明出处！
++ 文中所有内容，与本人现在，之前或者将来的雇佣公司或组织无关。
++ 本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
++ 项目下所有文章除特别声明外，均采用CC BY 4.0 CN许可协议，转载请注明出处。
 
-+ Reference：
++ 类似的：
 	+ [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 
 ### Blog
@@ -15,9 +16,12 @@
 + [只赠有缘人](./blog/%E5%8F%AA%E8%B5%A0%E6%9C%89%E7%BC%98%E4%BA%BA/README.md)：Yes，只赠有缘人。
 + [个人校招记录](./recruit/README.md)：记录我的秋招过程，包括但不限于面经总结、投递记录、公司评价。
 
++ [Linux常用命令和工具](./Linux/command.md)：快来看看有没有你还不知道的吧，比如`dust`？
 + [Git使用实战](./Missing-Semester/Git.md#practice)：小小的Git，大大的迷惑
 + [侵入式数据结构和非侵入式数据结构的区别](./Algorithm/Data-Structure-and-Sort/%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%92%8C%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
 + [不同编程范式的量化交易回测系统](./Quant/Survey-BackTest.md)
+
+>祝您万事胜意。
 
 ### 笔记意义
 

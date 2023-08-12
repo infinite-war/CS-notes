@@ -7,7 +7,6 @@
 	+ MIT6.S081
 		+ [野生讲义翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
 
-
 # syscall
 
 ## `read`

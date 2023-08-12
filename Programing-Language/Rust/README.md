@@ -1,4 +1,3 @@
-
 # Install
 
 ## Windows install Rust：

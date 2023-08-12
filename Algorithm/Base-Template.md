@@ -1,6 +1,6 @@
 #### 快读快写
 
-```c++
+```cpp
 template<typename T>
 inline void read(T &x) {
     x = 0; T k = 1;
@@ -19,7 +19,7 @@ inline void write(T &x) {
 
 #### 龟速乘
 
-```c++
+```cpp
 const int MOD = 1e9 + 7;
 ill ftimes(ill a, ill b) {
 	if (a < b) swap(a, b);
@@ -31,7 +31,7 @@ ill ftimes(ill a, ill b) {
 
 #### 快速幂
 
-```c++
+```cpp
 int fpow(int d, ill n, int mod) {
     int res = 1 % mod; d %= mod;  // mod可能等于1吗?
     for (; n; n >>= 1, d = (ill)d * d % mod) if (n & 1) res = (ill)res * d % mod;
@@ -45,7 +45,7 @@ int fpow(int d, ill n, int mod) {
 
 + 高精度加法：
 
-  ```c++
+  ```cpp
   // C = A + B, A >= 0, B >= 0
   vector<int> operator + (vector<int> &A, vector<int> &B) {
       if (A.size() < B.size()) return B + A; //add(B, A);
@@ -64,7 +64,7 @@ int fpow(int d, ill n, int mod) {
 
 + 高精度减法：
 
-  ```c++
+  ```cpp
   // C = A - B, 满足A >= B, A >= 0, B >= 0
   vector<int> operator - (vector<int> &A, vector<int> &B) {
       vector<int> C;
@@ -82,7 +82,7 @@ int fpow(int d, ill n, int mod) {
 
 + 高精度乘低精度：
 
-  ```c++
+  ```cpp
   // C = A * b, A >= 0, b >= 0
   vector<int> mul(vector<int> &A, int b) {
       vector<int> C;
@@ -99,7 +99,7 @@ int fpow(int d, ill n, int mod) {
 
 + 高精度除以低精度：
 
-  ```c++
+  ```cpp
   // A / b = C ... r, A >= 0, b > 0
   vector<int> div(vector<int> &A, int b, int &r) {
       vector<int> C;
@@ -117,7 +117,7 @@ int fpow(int d, ill n, int mod) {
 
 #### 区间合并
 
-```c++
+```cpp
 typedef pair<int, int> pii;
 void merge(vector<pii>& segs) {
     vector<pii> res;
@@ -142,7 +142,7 @@ void merge(vector<pii>& segs) {
 
 + 保序离散化：
 
-  ```c++
+  ```cpp
   const int BEGIN = 0;  // 离散后的整数的起始大小
   template<typename T>
   void discretize(T *a, int l, int r) {
