@@ -1,3 +1,17 @@
+```
+So you have to trust that 
+the dots will somehow connect in your future
+You hava to trust in something 
+your gut, destiny, life, karma, whatever 
+Because believing the dots will connect down the road  
+will give you the confidence to follow your heart
+even when it lead you off the well-worn path
+And that will make all the difference
+                                   Steven Paul Jobs
+                                  Stanford University
+```
+
+
 <!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/-->
 
 + 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的Note，除非特殊声明，否则不建议作为学习资料。
