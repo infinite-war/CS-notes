@@ -216,6 +216,7 @@
 + 使用：还记得pwsh在打开后运行一个脚本嘛？我们只要把调用oh-my-posh的相关命令放在那里就可以用了，这里比较重要的是**主题**的选择
 
 ### 5.3.Windows Terminal
+
 >win10需要下载，win11自带
 
 + 安装：使用国内网在Microsoft Store直接搜索下载（[Manual](https://github.com/microsoft/terminal#installing-and-running-windows-terminal)推荐）
@@ -231,6 +232,8 @@
 		打开观察（主要关注安装按钮和字体命令字段（关于字体文件名中的部分含义：`Regular`常规、`Italic`斜体、`Bold`加粗  ））
 		<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Missing-Semester/字体打开.png" style="zoom:50%;" div align=center />  
 		我们把字体名称`MesloLGM NF`的所有形态都下载  
+
+	+ 更多配色见https://windowsterminalthemes.dev/
 
 ## 6.包管理器Scoop
 

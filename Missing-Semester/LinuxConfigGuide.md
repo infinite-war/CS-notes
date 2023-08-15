@@ -181,8 +181,8 @@ tmux
 		```bash
 		git clone https://gitee.com/phpxxo/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 		```
-	+ `zsh-completions`
-
+	+ `zsh-completions`：更好的Tab补全？似乎不太需要。
+	+ `command-not-found`：无需下载
 
 ## 5.导入软件配置
 

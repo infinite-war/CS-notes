@@ -1,9 +1,10 @@
 ## Intro
 
-在1976年没有Linux操作系统时（1991），就已经有了编辑器vi，现在几乎大部分Linux操作系统都默认安装vi，而vim即为vi improved, vi的增强版，neovim则是它们的一个分支，意在重构和重写vim的核心部分来实现更好的性能、可扩展性和可定制性，随着两者的发展，已经越来越不兼容，希望下面的指令在两边都能用吧。
+在1976年没有Linux操作系统时(1991)，就已经有了编辑器vi，现在几乎大部分Linux操作系统都默认安装vi，而vim即为`vi improved` — vi的增强版，neovim则是它们的一个分支，意在重构和重写vim的核心部分来实现更好的性能、可扩展性和可定制性，随着两者的发展，已经越来越不兼容，希望下面的命令在两边都能用吧。
 
-+ 资料推荐：
-	+ 陈皓COOLSHELL的[教程](https://revealjs.com/pdf-export/)
++ Reference：
+	+ [阮一峰](https://www.ruanyifeng.com/blog/2018/09/vimrc.html)
+	+ [陈皓](https://coolshell.cn/articles/5426.html)
 
 ## Install
 
@@ -13,20 +14,22 @@
 | linux   |       | [Manual](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu) |
 
 ## Config
-
-+ 配色使用OneDark（我只在win中使用了，因为这样终端和vim风格统一，但是Ubuntu原生终端也挺好，仍然使用Acwing提供的）
-+ 插件管理：
+>Config分成配置文件和插件
 
 ### Vim
 
-`:version`可查看
++ 配置文件位置可通过`:version`查看
++ 插件位置可通过`:set rtp`查看
++ 配色：使用命令`colorscheme 配色名`来设置，其中配色名来自插件目录下的`colors`下的`.vim`文件  
+	比如：  
+	```vim
+	colorscheme gruvbox
+	set background=dark  
+	```
 
-|          | linux      | windows    |
-| -------- | ---------- | ---------- |
-| 配置文件 | `~/.vimrc` | `~\_vimrc` |
-| 相关文件目录 | `~/.vim/`  | `~\vimfiles\` |
-
-+ 插件：在vim8有官方的插件管理方式：[教程](https://linux.cn/article-11923-1.html)
++ 插件：在vim 8提供官方的插件管理方式/内置包管理器，可通过`:help packages`查看manual
+	+ Reference：
+		+ [这里提供了一个配置上云的方案](https://blog.hulifa.cn/2019-10-20-Vim-8%E5%86%85%E7%BD%AE%E5%8C%85%E7%AE%A1%E7%90%86%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/)
 
 ## Use
 
