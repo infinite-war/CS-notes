@@ -26,6 +26,8 @@ And that will make all the difference
 ### 博客
 
 + 开发机配置指南：正所谓工欲善其事必先利其器，这真不是差生文具多，是实打实的生产力提升。
+	>最近在鼓捣vim，相关配置比较混乱，我个人也在适应和调整，所以不建议直接使用我的配置。
+
 	+ [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：
 	+ [linux开发机配置指南](LinuxConfigGuide)：
 + [个人校招记录](./recruit/README.md)：个人校招记录。
