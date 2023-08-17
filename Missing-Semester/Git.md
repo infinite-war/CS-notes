@@ -259,3 +259,8 @@ git push origin HEAD
 ```
 git merge origin/上次实验分支名
 ```
+
+#### CMU15445
+
+哦！15445提供了更优雅的方案，我上面两个方法简直太笨了。  
+记得修改action并save
