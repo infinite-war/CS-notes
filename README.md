@@ -23,6 +23,14 @@ And that will make all the difference
 + 类似的：
 	+ [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 
++ 开源项目源码分析：
+	+ LevelDB：
+		+ https://github.com/balloonwj/CppGuide/blob/master/articles/leveldb%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/README.md
+	+ etcd：
+	+ Ceph：
+		+ https://github.com/0voice/kernel_awsome_feature/blob/main/%E3%80%8C%E6%A0%B8%E5%BF%83%E3%80%8DCeph%E5%AD%A6%E4%B9%A0%E4%B8%89%E9%83%A8%E6%9B%B2%E4%B9%8B%E4%B8%80%3AA%20First%20Glance%20At%20CRUSH.md
+		+ 
+
 ### 博客
 
 + 开发机配置指南：正所谓工欲善其事必先利其器，这真不是差生文具多，是实打实的生产力提升。

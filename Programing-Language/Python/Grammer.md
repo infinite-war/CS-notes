@@ -1,3 +1,8 @@
+## MISC
+
++ 海豹运算符（3.8）：`:=`，可爱捏
++ `match`（3.10）：python也有switch了捏
+
 ### commit
 
 + default arg：[manual](https://docs.python.org/3/reference/compound_stmts.html#function)：对于默认参数，表达式只会求值一次，之后都是这个值
