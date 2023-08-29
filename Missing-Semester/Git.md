@@ -95,6 +95,7 @@ git config --global http.proxy ""  # 如果使用没遇到问题就不用
 	```
 
 ### Pages
+
 考虑这样的场景，我的项目的有些成果可以静态网页的形式展示，缩短路径让客户最快的看到我们产品的效果。但是大费周章的在服务器搭建一个Web服务也不合适，因为大概率服务器属于你的时间要远小于项目属于你的时间。这时GitHub Pages就派生用场了。下面给出一个方案。
 
 打开项目 -> Settings -> Pages(在右边) -> (在Branch下选择)master + docs -> Save -> 然后把一个index.html放到项目的docs目录下即可通过`https://用户名.github.io/项目名/`访问
@@ -264,3 +265,15 @@ git merge origin/上次实验分支名
 
 哦！15445提供了更优雅的方案，我上面两个方法简直太笨了。  
 记得修改action并save
+
+### 子模块
+
++ 将其他项目作为子模块：
+	```bash
+	git submodule add <repository-url> <local-path>
+	```
+
++ 克隆时：
+	```bash
+	git submodule update --init --recursive
+	```
