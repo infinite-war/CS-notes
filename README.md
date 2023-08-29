@@ -29,7 +29,6 @@ And that will make all the difference
 	+ etcd：
 	+ Ceph：
 		+ https://github.com/0voice/kernel_awsome_feature/blob/main/%E3%80%8C%E6%A0%B8%E5%BF%83%E3%80%8DCeph%E5%AD%A6%E4%B9%A0%E4%B8%89%E9%83%A8%E6%9B%B2%E4%B9%8B%E4%B8%80%3AA%20First%20Glance%20At%20CRUSH.md
-		+ 
 
 ### 博客
 
