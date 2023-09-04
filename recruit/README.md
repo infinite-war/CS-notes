@@ -5,6 +5,11 @@
 
 ---
 
++ 字节、百度
++ 腾讯、作业帮https://app.mokahr.com/campus-recruitment/zuoyebang/39595#/candidateHome/applications，小猿搜题
+
+---
+
 + 百度、腾讯（IEG、L1、J2、wxg鸡架、视频号）、字节、美团、滴滴
 + 阿里：淘宝、蚂蚁、饿了么
 + 科大讯飞、中芯国际
