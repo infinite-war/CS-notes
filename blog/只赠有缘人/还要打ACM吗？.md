@@ -1,5 +1,5 @@
-+ Link
-	+ 算法的意义：https://matklad.github.io/2023/08/13/role-of-algorithms.html
++ 相关Link
+	+ [算法的意义](https://matklad.github.io/2023/08/13/role-of-algorithms.html)
 
 >计算机的世界是剧烈变化的
 
