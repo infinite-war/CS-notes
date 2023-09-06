@@ -41,8 +41,11 @@ class Submit:
         self.batch = batch_dummy[0] if len(batch_dummy) != 0 else "正式批"
         self.events: (str, str) = [(time_str_foramt(submit_time[5:]), "投递")]
 
+        self.ignore = False
         with open(filepath, "r") as f:
             for line in f:
+                if line == "<!-- ignore -->\n":
+                    self.ignore = True
                 if line.startswith("## "):
                     for event in line[3:].split("|"):
                         event_time, event_name = map(
@@ -128,6 +131,8 @@ def print_excel(submits: list[Submit]):
     def get_max_width(attr_name: str, index: int = -1):
         maxn = 0
         for submit in submits:
+            if submit.ignore:
+                continue
             attr = getattr(submit, attr_name)
             if attr_name == "events":
                 if index >= len(attr):
@@ -148,6 +153,8 @@ def print_excel(submits: list[Submit]):
         print(attr.ljust(max_width - dummpy), end="")
 
     for submit in submits:
+        if submit.ignore is True:
+            continue
         print_attr(submit, "company")
         print_attr(submit, "post")
         print(":", end="")
@@ -213,13 +220,18 @@ def print_click(submits: list[Submit]):
     print_yellow("TODO")
     today = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
 
-    for submit in submits:
+    def check_submit(submit: Submit):
         year_str = submit.year
         for event in submit.events:
             time_str = year_str + "." + event[0]
             data = datetime.strptime(time_str, "%Y.%m.%d")
             if data >= today:
-                print(submit)
+                return True
+        return False
+
+    for submit in submits:
+        if check_submit(submit):
+            print(submit)
 
 
 if __name__ == "__main__":

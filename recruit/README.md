@@ -3,9 +3,7 @@
 + 文件命名格式：`时间(年.月.日)-公司-岗位[(地点)]-[批次]`
 + 内容格式：每段以`##`区分，标题格式为：`[时间(月.日)-]事件`，多个事件以`|`分割
 
----
 
-+ 字节、百度
 + 腾讯、作业帮https://app.mokahr.com/campus-recruitment/zuoyebang/39595#/candidateHome/applications，小猿搜题
 
 ---
