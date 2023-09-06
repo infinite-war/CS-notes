@@ -4,13 +4,15 @@
 import os
 import time
 import unicodedata
-
+from datetime import datetime
 
 # get all file's filepath in current folder
 # how to check it is recruit file? if it start with "20"[doge]
-filepaths = [os.path.abspath(filename)
-             for filename in os.listdir(".")
-             if filename.startswith("20")]
+filepaths = [
+    os.path.abspath(filename)
+    for filename in os.listdir(".")
+    if filename.startswith("20")
+]
 # [print(filepath) for filepath in filepaths]
 
 
@@ -31,8 +33,9 @@ def time_str_foramt(time_str) -> str:
 class Submit:
     def __init__(self, filepath: str) -> None:
         filename = os.path.basename(filepath)
-        submit_time, company, post, * \
-            batch = list(map(str.strip, filename[:-3].split("-")))
+        submit_time, company, post, *batch = list(
+            map(str.strip, filename[:-3].split("-"))
+        )
         batch = batch[0] if len(batch) != 0 else "正式批"
 
         self.filepath = filepath
@@ -47,11 +50,10 @@ class Submit:
                 if line.startswith("## "):
                     for event in line[3:].split("|"):
                         event_time, event_name = event.split("-")
-                        self.events.append((
-                            time_str_foramt(event_time.strip()),
-                            event_name.strip()
-                        ))
-        
+                        self.events.append(
+                            (time_str_foramt(event_time.strip()), event_name.strip())
+                        )
+
         self.stage = "投递"
         self.order = 0
         order2stage = {
@@ -59,10 +61,12 @@ class Submit:
             2: ["面试"],
             3: ["OC", "挂"],
         }
+
         def update(event_value: int, index: int):
             if event_value > self.order:
                 self.order = event_value
                 self.stage = order2stage[event_value][index]
+
         for event_time, event_name in self.events:
             if "占位" in event_name:
                 pass
@@ -81,22 +85,30 @@ class Submit:
                 pass
 
     def __str__(self) -> str:
-        event_str = ", ".join([
-            f"{time_str_foramt(time_str)} {event_name}"
-            for time_str, event_name in self.events
-        ])
+        event_str = ", ".join(
+            [
+                f"{time_str_foramt(time_str)} {event_name}"
+                for time_str, event_name in self.events
+            ]
+        )
         return f"{self.year}.{self.events[0][0]} 投递 {self.company} 的 {self.post} 一职, 进度: {event_str}"
 
     def __repr__(self) -> str:
         return self.__str__()
 
+    def __lt__(self, other):
+        self_time_str = self.events[0][0]
+        other_time_str = other.events[0][0]
+        self_time = datetime.strptime(self_time_str, "%m.%d")
+        other_time = datetime.strptime(other_time_str, "%m.%d")
+        return self_time < other_time
 
 def print_excel(submits: list[Submit]):
-    def get_str_width_dummy21(s): return sum(
-        2 if unicodedata.east_asian_width(c) in ('F', 'W') else 1 for c in s)
+    def get_str_width_dummy21(s):
+        return sum(2 if unicodedata.east_asian_width(c) in ("F", "W") else 1 for c in s)
 
-    def get_str_width_dummy10(s): return sum(
-        1 if unicodedata.east_asian_width(c) in ('F', 'W') else 0 for c in s)
+    def get_str_width_dummy10(s):
+        return sum(1 if unicodedata.east_asian_width(c) in ("F", "W") else 0 for c in s)
 
     def get_max_width(attr_name: str, index: int = -1):
         maxn = 0
@@ -130,6 +142,7 @@ def print_excel(submits: list[Submit]):
                 print(", ", end="")
         print()
 
+
 def print_sche(submits):
     submit_num = 0
     quiet_num = 0
@@ -150,9 +163,9 @@ def print_sche(submits):
                 oc_num += 1
             else:
                 g_num += 1
-            
-    from rich.table import Table
+
     from rich.console import Console
+    from rich.table import Table
 
     console = Console()
 
@@ -174,10 +187,24 @@ def print_sche(submits):
     table.add_row("尚无反应", str(quiet_num), f"{quiet_num/submit_num:.0%}")
 
     console.print(table)
-    
+
+
+def print_click(submits: list[Submit]):
+    today = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
+
+    for submit in submits:
+        year_str = submit.year
+        for event in submit.events:
+            time_str = year_str + "." + event[0]
+            data = datetime.strptime(time_str, "%Y.%m.%d")
+            if data >= today:
+                print(submit)
+
 
 submits = [Submit(filepath) for filepath in filepaths]
+submits = sorted(submits)
 # [print(submit) for submit in submits]
 
 print_excel(submits)
 print_sche(submits)
+print_click(submits)
