@@ -18,14 +18,12 @@ filepaths = [
 
 def time_str_foramt(time_str) -> str:
     try:
-        year = int(time_str)
         date_obj = time.strptime(time_str, "%Y")
-        return time.strftime("%Y", date_obj).strip()
+        return time.strftime("%Y", date_obj)
     except Exception as e:
         try:
-            month_day = float(time_str)
             date_obj = time.strptime(time_str, "%m.%d")
-            return time.strftime("%m.%d", date_obj).strip()
+            return time.strftime("%m.%d", date_obj)
         except Exception as e:
             assert False, time_str
 
@@ -33,30 +31,29 @@ def time_str_foramt(time_str) -> str:
 class Submit:
     def __init__(self, filepath: str) -> None:
         filename = os.path.basename(filepath)
-        submit_time, company, post, *batch = list(
-            map(str.strip, filename[:-3].split("-"))
-        )
-        batch = batch[0] if len(batch) != 0 else "正式批"
+        submit_time, company, post, * \
+            batch_dummy = list(map(str.strip, filename[:-3].split("-")))
 
         self.filepath = filepath
         self.year: str = time_str_foramt(submit_time[:4])
         self.company = company
         self.post = post
-        self.batch = batch
-        self.events: (str, str) = [(submit_time[5:], "投递")]
+        self.batch = batch_dummy[0] if len(batch_dummy) != 0 else "正式批"
+        self.events: (str, str) = [(time_str_foramt(submit_time[5:]), "投递")]
 
         with open(filepath, "r") as f:
             for line in f:
                 if line.startswith("## "):
                     for event in line[3:].split("|"):
-                        event_time, event_name = event.split("-")
+                        event_time, event_name = map(
+                            str.strip, event.split("-"))
                         self.events.append(
-                            (time_str_foramt(event_time.strip()), event_name.strip())
-                        )
+                            (time_str_foramt(event_time), event_name))
 
         self.stage = "投递"
         self.order = 0
         order2stage = {
+            0: ["投递"],
             1: ["测评", "笔试"],
             2: ["面试"],
             3: ["OC", "挂"],
@@ -65,45 +62,63 @@ class Submit:
         def update(event_value: int, index: int):
             if event_value > self.order:
                 self.order = event_value
-                self.stage = order2stage[event_value][index]
+                self.stage = order2stage[self.order][index]
+
+        self.eval_num: int = 0
+        self.exam_num: int = 0
+        self.interview_num: int = 0
+        # self.oc_num: int = 0
+        # self.g_num: int = 0
 
         for event_time, event_name in self.events:
             if "占位" in event_name:
-                pass
+                assert False, event_name
             elif "测评" in event_name or "评测" in event_name:
+                self.eval_num += 1
                 update(1, 0)
             elif "笔" in event_name and "约" not in event_name and "邀请" not in event_name:
+                self.exam_num += 1
                 update(1, 1)
             elif "面" in event_name and "约" not in event_name and "邀请" not in event_name:
+                self.interview_num += 1
                 update(2, 0)
             elif "OC" in event_name:
                 update(3, 0)
             elif "挂" in event_name:
                 update(3, 1)
             else:
-                # print(event_name)
-                pass
+                assert "投递" in event_name or \
+                    "联系" in event_name or \
+                    "约" in event_name or \
+                    "邀请" in event_name, event_name
 
     def __str__(self) -> str:
         event_str = ", ".join(
             [
-                f"{time_str_foramt(time_str)} {event_name}"
+                f"{time_str} {event_name}"
                 for time_str, event_name in self.events
             ]
         )
-        return f"{self.year}.{self.events[0][0]} 投递 {self.company} 的 {self.post} 一职, 进度: {event_str}"
+        return f"{self.year}.{self.events[0][0]} 投递 {self.company} 的 {self.post}, 进度: {event_str}"
 
     def __repr__(self) -> str:
         return self.__str__()
 
-    def __lt__(self, other):
+    def __lt__(self, other: "Submit"):
         self_time_str = self.events[0][0]
         other_time_str = other.events[0][0]
         self_time = datetime.strptime(self_time_str, "%m.%d")
         other_time = datetime.strptime(other_time_str, "%m.%d")
         return self_time < other_time
 
+
+def print_yellow(msg: str):
+    print('\033[33m' + msg + '\033[0m')
+
+
 def print_excel(submits: list[Submit]):
+    print_yellow("总览表格")
+
     def get_str_width_dummy21(s):
         return sum(2 if unicodedata.east_asian_width(c) in ("F", "W") else 1 for c in s)
 
@@ -143,7 +158,9 @@ def print_excel(submits: list[Submit]):
         print()
 
 
-def print_sche(submits):
+def print_sche(submits: list[Submit]):
+    print_yellow("数据统计")
+
     submit_num = 0
     quiet_num = 0
     exam_num = 0
@@ -162,7 +179,10 @@ def print_sche(submits):
             if submit.stage == "OC":
                 oc_num += 1
             else:
+                assert submit.stage == "挂"
                 g_num += 1
+        else:
+            assert False
 
     from rich.console import Console
     from rich.table import Table
@@ -175,21 +195,22 @@ def print_sche(submits):
     table.add_column("数量", justify="center", style="bold")
     table.add_column("占比", justify="center", style="bold")
 
-    # table.add_row(" ", "投递情况", " ")
-    # table.add_row("类型", "数量", "占比")
-    # table.add_row(Table.span, Table.span, Table.span)
-
     table.add_row("投递", str(submit_num), "-")
+    table.add_row("简历筛", str(quiet_num), f"{quiet_num/submit_num:.0%}")
     table.add_row("笔试", str(exam_num), f"{exam_num/submit_num:.0%}")
     table.add_row("面试", str(interview_num), f"{interview_num/submit_num:.0%}")
     table.add_row("OC", str(oc_num), f"{oc_num/submit_num:.0%}")
     table.add_row("挂", str(g_num), f"{g_num/submit_num:.0%}")
-    table.add_row("尚无反应", str(quiet_num), f"{quiet_num/submit_num:.0%}")
 
     console.print(table)
 
+    print("测评次数: ", sum(submit.eval_num for submit in submits))
+    print("笔试次数: ", sum(submit.exam_num for submit in submits))
+    print("面试次数: ", sum(submit.interview_num for submit in submits))
+
 
 def print_click(submits: list[Submit]):
+    print_yellow("TODO")
     today = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
 
     for submit in submits:
@@ -201,10 +222,10 @@ def print_click(submits: list[Submit]):
                 print(submit)
 
 
-submits = [Submit(filepath) for filepath in filepaths]
-submits = sorted(submits)
-# [print(submit) for submit in submits]
+if __name__ == "__main__":
+    submits = sorted([Submit(filepath) for filepath in filepaths])
+    # [print(submit) for submit in submits]
 
-print_excel(submits)
-print_sche(submits)
-print_click(submits)
+    print_excel(submits)
+    print_sche(submits)
+    print_click(submits)
