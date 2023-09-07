@@ -1,4 +1,5 @@
 + Ref
+	+ [Paper](https://raft.github.io/raft.pdf)
 	+ [Raft 可视化](http://thesecretlivesofdata.com/raft/)
 
 Raft是一个管理Replicated Log的Consensus Algorithm

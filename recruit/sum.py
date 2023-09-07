@@ -17,22 +17,24 @@ filepaths = [
 
 
 def time_str_foramt(time_str) -> str:
+    # 时间格式确实确定, 但是不对齐, 用这个真的两种情况对齐下
     try:
         date_obj = time.strptime(time_str, "%Y")
         return time.strftime("%Y", date_obj)
-    except Exception as e:
+    except Exception:
         try:
             date_obj = time.strptime(time_str, "%m.%d")
             return time.strftime("%m.%d", date_obj)
-        except Exception as e:
+        except Exception:
             assert False, time_str
 
 
 class Submit:
     def __init__(self, filepath: str) -> None:
         filename = os.path.basename(filepath)
-        submit_time, company, post, * \
-            batch_dummy = list(map(str.strip, filename[:-3].split("-")))
+        submit_time, company, post, *batch_dummy = list(
+            map(str.strip, filename[:-3].split("-"))
+        )
 
         self.filepath = filepath
         self.year: str = time_str_foramt(submit_time[:4])
@@ -55,6 +57,7 @@ class Submit:
 
         self.stage = "投递"
         self.order = 0
+        # 我将流程阶段分成三层
         order2stage = {
             0: ["投递"],
             1: ["测评", "笔试"],
@@ -67,11 +70,10 @@ class Submit:
                 self.order = event_value
                 self.stage = order2stage[self.order][index]
 
+        # 这里统计的针对一个流程, 测评、笔试、面试的次数，用于最后每项总次数的统计
         self.eval_num: int = 0
         self.exam_num: int = 0
         self.interview_num: int = 0
-        # self.oc_num: int = 0
-        # self.g_num: int = 0
 
         for event_time, event_name in self.events:
             if "占位" in event_name:
@@ -90,19 +92,17 @@ class Submit:
             elif "挂" in event_name:
                 update(3, 1)
             else:
-                assert "投递" in event_name or \
-                    "联系" in event_name or \
-                    "约" in event_name or \
-                    "邀请" in event_name, event_name
+                assert (
+                    "投递" in event_name
+                    or "联系" in event_name
+                    or "约" in event_name
+                    or "邀请" in event_name
+                ), event_name
 
     def __str__(self) -> str:
         event_str = ", ".join(
-            [
-                f"{time_str} {event_name}"
-                for time_str, event_name in self.events
-            ]
-        )
-        return f"{self.year}.{self.events[0][0]} 投递 {self.company} 的 {self.post}, 进度: {event_str}"
+            [f"{time_str} {event_name}" for time_str, event_name in self.events])
+        return f"{self.year}.{self.events[0][0]}投递{self.company}的{self.post}岗位: {event_str}"
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -116,56 +116,67 @@ class Submit:
 
 
 def print_yellow(msg: str):
-    print('\033[33m' + msg + '\033[0m')
+    print("\033[33m" + msg + "\033[0m")
 
 
-def print_excel(submits: list[Submit]):
-    print_yellow("总览表格")
+def print_excell_table(table: list[list[str]], pre_seq: list[str]):
+    # 各列对齐打印表格，每行元素不限，每列只和有元素的行对齐
+    n = len(table)
+    if n <= 0:
+        return
+    m = 0
+    for i in range(n):
+        m = max(m, len(table[i]))
+    # had get (n, m)
 
-    def get_str_width_dummy21(s):
+    def get_str_width_add(s):
         return sum(2 if unicodedata.east_asian_width(c) in ("F", "W") else 1 for c in s)
 
-    def get_str_width_dummy10(s):
+    def get_str_width_reduce(s):
         return sum(1 if unicodedata.east_asian_width(c) in ("F", "W") else 0 for c in s)
 
-    def get_max_width(attr_name: str, index: int = -1):
-        maxn = 0
-        for submit in submits:
-            if submit.ignore:
-                continue
-            attr = getattr(submit, attr_name)
-            if attr_name == "events":
-                if index >= len(attr):
-                    attr = ""
-                else:
-                    attr = attr[index]
-                    attr = attr[0] + "-" + attr[1]
-            maxn = max(maxn, get_str_width_dummy21(attr))
-        return maxn
+    col_width = [0 for _ in range(m)]
+    ele_width = [[] for _ in range(n)]
 
-    def print_attr(submit: Submit, attr_name, index: int = -1):
-        max_width = get_max_width(attr_name, index)
-        attr = getattr(submit, attr_name)
-        if attr_name == "events":
-            attr = attr[index]
-            attr = time_str_foramt(attr[0]) + "-" + attr[1]
-        dummpy = get_str_width_dummy10(attr)
-        print(attr.ljust(max_width - dummpy), end="")
+    for j in range(m):
+        for i in range(n):
+            if j >= len(table[i]):
+                continue
+            col_width[j] = max(col_width[j], get_str_width_add(table[i][j]))
+        for i in range(n):
+            if j >= len(table[i]):
+                continue
+            ele_width[i].append(
+                col_width[j] - get_str_width_reduce(table[i][j]))
+
+    for i in range(n):
+        for j in range(len(table[i])):
+            print(table[i][j].ljust(ele_width[i][j]), end="")
+            if j == len(table[i]) - 1:
+                continue
+            print("," if j >= len(pre_seq) else pre_seq[j], end="")
+        print()
+
+
+def print_all(submits: list[Submit]):
+    print_yellow("总览表格")
+
+    table = list()
+    pre_seq = ["", "", ":"]
 
     for submit in submits:
         if submit.ignore is True:
             continue
-        print_attr(submit, "company")
-        print_attr(submit, "post")
-        print(":", end="")
-        for i in range(len(submit.events)):
-            print_attr(submit, "events", i)
-            if i != len(submit.events) - 1:
-                print(", ", end="")
-        print()
+        row = [submit.company, submit.post]
+        for event in submit.events:
+            event_str = event[0] + '-' + event[1]
+            row.append(event_str)
+        table.append(row)
+
+    print_excell_table(table, pre_seq)
 
 
-def print_sche(submits: list[Submit]):
+def print_sum(submits: list[Submit]):
     print_yellow("数据统计")
 
     submit_num = 0
@@ -220,24 +231,28 @@ def print_click(submits: list[Submit]):
     print_yellow("TODO")
     today = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
 
-    def check_submit(submit: Submit):
-        year_str = submit.year
-        for event in submit.events:
-            time_str = year_str + "." + event[0]
-            data = datetime.strptime(time_str, "%Y.%m.%d")
-            if data >= today:
-                return True
-        return False
+    table: list[list[str]] = list()
 
     for submit in submits:
-        if check_submit(submit):
-            print(submit)
+        year_str = submit.year
+        row = [submit.company, submit.post]
+        for event in submit.events:
+            if event[1] == "投递":
+                continue
+            time_str = year_str + "." + event[0]
+            event_data = datetime.strptime(time_str, "%Y.%m.%d")
+            if event_data >= today:
+                row.append(event[0] + "-" +
+                           event_data.strftime("%A") + '-' + event[1])
+        if len(row) > 2:
+            table.append(row)
+    print_excell_table(table, [" ", ":"])
 
 
 if __name__ == "__main__":
     submits = sorted([Submit(filepath) for filepath in filepaths])
     # [print(submit) for submit in submits]
 
-    print_excel(submits)
-    print_sche(submits)
+    print_all(submits)
+    print_sum(submits)
     print_click(submits)

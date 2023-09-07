@@ -35,15 +35,13 @@ And that will make all the difference
 + 开发机配置指南：正所谓工欲善其事必先利其器，这真不是差生文具多，是实打实的生产力提升。
 	+ [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：
 	+ [linux开发机配置指南](LinuxConfigGuide)：
-+ [个人校招记录](./recruit/README.md)：个人校招记录。
++ [个人校招记录](./recruit/README.md)：个人校招记录，如果你使用我的格式进行记录，那么这里的脚本可以用来数据统计。
 + [只赠有缘人](./blog/%E5%8F%AA%E8%B5%A0%E6%9C%89%E7%BC%98%E4%BA%BA/README.md)：Yes，只赠有缘人。
 + [软件推荐](./blog/zest%20app.md)：谁能拒绝这些好玩的小玩意呢？
 + [Linux常用命令和工具](./Linux/command.md)：推荐这个原因和配置指南有点类似，有些工具你还不知道，但很可能它就是很好用很适合你的。
 + [Git使用实战](./Missing-Semester/Git.md#practice)：小小的Git，大大的迷惑。
-+ [侵入式数据结构和非侵入式数据结构的区别](./Algorithm/Data-Structure-and-Sort/%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%92%8C%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
-+ [不同编程范式的量化交易回测系统](./Quant/Survey-BackTest.md)
-
-+ 软件推荐：
++ [侵入式数据结构和非侵入式数据结构的区别](./Algorithm/Data-Structure-and-Sort/%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%92%8C%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)：如题
++ [不同编程范式的量化交易回测系统](./Quant/Survey-BackTest.md)：如题
 
 ## 笔记意义
 
@@ -223,7 +221,7 @@ Quick Start -> 实践 -> Manual or Reference
 	+ [ ] 《蚱蜢：游戏、生命与乌托邦》
 + 中国
 	+ [ ] 费孝通的《乡土中国》
-	+ 蒙克MK
+	+ [ ] 蒙克MK
 	+ [ ] 毛泽东选集
 	+ [ ] 《中国历代政治得失》
 + 心理学
