@@ -1,9 +1,13 @@
-调教一套快捷键收益是不错的
+调教一套适合自己的工作流的收益是不错的，一个程序的工作流的核心就是开发环境——编辑器。  
 
-+ 推荐结合我的开发机配置指南食用更佳：
++ 我的工作流
 	+ [Windows](Missing-Semester/WindowsConfigGuide.md)
 	+ [Linux](Missing-Semester/LinuxConfigGuide.md)
-+ 巨硬的VS Code [Manual](https://code.visualstudio.com/docs)
+
+我其实也有一点的vim的相关配置，但是并没有把其作为主要编辑器，所有相关设置并不关键，目前也没有从VSCode到Vim迁移的刚需
+
++ Reference：
+	+ 巨硬的VS Code [Manual](https://code.visualstudio.com/docs)
 
 ## Use
 
@@ -24,7 +28,7 @@
 		+ 或者使用`Ctrl + Shift + E`打开资源管理器，然后使用方向键选择
 	+ 键入前缀 `>` 使用VSCode命令（或者直接快捷键 `Ctrl + Shift + p`）
 		+ 大小写转换
-		+ 代码块折叠
+		+ 代码块批量折叠控制
 	+ 键入键入`@`在当前文件按名称查找（或者直接快捷键`Ctrl + Shift + O`）
 		>怎么在多个文件按名称查找呢？在资源管理器`Ctrl + Shift + f`
 
@@ -35,7 +39,9 @@
 		+ `Shift + Alt + 方向键`（Ubuntu没问题，但是在Windows下不行）
 
 + 常用快捷键：
-	+ `Ctrl + ~`/`Ctrl + num`切换terminal和workspace
+	+ `Ctrl + ~`/`Ctrl + num`切换terminal和workspace  
+		`Ctrl + j`显示Terminal，`Ctrl + Shift + j`则是Terminal全屏
+		>这个还是挺适合我的
 	+ `Ctrl + \`左右分屏
 
 + 常用命令：
@@ -156,13 +162,28 @@
 	+ [Clang in Windows](https://windowsmacos-vscode-c-llvm-clang-clangd-lldb.readthedocs.io/index.html)
 	+ [Gcc in Linux（视频）](https://www.bilibili.com/video/BV1YG4y1v7uB)
 
-+ Windows：
-	1. 依赖环境：通过Scoop下载了gcc、g++、gdb、make和cmake
-	2. 安装插件：C/C++和C/C++ Extension Pack（它们有依赖的插件，所以会下载很多）
+得益于Scoop，其实我在Windows下开发和Linux下开发的体验已经很接近了，区别出现在需要Unix需用调用时或者有些软件不能跨平台时。  
+总之下面的配置是尽量在Windows和Linux都通用的。
 
-+ 如果你没有使用Make去管理项目，可能出现不能include的问题，[解决方案](https://blog.csdn.net/qq_44078824/article/details/119904218)
-+ 调试：CodeLLDB, 短时间不会写C++代码了，Mark一下吧。
-+ 正在尝试向clangd迁移，目前单纯的下载`clangd`和`clangd-format`插件即可用，有更多的代码风格建议和函数参数类型提示
++ 安装`gcc`、`g++`、`clangd`、`gdb`、`make`、`cmake`命令（背后的软件）
+	+ Windows可以使用Scoop
+
++ 插件：
+	+ C/C++和C/C++ Extension Pack（VSCode对C++官方插件）
+	+ **clangd**和Clang-Format
+
+	这里核心还是用`clangd`的功能，而且两个插件会出现冲突，但是我忘记为什么要都安装了
+
+	+ 解决冲突  
+		三个关键字
+		```
+		intelliSenseEngine
+		autocomplete
+		errorSquiggles
+		```
+		让它们都Disabled
+
+	+ 文件`compile_commands.json`，clangd的名称跳转是通过这个软件，这个软件通常可以由`cmake`生成，但是生成后的文件通常在构建目录下，需要设置下，比如`"cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json"`，或者Linux下Bear也能生成这个文件，而clangd默认是从项目根目录开找。
 
 ### Golang
 

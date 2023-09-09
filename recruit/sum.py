@@ -89,7 +89,7 @@ class Submit:
                 update(2, 0)
             elif "OC" in event_name:
                 update(3, 0)
-            elif "挂" in event_name:
+            elif "挂" in event_name or "不匹配" in event_name:
                 update(3, 1)
             else:
                 assert (
