@@ -62,7 +62,7 @@ class Submit:
             0: ["投递"],
             1: ["测评", "笔试"],
             2: ["面试"],
-            3: ["OC", "挂"],
+            3: ["OC", "挂", "不匹配"],
         }
 
         def update(event_value: int, index: int):
@@ -89,8 +89,10 @@ class Submit:
                 update(2, 0)
             elif "OC" in event_name:
                 update(3, 0)
-            elif "挂" in event_name or "不匹配" in event_name:
+            elif "挂" in event_name:
                 update(3, 1)
+            elif "不匹配" in event_name:
+                update(3, 2)
             else:
                 assert (
                     "投递" in event_name
@@ -185,6 +187,7 @@ def print_sum(submits: list[Submit]):
     interview_num = 0
     oc_num = 0
     g_num = 0
+    unmatch_num = 0
     for submit in submits:
         submit_num += 1
         if submit.order == 0:
@@ -196,9 +199,12 @@ def print_sum(submits: list[Submit]):
         elif submit.order == 3:
             if submit.stage == "OC":
                 oc_num += 1
-            else:
-                assert submit.stage == "挂"
+            elif submit.stage == "挂":
                 g_num += 1
+            else:
+                assert submit.stage == "不匹配"
+                unmatch_num += 1
+
         else:
             assert False
 
@@ -219,6 +225,7 @@ def print_sum(submits: list[Submit]):
     table.add_row("面试", str(interview_num), f"{interview_num/submit_num:.0%}")
     table.add_row("OC", str(oc_num), f"{oc_num/submit_num:.0%}")
     table.add_row("挂", str(g_num), f"{g_num/submit_num:.0%}")
+    table.add_row("不匹配", str(unmatch_num), f"{unmatch_num/submit_num:.0%}")
 
     console.print(table)
 
