@@ -89,9 +89,9 @@ class Submit:
                 update(2, 0)
             elif "OC" in event_name:
                 update(3, 0)
-            elif "挂" in event_name:
+            elif "挂" in event_name or "调剂" in event_name or "转岗" in event_name:
                 update(3, 1)
-            elif "不匹配" in event_name:
+            elif  "不匹配" in event_name:
                 update(3, 2)
             else:
                 assert (
@@ -107,7 +107,8 @@ class Submit:
         return f"{self.year}.{self.events[0][0]}投递{self.company}的{self.post}岗位: {event_str}"
 
     def __repr__(self) -> str:
-        return self.__str__()
+        return self.company + " " + self.post + " " + self.batch + " " +  str(self.order) + " " + self.stage
+
 
     def __lt__(self, other: "Submit"):
         self_time_str = self.events[0][0]
@@ -201,10 +202,10 @@ def print_sum(submits: list[Submit]):
                 oc_num += 1
             elif submit.stage == "挂":
                 g_num += 1
-            else:
-                assert submit.stage == "不匹配"
+            elif submit.stage == "不匹配":
                 unmatch_num += 1
-
+            else:
+                assert False
         else:
             assert False
 
@@ -239,6 +240,7 @@ def print_click(submits: list[Submit]):
     today = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
 
     table: list[list[str]] = list()
+    table.append(["today", "", today.strftime("%m.%d-%A")])
 
     for submit in submits:
         year_str = submit.year
@@ -250,7 +252,7 @@ def print_click(submits: list[Submit]):
             event_data = datetime.strptime(time_str, "%Y.%m.%d")
             if event_data >= today:
                 row.append(event[0] + "-" +
-                           event_data.strftime("%A") + '-' + event[1])
+                    event_data.strftime("%A") + '-' + event[1])
         if len(row) > 2:
             table.append(row)
     print_excell_table(table, [" ", ":"])
@@ -258,7 +260,8 @@ def print_click(submits: list[Submit]):
 
 if __name__ == "__main__":
     submits = sorted([Submit(filepath) for filepath in filepaths])
-    # [print(submit) for submit in submits]
+    # [print(i ,str(submit) ) for i, submit in enumerate(submits) ]
+    # [print(i ,repr(submit) ) for i, submit in enumerate(submits) ]
 
     print_all(submits)
     print_sum(submits)

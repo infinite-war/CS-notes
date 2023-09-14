@@ -17,7 +17,7 @@ Raft是一个管理Replicated Log的Consensus Algorithm
 
 + Raft会以Library的形式存在于服务中，即每个服务的副本由两部分组成：应用程序代码和Raft库
 
-# Raft
+# Theory
 
 Raft集群是中心式的，中心即为Leader，其他节点正常情况为Follower，在选举期为Candidate  
 ![状态机](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Distributed-System/状态机.png)
@@ -28,9 +28,9 @@ Raft集群是中心式的，中心即为Leader，其他节点正常情况为Foll
 	+ Client对其的Request会被重定向到Leader
 + Candidate，特殊状态，当Follower在一段时间没有收到心跳检测则变成Candidate，发起选举
 
-## Leader Election
+分为，选举，日志复制，成员变更
 
-### Pre
+## Leader Election
 
 + 任期Term，Raft将时间划分成长度不固定的任期，每个任期从Election开始，选举成功就normal operation，如果no emerging leader，则进入下一个term
 	+ 每个节点都会记录当前任期
@@ -46,7 +46,6 @@ Raft集群是中心式的，中心即为Leader，其他节点正常情况为Foll
 		+ Heartbeat
 
 + Heartbeat机制
-
 
 + Heartbeat机制
 	+ 节点启动是Follower，只要持续从Leader和Candidate收到合法RPC请求，就一直是Follower
@@ -81,6 +80,7 @@ Raft集群是中心式的，中心即为Leader，其他节点正常情况为Foll
 	+ 我们再来看这么个情况，因为网络问题一个节点误成为Candidate，此时它的任期肯定比它之前的Leader大（至少不同），这会导致其他Follower给它投票致之成为Leader，当其在向集群发送心跳信息时，之前的Leader收到了一个任期更大的Leader的后，自己就变成Follower，仍然正确。
 
 ## Log replication
+
 当选出来一个Leader后，它就开始服务客户端的请求
 
 + 复制流程：
@@ -133,3 +133,14 @@ Raft集群是中心式的，中心即为Leader，其他节点正常情况为Foll
 安全的语义是确保状态机以相同顺序执行相同的命令流
 
 任何 term 内的 leader 都包含了前面所有 term 内提交的 entries
+
+
+# Impl
+
++ 所有server的持久性状态：
+	+ `currentTerm`：当前最新任期，从0开始，单调递增
+	+ `votedFor`：当前任期内投票投向的Candidate
+	+ `log[]`：Log Entries，索引从1开始
+		+ Entry：状态机命令和leader收到该entry的任期
++ 所有server的易失性状态：
+	+ `ccom`
