@@ -6,7 +6,7 @@
 
 1. 首先想到的是C++11的`initializer_list`
 
-   ```c++
+   ```cpp
    template<typename T>
    void debug(const initializer_list<T>& vec)
    	{cout << "[ "; for_each(vec.begin(), vec.end(), [](T v){ cout << v << " "; }); cout << "]"; }
@@ -18,7 +18,7 @@
 
 2. 想到C的`...`：查到`<stdarg.h>`，但被`_INTSIZEOF`劝退，但意识到它就是通过函数参数入栈时是连续的：
 
-   ```c++
+   ```cpp
    template<typename T>
    void debug(T n, ...) {
        for (T *i = &n + 1; i <= &n + n; ++ i) cout << " ["[i == &n + 1] << *i << ",]"[i == &n + n];
@@ -34,7 +34,7 @@
 
   似乎跳两次才能到每个位置：
 
-  ```c++
+  ```cpp
   template<typename T>
   void debug(T n, ...) {
       for (T *i = &n + 2; i <= &n + 2 * n; i += 2)
@@ -86,7 +86,7 @@
     2. `#参数`：将传入的**标记**转换为**字符串**
     3. `##参数`：将参数中存储的标记（传入的标记）它所指向的**内容**变成**标记**：
 
-    ```
+    ```cpp
     #define hs1(n) ..n..
     #define hs2(n) ..#n..
     #define hs3(n) ..##n..
@@ -101,7 +101,7 @@
 
   + 多行：
 
-    ```c++
+    ```cpp
     #define f do{\
     \
     }while(0);
@@ -119,7 +119,7 @@
 >
 > + v1：只能处理整数：
 >
->   ```c++
+>   ```cpp
 >   template<typename T>
 >   string vr(T x) {  //将T类型的x转换为其机器码
 >       string res = "";
@@ -157,7 +157,7 @@
 >
 > + v2：任何内置类型：
 >
->   ```c++
+>   ```cpp
 >   template<typename T>
 >   string vr(T x) {
 >       string res = "";
@@ -176,7 +176,7 @@
 
 + 现在可以观察一下这个宏有什么特点了：
 
-  ```c++
+  ```cpp
   #define _INTSIZEOF(n) ( (sizeof(n) + sizeof(int) - 1) & ~(sizeof(int) - 1) )
   #define ffjx(n) do{ \
       printf(#n " sizeof : %d\n", sizeof(n)); \
@@ -226,7 +226,7 @@
 
 + 现在看看其他部分：==不对，这部分源码不对，源码依然看不懂==|==stdarg中还有更深的东西，没办法手写，只能用他这库==
 
-  ```c++
+  ```cpp
   typedef char * va_list;
   #define va_start(ap,v) ( ap = (va_list)&v + _INTSIZEOF(v)  )
   #define va_arg(ap,t) ( *(t *)((ap += _INTSIZEOF(t)) - _INTSIZEOF(t))  )
@@ -248,7 +248,7 @@
 
 + 现在可以完善我们的代码了：
 
-  ```c++
+  ```cpp
   template<typename T>
   void debug(T x, ...) {
   	int n = x;
@@ -262,7 +262,7 @@
 
 所以我最开始的问题还是没有解决
 
-1. ```c++
+1. ```cpp
    template<typename T>
    class debug {
    public :
@@ -274,7 +274,7 @@
    debug<int>{1, 2, 3};
    ```
 
-2. ```c++
+2. ```cpp
    template<typename T>
    std::ostream& operator << (std::ostream& out, const std::initializer_list<T>& t) {
    		for (auto ite = t.begin(); ite != t.end(); ++ ite) out << *ite << " ";
@@ -306,7 +306,7 @@
 
 但是这样是没法解释的
 
-```c++
+```cpp
 const int N = 3;
 struct point {
     char str[N];

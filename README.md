@@ -174,6 +174,9 @@ Quick Start -> 实践 -> Manual or Reference
 		>萨师煊先生是我国数据库的奠基人。
 	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人完成了第一个和第二个的B+Tree部分，第一本中我将作者的C实现改成Modern C++实现，但是对于侵入式数据结构如果用Modern C++不知如何设计比较好，第二本，写出了B+Tree不符合预期，而且作者使用的B+Tree是比较特殊的变种，作者没有好好描述、网上也没有很好的描述，于是作罢，以后有机会写15445吧。
 
+	+ CMU15445：
+		+ B站 Moody-老师
+
 + 其他：
 	+ 并行计算
 		+ [6.5940](https://github.com/mit-han-lab/parallel-computing-tutorial)
