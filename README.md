@@ -120,7 +120,7 @@ Quick Start -> 实践 -> Manual or Reference
 + 编程入门：
 	>我有点遗忘在第一次接触编程的感觉了，不太能换位到一个初学者的视角；不同人进入编程世界的入口是不一样的，这个阶段可能会花一些时间找找感觉。
 
-	+ [ ] CS61A（SICP, Structure and Interpretation of Computer Programs）：CS-DIY的第一门课，还没看过，很向往，先Mark下。
+	+ [ ] CS61A（SICP, Structure and Interpretation of Computer Programs）：CS-DIY的第一门课，还没看过，SCIP也被称为是一个常看常新的书，比较向往，先Mark下。
 	+ [x] Acwing Linux基础课/Missing-Semester：这两门课有一小部分重叠，主要讲Linux的操作和工具，我觉得非常实用，前者内容更少，所以讲的更细致（给了很多演示），但是它是服务于它自己后面的课程的，够细但不够多，所以需要后者作为补充；后者非常的全面，会讲到我们在实际开发中会遇到但是不会有人系统讲的东西。强烈推荐。
  
 + 编程语言：
@@ -131,18 +131,22 @@ Quick Start -> 实践 -> Manual or Reference
 		+ [x] 《C Primer Plus》：C语言学习的不二之选，我当时有C语言基础，但是不够系统，于是看的这本书，用了五天五夜，看完后可以在小范围当语言律师了。
 
 	+ C++：
-		>C++自C++11之后每三年一个版本发生了天翻地覆的变化，所以这几年这方面出了很多书，os上有一个比较新的学习资料推荐（但是暂时找不到了）
+		>C++自C++11之后每三年一个版本发生了天翻地覆的变化，所以这几年这方面出了很多书，[so上有一个比较新的学习资料推荐](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)  
+		>这导致了一个相对来说很有意思的现象，C++仍然在很高频的出现新的书籍，同时有些书籍是不被推荐的，不仅是因为其质量，而是因为其使用的C++版本太老了。
 
-		+ [x] 《C++ Primer Plus》：不推荐，我选择它的原因是因为它和《C Primer Plus》是同一个作者，书本身可以，但是内容是C++98（虽然书是11年出版），这很不Modern。
-		+ [x] 《C++ Primer》：属于是个C++自媒体都会推荐的了，C++11，勉强可以。
+		+ [x] 《C++ Primer Plus》：不推荐，我选择它的原因是因为它和《C Primer Plus》是同一个作者，书本身是可以的，但是内容是C++98的。
+		+ [x] 《C++ Primer》：毫无疑问的成为C++初学者的第一本书，比较推荐，但我个人认为它还是有股C++98味儿。
 		+ [x] 现代C++30讲/32讲：一个课程的文字记录，是《C++ Primer》必要补充。
-		+ [ ] 《Effective C++》：Effective类书籍鼻祖，但是我最近并没有Modern C++实践，后续有机会再看
-
-	+ Python：Manual
-	+ Golang：Manual
+		+ [ ] 《Effective Modern C++》：本来想看《Effective C++》（Effective类书籍鼻祖）的，但是看评价觉得它不够Modern，这本书是它的continuation和correction
+  
+	+ Python：
+		+ Manual，Python这种语言看Manual就行啦
+		+ B站码农高天，它是CPython的Contributor，Python相关教程很不错，合适想精深Python的。
+	+ Golang：
+		+ Manual，Golang官方的Tour of Go非常好呀。
 
 + 数据结构/算法竞赛：
-	+ [x] Acwing算法全家桶，我不想评价Acwing和yxc，但结合性价比，如果是只是以学习为目的，国内我个人还是推荐这套教程的。
+	+ [x] Acwing算法全家桶，我不想评价Acwing和yxc，但结合性价比，这个可能是国内最适合初学者的一套教程了。
 
 + 编译原理：
 	>编译原理在整体计算机知识体系中似乎是一个比较独立的部分，但是我个人感觉非常有学习的必要
@@ -163,34 +167,34 @@ Quick Start -> 实践 -> Manual or Reference
 + 操作系统
 	+ [x] 王道考研的操统课：应付期末，草草看完。
 	+ [x] MIT6.S081：资料方面只看了xv6 Manual和野生课程内容翻译，然后直接啃实验，以实践为主，缺乏理论由OSTEP补充。
-	+ [x] 南大蒋炎岩操作系统/OSTEP：蒋老师说他的课是OSTEP导读，但蒋老师的课很有个人风格，推荐课程；蒋老师评价OSTEP为最好的自学OS的资料，我的第一本英文书，全程在地铁上看完的，没有课后作业，没有记笔记。
+	+ [x] 南大蒋炎岩操作系统/OSTEP：蒋老师说他的课是OSTEP导读，但蒋老师的课很有个人风格，推荐课程；蒋老师评价OSTEP为最好的自学OS的资料，我的第一本英文书，全程在地铁上看完的，没有课后作业，没有记笔记，非常推荐（其实中文版就翻译的挺好，没必要硬啃英文版）
 
 + 计算机网络
 	+ [x] 谢希仁的《计算机网络》（第七版）：教材
-	+ [x] Stanford CS144（2023）：使用C++20实现了字节流、重组器、TCP的两端、数据链路层和网络层的接口、IP的路由选择。其中的util类（地址的封装、文件描述符的封装、Socket的封装）挺值得学习的。做完才意识到删除了往年最难的部分，难度低了很多，应该适合新手。遗憾的是这就导致后几个实验比较零碎，未能得到一个完整可用的TCP协议实现。
+	+ [x] Stanford CS144（2023）：使用C++20实现了字节流、重组器、TCP的两端、数据链路层和网络层的接口、IP的路由选择。其中的`CmakeList.txt`和util类（地址的封装、文件描述符的封装、Socket的封装）都挺值得学习的。做完才意识到删除了往年最难的部分，难度低了很多，应该适合新手。遗憾的是这就导致后几个实验比较零碎，未能得到一个完整可用的TCP协议实现。
 
 + 数据库
 	+ [x] 王珊、萨师煊的《数据库系统概念》（第五版）：教材
 		>萨师煊先生是我国数据库的奠基人。
-	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人完成了第一个和第二个的B+Tree部分，第一本中我将作者的C实现改成Modern C++实现，但是对于侵入式数据结构如果用Modern C++不知如何设计比较好，第二本，写出了B+Tree不符合预期，而且作者使用的B+Tree是比较特殊的变种，作者没有好好描述、网上也没有很好的描述，于是作罢，以后有机会写15445吧。
+	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人完成了第一个和第二个的B+Tree部分，第一本中我将作者的C实现改成Modern C++实现，但是对于侵入式数据结构还是一股C味儿，后面有机会可能结合CRTP重写。对于第二本，写出的B+Tree不符合预期，而且作者使用的B+Tree是比较特殊的变种，作者没有好好描述、网上也没有很好的描述，于是作罢，以后有机会写15445吧。
 
-	+ CMU15445：
-		+ B站 Moody-老师
+	+ [ ] B站Moody老师，相当于15445的课程翻译。
 
 + 其他：
-	+ 并行计算
+	+ 并行计算 ：
 		+ [6.5940](https://github.com/mit-han-lab/parallel-computing-tutorial)
+	+ 图形化：GAMES
 
 ## 工程能力
 
-+ 分布式：
-	+ [x] MIT6.824：看完了部分课程的讲义和一个完整的课程字幕翻译记录，主要以了解知识点为主，因为我的实习项目就是分布式存储，工业界的实践就在眼前，所以课程实现没有做。
++ 分布式系统：
+	+ [x] MIT6.824：看完了部分课程的讲义和完整的课程字幕翻译记录，主要以了解知识点为主，因为我的实习项目就是分布式存储，工业界的实践就在眼前，所以课程实现没有做。
 
 + 虚拟化：
-	+ [ ] 《自己动手写Docker》
+	+ [ ] 《自己动手写Docker》：
 
 + 系统设计：
-	+ [ ] 《DDIA》
+	+ [ ] 经典《DDIA》：
 
 + 业务开发：
 	+ [x] Acwing工程课的Django和前端：优势的很简单，缺点是太简单；低年级推荐看看，否则没必要了。
@@ -262,7 +266,7 @@ Quick Start -> 实践 -> Manual or Reference
 	+ 人体健康：
 		+ [ ] 《饥饿的大脑》
 
-+ 视频：
++ 杂项：
 	+ [ ] Bilibili学院派
 	+ [ ] Bilibili小德MOMO
 	+ [ ] Bilibili王晓

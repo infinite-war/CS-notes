@@ -230,9 +230,9 @@ def print_sum(submits: list[Submit]):
 
     console.print(table)
 
-    print("测评次数: ", sum(submit.eval_num for submit in submits))
-    print("笔试次数: ", sum(submit.exam_num for submit in submits))
-    print("面试次数: ", sum(submit.interview_num for submit in submits))
+    print("测评次数:", sum(submit.eval_num for submit in submits))
+    print("笔试次数:", sum(submit.exam_num for submit in submits))
+    print("面试次数:", sum(submit.interview_num for submit in submits))
 
 
 def print_click(submits: list[Submit]):
