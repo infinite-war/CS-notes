@@ -1,5 +1,5 @@
 泛型编程技术是为了实现代码的可重用性，对于某个算法，不必关系具体使用的类型，那么这里讲的一些技术就是为了实现这个目的。
->在C中也有类似的技术，`typedef`，术语一种类型别名，但是这可不足够的代码重用，仍然是只能服务一直类型
+>在C中也有类似的技术，`typedef`，相当于一种类型别名，但是这可不够代码重用，仍然是只处理一种类型。
 
 # 模板
 
@@ -97,6 +97,8 @@ void swap(T& a, T& b) {
 
 ### CRTP
 
+>奇异递归模板模式（The Curiously Recurring Template Pattern（CRTP）
+
 ## MISC
 
 + 实例化控制：模板只有在使用时才会进行实例化，所以相同的模板实例可能出现多个代码文件中，这是额外的开销
@@ -122,8 +124,6 @@ void swap(T& a, T& b) {
 	```
 
 	使用`typedef`依然可以实现，但是更复杂。
-
-
 
 ## 类型推导问题
 
@@ -198,10 +198,10 @@ auto authAndAccess(Container& c, Index i) ->decltype(c[i]) {
 	```
 	神奇不，这里`auto`表示这里要类型推导，而`decltype`又表示按照`decltype`的方式进行推导。
 
-## 关键字typeid和Boost.TypeIndex
+## RTTI
+即run-time type identification
 
 typeid [ref](https://en.cppreference.com/w/cpp/language/typeid)：该关键字会返回`std::type_info`类型对象，这个对象有方法`name()`返回一个字符串表示表达式类型，但结果并不一直可信
-
 
 ## 模板元编程
 
@@ -218,7 +218,7 @@ variable template (C++14) [cpp ref ](https://en.cppreference.com/w/cpp/language/
 	std::add_lvalue_reference<T>::type  //C++11: T → T& 
 	std::add_lvalue_reference_t<T>      //C++14 等价形式
 	```
-	指的一题的是，C++11版本使用的是`typedef`相关的技术，而C++14的接口才是类型别名`using`的相关技术
+	值得一提的是，C++11版本使用的是`typedef`相关的技术，而C++14的接口才是类型别名`using`的相关技术
 
 	实际上可以
 	```cpp

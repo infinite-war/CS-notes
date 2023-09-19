@@ -1,5 +1,7 @@
 <!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/-->
 
+我们学习一个东西，理解它的动机非常重要，一定要知道它是用来解决什么问题的，或者说知道它的演进过程，比知道它现在什么样子，更重要。
+
 ```
 So you have to trust that 
 the dots will somehow connect in your future
@@ -13,7 +15,6 @@ And that will make all the difference
                                   Stanford University
 ```
 
-+ 该项目的范围已经超出了`CS-notes`的范畴，我也会记录一些不相关的东西，但是主体不会变。
 + 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的Note，除非特殊声明，否则不建议作为学习资料。
 + 该笔记部分插图来自各种书籍、课程或其他资料，若涉及到任何版权行为，请联系我，我将删除内容。
 + 对于课程笔记，我（自认为）严格遵循[Academic Integrity](http://integrity.mit.edu/)，虽然在笔记中可能记录思路，但是代码是Private的，如果有不合适的地方，请提醒我。
@@ -58,9 +59,9 @@ And that will make all the difference
 + 常用的、重要的知识点内化于心
 + 零碎的、细节性的知识现用现查
 
-此时笔记更像是”当年攻城略地时的纪念品“
+此时笔记更像是”当年攻城略地时的纪念品“。
 
-好吧还是有意义的，我工作之后，少有时间系统的一边看课/书一边记笔记了，所以基本是在地铁上学，读资料的时候确实感觉学到了新东西但是很快就忘记了，如果能随手记笔记应该效果会好些，唉，花有重开日，人无再少年呀。
+还是很有意义的，工作之后，少有整块的时间学习了，基本都是在地铁上学的，读资料的时候确实感觉学到东西但是很快就忘记了，不能即笔记意味着不能重构思维框架，也不能通过反复进行记忆。感觉学完之后对知识的吸收很少。哎，花有重开日，人无再少年呀。
 
 ### 学习阶段
 
@@ -135,10 +136,13 @@ Quick Start -> 实践 -> Manual or Reference
 		>这导致了一个相对来说很有意思的现象，C++仍然在很高频的出现新的书籍，同时有些书籍是不被推荐的，不仅是因为其质量，而是因为其使用的C++版本太老了。
 
 		+ [x] 《C++ Primer Plus》：不推荐，我选择它的原因是因为它和《C Primer Plus》是同一个作者，书本身是可以的，但是内容是C++98的。
+
+		下面的几本书真是值得反复刷呀。
+
 		+ [x] 《C++ Primer》：毫无疑问的成为C++初学者的第一本书，比较推荐，但我个人认为它还是有股C++98味儿。
 		+ [x] 现代C++30讲/32讲：一个课程的文字记录，是《C++ Primer》必要补充。
-		+ [x] 《Effective Modern C++》：本来想看《Effective C++》（Effective类书籍鼻祖）的，但是看评价觉得它不够Modern，这本书是它的continuation和correction。强烈推荐！越发的意识到C++的博大精深，这本书将很多不清楚的点都点透了，看完之后觉得自己之前对C++的理解简直就是初学。
-  
+		+ [x] 《Effective Modern C++》：本来想看《Effective C++》的，它被称为Effective类书籍的鼻祖，但看评价觉得它不够Modern，而这本书是它的continuation和correction。强烈推荐！惊叹于C++的博大精深，这本书对我个人而言说清了很多我过去模棱两可的事情，看完之后越发感觉自己还是C++的初学者。
+
 	+ Python：
 		+ Manual，Python这种语言看Manual就行啦
 		+ B站码农高天，它是CPython的Contributor，Python相关教程很不错，合适想精深Python的。
@@ -171,7 +175,7 @@ Quick Start -> 实践 -> Manual or Reference
 
 + 计算机网络
 	+ [x] 谢希仁的《计算机网络》（第七版）：教材
-	+ [x] Stanford CS144（2023）：使用C++20实现了字节流、重组器、TCP的两端、数据链路层和网络层的接口、IP的路由选择。其中的`CmakeList.txt`和util类（地址的封装、文件描述符的封装、Socket的封装）都挺值得学习的。做完才意识到删除了往年最难的部分，难度低了很多，应该适合新手。遗憾的是这就导致后几个实验比较零碎，未能得到一个完整可用的TCP协议实现。
+	+ [x] Stanford CS144（2023）：使用C++20实现了字节流、重组器、TCP的两端、数据链路层和网络层的接口、IP的路由选择。其中的项目结构（包括CMake相关代码）和几个Util类（地址的封装、文件描述符的封装、Socket的封装）都挺值得学习的。做完才意识到删除了往年最难的部分，难度低了很多，应该适合新手。遗憾的是这就导致后几个实验比较零碎，未能得到一个完整可用的TCP协议实现。
 
 + 数据库
 	+ [x] 王珊、萨师煊的《数据库系统概念》（第五版）：教材
@@ -179,16 +183,22 @@ Quick Start -> 实践 -> Manual or Reference
 	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人完成了第一个和第二个的B+Tree部分，第一本中我将作者的C实现改成Modern C++实现，但是对于侵入式数据结构还是一股C味儿，后面有机会可能结合CRTP重写。对于第二本，写出的B+Tree不符合预期，而且作者使用的B+Tree是比较特殊的变种，作者没有好好描述、网上也没有很好的描述，于是作罢，以后有机会写15445吧。
 
 	+ [ ] B站Moody老师，相当于15445的课程翻译。
+	+ [ ] CMU 15445 Lab 2023 Spring。
 
 + 其他：
-	+ 并行计算 ：
+	+ 并行计算：
 		+ [6.5940](https://github.com/mit-han-lab/parallel-computing-tutorial)
-	+ 图形化：GAMES
+	+ 图形化（GAMES）
 
 ## 工程能力
 
 + 分布式系统：
 	+ [x] MIT6.824：看完了部分课程的讲义和完整的课程字幕翻译记录，主要以了解知识点为主，因为我的实习项目就是分布式存储，工业界的实践就在眼前，所以课程实现没有做。
+		+ [x] [MapReduce](./Distributed-System/MapReduce.md)
+		+ [x] [Raft](./Distributed-System/Raft.md)
+		+ [ ] [Spanner]
+		+ [ ] [BigTable]
+		+ [ ] [Ceph]
 
 + 虚拟化：
 	+ [ ] 《自己动手写Docker》：
@@ -197,16 +207,17 @@ Quick Start -> 实践 -> Manual or Reference
 	+ [ ] 经典《DDIA》：
 
 + 业务开发：
-	+ [x] Acwing工程课的Django和前端：优势的很简单，缺点是太简单；低年级推荐看看，否则没必要了。
+	+ [x] Acwing工程课的Django和前端：优势的很简单，缺点是太简单；低年级可以看看，否则没必要了。
 
 + 优秀开源代码源码阅读
-	+ rocksDB
 	+ [etcd](./Distributed-System/etcd)
 	+ [levelDB](./Database-System/levelDB)
+	+ rocksDB
 
 + 金融科技：
-	+ [ ] 《Max Dama on Trade》Max Dama：Max Dama的博客汇总，还在看，鸽了呜呜。
+	+ [ ] Max Dama《Max Dama on Trade》：Max Dama的博客汇总
 	+ [ ] 《Trading and Exchanges: Market Microstructure for Practitioners》
+
 
 ## 非技术类
 
@@ -215,24 +226,27 @@ Quick Start -> 实践 -> Manual or Reference
 		+ [ ] 肯·福莱特世纪三部曲
 	+ 理论
 		+ [ ] 美国弗拉基米尔·纳博科夫的《文学讲稿三种》
-	+ [ ] 朱光潜《给青年人的十二封信》
 	+ 传记：
 		+ [ ] 《始于极限》
+	+ [ ] 朱光潜《给青年人的十二封信》
 + 哲学
 	+ 韩炳哲
+	+ Bilibili学院派
 + 历史学
 	+ 由瓦尔赫拉利
 	+ [ ] 贾德·戴蒙的《枪炮、病菌与钢铁：人类社会的命运》
+	+ Bilibili王晓
 + 政治学
 	+ [ ] 马基雅维利的《君主论》
 + 经济学
-	+ 翟东升
+	+ B站翟东升
 	+ [ ] 《棉花帝国》
+	+ Bilibili小德MOMO
 + 社会学
 	+ [ ] 《蚱蜢：游戏、生命与乌托邦》
 + 中国
 	+ [ ] 费孝通的《乡土中国》
-	+ [ ] 蒙克MK
+	+ [ ] B站蒙克MK
 	+ [ ] 毛泽东选集
 	+ [ ] 《中国历代政治得失》
 + 心理学
@@ -245,7 +259,7 @@ Quick Start -> 实践 -> Manual or Reference
 	+ [ ] 《被讨厌的勇气》
 	+ [ ] 《思考，快与慢》
 
-+ 职业：
++ 商业：
 	+ 瑞·达利欧
 	+ 互联网
 		+ [ ] 《黑客与画家》
@@ -254,6 +268,7 @@ Quick Start -> 实践 -> Manual or Reference
 	+ 芯片
 		+ [ ] 《我在硅谷管芯片：芯片产品线经理生存指南》
 	+ [ ] 浪潮之巅
+	+ B站取景框看世界
 + 自然
 	+ [ ] 瑞安·诺思的《万物发明指南：时间旅行者的生存手册》
 	+ [ ] 美国史蒂文·约翰逊的《我们如何走到今天：重塑时间的六项创新》
@@ -262,11 +277,6 @@ Quick Start -> 实践 -> Manual or Reference
 	+ [ ] 卡尔·奇默的《病毒星球》
 	+ [ ] 美国伊丽莎白·布莱克本的《端粒》
 	+ 人工智能：
-		+ [ ] 《AI未来进行式》：科幻小说的形式科普
+		+ [ ] 《AI未来进行式》：科幻小说的形式的AI科普
 	+ 人体健康：
 		+ [ ] 《饥饿的大脑》
-
-+ 杂项：
-	+ [ ] Bilibili学院派
-	+ [ ] Bilibili小德MOMO
-	+ [ ] Bilibili王晓

@@ -1,6 +1,6 @@
 # Install
 
-## Windows install Rust：
+## Windows
 >我这里使用Scoop
 
 1. `scoop install rust`
