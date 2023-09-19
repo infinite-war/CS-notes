@@ -137,7 +137,7 @@ Quick Start -> 实践 -> Manual or Reference
 		+ [x] 《C++ Primer Plus》：不推荐，我选择它的原因是因为它和《C Primer Plus》是同一个作者，书本身是可以的，但是内容是C++98的。
 		+ [x] 《C++ Primer》：毫无疑问的成为C++初学者的第一本书，比较推荐，但我个人认为它还是有股C++98味儿。
 		+ [x] 现代C++30讲/32讲：一个课程的文字记录，是《C++ Primer》必要补充。
-		+ [ ] 《Effective Modern C++》：本来想看《Effective C++》（Effective类书籍鼻祖）的，但是看评价觉得它不够Modern，这本书是它的continuation和correction
+		+ [x] 《Effective Modern C++》：本来想看《Effective C++》（Effective类书籍鼻祖）的，但是看评价觉得它不够Modern，这本书是它的continuation和correction。强烈推荐！越发的意识到C++的博大精深，这本书将很多不清楚的点都点透了，看完之后觉得自己之前对C++的理解简直就是初学。
   
 	+ Python：
 		+ Manual，Python这种语言看Manual就行啦

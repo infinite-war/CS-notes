@@ -1,98 +1,81 @@
-+ 对数组来说，数组大小也是类型的一部分
-
 # 概述
 
 + C++是**静态数据(statically typed)类型语言**：在编译时检查类型(type checking)错误。
-
-  > 诸如Python这种解释型语言则是在程序运行时检查数据类型
+	>诸如Python这种解释型语言则是在程序运行时检查数据类型
 
 + C++的**数据对象**（存储类型）包括变量和常量（字面量），以及数组元素，结构成员：**数据对象通过标识符为数据提供位置标签**。
-
-  > 数据对象和存储类型是不同教材的翻译，统称为**对象**(Object)即可，变量是一种对象
+	>数据对象和存储类型是不同资料的翻译，统称为**对象**(Object)即可，变量是一种对象
 
 + C++的**数据类型**分为基本类型：整型和浮点型；还有复合类型：数组、指针还有结构、共用体和枚举等等（内置类型）和自定义类型
 
-  ```mermaid
-  graph LR;
-  	dt[数据类型data type];
-  	type[内置类型build_in type];
-  	clas[自定义类型];
-  	base[基本类型basic type];
-  	composite[复合类型composite type];
-  	num[算术类型arithmetic type];
-  	void[空类型void type];
-  	int[整型integral type];
-  	double[浮点型float type];
-  	char[字符型character type];
-  	bool[布尔类型];
-  	array[数组array];
-  	point[指针point];
-  	re[引用reference];
-  	struct[结构体structure];
-  	union[共用体common];
-  	enum[枚举enum];
-  
-  	dt --> type; dt --> clas;
-  	type --> base; type --> composite;
-  	base --> num; base --> void;
-  		num ---> int; num ---> double;
-  			int -.-> char; int -.-> bool;
-  	composite --> array -.- point -.- re;
-  	composite --> struct; composite --> union; composite --> enum;
+```mermaid
+graph LR;
+dt[数据类型data type];
+type[内置类型build_in type];
+clas[自定义类型];
+base[基本类型basic type];
+composite[复合类型composite type];
+num[算术类型arithmetic type];
+void[空类型void type];
+int[整型integral type];
+double[浮点型float type];
+char[字符型character type];
+bool[布尔类型];
+array[数组array];
+point[指针point];
+re[引用reference];
+struct[结构体structure];
+union[共用体common];
+enum[枚举enum];
+
+dt --> type; dt --> clas;
+type --> base; type --> composite;
+base --> num; base --> void;
+	num ---> int; num ---> double;
+		int -.-> char; int -.-> bool;
+composite --> array -.- point -.- re;
+composite --> struct; composite --> union; composite --> enum;
   ```
 
-  **数据类型确定数据对象开辟空间大小和解释方法以及能在数据上执行的操作**
+**数据类型确定数据对象开辟空间大小和解释方法以及能在数据上执行的操作**
 
 + **标识符**(identifier)：一个变量、常量、函数和其他实体的名称。
-
-  + 意义：为数据类型和程序的存储实体提供的**位置标签**。
-  + 命名规则：
-    + 只能使用字母字符、数字和下划线（_）。
-    + 第一个字符不能是数字。
-    + 大小写敏感
-    + 不能使用C++关键字
-    + 以两个下划线或下划线和大写字母打头的名称被保留给实现（编译器以其使用的资源）使用。以一个下划线开头的名称被保留给实现，用作全局标识符。
-    + C++对于名称的长度没有限制，但有些平台有长度限制。
+	+ 意义：为数据类型和程序的存储实体提供的**位置标签**。
+	+ 命名规则：
+		+ 只能使用字母字符、数字和下划线（\_）
+		+ 第一个字符不能是数字
+		+ 大小写敏感
+		+ 不能使用C++关键字
+		+ 以两个下划线或下划线和大写字母打头的名称被保留给实现（编译器以其使用的资源）使用。以一个下划线开头的名称被保留给实现，用作全局标识符。
+		+ C++对于名称的长度没有限制，但有些平台有长度限制。
 
 # 数据对象
 
 + ***变量***：提供一个具名的、可供程序操作的存储空间。
-  
-  + 定义：类型说明符(type specifier)以及紧随的变量名列表，逗号分隔，分号结束。
-  
-    ​           列表中的变量名由类型说明符指定，定义时可赋值。
+	+ 定义：类型说明符(type specifier)以及紧随的变量名列表，逗号分隔，分号结束。  
+		列表中的变量名由类型说明符指定，定义时可赋值。
   
 + **常量**：通过`#define`定义的符号常量或者**`const`**限定的不允许修改的变量
+	+ 命名规范：1. 首字母大写、2. 整个名称大写、3. 以字母k打头。
+	+ 定义方法：
+		1. `#define`预处理指令  
+			格式：`#define NAME value` 没有等号，没有分号。
+		2. **`const`**限定符  
+			格式：**`const type`**`name = value; ` C++建议。
+		3. C++11新增关键字`constexpr`创建常量表达式。
 
-  + 命名规范：1. 首字母大写、2. 整个名称大写、3. 以字母k打头。
-
-  + 定义方法：
-
-    1. `#define`预处理指令
-
-       格式：`#define NAME value` 没有等号，没有分号。
-
-    2. **`const`**限定符
-
-       格式：**`const type`**`name = value; ` C++建议。
-
-    3. C++11新增关键字`constexpr`创建常量表达式。
-
-+ **字面量**(literal)：即时使用的基本类型值，其都对应着一种数据类型
-
-  <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/指定字面值类型.png" alt="指定字面值类型" style="zoom:67%;" />
-
-
----
++ **字面量**(literal)：即时使用的基本类型值，其都对应着一种数据类型  
+	<img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/指定字面值类型.png" alt="指定字面值类型" style="zoom:67%;" />
 
 + 声明：C++提供两种声明，但本质只能有一个定义
+	1. 引用声明(referencing declaration)或简称为声明(declaration)：`extern type name;`：创建名字
+	2. 定义声明(defining declaratin)或简称为定义(definition)：`限定符 type name (= value)`：为名字创建实体
 
-  1. 引用声明(referencing declaration)或简称为声明(declaration)：`extern type name;`                    ：创建名字
-  2. 定义声明(defining declaratin)         或简称为定义(definition)  ：`限定符 type name （= value）`：为名字创建实体
+	若声明时初始化则是定义，在函数内则报错；声明可以多次，但是定义只能一次。
 
-  若声明时初始化则是定义，在函数内则报错；声明可以多次，但是定义只能一次。
++ 初始化(initialized)：在对象创建时获得特定值：将声明和赋值合并在一起。
 
-+ 初始化(initialized)：在对象创建时获得特定值：将声明和赋值合并在一起
++ 
 
   + 语法：
     1. **`type`**` name = value;` value可为符号常量、字面值常量、定义过的变量、表达式。
@@ -184,7 +167,9 @@
 
 + 数据类型性质：存储大小、解释方法->取值范围和精度，在其上的操作（）运算符
 
-   <img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/C++算术类型.png" style="zoom:70%;" />
+https://en.cppreference.com/w/c/language/arithmetic_types
+
+   img src="https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/C++算术类型.png" style="zoom:70%;" /
 
   + `climits`头文件有算术类型范围符号常量。
 
@@ -342,6 +327,8 @@
 2. 右值引用
 
 ### 数组
+
++ 对数组来说，数组大小也是类型的一部分
 
 + 声明格式：**`typeName`**` arrayName[arraySize];` 其中`[]`为成员运算符
 
@@ -576,189 +563,48 @@
 
 ### 结构
 
-***结构体***
+#### 结构体
 
-+ 概念：结构是用户定义的类型，而结构声明定义了这种结构的数据属性；定义类型后，可以创建这种类型的变量。
+结构是用户定义的类型，而结构声明定义了这种结构的数据属性；定义类型后，可以创建这种类型的变量。
 
-+ 定义：
++ 定义
++ 创建
++ 初始化
++ 访问成员
++ 位字段：TODO
 
-  1. 定义结构*名称*：指出新类型特征，描述并标记存储在结构中的各种数据类型。
+#### 共用体
 
-     ```c++
-     struct ist {
-     	string name;
-         int seat;
-         double value;
-     };
-     ```
+能存储不同的数据类型，但是只能同时存储其中的一种类型，可在不同时期存储不同成员对应的值
 
-  2. 创建新类型的数据对象：按描述创建结构变量（结构数据对象）。
+关键字`union`
 
-     ```c++
-     ist sam;
-     ```
+#### 枚举
 
-     > 与C相比，创建结构变量没有struct关键字，用法与内置数据类型相同，强调结构是创建一个新类型
++ C++98：`enum name = {NUM1, NUM2, NUM3, ……};` 可以省略枚举类型名
+	+ 可显式地设置枚举量地值：`enum name = {NUM1 = 1, NUM2 = 2, NUM3 = 4;}`
+	+ 可显式地定义其中一部分枚举量地值：`enum name = {NUM1, NUM2 = 100, NUM3};`，其余按照顺序，定义后按顺序递增。
+	+ 可创建多个值相同的枚举量：`enum {NUM1, NUM2 = 0, NUM3, NUM4 = 1};` 两个0两个1。
 
-  + 定义和创建可以在一起，甚至可以跟初始化一起。
++ C++11类作用域内枚举（因为关键字class，所以也被称为枚举类）：`enum class Name {Num1, Num2, ... , Numn};` 其中`class` 可以用`struct` 代替。
+	>解决同一文件不同枚举定义同名枚举量的冲突
 
-    ```c++
-    struct ist{
-    	...
-    } sam;
-    
-    struct ist{
-    	...
-    } sam = {
-    	...
-    };
-    ```
-
-  + 还可以声明没有名称的结构，不过需要连续创建数据对象。
-
-    ```c++
-    struct {
-    	...
-    } sam, sam2;
-    ```
-
-  + 初始化：
-
-    1. 列表初始化：花括号括起来的由逗号分隔值的列表，对应成员赋值；括号内未包含任何东西，各个成员将被设置为零。
-
-    2. 指定初始化：
-
-       1. `ist a = {.成员 = value, .成员 = value};`
-       2. `ist a = {成员 : value, 成员 : value};`
-    
-    3. 构造函数：
-  + 赋值：列表初始化只能用于初始化，只能对每个成员单独赋值，（或者使用临时结构体初始化，再用这个结构体作结构体赋值）
-
-+ 访问成员：
-
-  + 点运算符（`.`）      ：
-  + 箭头运算符（`->`）：
-
-+ 结构数组：
-
-  结构指针：
-
-+ 位字段：允许指定占用特定位数的结构成员。
-
------
-
-+ ***共用体***：能存储不同的数据类型，但是只能同时存储其中的一种类型，可在不同时期存储不同成员对应的值
-
-  + 格式：格式类似结构，关键字为**`union`**，共用体的长度为其最大成员的长度
-
-  + *匿名*：成员视为共用体所在类型的成员，共用体成员使用同一个地址
-
-+ ***枚举***：关键字：**`enum`**工具提供了另一个创建符号常量的方式，**可代替const**：==定义新类型同时确定其值的集合==
-
-  + 语法：`enum name = {NUM1, NUM2, NUM3, ……};` 可以省略枚举类型名
-
-    + 可显式地设置枚举量地值：`enum name = {NUM1 = 1, NUM2 = 2, NUM3 = 4;}`
-    + 可显式地定义其中一部分枚举量地值：`enum name = {NUM1, NUM2 = 100, NUM3};`，其余按照顺序，定义后按顺序递增。
-    + 可创建多个值相同的枚举量：`enum {NUM1, NUM2 = 0, NUM3, NUM4 = 1};` 两个0两个1。
-
-  + 可用新类型定义变量，变量取值受到限制，且未定义算术运算符
-
-    可被提升为int型（可进行算术计算），但int型不能自动转换为枚举类型（可强制转换`name(num)`），要保证数值有效
-
-  + 类作用域内枚举（C++11）：`enum class Name {Num1, Num2, ... , Numn};` 其中`class` 可以用`struct` 代替。
-
-    > 解决同一文件不同枚举定义同名枚举量的冲突
-
-    + 使用：`Name sam = Name::Num_x;`：以创造作用域解决冲突问题
-
-    + 增加安全性：
-
-      1. 常规枚举可自动转换为整型
-
-         作用域内枚举不能隐式的转换；但可以显式类型转换。
-
-  + 枚举在底层整型类型的表示：
-
-    + C++98的选择取决于实现
-
-    + C++11默认int，提供`enum class : typeint Name {};`语法，其中`:typeint`指定底层类型。
+	+ 避免隐式转换
+	+ 明确底层实现
+		+ 甚至可以指定：`enum class enumName: type {...};`
 
 ## 运算符
 
-+ 表达式(expression)：由运算符(operator)和运算对象(operand)组成，每个表达式都有值——结果(result)
++ 表达式(expression)：由运算符(operator)和运算对象(operand)组成，每个表达式都有值，即结果(result)
+	+ 可分为一元运算符(unary operator)和二元运算符binary operator，元即操作数。
 
-+ 概念：
++ 运算符考虑precedence优先级和associativity结合律去考虑order of evaluation求值顺序
 
-  + 一元运算符(unary operator)：
++ 赋值运算符：
+	+ 值类型问题
+	+ 结合性从左到右，所以可以连续赋值
 
-    二元运算符(binary operator)：
++ 递增运算符和递减运算符
+	+ 不要在同一条语句对同一个值多次使用，C++没有定义正确的行为。C++可以保证在一个顺序点前完成副作用，但是具体什么时候进行不确定。
 
-    元即操作数
-
-    > 一个操作符在不同的上下文内含义不同
-
-  + 优先级(precedence)                ：
-
-    结合律(associativity)                ：
-
-    求值顺序(order of evaluation)：
-
-+ 赋值运算符：`=` ：左值必须可被赋值
-
-  > *左值*				：赋值运算符操作的在等号左边的数。
-  >
-  > *可修改的左值* ：可被引用的数据对象：变量、数组元素、结构成员、引用和解除引用的指针。
-  >
-  > + 被const限定的属于不可修改的左值。
-
-  + 赋值表达式的值定义为左侧成员的值 + 结合律从右向左 -> 可连续赋值。
-
-+ 算术运算符：
-
-  + `+`运算符和`-`运算符、`*`运算符和`/`运算符：行为取决于操作数的类型
-
-    + 除法为截断除
-
-  + `%`求模运算符：操作上只能是整数且右操作数不能为0
-
-    + 符号：$m \% (- n) = m \% n \ 、 \ (- m) \% n = -(m \% n)$
-
-  + 递增运算符`++` 和递减运算符`--`
-
-    1. 前缀（prefix）版本：先变再用
-    2. 后缀（postfix）版本：先用再变
-
-    + 不要在同一条语句对同一个值多次使用，C++没有定义正确的行为。
-
-      > C++可以保证在一个顺序点前完成副作用，但是具体什么时候进行不确定
-
-    + 单独使用时，同一运算符的前缀版本和后缀版本对程序的行为没有影响，但在**执行速度上有细微差别**。
-
-      1. 对于内置类型无影响。
-
-      2. 对于用户定义的类型：
-
-         1. 前缀版本：将值加1，然后返回值。
-         2. 后缀版本：先复制一个副本，将本身加1，然后返回副本。
-
-         所以前缀版本的效率比后缀版本高
-
-    + 与指针使用时的==优先级==
-
-      1. 后缀的优先级最高，从左往右结合
-
-      2. 前缀和解引用运算符的优先级相同，从右往左结合。
-
-+ 关系运算符：比较左右两个操作数并返回一个真值：`!=` `>` `<` `>=` `<=` ==`==`==
-
-+ 逻辑运算符：逻辑OR（`||`）、逻辑AND（`&&`）、逻辑NOT（`!`）                       ：特点——短路
-
-  > C++用标识符and、or和not作保留符用作逻辑运算符
-
-  位运算符    ：         或（`|`）、              与（`&`）、              非（`!`）、异或（`^`）：优先级：关系运算符>取反>与>或
-
-+ 条件运算符：`?:`：`expression1 ? expression2 : expression3`
-
-+ C++运算符优先级和结合律：
-
-  ![](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/Programing-Language/C++/运算符优先级表.png)
++ [运算符优先级表](https://en.cppreference.com/w/cpp/language/operator_precedence)
