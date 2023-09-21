@@ -205,9 +205,7 @@
 + 插件：
 	+ `Java Extension Pack`：包含大量其他必须插件
 
-+ TODO：
-	+ 项目依赖管理
-		>我用编译选项`-cp`手动管理的依赖，但是在编辑器层面不能识别，会报错
++ 项目依赖管理。
 
 ## MarkDown
 见我的关于Markdown编辑器的[讨论](Missing-Semester/Markdown.md)

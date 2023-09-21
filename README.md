@@ -27,6 +27,8 @@ And that will make all the difference
 + IT信息来源：
 	+ [阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，每周五更新，RSS自上而下分别是一张照片，简单的博客，几篇博客和几个工具的介绍和链接。内容由用户投稿，时常能出现让人眼前一亮的玩意。
 	+ [潘乱的乱翻书]()，我目前只关注B站的，每周更新，针对一个互联网问题邀请互联网资深从业者进行讨论，算是业务方面的学习
+	+ [PolarDB 数据库内核月报](http://mysql.taobao.org/monthly/)：阿里云RDS-数据库内核组维护的一个关于数据库的技术博客。
+	+ [cpp articls](https://github.com/lkimuk/cpparticles)：我不管，Codesire-Deng大佬Follow了。
 
 + CS RoadMap：
 	+ [Teach Yourself Computer Science](https://teachyourselfcs.com/)
@@ -38,7 +40,7 @@ And that will make all the difference
 	+ [linux开发机配置指南](LinuxConfigGuide)：
 + [个人校招记录](./recruit/README.md)：个人校招记录，如果你使用我的格式进行记录，那么这里的脚本可以用来数据统计。
 + [只赠有缘人](./blog/%E5%8F%AA%E8%B5%A0%E6%9C%89%E7%BC%98%E4%BA%BA/README.md)：Yes，只赠有缘人。
-+ [软件推荐](./blog/zest%20app.md)：谁能拒绝这些好玩的小玩意呢？
++ [软件推荐](blog/toy-app.md)：谁能拒绝这些好玩的小玩意呢？
 + [Linux常用命令和工具](./Linux/command.md)：推荐这个原因和配置指南有点类似，有些工具你还不知道，但很可能它就是很好用很适合你的。
 + [Git使用实战](./Missing-Semester/Git.md#practice)：小小的Git，大大的迷惑。
 + [侵入式数据结构和非侵入式数据结构的区别](./Algorithm/Data-Structure-and-Sort/%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%92%8C%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)：如题
@@ -61,7 +63,9 @@ And that will make all the difference
 
 此时笔记更像是”当年攻城略地时的纪念品“。
 
-还是很有意义的，工作之后，少有整块的时间学习了，基本都是在地铁上学的，读资料的时候确实感觉学到东西但是很快就忘记了，不能即笔记意味着不能重构思维框架，也不能通过反复进行记忆。感觉学完之后对知识的吸收很少。哎，花有重开日，人无再少年呀。
+现在看来笔记不是一个结果，而是一个过程。我工作之后，少有整块时间学习，基本是在地铁上学的，读资料的时候确实感觉学到了东西但是很快就忘记。不能即时记笔记意味着不能建立（并重构）知识框架，也不能通过整理进行反复记忆。这样就导致学完之后对知识的吸收很少，如果能充分记笔记就可能会有更好的学习效果。
+
+花有重开日人无再少年呀。
 
 ### 学习阶段
 
@@ -143,6 +147,8 @@ Quick Start -> 实践 -> Manual or Reference
 		+ [x] 现代C++30讲/32讲：一个课程的文字记录，是《C++ Primer》必要补充。
 		+ [x] 《Effective Modern C++》：本来想看《Effective C++》的，它被称为Effective类书籍的鼻祖，但看评价觉得它不够Modern，而这本书是它的continuation和correction。强烈推荐！惊叹于C++的博大精深，这本书对我个人而言说清了很多我过去模棱两可的事情，看完之后越发感觉自己还是C++的初学者。
 
+		我也想大言不惭的表达下该如何学习C++，推荐叔叔的[博客](https://zclll.com/index.php/cpp/get_started_cpp.html)，好吧我写不出比叔叔更好的，算了算了。
+
 	+ Python：
 		+ Manual，Python这种语言看Manual就行啦
 		+ B站码农高天，它是CPython的Contributor，Python相关教程很不错，合适想精深Python的。
@@ -157,7 +163,7 @@ Quick Start -> 实践 -> Manual or Reference
 	>+ 它为我们展示了计算机看待程序的视角
 	>+ 它为我们展示设计编程语言的方方面面
 
-	+ [x] 《Crafting interpreters》：这本书自底向上手把手的带读者使用C语言实现一个有闭包、类、垃圾回收的动态类型语言。是我2023年看到的最好的技术书，非常推荐。
+	+ [x] 《Crafting interpreters》：这本书自底向上手把手的带读者使用C语言实现一个有闭包、类、垃圾回收的动态类型语言。是我2023年看到的最好的技术书（这个受到了《Effective Modern C++》的冲击），总之非常推荐。
 
 + 体系结构：
 	>个人感觉计算机组成原理、体系结构、操作系统（的一部分）并不能泾渭分明的划分，这里以体系结构统称

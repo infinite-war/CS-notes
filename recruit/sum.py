@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
+import os, re
 import time
 import unicodedata
 from datetime import datetime
+from typing import Optional
 
 # get all file's filepath in current folder
 # how to check it is recruit file? if it start with "20"[doge]
@@ -44,10 +45,17 @@ class Submit:
         self.events: (str, str) = [(time_str_foramt(submit_time[5:]), "投递")]
 
         self.ignore = False
+        self.sche_link: Optional[str] = None
         with open(filepath, "r") as f:
             for line in f:
                 if line == "<!-- ignore -->\n":
                     self.ignore = True
+                if line.startswith("[进度]("):
+                    pattern = r'\[.*?\]\((.*?)\)'
+                    match = re.search(pattern, line)
+                    assert match is not None
+                    self.sche_link =  match.group(1)
+
                 if line.startswith("## "):
                     for event in line[3:].split("|"):
                         event_time, event_name = map(
@@ -257,12 +265,20 @@ def print_click(submits: list[Submit]):
             table.append(row)
     print_excell_table(table, [" ", ":"])
 
+def print_sche_link(submits: list[Submit]):
+    print_yellow("Sche Link: ")
+    table: list[list[str]] = []
+    for submit in submits:
+        if submit.sche_link is not None:
+            table.append([submit.company, submit.sche_link])
+    print_excell_table(table, [":"])
 
 if __name__ == "__main__":
     submits = sorted([Submit(filepath) for filepath in filepaths])
     # [print(i ,str(submit) ) for i, submit in enumerate(submits) ]
     # [print(i ,repr(submit) ) for i, submit in enumerate(submits) ]
 
+    print_sche_link(submits)
     print_all(submits)
     print_sum(submits)
     print_click(submits)
