@@ -234,3 +234,26 @@ graph LR;
   > 驻留集指请求分页存储管理中给进程分配的内存块的集合
 
   抖动的评价指标就是：驻留集大小不能小于工作集大小
+
+
+当提到"buddy"和"slab"时，这通常指的是内存管理中的两种分配算法，用于操作和管理计算机系统的内存资源。下面是关于这两种算法的简要介绍以及一些建议的学习资源：
+
+Buddy（伙伴）分配算法：Buddy分配算法是一种常见的内存分配算法，用于动态分配内存块。它将可用内存划分为大小相等的块，并使用二叉树来跟踪和管理这些块。当请求分配内存时，Buddy算法会将最接近所需大小的可用内存块分配给请求者，而其他较大的块则会被分割成较小的块。这种算法的优点是能够有效地利用内存，但可能会导致内存碎片化。
+
+Slab（页面缓存）分配算法：Slab分配算法是一种内存管理算法，用于高速缓存中的对象分配。它通过将内存预先分配为固定大小的缓存对象块（slab）来提高内存分配的效率。当需要分配对象时，Slab算法会从已分配的slab中选择一个，并将对象分配给请求者，而不需要进行额外的内存分配操作。这种算法的优点是提高了内存分配速度和效率，但可能会导致内存浪费。
+
+以下是一些关于buddy和slab的学习资源，这些资源包括文章、视频和文档，可以帮助您更深入地了解它们：
+
+文章：
+
+"Understanding the Linux Kernel" by Daniel P. Bovet and Marco Cesati (Chapter 8: Memory Management) - 这本书详细介绍了Linux内核的各个方面，包括内存管理和相关算法。
+"Introduction to the Slab Allocator" by Linux Weekly News - 这篇文章解释了Linux内核中的Slab分配器的工作原理和实现细节。
+视频：
+
+"Memory Management Part 2: Buddy Allocator" by CrashCourse - 这个视频在一个系列中介绍了内存管理的不同方面，其中包括Buddy分配算法的解释和示例。
+"Linux Memory Management" by The Linux Foundation - 这个视频课程深入讲解了Linux内核中的内存管理，包括Buddy和Slab算法的细节。
+文档：
+
+"Understanding the Linux Virtual Memory Manager" by Mel Gorman - 这份文档提供了关于Linux内存管理的详细解释，包括Buddy和Slab算法的实现和优化。
+"The Slab Allocator: An Object-Caching Kernel Memory Allocator" by Jeff Bonwick - 这篇论文详细介绍了Slab分配器的设计和实现原理。
+请注意，这些资源可能需要一定的计算机系统和操作系统知识作为先决条件。如果您对这些主题感到陌生，可能需要先了解相关的基础知识。

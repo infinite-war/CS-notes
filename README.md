@@ -26,7 +26,7 @@ And that will make all the difference
 
 + IT信息来源：
 	+ [阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，每周五更新，RSS自上而下分别是一张照片，简单的博客，几篇博客和几个工具的介绍和链接。内容由用户投稿，时常能出现让人眼前一亮的玩意。
-	+ [潘乱的乱翻书]()，我目前只关注B站的，每周更新，针对一个互联网问题邀请互联网资深从业者进行讨论，算是业务方面的学习
+	+ [潘乱的乱翻书](https://www.xiaoyuzhoufm.com/podcast/61358d971c5d56efe5bcb5d2?s=eyJ1IjogIjVmYzdjZjVjZTBmNWU3MjNiYjc0NGYwMSJ9)，一个月三到四次更新，针对一个互联网问题邀请互联网资深从业者进行讨论，算是业务方面的学习。
 	+ [PolarDB 数据库内核月报](http://mysql.taobao.org/monthly/)：阿里云RDS-数据库内核组维护的一个关于数据库的技术博客。
 	+ [cpp articls](https://github.com/lkimuk/cpparticles)：我不管，Codesire-Deng大佬Follow了。
 
@@ -286,3 +286,5 @@ Quick Start -> 实践 -> Manual or Reference
 		+ [ ] 《AI未来进行式》：科幻小说的形式的AI科普
 	+ 人体健康：
 		+ [ ] 《饥饿的大脑》
+
+ 芯片战争

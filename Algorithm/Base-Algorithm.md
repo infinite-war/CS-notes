@@ -101,8 +101,8 @@ int query(int l, int r) {
 
   ```c++
   for (int l = st, r = st; r <= ed; ++ r) {
-  	add(arr[r]);  // 累加上arr[r]的值
-      while (l < r && !is_ok())  sub(l ++);  // 调整左区间并减去其影响
+	  add(arr[r]);  // 累加上arr[r]的值
+	  while (l < r && !is_ok()) sub(l ++);  // 调整左区间并减去其影响
       //r - l + 1即为一个答案
   ```
 
