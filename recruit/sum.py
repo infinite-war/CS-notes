@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os, re
+import os
+import re
 import time
 import unicodedata
 from datetime import datetime
@@ -50,11 +51,12 @@ class Submit:
             for line in f:
                 if line == "<!-- ignore -->\n":
                     self.ignore = True
-                if line.startswith("[进度]("):
-                    pattern = r'\[.*?\]\((.*?)\)'
+                if True:
+                    pattern = r'\[进度\]\((.*?)\)'
                     match = re.search(pattern, line)
-                    assert match is not None
-                    self.sche_link =  match.group(1)
+                    # assert match is not None
+                    if match is not None:
+                        self.sche_link = match.group(1)
 
                 if line.startswith("## "):
                     for event in line[3:].split("|"):
@@ -99,7 +101,7 @@ class Submit:
                 update(3, 0)
             elif "挂" in event_name or "调剂" in event_name or "转岗" in event_name:
                 update(3, 1)
-            elif  "不匹配" in event_name:
+            elif "不匹配" in event_name:
                 update(3, 2)
             else:
                 assert (
@@ -115,8 +117,7 @@ class Submit:
         return f"{self.year}.{self.events[0][0]}投递{self.company}的{self.post}岗位: {event_str}"
 
     def __repr__(self) -> str:
-        return self.company + " " + self.post + " " + self.batch + " " +  str(self.order) + " " + self.stage
-
+        return self.company + " " + self.post + " " + self.batch + " " + str(self.order) + " " + self.stage
 
     def __lt__(self, other: "Submit"):
         self_time_str = self.events[0][0]
@@ -162,10 +163,11 @@ def print_excell_table(table: list[list[str]], pre_seq: list[str]):
 
     for i in range(n):
         for j in range(len(table[i])):
-            print(table[i][j].ljust(ele_width[i][j]), end="")
             if j == len(table[i]) - 1:
-                continue
-            print("," if j >= len(pre_seq) else pre_seq[j], end="")
+                print(table[i][j], end="")
+            else:
+                print(table[i][j].ljust(ele_width[i][j]), end="")
+                print("," if j >= len(pre_seq) else pre_seq[j], end="")
         print()
 
 
@@ -260,10 +262,11 @@ def print_click(submits: list[Submit]):
             event_data = datetime.strptime(time_str, "%Y.%m.%d")
             if event_data >= today:
                 row.append(event[0] + "-" +
-                    event_data.strftime("%A") + '-' + event[1])
+                           event_data.strftime("%A") + '-' + event[1])
         if len(row) > 2:
             table.append(row)
     print_excell_table(table, [" ", ":"])
+
 
 def print_sche_link(submits: list[Submit]):
     print_yellow("Sche Link: ")
@@ -272,6 +275,7 @@ def print_sche_link(submits: list[Submit]):
         if submit.sche_link is not None:
             table.append([submit.company, submit.sche_link])
     print_excell_table(table, [":"])
+
 
 if __name__ == "__main__":
     submits = sorted([Submit(filepath) for filepath in filepaths])
