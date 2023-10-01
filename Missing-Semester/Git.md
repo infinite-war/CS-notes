@@ -30,6 +30,9 @@ git config --global i18n.commit.encoding utf-8
 git config --global i18n.logoutputencoding utf-8
 
 git config --global http.proxy ""  # 如果使用没遇到问题就不用
+
+# 禁用不同操作系统换行符的自动转换(win: CRLF, linux: LF)
+git config --global core.autocrlf fals
 ```
 + 配置文件位置：
 	+ win：`C:\User\$User\.gitconfig`

@@ -141,8 +141,6 @@
 	+ new的过程：申请空间，构建，这个过程出现异常则释放空间
 	+ delete是可以delete空指针的，里面会检测。
 
-
-
 + 动态内存Ref：[Dynamic memory management](https://en.cppreference.com/w/cpp/memory)
 	+ raw ptr: new&delete
 		+ [new](https://en.cppreference.com/w/cpp/keyword/new)和[delete](https://en.cppreference.com/w/cpp/keyword/delete)：正如ref所说，这两个关键字既是expression又是function
@@ -184,99 +182,3 @@
 	+ 工厂设计模式中，如果是根据ID构建，且这个构建昂贵且频繁，就可以把对应的实例缓存起来，但是工厂方法通常使用unique_ptr做返回值，这可没法缓存。
 	+ 观察者设计模式，subject需要持有observer的指针，但是它并不关心observer的生成周期。
 	+ 循环引用
-
-# 移动语义和完美转发
-
->移动语义（move semantics）和完美转发（perfect forwarding）：
-
-+ 移动语义使编译器有可能用廉价的移动操作来代替昂贵的拷贝操作。
-+ 完美转发使接收任意数量实参的函数模板成为可能，它可以将实参转发到其他的函数，使目标函数接收到的实参与被传递给转发函数的实参保持一致。
-
-右值引用是连接这两个截然不同的概念的胶合剂。它是使移动语义和完美转发变得可能的基础语言机制。
-
-+ 通用引用/转发引用
-	```cpp
-	template<typename T>
-	type foo(T&& t);
-	```
-
-	+ 类型参数中的`&&`中和`auto`后的`&&`中都是通用引用，因为这里有类型推导
-		+ 但并不是所有类型推导场景都是通用引用，比如`std::vector<T>&`，这里的T就没有“歧义”的可能
-		+ 那么多了一个const，`template<typename T>type foo(const T&& t);`，这都不是，这只是右值引用
-		+ 而哪怕都符合，还可能不是，比如`std::vector`中的成员函数`push_back`，因为在调用`push_back`是，它的类型参数早就确定了。
-  
-
-
-
-+ `std::move`和`std::forward`：两者不移动也不转发任何东西，它们仅仅是在做cast转换，前者无条件的将其转换成右值，后者在特定情况下进行转换
-	+ 这里做区分是因为，如果是普通的右值，就可以通过std::move无条件的转换成右值（因为他们在被传递进来后变成了左值），当转发通用引用时，通过forward将其有条件的转换成右值
-	+ `... foo(const std::strin& s) { std::string s2(std::move(s)); ...}`：这里仍然是拷贝，因为std::move的返回值是通用引用，所以`std::move(s)`的类型是`const std::string&&`，哦吼？这个可不能匹配到移动构造，因为const不匹配。
-
-	+ 移动语义可以用于函数返回局部数据对象么？不能，因为有返回值优化（return value optimization，RVO）的存在。
- 
-
-+ effect提到一个奇技淫巧：
-```cpp
-std::multiset<std::string> names;       //全局数据结构
-
-template<typename T>                    //志记信息，将name添加到数据结构
-void logAndAdd(T&& name)
-{
-	auto now = std::chrono::system_clokc::now();
-	log(now, "logAndAdd");
-	names.emplace(std::forward<T>(name));
-}
-std::string nameFromIdx(int idx);   //返回idx对应的名字
-
-void logAndAdd(int idx)             //新的重载
-{
-	auto now = std::chrono::system_clock::now();
-	log(now, "logAndAdd");
-	names.emplace(nameFromIdx(idx));
-}
-```
-
-有大问题，对short，使用的是通用引用
-
-
-来看魔法
-```cpp
-template<typename T>
-void logAndAdd(T&& name)
-{
-	logAndAddImpl(
-		std::forward<T>(name),
-		std::is_integral<typename std::remove_reference<T>::type>()
-	);
-}
-```
-
-甚至这里不能用` std::is_integral<T>()`，因为tm`int&`不是interger
-
-那么具体的实现呢？
-
-tag dispatch,
-这是模板元编程的标准构建模块
-
-```cpp
-template<typename T>                            //非整型实参：添加到全局数据结构中
-void logAndAddImpl(T&& name, std::false_type)	//译者注：高亮std::false_type
-{
-	auto now = std::chrono::system_clock::now();
-	log(now, "logAndAdd");
-	names.emplace(std::forward<T>(name));
-}
-std::string nameFromIdx(int idx);           //与条款26一样，整型实参：查找名字并用它调用logAndAdd
-void logAndAddImpl(int idx, std::true_type) //译者注：高亮std::true_type
-{
-  logAndAdd(nameFromIdx(idx)); 
-}
-```
-
-
-但是这只能有两个分支呀
-
-`std::enable_if`可以给你提供一种强制编译器执行行为的方法
-
-
-+ 引用折叠就发生在通用引用中，

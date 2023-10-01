@@ -325,8 +325,8 @@
 ### 7.Git
 
 + 安装：`scoop install git`
-+ 配置：[我的教程](Git.md#config)
-+ 配置SSH：[我的教程](SSH.md#intro)
++ 配置：[我的教程](./Git.md#config)
++ 配置SSH：[我的教程](./SSH.md)
 + Github配置：`Setting -> SSH and GPG keys -> New SSH key -> 拷贝公钥`（配置公钥用于自己通过SSH链接去`push`）
 
 ## 8.编辑器:VSCode
@@ -367,10 +367,10 @@ VSCode本是一个轻量型的编辑器，轻量型意味着可以快速的打�
 我在最开始是使用思维导图记笔记的，直到现在我也觉得树形结构是比流式结构更好的笔记结构，此时随机选择了[Xmind8](https://xmind.cn/download/xmind8/)（是8而不是最新版，这个可能不是最好看的，但是我觉得是操作最合理高效的）。随机笔记规模的扩大就有了渲染性能和文件管理的问题，这个时候使用Markdown；此时思维导图这个形式只是偶尔使用，最后发现没必要在为这偶尔使用的需求留着一个软件了，换到[markmap](https://markmap.js.org/)框架（有VSCode插件）
 
 ## 幻灯片jyyslide-md
-见我的[讨论](slide.md)
+见我的[讨论](./slide.md)
 
 ## 论文LaTeX
-见我的[讨论](LaTeX.md)
+见我的[讨论](./LaTeX.md)
 
 ## UML图PlantUML
 见我的[教程](../Software-Engineering/UML.md)

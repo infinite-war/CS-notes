@@ -35,15 +35,15 @@ And that will make all the difference
 
 ## 我的博客
 
++ [Blog](./blog/README.md)：只赠有缘人。
 + 开发机配置指南：正所谓工欲善其事必先利其器，这真不是差生文具多，是实打实的生产力提升。
-	+ [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：
-	+ [linux开发机配置指南](LinuxConfigGuide)：
+	+ [win开发机配置指南](Missing-Semester/WindowsConfigGuide.md)：如题
+	+ [linux开发机配置指南](Missing-Semester/LinuxConfigGuide.md)：如题
 + [个人校招记录](./recruit/README.md)：个人校招记录，如果你使用我的格式进行记录，那么这里的脚本可以用来数据统计。
-+ [只赠有缘人](./blog/%E5%8F%AA%E8%B5%A0%E6%9C%89%E7%BC%98%E4%BA%BA/README.md)：Yes，只赠有缘人。
-+ [软件推荐](blog/toy-app.md)：谁能拒绝这些好玩的小玩意呢？
++ [软件推荐](misc/toy-app.md)：谁能拒绝这些好玩的小玩意呢？
 + [Linux常用命令和工具](./Linux/command.md)：推荐这个原因和配置指南有点类似，有些工具你还不知道，但很可能它就是很好用很适合你的。
 + [Git使用实战](./Missing-Semester/Git.md#practice)：小小的Git，大大的迷惑。
-+ [侵入式数据结构和非侵入式数据结构的区别](./Algorithm/Data-Structure-and-Sort/%E4%BE%B5%E5%85%A5%E5%BC%8F%E5%92%8C%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)：如题
++ [侵入式数据结构和非侵入式数据结构的区别](./Algorithm/Data-Structure-and-Sort/侵入式和非侵入式数据结构.md)：如题
 + [不同编程范式的量化交易回测系统](./Quant/Survey-BackTest.md)：如题
 
 ## 笔记意义
@@ -143,15 +143,18 @@ Quick Start -> 实践 -> Manual or Reference
 
 		下面的几本书真是值得反复刷呀。
 
-		+ [x] 《C++ Primer》：毫无疑问的成为C++初学者的第一本书，比较推荐，但我个人认为它还是有股C++98味儿。
+		+ [x] 《C++ Primer》（以下简称c4p）：毫无疑问的成为C++初学者的第一本书，比较推荐，但我个人认为它还是有股C++98味儿。
+
+		下面的几本书必须要二刷，因为c4p毫无疑问是给新手准备的，但是C++太深奥了，刚看完c4p肯定要继续看下面来学习更Modern的特性和最佳实践，但是在没有足够实践的基础上绝对是理解不到位的，在充分实践后再来看会有崭新的体验。
+
 		+ [x] 现代C++30讲/32讲：一个课程的文字记录，是《C++ Primer》必要补充。
 		+ [x] 《Effective Modern C++》：本来想看《Effective C++》的，它被称为Effective类书籍的鼻祖，但看评价觉得它不够Modern，而这本书是它的continuation和correction。强烈推荐！惊叹于C++的博大精深，这本书对我个人而言说清了很多我过去模棱两可的事情，看完之后越发感觉自己还是C++的初学者。
 
-		我也想大言不惭的表达下该如何学习C++，推荐叔叔的[博客](https://zclll.com/index.php/cpp/get_started_cpp.html)，好吧我写不出比叔叔更好的，算了算了。
+		我也想大言不惭的表达下该如何学习C++，推荐叔叔的[博客](https://zclll.com/index.php/cpp/get_started_cpp.html)，好吧我写不出比叔叔更好的，“眼前有景道不得，崔颢题诗在上头”，算了算了。
 
 	+ Python：
 		+ Manual，Python这种语言看Manual就行啦
-		+ B站码农高天，它是CPython的Contributor，Python相关教程很不错，合适想精深Python的。
+		+ B站码农高天，他是CPython的Contributor，Python相关教程很不错，合适想精深Python的。
 	+ Golang：
 		+ Manual，Golang官方的Tour of Go非常好呀。
 
@@ -216,14 +219,13 @@ Quick Start -> 实践 -> Manual or Reference
 	+ [x] Acwing工程课的Django和前端：优势的很简单，缺点是太简单；低年级可以看看，否则没必要了。
 
 + 优秀开源代码源码阅读
-	+ [etcd](./Distributed-System/etcd)
-	+ [levelDB](./Database-System/levelDB)
+	+ [etcd](./Distributed-System/etcd.md)
+	+ [levelDB](./Database-System/levelDB.md)
 	+ rocksDB
 
 + 金融科技：
 	+ [ ] Max Dama《Max Dama on Trade》：Max Dama的博客汇总
 	+ [ ] 《Trading and Exchanges: Market Microstructure for Practitioners》
-
 
 ## 非技术类
 
@@ -242,6 +244,7 @@ Quick Start -> 实践 -> Manual or Reference
 	+ 由瓦尔赫拉利
 	+ [ ] 贾德·戴蒙的《枪炮、病菌与钢铁：人类社会的命运》
 	+ Bilibili王晓
+	+ 丰臣秀吉
 + 政治学
 	+ [ ] 马基雅维利的《君主论》
 + 经济学
@@ -288,3 +291,5 @@ Quick Start -> 实践 -> Manual or Reference
 		+ [ ] 《饥饿的大脑》
 
  芯片战争
+ 金一南《胜者思维》
+ 

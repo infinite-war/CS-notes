@@ -155,5 +155,3 @@ void merge(vector<pii>& segs) {
           a[i] = lower_bound(dct.begin(), dct.end(), a[i]) - dct.begin() + BEGIN;  // 表达式取出作为函数
   }
   ```
-
-  

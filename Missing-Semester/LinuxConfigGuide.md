@@ -28,7 +28,7 @@ passwd 用户名 # 修改用户密码, 这种方法也可以修改root用户
 
 ## 2.配置SSH
 
->[这](./SSH.md#intro)是我的SSH介绍：
+>[这](./SSH.md)是我的SSH小教程：
 
 1. 配置：
 	```bash
