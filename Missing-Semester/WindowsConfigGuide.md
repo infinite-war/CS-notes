@@ -71,6 +71,8 @@
 + 修改机器的语言：控制面板 -> 时钟和区域 -> 区域 -> 管理 -> 更改系统区域设置 -> 打开Beta版
 	>Windows为了向后兼容性使用特殊的编码，我个人一般是打开的。
 
+	默认没开，此时用C++输出中文为乱码，手动打开，使用7z进行解压缩对中文会有乱码，可恶。
+
 ---
 
 + 不能进入`C:\Program Files\WindowsApps`目录：[solution](https://jingyan.baidu.com/article/1876c852de26a0c80b1376c5.html)

@@ -180,3 +180,5 @@ shared_mutex的unique_lock和mutex的lock一样，而condition_variable的第一
 + Reference：
 	+ [Asymmetric Transfer](https://lewissbaker.github.io/)
 
+# 内存模型
+

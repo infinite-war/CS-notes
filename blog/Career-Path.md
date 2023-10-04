@@ -22,3 +22,9 @@
 	+ 开发链：
 		+ 以前：产品经理——idea——交互设计师——设计——UI设计师——画图——开发工程师
 		+ 现代：没有UI设计师，有库，UI设计师直接在库中选择自己想要的东西。
+
+## 职场技巧
+
++ Reference：
+	+ [中单和大树](https://www.bilibili.com/list/watchlater?bvid=BV1xN411J7oW&oid=491269250)
+ 

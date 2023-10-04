@@ -1,39 +1,27 @@
 <!--https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/-->
 
-我们学习一个东西，理解它的动机非常重要，一定要知道它是用来解决什么问题的，或者说知道它的演进过程，比知道它现在什么样子，更重要。
-
-```
-So you have to trust that 
-the dots will somehow connect in your future
-You hava to trust in something 
-your gut, destiny, life, karma, whatever 
-Because believing the dots will connect down the road  
-will give you the confidence to follow your heart
-even when it lead you off the well-worn path
-And that will make all the difference
-                                   Steven Paul Jobs
-                                  Stanford University
-```
+## Disclaimers
 
 + 该项目是我个人的笔记，部分会刻意制作成Blog，但大部分仍然是我个人的Note，除非特殊声明，否则不建议作为学习资料。
-+ 该笔记部分插图来自各种书籍、课程或其他资料，若涉及到任何版权行为，请联系我，我将删除内容。
++ 该笔记部分插图来自各种书籍、课程或其他资料，若涉及任何版权行为，请联系我，我将删除内容。
 + 对于课程笔记，我（自认为）严格遵循[Academic Integrity](http://integrity.mit.edu/)，虽然在笔记中可能记录思路，但是代码是Private的，如果有不合适的地方，请提醒我。
 + 文中所有内容，与本人现在，之前或者将来的雇佣公司或组织无关。
 + 本人保留自省的权力，即你看到的内容不一定代表本人最新的认知和观点。
 + 项目下所有文章除特别声明外，均采用CC BY 4.0 CN许可协议，转载请注明出处。
 
----
+## Reference
 
-+ IT信息来源：
++ 个人常用的稳定信息源：
 	+ [阮一峰的网络日志](https://www.ruanyifeng.com/blog/)，每周五更新，RSS自上而下分别是一张照片，简单的博客，几篇博客和几个工具的介绍和链接。内容由用户投稿，时常能出现让人眼前一亮的玩意。
-	+ [潘乱的乱翻书](https://www.xiaoyuzhoufm.com/podcast/61358d971c5d56efe5bcb5d2?s=eyJ1IjogIjVmYzdjZjVjZTBmNWU3MjNiYjc0NGYwMSJ9)，一个月三到四次更新，针对一个互联网问题邀请互联网资深从业者进行讨论，算是业务方面的学习。
-	+ [PolarDB 数据库内核月报](http://mysql.taobao.org/monthly/)：阿里云RDS-数据库内核组维护的一个关于数据库的技术博客。
-	+ [cpp articls](https://github.com/lkimuk/cpparticles)：我不管，Codesire-Deng大佬Follow了。
+	+ [潘乱的乱翻书](https://www.xiaoyuzhoufm.com/podcast/61358d971c5d56efe5bcb5d2?s=eyJ1IjogIjVmYzdjZjVjZTBmNWU3MjNiYjc0NGYwMSJ9)，一个月三到四次更新，针对一个互联网问题邀请互联网资深从业者进行讨论，相当是业务方面的学习。
+	+ [PolarDB 数据库内核月报](http://mysql.taobao.org/monthly/)：阿里云RDS-数据库内核组维护的一个关于数据库的技术博客，每月更新，目前一期包含三个以上博客。
+	+ [cpp articls](https://github.com/lkimuk/cpparticles)
 
-+ CS RoadMap：
++ RoadMap：
 	+ [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+	+ [pingCAP Awesome Database Learning](https://github.com/pingcap/awesome-database-learning)
 
-## 我的博客
+## Blogs
 
 + [Blog](./blog/README.md)：只赠有缘人。
 + 开发机配置指南：正所谓工欲善其事必先利其器，这真不是差生文具多，是实打实的生产力提升。
@@ -82,7 +70,7 @@ Quick Start -> 实践 -> Manual or Reference
 1. 熵增定律：  
 	不要去追求极致的秩序，因为那意味着巨大的成本和极大的不稳定性
 2. 奥卡姆剃刀：如无必要，勿增实体
-3. 抽象与平衡：过低的抽象带来了思维负担，过高的抽象意味着性能成本。
+3. 抽象与平衡：过低的抽象带来了思维负担，过高的抽象意味着抽象成本。
 
 # Always-Day-One
 
@@ -92,7 +80,7 @@ Quick Start -> 实践 -> Manual or Reference
 
 + 发心：
 	+ 自用：我个人有强迫症，想让自己在计算机领域的知识体系很系统，但熵增定理告诉我们这样阻力很大，我希望通过笔记去对抗它
-	+ 费曼学习法：我会设想有一个人在看这篇记录，用词尽可能有易读性，比如说明资料的推荐程度~~和适合人群~~
+	+ 费曼学习法：我会设想有一个人在看这篇记录，用词尽可能有易读性，比如说明简介下资料内容、推荐程度~~和适合人群~~
 
 + 说明：我本科的学习方法论是理论结合实践螺旋上升
 	+ 理论结合实践：Donald Knuth曾经说过"If you find that you’re spending almost all your time on theory, start turning some attention to practical things; it will improve your theories. If you find that you’re spending almost all your time on practice, start turning some attention to theoretical things; it will improve your practice."，我这里也提供一个工程类的视角理解这句话，如果我们要写一本教材，我们要选择一个主题，我们希望可以写出这个主题的方方面面，各个层次、各个细分以及它们的发展和现状。但我们发现如果一本教材想要实现理论和实践相结合是要做取舍的。如果想概念方面面面俱到，很难辅以实践，各个概念分别给出实践很零散，而且并不是所有的概念都有适合学习的实践。目前对这个问题的一种解决方案就是开发相对独立的配套实验嘛。还有一个方案就是专门写实践的书籍，这本书就是主要讲怎么实现某个东西，然后在这个过程中讲这个领域的相关概念，那么我们发现这样组织就很难展示尽可能全面的概念。所以我在资料的选择方面就涉及上面说的几种类型的资料。
@@ -108,7 +96,7 @@ Quick Start -> 实践 -> Manual or Reference
 	+ 概率论：
 		+ [x] 宋浩：应付期末、草草看完，早忘光了。
 	+ 信息安全：
-		+ [x] 《深入浅出密码学》：比较推荐，我目前需要的绝大部分密码学知识都来自这里，在做Web3或者其他东西时是对这方面不犯怵了
+		+ [x] 《深入浅出密码学》：比较推荐，我目前需要的绝大部分密码学知识都来自这里，在做Web3或者其他东西时对这方面不犯怵了
 
 + 物理基础：上课（很少听讲），学校老师讲的应该算挺好的。
 + 电子基础：
@@ -120,7 +108,7 @@ Quick Start -> 实践 -> Manual or Reference
 
 + 信息学导论：
 	+ [x] csdiy.wiki：我没开玩笑，我在刚上大学时看了无数人的学习路线规划，感觉抄来抄去，但是csdiy属实是有世界观刷新感觉，强烈推荐。
-	+ [x] Crash Course Computer Science：神奇的网课，语速极快的overview了CS的各种Topic，比较推荐。
+	+ [x] Crash Course Computer Science：神奇的网课，语速极快的overview了CS的各种Topic，比较推荐~~高中毕业~~。
 
 + 编程入门：
 	>我有点遗忘在第一次接触编程的感觉了，不太能换位到一个初学者的视角；不同人进入编程世界的入口是不一样的，这个阶段可能会花一些时间找找感觉。
@@ -147,16 +135,16 @@ Quick Start -> 实践 -> Manual or Reference
 
 		下面的几本书必须要二刷，因为c4p毫无疑问是给新手准备的，但是C++太深奥了，刚看完c4p肯定要继续看下面来学习更Modern的特性和最佳实践，但是在没有足够实践的基础上绝对是理解不到位的，在充分实践后再来看会有崭新的体验。
 
-		+ [x] 现代C++30讲/32讲：一个课程的文字记录，是《C++ Primer》必要补充。
+		+ [x] 现代C++30讲/32讲：一个课程的文字记录，是《C++ Primer》必要补充。本身更多是提纲挈领的说明一些要点，对细节想要更深刻的理解肯定要看更多的资料。或者它本来就是一个提纲，为我们打开Modern C++的大门。
 		+ [x] 《Effective Modern C++》：本来想看《Effective C++》的，它被称为Effective类书籍的鼻祖，但看评价觉得它不够Modern，而这本书是它的continuation和correction。强烈推荐！惊叹于C++的博大精深，这本书对我个人而言说清了很多我过去模棱两可的事情，看完之后越发感觉自己还是C++的初学者。
 
-		我也想大言不惭的表达下该如何学习C++，推荐叔叔的[博客](https://zclll.com/index.php/cpp/get_started_cpp.html)，好吧我写不出比叔叔更好的，“眼前有景道不得，崔颢题诗在上头”，算了算了。
+		我也想大言不惭的表达下该如何学习C++，推荐叔叔的[博客](https://zclll.com/index.php/cpp/get_started_cpp.html)。好吧我写不出比叔叔更好的，“眼前有景道不得，崔颢题诗在上头”，算了算了。
 
 	+ Python：
 		+ Manual，Python这种语言看Manual就行啦
 		+ B站码农高天，他是CPython的Contributor，Python相关教程很不错，合适想精深Python的。
 	+ Golang：
-		+ Manual，Golang官方的Tour of Go非常好呀。
+		+ Manual，Golang官方的Tour of Go就非常好呀。
 
 + 数据结构/算法竞赛：
 	+ [x] Acwing算法全家桶，我不想评价Acwing和yxc，但结合性价比，这个可能是国内最适合初学者的一套教程了。
@@ -189,7 +177,7 @@ Quick Start -> 实践 -> Manual or Reference
 + 数据库
 	+ [x] 王珊、萨师煊的《数据库系统概念》（第五版）：教材
 		>萨师煊先生是我国数据库的奠基人。
-	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人完成了第一个和第二个的B+Tree部分，第一本中我将作者的C实现改成Modern C++实现，但是对于侵入式数据结构还是一股C味儿，后面有机会可能结合CRTP重写。对于第二本，写出的B+Tree不符合预期，而且作者使用的B+Tree是比较特殊的变种，作者没有好好描述、网上也没有很好的描述，于是作罢，以后有机会写15445吧。
+	+ [x] 《Build Your Own Redis with C/C++》和《Build Your Own Database From Scratch》：分别用C with STL实现mini Redis和Go实现mini关系型数据库，我个人完成了第一个和第二个的B+Tree部分（有bug），第一本中我将作者的C实现改成Modern C++实现，但是对于侵入式数据结构还是一股C味儿，后面有机会可能结合CRTP重写。对于第二本，写出的B+Tree不符合预期，而且作者使用的B+Tree是比较特殊的变种，作者没有好好描述、网上也没有很好的描述，于是作罢，以后有机会写15445吧。
 
 	+ [ ] B站Moody老师，相当于15445的课程翻译。
 	+ [ ] CMU 15445 Lab 2023 Spring。
@@ -205,9 +193,9 @@ Quick Start -> 实践 -> Manual or Reference
 	+ [x] MIT6.824：看完了部分课程的讲义和完整的课程字幕翻译记录，主要以了解知识点为主，因为我的实习项目就是分布式存储，工业界的实践就在眼前，所以课程实现没有做。
 		+ [x] [MapReduce](./Distributed-System/MapReduce.md)
 		+ [x] [Raft](./Distributed-System/Raft.md)
-		+ [ ] [Spanner]
-		+ [ ] [BigTable]
-		+ [ ] [Ceph]
+		+ [ ] [Spanner]()
+		+ [ ] [BigTable]()
+		+ [ ] [Ceph]()
 
 + 虚拟化：
 	+ [ ] 《自己动手写Docker》：
@@ -229,67 +217,70 @@ Quick Start -> 实践 -> Manual or Reference
 
 ## 非技术类
 
-+ 文学
-	+ 小说
-		+ [ ] 肯·福莱特世纪三部曲
-	+ 理论
-		+ [ ] 美国弗拉基米尔·纳博科夫的《文学讲稿三种》
-	+ 传记：
-		+ [ ] 《始于极限》
-	+ [ ] 朱光潜《给青年人的十二封信》
-+ 哲学
++ 纯文学：
+	+ 小说：
+		+ [ ] 肯·福莱特的世纪三部曲
+	+ 文学理论：
+		+ [ ] 《文学讲稿三种》-美-弗拉基米尔·纳博科夫
+		+ [ ] 《给青年人的十二封信》朱光潜
+
++ 哲学：
 	+ 韩炳哲
 	+ Bilibili学院派
-+ 历史学
-	+ 由瓦尔赫拉利
-	+ [ ] 贾德·戴蒙的《枪炮、病菌与钢铁：人类社会的命运》
-	+ Bilibili王晓
-	+ 丰臣秀吉
-+ 政治学
-	+ [ ] 马基雅维利的《君主论》
-+ 经济学
-	+ B站翟东升
-	+ [ ] 《棉花帝国》
-	+ Bilibili小德MOMO
-+ 社会学
-	+ [ ] 《蚱蜢：游戏、生命与乌托邦》
-+ 中国
-	+ [ ] 费孝通的《乡土中国》
-	+ [ ] B站蒙克MK
-	+ [ ] 毛泽东选集
-	+ [ ] 《中国历代政治得失》
-+ 心理学
-	+ [ ] 吴思的《潜规则》
-	+ [ ] 吴思的《血酬定律》
-	+ 两性关系
-		+ [ ] 《男人来自火星，女人来自金星》约翰·格雷
-	+ 死亡观
-		+ [ ] 《末日船票》罗小茗
-	+ [ ] 《被讨厌的勇气》
-	+ [ ] 《思考，快与慢》
 
-+ 商业：
++ 历史：
+	+ 尤瓦尔·诺亚·赫拉利的简史三部曲
+	+ [ ] 《枪炮、病菌与钢铁：人类社会的命运》-贾德·戴蒙
+	+ [ ] 世界电子地图册-Bilibili王晓
+
++ 经济学：
+	+ Bilibili翟东升
+	+ 《棉花帝国》
+	+ Bilibili小德MOMO
+
++ 人际理解力：正如张作霖说的”江湖不是打打杀杀，江湖是人情世故“，我也有一定的体会，这里并不是所谓的人情社会，而且互相交换经济价值或者情绪价值，本质是一个美好的事情，但是这里肯定是有方法论的
+	+ [ ] 《君主论》-马基雅维利
+	+ 中国：中国的传统文化在耳濡目染中已然成了我们价值观的底色，那么里面到底有什么呢？需要感受下
+		+ [ ] 费孝通的《乡土中国》
+		+ [ ] Bilibili蒙克MK
+		+ [ ] 毛泽东选集
+		+ [ ] 《中国历代政治得失》
+		+ [ ] 《参谋助手论》
+
+	+ 心理学：
+		+ [ ] 《潜规则》-吴思
+		+ [ ] 《血酬定律》-吴思
+
+	+ 死亡：
+		+ [ ] 《末日船票》罗小茗
+
++ 人的成长：这也是我成长过程中的体会，至少在年轻的时候，人的观念变化是比较剧烈且频繁的，这种变化是通过一次次事件，一次次和别人的交流。这样的变化也发生在任何人的成长过程中，如果TA们将其写成一本书，读这样的书就像和一个前辈说话，TA表达TA成长过程中观念的变化，我们自己也会有所感悟。
+	+ [x] 《优秀的绵羊》：作者是耶鲁大学招生相关的工作人员，本身的教育经历也非常丰富，他观察并和很多同学交流意识到，排名很高的院校的学生简历非常漂亮，但是普遍缺乏我理解为做事的发心和真挚的人际关系感情，这要么已经在他们中暴露出心理问题，要么他们职业中后期出现迷失；后面讲了现在整个美国高等院校招生现状的历史由来，其实这里有很多我国高效的影子。后面讲了作为学生怎么避免这种情况，即博雅教育+尽可能多的接触不同圈层的人（无论向上还是向下）。最后更进一步批判精英阶层的一些问题（可是又有什么用呢？）
+	+ [ ] 《被讨厌的勇气》
+
++ 商业嗅觉：你猜这种东西可以有意识培养么？
 	+ 瑞·达利欧
-	+ 互联网
+	+ 互联网：
 		+ [ ] 《黑客与画家》
-		+ [ ] 美国马克·伦道夫的《复盘网飞》
+		+ [ ] 《复盘网飞》-美-马克·伦道夫
 		+ [ ] 《精益创业》
-	+ 芯片
+	+ 芯片：
 		+ [ ] 《我在硅谷管芯片：芯片产品线经理生存指南》
-	+ [ ] 浪潮之巅
-	+ B站取景框看世界
-+ 自然
+
+	+ Bilibili取景框看世界
+
++ 自然科学：
 	+ [ ] 瑞安·诺思的《万物发明指南：时间旅行者的生存手册》
 	+ [ ] 美国史蒂文·约翰逊的《我们如何走到今天：重塑时间的六项创新》
 	+ [ ] 哈福德的《塑造世界经济的五十项伟大发明》
 	+ [ ] 马克·米奥多的《迷人的材料：10种改变世界的神奇物质和它们背后的科学故事》
 	+ [ ] 卡尔·奇默的《病毒星球》
-	+ [ ] 美国伊丽莎白·布莱克本的《端粒》
-	+ 人工智能：
-		+ [ ] 《AI未来进行式》：科幻小说的形式的AI科普
-	+ 人体健康：
-		+ [ ] 《饥饿的大脑》
-
- 芯片战争
- 金一南《胜者思维》
  
++ 未分类：没看过且没有接触过比较好的讲解肯定不知道属于哪种类型呗
+	+ 《思考，快与慢》
+	+ 《胜者思维》-金一南
+	+ 吴军：
+		+ 数学之美
+		+ 浪潮之巅
+		+ 文明之光
+		+ 大学之路

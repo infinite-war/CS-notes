@@ -18,6 +18,14 @@
 	+ 形参(**parameter**)：函数定义中的参数变量
 	+ 实参(**argument**) ：函数调用中的值
 
++ 函数签名sigature
+	+ Effective Modern C++定义：函数返回值和形参类型列表，相当于`std::function`类型参数
+	+ 标准定义：形参类型列表
+
+	忽略函数名，`constexpr`和`noexcept`
+
++ 函数签名sigature（Effective Modern C++定义），即用来描述`std::function`类型参数的部分，函数返回值和形参类型列表
+
 ## 特殊函数
 
 + 主函数：被*启动代码*调用，是程序和操作系统的接口。

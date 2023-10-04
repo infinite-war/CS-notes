@@ -1,6 +1,10 @@
 泛型编程技术是为了实现代码的可重用性，对于某个算法，不必关系具体使用的类型，那么这里讲的一些技术就是为了实现这个目的。
 >在C中也有类似的技术，`typedef`，相当于一种类型别名，但是这可不够代码重用，仍然是只处理一种类型。
 
++ 鸭子类型：
+	+ 对于一些类的共性，比如容器，但不通过继承来实现这些共性，仅仅是通过指定同样的接口。
+
+
 # 模板
 
 提供参数化(parameterized)类型，让类型名作为参数传递给接收方来建立类或函数。其原理是编译器根据代码中的信息，对针对模板对某种类型生成代码，然后在编译，以这样的方式实现代码的重用。有些教材将代码中的模板代码叫做"声明"，将实例化后或者具象化后的代码叫做"定义"。
@@ -49,7 +53,6 @@
 
 	+ 部分具体化：TODO
  
-
 ## 函数模板
 
 来个经典的
@@ -125,84 +128,6 @@ void swap(T& a, T& b) {
 
 	使用`typedef`依然可以实现，但是更复杂。
 
-## 类型推导问题
-
-我们以下面的代码为例
-```cpp
-template<typename T>
-void foo(ParamType param);  // 这里的ParamType是一个和T有关的代码
-```
-
-+ 如果ParamType是引用或者指针，则实参类型中的cv类型限定会被保留进T中，而实参的引用性会被忽略
-+ 引用折叠：如果ParamType是**通用引用**(右值引用)，此时左值的实参会被认为是引用，右值的实参会被认为是右值引用
-+ 如果ParamType没有引用，则实参的引用性会被直接忽略
-	+ 实参的cv类型限定也会被忽略
-		>为什么要这样？因为引用性被忽略了，形参肯定是实参的拷贝，此时即使没有cv限定，实参也是安全的。
-
-		+ 在讨论这样的场景，实参类型是`const char* const`，则形参是`const char*`，所以形参是可以变化的，但是依然不能通过形参修改本来字符串，依然安全。
-
-+ 数组实参，一般情况下，数组可以退化成指针，如果直接把数组名作为参数，则参数类型被推导为`T[]`，在C语言这个就会退化成指针，但是如果形参传入一个数组名的引用呢？它是为了引用传递进去的数组实参，此时数组的长度信息就应该拿到，所以需要模板添加非类型参数，就像下面代码
-	```cpp
-	template<typename T, std::size_t N>
-	constexpr std::size_t arraySize(T (&)[N]) noexcept {  // 形参没有名字，我们只关注数组长度
-		return N;
-	}
-	```
-
-上面是模板类型推导的场景，下面引用关键字`auto`  
-实际上绝大部分规则是一致的，但是在下面的场景
-
-```cpp
-auto x1 = 42;      // C++98
-auto x2(42);       // C++98
-auto x3 = { 42 };  // C++11
-auto x4{ 42 };     // C++11
-```
-
-+ 在这样的场景下，前两者会被推导成`int`，而后两者会被推导成`std::initializer_list<int>`
-+ 但是同样的情况在模板中，是可以被正确推导的，如果需要转换成`std::initializer_list`，反而需要在函数参数列表中使用`std::initializer_list<T>`
-
-+ 在C++14中运行`auto`用于函数返回值或者Lambda函数的形参，这是使用的规则就是**模板类型推导**，同样不会自动向`std::initializer_list<T>`推导。
-
-我们在引入`decltype`关键字。
-
-
-首先介绍下
-+ 对于`decltype(expression) var;`这里参数可以是数据类型或表达式
-	+ 如果expr是一个没有用括号括起来的标识符，则var的类型与标识符类型相同，包括cv限定，但忽略引用性
-	+ 如果expr是一个函数调用，则var的类型与函数返回类型相同
-	+ 如果expr是一个左值（你会疑惑，上面不说了标识符了，但是还有什么场景标识符不是左值？这里实际指的是用括号括起来的标识符，这个肯定也是左值），则在上面的基础上，var的类型还会包含expr的引用。
-	+ 其他
- 
-主要的问题发生在这样的情况
-```cpp
-template<typename Container, typename Index>
-auto authAndAccess(Container& c, Index i) ->decltype(c[i]) {
-	authenticateUser();
-	return c[i];
-}
-```
-
-我们希望传会一个传进数组的某个位置的引用
-
-+ 在C++11中，`auto`支持单一语句的lambda表达式的返回类型，而在C++14扩展到允许自动推导所有lambda表达式和函数，即使它们内含多条语句  
-	所以上面代码可以直接去掉`decltype`部分，直接使用`auto`的类型推导，但是`auto`的类型推导和`decltype`不一样，BUG  
-	总之C++14有了这么个东西
-	```cpp
-	template<typename Container, typename Index>
-	decltype(auto)
-	authAndAccess(Container& c, Index i) {
-		authenticateUser();
-		return c[i];
-	}
-	```
-	神奇不，这里`auto`表示这里要类型推导，而`decltype`又表示按照`decltype`的方式进行推导。
-
-## RTTI
-即run-time type identification
-
-typeid [ref](https://en.cppreference.com/w/cpp/language/typeid)：该关键字会返回`std::type_info`类型对象，这个对象有方法`name()`返回一个字符串表示表达式类型，但结果并不一直可信
-
 ## 模板元编程
 
 variable template (C++14) [cpp ref ](https://en.cppreference.com/w/cpp/language/variable_template)
@@ -234,3 +159,6 @@ variable template (C++14) [cpp ref ](https://en.cppreference.com/w/cpp/language/
 	```
 
 	这里的关键字`typename`就是`typedef`较于`using`的一些问题。
+
+### SFINAE
+substitution failure is not an error替换失败非错
