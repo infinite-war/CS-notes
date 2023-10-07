@@ -145,6 +145,8 @@ Quick Start -> 实践 -> Manual or Reference
 		+ B站码农高天，他是CPython的Contributor，Python相关教程很不错，合适想精深Python的。
 	+ Golang：
 		+ Manual，Golang官方的Tour of Go就非常好呀。
+	+ Rust：
+		+ [rustlings](https://github.com/rust-lang/rustlings)：真的不由得感叹一句“太现代了！”，它的思路是提供很多无法编译的Rust代码，然后供我们修改，在实践中理解Rust的各种语法（显然这些Bug涉及的语法特性应该是难度递增的）。它的特色是提供了全自动交互环境，就像玩游戏闯关一样。具体的，我以我的流程为例，将项目Fork到自己的github中，然后clone下来，在本地搭建好Rust相关环境后，编译`rustlings`。然后在项目目录下打开VSCode，不需要Explorer，整个屏幕就有一个编辑区和终端，然后让他们左右放置（一般我都是上下放置），然后在终端启动`rustlings watch`，就会自动找到最近的需要修改的代码，VSCode的终端是可以点击链接打开，自然就拿到了需要修改的文件，然后保存，终端自动重新测试，错了给出编译报错，成了给出下一个需要修改的Bug。这就很像游戏呀。然后`rustlings watch`是有`hint`的，因为我没有学过Rust，直接以练代学，所以基本每个我都`hint`一下，它会给出Rust Book的链接，这个时候我再去看书。整个学习体验棒极了。
 
 + 数据结构/算法竞赛：
 	+ [x] Acwing算法全家桶，我不想评价Acwing和yxc，但结合性价比，这个可能是国内最适合初学者的一套教程了。
