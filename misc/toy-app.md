@@ -10,3 +10,4 @@
 + 命令`neofetch`：现代风格的查看机器信息
 + 命令`ag`：按内容递归查找
 + [命令`fd`](https://github.com/sharkdp/fd#installation)：按文件名递归查找
++ pdf下载：Google -> \<keyword\> filetype:pdf

@@ -26,8 +26,9 @@
 + 京东，拼多多
 + 快手，小红书，Bilibili，知乎，微博
 + 游戏：网易雷火，腾讯天美，米哈游，莉莉丝，西山居，4399
-+ DB：SelectDB、DolphinDB、PingCAP、海致、悦数、华为高斯
++ DB：SelectDB、DolphinDB、PingCAP、海致、悦数、华为高斯、人大金仓、达梦
 + 量化：正定、天王星、Optiver、HRT、思勰、博普、乾象、碟威、衍复、富途、拾贝、宽德、Jane Street、牵星科技、非凸、佳期、metabit、九坤、世纪前沿、远澜
++ 
 + 银行：招商银行、杭州银行、宁波银行、中科曙光、众微银行
 + 其他科技金融：广发证券
 + 外企：SAP，zoom，Skyscanner，smart，西门子、宁德时代、吉比特
@@ -41,8 +42,11 @@
 + 硬件：联想，大疆，沐曦，启思，影石，联发科技，中芯国际、海思
 + 医疗科技：开立医疗、佳能医疗
 + 智元机器人
-+ 
++ 达坦
++ risingwave
 
 西门子、宁德时代、吉比特、华泰证券、greptime、高途、沐曈科技、美的、完美世界、依图、招银网络、联影
 睿思芯科、卡方、迈普、蔚来、成章数据、达梦金仓星环
 risingware、掌趣科技、ScienTech、databend、小蝇科技、启林投资、正仁量化、中望软件、迅雷
+
+![China Quant](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/recruit/China-Quant.jpg)

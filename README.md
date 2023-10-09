@@ -204,6 +204,7 @@ Quick Start -> 实践 -> Manual or Reference
 
 + 系统设计：
 	+ [ ] 经典《DDIA》：
+	+ [ ] 《凤凰架构》
 
 + 业务开发：
 	+ [x] Acwing工程课的Django和前端：优势的很简单，缺点是太简单；低年级可以看看，否则没必要了。
@@ -216,6 +217,14 @@ Quick Start -> 实践 -> Manual or Reference
 + 金融科技：
 	+ [ ] Max Dama《Max Dama on Trade》：Max Dama的博客汇总
 	+ [ ] 《Trading and Exchanges: Market Microstructure for Practitioners》
+
+## 产品经理
+
++ 《超级转化率》
++ 《增长黑客》
+
++ 金融
+	+ 基金或者证券从业资格证教材
 
 ## 非技术类
 
