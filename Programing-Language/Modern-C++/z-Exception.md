@@ -4,6 +4,8 @@
 + [`throw` expression](https://en.cppreference.com/w/cpp/language/throw)和[try-block](https://en.cppreference.com/w/cpp/language/try_catch)
 + [noexcept](https://en.cppreference.com/w/cpp/language/noexcept)
 
++ 异常处理：[zclll.com: handling exception(translation)](https://zclll.com/index.php/cpp/tr18015exception.html)
+
 + 异常安全：
 	+ 保证不抛出异常：
 	+ 强烈异常保证：抛出异常后，不会产生任何副作用
