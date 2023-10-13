@@ -187,6 +187,7 @@ Quick Start -> 实践 -> Manual or Reference
 + 其他：
 	+ 并行计算：
 		+ [6.5940](https://github.com/mit-han-lab/parallel-computing-tutorial)
+		+ 《大规模并行处理器程序设计》
 	+ 图形化（GAMES）
 
 ## 工程能力

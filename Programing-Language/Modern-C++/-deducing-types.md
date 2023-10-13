@@ -132,3 +132,8 @@ auto authAndAccess(Container& c, Index i) ->decltype(c[i]) {
 	我们发现`{}`是最具有广泛意义的写法。
 
 	那么它的问题呢？就是和`std::initializer_list`的纠葛，会有很多问题。
+
+
+## C++17推导指引和
+
+https://en.cppreference.com/w/cpp/language/class_template_argument_deduction

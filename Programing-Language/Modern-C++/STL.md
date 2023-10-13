@@ -37,3 +37,8 @@ associate --> set[set/mutiset/unordered_set/unordered_multiset]
 
 # Iterator
 ## 自定义迭代器的最佳实践
+
+
+## 迭代器和分配器精髓是什么?
+
+新手看msvc，老手看libstdc++

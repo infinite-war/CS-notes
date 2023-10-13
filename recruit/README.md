@@ -49,5 +49,10 @@
 睿思芯科、卡方、迈普、蔚来、成章数据、达梦金仓星环
 risingware、掌趣科技、ScienTech、databend、小蝇科技、启林投资、正仁量化、中望软件、迅雷
 funplus
+starrocks
+smartx
+rising waves
+巨衫
+
 
 ![China Quant](https://cdn.jsdelivr.net/gh/zweix123/CS-notes@master/resource/recruit/China-Quant.jpg)
